@@ -1,0 +1,107 @@
+To refresh this file, delete it and run /reload command again! Last updated: Dec 31, 2020 1:21:01 AM
+
+#mekanism:dirty/zinc
+- jaopca:mekanism_dirty.zinc
+
+#mekanism:dirty
+- mekanism:dirty_iron
+- mekanism:dirty_gold
+- mekanism:dirty_osmium
+- mekanism:dirty_copper
+- mekanism:dirty_tin
+- mekanism:dirty_lead
+- mekanism:dirty_uranium
+- jaopca:mekanism_dirty.allthemodium
+- jaopca:mekanism_dirty.aluminum
+- jaopca:mekanism_dirty.azure_silver
+- jaopca:mekanism_dirty.bismuth
+- jaopca:mekanism_dirty.crimson_iron
+- jaopca:mekanism_dirty.nickel
+- jaopca:mekanism_dirty.platinum
+- jaopca:mekanism_dirty.silver
+- jaopca:mekanism_dirty.unobtainium
+- jaopca:mekanism_dirty.vibranium
+- jaopca:mekanism_dirty.zinc
+
+#mekanism:dirty/bismuth
+- jaopca:mekanism_dirty.bismuth
+
+#mekanism:dirty/allthemodium
+- jaopca:mekanism_dirty.allthemodium
+
+#mekanism:clean/bismuth
+- jaopca:mekanism_clean.bismuth
+
+#mekanism:dirty/nickel
+- jaopca:mekanism_dirty.nickel
+
+#mekanism:clean
+- mekanism:clean_iron
+- mekanism:clean_gold
+- mekanism:clean_osmium
+- mekanism:clean_copper
+- mekanism:clean_tin
+- mekanism:clean_lead
+- mekanism:clean_uranium
+- jaopca:mekanism_clean.allthemodium
+- jaopca:mekanism_clean.aluminum
+- jaopca:mekanism_clean.azure_silver
+- jaopca:mekanism_clean.bismuth
+- jaopca:mekanism_clean.crimson_iron
+- jaopca:mekanism_clean.nickel
+- jaopca:mekanism_clean.platinum
+- jaopca:mekanism_clean.silver
+- jaopca:mekanism_clean.unobtainium
+- jaopca:mekanism_clean.vibranium
+- jaopca:mekanism_clean.zinc
+
+#mekanism:clean/crimson_iron
+- jaopca:mekanism_clean.crimson_iron
+
+#mekanism:dirty/silver
+- jaopca:mekanism_dirty.silver
+
+#mekanism:clean/vibranium
+- jaopca:mekanism_clean.vibranium
+
+#mekanism:dirty/azure_silver
+- jaopca:mekanism_dirty.azure_silver
+
+#mekanism:clean/nickel
+- jaopca:mekanism_clean.nickel
+
+#mekanism:dirty/crimson_iron
+- jaopca:mekanism_dirty.crimson_iron
+
+#mekanism:clean/aluminum
+- jaopca:mekanism_clean.aluminum
+
+#mekanism:clean/platinum
+- jaopca:mekanism_clean.platinum
+
+#mekanism:clean/azure_silver
+- jaopca:mekanism_clean.azure_silver
+
+#mekanism:clean/allthemodium
+- jaopca:mekanism_clean.allthemodium
+
+#mekanism:clean/zinc
+- jaopca:mekanism_clean.zinc
+
+#mekanism:dirty/unobtainium
+- jaopca:mekanism_dirty.unobtainium
+
+#mekanism:dirty/aluminum
+- jaopca:mekanism_dirty.aluminum
+
+#mekanism:dirty/platinum
+- jaopca:mekanism_dirty.platinum
+
+#mekanism:clean/unobtainium
+- jaopca:mekanism_clean.unobtainium
+
+#mekanism:dirty/vibranium
+- jaopca:mekanism_dirty.vibranium
+
+#mekanism:clean/silver
+- jaopca:mekanism_clean.silver

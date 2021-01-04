@@ -1,16 +1,16 @@
-events.listen('recipes', function (e) {
+onEvent('recipes', e => {
 
   function kjsShaped(result, pattern, ingredients, count) {
-    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients)
+    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients);
   }
 
   function kjsShapeless(result, ingredients, count) {
-    e.shapeless(item.of(result, count != null ? count : 1), ingredients)
+    e.shapeless(item.of(result, count != null ? count : 1), ingredients);
   }
 
-  kjsShapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh'])
-  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5).id('kubejs:smelting/leather')
-  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5).id('kubejs:smoking/leather')
+  kjsShapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh']);
+  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5).id('kubejs:smelting/leather');
+  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5).id('kubejs:smoking/leather');
   e.recipes.botania.runic_altar({
     output: {
       item: 'kubejs:rune_of_sins'
@@ -38,7 +38,7 @@ events.listen('recipes', function (e) {
         tag: 'botania:runes/pride'
       }
     ]
-  }).id('kubejs:runic_altar/rune_of_sins')
+  }).id('kubejs:runic_altar/rune_of_sins');
 
   e.recipes.botania.petal_apothecary({
     output: {
@@ -63,7 +63,7 @@ events.listen('recipes', function (e) {
         item: 'botania:ancient_will_karil'
       }
     ]
-  }).id('kubejs:petal_apothecary/mass_of_wills')
+  }).id('kubejs:petal_apothecary/mass_of_wills');
 
   e.recipes.mysticalagriculture.infusion({
     input: {
@@ -97,8 +97,8 @@ events.listen('recipes', function (e) {
     result: {
       item: 'kubejs:magical_soil'
     }
-  }).id('kubejs:infusion/magical_soil')
-  kjsShaped('solarflux:sp_custom_allthemodium', [
+  }).id('kubejs:infusion/magical_soil');
+  /* kjsShaped('solarflux:sp_custom_allthemodium', [
     'PPP',
     'SAS',
     'SDS'
@@ -107,7 +107,7 @@ events.listen('recipes', function (e) {
     A: '#forge:storage_blocks/allthemodium',
     D: '#forge:storage_blocks/diamond',
     P: 'solarflux:photovoltaic_cell_4'
-  }, 2)
+  }, 2);
   kjsShaped('solarflux:sp_custom_vibranium', [
     'PPP',
     'SAS',
@@ -116,7 +116,7 @@ events.listen('recipes', function (e) {
     S: 'solarflux:sp_custom_allthemodium',
     A: '#forge:storage_blocks/vibranium',
     P: 'solarflux:photovoltaic_cell_5'
-  }, 2)
+  }, 2);
   kjsShaped('solarflux:sp_custom_unobtainium', [
     'PPP',
     'SAS',
@@ -125,18 +125,22 @@ events.listen('recipes', function (e) {
     S: 'solarflux:sp_custom_vibranium',
     A: '#forge:storage_blocks/unobtainium',
     P: 'solarflux:photovoltaic_cell_6'
-  }, 2)
-
+  }, 2);
+ */
   function customBlock(block, item) {
-    kjsShapeless(item, block, 9)
+    kjsShapeless(item, block, 9);
     kjsShaped(block, [
       'AAA',
       'AAA',
       'AAA'
     ], {
       A: item
-    })
+    });
   }
 
-  customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
-})
+  customBlock('kubejs:nether_star_block', 'minecraft:nether_star');
+  customBlock('kubejs:aquamarine_block', 'astralsorcery:aquamarine');
+  customBlock('kubejs:fluorite_block', 'mekanism:fluorite_gem');
+  customBlock('kubejs:lithium_block', 'mekanism:dust_lithium');
+  customBlock('botania:blaze_mesh', 'minecraft:blaze_rod');
+});

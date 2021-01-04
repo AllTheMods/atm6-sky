@@ -1,0 +1,40 @@
+
+#Simply Jetpacks 2 - Client Configurations
+[simplyjetpacks-client]
+
+	#Controls Configurations
+	[simplyjetpacks-client.controls]
+		#This sets whether you must hold sneak to hover.
+		invertHoverSneakingBehavior = false
+
+	#Audio Configurations
+	[simplyjetpacks-client.audio]
+		#This sets whether jetpack sounds will play.
+		enableJetpackSounds = true
+
+	#GUI Configurations
+	[simplyjetpacks-client.gui]
+		#Show exact Energy of Jetpack in HUD
+		showExactEnergy = false
+		#This sets whether or not jetpack state messages will show.
+		enableStateMessages = true
+		#This sets whether or not the jetpack HUD will be visible.
+		enableJetpackHud = true
+		#This sets the color of the Jetpack HUD.
+		#Range: > -2147483648
+		hudTextColor = 16777215
+		#HUD Position
+		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, LEFT, RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		hudTextPosition = "TOP_LEFT"
+		#HUD Position X Offset
+		#Range: > -2147483648
+		hudXOffset = 0
+		#HUD Position Y Offset
+		#Range: > -2147483648
+		hudYOffset = 0
+		#HUD Scale
+		#Range: 1 ~ 100
+		hudScale = 1
+		#HUD Text Shadow
+		hudTextShadow = true
+

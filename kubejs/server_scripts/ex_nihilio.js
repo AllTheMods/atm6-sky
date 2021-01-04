@@ -1,222 +1,101 @@
 // priority: 5
+settings.logAddedRecipes = false;
+settings.logRemovedRecipes = false;
+settings.logSkippedRecipes = false;
+settings.logErroringRecipes = true;
 
-// Enable recipe logging, off by default
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-// Enable skipped recipe logging, off by default
-settings.logSkippedRecipes = true
-// Enable erroring recipe logging, on by default, recommended to be kept to true
-settings.logErroringRecipes = true
-
-events.listen('recipes', function (e) {
-   var sieve = e.recipes.exnihilosequentia.sieve;  
-  
+onEvent('recipes', e => {
   function kjsShaped(result, pattern, ingredients, count) {
-    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients)
-  };
-   function kjsShapeless(result, ingredients, count) {
-    e.shapeless(item.of(result, count != null ? count : 1), ingredients)
-  };
-	
-  //netherrack sieve 
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.2,
-          mesh: "diamond"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "appliedenergistics2:fluix_crystal_seed"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.3,
-          mesh: "diamond"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "mysticalagriculture:inferium_essence"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.2,
-          mesh: "diamond"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "minecraft:netherite_scrap"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.15,
-          mesh: "diamond"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "create:rose_quartz"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.2,
-          mesh: "iron"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "minecraft:quartz"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.25,
-          mesh: "iron"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "forbidden_arcanus:arcane_crystal_dust"
-      }
-    });
+    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients);
+  }
 
+  function kjsShapeless(result, ingredients, count) {
+    e.shapeless(item.of(result, count != null ? count : 1), ingredients);
+  }
 
-  //overworld sieve
-  
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.3,
-          mesh: "diamond"
-        }
-      ],
+  function sieve(mesh, chance, input, result, wlog) {
+    e.recipes.exnihilosequentia.sieve({
+      rolls: [{
+        chance: chance,
+        mesh: mesh
+      }],
       input: {
-        "item": "minecraft:gravel"
+        item: input
       },
       result: {
-        item: "mysticalagriculture:inferium_essence"
-      }
-    }); 
+        item: result
+      },
+      waterlogged: wlog
+    });
+  }
 
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.2,
-          mesh: "diamond"
-        }
-      ],
+  function hammer(input, result) {
+    e.recipes.exnihilosequentia.hammer({
       input: {
-        "item": "minecraft:gravel"
+        item: input
       },
       result: {
-        item: "mysticalagriculture:prosperity_shard"
+        item: result
       }
-    });  	
-  
+    });
+  }
+
+  function heat(block, heat) {
+    e.recipes.exnihilosequentia.heat({
+      block: block,
+      amount: heat
+    });
+  }
+  //Crucible heating 'blocks'
+  heat('botania:blaze_mesh', 8);
+
+  //Params go like this: Mesh, Drop chanche, Input item, Output item, Waterlogged.
+  //End sieve
+  sieve('diamond', 0.1, 'exnihilosequentia:crushed_end_stone', 'minecraft:chorus_flower', null);
+
+  //Nether sieve
+  sieve('diamond', 0.2, 'exnihilosequentia:crushed_netherrack', 'appliedenergistics2:fluix_crystal_seed', null);
+  sieve('diamond', 0.3, 'exnihilosequentia:crushed_netherrack', 'mysticalagriculture:inferium_essence', null);
+  sieve('diamond', 0.2, 'exnihilosequentia:crushed_netherrack', 'minecraft:netherite_scrap', null);
+  sieve('diamond', 0.15, 'exnihilosequentia:crushed_netherrack', 'create:rose_quartz', null);
+  sieve('iron', 0.2, 'exnihilosequentia:crushed_netherrack', 'minecraft:quartz', null);
+  sieve('iron', 0.25, 'exnihilosequentia:crushed_netherrack', 'forbidden_arcanus:arcane_crystal_dust', null);
+  sieve('iron', 0.15, 'minecraft:soul_sand', 'mysticalagriculture:soulium_dust', null);
+
+  //Overworld sieve
+  sieve('diamond', 0.3, 'minecraft:gravel', 'mysticalagriculture:inferium_essence', null);
+  sieve('diamond', 0.2, 'minecraft:gravel', 'mysticalagriculture:prosperity_shard', null);
+  //sieve('emerald', 0.02, 'minecraft:gravel', 'astralsorcery:rock_crystal', null);
+  sieve('iron', 0.15, 'minecraft:sand', 'astralsorcery:aquamarine', true);
+  sieve('iron', 0.25, 'minecraft:sand', 'minecraft:ink_sac', true);
+
   //modium integration
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.12,
-          mesh: "netherite"
-        }
-      ],
-      input: {
-        "item": "minecraft:gravel"
-      },
-      result: {
-        item: "kubejs:piece_mod"
-      }
-    });
-		
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.12,
-          mesh: "netherite"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_netherrack"
-      },
-      result: {
-        item: "kubejs:piece_vib"
-      }
-    });
-	
-  sieve(
-    {
-      rolls: [
-        {
-          chance: 0.12,
-          mesh: "netherite"
-        }
-      ],
-      input: {
-        "item": "exnihilosequentia:crushed_end_stone"
-      },
-      result: {
-        item: "kubejs:piece_unob"
-      }
-    });
-	
-kjsShaped('kubejs:chunk_mod', [
+  sieve('netherite', 0.02, 'minecraft:gravel', 'kubejs:piece_mod', null);
+  sieve('netherite', 0.02, 'exnihilosequentia:crushed_netherrack', 'kubejs:piece_vib', null);
+  sieve('netherite', 0.02, 'exnihilosequentia:crushed_end_stone', 'kubejs:piece_unob', null);
+
+  //Hammer recipes
+  hammer('compressium:cobblestone_1', 'compressium:gravel_1');
+  hammer('compressium:gravel_1', 'compressium:sand_1');
+
+  kjsShaped('kubejs:chunk_mod', [
     'PP',
     'PP'
   ], {
     P: 'kubejs:piece_mod'
-    });
-	
-kjsShaped('kubejs:chunk_vib', [
+  });
+
+  kjsShaped('kubejs:chunk_vib', [
     'PP',
     'PP'
   ], {
     P: 'kubejs:piece_vib'
-    });
+  });
 
-kjsShaped('kubejs:chunk_unob', [
+  kjsShaped('kubejs:chunk_unob', [
     'PP',
     'PP'
   ], {
     P: 'kubejs:piece_unob'
-    });
+  });
 });

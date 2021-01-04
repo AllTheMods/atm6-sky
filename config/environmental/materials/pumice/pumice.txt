@@ -1,0 +1,6 @@
+┏╸ma:pumice
+┃┏╸bo:enabled
+┃┣> Variable Type: java.lang.Boolean
+┃┣> Default: true
+┃┗> valkyrielib.module.enabled
+┗╸

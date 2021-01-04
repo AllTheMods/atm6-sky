@@ -1,5 +1,5 @@
 /*
-events.listen('recipes', function (e) {
+onEvent('recipes', e => {
     function charge(items, amount) {
         utils.listOf(items).forEach(function (item) {
             e.recipes.xreliquary.alkahestry_charging({
@@ -7,8 +7,8 @@ events.listen('recipes', function (e) {
                 ingredient: {
                     item: item
                 }
-            })
-        })
+            });
+        });
     }
 
     function craft(items, amount, cost) {
@@ -19,13 +19,13 @@ events.listen('recipes', function (e) {
                     item: item
                 },
                 result_count: amount
-            })
-        })
+            });
+        });
     }
-    craft(['minecraft:slime_ball', 'minecraft:leather', 'minecraft:bone'], 2, 32)
-    craft(['minecraft:ender_pearl'], 2, 128)
-    craft(['minecraft:blaze_rod'], 3, 128)
-    craft(['minecraft:ghast_tear'], 2, 256)
+    craft(['minecraft:slime_ball', 'minecraft:leather', 'minecraft:bone'], 2, 32);
+    craft(['minecraft:ender_pearl'], 2, 128);
+    craft(['minecraft:blaze_rod'], 3, 128);
+    craft(['minecraft:ghast_tear'], 2, 256);
     charge(['allthemodium:allthemodium_ingot'], 512);
-})
+});
 */

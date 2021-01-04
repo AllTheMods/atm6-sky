@@ -29,8 +29,8 @@ onEvent('recipes', e => {
       input: '#forge:ingots/' + name,
       type: 'immersiveengineering:crusher'
     });
-    e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(0.5).id('kubejs:minecraft/smelting/dusts/' + name);
-    e.recipes.minecraft.blasting(ingotItem, '#forge:dusts/' + name).xp(0.5).id('kubejs:minecraft/blasting/dusts/' + name);
+    e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(0.5);
+    e.recipes.minecraft.blasting(ingotItem, '#forge:dusts/' + name).xp(0.5);
     e.recipes.pedestals.pedestal_crushing({
       ingredient: {
         tag: 'forge:ingots/' + name
@@ -39,7 +39,7 @@ onEvent('recipes', e => {
         item: dustItem,
         count: 1
       }
-    }).id('kubejs:pedestals/crusher/ingot/' + name);
+    });
     e.remove({
       id: 'appliedenergistics2:grinder/' + name + '_dust_ingot'
     });
@@ -54,7 +54,7 @@ onEvent('recipes', e => {
         }
       },
       turns: 8
-    }).id('kubejs:appliedenergistics2/grinder/ingot/' + name);
+    });
     e.recipes.immersiveengineering.crusher({
       secondaries: [],
       result: {
@@ -66,7 +66,7 @@ onEvent('recipes', e => {
         tag: 'forge:ingots/' + name
       },
       energy: 3000
-    }).id('kubejs:immersiveengineering/crusher/ingot/' + name);
+    });
     //If unifiable item doesn't have an ore, add it below
     noOre = [
       'steel',
@@ -76,17 +76,18 @@ onEvent('recipes', e => {
       'constantan',
       'electrum'
     ];
-    if (!noOre) {
-      e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/smelting/ores/' + name);
-      e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/blasting/ores/' + name);
-      e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name).id('kubejs:mekanism/enriching/ores/' + name);
+    if (name != noOre) {
+      e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1);
+      e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1);
+      e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name);
       //e.recipes.mekanism.enriching(item.of(dustItem), '#mekanism:dirty_dusts/' + name).id('kubejs:mekanism/enriching/dirty/' + name);
       //This is here to stop crushing hammer recipes for modium from generating
       /* if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({
           id: 'engineerstools:crushing/' + name + '_grit_crushing_recipe'
         });
-        e.recipes.engineerstools.crafting_extended_shapeless({
+        e.custom({
+          type: 'engineerstools:crafting_extended_shapeless',
           group: 'grit',
           ingredients: [{
               tag: 'forge:ores/' + name
@@ -103,7 +104,7 @@ onEvent('recipes', e => {
             tool: 'engineerstools:crushing_hammer',
             tool_damage: 25
           }
-        }).id('kubejs:engineerstools/crushing_hammer/ores/' + name);
+        });
       } */
       e.recipes.immersiveengineering.crusher({
         secondaries: [],
@@ -117,7 +118,7 @@ onEvent('recipes', e => {
           tag: 'forge:ores/' + name
         },
         energy: 3000
-      }).id('kubejs:immersiveengineering/crusher/ore/' + name);
+      });
       e.remove({
         id: 'pedestals:pedestal_crushing/dust' + name
       });
@@ -129,7 +130,7 @@ onEvent('recipes', e => {
           item: dustItem,
           count: 2
         }
-      }).id('kubejs:pedestals/crusher/ore/' + name);
+      });
       e.remove({
         id: 'appliedenergistics2:grinder/' + name + '_dust_ore'
       });
@@ -144,7 +145,7 @@ onEvent('recipes', e => {
           }
         },
         turns: 8
-      }).id('kubejs:appliedenergistics2/grinder/ores/' + name);
+      });
     }
   }
 
@@ -169,4 +170,16 @@ onEvent('recipes', e => {
   unifyMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget');
   unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
   unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
+
+  function replace(gone, stay){
+    e.replaceOutput(gone, stay);
+    e.replaceInput(gone, stay);
+  }
+  replace('#appliedenergistics2:dusts/ender', 'thermal:ender_pearl_dust');
+  replace('#forge:dusts/sulfur', 'thermal:sulfur_dust');
+  replace('#forge:sawdust', 'thermal:sawdust');
+  replace('#forge:dusts/diamond', 'thermal:diamond_dust');
+  replace('#forge:dusts/emerald', 'thermal:emerald_dust');
+  replace('#forge:dusts/quartz', 'thermal:quartz_dust');
+  replace('#forge:dusts/lapis', 'thermal:lapis_dust');
 });

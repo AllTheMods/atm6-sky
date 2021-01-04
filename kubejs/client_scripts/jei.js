@@ -70,34 +70,53 @@ onEvent('jei.hide.items', e => {
             'refinedstorage:' + color + '_crafting_monitor'
         ]);
     });
-    
-    function hideMetal(mod, name, types){
+
+    function hideMetal(mod, name, types) {
         types.forEach(type => {
-            const id = mod === 'immersiveengineering' && 'mekanism' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`;
-            if(!ingredient.of(id).empty){
+            const id = mod === 'immersiveengineering' && 'mekanism' && 'exnihilosequentia' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`;
+            if (!ingredient.of(id).empty) {
                 e.hide(id);
+                console.log('Hid ' + id);
             }
         });
     }
 
-    //Hide metals, format: 'mod','metal',['type1','type2','etc']
-    hideMetal('immersiveengineering','copper',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','silver',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','aluminum',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','uranium',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','lead',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','nickel',['ingot','ore','dust','nugget','storage']);
-    hideMetal('immersiveengineering','steel',['ingot','dust','nugget','storage']);
-    hideMetal('mekanism','copper',['ingot','ore','dust','nugget','block']);
-    hideMetal('mekanism','tin',['ingot','ore','dust','nugget','block']);
-    hideMetal('mekanism','uranium',['ingot','ore','dust','nugget','block']);
-    hideMetal('mekanism','lead',['ingot','ore','dust','nugget','block']);
-    hideMetal('mekanism','osmium',['ingot','ore','dust','nugget','block']);
-    hideMetal('create','copper',['ingot','ore','dust','nugget','block']);
-    hideMetal('create','zinc',['ingot','ore','dust','nugget','block']);
-    hideMetal('thermal','copper',['ingot','ore','dust','nugget','block']);
-    hideMetal('thermal','tin',['ingot','ore','dust','nugget','block']);
-    hideMetal('thermal','lead',['ingot','ore','dust','nugget','block']);
-    hideMetal('thermal','silver',['ingot','ore','dust','nugget','block']);
-    hideMetal('thermal','nickel',['ingot','ore','dust','nugget','block']);
+    function hideStuff(mod, type, names) {
+        names.forEach(name => {
+            const id = mod === 'immersiveengineering' && 'mekanism' && 'exnihilosequentia' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`;
+            if (!ingredient.of(id).empty) {
+                e.hide(id);
+                console.log('Hid ' + id);
+            }
+        });
+    }
+
+    //Hide metals, format: 'mod', 'metal', ['type1', 'type2', 'etc']
+    hideMetal('immersiveengineering', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'silver', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'aluminum', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'uranium', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'lead', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'nickel', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'steel', ['ingot', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'electrum', ['ingot', 'dust', 'nugget', 'storage']);
+    hideMetal('immersiveengineering', 'constantan', ['ingot', 'dust', 'nugget', 'storage']);
+    hideMetal('mekanism', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('mekanism', 'tin', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('mekanism', 'uranium', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('mekanism', 'lead', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('mekanism', 'osmium', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('mekanism', 'bronze', ['ingot', 'dust', 'nugget', 'block']);
+    hideMetal('create', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('create', 'zinc', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('thermal', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('thermal', 'tin', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('thermal', 'lead', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('thermal', 'silver', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+    hideMetal('thermal', 'nickel', ['ingot', 'ore', 'dust', 'nugget', 'block']);
+
+    //Hide stuff, format: 'mod', 'type', ['name1', 'name2', 'etc']
+    hideStuff('exnihilosequentia', 'ingot', ['copper', 'lead', 'nickel', 'silver', 'tin', 'aluminum', 'uranium', 'osmium', 'zinc']);
+    hideStuff('immersiveengineering', 'dust', ['iron', 'gold', 'sulfur', 'sawdust']);
+    hideStuff('mekanism', 'dust', ['sawdust', 'sulfur', 'lapis', 'emerald', 'diamond', 'quartz', 'iron', 'gold']);
 });

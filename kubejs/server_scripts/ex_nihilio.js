@@ -14,7 +14,8 @@ onEvent('recipes', e => {
   }
 
   function sieve(mesh, chance, input, result, wlog) {
-    e.recipes.exnihilosequentia.sieve({
+    e.custom({
+      type: 'exnihilosequentia:sieve',
       rolls: [{
         chance: chance,
         mesh: mesh
@@ -30,7 +31,8 @@ onEvent('recipes', e => {
   }
 
   function hammer(input, result) {
-    e.recipes.exnihilosequentia.hammer({
+    e.custom({
+      type: 'exnihilosequentia:hammer',
       input: {
         item: input
       },
@@ -41,7 +43,8 @@ onEvent('recipes', e => {
   }
 
   function heat(block, heat) {
-    e.recipes.exnihilosequentia.heat({
+    e.custom({
+      type: 'exnihilosequentia:heat',
       block: block,
       amount: heat
     });

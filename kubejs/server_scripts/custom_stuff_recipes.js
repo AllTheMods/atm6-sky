@@ -9,8 +9,8 @@ onEvent('recipes', e => {
   }
 
   kjsShapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh']);
-  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5).id('kubejs:smelting/leather');
-  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5).id('kubejs:smoking/leather');
+  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5);
+  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5);
   e.recipes.botania.runic_altar({
     output: {
       item: 'kubejs:rune_of_sins'
@@ -38,7 +38,7 @@ onEvent('recipes', e => {
         tag: 'botania:runes/pride'
       }
     ]
-  }).id('kubejs:runic_altar/rune_of_sins');
+  });
 
   e.recipes.botania.petal_apothecary({
     output: {
@@ -63,7 +63,7 @@ onEvent('recipes', e => {
         item: 'botania:ancient_will_karil'
       }
     ]
-  }).id('kubejs:petal_apothecary/mass_of_wills');
+  });
 
   e.recipes.mysticalagriculture.infusion({
     input: {
@@ -97,7 +97,7 @@ onEvent('recipes', e => {
     result: {
       item: 'kubejs:magical_soil'
     }
-  }).id('kubejs:infusion/magical_soil');
+  });
   /* kjsShaped('solarflux:sp_custom_allthemodium', [
     'PPP',
     'SAS',

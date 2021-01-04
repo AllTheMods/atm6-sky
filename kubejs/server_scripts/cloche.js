@@ -171,7 +171,8 @@ onEvent('recipes', e => {
     'zinc',
     'zombie',
     'lumium',
-    //'fluorite'
+    //'fluorite',
+    'aquamarine'
   ]);
 
   //Tier 4 Crops
@@ -199,7 +200,6 @@ onEvent('recipes', e => {
     'steel',
     'titanium',
     'tungsten',
-    'enderium',
     'compressed_iron',
     'hop_graphite'
   ]);
@@ -212,13 +212,18 @@ onEvent('recipes', e => {
     'uraninite',
     'wither_skeleton',
     'platinum',
-    'uranium'
+    'uranium',
+    'enderium',
+    'spirited_crystal',
+    'rock_crystal',
+    'niotic_crystal'
   ]);
 
   //Tier 6 Crops
   t6([
     'dragon_egg',
-    'nether_star'
+    'nether_star',
+    'nitro_crystal'
   ]);
 
   //Botanical Tier

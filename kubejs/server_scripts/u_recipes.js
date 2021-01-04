@@ -3,46 +3,51 @@ onEvent('recipes', e => {
     e.shapeless('allthemodium:unobtainium_vibranium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/vibranium_unobtainium_alloy_dust');
     e.shapeless('allthemodium:unobtainium_allthemodium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:allthemodium_dust']).id('kubejs:shapeless/unobtainium_allthemodium_alloy_dust');
     e.shapeless('allthemodium:vibranium_allthemodium_alloy_dust', ['allthemodium:allthemodium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/vibranium_allthemodium_alloy_dust');
-    e.recipes.mekanism.nucleosynthesizing({
-        'itemInput': {
-            'tag': 'forge:dusts/unobtainium_vibranium_alloy'
+    e.custom({
+        type: 'mekanism:nucleosynthesizing',
+        itemInput: {
+            ingredient: {
+                tag: 'forge:dusts/unobtainium_vibranium_alloy'
+            }
         },
-        'gasInput': {
-            'amount': 1,
-            'gas': 'mekanism:antimatter'
+        gasInput: {
+            amount: 1,
+            gas: 'mekanism:antimatter'
         },
-        'output': {
-            'item': 'kubejs:uu_matter',
-            'count': 16
+        output: {
+            item: 'kubejs:uu_matter',
+            count: 16
         },
-        'duration': 1000
+        duration: 1000
     });
-    e.recipes.psi.trick_crafting({
-        'input': {
-            'tag': 'forge:dusts/unobtainium_vibranium_alloy'
+    e.custom({
+        type: 'psi:trick_crafting',
+        input: {
+            tag: 'forge:dusts/unobtainium_vibranium_alloy'
         },
-        'output': {
-            'type': 'forge:nbt',
-            'item': 'kubejs:uu_matter',
-            'count': 4
+        output: {
+            type: 'forge:nbt',
+            item: 'kubejs:uu_matter',
+            count: 4
         },
-        'cad': {
-            'item': 'psi:cad_assembly_psimetal'
+        cad: {
+            item: 'psi:cad_assembly_psimetal'
         },
-        'trick': 'psi:trick_ebony_ivory'
+        trick: 'psi:trick_ebony_ivory'
     });
 
     function mShaped(result, pattern, count) {
-        e.recipes.cucumber.shaped_no_mirror({
-            'pattern': pattern,
-            'key': {
-                'U': {
-                    'item': 'kubejs:uu_matter'
+        e.custom({
+            type: 'cucumber:shaped_no_mirror',
+            pattern: pattern,
+            key: {
+                U: {
+                    item: 'kubejs:uu_matter'
                 }
             },
-            'result': {
-                'item': result,
-                'count': count != null ? count : 1
+            result: {
+                item: result,
+                count: count != null ? count : 1
             }
         });
     }

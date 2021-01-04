@@ -71,7 +71,7 @@ onEvent('item.tags', e => {
     e.get('mekanism:crystals').add('#mekanism:crystals/' + item);
   });
 
-
+  e.add('forge:rubber', ['thermal:cured_rubber']);
   e.add('forge:ores/allthemodium', 'kubejs:chunk_mod');
   e.add('forge:ores/vibranium', 'kubejs:chunk_vib');
   e.add('forge:ores/unobtainium', 'kubejs:chunk_unob');

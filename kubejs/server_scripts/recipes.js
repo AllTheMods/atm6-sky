@@ -111,69 +111,69 @@ onEvent('recipes', e => {
     'EAE',
     'EEE'
   ], {
-    'E': 'mysticalagriculture:iron_essence',
-    'A': 'mysticalagriculture:silicon_essence'
+    E: 'mysticalagriculture:iron_essence',
+    A: 'mysticalagriculture:silicon_essence'
   });
   kjsShaped('appliedenergistics2:calculation_processor_press', [
     'EEE',
     'EAE',
     'EEE'
   ], {
-    'E': 'mysticalagriculture:iron_essence',
-    'A': 'mysticalagriculture:certus_quartz_essence'
+    E: 'mysticalagriculture:iron_essence',
+    A: 'mysticalagriculture:certus_quartz_essence'
   });
   kjsShaped('appliedenergistics2:engineering_processor_press', [
     'EEE',
     'EAE',
     'EEE'
   ], {
-    'E': 'mysticalagriculture:iron_essence',
-    'A': 'mysticalagriculture:diamond_essence'
+    E: 'mysticalagriculture:iron_essence',
+    A: 'mysticalagriculture:diamond_essence'
   });
   kjsShaped('appliedenergistics2:logic_processor_press', [
     'EEE',
     'EAE',
     'EEE'
   ], {
-    'E': 'mysticalagriculture:iron_essence',
-    'A': 'mysticalagriculture:gold_essence'
+    E: 'mysticalagriculture:iron_essence',
+    A: 'mysticalagriculture:gold_essence'
   });
   kjsShaped('minecraft:hopper', [
     'ILI',
     'ILI',
     ' I '
   ], {
-    'L': '#minecraft:logs',
-    'I': '#forge:ingots/iron'
+    L: '#minecraft:logs',
+    I: '#forge:ingots/iron'
   });
   kjsShaped('minecraft:stick', [
     'L',
     'L'
   ], {
-    'L': '#minecraft:logs'
+    L: '#minecraft:logs'
   }, 16);
   /* kjsShaped('minecraft:water_bucket', [
     ' C ',
     'CBC',
     ' C '
   ], {
-    'C': 'resourcefulbees:water_honeycomb',
-    'B': 'minecraft:bucket'
+    C: 'resourcefulbees:water_honeycomb',
+    B: 'minecraft:bucket'
   });
   kjsShaped('minecraft:lava_bucket', [
     ' C ',
     'CBC',
     ' C '
   ], {
-    'C': 'resourcefulbees:lava_honeycomb',
-    'B': 'minecraft:bucket'
+    C: 'resourcefulbees:lava_honeycomb',
+    B: 'minecraft:bucket'
   }); */
   kjsShaped('minecraft:chest', [
     'LLL',
     'L L',
     'LLL'
   ], {
-    'L': '#minecraft:logs'
+    L: '#minecraft:logs'
   }, 4);
   e.recipes.industrialforegoing.dissolution_chamber({
     input: [{
@@ -224,90 +224,92 @@ onEvent('recipes', e => {
     creative: 1
   })]);
   pressure([{
-      'type': 'pneumaticcraft:stacked_item',
-      'item': 'mysticalagradditions:insanium_block',
-      'count': 16
+      type: 'pneumaticcraft:stacked_item',
+      item: 'mysticalagradditions:insanium_block',
+      count: 16
     },
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'tag': 'forge:pellets/antimatter',
-      'count': 16
+      type: 'pneumaticcraft:stacked_item',
+      tag: 'forge:pellets/antimatter',
+      count: 16
     },
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'item': 'botania:gaia_ingot',
-      'count': 8
+      type: 'pneumaticcraft:stacked_item',
+      item: 'botania:gaia_ingot',
+      count: 8
     },
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'tag': 'forge:storage_blocks/allthemodium',
-      'count': 4
+      type: 'pneumaticcraft:stacked_item',
+      tag: 'forge:storage_blocks/allthemodium',
+      count: 4
     },
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'tag': 'forge:storage_blocks/vibranium',
-      'count': 4
+      type: 'pneumaticcraft:stacked_item',
+      tag: 'forge:storage_blocks/vibranium',
+      count: 4
     },
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'tag': 'forge:storage_blocks/unobtainium',
-      'count': 4
-    },/* 
+      type: 'pneumaticcraft:stacked_item',
+      tag: 'forge:storage_blocks/unobtainium',
+      count: 4
+    },
+    /* 
+        {
+          type: 'pneumaticcraft:stacked_item',
+          item: 'elementalcraft:purerock',
+          count: 8
+        }, */
     {
-      'type': 'pneumaticcraft:stacked_item',
-      'item': 'elementalcraft:purerock',
-      'count': 8
-    }, */
-    {
-      'type': 'pneumaticcraft:stacked_item',
-      'item': 'xreliquary:angelheart_vial',
-      'count': 12
-    }/* ,
-    {
-      'type': 'pneumaticcraft:stacked_item',
-      'item': 'mahoutsukai:fae_essence',
-      'count': 1
-    } */
+      type: 'pneumaticcraft:stacked_item',
+      item: 'xreliquary:angelheart_vial',
+      count: 12
+    }
+    /* ,
+        {
+          type: 'pneumaticcraft:stacked_item',
+          item: 'mahoutsukai:fae_essence',
+          count: 1
+        } */
   ], 'mysticalagradditions:creative_essence', 1, 4.9);
   kjsShaped('botania:creative_pool', [
     'CSC',
     'CPC',
     'CWC'
   ], {
-    'C': 'mysticalagradditions:creative_essence',
-    'P': 'botania:fabulous_pool',
-    'S': 'kubejs:rune_of_sins',
-    'W': 'kubejs:mass_of_wills'
+    C: 'mysticalagradditions:creative_essence',
+    P: 'botania:fabulous_pool',
+    S: 'kubejs:rune_of_sins',
+    W: 'kubejs:mass_of_wills'
   });
   kjsShaped('pneumaticcraft:creative_compressor', [
     'CLC',
     'FCA',
     'CEC'
   ], {
-    'C': 'mysticalagradditions:creative_essence',
-    'L': 'pneumaticcraft:advanced_liquid_compressor',
-    'A': 'pneumaticcraft:advanced_air_compressor',
-    'E': 'pneumaticcraft:electrostatic_compressor',
-    'F': 'pneumaticcraft:flux_compressor'
+    C: 'mysticalagradditions:creative_essence',
+    L: 'pneumaticcraft:advanced_liquid_compressor',
+    A: 'pneumaticcraft:advanced_air_compressor',
+    E: 'pneumaticcraft:electrostatic_compressor',
+    F: 'pneumaticcraft:flux_compressor'
   });
   kjsShaped('create:creative_motor', [
     'CCC',
     'FEA',
     'CCC'
   ], {
-    'C': 'mysticalagradditions:creative_essence',
-    'A': 'create:shaft',
-    'E': 'create:furnace_engine',
-    'F': 'create:brass_casing'
+    C: 'mysticalagradditions:creative_essence',
+    A: 'create:shaft',
+    E: 'create:furnace_engine',
+    F: 'create:brass_casing'
   });
   /*   kjsShaped('rats:rat_upgrade_creative', [
       'HUH',
       'CCC',
       'HUH'
     ], {
-      'C': 'mysticalagradditions:creative_essence',
-      'H': 'rats:creative_cheese',
-      'U': 'rats:rat_upgrade_nonbeliever'
+      C: 'mysticalagradditions:creative_essence',
+      H: 'rats:creative_cheese',
+      U: 'rats:rat_upgrade_nonbeliever'
     }); */
 
   //SGear salvaging
@@ -320,137 +322,137 @@ onEvent('recipes', e => {
     });
   }
   salvage('minecraft:netherite_sword', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:stick',
-      'count': 1
+      item: 'minecraft:stick',
+      count: 1
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 2
+      item: 'minecraft:diamond',
+      count: 2
     }
   ]);
   salvage('minecraft:netherite_shovel', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:stick',
-      'count': 2
+      item: 'minecraft:stick',
+      count: 2
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 1
+      item: 'minecraft:diamond',
+      count: 1
     }
   ]);
   salvage('minecraft:netherite_pickaxe', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:stick',
-      'count': 2
+      item: 'minecraft:stick',
+      count: 2
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 3
+      item: 'minecraft:diamond',
+      count: 3
     }
   ]);
   salvage('minecraft:netherite_hoe', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:stick',
-      'count': 2
+      item: 'minecraft:stick',
+      count: 2
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 2
+      item: 'minecraft:diamond',
+      count: 2
     }
   ]);
   salvage('minecraft:netherite_axe', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:stick',
-      'count': 2
+      item: 'minecraft:stick',
+      count: 2
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 3
+      item: 'minecraft:diamond',
+      count: 3
     }
   ]);
   salvage('minecraft:netherite_boots', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 4
+      item: 'minecraft:diamond',
+      count: 4
     }
   ]);
   salvage('minecraft:netherite_leggings', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 7
+      item: 'minecraft:diamond',
+      count: 7
     }
   ]);
   salvage('minecraft:netherite_chestplate', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 8
+      item: 'minecraft:diamond',
+      count: 8
     }
   ]);
   salvage('minecraft:netherite_helmet', [{
-      'item': 'minecraft:netherite_ingot',
-      'count': 1
+      item: 'minecraft:netherite_ingot',
+      count: 1
     },
     {
-      'item': 'minecraft:diamond',
-      'count': 5
+      item: 'minecraft:diamond',
+      count: 5
     }
   ]);
   salvage('minecraft:anvil', [{
-    'item': 'minecraft:iron_ingot',
-    'count': 31
+    item: 'minecraft:iron_ingot',
+    count: 31
   }]);
   salvage('minecraft:diamond_horse_armor', [{
-    'item': 'minecraft:diamond',
-    'count': 7
+    item: 'minecraft:diamond',
+    count: 7
   }]);
   salvage('minecraft:golden_horse_armor', [{
-    'item': 'minecraft:gold_ingot',
-    'count': 7
+    item: 'minecraft:gold_ingot',
+    count: 7
   }]);
   salvage('minecraft:iron_horse_armor', [{
-    'item': 'minecraft:iron_ingot',
-    'count': 7
+    item: 'minecraft:iron_ingot',
+    count: 7
   }]);
   salvage('minecraft:leather_horse_armor', [{
-    'item': 'minecraft:leather',
-    'count': 7
+    item: 'minecraft:leather',
+    count: 7
   }]);
   salvage('minecraft:minecart', [{
-    'item': 'minecraft:iron_ingot',
-    'count': 5
+    item: 'minecraft:iron_ingot',
+    count: 5
   }]);
   salvage('minecraft:saddle', [{
-      'item': 'minecraft:leather',
-      'count': 5
+      item: 'minecraft:leather',
+      count: 5
     },
     {
-      'item': 'minecraft:iron_nugget',
-      'count': 2
+      item: 'minecraft:iron_nugget',
+      count: 2
     }
   ]);
 
@@ -575,11 +577,11 @@ onEvent('recipes', e => {
   pedestalCrush('pamhc2foodcore:flouritem', 1, 'forge:flour_plants', 1);
   pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal', 0);
   pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1);
-  pedestalCrush('mekanism:dust_quartz', 1, 'forge:gems/quartz', 1);
+  pedestalCrush('thermal:quartz_dust', 1, 'forge:gems/quartz', 1);
   pedestalCrush('mekanism:dust_fluorite', 1, 'forge:gems/fluorite', 1);
   pedestalCrush('exnihilosequentia:dust', 1, 'minecraft:sand', 1);
   pedestalCrush('exnihilosequentia:crushed_end_stone', 1, 'minecraft:end_stone', 0);
-  pedestalSaw('mekanism:sawdust', 1, 'forge:rods/wooden', 1);
+  pedestalSaw('thermal:sawdust', 1, 'forge:rods/wooden', 1);
   pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1);
   pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1);
   e.recipes.appliedenergistics2.grinder({
@@ -717,10 +719,11 @@ onEvent('recipes', e => {
     '2',
     '3',
     '4',
-    '5'/* ,
-    'custom_allthemodium',
-    'custom_vibranium',
-    'custom_unobtainium' */
+    '5'
+    /* ,
+        'custom_allthemodium',
+        'custom_vibranium',
+        'custom_unobtainium' */
   ];
   solars.forEach(solar => {
     e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar);
@@ -728,77 +731,88 @@ onEvent('recipes', e => {
   //Smithing stuff
   function smithing(result, base, addition) {
     e.recipes.minecraft.smithing({
-      'base': {
-        'item': base
+      base: {
+        item: base
       },
-      'addition': {
-        'item': addition
+      addition: {
+        item: addition
       },
-      'result': {
-        'item': result
+      result: {
+        item: result
       }
     });
   }
   smithing('metalbarrels:wood_to_netherite', 'metalbarrels:wood_to_obsidian', 'minecraft:netherite_ingot');
+
+  e.custom({
+    type: 'astralsorcery:block_transmutation',
+    input: [{
+      block: 'minecraft:spruce_sapling'
+    }],
+    output: {
+      block: 'integrateddynamics:menril_sapling'
+    },
+    starlight: 100.0
+  });
   //Jumbo Furnace
   /*   function jumbo(ingredients, result, xp) {
       e.recipes.jumbofurnace.jumbo_smelting({
-        'ingredients': ingredients,
-        'result': {
-          'item': result
+        ingredients: ingredients,
+        result: {
+          item: result
         },
-        'experience': xp
+        experience: xp
       });
     }
     jumbo(
       [{
-          'type': 'forge:nbt',
-          'item': 'storagedrawers:emerald_storage_upgrade',
-          'count': 16
+          type: 'forge:nbt',
+          item: 'storagedrawers:emerald_storage_upgrade',
+          count: 16
         },
         {
-          'type': 'jumbofurnace:tag_stack',
-          'tag': 'forge:ingots/unobtainium',
-          'count': 2
+          type: 'jumbofurnace:tag_stack',
+          tag: 'forge:ingots/unobtainium',
+          count: 2
         },
         {
-          'type': 'jumbofurnace:tag_stack',
-          'tag': 'forge:ingots/allthemodium',
-          'count': 4
+          type: 'jumbofurnace:tag_stack',
+          tag: 'forge:ingots/allthemodium',
+          count: 4
         },
         {
-          'type': 'jumbofurnace:tag_stack',
-          'tag': 'forge:ender_pearls',
-          'count': 16
+          type: 'jumbofurnace:tag_stack',
+          tag: 'forge:ender_pearls',
+          count: 16
         }
       ],
       'storagedrawers:creative_storage_upgrade', 5
     );*/
   //Quark marble to Astral Sorcery Marble
   /*   e.recipes.astralsorcery.block_transmutation({
-      "input": {
-        "block": "quark:marble",
+      input: {
+        block: 'quark:marble',
       },
-      "output": {
-        "block": "astralsorcery:marble_raw"
+      output: {
+        block: 'astralsorcery:marble_raw'
       },
-      "starlight": 200.0
+      starlight: 200.0
     });
 
     e.recipes.astralsorcery.infuser({
-      "fluidInput": "astralsorcery:liquid_starlight",
-      "input": {
-        "item": "quark:marble"
+      fluidInput: 'astralsorcery:liquid_starlight',
+      input: {
+        item: 'quark:marble'
       },
-      "output": {
-        "item": "astralsorcery:marble_raw",
-        "count": 1
+      output: {
+        item: 'astralsorcery:marble_raw',
+        count: 1
       },
-      "consumptionChance": 0.1,
-      "duration": 100,
-      "consumeMultipleFluids": false,
-      "acceptChaliceInput": true,
-      "copyNBTToOutputs": false
+      consumptionChance: 0.1,
+      duration: 100,
+      consumeMultipleFluids: false,
+      acceptChaliceInput: true,
+      copyNBTToOutputs: false
     }); */
   //Reliquary changes
   e.remove({
@@ -822,20 +836,20 @@ onEvent('recipes', e => {
     'DGD',
     'AAA'
   ], {
-    'F': 'minecraft:furnace',
-    'D': 'minecraft:diamond_pickaxe',
-    'G': '#forge:storage_blocks/gold',
-    'A': '#forge:nuggets/allthemodium'
+    F: 'minecraft:furnace',
+    D: 'minecraft:diamond_pickaxe',
+    G: '#forge:storage_blocks/gold',
+    A: '#forge:nuggets/allthemodium'
   });
   e.shaped('quarryplus:workbenchplus', [
     'III',
     'GDG',
     'AAA'
   ], {
-    'I': '#forge:storage_blocks/iron',
-    'G': '#forge:storage_blocks/gold',
-    'D': '#forge:storage_blocks/diamond',
-    'A': '#forge:nuggets/allthemodium'
+    I: '#forge:storage_blocks/iron',
+    G: '#forge:storage_blocks/gold',
+    D: '#forge:storage_blocks/diamond',
+    A: '#forge:nuggets/allthemodium'
   }); */
 
   //Mining Gadgets
@@ -844,11 +858,11 @@ onEvent('recipes', e => {
     'DGD',
     'LAR'
   ], {
-    'L': '#forge:storage_blocks/lapis',
-    'R': '#forge:storage_blocks/redstone',
-    'D': '#forge:gems/diamond',
-    'A': '#forge:nuggets/allthemodium',
-    'G': 'minecraft:glass_pane'
+    L: '#forge:storage_blocks/lapis',
+    R: '#forge:storage_blocks/redstone',
+    D: '#forge:gems/diamond',
+    A: '#forge:nuggets/allthemodium',
+    G: 'minecraft:glass_pane'
   });
 
   //Mystical Agriculture
@@ -857,9 +871,9 @@ onEvent('recipes', e => {
     'AMA',
     'PMP'
   ], {
-    'P': 'mysticalagriculture:prosperity_ingot',
-    'M': 'botania:manasteel_ingot',
-    'A': '#forge:nuggets/allthemodium'
+    P: 'mysticalagriculture:prosperity_ingot',
+    M: 'botania:manasteel_ingot',
+    A: '#forge:nuggets/allthemodium'
   });
 
   //Mekanism
@@ -868,32 +882,32 @@ onEvent('recipes', e => {
     'LRL',
     'TST'
   ], {
-    'L': 'mekanism:logistical_sorter',
-    'R': 'mekanism:robit',
-    'T': 'mekanism:teleportation_core',
-    'A': '#mekanism:alloys/atomic',
-    'S': 'mekanism:steel_casing',
-    'U': '#forge:ingots/unobtainium'
+    L: 'mekanism:logistical_sorter',
+    R: 'mekanism:robit',
+    T: 'mekanism:teleportation_core',
+    A: '#mekanism:alloys/atomic',
+    S: 'mekanism:steel_casing',
+    U: '#forge:ingots/unobtainium'
   });
   e.shaped('mekanism:atomic_disassembler', [
     'RER',
     'RUR',
     ' V '
   ], {
-    'E': 'mekanism:energy_tablet',
-    'R': '#mekanism:alloys/reinforced',
-    'U': '#forge:circuits/ultimate',
-    'V': '#forge:ingots/vibranium'
+    E: 'mekanism:energy_tablet',
+    R: '#mekanism:alloys/reinforced',
+    U: '#forge:circuits/ultimate',
+    V: '#forge:ingots/vibranium'
   });
   e.shaped('mekanismgenerators:wind_generator', [
     ' O ',
     'OCO',
     'EBE'
   ], {
-    'E': 'mekanism:energy_tablet',
-    'C': 'mekanismgenerators:electromagnetic_coil',
-    'B': '#forge:circuits/basic',
-    'O': '#forge:ingots/osmium'
+    E: 'mekanism:energy_tablet',
+    C: 'mekanismgenerators:electromagnetic_coil',
+    B: '#forge:circuits/basic',
+    O: '#forge:ingots/osmium'
   });
 
   /* //Jetpacks
@@ -903,76 +917,76 @@ onEvent('recipes', e => {
     'TCT',
     ' R '
   ], {
-    'R': '#forge:dusts/redstone',
-    'C': 'ironjetpacks:advanced_coil',
-    'T': '#forge:gems/diamond'
+    R: '#forge:dusts/redstone',
+    C: 'ironjetpacks:advanced_coil',
+    T: '#forge:gems/diamond'
   });
   e.shaped('ironjetpacks:diamond_thruster', [
     'TAT',
     'ACA',
     'TFT'
   ], {
-    'F': 'minecraft:furnace',
-    'A': 'ironjetpacks:advanced_coil',
-    'C': 'ironjetpacks:diamond_cell',
-    'T': '#forge:gems/diamond'
+    F: 'minecraft:furnace',
+    A: 'ironjetpacks:advanced_coil',
+    C: 'ironjetpacks:diamond_cell',
+    T: '#forge:gems/diamond'
   });
   e.shaped('ironjetpacks:diamond_capacitor', [
     'RCR',
     'RCR',
     'RCR'
   ], {
-    'R': '#forge:gems/diamond',
-    'C': 'ironjetpacks:diamond_cell'
+    R: '#forge:gems/diamond',
+    C: 'ironjetpacks:diamond_cell'
   });
   e.shaped('ironjetpacks:diamond_jetpack', [
     'DCD',
     'DJD',
     'TRT'
   ], {
-    'D': '#forge:gems/diamond',
-    'C': 'ironjetpacks:diamond_capacitor',
-    'J': ['ironjetpacks:steel_jetpack', 'ironjetpacks:electrum_jetpack', 'ironjetpacks:invar_jetpack'],
-    'T': 'ironjetpacks:diamond_thruster',
-    'R': 'angelring:itemdiamondring'
+    D: '#forge:gems/diamond',
+    C: 'ironjetpacks:diamond_capacitor',
+    J: ['ironjetpacks:steel_jetpack', 'ironjetpacks:electrum_jetpack', 'ironjetpacks:invar_jetpack'],
+    T: 'ironjetpacks:diamond_thruster',
+    R: 'angelring:itemdiamondring'
   });
   e.shaped('ironjetpacks:platinum_cell', [
     ' R ',
     'TCT',
     ' R '
   ], {
-    'R': '#forge:dusts/redstone',
-    'C': 'ironjetpacks:advanced_coil',
-    'T': '#forge:ingots/platinum'
+    R: '#forge:dusts/redstone',
+    C: 'ironjetpacks:advanced_coil',
+    T: '#forge:ingots/platinum'
   });
   e.shaped('ironjetpacks:platinum_thruster', [
     'TAT',
     'ACA',
     'TFT'
   ], {
-    'F': 'minecraft:furnace',
-    'A': 'ironjetpacks:advanced_coil',
-    'C': 'ironjetpacks:platinum_cell',
-    'T': '#forge:ingots/platinum'
+    F: 'minecraft:furnace',
+    A: 'ironjetpacks:advanced_coil',
+    C: 'ironjetpacks:platinum_cell',
+    T: '#forge:ingots/platinum'
   });
   e.shaped('ironjetpacks:platinum_capacitor', [
     'RCR',
     'RCR',
     'RCR'
   ], {
-    'R': '#forge:ingots/platinum',
-    'C': 'ironjetpacks:platinum_cell'
+    R: '#forge:ingots/platinum',
+    C: 'ironjetpacks:platinum_cell'
   });
   e.shaped('ironjetpacks:platinum_jetpack', [
     'PCP',
     'PJP',
     'TRT'
   ], {
-    'P': '#forge:ingots/platinum',
-    'C': 'ironjetpacks:platinum_capacitor',
-    'J': ['ironjetpacks:steel_jetpack', 'ironjetpacks:electrum_jetpack', 'ironjetpacks:invar_jetpack'],
-    'T': 'ironjetpacks:platinum_thruster',
-    'R': 'angelring:itemdiamondring'
+    P: '#forge:ingots/platinum',
+    C: 'ironjetpacks:platinum_capacitor',
+    J: ['ironjetpacks:steel_jetpack', 'ironjetpacks:electrum_jetpack', 'ironjetpacks:invar_jetpack'],
+    T: 'ironjetpacks:platinum_thruster',
+    R: 'angelring:itemdiamondring'
   }); */
 
   //Foods
@@ -981,40 +995,40 @@ onEvent('recipes', e => {
     'FBF',
     'FFF'
   ], {
-    'F': '#forge:fruits',
-    'B': 'pamhc2foodcore:applejuiceitem'
+    F: '#forge:fruits',
+    B: 'pamhc2foodcore:applejuiceitem'
   });
   e.shaped('pamhc2foodcore:applejuiceitem', [
     'FFF',
     'FBF',
     'FFF'
   ], {
-    'F': 'minecraft:apple',
-    'B': 'minecraft:glass_bottle'
+    F: 'minecraft:apple',
+    B: 'minecraft:glass_bottle'
   });
   e.shaped('pamhc2foodcore:melonjuiceitem', [
     'FFF',
     'FBF',
     'FFF'
   ], {
-    'F': 'minecraft:melon_slice',
-    'B': 'minecraft:glass_bottle'
+    F: 'minecraft:melon_slice',
+    B: 'minecraft:glass_bottle'
   });
   e.shaped('pamhc2foodcore:sweetberryjuiceitem', [
     'FFF',
     'FBF',
     'FFF'
   ], {
-    'F': 'minecraft:sweet_berries',
-    'B': 'minecraft:glass_bottle'
+    F: 'minecraft:sweet_berries',
+    B: 'minecraft:glass_bottle'
   });
   e.shaped('pamhc2foodcore:p8juiceitem', [
     'FFF',
     'FBF',
     'FFF'
   ], {
-    'F': '#forge:vegetables',
-    'B': 'minecraft:glass_bottle'
+    F: '#forge:vegetables',
+    B: 'minecraft:glass_bottle'
   });
 
   //Angel Ring
@@ -1023,23 +1037,23 @@ onEvent('recipes', e => {
     'VEU',
     'DAD'
   ], {
-    'D': '#forge:storage_blocks/diamond',
-    'N': '#forge:storage_blocks/netherite',
-    'V': '#forge:storage_blocks/vibranium',
-    'U': '#forge:storage_blocks/unobtainium',
-    'A': '#forge:storage_blocks/allthemodium',
-    'E': 'minecraft:elytra'
+    D: '#forge:storage_blocks/diamond',
+    N: '#forge:storage_blocks/netherite',
+    V: '#forge:storage_blocks/vibranium',
+    U: '#forge:storage_blocks/unobtainium',
+    A: '#forge:storage_blocks/allthemodium',
+    E: 'minecraft:elytra'
   });
   e.shaped('angelring:itemring', [
     'CAC',
     'ARA',
     'DGD'
   ], {
-    'C': 'botania:pixie_dust',
-    'A': '#forge:storage_blocks/terrasteel',
-    'R': 'angelring:itemdiamondring',
-    'D': '#forge:nether_stars',
-    'G': 'botania:gaia_ingot'
+    C: 'botania:pixie_dust',
+    A: '#forge:storage_blocks/terrasteel',
+    R: 'angelring:itemdiamondring',
+    D: '#forge:nether_stars',
+    G: 'botania:gaia_ingot'
   });
 
   //Other recipes
@@ -1048,26 +1062,26 @@ onEvent('recipes', e => {
     ' I ',
     '  N'
   ], {
-    'N': '#forge:nuggets/iron',
-    'I': '#forge:ingots/iron'
+    N: '#forge:nuggets/iron',
+    I: '#forge:ingots/iron'
   });
   e.shaped('entangled:block', [
     'UEU',
     'ECE',
     'UEU'
   ], {
-    'U': '#forge:ingots/unobtainium',
-    'E': '#forge:ender_pearls',
-    'C': 'minecraft:ender_chest'
+    U: '#forge:ingots/unobtainium',
+    E: '#forge:ender_pearls',
+    C: 'minecraft:ender_chest'
   });
   e.shaped('entangled:item', [
     ' EC',
     ' UE',
     'U  '
   ], {
-    'U': '#forge:ingots/unobtainium',
-    'E': '#forge:ender_pearls',
-    'C': 'minecraft:ender_chest'
+    U: '#forge:ingots/unobtainium',
+    E: '#forge:ender_pearls',
+    C: 'minecraft:ender_chest'
   });
 
   //Extra Disks
@@ -1076,40 +1090,40 @@ onEvent('recipes', e => {
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'refinedstorage:1024k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:nuggets/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'refinedstorage:1024k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:nuggets/allthemodium'
   });
   e.shaped('extradisks:4096k_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:1024k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:nuggets/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:1024k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:nuggets/allthemodium'
   });
   e.shaped('extradisks:16384k_fluid_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'refinedstorage:4096k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:ingots/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'refinedstorage:4096k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:ingots/allthemodium'
   });
   e.shaped('extradisks:16384k_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:4096k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:ingots/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:4096k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:ingots/allthemodium'
   });
 
   e.shaped('extradisks:65536k_fluid_storage_part', [
@@ -1117,80 +1131,80 @@ onEvent('recipes', e => {
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:16384k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:ingots/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:16384k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:ingots/allthemodium'
   });
   e.shaped('extradisks:65536k_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:16384k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:ingots/allthemodium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:16384k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:ingots/allthemodium'
   });
   e.shaped('extradisks:262144k_fluid_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:65536k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:ingots/vibranium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:65536k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:ingots/vibranium'
   });
   e.shaped('extradisks:262144k_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:65536k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:ingots/vibranium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:65536k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:ingots/vibranium'
   });
   e.shaped('extradisks:1048576k_fluid_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:262144k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:ingots/unobtainium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:262144k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:ingots/unobtainium'
   });
   e.shaped('extradisks:1048576k_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:262144k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:ingots/unobtainium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:262144k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:ingots/unobtainium'
   });
   e.shaped('extradisks:infinite_fluid_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:1048576k_fluid_storage_part',
-    'b': 'minecraft:bucket',
-    'n': '#forge:ingots/unobtainium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:1048576k_fluid_storage_part',
+    b: 'minecraft:bucket',
+    n: '#forge:ingots/unobtainium'
   });
   e.shaped('extradisks:infinite_storage_part', [
     'ana',
     'fbf',
     'afa'
   ], {
-    'a': 'refinedstorage:advanced_processor',
-    'f': 'extradisks:1048576k_storage_part',
-    'b': '#forge:dusts/redstone',
-    'n': '#forge:ingots/unobtainium'
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:1048576k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: '#forge:ingots/unobtainium'
   });
 
   /* //Quark
@@ -1210,9 +1224,9 @@ onEvent('recipes', e => {
     'rmr',
     'ara'
   ], {
-    'a': '#forge:nuggets/allthemodium',
-    'e': '#forge:ender_pearls',
-    'r': '#forge:storage_blocks/redstone',
-    'm': 'rftoolsbase:machine_frame'
+    a: '#forge:nuggets/allthemodium',
+    e: '#forge:ender_pearls',
+    r: '#forge:storage_blocks/redstone',
+    m: 'rftoolsbase:machine_frame'
   });
 });

@@ -27,7 +27,7 @@ onEvent('recipes', e => {
     e.smelting(result, ingridients);
   }
 
-/*   e.replaceOutput('#forge:cheese', 'rats:cheese'); */
+  /*   e.replaceOutput('#forge:cheese', 'rats:cheese'); */
 
   //Modified recipes
   /* const combBlock = '#resourcefulbees:resourceful_honeycomb_block';
@@ -67,6 +67,19 @@ onEvent('recipes', e => {
     H: 'resourcefulbees:t3_apiary',
     S: '#forge:nether_stars'
   }); */
+  modifyShaped('allthemodium:teleport_pad', 1, [
+    'GBR',
+    'NEN',
+    'IBD'
+  ], {
+    G: '#forge:storage_blocks/gold',
+    B: '#forge:storage_blocks/allthemodium',
+    N: '#forge:storage_blocks/netherite',
+    E: 'botania:third_eye',
+    R: '#forge:storage_blocks/redstone',
+    I: '#forge:storage_blocks/iron',
+    D: '#forge:storage_blocks/diamond'
+  });
   modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book']);
   modifyShaped('buildinggadgets:gadget_exchanging', 1, [
     'iri',
@@ -86,7 +99,7 @@ onEvent('recipes', e => {
   ], {
     C: 'minecraft:honeycomb'
   });
-  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block').id('kubejs:shapeless/honeycomb');
+  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block');
   modifyShaped('solarflux:mirror', 3, [
     'GGG',
     'III'
@@ -159,19 +172,20 @@ onEvent('recipes', e => {
     E: 'immersiveengineering:electron_tube',
     T: '#forge:treated_wood',
     R: 'mekanism:resistive_heater'
-  });/* 
-  e.remove({
-    id: 'bagofyurting:bag_of_yurting'
   });
-  e.shaped(item.of('bagofyurting:bag_of_yurting', 1), [
-    'WSW',
-    'WEW',
-    'WWW'
-  ], {
-    W: '#minecraft:wool',
-    E: '#forge:ender_pearls',
-    S: '#forge:string'
-  }).id('kubejs:shaped/modified/bagofyurting.bag_of_yurting'); */
+  /* 
+    e.remove({
+      id: 'bagofyurting:bag_of_yurting'
+    });
+    e.shaped(item.of('bagofyurting:bag_of_yurting', 1), [
+      'WSW',
+      'WEW',
+      'WWW'
+    ], {
+      W: '#minecraft:wool',
+      E: '#forge:ender_pearls',
+      S: '#forge:string'
+    }); */
   var ingots = [
     '#forge:ingots/gold',
     '#forge:ingots/iron',
@@ -281,34 +295,34 @@ onEvent('recipes', e => {
     Q: '#forge:gems/quartz',
     S: '#minecraft:wooden_slabs'
   });
-/*   modifyShaped('minecraft:beehive', 1, [
-    'PPP',
-    'CCC',
-    'PPP'
-  ], {
-    P: '#minecraft:planks',
-    C: '#resourcefulbees:resourceful_honeycomb'
-  });
-  modifyShaped('resourcefulbees:centrifuge_controller', 1, [
-    'ICI',
-    'BAB',
-    'IRI'
-  ], {
-    I: 'resourcefulbees:centrifuge_casing',
-    C: 'resourcefulbees:centrifuge',
-    B: 'minecraft:iron_bars',
-    A: 'minecraft:comparator',
-    R: '#forge:storage_blocks/redstone'
-  });
-  modifyShaped('minecolonies:blockhutbuilder', 1, [
-    'PTP',
-    'PDP',
-    'PPP'
-  ], {
-    P: '#minecraft:planks',
-    D: '#minecraft:wooden_doors',
-    T: 'structurize:sceptergold'
-  }); */
+  /*   modifyShaped('minecraft:beehive', 1, [
+      'PPP',
+      'CCC',
+      'PPP'
+    ], {
+      P: '#minecraft:planks',
+      C: '#resourcefulbees:resourceful_honeycomb'
+    });
+    modifyShaped('resourcefulbees:centrifuge_controller', 1, [
+      'ICI',
+      'BAB',
+      'IRI'
+    ], {
+      I: 'resourcefulbees:centrifuge_casing',
+      C: 'resourcefulbees:centrifuge',
+      B: 'minecraft:iron_bars',
+      A: 'minecraft:comparator',
+      R: '#forge:storage_blocks/redstone'
+    });
+    modifyShaped('minecolonies:blockhutbuilder', 1, [
+      'PTP',
+      'PDP',
+      'PPP'
+    ], {
+      P: '#minecraft:planks',
+      D: '#minecraft:wooden_doors',
+      T: 'structurize:sceptergold'
+    }); */
   modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz');
   e.replaceInput('#appliedenergistics2:silicon', 'refinedstorage:silicon');
   e.remove({
@@ -471,40 +485,40 @@ onEvent('recipes', e => {
     ], {
       W: 'minecraft:' + color + '_wool'
     });
-/*     e.remove({
-      output: 'comforts:sleeping_bag_' + color
-    });
-    if (color !== 'light_gray') {
-      e.shaped(item.of('comforts:sleeping_bag_' + color), [
-        'WWW',
-        'SSS',
-        'WWW',
-      ], {
-        W: 'absentbydesign:slab_wool_' + color,
-        S: '#forge:string'
-      });
-      e.shaped(item.of('minecraft:' + color + '_wool', 1), [
-        'W',
-        'W'
-      ], {
-        W: 'absentbydesign:slab_wool_' + color
-      });
-    } else {
-      e.shaped(item.of('comforts:sleeping_bag_light_gray'), [
-        'WWW',
-        'SSS',
-        'WWW',
-      ], {
-        W: 'absentbydesign:slab_wool_silver',
-        S: '#forge:string'
-      });
-      e.shaped(item.of('minecraft:light_gray_wool', 1), [
-        'W',
-        'W'
-      ], {
-        W: 'absentbydesign:slab_wool_silver'
-      });
-    } */
+    /*     e.remove({
+          output: 'comforts:sleeping_bag_' + color
+        });
+        if (color !== 'light_gray') {
+          e.shaped(item.of('comforts:sleeping_bag_' + color), [
+            'WWW',
+            'SSS',
+            'WWW',
+          ], {
+            W: 'absentbydesign:slab_wool_' + color,
+            S: '#forge:string'
+          });
+          e.shaped(item.of('minecraft:' + color + '_wool', 1), [
+            'W',
+            'W'
+          ], {
+            W: 'absentbydesign:slab_wool_' + color
+          });
+        } else {
+          e.shaped(item.of('comforts:sleeping_bag_light_gray'), [
+            'WWW',
+            'SSS',
+            'WWW',
+          ], {
+            W: 'absentbydesign:slab_wool_silver',
+            S: '#forge:string'
+          });
+          e.shaped(item.of('minecraft:light_gray_wool', 1), [
+            'W',
+            'W'
+          ], {
+            W: 'absentbydesign:slab_wool_silver'
+          });
+        } */
     e.shaped(item.of('minecraft:' + color + '_stained_glass', 3), [
       'GGG',
       'G G',

@@ -142,5 +142,5 @@ onEvent('recipes', e => {
   customBlock('kubejs:aquamarine_block', 'astralsorcery:aquamarine');
   customBlock('kubejs:fluorite_block', 'mekanism:fluorite_gem');
   customBlock('kubejs:lithium_block', 'mekanism:dust_lithium');
-  customBlock('botania:blaze_mesh', 'minecraft:blaze_rod');
+  customBlock('botania:blaze_block', 'minecraft:blaze_rod');
 });

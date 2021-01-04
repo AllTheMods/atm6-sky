@@ -47,7 +47,7 @@ onEvent('recipes', e => {
     });
   }
   //Crucible heating 'blocks'
-  heat('botania:blaze_mesh', 8);
+  heat('botania:blaze_block', 8);
 
   //Params go like this: Mesh, Drop chanche, Input item, Output item, Waterlogged.
   //End sieve

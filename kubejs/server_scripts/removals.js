@@ -44,7 +44,7 @@ onEvent('recipes', e => {
 
       'xreliquary:alkahestry_tome',
 
-      'botania:blaze_mesh',
+      'botania:blaze_block',
 
 /*       'naturesaura:chunk_loader', */
 

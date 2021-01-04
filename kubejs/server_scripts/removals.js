@@ -6,6 +6,7 @@ onEvent('recipes', e => {
     'minecraft:glass',
 
     'botania:conversions/blazeblock_deconstruct',
+    'botania:blaze_block',
 
     'pedestals:pedestal_crushing/dustnethergold',
 
@@ -43,8 +44,6 @@ onEvent('recipes', e => {
       'forbidden_arcanus:iron_chain',
 
       'xreliquary:alkahestry_tome',
-
-      'botania:blaze_block',
 
 /*       'naturesaura:chunk_loader', */
 

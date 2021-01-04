@@ -576,6 +576,7 @@ onEvent('recipes', e => {
   pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal', 0);
   pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1);
   pedestalCrush('mekanism:dust_quartz', 1, 'forge:gems/quartz', 1);
+  pedestalCrush('mekanism:dust_fluorite', 1, 'forge:gems/fluorite', 1);
   pedestalCrush('exnihilosequentia:dust', 1, 'minecraft:sand', 1);
   pedestalCrush('exnihilosequentia:crushed_end_stone', 1, 'minecraft:end_stone', 0);
   pedestalSaw('mekanism:sawdust', 1, 'forge:rods/wooden', 1);
@@ -799,40 +800,6 @@ onEvent('recipes', e => {
       "acceptChaliceInput": true,
       "copyNBTToOutputs": false
     }); */
-
-  e.remove({
-    id: 'appliedenergistics2:grinder/flour'
-  });
-  e.remove({
-    output: [
-      '#minecraft:signs',
-      '#minecraft:wooden_stairs',
-      '#minecraft:wooden_slabs',
-      '#minecraft:wooden_trapdoors',
-      '#minecraft:wooden_pressure_plates',
-      'minecraft:stick'
-    ],
-    type: 'pedestals:pedestal_sawing'
-  });
-  pedestalCrush('pamhc2foodcore:flouritem', 1, 'forge:flour_plants', 1);
-  pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal', 0);
-  pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1);
-  pedestalCrush('mekanism:dust_quartz', 1, 'forge:gems/quartz', 1);
-  pedestalSaw('mekanism:sawdust', 1, 'forge:rods/wooden', 1);
-  pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1);
-  pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1);
-  e.recipes.appliedenergistics2.grinder({
-    input: {
-      tag: 'forge:flour_plants'
-    },
-    result: {
-      primary: {
-        item: 'pamhc2foodcore:flouritem',
-        count: 1
-      }
-    },
-    turns: 8
-  });
   //Reliquary changes
   e.remove({
     output: 'xreliquary:fertile_lily_pad',

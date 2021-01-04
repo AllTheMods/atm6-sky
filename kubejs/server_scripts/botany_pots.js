@@ -240,7 +240,7 @@ onEvent('recipes', e => {
             });
         }
 
-        e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil]);
+        e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil]).id('kubejs:botany_pot/tree/' + mod + '/' + name);
     };
 
     /* 
@@ -333,5 +333,5 @@ onEvent('recipes', e => {
             maxRolls: 2
         }
     ];
-    e.recipes.botanypots.crop(results, 'ars_nouveau:mana_bloom_crop').categories(['dirt']);
+    e.recipes.botanypots.crop(results, 'ars_nouveau:mana_bloom_crop').categories(['dirt']).id('kubejs:botany_pot/crop/ars_nouveau/mana_bloom');
 });

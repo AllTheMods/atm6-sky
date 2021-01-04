@@ -5,20 +5,18 @@ onEvent('recipes', e => {
     e.shapeless('allthemodium:vibranium_allthemodium_alloy_dust', ['allthemodium:allthemodium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/vibranium_allthemodium_alloy_dust');
     e.recipes.mekanism.nucleosynthesizing({
         'itemInput': {
-            'ingredient': {
-              'tag': 'forge:dusts/unobtainium_vibranium_alloy'
-            }
-          },
-          'gasInput': {
+            'tag': 'forge:dusts/unobtainium_vibranium_alloy'
+        },
+        'gasInput': {
             'amount': 1,
             'gas': 'mekanism:antimatter'
-          },
-          'output': {
+        },
+        'output': {
             'item': 'kubejs:uu_matter',
             'count': 16
-          },
-          'duration': 1000
-    }).id('kubejs:nucleosynthesizing/uu-matter');
+        },
+        'duration': 1000
+    });
     e.recipes.psi.trick_crafting({
         'input': {
             'tag': 'forge:dusts/unobtainium_vibranium_alloy'
@@ -32,7 +30,7 @@ onEvent('recipes', e => {
             'item': 'psi:cad_assembly_psimetal'
         },
         'trick': 'psi:trick_ebony_ivory'
-    }).id('kubejs:trick_crafting/uu-matter');
+    });
 
     function mShaped(result, pattern, count) {
         e.recipes.cucumber.shaped_no_mirror({

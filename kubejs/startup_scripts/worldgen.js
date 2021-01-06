@@ -4,10 +4,12 @@ onEvent('worldgen.remove', e => {
     function removeOre(mod, ores) {
         ores.forEach(name => {
             const id = mod === 'immersiveengineering' ? `${mod}:ore_${name}` : `${mod}:${name}_ore`;
-            e.removeOres(ores => {
-                ores.blocks = [id];
-            });
-            console.log(`Removing worldgen for ${id}`);
+            if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
+                e.removeOres(ores => {
+                    ores.blocks = [id];
+                });
+                console.log(`Removing worldgen for ${id}`);
+            }
         });
     }
     removeOre('immersiveengineering', ['copper', 'aluminum', 'lead', 'silver', 'nickel', 'uranium']);

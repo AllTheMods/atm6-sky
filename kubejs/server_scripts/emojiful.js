@@ -1,11 +1,10 @@
-/*
 onEvent('recipes', e => {
     const emote = (name, url) => {
         e.custom({
             type: 'emojiful:emoji_recipe',
             category: 'atm6',
             name: name,
-            url: 'https://cdn.discordapp.com/emojis/' + url,
+            url: `https://cdn.discordapp.com/emojis/${url}`,
         });
     };
     emote('asevil', '581816328260943872.gif');
@@ -33,4 +32,3 @@ onEvent('recipes', e => {
     emote('thinkeyes', '642567846597230614.png');
     emote('thonk', '690375699453706250.png');
 });
-*/

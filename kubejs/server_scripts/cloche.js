@@ -5,17 +5,8 @@ onEvent('recipes', e => {
       let rItem = `mysticalagriculture:${type}_essence`;
       let inItem = `mysticalagriculture:${type}_seeds`;
       let renBlock = `mysticalagriculture:${type}_crop`;
-      e.custom({
-        type: 'immersiveengineering:cloche',
-        results: Item.of(rItem, rCount).toResultJson(),
-        input: Ingredient.of(inItem).toJson(),
-        soil: Ingredient.of(soil).toJson(),
-        time: time,
-        render: {
-          type: 'crop',
-          block: renBlock
-        }
-      });
+      e.recipes.immersiveengineering.cloche(Item.of(rItem, rCount), inItem, soil, renBlock).time(time);
+      //console.log(`Result= '${rItem}' Seed= '${inItem}' RenderBlock= '${renBlock}'`);
     });
   };
 
@@ -29,35 +20,13 @@ onEvent('recipes', e => {
   let inf = (rCount, time, soil) => tier(['inferium'], time, soil, rCount);
 
   const regular = (results, seed, crop) => {
-    e.custom({
-      type: 'immersiveengineering:cloche',
-      results: results,
-      input: Ingredient.of(seed).toJson(),
-      soil: {
-        item: 'minecraft:dirt'
-      },
-      time: 600,
-      render: {
-        type: 'crop',
-        block: crop
-      }
-    });
+    e.recipes.immersiveengineering.cloche(results, item.of(seed), 'minecraft:dirt', crop).time(600);
   };
 
   //Regular crops
-  /*
-  regular([
-    Item.of('byg:blueberries', 2).toResultJson()
-  ], 'byg:blueberries', 'byg:blueberry_bush');
-  */
-  regular([
-    Item.of('forbidden_arcanus:arcane_gold_nugget').toResultJson(),
-    Item.of('forbidden_arcanus:golden_orchid_seeds').toResultJson()
-  ], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid');
-  regular([
-    Item.of('silentgear:flax_fiber', 2).toResultJson(),
-    Item.of('silentgear:flax_seeds').toResultJson()
-  ], 'silentgear:flax_seeds', 'silentgear:flax_plant');
+  //regular([Item.of('byg:blueberries', 2)], 'byg:blueberries', 'byg:blueberry_bush');
+  regular(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid');
+  regular([item.of('silentgear:flax_fiber', 2), 'silentgear:flax_seeds'], 'silentgear:flax_seeds', 'silentgear:flax_plant');
 
   //Inferium
   inf(1, 1500, 'minecraft:dirt');

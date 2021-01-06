@@ -3,20 +3,24 @@ onEvent('recipes', e => {
   var mekEnrich = e.recipes.mekanism.enriching;
 
   const energize = (ingredient, result, rCount, power) => {
-    e.custom({
-      type: 'powah:energizing',
+    e.recipes.powah.energizing({
       ingredients: ingredient,
       energy: power,
-      result: Item.of(result, rCount).toResultJson()
+      result: {
+        item: result,
+        count: rCount
+      }
     });
   };
 
   const pressure = (inputs, result, rCount, pressure) => {
-    e.custom({
-      type: 'pneumaticcraft:pressure_chamber',
+    e.recipes.pneumaticcraft.pressure_chamber({
       inputs: inputs,
       pressure: pressure,
-      results: [Item.of(result, rCount).toResultJson()]
+      results: [{
+        item: result,
+        count: rCount
+      }]
     });
   };
 
@@ -38,31 +42,35 @@ onEvent('recipes', e => {
   });
 
   //Powah recipes
-  energize([
-    Ingredient.of('#forge:ingots/allthemodium').toJson(),
-    Ingredient.of('#forge:ingots/unobtainium').toJson()
-  ], 'allthemodium:unobtainium_allthemodium_alloy_ingot', 1, 50000);
-  energize([
-    Ingredient.of('#forge:ingots/vibranium').toJson(),
-    Ingredient.of('#forge:ingots/allthemodium').toJson()
-  ], 'allthemodium:vibranium_allthemodium_alloy_ingot', 1, 50000);
-  energize([
-    Ingredient.of('#forge:ingots/vibranium').toJson(),
-    Ingredient.of('#forge:ingots/unobtainium').toJson()
-  ], 'allthemodium:unobtainium_vibranium_alloy_ingot', 1, 50000);
-  energize([
-    Ingredient.of('#forge:storage_blocks/iron').toJson(),
-    Ingredient.of('#forge:storage_blocks/gold').toJson()
-  ], 'powah:energized_steel_block', 2, 90000);
-  energize([
-    Ingredient.of('botania:blaze_block').toJson()
-  ], 'powah:blazing_crystal_block', 1, 810000);
-  energize([
-    Ingredient.of('#forge:storage_blocks/diamond').toJson()
-  ], 'powah:niotic_crystal_block', 1, 2700000);
-  energize([
-    Ingredient.of('#forge:storage_blocks/emerald').toJson()
-  ], 'powah:spirited_crystal_block', 1, 9000000);
+  energize([{
+    tag: 'forge:ingots/allthemodium'
+  }, {
+    tag: 'forge:ingots/unobtainium'
+  }], 'allthemodium:unobtainium_allthemodium_alloy_ingot', 1, 50000);
+  energize([{
+    tag: 'forge:ingots/vibranium'
+  }, {
+    tag: 'forge:ingots/allthemodium'
+  }], 'allthemodium:vibranium_allthemodium_alloy_ingot', 1, 50000);
+  energize([{
+    tag: 'forge:ingots/vibranium'
+  }, {
+    tag: 'forge:ingots/unobtainium'
+  }], 'allthemodium:unobtainium_vibranium_alloy_ingot', 1, 50000);
+  energize([{
+    tag: 'forge:storage_blocks/iron'
+  }, {
+    tag: 'forge:storage_blocks/gold'
+  }], 'powah:energized_steel_block', 2, 90000);
+  energize([{
+    item: 'botania:blaze_block'
+  }], 'powah:blazing_crystal_block', 1, 810000);
+  energize([{
+    tag: 'forge:storage_blocks/diamond'
+  }], 'powah:niotic_crystal_block', 1, 2700000);
+  energize([{
+    tag: 'forge:storage_blocks/emerald'
+  }], 'powah:spirited_crystal_block', 1, 9000000);
 
   //Misc recipes
   e.custom({
@@ -153,7 +161,8 @@ onEvent('recipes', e => {
   ], {
     L: '#minecraft:logs'
   }, 16);
-  /* kjsShaped('minecraft:water_bucket', [
+  /*
+  kjsShaped('minecraft:water_bucket', [
     ' C ',
     'CBC',
     ' C '
@@ -168,7 +177,8 @@ onEvent('recipes', e => {
   ], {
     C: 'resourcefulbees:lava_honeycomb',
     B: 'minecraft:bucket'
-  }); */
+  });
+  */
   kjsShaped('minecraft:chest', [
     'LLL',
     'L L',
@@ -192,15 +202,24 @@ onEvent('recipes', e => {
   mekEnrich(item.of('powah:uraninite', 8), 'powah:uraninite_ore_dense');
 
   //Creative recipes
-  const cEnerg = (item, result) => {
-    energize(item, result, 1, 42000000);
-  };
-  cEnerg('appliedenergistics2:dense_energy_cell', 'appliedenergistics2:creative_energy_cell');
-  cEnerg('refinedstorage:controller', 'refinedstorage:creative_controller');
-  cEnerg('refinedstorageaddons:wireless_crafting_grid', 'refinedstorageaddons:creative_wireless_crafting_grid');
-  cEnerg('refinedstorage:wireless_crafting_monitor', 'refinedstorage:creative_wireless_crafting_monitor');
-  cEnerg('refinedstorage:wireless_fluid_grid', 'refinedstorage:creative_wireless_fluid_grid');
-  cEnerg('refinedstorage:wireless_grid', 'refinedstorage:creative_wireless_grid');
+  energize([{
+    item: 'appliedenergistics2:dense_energy_cell'
+  }], 'appliedenergistics2:creative_energy_cell', 1, 420000000);
+  energize([{
+    item: 'refinedstorage:controller'
+  }], 'refinedstorage:creative_controller', 1, 420000000);
+  energize([{
+    item: 'refinedstorageaddons:wireless_crafting_grid'
+  }], 'refinedstorageaddons:creative_wireless_crafting_grid', 1, 420000);
+  energize([{
+    item: 'refinedstorage:wireless_crafting_monitor'
+  }], 'refinedstorage:creative_wireless_crafting_monitor', 1, 420000);
+  energize([{
+    item: 'refinedstorage:wireless_fluid_grid'
+  }], 'refinedstorage:creative_wireless_fluid_grid', 1, 420000);
+  energize([{
+    item: 'refinedstorage:wireless_grid'
+  }], 'refinedstorage:creative_wireless_grid', 1, 420000);
   e.shapeless(item.of('botania:mana_tablet', {
     mana: 500000,
     creative: 1
@@ -209,16 +228,53 @@ onEvent('recipes', e => {
     mana: 500000,
     creative: 1
   })]);
-  pressure([
-    Ingredient.of('mysticalagradditions:insanium_block', 16).toJson(),
-    Ingredient.of('#forge:pellets/antimatter', 16).toJson(),
-    Ingredient.of('botania:gaia_ingot', 8).toJson(),
-    Ingredient.of('#forge:storage_blocks/allthemodium', 4).toJson(),
-    Ingredient.of('#forge:storage_blocks/vibranium', 4).toJson(),
-    Ingredient.of('#forge:storage_blocks/unobtainium', 4).toJson(),
-    //Ingredient.of('elementalcraft:purerock', 8).toJson(),
-    //Ingredient.of('mahoutsukai:fae_essence').toJson(),
-    Ingredient.of('xreliquary:angelheart_vial', 12).toJson()
+  pressure([{
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'mysticalagradditions:insanium_block',
+      'count': 16
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'tag': 'forge:pellets/antimatter',
+      'count': 16
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'botania:gaia_ingot',
+      'count': 8
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'tag': 'forge:storage_blocks/allthemodium',
+      'count': 4
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'tag': 'forge:storage_blocks/vibranium',
+      'count': 4
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'tag': 'forge:storage_blocks/unobtainium',
+      'count': 4
+    },
+    /*
+      {
+        'type': 'pneumaticcraft:stacked_item',
+        'item': 'elementalcraft:purerock',
+        'count': 8
+      }, */
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'xreliquary:angelheart_vial',
+      'count': 12
+    }
+    /* ,
+      {
+        'type': 'pneumaticcraft:stacked_item',
+        'item': 'mahoutsukai:fae_essence',
+        'count': 1
+      } */
   ], 'mysticalagradditions:creative_essence', 1, 4.9);
   kjsShaped('botania:creative_pool', [
     'CSC',

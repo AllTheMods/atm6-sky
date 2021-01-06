@@ -1,22 +1,11 @@
 //priority: 997
-
-//If unifiable item doesn't have an ore, add it below
-noOre = [
-  'steel',
-  'azure_silver',
-  'crimson_iron',
-  'bronze',
-  'constantan',
-  'electrum'
-];
-
 onEvent('recipes', e => {
   const multiSmelt = (output, input) => {
     e.smelting(output, input).xp(0.5);
     e.blasting(output, input).xp(0.5);
   };
 
-  function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
+  const unifyMetal = (name, ingotItem, dustItem, blockItem, nuggetItem) => {
     e.replaceOutput(`#forge:ingots/${name}`, ingotItem);
     e.replaceOutput(`#forge:dusts/${name}`, dustItem);
     e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem);
@@ -44,120 +33,71 @@ onEvent('recipes', e => {
       input: `#forge:ingots/${name}`,
       type: 'immersiveengineering:crusher'
     });
-    multiSmelt(ingotItem, `#forge:dusts/${name}`);
-    e.custom({
-      type: 'pedestals:pedestal_crushing',
-      ingredient: {
-        tag: `forge:ingots/${name}`
-      },
-      result: {
-        item: dustItem,
-        count: 1
-      }
-    });
     e.remove({
       id: `appliedenergistics2:grinder/${name}_dust_ingot`
     });
+    multiSmelt(ingotItem, `#forge:dusts/${name}`);
+    e.custom({
+      type: 'pedestals:pedestal_crushing',
+      ingredient: Ingredient.of(`#forge:ingots/${name}`).toJson(),
+      result: Item.of(dustItem).toResultJson()
+    });
     e.custom({
       type: 'appliedenergistics2:grinder',
-      input: {
-        tag: `forge:ingots/${name}`
-      },
+      input: Ingredient.of(`#forge:ingots/${name}`).toJson(),
       result: {
-        primary: {
-          item: dustItem,
-          count: 1
-        }
+        primary: Item.of(dustItem).toResultJson()
       },
       turns: 8
     });
-    e.custom({
-      type: 'immersiveengineering:crusher',
-      secondaries: [],
-      result: {
-        base_ingredient: {
-          item: dustItem
-        }
-      },
-      input: {
-        tag: `forge:ingots/${name}`
-      },
-      energy: 3000
-    });
+    e.recipes.immersiveengineering.crusher(item.of(dustItem), `#forge:ingots/${name}`);
     if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
       multiSmelt(ingotItem, `#forge:ores/${name}`);
       e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`);
       //e.recipes.mekanism.enriching(item.of(dustItem), `#mekanism:dirty_dusts/${name}`);
       //This is here to stop crushing hammer recipes for modium from generating
-      /* if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
+      /*
+      if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({
-          id: `engineerstools:crushing/${name} + '_grit_crushing_recipe'
+          id: `engineerstools:crushing/${name}_grit_crushing_recipe`
         });
         e.custom({
           type: 'engineerstools:crafting_extended_shapeless',
           group: 'grit',
-          ingredients: [{
-              tag: `forge:ores/${name}`
-            },
-            {
-              item: 'engineerstools:crushing_hammer'
-            }
+          ingredients: [
+            Ingredient.of(`#forge:ingots/${name}`).toJson(),
+            Ingredient.of('engineerstools:crushing_hammer').toJson(),
           ],
-          result: {
-            item: dustItem,
-            count: 2
-          },
+          result: Item.of(dustItem, 2).toResultJson(),
           aspects: {
             tool: 'engineerstools:crushing_hammer',
             tool_damage: 25
           }
         });
-      } */
-      e.custom({
-        type: 'immersiveengineering:crusher',
-        secondaries: [],
-        result: {
-          count: 2,
-          base_ingredient: {
-            item: dustItem
-          }
-        },
-        input: {
-          tag: `forge:ores/${name}`
-        },
-        energy: 3000
-      });
+      }
+      */
+      e.recipes.immersiveengineering.crusher(item.of(dustItem, 2), `#forge:ores/${name}`);
       e.remove({
         id: `pedestals:pedestal_crushing/dust${name}`
       });
       e.custom({
         type: 'pedestals:pedestal_crushing',
-        ingredient: {
-          tag: `forge:ores/${name}`
-        },
-        result: {
-          item: dustItem,
-          count: 2
-        }
+        ingredient: Ingredient.of(`#forge:ingots/${name}`).toJson(),
+        result: Item.of(dustItem, 2).toResultJson()
       });
       e.remove({
         id: `appliedenergistics2:grinder/${name}_dust_ore`
       });
       e.custom({
         type: 'appliedenergistics2:grinder',
-        input: {
-          tag: `forge:ores/${name}`
-        },
+        input: Ingredient.of(`#forge:ingots/${name}`).toJson(),
         result: {
-          primary: {
-            item: dustItem,
-            count: 2
-          }
+          primary: Item.of(dustItem, 2).toResultJson()
         },
         turns: 8
       });
     }
-  }
+  };
 
   unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget');
   unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget');
@@ -181,10 +121,10 @@ onEvent('recipes', e => {
   unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
   unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
 
-  function replace(gone, stay) {
+  const replace = (gone, stay) => {
     e.replaceOutput(gone, stay);
     e.replaceInput(gone, stay);
-  }
+  };
   replace('#appliedenergistics2:dusts/ender', 'thermal:ender_pearl_dust');
   replace('#forge:dusts/sulfur', 'thermal:sulfur_dust');
   replace('#forge:sawdust', 'thermal:sawdust');

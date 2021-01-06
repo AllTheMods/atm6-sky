@@ -1,17 +1,16 @@
 onEvent('recipes', e => {
     //Soils
-    function makeSoil(input, name, categories, growthModifier) {
-        e.recipes.botanypots.soil({
-            input: {
-                item: input
-            },
+    const makeSoil = (input, name, categories, growthModifier) => {
+        e.custom({
+            type: 'botanypots:soil',
+            input: Ingredient.of(input).toJson(),
             display: {
                 block: input
             },
             categories: categories,
             growthModifier: growthModifier
         }).id(`kubejs:botany_pots/soil/${name}`);
-    }
+    };
 
     makeSoil('mysticalagradditions:insanium_farmland', 'insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50);
     makeSoil('kubejs:magical_soil', 'magical_soil', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium', 'magical'], 0.75);
@@ -26,12 +25,8 @@ onEvent('recipes', e => {
                 id: `mysticalagriculture:crops/${type}`
             });
             e.recipes.botanypots.crop({
-                seed: {
-                    item: inItem
-                },
-                categories: [
-                    soil
-                ],
+                seed: Ingredient.of(inItem).toJson(),
+                categories: [soil],
                 growthTicks: time,
                 display: {
                     block: renBlock,
@@ -41,25 +36,19 @@ onEvent('recipes', e => {
                 },
                 results: [{
                         chance: 0.75,
-                        output: {
-                            item: rItem
-                        },
+                        output: Item.of(rItem).toResultJson(),
                         minRolls: 1,
                         maxRolls: 3
                     },
                     {
                         chance: 0.05,
-                        output: {
-                            item: inItem
-                        },
+                        output: Item.of(inItem).toResultJson(),
                         minRolls: 1,
                         maxRolls: 1
                     },
                     {
                         chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
+                        output: Item.of('mysticalagriculture:fertilized_essence').toResultJson(),
                         minRolls: 1,
                         maxRolls: 1
                     }

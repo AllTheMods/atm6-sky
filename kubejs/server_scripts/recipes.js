@@ -1,11 +1,10 @@
 onEvent('recipes', e => {
   var mekCrush = e.recipes.mekanism.crushing;
   var mekEnrich = e.recipes.mekanism.enriching;
-  var pedCrush = e.recipes.pedestals.pedestal_crushing;
-  var pedSaw = e.recipes.pedestals.pedestal_sawing;
 
-  function energize(ingredient, result, rCount, power) {
-    e.recipes.powah.energizing({
+  const energize = (ingredient, result, rCount, power) => {
+    e.custom({
+      type: 'powah:energizing',
       ingredients: ingredient,
       energy: power,
       result: {
@@ -13,10 +12,11 @@ onEvent('recipes', e => {
         count: rCount
       }
     });
-  }
+  };
 
-  function pressure(inputs, result, rCount, pressure) {
-    e.recipes.pneumaticcraft.pressure_chamber({
+  const pressure = (inputs, result, rCount, pressure) => {
+    e.custom({
+      type: 'pneumaticcraft:pressure_chamber',
       inputs: inputs,
       pressure: pressure,
       results: [{
@@ -24,23 +24,23 @@ onEvent('recipes', e => {
         count: rCount
       }]
     });
-  }
+  };
 
-  function kjsShaped(result, pattern, ingredients, count) {
+  const kjsShaped = (result, pattern, ingredients, count) => {
     e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients);
-  }
+  };
 
-  function kjsShapeless(result, ingredients, count) {
+  const kjsShapeless = (result, ingredients, count) => {
     e.shapeless(item.of(result, count != null ? count : 1), ingredients);
-  }
+  };
 
   //Make bio fuel use tags instead of invidual items
   e.remove({
     output: 'mekanism:bio_fuel'
   });
   var bioFuels = [2, 4, 5, 7, 8];
-  utils.listOf(bioFuels).forEach(function (bioFuel) {
-    mekCrush(item.of('mekanism:bio_fuel', bioFuel), '#misctags:biofuel' + bioFuel);
+  bioFuels.forEach(bioFuel => {
+    mekCrush(item.of('mekanism:bio_fuel', bioFuel), `#misctags:biofuel${bioFuel}`);
   });
 
   //Powah recipes
@@ -75,6 +75,17 @@ onEvent('recipes', e => {
   }], 'powah:spirited_crystal_block', 1, 9000000);
 
   //Misc recipes
+  e.custom({
+    type: 'cyclic:solidifier',
+    inputTop: Ingredient.of('woot:light_blue_dyeplate').toJson(),
+    inputMiddle: Ingredient.of('#minecraft:saplings').toJson(),
+    inputBottom: Ingredient.of('woot:light_blue_dyeplate').toJson(),
+    mix: {
+      fluid: 'cyclic:slime',
+      count: 1000
+    },
+    result: Item.of('integrateddynamics:menril_sapling').toResultJson()
+  });
   kjsShaped('computercraft:turtle_advanced', [
     'III',
     'ICI',
@@ -189,8 +200,6 @@ onEvent('recipes', e => {
 
   mekCrush(item.of('minecraft:blaze_powder', 4), '#forge:rods/blaze');
   mekCrush(item.of('minecraft:quartz', 4), '#forge:storage_blocks/quartz');
-  mekCrush(item.of('exnihilosequentia:dust'), '#minecraft:sand');
-  mekCrush(item.of('exnihilosequentia:crushed_end_stone'), 'minecraft:end_stone');
   mekEnrich(item.of('minecraft:blaze_rod'), [item.of('minecraft:blaze_powder', 4)]);
   mekEnrich(item.of('powah:uraninite', 2), 'powah:uraninite_ore_poor');
   mekEnrich(item.of('powah:uraninite', 4), 'powah:uraninite_ore');
@@ -253,7 +262,7 @@ onEvent('recipes', e => {
       tag: 'forge:storage_blocks/unobtainium',
       count: 4
     },
-    /* 
+    /*
         {
           type: 'pneumaticcraft:stacked_item',
           item: 'elementalcraft:purerock',
@@ -313,240 +322,132 @@ onEvent('recipes', e => {
     }); */
 
   //SGear salvaging
-  function salvage(item, results) {
-    e.recipes.silentgear.salvaging({
-      ingredient: {
-        item: item
-      },
+  const salvage = (item, results) => {
+    e.custom({
+      type: 'silentgear:salvaging',
+      ingredient: Ingredient.of(item).toJson(),
       results: results
     });
-  }
-  salvage('minecraft:netherite_sword', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:stick',
-      count: 1
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 2
-    }
+  };
+  salvage('minecraft:netherite_sword', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:stick').toResultJson(),
+    Item.of('minecraft:diamond', 2).toResultJson()
   ]);
-  salvage('minecraft:netherite_shovel', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:stick',
-      count: 2
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 1
-    }
+  salvage('minecraft:netherite_shovel', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:stick', 2).toResultJson(),
+    Item.of('minecraft:diamond', 1).toResultJson()
   ]);
-  salvage('minecraft:netherite_pickaxe', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:stick',
-      count: 2
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 3
-    }
+  salvage('minecraft:netherite_pickaxe', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:stick', 2).toResultJson(),
+    Item.of('minecraft:diamond', 3).toResultJson()
   ]);
-  salvage('minecraft:netherite_hoe', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:stick',
-      count: 2
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 2
-    }
+  salvage('minecraft:netherite_hoe', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:stick', 2).toResultJson(),
+    Item.of('minecraft:diamond', 2).toResultJson()
   ]);
-  salvage('minecraft:netherite_axe', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:stick',
-      count: 2
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 3
-    }
+  salvage('minecraft:netherite_axe', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:stick', 2).toResultJson(),
+    Item.of('minecraft:diamond', 3).toResultJson()
   ]);
-  salvage('minecraft:netherite_boots', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 4
-    }
+  salvage('minecraft:netherite_boots', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:diamond', 4).toResultJson()
   ]);
-  salvage('minecraft:netherite_leggings', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 7
-    }
+  salvage('minecraft:netherite_leggings', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:diamond', 7).toResultJson()
   ]);
-  salvage('minecraft:netherite_chestplate', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 8
-    }
+  salvage('minecraft:netherite_chestplate', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:diamond', 8).toResultJson()
   ]);
-  salvage('minecraft:netherite_helmet', [{
-      item: 'minecraft:netherite_ingot',
-      count: 1
-    },
-    {
-      item: 'minecraft:diamond',
-      count: 5
-    }
+  salvage('minecraft:netherite_helmet', [
+    Item.of('minecraft:netherite_ingot').toResultJson(),
+    Item.of('minecraft:diamond', 5).toResultJson()
   ]);
-  salvage('minecraft:anvil', [{
-    item: 'minecraft:iron_ingot',
-    count: 31
-  }]);
-  salvage('minecraft:diamond_horse_armor', [{
-    item: 'minecraft:diamond',
-    count: 7
-  }]);
-  salvage('minecraft:golden_horse_armor', [{
-    item: 'minecraft:gold_ingot',
-    count: 7
-  }]);
-  salvage('minecraft:iron_horse_armor', [{
-    item: 'minecraft:iron_ingot',
-    count: 7
-  }]);
-  salvage('minecraft:leather_horse_armor', [{
-    item: 'minecraft:leather',
-    count: 7
-  }]);
-  salvage('minecraft:minecart', [{
-    item: 'minecraft:iron_ingot',
-    count: 5
-  }]);
-  salvage('minecraft:saddle', [{
-      item: 'minecraft:leather',
-      count: 5
-    },
-    {
-      item: 'minecraft:iron_nugget',
-      count: 2
-    }
+  salvage('minecraft:anvil', [
+    Item.of('minecraft:iron_ingot', 31).toResultJson()
+  ]);
+  salvage('minecraft:diamond_horse_armor', [
+    Item.of('minecraft:diamond', 7).toResultJson()
+  ]);
+  salvage('minecraft:golden_horse_armor', [
+    Item.of('minecraft:gold_ingot', 7).toResultJson()
+  ]);
+  salvage('minecraft:iron_horse_armor', [
+    Item.of('minecraft:iron_ingot', 7).toResultJson()
+  ]);
+  salvage('minecraft:leather_horse_armor', [
+    Item.of('minecraft:leather', 7).toResultJson()
+  ]);
+  salvage('minecraft:minecart', [
+    Item.of('minecraft:iron_ingot', 5).toResultJson()
+  ]);
+  salvage('minecraft:saddle', [
+    Item.of('minecraft:leather', 5).toResultJson(),
+    Item.of('minecraft:iron_nugget', 2).toResultJson()
   ]);
 
   //Pedestal stuff
-  function coinUpgrade(name, type) {
-    if (type == 'rf') {
-      e.recipes.allthemodium.atmshapeless_crafting({
-        ingredients: [{
-            item: 'pedestals:coin/' + name
-          },
-          {
-            tag: 'forge:storage_blocks/redstone'
-          }
-        ],
-        result: {
-          item: 'pedestals:coin/' + type + name
-        }
-      });
-    } else {
-      e.recipes.allthemodium.atmshapeless_crafting({
-        ingredients: [{
-            item: 'pedestals:coin/' + name
-          },
-          {
-            item: 'minecraft:experience_bottle'
-          }
-        ],
-        result: {
-          item: 'pedestals:coin/' + type + name
-        }
-      });
-    }
-  }
-  coinUpgrade('import', 'rf');
-  coinUpgrade('export', 'rf');
-  coinUpgrade('crusher', 'rf');
-  coinUpgrade('smelter', 'rf');
-  coinUpgrade('sawmill', 'rf');
-  coinUpgrade('quarry', 'rf');
-  coinUpgrade('quarryb', 'rf');
-  coinUpgrade('dropper', 'xp');
-  coinUpgrade('magnet', 'xp');
+  var coinRF = [
+    'import',
+    'export',
+    'crusher',
+    'smelter',
+    'sawmill',
+    'quarry',
+    'quarryb'
+  ];
+  var coinXP = [
+    'dropper',
+    'magnet'
+  ];
+
+  coinRF.forEach(name => {
+    e.custom({
+      type: 'allthemodium:atmshapeless_crafting',
+      ingredients: [
+        Ingredient.of(`pedestals:coin/${name}`).toJson(),
+        Ingredient.of('#forge:storage_blocks/redstone').toJson()
+      ],
+      result: Item.of(`pedestals:coin/rf${name}`).toResultJson()
+    });
+  });
+  coinXP.forEach(name => {
+    e.custom({
+      type: 'allthemodium:atmshapeless_crafting',
+      ingredients: [
+        Ingredient.of(`pedestals:coin/${name}`).toJson(),
+        Ingredient.of('minecraft:experience_bottle').toJson()
+      ],
+      result: Item.of(`pedestals:coin/xp${name}`).toResultJson()
+    });
+  });
 
   e.remove({
     output: 'pedestals:dustflour'
   });
 
-  function pedestalCrush(result, count, ingredient, type) {
-    if (type == 1) {
-      pedCrush({
-        ingredient: {
-          tag: ingredient
-        },
-        result: {
-          item: result,
-          count: count
-        }
-      });
-    } else {
-      pedCrush({
-        ingredient: {
-          item: ingredient
-        },
-        result: {
-          item: result,
-          count: count
-        }
-      });
-    }
-  }
+  const pedestalCrush = (result, count, ingredient) => {
+    e.custom({
+      type: 'pedestals:pedestal_crushing',
+      ingredient: Ingredient.of(ingredient).toJson(),
+      result: Item.of(result, count).toResultJson(),
+    });
+  };
 
-  function pedestalSaw(result, count, ingredient, type) {
-    if (type == 1) {
-      pedSaw({
-        ingredient: {
-          tag: ingredient
-        },
-        result: {
-          item: result,
-          count: count
-        }
-      });
-    } else {
-      pedSaw({
-        ingredient: {
-          item: ingredient
-        },
-        result: {
-          item: result,
-          count: count
-        }
-      });
-    }
-  }
+  const pedestalSaw = (result, count, ingredient) => {
+    e.custom({
+      type: 'pedestals:pedestal_sawing',
+      ingredient: Ingredient.of(ingredient).toJson(),
+      result: Item.of(result, count).toResultJson(),
+    });
+  };
   e.remove({
     id: 'appliedenergistics2:grinder/flour'
   });
@@ -574,17 +475,16 @@ onEvent('recipes', e => {
     output: 'minecraft:stick',
     type: 'pedestals:pedestal_sawing'
   });
-  pedestalCrush('pamhc2foodcore:flouritem', 1, 'forge:flour_plants', 1);
-  pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal', 0);
-  pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1);
-  pedestalCrush('thermal:quartz_dust', 1, 'forge:gems/quartz', 1);
-  pedestalCrush('mekanism:dust_fluorite', 1, 'forge:gems/fluorite', 1);
-  pedestalCrush('exnihilosequentia:dust', 1, 'minecraft:sand', 1);
-  pedestalCrush('exnihilosequentia:crushed_end_stone', 1, 'minecraft:end_stone', 0);
-  pedestalSaw('thermal:sawdust', 1, 'forge:rods/wooden', 1);
-  pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1);
-  pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1);
-  e.recipes.appliedenergistics2.grinder({
+  pedestalCrush('pamhc2foodcore:flouritem', 1, '#forge:flour_plants');
+  pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal');
+  pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, '#forge:gems/certus_quartz');
+  pedestalCrush('thermal:quartz_dust', 1, '#forge:gems/quartz');
+  pedestalCrush('mekanism:dust_fluorite', 1, '#forge:gems/fluorite');
+  pedestalSaw('thermal:sawdust', 1, '#forge:rods/wooden');
+  pedestalSaw('minecraft:stick', 4, '#minecraft:planks');
+  pedestalSaw('minecraft:stick', 2, '#minecraft:wooden_slabs');
+  e.custom({
+    type: 'appliedenergistics2:grinder',
     input: {
       tag: 'forge:flour_plants'
     },
@@ -601,8 +501,8 @@ onEvent('recipes', e => {
     mod: 'extrastorage'
   });
 
-  function extraBlock(size) {
-    kjsShaped('extrastorage:block_' + size, [
+  const extraBlock = (size) => {
+    e.shaped(`extrastorage:block_${size}`, [
       'QPQ',
       'QCQ',
       'QRQ'
@@ -610,9 +510,9 @@ onEvent('recipes', e => {
       Q: 'refinedstorage:quartz_enriched_iron',
       C: 'refinedstorage:machine_casing',
       R: '#forge:dusts/redstone',
-      P: 'extradisks:' + size + '_storage_part'
+      P: `extradisks:${size}_storage_part`
     });
-  }
+  };
   extraBlock('256k');
   extraBlock('1024k');
   extraBlock('4096k');
@@ -711,7 +611,7 @@ onEvent('recipes', e => {
   ];
   typesPowah.forEach(type => {
     tiersPowah.forEach(tier => {
-      e.shapeless(item.of('powah:' + type + '_' + tier), 'powah:' + type + '_' + tier);
+      e.shapeless(item.of(`powah:${type}_${tier}`), `powah:${type}_${tier}`);
     });
   });
   var solars = [
@@ -726,7 +626,7 @@ onEvent('recipes', e => {
         'custom_unobtainium' */
   ];
   solars.forEach(solar => {
-    e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar);
+    e.shapeless(item.of(`solarflux:sp_${solar}`), `solarflux:sp_${solar}`);
   });
   //Smithing stuff
   function smithing(result, base, addition) {
@@ -744,6 +644,7 @@ onEvent('recipes', e => {
   }
   smithing('metalbarrels:wood_to_netherite', 'metalbarrels:wood_to_obsidian', 'minecraft:netherite_ingot');
 
+  //Astral Recipes
   e.custom({
     type: 'astralsorcery:block_transmutation',
     input: [{
@@ -754,66 +655,192 @@ onEvent('recipes', e => {
     },
     starlight: 100.0
   });
-  //Jumbo Furnace
-  /*   function jumbo(ingredients, result, xp) {
-      e.recipes.jumbofurnace.jumbo_smelting({
-        ingredients: ingredients,
-        result: {
-          item: result
-        },
-        experience: xp
-      });
-    }
-    jumbo(
-      [{
-          type: 'forge:nbt',
-          item: 'storagedrawers:emerald_storage_upgrade',
-          count: 16
-        },
-        {
-          type: 'jumbofurnace:tag_stack',
-          tag: 'forge:ingots/unobtainium',
-          count: 2
-        },
-        {
-          type: 'jumbofurnace:tag_stack',
-          tag: 'forge:ingots/allthemodium',
-          count: 4
-        },
-        {
-          type: 'jumbofurnace:tag_stack',
-          tag: 'forge:ender_pearls',
-          count: 16
-        }
-      ],
-      'storagedrawers:creative_storage_upgrade', 5
-    );*/
-  //Quark marble to Astral Sorcery Marble
-  /*   e.recipes.astralsorcery.block_transmutation({
-      input: {
-        block: 'quark:marble',
-      },
-      output: {
-        block: 'astralsorcery:marble_raw'
-      },
-      starlight: 200.0
-    });
 
-    e.recipes.astralsorcery.infuser({
-      fluidInput: 'astralsorcery:liquid_starlight',
-      input: {
-        item: 'quark:marble'
+  const astralAltar = (tier, duration, starlight, pattern, items, result) => {
+    e.custom({
+      type: 'astralsorcery:altar',
+      altar_type: tier,
+      duration: duration,
+      starlight: starlight,
+      pattern: pattern,
+      key: items,
+      output: [
+        Item.of(result).toResultJson()
+      ],
+      effects: [
+        'astralsorcery:built_in_effect_discovery_central_beam'
+      ]
+    });
+  };
+
+  astralAltar(0, 100, 200, [
+    '_____',
+    '_1A2_',
+    '_DBD_',
+    '_3C4_',
+    '_____'
+  ], {
+    A: Ingredient.of('#forge:feathers').toJson(),
+    B: Ingredient.of('astralsorcery:parchment').toJson(),
+    C: Ingredient.of('#forge:dyes/black').toJson(),
+    D: Ingredient.of('#astralsorcery:stardust').toJson(),
+    1: Ingredient.of('#forge:ingots/iron').toJson(),
+    2: Ingredient.of('#forge:dusts/glowstone').toJson(),
+    3: Ingredient.of('minecraft:clay_ball').toJson(),
+    4: Ingredient.of('#forge:leather').toJson()
+  }, 'astralsorcery:constellation_paper', {
+    astralsorcery: {
+      constellationName: 'astralsorcery:armara'
+    }
+  });
+  astralAltar(0, 100, 200, [
+    '_____',
+    '_1A2_',
+    '_DBD_',
+    '_3C4_',
+    '_____'
+  ], {
+    A: Ingredient.of('#forge:feathers').toJson(),
+    B: Ingredient.of('astralsorcery:parchment').toJson(),
+    C: Ingredient.of('#forge:dyes/black').toJson(),
+    D: Ingredient.of('#astralsorcery:stardust').toJson(),
+    1: Ingredient.of('#minecraft:saplings').toJson(),
+    2: Ingredient.of('minecraft:sugar_cane').toJson(),
+    3: Ingredient.of('#minecraft:seeds').toJson(),
+    4: Ingredient.of('#astralsorcery:stardust').toJson()
+  }, 'astralsorcery:constellation_paper', {
+    astralsorcery: {
+      constellationName: 'astralsorcery:aevitas'
+    }
+  });
+  astralAltar(0, 100, 200, [
+    '_____',
+    '_1A2_',
+    '_DBD_',
+    '_3C4_',
+    '_____'
+  ], {
+    A: Ingredient.of('#forge:feathers').toJson(),
+    B: Ingredient.of('astralsorcery:parchment').toJson(),
+    C: Ingredient.of('#forge:dyes/black').toJson(),
+    D: Ingredient.of('#astralsorcery:stardust').toJson(),
+    1: Ingredient.of('#forge:feathers').toJson(),
+    2: Ingredient.of('#minecraft:fishes').toJson(),
+    3: Ingredient.of('#forge:string').toJson(),
+    4: Ingredient.of('#forge:sugar/sugar').toJson()
+  }, 'astralsorcery:constellation_paper', {
+    astralsorcery: {
+      constellationName: 'astralsorcery:vicio'
+    }
+  });
+  astralAltar(0, 100, 200, [
+    '_____',
+    '_1A2_',
+    '_DBD_',
+    '_3C4_',
+    '_____'
+  ], {
+    A: Ingredient.of('#forge:feathers').toJson(),
+    B: Ingredient.of('astralsorcery:parchment').toJson(),
+    C: Ingredient.of('#forge:dyes/black').toJson(),
+    D: Ingredient.of('#astralsorcery:stardust').toJson(),
+    1: Ingredient.of('minecraft:flint').toJson(),
+    2: Ingredient.of('#forge:dusts/redstone').toJson(),
+    3: Ingredient.of('#minecraft:arrows').toJson(),
+    4: Ingredient.of('#forge:ingots/iron').toJson()
+  }, 'astralsorcery:constellation_paper', {
+    astralsorcery: {
+      constellationName: 'astralsorcery:dicidia'
+    }
+  });
+  astralAltar(0, 100, 200, [
+    '_____',
+    '_1A2_',
+    '_DBD_',
+    '_3C4_',
+    '_____'
+  ], {
+    A: Ingredient.of('#forge:feathers').toJson(),
+    B: Ingredient.of('astralsorcery:parchment').toJson(),
+    C: Ingredient.of('#forge:dyes/black').toJson(),
+    D: Ingredient.of('#astralsorcery:stardust').toJson(),
+    1: Ingredient.of('#forge:cobblestone').toJson(),
+    2: Ingredient.of('minecraft:tnt').toJson(),
+    3: Ingredient.of('#forge:gunpowder').toJson(),
+    4: Ingredient.of('minecraft:flint').toJson()
+  }, 'astralsorcery:constellation_paper', {
+    astralsorcery: {
+      constellationName: 'astralsorcery:evorsio'
+    }
+  });
+
+  //Jumbo Furnace
+  /*
+  function jumbo(ingredients, result, xp) {
+    e.custom({
+      type: 'jumbofurnace:jumbo_smelting',
+      ingredients: ingredients,
+      result: {
+        item: result
       },
-      output: {
-        item: 'astralsorcery:marble_raw',
-        count: 1
+      experience: xp
+    });
+  }
+  jumbo(
+    [{
+        type: 'forge:nbt',
+        item: 'storagedrawers:emerald_storage_upgrade',
+        count: 16
       },
-      consumptionChance: 0.1,
-      duration: 100,
-      consumeMultipleFluids: false,
-      acceptChaliceInput: true,
-      copyNBTToOutputs: false
-    }); */
+      {
+        type: 'jumbofurnace:tag_stack',
+        tag: 'forge:ingots/unobtainium',
+        count: 2
+      },
+      {
+        type: 'jumbofurnace:tag_stack',
+        tag: 'forge:ingots/allthemodium',
+        count: 4
+      },
+      {
+        type: 'jumbofurnace:tag_stack',
+        tag: 'forge:ender_pearls',
+        count: 16
+      }
+    ],
+    'storagedrawers:creative_storage_upgrade', 5
+  );
+  */
+  //Quark marble to Astral Sorcery Marble
+  /*
+  e.custom({
+    type: 'astralsorcery:block_transmutation',
+    input: {
+      block: 'quark:marble',
+    },
+    output: {
+      block: 'astralsorcery:marble_raw'
+    },
+    starlight: 200.0
+  });
+
+  e.custom({
+    type: 'astralsorcery:infuser',
+    fluidInput: 'astralsorcery:liquid_starlight',
+    input: {
+      item: 'quark:marble'
+    },
+    output: {
+      item: 'astralsorcery:marble_raw',
+      count: 1
+    },
+    consumptionChance: 0.1,
+    duration: 100,
+    consumeMultipleFluids: false,
+    acceptChaliceInput: true,
+    copyNBTToOutputs: false
+  });
+  */
   //Reliquary changes
   e.remove({
     output: 'xreliquary:fertile_lily_pad',
@@ -1228,5 +1255,16 @@ onEvent('recipes', e => {
     e: '#forge:ender_pearls',
     r: '#forge:storage_blocks/redstone',
     m: 'rftoolsbase:machine_frame'
+  });
+
+  //Astral Sorcery
+  e.shaped('astralsorcery:altar_discovery', [
+    'MSM',
+    ' P ',
+    'PPP'
+  ], {
+    M: 'astralsorcery:marble_raw',
+    S: 'astralsorcery:black_marble_raw',
+    P: '#minecraft:planks'
   });
 });

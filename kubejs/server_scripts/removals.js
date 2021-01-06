@@ -22,7 +22,10 @@ onEvent('recipes', e => {
 
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
 
-    'xreliquary:alkahestry/crafting/nether_star'
+    'xreliquary:alkahestry/crafting/nether_star',
+
+    'create:milling/sand',
+    'create:crushing/sand'
   ];
   idRemove.forEach(iR => {
     e.remove({
@@ -45,7 +48,9 @@ onEvent('recipes', e => {
 
       'xreliquary:alkahestry_tome',
 
-/*       'naturesaura:chunk_loader', */
+      /*
+      'naturesaura:chunk_loader',
+      */
 
       'cyclic:uncrafter',
       'cyclic:tile_transporter_empty',
@@ -54,7 +59,8 @@ onEvent('recipes', e => {
       'solarflux:sp_7',
       'solarflux:sp_8',
 
-/*       'quark:apple_crate',
+      /*
+      'quark:apple_crate',
       'quark:potato_crate',
       'quark:carrot_crate',
       'quark:beetroot_crate',
@@ -73,14 +79,16 @@ onEvent('recipes', e => {
       'quark:birch_chest',
       'quark:jungle_chest',
       'quark:warped_chest',
-      'quark:crimson_chest', */
+      'quark:crimson_chest',
+      */
 
       'titanium:iron_gear',
       'titanium:gold_gear',
       'titanium:diamond_gear',
-/* 
+      /*
       'quarryplus:solidquarry',
-      'quarryplus:workbenchplus', */
+      'quarryplus:workbenchplus',
+      */
 
       'mininggadgets:upgrade_empty',
 

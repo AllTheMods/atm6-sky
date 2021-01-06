@@ -1,5 +1,5 @@
 //priority: 1000
-var alltheores = [
+var atores = [
   'aluminum',
   'copper',
   'lead',
@@ -12,12 +12,12 @@ var alltheores = [
   'zinc'
 ];
 
-var allthemodiumores = [
+var atmores = [
   'allthemodium',
   'vibranium',
   'unobtainium'
 ];
-const ores = [
+var ores = [
   'allthemodium',
   'vibranium',
   'unobtainium',
@@ -35,40 +35,40 @@ const ores = [
 
 onEvent('item.tags', e => {
   //Mek Clumps
-  allthemodiumores.forEach(item => {
-    e.get('mekanism:clumps/' + item).add('allthemodium:' + item + '_clump');
-    e.get('mekanism:clumps').add('#mekanism:clumps/' + item);
+  atmores.forEach(item => {
+    e.add(`mekanism:clumps/${item}`, `allthemodium:${item}_clump`);
+    e.add('mekanism:clumps', `#mekanism:clumps/${item}`);
   });
-  alltheores.forEach(item => {
-    e.get('mekanism:clumps/' + item).add('alltheores:' + item + '_clump');
-    e.get('mekanism:clumps').add('#mekanism:clumps/' + item);
+  atores.forEach(item => {
+    e.add(`mekanism:clumps/${item}`, `alltheores:${item}_clump`);
+    e.add('mekanism:clumps', `#mekanism:clumps/${item}`);
   });
   //Mek Dirty Dusts
-  allthemodiumores.forEach(item => {
-    e.get('mekanism:dirty_dusts/' + item).add('allthemodium:dirty_' + item + '_dust');
-    e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/' + item);
+  atmores.forEach(item => {
+    e.add(`mekanism:dirty_dusts/${item}`, `allthemodium:dirty_${item}_dust`);
+    e.add('mekanism:dirty_dusts', `#mekanism:dirty_dusts/${item}`);
   });
-  alltheores.forEach(item => {
-    e.get('mekanism:dirty_dusts/' + item).add('alltheores:dirty_' + item + '_dust');
-    e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/' + item);
+  atores.forEach(item => {
+    e.add(`mekanism:dirty_dusts/${item}`, `alltheores:dirty_${item}_dust`);
+    e.add('mekanism:dirty_dusts', `#mekanism:dirty_dusts/${item}`);
   });
   //Mek Shards
-  allthemodiumores.forEach(item => {
-    e.get('mekanism:shards/' + item).add('allthemodium:' + item + '_shard');
-    e.get('mekanism:shards').add('#mekanism:shards/' + item);
+  atmores.forEach(item => {
+    e.add(`mekanism:shards/${item}`, `allthemodium:${item}_shard`);
+    e.add('mekanism:shards', `#mekanism:shards/${item}`);
   });
-  alltheores.forEach(item => {
-    e.get('mekanism:shards/' + item).add('alltheores:' + item + '_shard');
-    e.get('mekanism:shards').add('#mekanism:shards/' + item);
+  atores.forEach(item => {
+    e.add(`mekanism:shards/${item}`, `alltheores:${item}_shard`);
+    e.add('mekanism:shards', `#mekanism:shards/${item}`);
   });
   //Mek Crystals
-  allthemodiumores.forEach(item => {
-    e.get('mekanism:crystals/' + item).add('allthemodium:' + item + '_crystal');
-    e.get('mekanism:crystals').add('#mekanism:crystals/' + item);
+  atmores.forEach(item => {
+    e.add(`mekanism:crystals/${item}`, `allthemodium:${item}_crystal`);
+    e.add('mekanism:crystals', `#mekanism:crystals/${item}`);
   });
-  alltheores.forEach(item => {
-    e.get('mekanism:crystals/' + item).add('alltheores:' + item + '_crystal');
-    e.get('mekanism:crystals').add('#mekanism:crystals/' + item);
+  atores.forEach(item => {
+    e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`);
+    e.add('mekanism:crystals', `#mekanism:crystals/${item}`);
   });
 
   e.add('forge:rubber', ['thermal:cured_rubber']);
@@ -93,7 +93,7 @@ onEvent('item.tags', e => {
   e.add('misctags:biofuel5', ['#forge:vegetables', '#forge:cookies', '#forge:flour_plants', '#forge:mushrooms', '#forge:mushroom_stems', '#minecraft:flowers', 'minecraft:lily_pad', 'minecraft:sea_pickle', 'minecraft:shroomlight', 'minecraft:large_fern', 'minecraft:fern', 'minecraft:crimson_roots', 'minecraft:warped_roots', 'minecraft:carved_pumpkin', 'minecraft:nether_wart', 'minecraft:cocoa_beans']);
   e.add('misctags:biofuel7', ['#minecraft:wart_blocks', '#forge:mushroom_caps', 'minecraft:baked_potato', 'minecraft:hay_block', '#forge:bread']);
   e.add('misctags:biofuel8', ['minecraft:cake', 'minecraft:pumpkin_pie']);
-  /*   
+  /*
   e.add('forge:axes', ['byg:pendorite_battleaxe', 'engineerstools:redia_tool']);
   e.add('forge:shovels', ['engineerstools:redia_tool']);
   */
@@ -110,7 +110,7 @@ onEvent('item.tags', e => {
   e.add('forge:ingots', ['#forge:ingots/unobtainium_allthemodium_alloy', '#forge:ingots/vibranium_unobtainium_alloy', '#forge:ingots/vibranium_allthemodium_alloy']);
   e.add('forge:storage_blocks/uraninite', 'powah:uraninite_block');
   e.add('forge:mushrooms', ['minecraft:warped_fungus', 'minecraft:crimson_fungus']);
-  /*   
+  /*
   e.add('misctags:flowers/draconic_flowers', ['minecraft:dragon_egg']);
   e.add('misctags:flowers/end_flowers', ['minecraft:chorus_flower', 'minecraft:chorus_plant']);
   e.add('misctags:flowers/forest_flowers', ['#minecraft:flowers', 'minecraft:sweet_berries']);
@@ -136,7 +136,7 @@ onEvent('item.tags', e => {
   e.remove('appliedenergistics2:metal_ingots', ['#forge:ingots/gold', '#forge:ingots/iron']);
   e.remove('appliedenergistics2:wool', '#minecraft:wool');
   e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table');
-  /*   
+  /*
   e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive']);
   */
   e.add('minecraft:wart_blocks', ['/.+_wart_block/']);
@@ -157,7 +157,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick']);
   e.add('misctags:no_moving', ['#minecraft:wither_immune', /* 'potionsmaster:cauldron', */ 'appliedenergistics2:cable_bus']);
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving');
-  /* 
+  /*
   e.add('bagofyurting:blacklist', '#misctags:no_moving');
   e.add('misctags:flowers/draconic_flowers', ['minecraft:dragon_egg']);
   e.add('misctags:flowers/end_flowers', ['minecraft:chorus_flower', 'minecraft:chorus_plant']);
@@ -229,9 +229,13 @@ onEvent('block.tags', e => {
   e.add('mcwwindows:window', '/mcwwindows:.+_win/');
   e.add('misctags:concrete', '/minecraft:.+_concrete/');
   e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']);
-  /*   
+  e.add('ftbchunks:interact_whitelist', []);
+  /*
   e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/', '/rftoolsbuilder:.+/']); //, '^\\w+_glass$'
   */
+
+  //Removal
+  e.removeAll('minecraft:enderman_holdable');
 });
 
 //Fluid tags go here

@@ -1,11 +1,13 @@
-/* onEvent('recipes', e => {
-    function emote(name, url) {
-        e.recipes.emojiful.emoji_recipe({
-            'category': 'atm6',
-            'name': name,
-            'url': 'https://cdn.discordapp.com/emojis/' + url,
+/*
+onEvent('recipes', e => {
+    const emote = (name, url) => {
+        e.custom({
+            type: 'emojiful:emoji_recipe',
+            category: 'atm6',
+            name: name,
+            url: 'https://cdn.discordapp.com/emojis/' + url,
         });
-    }
+    };
     emote('asevil', '581816328260943872.gif');
     emote('cattt', '642569163037999124.png');
     emote('concern', '728377231163916378.png');
@@ -30,4 +32,5 @@
     emote('thinkaboutit', '642567832143396876.png');
     emote('thinkeyes', '642567846597230614.png');
     emote('thonk', '690375699453706250.png');
-}); */
+});
+*/

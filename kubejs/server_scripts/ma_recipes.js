@@ -1,4 +1,5 @@
-/* onEvent('recipes', e => {
+/*
+onEvent('recipes', e => {
     //Functions
     function plus(result, count, name) {
         e.shaped(item.of(result, count), [
@@ -40,4 +41,5 @@
     //circle('silents_mechanisms:enderium_ingot', 4, 'enderium');
     //circle('silents_mechanisms:lumium_ingot', 4, 'lumium');
     //circle('mekanism:fluorite_gem', 12, 'fluorite');
-}); */
+});
+*/

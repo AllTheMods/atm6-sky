@@ -1,6 +1,6 @@
 onEvent('recipes', e => {
   //Functions
-  function modifyShaped(result, count, pattern, ingridients) {
+  const modifyShaped = (result, count, pattern, ingridients) => {
     e.remove({
       output: result,
       type: 'minecraft:crafting_shaped'
@@ -9,28 +9,31 @@ onEvent('recipes', e => {
       pattern,
       ingridients
     );
-  }
+  };
 
-  function modifyShapeless(result, count, ingridients) {
+  const modifyShapeless = (result, count, ingridients) => {
     e.remove({
       output: result,
       type: 'minecraft:crafting_shapeless'
     });
     e.shapeless(item.of(result, count), ingridients);
-  }
+  };
 
-  function modifySmelt(result, ingridients) {
+  const modifySmelt = (result, ingridients) => {
     e.remove({
       output: result,
       type: 'minecraft:smelting'
     });
     e.smelting(result, ingridients);
-  }
+  };
 
-  /*   e.replaceOutput('#forge:cheese', 'rats:cheese'); */
+  /*
+  e.replaceOutput('#forge:cheese', 'rats:cheese');
+  */
 
   //Modified recipes
-  /* const combBlock = '#resourcefulbees:resourceful_honeycomb_block';
+  /*
+  const combBlock = '#resourcefulbees:resourceful_honeycomb_block';
   modifyShaped('resourcefulbees:t1_apiary', 1, [
     'CHC',
     'HSH',
@@ -66,7 +69,8 @@ onEvent('recipes', e => {
     C: combBlock,
     H: 'resourcefulbees:t3_apiary',
     S: '#forge:nether_stars'
-  }); */
+  });
+  */
   modifyShaped('allthemodium:teleport_pad', 1, [
     'GBR',
     'NEN',
@@ -173,7 +177,7 @@ onEvent('recipes', e => {
     T: '#forge:treated_wood',
     R: 'mekanism:resistive_heater'
   });
-  /* 
+  /*
     e.remove({
       id: 'bagofyurting:bag_of_yurting'
     });

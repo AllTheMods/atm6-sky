@@ -1,59 +1,38 @@
 //priority: 10
 onEvent('recipes', e => {
-
-  const cloche = e.recipes.immersiveengineering.cloche;
   let tier = (types, time, soil, rCount) => {
     types.forEach(type => {
-      const rItem = 'mysticalagriculture:' + type + '_essence';
-      const inItem = 'mysticalagriculture:' + type + '_seeds';
-      const renderBlock = 'mysticalagriculture:' + type + '_crop';
-      cloche({
-        results: [{
-          item: rItem,
-          count: rCount
-        }],
-        input: {
-          item: inItem
-        },
-        soil: soil,
+      let rItem = `mysticalagriculture:${type}_essence`;
+      let inItem = `mysticalagriculture:${type}_seeds`;
+      let renBlock = `mysticalagriculture:${type}_crop`;
+      e.custom({
+        type: 'immersiveengineering:cloche',
+        results: Item.of(rItem, rCount).toResultJson(),
+        input: Ingredient.of(inItem).toJson(),
+        soil: Ingredient.of(soil).toJson(),
         time: time,
         render: {
           type: 'crop',
-          block: renderBlock
+          block: renBlock
         }
       });
     });
   };
 
-  let t1 = type => tier(type, 1600, {
-    tag: 'misctags:farmland/tier1'
-  }, 2);
-  let t2 = type => tier(type, 2800, {
-    tag: 'misctags:farmland/tier2'
-  }, 2);
-  let t3 = type => tier(type, 4000, {
-    tag: 'misctags:farmland/tier3'
-  }, 2);
-  let t4 = type => tier(type, 5200, {
-    tag: 'misctags:farmland/tier4'
-  }, 2);
-  let t5 = type => tier(type, 6400, {
-    tag: 'misctags:farmland/tier5'
-  }, 2);
-  let t6 = type => tier(type, 7600, {
-    tag: 'misctags:farmland/tier6'
-  }, 2);
-  let t7 = type => tier(type, 8900, {
-    item: 'mysticalagradditions:insanium_block'
-  }, 2);
+  let t1 = type => tier(type, 1600, '#misctags:farmland/tier1', 2);
+  let t2 = type => tier(type, 2800, '#misctags:farmland/tier2', 2);
+  let t3 = type => tier(type, 4000, '#misctags:farmland/tier3', 2);
+  let t4 = type => tier(type, 5200, '#misctags:farmland/tier4', 2);
+  let t5 = type => tier(type, 6400, '#misctags:farmland/tier5', 2);
+  let t6 = type => tier(type, 7600, '#misctags:farmland/tier6', 2);
+  let t7 = type => tier(type, 8900, 'mysticalagradditions:insanium_block', 2);
   let inf = (rCount, time, soil) => tier(['inferium'], time, soil, rCount);
 
-  function regular(results, seed, crop) {
-    cloche({
+  const regular = (results, seed, crop) => {
+    e.custom({
+      type: 'immersiveengineering:cloche',
       results: results,
-      input: {
-        item: seed
-      },
+      input: Ingredient.of(seed).toJson(),
       soil: {
         item: 'minecraft:dirt'
       },
@@ -63,47 +42,31 @@ onEvent('recipes', e => {
         block: crop
       }
     });
-  }
+  };
 
   //Regular crops
-  /*   regular([{
-      item: 'byg:blueberries',
-      count: 2
-    }], 'byg:blueberries', 'byg:blueberry_bush'); */
-  regular([{
-    item: 'forbidden_arcanus:arcane_gold_nugget'
-  }, {
-    item: 'forbidden_arcanus:golden_orchid_seeds'
-  }], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid');
-  regular([{
-    item: 'silentgear:flax_fiber',
-    count: 2
-  }, {
-    item: 'silentgear:flax_seeds'
-  }], 'silentgear:flax_seeds', 'silentgear:flax_plant');
+  /*
+  regular([
+    Item.of('byg:blueberries', 2).toResultJson()
+  ], 'byg:blueberries', 'byg:blueberry_bush');
+  */
+  regular([
+    Item.of('forbidden_arcanus:arcane_gold_nugget').toResultJson(),
+    Item.of('forbidden_arcanus:golden_orchid_seeds').toResultJson()
+  ], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid');
+  regular([
+    Item.of('silentgear:flax_fiber', 2).toResultJson(),
+    Item.of('silentgear:flax_seeds').toResultJson()
+  ], 'silentgear:flax_seeds', 'silentgear:flax_plant');
 
   //Inferium
-  inf(1, 1500, {
-    item: 'minecraft:dirt'
-  });
-  inf(2, 2100, {
-    item: 'mysticalagriculture:inferium_farmland'
-  });
-  inf(3, 2700, {
-    item: 'mysticalagriculture:prudentium_farmland'
-  });
-  inf(4, 3300, {
-    item: 'mysticalagriculture:tertium_farmland'
-  });
-  inf(5, 4900, {
-    item: 'mysticalagriculture:imperium_farmland'
-  });
-  inf(6, 5500, {
-    item: 'mysticalagriculture:supremium_farmland'
-  });
-  inf(7, 6100, {
-    item: 'mysticalagradditions:insanium_farmland'
-  });
+  inf(1, 1500, 'minecraft:dirt');
+  inf(2, 2100, 'mysticalagriculture:inferium_farmland');
+  inf(3, 2700, 'mysticalagriculture:prudentium_farmland');
+  inf(4, 3300, 'mysticalagriculture:tertium_farmland');
+  inf(5, 4900, 'mysticalagriculture:imperium_farmland');
+  inf(6, 5500, 'mysticalagriculture:supremium_farmland');
+  inf(7, 6100, 'mysticalagradditions:insanium_farmland');
 
   //Tier 1 Crops
   t1([
@@ -141,7 +104,10 @@ onEvent('recipes', e => {
     'squid',
     'sulfur',
     'turtle',
-    'sky_stone'
+    'sky_stone',
+    'basalz',
+    'blizz',
+    'blitz'
   ]);
 
 
@@ -172,7 +138,10 @@ onEvent('recipes', e => {
     'zombie',
     'lumium',
     //'fluorite',
-    'aquamarine'
+    'aquamarine',
+    'signalum',
+    'starmetal',
+    'manasteel'
   ]);
 
   //Tier 4 Crops
@@ -201,7 +170,10 @@ onEvent('recipes', e => {
     'titanium',
     'tungsten',
     'compressed_iron',
-    'hop_graphite'
+    'hop_graphite',
+    'elementium',
+    'energized_steel',
+    'blazing_crystal'
   ]);
 
   //Tier 5 Crops
@@ -216,7 +188,8 @@ onEvent('recipes', e => {
     'enderium',
     'spirited_crystal',
     'rock_crystal',
-    'niotic_crystal'
+    'niotic_crystal',
+    'terrasteel'
   ]);
 
   //Tier 6 Crops
@@ -226,15 +199,12 @@ onEvent('recipes', e => {
     'nitro_crystal'
   ]);
 
-  //Botanical Tier
-  //t3('manasteel');
-  //t4('elementium');
-  //t5('terrasteel');
-
-/*   //Magical Tier
+  //Magical Tier
   t7([
+    /*
     'allthemodium',
     'vibranium',
     'unobtainium'
-  ]); */
+    */
+  ]);
 });

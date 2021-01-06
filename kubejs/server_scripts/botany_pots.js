@@ -10,7 +10,7 @@ onEvent('recipes', e => {
             },
             categories: categories,
             growthModifier: growthModifier
-        }).id('kubejs:botany_pots/soil/' + name);
+        }).id(`kubejs:botany_pots/soil/${name}`);
     }
 
     makeSoil('mysticalagradditions:insanium_farmland', 'insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50);
@@ -18,12 +18,12 @@ onEvent('recipes', e => {
 
     //Crops
     let tier = (types, time, soil) => {
-        utils.listOf(types).forEach(function (type) {
-            let rItem = 'mysticalagriculture:' + type + '_essence';
-            let inItem = 'mysticalagriculture:' + type + '_seeds';
-            let renBlock = 'mysticalagriculture:' + type + '_crop';
+        types.forEach(type => {
+            let rItem = `mysticalagriculture:${type}_essence`;
+            let inItem = `mysticalagriculture:${type}_seeds`;
+            let renBlock = `mysticalagriculture:${type}_crop`;
             e.remove({
-                id: 'mysticalagriculture:crops/' + type
+                id: `mysticalagriculture:crops/${type}`
             });
             e.recipes.botanypots.crop({
                 seed: {
@@ -64,7 +64,7 @@ onEvent('recipes', e => {
                         maxRolls: 1
                     }
                 ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type);
+            }).id(`kubejs:botany_pots/crop/mystical_agriculture/${type}`);
         });
     };
 
@@ -75,7 +75,7 @@ onEvent('recipes', e => {
     let t5 = types => tier(types, 4000, ['supremium']);
     let t6 = types => tier(types, 5000, ['insanium']);
     let t7 = types => tier(types, 6000, ['magical']);
-    
+
 
     //Tier 1 Crops
     t1([
@@ -114,8 +114,12 @@ onEvent('recipes', e => {
         'squid',
         'sulfur',
         'turtle',
-        'sky_stone'
+        'sky_stone',
+        'basalz',
+        'blizz',
+        'blitz'
     ]);
+
 
     //Tier 3 Crops
     t3([
@@ -130,7 +134,6 @@ onEvent('recipes', e => {
         'graphite',
         'iron',
         'lead',
-        'manasteel',
         'nether_quartz',
         'obsidian',
         'prismarine',
@@ -144,7 +147,11 @@ onEvent('recipes', e => {
         'zinc',
         'zombie',
         'lumium',
-        //'fluorite'
+        //'fluorite',
+        'aquamarine',
+        'signalum',
+        'starmetal',
+        'manasteel'
     ]);
 
     //Tier 4 Crops
@@ -155,7 +162,6 @@ onEvent('recipes', e => {
         'constantan',
         //'crimson_steel',
         'electrum',
-        'elementium',
         'end',
         'enderman',
         'experience',
@@ -173,9 +179,11 @@ onEvent('recipes', e => {
         'steel',
         'titanium',
         'tungsten',
-        'enderium',
         'compressed_iron',
-        'hop_graphite'
+        'hop_graphite',
+        'elementium',
+        'energized_steel',
+        'blazing_crystal'
     ]);
 
     //Tier 5 Crops
@@ -183,24 +191,31 @@ onEvent('recipes', e => {
         'diamond',
         'emerald',
         'netherite',
-        'terrasteel',
         'uraninite',
         'wither_skeleton',
         'platinum',
-        'uranium'
+        'uranium',
+        'enderium',
+        'spirited_crystal',
+        'rock_crystal',
+        'niotic_crystal',
+        'terrasteel'
     ]);
 
     //Tier 6 Crops
     t6([
         'dragon_egg',
-        'nether_star'
+        'nether_star',
+        'nitro_crystal'
     ]);
 
-    //Magical Crops
+    //Magical Tier
     t7([
-/*         'allthemodium',
+        /*
+        'allthemodium',
         'vibranium',
-        'unobtainium' */
+        'unobtainium'
+        */
     ]);
 
     //Botany Trees
@@ -215,10 +230,10 @@ onEvent('recipes', e => {
             //console.log(`console.log: soil is null, set to ${soil}`);
         }
         if (!log) {
-            log = mod + ':' + name + '_log';
-            console.log(`console.log: log is null, set to ${log}`);
+            log = `${mod}:${name}_log`;
+            //console.log(`console.log: log is null, set to ${log}`);
         } else {
-            console.log("console.log: log is not null");
+            //console.log('console.log: log is not null');
         }
 
         const results = [
@@ -228,7 +243,7 @@ onEvent('recipes', e => {
                 maxRolls: 2
             },
             {
-                item: Item.of(mod + ':' + name + '_sapling').chance(dropchance_sapling),
+                item: Item.of(`${mod}:${name}_sapling`).chance(dropchance_sapling),
                 maxRolls: 2
             }
         ];
@@ -240,12 +255,12 @@ onEvent('recipes', e => {
             });
         }
 
-        e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil]).id('kubejs:botany_pot/tree/' + mod + '/' + name);
+        e.recipes.botanypots.crop(results, `${mod}:${name}_sapling`).categories([soil]);
     };
 
-    /* 
-     Use the function to add custom trees to the pots. 
-       Parameter 1 is mod as the advanced tooltip sees it.   
+    /*
+     Use the function to add custom trees to the pots.
+       Parameter 1 is mod as the advanced tooltip sees it.
        Parameter 2 is the tree name as the advanced tooltip sees it.
        Parameter 3 is for the unique drops like apple/cherry etc. If none, use 'null' without the quotes.
        Parameter 4 is for the soil to grow on, using 'modname:blockname'. If dirt, 'null' without the quotes will default to dirt.
@@ -260,7 +275,8 @@ onEvent('recipes', e => {
     growTreeUniversal('silentgear', 'netherwood', 'silentgear:nether_banana', null, null);
     growTreeUniversal('forbidden_arcanus', 'cherrywood', 'forbidden_arcanus:cherry_peach', null, null);
     growTreeUniversal('forbidden_arcanus', 'mysterywood', 'minecraft:golden_apple', null, null);
-/*     //Quark Trees
+    /*
+    //Quark Trees
     growTreeUniversal('quark', 'blue_blossom', null, null, 'minecraft:spruce_log');
     growTreeUniversal('quark', 'lavender_blossom', null, null, 'minecraft:spruce_log');
     growTreeUniversal('quark', 'orange_blossom', null, null, 'minecraft:spruce_log');
@@ -323,7 +339,8 @@ onEvent('recipes', e => {
     growTreeUniversal('byg', 'red_oak', null, null, 'minecraft:dark_oak_log');
     growTreeUniversal('byg', 'red_spruce', null, null, 'minecraft:spruce_log');
     growTreeUniversal('byg', 'yellow_birch', null, null, 'minecraft:birch_log');
-    growTreeUniversal('byg', 'yellow_spruce', null, null, 'minecraft:spruce_log'); */
+    growTreeUniversal('byg', 'yellow_spruce', null, null, 'minecraft:spruce_log');
+    */
 
     //Ars Nouveau Mana Bloom
     const results = [

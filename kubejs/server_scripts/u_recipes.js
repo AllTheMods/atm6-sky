@@ -14,10 +14,7 @@ onEvent('recipes', e => {
             amount: 1,
             gas: 'mekanism:antimatter'
         },
-        output: {
-            item: 'kubejs:uu_matter',
-            count: 16
-        },
+        output: Item.of('kubejs:uu_matter', 16).toResultJson(),
         duration: 1000
     });
     e.custom({
@@ -25,11 +22,7 @@ onEvent('recipes', e => {
         input: {
             tag: 'forge:dusts/unobtainium_vibranium_alloy'
         },
-        output: {
-            type: 'forge:nbt',
-            item: 'kubejs:uu_matter',
-            count: 4
-        },
+        output: Item.of('kubejs:uu_matter', 4).toResultJson(),
         cad: {
             item: 'psi:cad_assembly_psimetal'
         },
@@ -45,10 +38,7 @@ onEvent('recipes', e => {
                     item: 'kubejs:uu_matter'
                 }
             },
-            result: {
-                item: result,
-                count: count != null ? count : 1
-            }
+            result: Item.of(result, count != null ? count : 1).toResultJson()
         });
     }
 

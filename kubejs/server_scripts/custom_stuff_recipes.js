@@ -1,12 +1,12 @@
 onEvent('recipes', e => {
 
-  function kjsShaped(result, pattern, ingredients, count) {
+  const kjsShaped = (result, pattern, ingredients, count) => {
     e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients);
-  }
+  };
 
-  function kjsShapeless(result, ingredients, count) {
+  const kjsShapeless = (result, ingredients, count) => {
     e.shapeless(item.of(result, count != null ? count : 1), ingredients);
-  }
+  };
 
   kjsShapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh']);
   e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(0.5);
@@ -98,7 +98,8 @@ onEvent('recipes', e => {
       item: 'kubejs:magical_soil'
     }
   });
-  /* kjsShaped('solarflux:sp_custom_allthemodium', [
+  /*
+  kjsShaped('solarflux:sp_custom_allthemodium', [
     'PPP',
     'SAS',
     'SDS'
@@ -127,7 +128,7 @@ onEvent('recipes', e => {
     P: 'solarflux:photovoltaic_cell_6'
   }, 2);
  */
-  function customBlock(block, item) {
+  const customBlock = (block, item) => {
     kjsShapeless(item, block, 9);
     kjsShaped(block, [
       'AAA',
@@ -136,7 +137,7 @@ onEvent('recipes', e => {
     ], {
       A: item
     });
-  }
+  };
 
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star');
   customBlock('kubejs:aquamarine_block', 'astralsorcery:aquamarine');

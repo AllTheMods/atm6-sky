@@ -37,21 +37,21 @@
 	World = false
 
 [automation]
-	"Chain Linkage" = true
-	"Chains Connect Blocks" = true
-	Chute = true
-	"Color Slime" = true
-	"Dispensers Place Blocks" = true
-	"Ender Watcher" = true
-	"Endermites Form Shulkers" = true
-	"Feeding Trough" = true
-	Gravisand = true
-	"Iron Rod" = true
-	"Metal Buttons" = true
-	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
-	"Redstone Circuit" = true
-	"Weather Sensor" = true
+	"Chain Linkage" = false
+	"Chains Connect Blocks" = false
+	Chute = false
+	"Color Slime" = false
+	"Dispensers Place Blocks" = false
+	"Ender Watcher" = false
+	"Endermites Form Shulkers" = false
+	"Feeding Trough" = false
+	Gravisand = false
+	"Iron Rod" = false
+	"Metal Buttons" = false
+	"Obsidian Plate" = false
+	"Pistons Move Tile Entities" = false
+	"Redstone Circuit" = false
+	"Weather Sensor" = false
 
 	[automation.chain_linkage]
 		#Can vehicle-linking chains be used for crafting chain armor?
@@ -213,12 +213,12 @@
 	"Shulker Box Right Click" = true
 
 	[management.easy_transfering]
-		"Enable Shift Lock" = true
+		"Enable Shift Lock" = false
 
 	[management.inventory_sorting]
-		"Enable Chests" = true
-		"Enable Player Inventory" = true
-		"Enable Player Inventory In Chests" = true
+		"Enable Chests" = false
+		"Enable Player Inventory" = false
+		"Enable Player Inventory In Chests" = false
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
@@ -440,32 +440,32 @@
 		"Torches Burn" = true
 
 [world]
-	"Big Dungeon" = true
-	"Big Stone Clusters" = true
-	Biotite = true
-	"Blossom Trees" = true
-	"Brimstone Underground Biome" = true
-	"Cave Crystal Underground Biome" = true
-	"Cave Roots" = true
-	"Chorus Vegetation" = true
-	Crevices = true
-	"Elder Prismarine Underground Biome" = true
-	"Fairy Rings" = true
-	"Glowshroom Underground Biome" = true
-	"Lush Underground Biome" = true
-	"Mega Caves" = true
-	"Monster Box" = true
-	"Nether Obsidian Spikes" = true
-	"New Stone Types" = true
-	"Overgrown Underground Biome" = true
-	"Permafrost Underground Biome" = true
-	"Realistic World Gen" = true
-	"Sandstone Underground Biome" = true
-	"Slime Underground Biome" = true
-	Speleothems = true
-	"Spider Nest Underground Biome" = true
-	"Spiral Spires" = true
-	"Underground Clay" = true
+	"Big Dungeon" = false
+	"Big Stone Clusters" = false
+	Biotite = false
+	"Blossom Trees" = false
+	"Brimstone Underground Biome" = false
+	"Cave Crystal Underground Biome" = false
+	"Cave Roots" = false
+	"Chorus Vegetation" = false
+	Crevices = false
+	"Elder Prismarine Underground Biome" = false
+	"Fairy Rings" = false
+	"Glowshroom Underground Biome" = false
+	"Lush Underground Biome" = false
+	"Mega Caves" = false
+	"Monster Box" = false
+	"Nether Obsidian Spikes" = false
+	"New Stone Types" = false
+	"Overgrown Underground Biome" = false
+	"Permafrost Underground Biome" = false
+	"Realistic World Gen" = false
+	"Sandstone Underground Biome" = false
+	"Slime Underground Biome" = false
+	Speleothems = false
+	"Spider Nest Underground Biome" = false
+	"Spiral Spires" = false
+	"Underground Clay" = false
 
 	[world.big_dungeon]
 		"Chest Chance" = 0.5
@@ -1416,11 +1416,11 @@
 			"Min Height" = 20
 
 [mobs]
-	Crabs = true
-	Foxhound = true
-	Frogs = true
-	Stonelings = true
-	Toretoise = true
+	Crabs = false
+	Foxhound = false
+	Frogs = false
+	Stonelings = false
+	Toretoise = false
 
 	[mobs.crabs]
 		"Enable Brewing" = true
@@ -1597,11 +1597,11 @@
 		"Shiny Animal Chance" = 2048
 
 [oddities]
-	Backpack = true
-	Magnets = true
-	"Matrix Enchanting" = true
-	Pipes = true
-	"Totem Of Holding" = true
+	Backpack = false
+	Magnets = false
+	"Matrix Enchanting" = false
+	Pipes = false
+	"Totem Of Holding" = false
 
 	[oddities.backpack]
 		"Base Ravager Hide Drop" = 1

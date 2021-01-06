@@ -1,0 +1,15 @@
+{
+  "commands": true,
+  "util": true,
+  "entityType": true,
+  "lootTableManger": true,
+  "simpleReloadableResourceManager": true,
+  "chunkSerializer": true,
+  "gameData": true,
+  "versionChecker": true,
+  "forgeConfigSpec": true,
+  "yggdrasilAuthenticationService": true,
+  "clientRecipeBook": true,
+  "modelBakery": true,
+  "atlasTexture": true
+}

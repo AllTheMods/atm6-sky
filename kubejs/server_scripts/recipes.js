@@ -329,47 +329,6 @@ onEvent('recipes', e => {
       results: results
     });
   };
-  salvage('minecraft:netherite_sword', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:stick').toResultJson(),
-    Item.of('minecraft:diamond', 2).toResultJson()
-  ]);
-  salvage('minecraft:netherite_shovel', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:stick', 2).toResultJson(),
-    Item.of('minecraft:diamond', 1).toResultJson()
-  ]);
-  salvage('minecraft:netherite_pickaxe', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:stick', 2).toResultJson(),
-    Item.of('minecraft:diamond', 3).toResultJson()
-  ]);
-  salvage('minecraft:netherite_hoe', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:stick', 2).toResultJson(),
-    Item.of('minecraft:diamond', 2).toResultJson()
-  ]);
-  salvage('minecraft:netherite_axe', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:stick', 2).toResultJson(),
-    Item.of('minecraft:diamond', 3).toResultJson()
-  ]);
-  salvage('minecraft:netherite_boots', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:diamond', 4).toResultJson()
-  ]);
-  salvage('minecraft:netherite_leggings', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:diamond', 7).toResultJson()
-  ]);
-  salvage('minecraft:netherite_chestplate', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:diamond', 8).toResultJson()
-  ]);
-  salvage('minecraft:netherite_helmet', [
-    Item.of('minecraft:netherite_ingot').toResultJson(),
-    Item.of('minecraft:diamond', 5).toResultJson()
-  ]);
   salvage('minecraft:anvil', [
     Item.of('minecraft:iron_ingot', 31).toResultJson()
   ]);
@@ -664,9 +623,7 @@ onEvent('recipes', e => {
       starlight: starlight,
       pattern: pattern,
       key: items,
-      output: [
-        Item.of(result).toResultJson()
-      ],
+      output: [Item.of(result).toResultJson()],
       effects: [
         'astralsorcery:built_in_effect_discovery_central_beam'
       ]
@@ -776,37 +733,19 @@ onEvent('recipes', e => {
 
   //Jumbo Furnace
   /*
-  function jumbo(ingredients, result, xp) {
+  const jumbo = (ingredients, result, xp) => {
     e.custom({
       type: 'jumbofurnace:jumbo_smelting',
       ingredients: ingredients,
-      result: {
-        item: result
-      },
+      result: Item.of(result).toResultJson(),
       experience: xp
     });
-  }
-  jumbo(
-    [{
-        type: 'forge:nbt',
-        item: 'storagedrawers:emerald_storage_upgrade',
-        count: 16
-      },
-      {
-        type: 'jumbofurnace:tag_stack',
-        tag: 'forge:ingots/unobtainium',
-        count: 2
-      },
-      {
-        type: 'jumbofurnace:tag_stack',
-        tag: 'forge:ingots/allthemodium',
-        count: 4
-      },
-      {
-        type: 'jumbofurnace:tag_stack',
-        tag: 'forge:ender_pearls',
-        count: 16
-      }
+  };
+  jumbo([
+      Ingredient.of('storagedrawers:emerald_storage_upgrade', 16).toJson(),
+      Ingredient.of('#forge:ingots/unobtainium', 2).toJson(),
+      Ingredient.of('#forge:ingots/allthemodium', 4).toJson(),
+      Ingredient.of('#forge:ender_pearls', 16).toJson()
     ],
     'storagedrawers:creative_storage_upgrade', 5
   );
@@ -857,7 +796,8 @@ onEvent('recipes', e => {
     F: 'mysticalagriculture:mystical_fertilizer'
   });
 
-  /* //QuarryPlus
+  /*
+  //QuarryPlus
   e.shaped('quarryplus:solidquarry', [
     'FFF',
     'DGD',
@@ -877,7 +817,8 @@ onEvent('recipes', e => {
     G: '#forge:storage_blocks/gold',
     D: '#forge:storage_blocks/diamond',
     A: '#forge:nuggets/allthemodium'
-  }); */
+  });
+  */
 
   //Mining Gadgets
   e.shaped('mininggadgets:upgrade_empty', [

@@ -39,12 +39,12 @@ onEvent('item.registry', e => {
   */
   //Script for making items for the mekanism 5x process
   /*
-  utils.listOf(ores).forEach(function (ore) {
-    var oreFormatted = ore.toLowerCase();
-    e.create('clump_' + oreFormatted).displayName(ore + ' Clump').texture('kubejs:item/oreStuff/clump_' + oreFormatted);
-    e.create('shard_' + oreFormatted).displayName(ore + ' Shard').texture('kubejs:item/oreStuff/shard_' + oreFormatted);
-    e.create('dirty_' + oreFormatted).displayName('Dirty ' + ore + ' Dust').texture('kubejs:item/oreStuff/dirty_' + oreFormatted);
-    e.create('crystal_' + oreFormatted).displayName(ore + ' Crystal').texture('kubejs:item/oreStuff/crystal_' + oreFormatted);
+  ores.forEach(ore => {
+    var oreForm = ore.toLowerCase();
+    e.create('clump_' + oreForm).displayName(ore + ' Clump').texture('kubejs:item/oreStuff/clump_' + oreForm);
+    e.create('shard_' + oreForm).displayName(ore + ' Shard').texture('kubejs:item/oreStuff/shard_' + oreForm);
+    e.create('dirty_' + oreForm).displayName('Dirty ' + ore + ' Dust').texture('kubejs:item/oreStuff/dirty_' + oreForm);
+    e.create('crystal_' + oreForm).displayName(ore + ' Crystal').texture('kubejs:item/oreStuff/crystal_' + oreForm);
   });
   */
 });
@@ -54,5 +54,5 @@ onEvent('block.registry', e => {
   e.create('nether_star_block').displayName('§eNether Star Block').material(block.material.iron).hardness(2).lightLevel(2);
   e.create('aquamarine_block').displayName('Aquamarine Block').material(block.material.rock).hardness(2).lightLevel(1);
   e.create('fluorite_block').displayName('Fluorite Block').material(block.material.ice).hardness(1.2);
-  e.create('lithium_block').displayName('Lithium Block').material(block.material.sand).hardness(1);
+  e.create('lithium_block').displayName('Lithium Block').material(block.material.iron).hardness(1);
 });

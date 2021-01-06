@@ -27,7 +27,7 @@ onEvent('recipes', e => {
       type: 'minecraft:smelting'
     });
     e.remove({
-      input: [`'#forge:ores/${name}`, `#forge:dusts/${name}`],
+      input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
       output: `#forge:ingots/${name}`,
       type: 'minecraft:blasting'
     });

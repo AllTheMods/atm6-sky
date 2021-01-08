@@ -5,7 +5,7 @@ onEvent('recipes', e => {
       output: result,
       type: 'minecraft:crafting_shaped'
     });
-    e.shaped(item.of(result, count),
+    e.shaped(Item.of(result, count),
       pattern,
       ingridients
     );
@@ -16,7 +16,7 @@ onEvent('recipes', e => {
       output: result,
       type: 'minecraft:crafting_shapeless'
     });
-    e.shapeless(item.of(result, count), ingridients);
+    e.shapeless(Item.of(result, count), ingridients);
   };
 
   const modifySmelt = (result, ingridients) => {
@@ -103,7 +103,7 @@ onEvent('recipes', e => {
   ], {
     C: 'minecraft:honeycomb'
   });
-  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block');
+  e.shapeless(Item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block');
   modifyShaped('solarflux:mirror', 3, [
     'GGG',
     'III'
@@ -181,7 +181,7 @@ onEvent('recipes', e => {
     e.remove({
       id: 'bagofyurting:bag_of_yurting'
     });
-    e.shaped(item.of('bagofyurting:bag_of_yurting', 1), [
+    e.shaped(Item.of('bagofyurting:bag_of_yurting', 1), [
       'WSW',
       'WEW',
       'WWW'
@@ -349,7 +349,7 @@ onEvent('recipes', e => {
   e.remove({
     output: '#botanypots:botany_pots'
   });
-  e.shaped(item.of('botanypots:botany_pot'), [
+  e.shaped(Item.of('botanypots:botany_pot'), [
     'T T',
     'TPT',
     ' T '
@@ -357,7 +357,7 @@ onEvent('recipes', e => {
     T: 'minecraft:terracotta',
     P: 'minecraft:flower_pot'
   });
-  e.shaped(item.of('botanypots:hopper_botany_pot'), [
+  e.shaped(Item.of('botanypots:hopper_botany_pot'), [
     'MPM',
     ' H '
   ], {
@@ -365,7 +365,7 @@ onEvent('recipes', e => {
     P: 'botanypots:botany_pot',
     H: ['botania:hopperhock', 'botania:hopperhock_chibi']
   });
-  e.shaped(item.of('botanypots:hopper_botany_pot'), [
+  e.shaped(Item.of('botanypots:hopper_botany_pot'), [
     'MPM',
     ' H '
   ], {
@@ -414,7 +414,7 @@ onEvent('recipes', e => {
 
   //Dye stuff
   colors.forEach(color => {
-    e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
+    e.shaped(Item.of('botanypots:hopper_' + color + '_botany_pot'), [
       'MPM',
       ' H '
     ], {
@@ -422,7 +422,7 @@ onEvent('recipes', e => {
       P: 'botanypots:' + color + '_botany_pot',
       H: ['botania:hopperhock', 'botania:hopperhock_chibi']
     });
-    e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
+    e.shaped(Item.of('botanypots:hopper_' + color + '_botany_pot'), [
       'MPM',
       ' H '
     ], {
@@ -430,9 +430,9 @@ onEvent('recipes', e => {
       P: 'botanypots:' + color + '_botany_pot',
       H: 'pneumaticcraft:omnidirectional_hopper'
     });
-    e.shapeless(item.of('botanypots:' + color + '_botany_pot'), [pots, '#forge:dyes/' + color]);
-    e.shapeless(item.of('botanypots:hopper_' + color + '_botany_pot'), ['#botanypots:hopper_botany_pots', '#forge:dyes/' + color]);
-    //e.recipes.mekanism.enriching(item.of('minecraft:' + color + '_dye', 2), '#byg:' + color + '_dye');
+    e.shapeless(Item.of('botanypots:' + color + '_botany_pot'), [pots, '#forge:dyes/' + color]);
+    e.shapeless(Item.of('botanypots:hopper_' + color + '_botany_pot'), ['#botanypots:hopper_botany_pots', '#forge:dyes/' + color]);
+    //e.recipes.mekanism.enriching(Item.of('minecraft:' + color + '_dye', 2), '#byg:' + color + '_dye');
     /* e.recipes.pedestals.pedestal_crushing({
       ingredient: {
         tag: 'byg:' + color + '_dye'
@@ -446,18 +446,18 @@ onEvent('recipes', e => {
       output: 'minecraft:' + color + '_bed'
     });
     e.replaceInput('minecraft:' + color + '_dye', '#forge:dyes/' + color);
-    e.shaped(item.of('minecraft:' + color + '_bed'), [
+    e.shaped(Item.of('minecraft:' + color + '_bed'), [
       'WWW',
       'PPP'
     ], {
       P: '#minecraft:planks',
       W: 'minecraft:' + color + '_wool'
     });
-    e.shapeless(item.of('minecraft:' + color + '_bed'), ['#minecraft:beds', '#forge:dyes/' + color]);
+    e.shapeless(Item.of('minecraft:' + color + '_bed'), ['#minecraft:beds', '#forge:dyes/' + color]);
     e.remove({
       output: 'minecraft:' + color + '_wool'
     });
-    e.shaped(item.of('minecraft:' + color + '_wool', 8), [
+    e.shaped(Item.of('minecraft:' + color + '_wool', 8), [
       'WWW',
       'WCW',
       'WWW'
@@ -465,7 +465,7 @@ onEvent('recipes', e => {
       C: '#forge:dyes/' + color,
       W: '#minecraft:wool'
     });
-    e.shaped(item.of('minecraft:' + color + '_wool', 2), [
+    e.shaped(Item.of('minecraft:' + color + '_wool', 2), [
       'C',
       'C',
       'C',
@@ -475,8 +475,8 @@ onEvent('recipes', e => {
     e.remove({
       output: 'minecraft:' + color + '_carpet'
     });
-    e.shapeless(item.of('minecraft:' + color + '_carpet'), ['#minecraft:carpets', '#forge:dyes/' + color]);
-    e.shaped(item.of('minecraft:' + color + '_carpet', 8), [
+    e.shapeless(Item.of('minecraft:' + color + '_carpet'), ['#minecraft:carpets', '#forge:dyes/' + color]);
+    e.shaped(Item.of('minecraft:' + color + '_carpet', 8), [
       'WWW',
       'WCW',
       'WWW'
@@ -484,7 +484,7 @@ onEvent('recipes', e => {
       C: '#forge:dyes/' + color,
       W: '#minecraft:carpets'
     });
-    e.shaped(item.of('minecraft:' + color + '_carpet', 3), [
+    e.shaped(Item.of('minecraft:' + color + '_carpet', 3), [
       'WW'
     ], {
       W: 'minecraft:' + color + '_wool'
@@ -493,7 +493,7 @@ onEvent('recipes', e => {
           output: 'comforts:sleeping_bag_' + color
         });
         if (color !== 'light_gray') {
-          e.shaped(item.of('comforts:sleeping_bag_' + color), [
+          e.shaped(Item.of('comforts:sleeping_bag_' + color), [
             'WWW',
             'SSS',
             'WWW',
@@ -501,14 +501,14 @@ onEvent('recipes', e => {
             W: 'absentbydesign:slab_wool_' + color,
             S: '#forge:string'
           });
-          e.shaped(item.of('minecraft:' + color + '_wool', 1), [
+          e.shaped(Item.of('minecraft:' + color + '_wool', 1), [
             'W',
             'W'
           ], {
             W: 'absentbydesign:slab_wool_' + color
           });
         } else {
-          e.shaped(item.of('comforts:sleeping_bag_light_gray'), [
+          e.shaped(Item.of('comforts:sleeping_bag_light_gray'), [
             'WWW',
             'SSS',
             'WWW',
@@ -516,14 +516,14 @@ onEvent('recipes', e => {
             W: 'absentbydesign:slab_wool_silver',
             S: '#forge:string'
           });
-          e.shaped(item.of('minecraft:light_gray_wool', 1), [
+          e.shaped(Item.of('minecraft:light_gray_wool', 1), [
             'W',
             'W'
           ], {
             W: 'absentbydesign:slab_wool_silver'
           });
         } */
-    e.shaped(item.of('minecraft:' + color + '_stained_glass', 3), [
+    e.shaped(Item.of('minecraft:' + color + '_stained_glass', 3), [
       'GGG',
       'G G',
       'GGG',
@@ -531,13 +531,13 @@ onEvent('recipes', e => {
       G: 'minecraft:' + color + '_stained_glass_pane'
     });
   });
-  e.shaped(item.of('minecraft:white_wool'), [
+  e.shaped(Item.of('minecraft:white_wool'), [
     'SS',
     'SS'
   ], {
     S: '#forge:string'
   });
-  e.shaped(item.of('minecraft:glass', 3), [
+  e.shaped(Item.of('minecraft:glass', 3), [
     'GGG',
     'G G',
     'GGG',

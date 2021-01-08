@@ -59,29 +59,6 @@ onEvent('recipes', e => {
       'solarflux:sp_7',
       'solarflux:sp_8',
 
-      /*
-      'quark:apple_crate',
-      'quark:potato_crate',
-      'quark:carrot_crate',
-      'quark:beetroot_crate',
-      'quark:charcoal_block',
-      'quark:gunpowder_sack',
-      'quark:apple_crate',
-      'quark:potato_crate',
-      'quark:carrot_crate',
-      'quark:beetroot_crate',
-      'quark:charcoal_block',
-      'quark:gunpowder_sack',
-      'quark:oak_chest',
-      'quark:dark_oak_chest',
-      'quark:acacia_chest',
-      'quark:spruce_chest',
-      'quark:birch_chest',
-      'quark:jungle_chest',
-      'quark:warped_chest',
-      'quark:crimson_chest',
-      */
-
       'titanium:iron_gear',
       'titanium:gold_gear',
       'titanium:diamond_gear',
@@ -121,6 +98,8 @@ onEvent('recipes', e => {
       'extradisks:infinite_storage_part',
 
       'mysticalagriculture:unattuned_augment',
+
+      //'allthemodium:teleport_pad',
 
       'rftoolsbuilder:builder'
     ]

@@ -30,7 +30,6 @@ onEvent('recipes', e => {
         'E': 'mysticalagriculture:nature_essence'
     });
 
-    //circle('rats:oratchalcum_ingot', 4, 'oratchalcum');
     circle('allthemodium:allthemodium_nugget', 2, 'allthemodium');
     circle('allthemodium:vibranium_nugget', 2, 'vibranium');
     circle('allthemodium:unobtainium_nugget', 2, 'unobtainium');
@@ -38,8 +37,6 @@ onEvent('recipes', e => {
     //circle('silentgear:azure_silver_ingot', 6, 'azure_silver');
     //circle('silentgear:crimson_iron_ingot', 6, 'crimson_iron');
     //circle('silentgear:crimson_steel_ingot', 4, 'crimson_steel');
-    //circle('silents_mechanisms:enderium_ingot', 4, 'enderium');
-    //circle('silents_mechanisms:lumium_ingot', 4, 'lumium');
     //circle('mekanism:fluorite_gem', 12, 'fluorite');
 });
 */

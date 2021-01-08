@@ -25,6 +25,65 @@ onEvent('recipes', e => {
       output: `#forge:dusts/${name}`,
       type: 'mekanism:enriching'
     });
+    /*
+    e.remove({
+      input: `mekanism:dirty_dust_${name}`,
+      output: `mekanism:dust_${name}`,
+      type: 'mekanism:enriching'
+    });
+    e.remove({
+      input: `#mekanism:clumps/${name}`,
+      output: `mekanism:dirty_dust_${name}`,
+      type: 'mekanism:crushing'
+    });
+    e.remove({
+      input: `#forge:ores/${name}`,
+      output: `mekanism:clump_${name}`,
+      type: 'mekanism:purifying'
+    });
+    e.remove({
+      input: `mekanism:shard_${name}`,
+      output: `mekanism:clump_${name}`,
+      type: 'mekanism:purifying'
+    });
+    e.remove({
+      input: `#forge:ores/${name}`,
+      output: `mekanism:shard_${name}`,
+      type: 'mekanism:injecting'
+    });
+    e.remove({
+      input: `#mekanism:crystals/${name}`,
+      output: `mekanism:shard_${name}`,
+      type: 'mekanism:injecting'
+    });
+    e.remove({
+      input: {
+        slurry: `mekanism:clean_${name}`,
+        amount: 200
+      },
+      output: `mekanism:crystal_${name}`,
+      type: 'mekanism:crystallizing'
+    });
+    e.remove({
+      input: {
+        slurry: `mekanism:dirty_${name}`,
+        amount: 1
+      },
+      output: {
+        slurry: `mekanism:clean_${name}`,
+        amount: 1
+      },
+      type: 'mekanism:washing'
+    });
+    e.remove({
+      input: `#forge:ores/${name}`,
+      output: {
+        slurry: `mekanism:dirty_${name}`,
+        amount: 1000
+      },
+      type: 'mekanism:dissolution'
+    });
+    */
     e.remove({
       input: `#forge:ores/${name}`,
       type: 'immersiveengineering:crusher'
@@ -121,16 +180,20 @@ onEvent('recipes', e => {
   unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
   unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
 
-  const replace = (gone, stay) => {
-    e.replaceOutput(gone, stay);
-    e.replaceInput(gone, stay);
+  const replace = (gone, item, tag) => {
+    if (tag != null) {
+      e.replaceInput(gone, tag);
+    }
+    if (item != null) {
+      e.replaceOutput(gone, item);
+    }
   };
   replace('#appliedenergistics2:dusts/ender', 'thermal:ender_pearl_dust');
-  replace('#forge:dusts/sulfur', 'thermal:sulfur_dust');
-  replace('#forge:sawdust', 'thermal:sawdust');
-  replace('#forge:dusts/diamond', 'thermal:diamond_dust');
-  replace('#forge:dusts/emerald', 'thermal:emerald_dust');
-  replace('#forge:dusts/quartz', 'thermal:quartz_dust');
-  replace('#forge:dusts/lapis', 'thermal:lapis_dust');
-  replace('#forge:dusts/coal', 'mekanism:dust_coal');
+  replace('#forge:dusts/sulfur', 'thermal:sulfur_dust', '#forge:dusts/sulfur');
+  replace('#forge:sawdust', 'thermal:sawdust', '#forge:sawdust');
+  replace('#forge:dusts/diamond', 'thermal:diamond_dust', '#forge:dusts/diamond');
+  replace('#forge:dusts/emerald', 'thermal:emerald_dust', '#forge:dusts/emerald');
+  replace('#forge:dusts/quartz', 'thermal:quartz_dust', '#forge:dusts/quartz');
+  replace('#forge:dusts/lapis', 'thermal:lapis_dust', '#forge:dusts/lapis');
+  replace('#forge:dusts/coal', 'mekanism:dust_coal', '#forge:dusts/coal');
 });

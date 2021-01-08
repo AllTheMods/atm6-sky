@@ -145,12 +145,16 @@ onEvent('item.tags', e => {
 //Block tags go here
 onEvent('block.tags', e => {
   //Add
+  e.add('forge:ores/starmetal', 'astralsorcery:starmetal_ore');
+  e.add('forge:ores/rock_crystal', 'astralsorcery:rock_crystal_ore');
+  e.add('forge:ores/aquamarine', 'astralsorcery:aquamarine_sand_ore');
   e.add('forge:ores/certus_quartz', ['appliedenergistics2:quartz_ore', 'appliedenergistics2:charged_quartz_ore']);
-  e.add('forge:ores/quartz', '#forge:ores/certus_quartz');
-  e.add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore');
-  e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end']);
-  e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick']);
-  e.add('misctags:no_moving', ['#minecraft:wither_immune', /* 'potionsmaster:cauldron', */ 'appliedenergistics2:cable_bus']);
+  e.add('forge:ores/dimensionalshard', '/rftoolsbase:dimensionalshard_.+/');
+  e.add('forge:ores', '/#forge:ores.+/');
+  e.add('ftbchunks:interact_whitelist', []);
+  e.add('mcwwindows:window', '/mcwwindows:.+_win/');
+  e.add('misctags:concrete', '/minecraft:.+_concrete/');
+  e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/', '#minecraft:wither_immune', /* 'potionsmaster:cauldron', */ 'appliedenergistics2:cable_bus']);
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving');
   /*
   e.add('bagofyurting:blacklist', '#misctags:no_moving');
@@ -170,7 +174,7 @@ onEvent('block.tags', e => {
   e.add('forge:storage_blocks/lithium', 'kubejs:lithium_block');
   e.add('forge:storage_blocks/nether_star', 'kubejs:nether_star_block');
   e.add('forge:storage_blocks/uraninite', 'powah:uraninite_block');
-  e.add('cyclic:scythe_brush', ['#minecraft:flowers']);
+  e.add('cyclic:scythe_brush', '#minecraft:flowers');
 
   /*
   //Resourceful Bees Apiary Tags
@@ -183,23 +187,6 @@ onEvent('block.tags', e => {
   e.add('resourcefulbees:valid_apiary', ['minecraft:sea_lantern', 'minecraft:dark_prismarine', 'minecraft:prismarine_bricks', 'minecraft:prismarine']);
   //Removed 'minecraft:permafrost_bricks' as they are replaced by Quark
   e.add('resourcefulbees:valid_apiary', ['minecraft:bone_block', 'minecraft:smooth_stone']);
-  //Enviromats
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_white', 'enviromats:alabaster_white_cobble', 'enviromats:alabaster_white_polished', 'enviromats:alabaster_white_brick', 'enviromats:alabaster_white_brick_small', 'enviromats:alabaster_white_tile', 'enviromats:alabaster_white_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_orange', 'enviromats:alabaster_orange_cobble', 'enviromats:alabaster_orange_polished', 'enviromats:alabaster_orange_brick', 'enviromats:alabaster_orange_brick_small', 'enviromats:alabaster_orange_tile', 'enviromats:alabaster_orange_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_magenta', 'enviromats:alabaster_magenta_cobble', 'enviromats:alabaster_magenta_polished', 'enviromats:alabaster_magenta_brick', 'enviromats:alabaster_magenta_brick_small', 'enviromats:alabaster_magenta_tile', 'enviromats:alabaster_magenta_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_light_blue', 'enviromats:alabaster_light_blue_cobble', 'enviromats:alabaster_light_blue_polished', 'enviromats:alabaster_light_blue_brick', 'enviromats:alabaster_light_blue_brick_small', 'enviromats:alabaster_light_blue_tile', 'enviromats:alabaster_light_blue_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_yellow', 'enviromats:alabaster_yellow_cobble', 'enviromats:alabaster_yellow_polished', 'enviromats:alabaster_yellow_brick', 'enviromats:alabaster_yellow_brick_small', 'enviromats:alabaster_yellow_tile', 'enviromats:alabaster_yellow_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_lime', 'enviromats:alabaster_lime_cobble', 'enviromats:alabaster_lime_polished', 'enviromats:alabaster_lime_brick', 'enviromats:alabaster_lime_brick_small', 'enviromats:alabaster_lime_tile', 'enviromats:alabaster_lime_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_pink', 'enviromats:alabaster_pink_cobble', 'enviromats:alabaster_pink_polished', 'enviromats:alabaster_pink_brick', 'enviromats:alabaster_pink_brick_small', 'enviromats:alabaster_pink_tile', 'enviromats:alabaster_pink_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_gray', 'enviromats:alabaster_gray_cobble', 'enviromats:alabaster_gray_polished', 'enviromats:alabaster_gray_brick', 'enviromats:alabaster_gray_brick_small', 'enviromats:alabaster_gray_tile', 'enviromats:alabaster_gray_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_light_gray', 'enviromats:alabaster_light_gray_cobble', 'enviromats:alabaster_light_gray_polished', 'enviromats:alabaster_light_gray_brick', 'enviromats:alabaster_light_gray_brick_small', 'enviromats:alabaster_light_gray_tile', 'enviromats:alabaster_light_gray_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_cyan', 'enviromats:alabaster_cyan_cobble', 'enviromats:alabaster_cyan_polished', 'enviromats:alabaster_cyan_brick', 'enviromats:alabaster_cyan_brick_small', 'enviromats:alabaster_cyan_tile', 'enviromats:alabaster_cyan_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_purple', 'enviromats:alabaster_purple_cobble', 'enviromats:alabaster_purple_polished', 'enviromats:alabaster_purple_brick', 'enviromats:alabaster_purple_brick_small', 'enviromats:alabaster_purple_tile', 'enviromats:alabaster_purple_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_blue', 'enviromats:alabaster_blue_cobble', 'enviromats:alabaster_blue_polished', 'enviromats:alabaster_blue_brick', 'enviromats:alabaster_blue_brick_small', 'enviromats:alabaster_blue_tile', 'enviromats:alabaster_blue_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_brown', 'enviromats:alabaster_brown_cobble', 'enviromats:alabaster_brown_polished', 'enviromats:alabaster_brown_brick', 'enviromats:alabaster_brown_brick_small', 'enviromats:alabaster_brown_tile', 'enviromats:alabaster_brown_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_green', 'enviromats:alabaster_green_cobble', 'enviromats:alabaster_green_polished', 'enviromats:alabaster_green_brick', 'enviromats:alabaster_green_brick_small', 'enviromats:alabaster_green_tile', 'enviromats:alabaster_green_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_red', 'enviromats:alabaster_red_cobble', 'enviromats:alabaster_red_polished', 'enviromats:alabaster_red_brick', 'enviromats:alabaster_red_brick_small', 'enviromats:alabaster_red_tile', 'enviromats:alabaster_red_tile_small']);
-  e.add('resourcefulbees:valid_apiary', ['enviromats:alabaster_black', 'enviromats:alabaster_black_cobble', 'enviromats:alabaster_black_polished', 'enviromats:alabaster_black_brick', 'enviromats:alabaster_black_brick_small', 'enviromats:alabaster_black_tile', 'enviromats:alabaster_black_tile_small']);
   //Quark
   e.add('resourcefulbees:valid_apiary', ['#quark:crystal', 'quark:red_crystal_pane', 'quark:orange_crystal_pane', 'quark:yellow_crystal_pane', 'quark:green_crystal_pane', 'quark:blue_crystal_pane', 'quark:indigo_crystal_pane', 'quark:violet_crystal_pane', 'quark:white_crystal_pane', 'quark:black_crystal_pane']);
   e.add('resourcefulbees:valid_apiary', ['#quark:vertical_slab', 'quark:vertical_white_stained_planks', 'quark:vertical_orange_stained_planks', 'quark:vertical_magenta_stained_planks', 'quark:vertical_light_blue_stained_planks', 'quark:vertical_yellow_stained_planks', 'quark:vertical_lime_stained_planks', 'quark:vertical_pink_stained_planks', 'quark:vertical_gray_stained_planks', 'quark:vertical_light_gray_stained_planks', 'quark:vertical_cyan_stained_planks', 'quark:vertical_purple_stained_planks', 'quark:vertical_blue_stained_planks', 'quark:vertical_brown_stained_planks', 'quark:vertical_green_stained_planks', 'quark:vertical_red_stained_planks', 'quark:vertical_black_stained_planks']);
@@ -220,12 +207,7 @@ onEvent('block.tags', e => {
   e.add('resourcefulbees:valid_apiary', ['quark:brimstone_bricks', 'quark:blaze_lantern', 'quark:soul_sandstone', 'quark:chiseled_soul_sandstone', 'quark:cut_soul_sandstone', 'quark:smooth_soul_sandstone']);
   e.add('resourcefulbees:valid_apiary', ['quark:lit_lamp', 'quark:paper_wall', 'quark:paper_wall_big', 'quark:paper_wall_sakura']);
   */
-
-  e.add('mcwwindows:window', '/mcwwindows:.+_win/');
-  e.add('misctags:concrete', '/minecraft:.+_concrete/');
-  e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']);
-  e.add('ftbchunks:interact_whitelist', []);
-  //e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/', '/rftoolsbuilder:.+/']); //, '^\\w+_glass$'
+  //e.add('resourcefulbees:valid_apiary', [/darkutils:filter_.+/, /rftoolsbuilder:.+/, /enviromats:alabaster.+/]); //, ^\\w+_glass$
 
   //Removal
   e.removeAll('minecraft:enderman_holdable');

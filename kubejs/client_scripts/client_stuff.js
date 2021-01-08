@@ -49,13 +49,13 @@ onEvent('jei.add.items', e => {
     ]);
 });
 
-
 onEvent('jei.hide.items', e => {
     e.hide([
+        '@quark',
+        '@curios',
         'forbidden_arcanus:rotten_leather',
         'appliedenergistics2:silicon',
         'appliedenergistics2:flour',
-        '@curios',
         '/pedestals:dust.+/',
         'cyclic:tile_transporter_empty',
         //'naturesaura:chunk_loader',
@@ -79,7 +79,7 @@ onEvent('jei.hide.items', e => {
         }
     });
 
-    function hideMetal(mod, name, types) {
+    const hideMetal = (mod, name, types) => {
         types.forEach(type => {
             const id = mod === 'immersiveengineering' || 'mekanism' || 'exnihilosequentia' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`;
             if (!ingredient.of(id).empty) {
@@ -87,9 +87,9 @@ onEvent('jei.hide.items', e => {
                 //console.log(`Hid ${id}`);
             }
         });
-    }
+    };
 
-    function hideStuff(mod, type, names) {
+    const hideStuff = (mod, type, names) => {
         names.forEach(name => {
             const id = mod === 'immersiveengineering' || 'mekanism' || 'exnihilosequentia' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`;
             if (!ingredient.of(id).empty) {
@@ -97,7 +97,7 @@ onEvent('jei.hide.items', e => {
                 //console.log(`Hid ${id}`);
             }
         });
-    }
+    };
 
     //Hides items based name, format: 'mod', 'metal', ['type1', 'type2', 'etc']
     hideMetal('immersiveengineering', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'storage']);
@@ -129,3 +129,10 @@ onEvent('jei.hide.items', e => {
     hideStuff('mekanism', 'dust', ['sawdust', 'sulfur', 'lapis_lazuli', 'emerald', 'diamond', 'quartz', 'iron', 'gold']);
     hideStuff('appliedenergistics2', 'dust', ['nether_quartz', 'ender', 'iron', 'gold']);
 });
+/*
+onEvent('item.tooltip', e => {
+    refined.forEach(refin => {
+        e.add(`refinedstorage:${refin}`, 'Right click or craft with a dye to color');
+    });
+});
+*/

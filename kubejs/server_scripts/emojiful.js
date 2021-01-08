@@ -31,4 +31,5 @@ onEvent('recipes', e => {
     emote('thinkaboutit', '642567832143396876.png');
     emote('thinkeyes', '642567846597230614.png');
     emote('thonk', '690375699453706250.png');
+    emote('heh', '504730156792021002.png');
 });

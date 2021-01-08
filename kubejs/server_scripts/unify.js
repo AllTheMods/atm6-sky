@@ -109,11 +109,11 @@ onEvent('recipes', e => {
       },
       turns: 8
     });
-    e.recipes.immersiveengineering.crusher(item.of(dustItem), `#forge:ingots/${name}`);
+    e.recipes.immersiveengineering.crusher(Item.of(dustItem), `#forge:ingots/${name}`);
     if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
       multiSmelt(ingotItem, `#forge:ores/${name}`);
-      e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`);
-      //e.recipes.mekanism.enriching(item.of(dustItem), `#mekanism:dirty_dusts/${name}`);
+      e.recipes.mekanism.enriching(Item.of(dustItem, 2), `#forge:ores/${name}`);
+      //e.recipes.mekanism.enriching(Item.of(dustItem), `#mekanism:dirty_dusts/${name}`);
       //This is here to stop crushing hammer recipes for modium from generating
       /*
       if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
@@ -135,13 +135,13 @@ onEvent('recipes', e => {
         });
       }
       */
-      e.recipes.immersiveengineering.crusher(item.of(dustItem, 2), `#forge:ores/${name}`);
+      e.recipes.immersiveengineering.crusher(Item.of(dustItem, 2), `#forge:ores/${name}`);
       e.remove({
         id: `pedestals:pedestal_crushing/dust${name}`
       });
       e.custom({
         type: 'pedestals:pedestal_crushing',
-        ingredient: Ingredient.of(`#forge:ingots/${name}`).toJson(),
+        ingredient: Ingredient.of(`#forge:ores/${name}`).toJson(),
         result: Item.of(dustItem, 2).toResultJson()
       });
       e.remove({
@@ -149,7 +149,7 @@ onEvent('recipes', e => {
       });
       e.custom({
         type: 'appliedenergistics2:grinder',
-        input: Ingredient.of(`#forge:ingots/${name}`).toJson(),
+        input: Ingredient.of(`#forge:ores/${name}`).toJson(),
         result: {
           primary: Item.of(dustItem, 2).toResultJson()
         },

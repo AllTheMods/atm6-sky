@@ -139,8 +139,7 @@ onEvent('item.tags', e => {
   e.remove('appliedenergistics2:metal_ingots', ['#forge:ingots/gold', '#forge:ingots/iron']);
   e.remove('appliedenergistics2:wool', '#minecraft:wool');
   e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table');
-  e.remove('forge:dyes/yellow', ('#forge:dusts/sulfur'));
-  e.remove('forge:dyes', ('#forge:dusts/sulfur'));
+  e.remove('forge:dyes/yellow', 'mekanism:dust_sulfur');
   //e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive']);
 });
 

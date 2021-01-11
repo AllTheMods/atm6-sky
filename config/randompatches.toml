@@ -26,7 +26,7 @@
 	framerate_limit_slider_step_size = 1.0
 	# Causes Minecraft to show the main menu screen after disconnecting rather than the Realms or multiplayer screen.
 	# Default: false
-	return_to_main_menu_after_disconnect = false
+	return_to_main_menu_after_disconnect = true
 	# Gives capes to RandomPatches contributors.
 	# Default: true
 	contributor_capes = true
@@ -100,7 +100,7 @@
 		#  - ${username}: The username.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		simple_title = "Minecraft ${mcversion}"
+		simple_title = "Minecraft ${mcversion} - ATM6 Sky"
 		# The Minecraft window title.
 		# The current activity is not available.
 		# Variables:
@@ -110,7 +110,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		title = "Minecraft* %s"
+		title = "Minecraft ${mcversion} - ATM6 Sky"
 		# The Minecraft window title that also takes into account the current activity.
 		# Variables:
 		#  - ${mcversion}: The Minecraft version
@@ -120,7 +120,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion} - ${activity}"
-		title_with_activity = "Minecraft ${mcversion} - ${activity}"
+		title_with_activity = "Minecraft ${mcversion} - ATM6 Sky - ${activity}"
 		# The path to the 16x16 Minecraft window icon relative to the Minecraft instance directory.
 		# Forward slashes should be used even on Windows to preserve compatibility with other platforms.
 		# Backward slashes will automatically be replaced.
@@ -143,12 +143,12 @@
 	# Min: 1
 	# Max: 2147483647
 	# Default: 120
-	read_timeout_seconds = 120
+	read_timeout_seconds = 2147483647
 	# The login timeout in ticks.
 	# Min: 1
 	# Max: 2147483647
 	# Default: 2400
-	login_timeout_ticks = 2400
+	login_timeout_ticks = 2147483647
 	# The interval in seconds at which KeepAlive packets are sent to clients.
 	# Min: 1
 	# Max: 2147483647
@@ -171,7 +171,7 @@
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_compressed_packet_size = 16777216
+	max_compressed_packet_size = 2147483647
 	# The maximum NBT compound tag packet size.
 	# The vanilla limit is 2097152.
 	# This option is both client and server-sided.
@@ -179,14 +179,14 @@
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_nbt_compound_tag_packet_size = 16777216
+	max_nbt_compound_tag_packet_size = 2147483647
 	# The maximum client custom payload packet size.
 	# The vanilla limit is 32767.
 	# Setting this to a higher value than the vanilla limit may prevent the client from being disconnected.
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_client_custom_payload_packet_size = 16777216
+	max_client_custom_payload_packet_size = 2147483647
 
 # Options related to player speed limits.
 # These options are used to fix MC-90062: https://bugs.mojang.com/browse/MC-90062

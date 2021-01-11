@@ -1,9 +1,9 @@
-onEvent('recipes', e => {
+onEvent(`recipes`, e => {
   //Functions
   const modifyShaped = (result, count, pattern, ingridients) => {
     e.remove({
       output: result,
-      type: 'minecraft:crafting_shaped'
+      type: `minecraft:crafting_shaped`
     });
     e.shaped(Item.of(result, count),
       pattern,
@@ -14,7 +14,7 @@ onEvent('recipes', e => {
   const modifyShapeless = (result, count, ingridients) => {
     e.remove({
       output: result,
-      type: 'minecraft:crafting_shapeless'
+      type: `minecraft:crafting_shapeless`
     });
     e.shapeless(Item.of(result, count), ingridients);
   };
@@ -22,527 +22,519 @@ onEvent('recipes', e => {
   const modifySmelt = (result, ingridients) => {
     e.remove({
       output: result,
-      type: 'minecraft:smelting'
+      type: `minecraft:smelting`
     });
     e.smelting(result, ingridients);
   };
 
   /*
-  e.replaceOutput('#forge:cheese', 'rats:cheese');
+  e.replaceOutput(`#forge:cheese`, `rats:cheese`);
   */
 
   //Modified recipes
   /*
-  const combBlock = '#resourcefulbees:resourceful_honeycomb_block';
-  modifyShaped('resourcefulbees:t1_apiary', 1, [
-    'CHC',
-    'HSH',
-    'CHC'
+  const combBlock = `#resourcefulbees:resourceful_honeycomb_block`;
+  modifyShaped(`resourcefulbees:t1_apiary`, 1, [
+    `CHC`,
+    `HSH`,
+    `CHC`
   ], {
     C: combBlock,
-    H: 'resourcefulbees:t4_beehive',
-    S: '#forge:nether_stars'
+    H: `resourcefulbees:t4_beehive`,
+    S: `#forge:nether_stars`
   });
-  modifyShaped('resourcefulbees:t2_apiary', 1, [
-    'CHC',
-    'HSH',
-    'CHC'
+  modifyShaped(`resourcefulbees:t2_apiary`, 1, [
+    `CHC`,
+    `HSH`,
+    `CHC`
   ], {
     C: combBlock,
-    H: 'resourcefulbees:t1_apiary',
-    S: '#forge:nether_stars'
+    H: `resourcefulbees:t1_apiary`,
+    S: `#forge:nether_stars`
   });
-  modifyShaped('resourcefulbees:t3_apiary', 1, [
-    'SHS',
-    'HCH',
-    'SHS'
+  modifyShaped(`resourcefulbees:t3_apiary`, 1, [
+    `SHS`,
+    `HCH`,
+    `SHS`
   ], {
     C: combBlock,
-    H: 'resourcefulbees:t2_apiary',
-    S: '#forge:nether_stars'
+    H: `resourcefulbees:t2_apiary`,
+    S: `#forge:nether_stars`
   });
-  modifyShaped('resourcefulbees:t4_apiary', 1, [
-    'SHS',
-    'HCH',
-    'SHS'
+  modifyShaped(`resourcefulbees:t4_apiary`, 1, [
+    `SHS`,
+    `HCH`,
+    `SHS`
   ], {
     C: combBlock,
-    H: 'resourcefulbees:t3_apiary',
-    S: '#forge:nether_stars'
+    H: `resourcefulbees:t3_apiary`,
+    S: `#forge:nether_stars`
   });
   */
-  modifyShaped('allthemodium:teleport_pad', 1, [
-    'GBR',
-    'NEN',
-    'IBD'
+  modifyShaped(`immersiveengineering:sawdust`, 27, [
+    `SSS`
   ], {
-    G: '#forge:storage_blocks/gold',
-    B: '#forge:storage_blocks/allthemodium',
-    N: '#forge:storage_blocks/netherite',
-    E: 'botania:third_eye',
-    R: '#forge:storage_blocks/redstone',
-    I: '#forge:storage_blocks/iron',
-    D: '#forge:storage_blocks/diamond'
+    S: `thermal:sawdust_block`
   });
-  modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book']);
-  modifyShaped('buildinggadgets:gadget_exchanging', 1, [
-    'iri',
-    'dld',
-    'iai'
+  modifyShapeless(`botania:lexicon`, 1, [`#minecraft:flowers`, `minecraft:book`]);
+  modifyShaped(`buildinggadgets:gadget_exchanging`, 1, [
+    `iri`,
+    `dld`,
+    `iai`
   ], {
-    i: '#forge:ingots/iron',
-    r: '#forge:dusts/redstone',
-    l: '#forge:gems/lapis',
-    d: '#forge:gems/diamond',
-    a: '#forge:nuggets/allthemodium'
+    i: `#forge:ingots/iron`,
+    r: `#forge:dusts/redstone`,
+    l: `#forge:gems/lapis`,
+    d: `#forge:gems/diamond`,
+    a: `#forge:nuggets/allthemodium`
   }); //gated since it can change modium ores easily
-  modifyShaped('minecraft:honeycomb_block', 1, [
-    'CCC',
-    'CCC',
-    'CCC'
+  modifyShaped(`minecraft:honeycomb_block`, 1, [
+    `CCC`,
+    `CCC`,
+    `CCC`
   ], {
-    C: 'minecraft:honeycomb'
+    C: `minecraft:honeycomb`
   });
-  e.shapeless(Item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block');
-  modifyShaped('solarflux:mirror', 3, [
-    'GGG',
-    'III'
+  e.shapeless(Item.of(`minecraft:honeycomb`, 9), `minecraft:honeycomb_block`);
+  modifyShaped(`solarflux:mirror`, 3, [
+    `GGG`,
+    `III`
   ], {
-    G: '#forge:glass',
-    I: '#forge:ingots'
+    G: `#forge:glass`,
+    I: `#forge:ingots`
   });
-  modifyShaped('solarflux:sp_1', 1, [
-    'MMM',
-    'ILI',
-    'III'
+  modifyShaped(`solarflux:sp_1`, 1, [
+    `MMM`,
+    `ILI`,
+    `III`
   ], {
-    M: 'solarflux:mirror',
-    L: '#forge:storage_blocks/lapis',
-    I: '#forge:ingots/iron'
+    M: `solarflux:mirror`,
+    L: `#forge:storage_blocks/lapis`,
+    I: `#forge:ingots/iron`
   });
-  modifyShaped('minecraft:sticky_piston', 1, [
-    'B',
-    'P'
+  modifyShaped(`minecraft:sticky_piston`, 1, [
+    `B`,
+    `P`
   ], {
-    B: '#forge:slimeballs',
-    P: 'minecraft:piston'
+    B: `#forge:slimeballs`,
+    P: `minecraft:piston`
   });
-  modifyShaped('mekanismgenerators:solar_panel', 1, [
-    'PPP',
-    'RIR',
-    'OOO'
+  modifyShaped(`mekanismgenerators:solar_panel`, 1, [
+    `PPP`,
+    `RIR`,
+    `OOO`
   ], {
-    P: 'powah:solar_panel_starter',
-    R: '#forge:dusts/redstone',
-    I: 'mekanism:alloy_infused',
-    O: '#forge:ingots/osmium'
+    P: `powah:solar_panel_starter`,
+    R: `#forge:dusts/redstone`,
+    I: `mekanism:alloy_infused`,
+    O: `#forge:ingots/osmium`
   });
-  /* modifyShaped('engineerstools:crushing_hammer', 1, [
-    'RI ',
-    'BS ',
-    '  S'
+  /* modifyShaped(`engineerstools:crushing_hammer`, 1, [
+    `RI `,
+    `BS `,
+    `  S`
   ], {
-    R: '#forge:string',
-    I: '#forge:ingots/iron',
-    B: '#forge:storage_blocks/iron',
-    S: '#forge:rods/wooden'
+    R: `#forge:string`,
+    I: `#forge:ingots/iron`,
+    B: `#forge:storage_blocks/iron`,
+    S: `#forge:rods/wooden`
   }); */
-  modifyShaped('forbidden_arcanus:candle_lamp', 1, [
-    'NDN',
-    'GAG',
-    'NDN'
+  modifyShaped(`forbidden_arcanus:candle_lamp`, 1, [
+    `NDN`,
+    `GAG`,
+    `NDN`
   ], {
-    N: 'forbidden_arcanus:arcane_gold_nugget',
-    A: 'forbidden_arcanus:candle',
-    D: 'forbidden_arcanus:darkstone',
-    G: 'forbidden_arcanus:arcane_gold_ingot'
+    N: `forbidden_arcanus:arcane_gold_nugget`,
+    A: `forbidden_arcanus:candle`,
+    D: `forbidden_arcanus:darkstone`,
+    G: `forbidden_arcanus:arcane_gold_ingot`
   });
-  modifyShaped('torchmaster:megatorch', 1, [
-    'TTT',
-    'GLG',
-    'DLD'
+  modifyShaped(`torchmaster:megatorch`, 1, [
+    `TTT`,
+    `GLG`,
+    `DLD`
   ], {
-    T: 'xreliquary:interdiction_torch',
-    G: '#forge:storage_blocks/gold',
-    D: '#forge:storage_blocks/diamond',
-    L: '#minecraft:logs'
+    T: `xreliquary:interdiction_torch`,
+    G: `#forge:storage_blocks/gold`,
+    D: `#forge:storage_blocks/diamond`,
+    L: `#minecraft:logs`
   });
-  modifyShaped('immersiveengineering:cloche', 1, [
-    'GEG',
-    'G G',
-    'TRT'
+  modifyShaped(`immersiveengineering:cloche`, 1, [
+    `GEG`,
+    `G G`,
+    `TRT`
   ], {
-    G: '#forge:glass',
-    E: 'immersiveengineering:electron_tube',
-    T: '#forge:treated_wood',
-    R: 'mekanism:resistive_heater'
+    G: `#forge:glass`,
+    E: `immersiveengineering:electron_tube`,
+    T: `#forge:treated_wood`,
+    R: `mekanism:resistive_heater`
   });
   /*
     e.remove({
-      id: 'bagofyurting:bag_of_yurting'
+      id: `bagofyurting:bag_of_yurting`
     });
-    e.shaped(Item.of('bagofyurting:bag_of_yurting', 1), [
-      'WSW',
-      'WEW',
-      'WWW'
+    e.shaped(Item.of(`bagofyurting:bag_of_yurting`, 1), [
+      `WSW`,
+      `WEW`,
+      `WWW`
     ], {
-      W: '#minecraft:wool',
-      E: '#forge:ender_pearls',
-      S: '#forge:string'
+      W: `#minecraft:wool`,
+      E: `#forge:ender_pearls`,
+      S: `#forge:string`
     }); */
   var ingots = [
-    '#forge:ingots/gold',
-    '#forge:ingots/iron',
-    '#forge:ingots/copper',
-    '#forge:ingots/tin'
+    `#forge:ingots/gold`,
+    `#forge:ingots/iron`,
+    `#forge:ingots/copper`,
+    `#forge:ingots/tin`
   ];
-  modifyShapeless('appliedenergistics2:cable_anchor', 3, [ingots, '#appliedenergistics2:knife']);
-  modifyShapeless('appliedenergistics2:fluix_covered_cable', 1, ['#minecraft:wool', 'appliedenergistics2:fluix_glass_cable']);
-  modifyShapeless('appliedenergistics2:crafting_card', 1, ['minecraft:crafting_table', 'appliedenergistics2:basic_card']);
-  modifyShapeless('appliedenergistics2:fuzzy_card', 1, ['#minecraft:wool', 'appliedenergistics2:advanced_card']);
-  modifyShapeless('appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', 'minecraft:crafting_table', 'appliedenergistics2:calculation_processor']);
-  modifyShaped('appliedenergistics2:quartz_glass', 4, [
-    'GDG',
-    'DGD',
-    'GDG'
+  modifyShapeless(`appliedenergistics2:cable_anchor`, 3, [ingots, `#appliedenergistics2:knife`]);
+  modifyShapeless(`appliedenergistics2:fluix_covered_cable`, 1, [`#minecraft:wool`, `appliedenergistics2:fluix_glass_cable`]);
+  modifyShapeless(`appliedenergistics2:crafting_card`, 1, [`minecraft:crafting_table`, `appliedenergistics2:basic_card`]);
+  modifyShapeless(`appliedenergistics2:fuzzy_card`, 1, [`#minecraft:wool`, `appliedenergistics2:advanced_card`]);
+  modifyShapeless(`appliedenergistics2:crafting_terminal`, 1, [`appliedenergistics2:terminal`, `minecraft:crafting_table`, `appliedenergistics2:calculation_processor`]);
+  modifyShaped(`appliedenergistics2:quartz_glass`, 4, [
+    `GDG`,
+    `DGD`,
+    `GDG`
   ], {
-    G: '#appliedenergistics2:dusts/quartz',
-    D: '#forge:glass'
+    G: `#appliedenergistics2:dusts/quartz`,
+    D: `#forge:glass`
   });
-  modifyShaped('appliedenergistics2:quartz_fiber', 3, [
-    'DDD',
-    'GGG',
-    'DDD'
+  modifyShaped(`appliedenergistics2:quartz_fiber`, 3, [
+    `DDD`,
+    `GGG`,
+    `DDD`
   ], {
-    G: '#appliedenergistics2:dusts/quartz',
-    D: '#forge:glass'
+    G: `#appliedenergistics2:dusts/quartz`,
+    D: `#forge:glass`
   });
-  modifyShaped('appliedenergistics2:chest', 1, [
-    'GTG',
-    'C C',
-    'IFI'
+  modifyShaped(`appliedenergistics2:chest`, 1, [
+    `GTG`,
+    `C C`,
+    `IFI`
   ], {
-    G: '#forge:glass',
-    T: 'appliedenergistics2:terminal',
-    C: 'appliedenergistics2:fluix_glass_cable',
-    I: '#forge:ingots/iron',
-    F: '#appliedenergistics2:crystals/fluix'
+    G: `#forge:glass`,
+    T: `appliedenergistics2:terminal`,
+    C: `appliedenergistics2:fluix_glass_cable`,
+    I: `#forge:ingots/iron`,
+    F: `#appliedenergistics2:crystals/fluix`
   });
-  modifyShaped('appliedenergistics2:condenser', 1, [
-    'IGI',
-    'GDG',
-    'IGI'
+  modifyShaped(`appliedenergistics2:condenser`, 1, [
+    `IGI`,
+    `GDG`,
+    `IGI`
   ], {
-    G: '#forge:glass',
-    I: '#forge:ingots/iron',
-    D: '#appliedenergistics2:dusts/fluix',
+    G: `#forge:glass`,
+    I: `#forge:ingots/iron`,
+    D: `#appliedenergistics2:dusts/fluix`,
   });
-  modifyShaped('appliedenergistics2:spatial_io_port', 1, [
-    'GGG',
-    'CPC',
-    'IEI'
+  modifyShaped(`appliedenergistics2:spatial_io_port`, 1, [
+    `GGG`,
+    `CPC`,
+    `IEI`
   ], {
-    G: '#forge:glass',
-    C: 'appliedenergistics2:fluix_glass_cable',
-    P: 'appliedenergistics2:io_port',
-    I: '#forge:ingots/iron',
-    E: 'appliedenergistics2:engineering_processor'
+    G: `#forge:glass`,
+    C: `appliedenergistics2:fluix_glass_cable`,
+    P: `appliedenergistics2:io_port`,
+    I: `#forge:ingots/iron`,
+    E: `appliedenergistics2:engineering_processor`
   });
-  modifyShaped('appliedenergistics2:io_port', 1, [
-    'GGG',
-    'DCD',
-    'IPI'
+  modifyShaped(`appliedenergistics2:io_port`, 1, [
+    `GGG`,
+    `DCD`,
+    `IPI`
   ], {
-    G: '#forge:glass',
-    C: 'appliedenergistics2:fluix_glass_cable',
-    P: 'appliedenergistics2:logic_processor',
-    I: '#forge:ingots/iron',
-    D: 'appliedenergistics2:drive'
+    G: `#forge:glass`,
+    C: `appliedenergistics2:fluix_glass_cable`,
+    P: `appliedenergistics2:logic_processor`,
+    I: `#forge:ingots/iron`,
+    D: `appliedenergistics2:drive`
   });
-  modifyShaped('appliedenergistics2:interface', 1, [
-    'IGI',
-    'A F',
-    'IGI'
+  modifyShaped(`appliedenergistics2:interface`, 1, [
+    `IGI`,
+    `A F`,
+    `IGI`
   ], {
-    G: '#forge:glass',
-    A: 'appliedenergistics2:annihilation_core',
-    F: 'appliedenergistics2:formation_core',
-    I: '#forge:ingots/iron'
+    G: `#forge:glass`,
+    A: `appliedenergistics2:annihilation_core`,
+    F: `appliedenergistics2:formation_core`,
+    I: `#forge:ingots/iron`
   });
-  modifyShaped('appliedenergistics2:molecular_assembler', 1, [
-    'IGI',
-    'ACF',
-    'IGI'
+  modifyShaped(`appliedenergistics2:molecular_assembler`, 1, [
+    `IGI`,
+    `ACF`,
+    `IGI`
   ], {
-    G: 'appliedenergistics2:quartz_glass',
-    A: 'appliedenergistics2:annihilation_core',
-    F: 'appliedenergistics2:formation_core',
-    I: '#forge:ingots/iron',
-    C: 'minecraft:crafting_table'
+    G: `appliedenergistics2:quartz_glass`,
+    A: `appliedenergistics2:annihilation_core`,
+    F: `appliedenergistics2:formation_core`,
+    I: `#forge:ingots/iron`,
+    C: `minecraft:crafting_table`
   });
-  modifyShaped('appliedenergistics2:cell_workbench', 1, [
-    'WEW',
-    'ICI',
-    'III'
+  modifyShaped(`appliedenergistics2:cell_workbench`, 1, [
+    `WEW`,
+    `ICI`,
+    `III`
   ], {
-    W: '#minecraft:wool',
-    E: 'appliedenergistics2:calculation_processor',
-    I: '#forge:ingots/iron',
-    C: '#forge:chests/wooden'
+    W: `#minecraft:wool`,
+    E: `appliedenergistics2:calculation_processor`,
+    I: `#forge:ingots/iron`,
+    C: `#forge:chests/wooden`
   });
-  modifyShaped('minecraft:daylight_detector', 1, [
-    'GGG',
-    'QQQ',
-    'SSS'
+  modifyShaped(`minecraft:daylight_detector`, 1, [
+    `GGG`,
+    `QQQ`,
+    `SSS`
   ], {
-    G: '#forge:glass',
-    Q: '#forge:gems/quartz',
-    S: '#minecraft:wooden_slabs'
+    G: `#forge:glass`,
+    Q: `#forge:gems/quartz`,
+    S: `#minecraft:wooden_slabs`
   });
-  /*   modifyShaped('minecraft:beehive', 1, [
-      'PPP',
-      'CCC',
-      'PPP'
+  /*   modifyShaped(`minecraft:beehive`, 1, [
+      `PPP`,
+      `CCC`,
+      `PPP`
     ], {
-      P: '#minecraft:planks',
-      C: '#resourcefulbees:resourceful_honeycomb'
+      P: `#minecraft:planks`,
+      C: `#resourcefulbees:resourceful_honeycomb`
     });
-    modifyShaped('resourcefulbees:centrifuge_controller', 1, [
-      'ICI',
-      'BAB',
-      'IRI'
+    modifyShaped(`resourcefulbees:centrifuge_controller`, 1, [
+      `ICI`,
+      `BAB`,
+      `IRI`
     ], {
-      I: 'resourcefulbees:centrifuge_casing',
-      C: 'resourcefulbees:centrifuge',
-      B: 'minecraft:iron_bars',
-      A: 'minecraft:comparator',
-      R: '#forge:storage_blocks/redstone'
+      I: `resourcefulbees:centrifuge_casing`,
+      C: `resourcefulbees:centrifuge`,
+      B: `minecraft:iron_bars`,
+      A: `minecraft:comparator`,
+      R: `#forge:storage_blocks/redstone`
     });
-    modifyShaped('minecolonies:blockhutbuilder', 1, [
-      'PTP',
-      'PDP',
-      'PPP'
+    modifyShaped(`minecolonies:blockhutbuilder`, 1, [
+      `PTP`,
+      `PDP`,
+      `PPP`
     ], {
-      P: '#minecraft:planks',
-      D: '#minecraft:wooden_doors',
-      T: 'structurize:sceptergold'
+      P: `#minecraft:planks`,
+      D: `#minecraft:wooden_doors`,
+      T: `structurize:sceptergold`
     }); */
-  modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz');
-  e.replaceInput('#appliedenergistics2:silicon', 'refinedstorage:silicon');
+  modifySmelt(`refinedstorage:silicon`, `#appliedenergistics2:crystals/quartz`);
+  e.replaceInput(`#appliedenergistics2:silicon`, `refinedstorage:silicon`);
   e.remove({
-    id: 'appliedenergistics2:inscriber/silicon_print'
+    id: `appliedenergistics2:inscriber/silicon_print`
   });
   e.recipes.appliedenergistics2.inscriber({
-    mode: 'inscribe',
+    mode: `inscribe`,
     result: {
-      item: 'appliedenergistics2:printed_silicon'
+      item: `appliedenergistics2:printed_silicon`
     },
     ingredients: {
       top: {
-        item: 'appliedenergistics2:silicon_press'
+        item: `appliedenergistics2:silicon_press`
       },
       middle: {
-        tag: 'forge:silicon'
+        tag: `forge:silicon`
       }
     }
   });
   e.remove({
-    output: '#botanypots:botany_pots'
+    output: `#botanypots:botany_pots`
   });
-  e.shaped(Item.of('botanypots:botany_pot'), [
-    'T T',
-    'TPT',
-    ' T '
+  e.shaped(Item.of(`botanypots:botany_pot`), [
+    `T T`,
+    `TPT`,
+    ` T `
   ], {
-    T: 'minecraft:terracotta',
-    P: 'minecraft:flower_pot'
+    T: `minecraft:terracotta`,
+    P: `minecraft:flower_pot`
   });
-  e.shaped(Item.of('botanypots:hopper_botany_pot'), [
-    'MPM',
-    ' H '
+  e.shaped(Item.of(`botanypots:hopper_botany_pot`), [
+    `MPM`,
+    ` H `
   ], {
-    M: '#forge:nuggets/terrasteel',
-    P: 'botanypots:botany_pot',
-    H: ['botania:hopperhock', 'botania:hopperhock_chibi']
+    M: `#forge:nuggets/terrasteel`,
+    P: `botanypots:botany_pot`,
+    H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
   });
-  e.shaped(Item.of('botanypots:hopper_botany_pot'), [
-    'MPM',
-    ' H '
+  e.shaped(Item.of(`botanypots:hopper_botany_pot`), [
+    `MPM`,
+    ` H `
   ], {
-    M: 'pneumaticcraft:printed_circuit_board',
-    P: 'botanypots:botany_pot',
-    H: 'pneumaticcraft:omnidirectional_hopper'
+    M: `pneumaticcraft:printed_circuit_board`,
+    P: `botanypots:botany_pot`,
+    H: `pneumaticcraft:omnidirectional_hopper`
   });
 
   const pots = [
-    'botanypots:botany_pot',
-    'botanypots:white_botany_pot',
-    'botanypots:orange_botany_pot',
-    'botanypots:magenta_botany_pot',
-    'botanypots:light_blue_botany_pot',
-    'botanypots:yellow_botany_pot',
-    'botanypots:lime_botany_pot',
-    'botanypots:pink_botany_pot',
-    'botanypots:gray_botany_pot',
-    'botanypots:light_gray_botany_pot',
-    'botanypots:cyan_botany_pot',
-    'botanypots:purple_botany_pot',
-    'botanypots:blue_botany_pot',
-    'botanypots:brown_botany_pot',
-    'botanypots:green_botany_pot',
-    'botanypots:red_botany_pot',
-    'botanypots:black_botany_pot',
+    `botanypots:botany_pot`,
+    `botanypots:white_botany_pot`,
+    `botanypots:orange_botany_pot`,
+    `botanypots:magenta_botany_pot`,
+    `botanypots:light_blue_botany_pot`,
+    `botanypots:yellow_botany_pot`,
+    `botanypots:lime_botany_pot`,
+    `botanypots:pink_botany_pot`,
+    `botanypots:gray_botany_pot`,
+    `botanypots:light_gray_botany_pot`,
+    `botanypots:cyan_botany_pot`,
+    `botanypots:purple_botany_pot`,
+    `botanypots:blue_botany_pot`,
+    `botanypots:brown_botany_pot`,
+    `botanypots:green_botany_pot`,
+    `botanypots:red_botany_pot`,
+    `botanypots:black_botany_pot`,
   ];
   var colors = [
-    'white',
-    'light_gray',
-    'gray',
-    'black',
-    'red',
-    'orange',
-    'yellow',
-    'lime',
-    'green',
-    'light_blue',
-    'cyan',
-    'blue',
-    'purple',
-    'magenta',
-    'pink',
-    'brown'
+    `white`,
+    `light_gray`,
+    `gray`,
+    `black`,
+    `red`,
+    `orange`,
+    `yellow`,
+    `lime`,
+    `green`,
+    `light_blue`,
+    `cyan`,
+    `blue`,
+    `purple`,
+    `magenta`,
+    `pink`,
+    `brown`
   ];
 
   //Dye stuff
   colors.forEach(color => {
-    e.shaped(Item.of('botanypots:hopper_' + color + '_botany_pot'), [
-      'MPM',
-      ' H '
+    e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
+      `MPM`,
+      ` H `
     ], {
-      M: '#forge:nuggets/terrasteel',
-      P: 'botanypots:' + color + '_botany_pot',
-      H: ['botania:hopperhock', 'botania:hopperhock_chibi']
+      M: `#forge:nuggets/terrasteel`,
+      P: `botanypots:${color}_botany_pot`,
+      H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
     });
-    e.shaped(Item.of('botanypots:hopper_' + color + '_botany_pot'), [
-      'MPM',
-      ' H '
+    e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
+      `MPM`,
+      ` H `
     ], {
-      M: 'pneumaticcraft:printed_circuit_board',
-      P: 'botanypots:' + color + '_botany_pot',
-      H: 'pneumaticcraft:omnidirectional_hopper'
+      M: `pneumaticcraft:printed_circuit_board`,
+      P: `botanypots:${color}_botany_pot`,
+      H: `pneumaticcraft:omnidirectional_hopper`
     });
-    e.shapeless(Item.of('botanypots:' + color + '_botany_pot'), [pots, '#forge:dyes/' + color]);
-    e.shapeless(Item.of('botanypots:hopper_' + color + '_botany_pot'), ['#botanypots:hopper_botany_pots', '#forge:dyes/' + color]);
-    //e.recipes.mekanism.enriching(Item.of('minecraft:' + color + '_dye', 2), '#byg:' + color + '_dye');
-    /* e.recipes.pedestals.pedestal_crushing({
-      ingredient: {
-        tag: 'byg:' + color + '_dye'
-      },
-      result: {
-        item: 'minecraft:' + color + '_dye',
-        count: 2
-      }
-    }); */
+    e.shapeless(Item.of(`botanypots:${color}_botany_pot`), [pots, `#forge:dyes/${color}`]);
+    e.shapeless(Item.of(`botanypots:hopper_${color}_botany_pot`), [`#botanypots:hopper_botany_pots`, `#forge:dyes/${color}`]);
+    /*
+    e.recipes.mekanism.enriching(Item.of(`minecraft:${color}_dye`, 2), `#byg:${color}_dye`);
+    e.custom({
+      type: `pedestals:pedestal_crushing`,
+      ingredient: Ingredient.of(`#byg:${color}_dye`).toJson(),
+      result: Item.of(`minecraft:${color}_dye`, 2).toResultJson()
+    });
+    */
     e.remove({
-      output: 'minecraft:' + color + '_bed'
+      output: `minecraft:${color}_bed`
     });
-    e.replaceInput('minecraft:' + color + '_dye', '#forge:dyes/' + color);
-    e.shaped(Item.of('minecraft:' + color + '_bed'), [
-      'WWW',
-      'PPP'
+    //e.replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`);
+    e.shaped(Item.of(`minecraft:${color}_bed`), [
+      `WWW`,
+      `PPP`
     ], {
-      P: '#minecraft:planks',
-      W: 'minecraft:' + color + '_wool'
+      P: `#minecraft:planks`,
+      W: `minecraft:${color}_wool`
     });
-    e.shapeless(Item.of('minecraft:' + color + '_bed'), ['#minecraft:beds', '#forge:dyes/' + color]);
+    e.shapeless(Item.of(`minecraft:${color}_bed`), [`#minecraft:beds`, `#forge:dyes/${color}`]);
     e.remove({
-      output: 'minecraft:' + color + '_wool'
+      output: `minecraft:${color}_wool`
     });
-    e.shaped(Item.of('minecraft:' + color + '_wool', 8), [
-      'WWW',
-      'WCW',
-      'WWW'
+    e.shaped(Item.of(`minecraft:${color}_wool`, 8), [
+      `WWW`,
+      `WCW`,
+      `WWW`
     ], {
-      C: '#forge:dyes/' + color,
-      W: '#minecraft:wool'
+      C: `#forge:dyes/${color}`,
+      W: `#minecraft:wool`
     });
-    e.shaped(Item.of('minecraft:' + color + '_wool', 2), [
-      'C',
-      'C',
-      'C',
+    e.shaped(Item.of(`minecraft:${color}_wool`, 2), [
+      `C`,
+      `C`,
+      `C`,
     ], {
-      C: 'minecraft:' + color + '_carpet'
+      C: `minecraft:${color}_carpet`
     });
     e.remove({
-      output: 'minecraft:' + color + '_carpet'
+      output: `minecraft:${color}_carpet`
     });
-    e.shapeless(Item.of('minecraft:' + color + '_carpet'), ['#minecraft:carpets', '#forge:dyes/' + color]);
-    e.shaped(Item.of('minecraft:' + color + '_carpet', 8), [
-      'WWW',
-      'WCW',
-      'WWW'
+    e.shapeless(Item.of(`minecraft:${color}_carpet`), [`#minecraft:carpets`, `#forge:dyes/${color}`]);
+    e.shaped(Item.of(`minecraft:${color}_carpet`, 8), [
+      `WWW`,
+      `WCW`,
+      `WWW`
     ], {
-      C: '#forge:dyes/' + color,
-      W: '#minecraft:carpets'
+      C: `#forge:dyes/${color}`,
+      W: `#minecraft:carpets`
     });
-    e.shaped(Item.of('minecraft:' + color + '_carpet', 3), [
-      'WW'
+    e.shaped(Item.of(`minecraft:${color}_carpet`, 3), [
+      `WW`
     ], {
-      W: 'minecraft:' + color + '_wool'
+      W: `minecraft:${color}_wool`
     });
-    /*     e.remove({
-          output: 'comforts:sleeping_bag_' + color
-        });
-        if (color !== 'light_gray') {
-          e.shaped(Item.of('comforts:sleeping_bag_' + color), [
-            'WWW',
-            'SSS',
-            'WWW',
-          ], {
-            W: 'absentbydesign:slab_wool_' + color,
-            S: '#forge:string'
-          });
-          e.shaped(Item.of('minecraft:' + color + '_wool', 1), [
-            'W',
-            'W'
-          ], {
-            W: 'absentbydesign:slab_wool_' + color
-          });
-        } else {
-          e.shaped(Item.of('comforts:sleeping_bag_light_gray'), [
-            'WWW',
-            'SSS',
-            'WWW',
-          ], {
-            W: 'absentbydesign:slab_wool_silver',
-            S: '#forge:string'
-          });
-          e.shaped(Item.of('minecraft:light_gray_wool', 1), [
-            'W',
-            'W'
-          ], {
-            W: 'absentbydesign:slab_wool_silver'
-          });
-        } */
-    e.shaped(Item.of('minecraft:' + color + '_stained_glass', 3), [
-      'GGG',
-      'G G',
-      'GGG',
+    e.remove({
+      output: `comforts:sleeping_bag_${color}`
+    });
+    /*
+    if (color !== `light_gray`) {
+      e.shaped(Item.of(`comforts:sleeping_bag_${color}`), [
+        `WWW`,
+        `SSS`,
+        `WWW`,
+      ], {
+        W: `absentbydesign:slab_wool_${color}`,
+        S: `#forge:string`
+      });
+      e.shaped(Item.of(`minecraft:${color}_wool`), [
+        `W`,
+        `W`
+      ], {
+        W: `absentbydesign:slab_wool_${color}`
+      });
+    } else {
+      e.shaped(Item.of(`comforts:sleeping_bag_light_gray`), [
+        `WWW`,
+        `SSS`,
+        `WWW`,
+      ], {
+        W: `absentbydesign:slab_wool_silver`,
+        S: `#forge:string`
+      });
+      e.shaped(Item.of(`minecraft:light_gray_wool`), [
+        `W`,
+        `W`
+      ], {
+        W: `absentbydesign:slab_wool_silver`
+      });
+    }
+    */
+    e.shaped(Item.of(`minecraft:${color}_stained_glass`, 3), [
+      `GGG`,
+      `G G`,
+      `GGG`,
     ], {
-      G: 'minecraft:' + color + '_stained_glass_pane'
+      G: `minecraft:${color}_stained_glass_pane`
     });
   });
-  e.shaped(Item.of('minecraft:white_wool'), [
-    'SS',
-    'SS'
+  e.shaped(Item.of(`minecraft:white_wool`), [
+    `SS`,
+    `SS`
   ], {
-    S: '#forge:string'
+    S: `#forge:string`
   });
-  e.shaped(Item.of('minecraft:glass', 3), [
-    'GGG',
-    'G G',
-    'GGG',
+  e.shaped(Item.of(`minecraft:glass`, 3), [
+    `GGG`,
+    `G G`,
+    `GGG`,
   ], {
-    G: 'minecraft:glass_pane'
+    G: `minecraft:glass_pane`
   });
-  e.replaceInput('minecraft:glass_pane', '#forge:glass_panes');
+  e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`);
 });

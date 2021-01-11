@@ -15,10 +15,10 @@
 		#Enable Thermal Expansion Jetpacks Integration.
 		enableIntegrationThermalExpansion = true
 		#Enable Thermal Dynamics Jetpacks Integration.
-		enableIntegrationThermalDynamics = false
+		enableIntegrationThermalDynamics = true
 
 	#Misc Configurations
 	[simplyjetpacks-common.misc]
 		#Enable Join Advancements
-		enableJoinAdvancements = true
+		enableJoinAdvancements = false
 

@@ -23,7 +23,7 @@
 		#Set false to disable enchantment
 		excavate = false
 		#Set false to disable enchantment
-		magnet = true
+		magnet = false
 		#Set false to disable enchantment
 		multishot = true
 		#Set false to disable enchantment

@@ -1,0 +1,27 @@
+onEvent(`recipes`, e => {
+    const charge = (items, amount) => {
+        items.forEach(item => {
+            e.custom({
+                type: `xreliquary:alkahestry_charging`,
+                charge: amount,
+                ingredient: Ingredient.of(item).toJson()
+            });
+        });
+    };
+
+    const craft = (items, amount, cost) => {
+        items.forEach(item => {
+            e.custom({
+                type: `xreliquary:alkahestry_crafting`,
+                charge: cost,
+                ingredient: Ingredient.of(item).toJson(),
+                result_count: amount
+            });
+        });
+    };
+    craft([`minecraft:slime_ball`, `minecraft:leather`, `minecraft:bone`], 2, 32);
+    craft([`minecraft:ender_pearl`], 2, 128);
+    craft([`minecraft:blaze_rod`], 3, 128);
+    craft([`minecraft:ghast_tear`], 2, 256);
+    charge([`allthemodium:allthemodium_ingot`], 512);
+});

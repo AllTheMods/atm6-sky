@@ -143,12 +143,12 @@
 	# Min: 1
 	# Max: 2147483647
 	# Default: 120
-	read_timeout_seconds = 2147483647
+	read_timeout_seconds = 120
 	# The login timeout in ticks.
 	# Min: 1
 	# Max: 2147483647
 	# Default: 2400
-	login_timeout_ticks = 2147483647
+	login_timeout_ticks = 2400
 	# The interval in seconds at which KeepAlive packets are sent to clients.
 	# Min: 1
 	# Max: 2147483647
@@ -171,7 +171,7 @@
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_compressed_packet_size = 2147483647
+	max_compressed_packet_size = 16777216
 	# The maximum NBT compound tag packet size.
 	# The vanilla limit is 2097152.
 	# This option is both client and server-sided.
@@ -179,14 +179,14 @@
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_nbt_compound_tag_packet_size = 2147483647
+	max_nbt_compound_tag_packet_size = 16777216
 	# The maximum client custom payload packet size.
 	# The vanilla limit is 32767.
 	# Setting this to a higher value than the vanilla limit may prevent the client from being disconnected.
 	# Min: 256
 	# Max: 2147483647
 	# Default: 16777216
-	max_client_custom_payload_packet_size = 2147483647
+	max_client_custom_payload_packet_size = 16777216
 
 # Options related to player speed limits.
 # These options are used to fix MC-90062: https://bugs.mojang.com/browse/MC-90062

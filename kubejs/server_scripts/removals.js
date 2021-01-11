@@ -28,7 +28,12 @@ onEvent(`recipes`, e => {
     `create:crushing/sand`,
     `create:crushing/netherrack`,
 
-    `immersiveengineering:crafting/paper_from_sawdust`
+    `immersiveengineering:crafting/paper_from_sawdust`,
+
+    `exnihilosequentia:heat/wall_torch`,
+    `exnihilosequentia:heat/fire`,
+    `exnihilosequentia:heat/magma_block`,
+    `exnihilosequentia:heat/lava`
   ];
   idRemove.forEach(iR => {
     e.remove({

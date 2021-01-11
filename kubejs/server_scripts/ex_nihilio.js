@@ -40,6 +40,11 @@ onEvent(`recipes`, e => {
 
   //Crucible heating `blocks`
   heat(`botania:blaze_block`, 8);
+  heat(`allthemodium:molten_bluelava`, 50);
+  heat(`alltheores:uranium_block`, 20);
+  heat(`minecraft:magma_block`, 3);
+  heat(`minecraft:fire`, 4);
+  heat(`minecraft:lava`, 5);
 
   //Params go like this: Mesh, Drop chanche, Input item, Output item, Waterlogged.
   //Overworld sieve

@@ -90,7 +90,11 @@ onEvent(`jei.hide.items`, e => {
         `immersiveengineering:coke`,
         `immersiveengineering:slag`,
 
-        /exnihilosequentia:ingot_.+/
+        /exnihilosequentia:ingot_.+/,
+
+        `darkutils:ender_hopper`,
+
+        /biggerreactors:yello.+/
     ]);
 
     colors.forEach(color => {

@@ -207,7 +207,7 @@ onEvent(`recipes`, e => {
       Ingredient.of(`#minecraft:planks`).toJson(),
       Ingredient.of(`#minecraft:planks`).toJson()
     ],
-    inputFluid: `{FluidName:\`immersiveengineering:creosote\`,Amount:1000}`,
+    inputFluid: `{FluidName:\"immersiveengineering:creosote\",Amount:1000}`,
     processingTime: 1,
     output: Item.of(`immersiveengineering:treated_wood_horizontal`, 8).toResultJson()
   });

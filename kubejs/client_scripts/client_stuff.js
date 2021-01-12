@@ -94,7 +94,10 @@ onEvent(`jei.hide.items`, e => {
 
         `darkutils:ender_hopper`,
 
-        /biggerreactors:yello.+/
+        /biggerreactors:yello.+/,
+
+        /mekanism:creative_chemical_tank/,
+        /mekanism:creative_fluid_tank/
     ]);
 
     colors.forEach(color => {

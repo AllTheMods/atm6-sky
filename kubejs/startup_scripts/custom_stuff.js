@@ -41,10 +41,10 @@ onEvent(`item.registry`, e => {
   /*
   ores.forEach(ore => {
     var oreForm = ore.toLowerCase();
-    e.create(`clump_` + oreForm).displayName(ore + ` Clump`).texture(`kubejs:item/oreStuff/clump_` + oreForm);
-    e.create(`shard_` + oreForm).displayName(ore + ` Shard`).texture(`kubejs:item/oreStuff/shard_` + oreForm);
-    e.create(`dirty_` + oreForm).displayName(`Dirty ` + ore + ` Dust`).texture(`kubejs:item/oreStuff/dirty_` + oreForm);
-    e.create(`crystal_` + oreForm).displayName(ore + ` Crystal`).texture(`kubejs:item/oreStuff/crystal_` + oreForm);
+    e.create(`clump_${oreForm}`).displayName(`${ore} Clump`).texture(`kubejs:item/oreStuff/clump_${oreForm}`);
+    e.create(`shard_${oreForm}`).displayName(`${ore} Shard`).texture(`kubejs:item/oreStuff/shard_${oreForm}`);
+    e.create(`dirty_${oreForm}`).displayName(`Dirty ${ore} Dust`).texture(`kubejs:item/oreStuff/dirty_${oreForm}`);
+    e.create(`crystal_${oreForm}`).displayName(`${ore} Crystal`).texture(`kubejs:item/oreStuff/crystal_${oreForm}`);
   });
   */
 });

@@ -214,7 +214,7 @@ onEvent(`recipes`, e => {
 
   mekCrush(Item.of(`minecraft:blaze_powder`, 4), `#forge:rods/blaze`);
   mekCrush(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`);
-  mekEnrich(Item.of(`minecraft:blaze_rod`), [Item.of(`minecraft:blaze_powder`, 4)]);
+  mekEnrich(Item.of(`minecraft:blaze_rod`), [Item.of(`minecraft:blaze_powder`, 6)]);
   mekEnrich(Item.of(`powah:uraninite`, 2), `powah:uraninite_ore_poor`);
   mekEnrich(Item.of(`powah:uraninite`, 4), `powah:uraninite_ore`);
   mekEnrich(Item.of(`powah:uraninite`, 8), `powah:uraninite_ore_dense`);

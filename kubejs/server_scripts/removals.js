@@ -112,7 +112,9 @@ onEvent(`recipes`, e => {
 
       `rftoolsbuilder:builder`,
 
-      `darkutils:ender_hopper`
+      `darkutils:ender_hopper`,
+
+      /extrastorage:block_/,
     ]
   });
   e.remove({

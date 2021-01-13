@@ -475,85 +475,6 @@ onEvent(`recipes`, e => {
   pedestalSaw(`thermal:sawdust`, 1, `#forge:rods/wooden`);
   pedestalSaw(`minecraft:stick`, 4, `#minecraft:planks`);
   pedestalSaw(`minecraft:stick`, 2, `#minecraft:wooden_slabs`);
-  //Exrastorage fixes
-  e.remove({
-    mod: `extrastorage`
-  });
-
-  const extraBlock = (size) => {
-    e.shaped(`extrastorage:block_${size}`, [
-      `QPQ`,
-      `QCQ`,
-      `QRQ`
-    ], {
-      Q: `refinedstorage:quartz_enriched_iron`,
-      C: `refinedstorage:machine_casing`,
-      R: `#forge:dusts/redstone`,
-      P: `extradisks:${size}_storage_part`
-    });
-  };
-  extraBlock(`256k`);
-  extraBlock(`1024k`);
-  extraBlock(`4096k`);
-  extraBlock(`16384k`);
-  extraBlock(`16384k_fluid`);
-  extraBlock(`65536k_fluid`);
-  extraBlock(`262144k_fluid`);
-  extraBlock(`1048576k_fluid`);
-  kjsShaped(`extrastorage:iron_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/iron`,
-    P: `refinedstorage:improved_processor`,
-    C: `#refinedstorage:crafter`
-  });
-  kjsShaped(`extrastorage:gold_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/gold`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:iron_crafter`
-  });
-  kjsShaped(`extrastorage:diamond_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/diamond`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:gold_crafter`
-  });
-  kjsShaped(`extrastorage:netherite_crafter`, [
-    `BBB`,
-    `PCP`,
-    `BBB`
-  ], {
-    B: `#forge:ingots/netherite`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:diamond_crafter`
-  });
-  kjsShaped(`extrastorage:advanced_exporter`, [
-    ` T `,
-    `PCP`,
-    ` T `
-  ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:exporter`
-  });
-  kjsShaped(`extrastorage:advanced_importer`, [
-    ` T `,
-    `PCP`,
-    ` T `
-  ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:importer`
-  });
   //NBT Resets
   var resetNBT = [
     `rftoolsbase:filter_module`,
@@ -598,11 +519,12 @@ onEvent(`recipes`, e => {
     `2`,
     `3`,
     `4`,
-    `5`
-    /* ,
-        `custom_allthemodium`,
-        `custom_vibranium`,
-        `custom_unobtainium` */
+    `5`,
+    /*
+    `custom_allthemodium`,
+    `custom_vibranium`,
+    `custom_unobtainium`
+    */
   ];
   solars.forEach(solar => {
     e.shapeless(Item.of(`solarflux:sp_${solar}`), `solarflux:sp_${solar}`);

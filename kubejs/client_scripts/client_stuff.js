@@ -55,6 +55,8 @@ onEvent(`jei.hide.items`, e => {
 
         `@curios`,
 
+        `@titanium`,
+
         `forbidden_arcanus:rotten_leather`,
 
         `appliedenergistics2:silicon`,
@@ -64,10 +66,9 @@ onEvent(`jei.hide.items`, e => {
 
         //`naturesaura:chunk_loader`,
 
-        /extrastorage:disk_.+/,
-        /extrastorage:storagepart_.+/,
-
-        /titanium:.+/,
+        /extrastorage:disk_/,
+        /extrastorage:storagepart_/,
+        /extrastorage:block_/,
 
         `bloodmagic:saltpeter`,
         `bloodmagic:sulfur`,
@@ -75,7 +76,7 @@ onEvent(`jei.hide.items`, e => {
         `bloodmagic:ironsand`,
         `bloodmagic:goldsand`,
 
-        /pedestals:dust.+/,
+        /pedestals:dust/,
         /pedestals:pedestal\/stone(?!333)\d{3}/,
 
         `mekanism:copper_ore`,
@@ -90,11 +91,11 @@ onEvent(`jei.hide.items`, e => {
         `immersiveengineering:coke`,
         `immersiveengineering:slag`,
 
-        /exnihilosequentia:ingot_.+/,
+        /exnihilosequentia:ingot_/,
 
         `darkutils:ender_hopper`,
 
-        /biggerreactors:yello.+/,
+        /biggerreactors:yello/,
 
         /mekanism:creative_chemical_tank/,
         /mekanism:creative_fluid_tank/

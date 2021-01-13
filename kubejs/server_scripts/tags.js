@@ -4,8 +4,8 @@ onEvent(`item.tags`, e => {
   e.add(`forge:ores/allthemodium`, `kubejs:chunk_mod`);
   e.add(`forge:ores/vibranium`, `kubejs:chunk_vib`);
   e.add(`forge:ores/unobtainium`, `kubejs:chunk_unob`);
-  e.add(`forge:gems`, [`#forge:gems/aquamarine`, `#forge:gems/fluorite`]);
-  e.add(`forge:swords`, [`allthemodium:alloy_paxel`, `allthemodium:alloy_sword`]);
+  e.add(`forge:gems`, /#forge:gems\/.+/);
+  e.add(`forge:swords`, [`allthemodium:alloy_paxel`]);
   e.add(`forge:dusts/certus_quartz`, [`appliedenergistics2:certus_quartz_dust`]);
   e.add(`curios:curio`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
   e.add(`curios:angelring`, [`botania:flight_tiara`]);
@@ -56,7 +56,7 @@ onEvent(`item.tags`, e => {
   e.add(`misctags:flowers/wither_flowers`, [`minecraft:wither_rose`]);
   */
   e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`);
-  e.add(`forge:storage_blocks`, [`#forge:storage_blocks/nether_star`, `#forge:storage_blocks/aquamarine`, `#forge:storage_blocks/fluorite`, `#forge:storage_blocks/lithium`]);
+  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.+/);
   e.add(`forge:storage_blocks/aquamarine`, `kubejs:aquamarine_block`);
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`);
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);
@@ -106,7 +106,7 @@ onEvent(`block.tags`, e => {
   e.add(`misctags:flowers/wither_flowers`, [`minecraft:wither_rose`]);
   */
   e.add(`forge:mushrooms`, [`minecraft:warped_fungus`, `minecraft:crimson_fungus`]);
-  e.add(`forge:storage_blocks`, [`#forge:storage_blocks/uraninite`, `#forge:storage_blocks/nether_star`, `#forge:storage_blocks/aquamarine`, `#forge:storage_blocks/fluorite`, `#forge:storage_blocks/lithium`]);
+  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.+/);
   e.add(`forge:storage_blocks/aquamarine`, `kubejs:aquamarine_block`);
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`);
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);

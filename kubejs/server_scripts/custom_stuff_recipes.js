@@ -11,92 +11,48 @@ onEvent(`recipes`, e => {
   kjsShapeless(`kubejs:rotten_leather`, [`minecraft:rotten_flesh`, `minecraft:rotten_flesh`, `minecraft:rotten_flesh`]);
   e.smelting(Item.of(`minecraft:leather`), `kubejs:rotten_leather`).xp(0.5);
   e.recipes.minecraft.smoking(Item.of(`minecraft:leather`), `kubejs:rotten_leather`).xp(0.5);
-  e.recipes.botania.runic_altar({
-    output: {
-      item: `kubejs:rune_of_sins`
-    },
+  e.custom({
+    type: `botania:runic_altar`,
+    output: Item.of(`kubejs:rune_of_sins`).toResultJson(),
     mana: 25000,
-    ingredients: [{
-        tag: `botania:runes/lust`
-      },
-      {
-        tag: `botania:runes/gluttony`
-      },
-      {
-        tag: `botania:runes/greed`
-      },
-      {
-        tag: `botania:runes/sloth`
-      },
-      {
-        tag: `botania:runes/wrath`
-      },
-      {
-        tag: `botania:runes/envy`
-      },
-      {
-        tag: `botania:runes/pride`
-      }
+    ingredients: [
+      Ingredient.of(`#botania:runes/lust`).toJson(),
+      Ingredient.of(`#botania:runes/gluttony`).toJson(),
+      Ingredient.of(`#botania:runes/greed`).toJson(),
+      Ingredient.of(`#botania:runes/sloth`).toJson(),
+      Ingredient.of(`#botania:runes/wrath`).toJson(),
+      Ingredient.of(`#botania:runes/envy`).toJson(),
+      Ingredient.of(`#botania:runes/pride`).toJson()
     ]
   });
 
-  e.recipes.botania.petal_apothecary({
-    output: {
-      item: `kubejs:mass_of_wills`
-    },
-    ingredients: [{
-        item: `botania:ancient_will_ahrim`
-      },
-      {
-        item: `botania:ancient_will_dharok`
-      },
-      {
-        item: `botania:ancient_will_guthan`
-      },
-      {
-        item: `botania:ancient_will_torag`
-      },
-      {
-        item: `botania:ancient_will_verac`
-      },
-      {
-        item: `botania:ancient_will_karil`
-      }
+  e.custom({
+    type: `botania:petal_apothecary`,
+    output: Item.of(`kubejs:mass_of_wills`).toResultJson(),
+    ingredients: [
+      Ingredient.of(`botania:ancient_will_ahrim`).toJson(),
+      Ingredient.of(`botania:ancient_will_dharok`).toJson(),
+      Ingredient.of(`botania:ancient_will_guthan`).toJson(),
+      Ingredient.of(`botania:ancient_will_torag`).toJson(),
+      Ingredient.of(`botania:ancient_will_verac`).toJson(),
+      Ingredient.of(`botania:ancient_will_karil`).toJson()
     ]
   });
 
-  e.recipes.mysticalagriculture.infusion({
-    input: {
-      item: `botania:overgrowth_seed`
-    },
-    ingredients: [{
-        item: `botania:gaia_ingot`
-      },
-      {
-        item: `mysticalagradditions:insanium_block`
-      },
-      {
-        item: `botania:gaia_ingot`
-      },
-      {
-        item: `mysticalagradditions:insanium_block`
-      },
-      {
-        item: `botania:gaia_ingot`
-      },
-      {
-        item: `mysticalagradditions:insanium_block`
-      },
-      {
-        item: `botania:gaia_ingot`
-      },
-      {
-        item: `mysticalagradditions:insanium_block`
-      }
+  e.custom({
+    type: `mysticalagriculture:infusion`,
+    input: Ingredient.of(`botania:overgrowth_seed`).toJson(),
+    ingredients: [
+      Ingredient.of(`botania:gaia_ingot`).toJson(),
+      Ingredient.of(`mysticalagradditions:insanium_block`).toJson(),
+      Ingredient.of(`botania:gaia_ingot`).toJson(),
+      Ingredient.of(`mysticalagradditions:insanium_block`).toJson(),
+      Ingredient.of(`botania:gaia_ingot`).toJson(),
+      Ingredient.of(`mysticalagradditions:insanium_block`).toJson(),
+      Ingredient.of(`botania:gaia_ingot`).toJson(),
+      Ingredient.of(`mysticalagradditions:insanium_block`).toJson()
     ],
-    result: {
-      item: `kubejs:magical_soil`
-    }
+    result: Item.of(`kubejs:magical_soil`).toResultJson()
   });
   /*
   kjsShaped(`solarflux:sp_custom_allthemodium`, [

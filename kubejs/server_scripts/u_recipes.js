@@ -6,9 +6,7 @@ onEvent(`recipes`, e => {
     e.custom({
         type: `mekanism:nucleosynthesizing`,
         itemInput: {
-            ingredient: {
-                tag: `forge:dusts/unobtainium_vibranium_alloy`
-            }
+            ingredient: Ingredient.of(`#forge:dusts/unobtainium_vibranium_alloy`).toJson()
         },
         gasInput: {
             amount: 1,
@@ -19,9 +17,7 @@ onEvent(`recipes`, e => {
     });
     e.custom({
         type: `psi:trick_crafting`,
-        input: {
-            tag: `forge:dusts/unobtainium_vibranium_alloy`
-        },
+        input: Ingredient.of(`#forge:dusts/unobtainium_vibranium_alloy`).toJson(),
         output: Item.of(`kubejs:uu_matter`, 4).toResultJson(),
         cad: {
             item: `psi:cad_assembly_psimetal`

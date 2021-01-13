@@ -70,6 +70,7 @@ onEvent(`recipes`, e => {
       `titanium:iron_gear`,
       `titanium:gold_gear`,
       `titanium:diamond_gear`,
+
       /*
       `quarryplus:solidquarry`,
       `quarryplus:workbenchplus`,
@@ -109,7 +110,9 @@ onEvent(`recipes`, e => {
 
       `allthemodium:teleport_pad`,
 
-      `rftoolsbuilder:builder`
+      `rftoolsbuilder:builder`,
+
+      `darkutils:ender_hopper`
     ]
   });
   e.remove({

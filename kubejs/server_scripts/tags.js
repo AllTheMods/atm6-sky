@@ -90,9 +90,9 @@ onEvent(`block.tags`, e => {
   e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
   e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.+/);
   e.add(`forge:ores`, /#forge:ores\/.+/);
-  e.add(`ftbchunks:interact_whitelist`, [/compactmachines:.+/]);
+  e.add(`ftbchunks:interact_whitelist`, [/compactmachines:.+/, `#minecraft:buttons`]);
   e.add(`misctags:concrete`, /minecraft:.+_concrete/);
-  e.add(`misctags:no_moving`, [/refinedstorage:.+/, /extrastorage:.+/, /waystones:.+/, /appliedenergistics2:.+/, `#minecraft:wither_immune`, /* `potionsmaster:cauldron`, */ `appliedenergistics2:cable_bus`, /compactmachines:.+/, /compactcrafting:.+/]);
+  e.add(`misctags:no_moving`, [/refinedstorage:.+/, /extrastorage:.+/, /waystones:.+/, /appliedenergistics2:.+/, `#minecraft:wither_immune`, `appliedenergistics2:cable_bus`, /compactmachines:.+/, /compactcrafting:.+/]); // `potionsmaster:cauldron`,
   e.add(`mekanism:cardboard_blacklist`, `#misctags:no_moving`);
   /*
   e.add(`bagofyurting:blacklist`, `#misctags:no_moving`);

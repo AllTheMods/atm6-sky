@@ -1,4 +1,16 @@
 //priority: 997
+// Whether or not to unify items in inventory
+const INVENTORY_UNIFY = true;
+// Whether or not to unify items in world
+const ITEM_UNIFY = true;
+// Add oredictionary tags here to unify (or use javascript to generate it!)
+var tags = [
+  `forge:storage_blocks/`,
+  `forge:ingots/`,
+  `forge:dusts/`,
+  `forge:ores/`,
+  `forge:nuggets/`
+];
 var atores = [
   `aluminum`,
   `copper`,
@@ -17,6 +29,56 @@ var atmores = [
   `vibranium`,
   `unobtainium`
 ];
+
+// Handle inventory change (to check for unificaiton
+// Unfortunately it gets called twice due to setting the inventory.
+onEvent(`player.inventory.changed`, e => {
+  if (INVENTORY_UNIFY) {
+    // Get held item
+    var heldItem = e.getItem();
+    // Check for every tag in the list
+    for (let tag of tags) {
+      for (let atore of atores) {
+        if (Ingredient.of(`#${tag}${atore}`).test(heldItem)) {
+          // If item is in tag, determine if it needs to be changed
+          var tItem = Item.of(`#${tag}${atore}`);
+          if (tItem.getId() != heldItem.getId()) {
+            // Fix slot number
+            var slot = e.getSlot();
+            if (slot <= 5) slot += 36;
+            else if (slot == 45) slot = 40;
+            else if (slot >= 36) slot -= 36;
+            // Update item
+            e.getEntity().inventory.set(slot, tItem.withCount(heldItem.getCount()));
+          }
+          break;
+        }
+      }
+    }
+  }
+});
+
+onEvent(`entity.spawned`, e => {
+  if (ITEM_UNIFY) {
+    var entity = e.getEntity();
+    if (entity.getType() == `minecraft:item`) {
+      var gItem = entity.getItem();
+      // Check for every tag in the list
+      for (let tag of tags) {
+        for (let atore of atores) {
+          if (Ingredient.of(`#${tag}${atore}`).test(gItem)) {
+            // If item is in tag, determine if it needs to be changed
+            var tItem = Item.of(`#${tag}${atore}`);
+            if (tItem.getId() != gItem.getId()) {
+              entity.setItem(tItem.withCount(gItem.getCount()));
+            }
+            break;
+          }
+        }
+      }
+    }
+  }
+});
 
 onEvent(`recipes`, e => {
   const multiSmelt = (output, input) => {

@@ -36,9 +36,9 @@ onEvent(`recipes`, e => {
     emote(`cri`, `685583671343710248.png`);
     emote(`pepethink`, `736281050703069184.png`);
     emote(`blobbongo`, `494118101017690113.gif`);
-    emote(`blobyes`, `emojis/575728797274472468.gif`);
-    emote(`blobno`, `emojis/575728783173091329.gif`);
-    emote(`blobzoom`, `emojis/575728934797443093.gif`);
-    emote(`discodoggo`, `emojis/647440602115473438.gif`);
-    emote(`how`, `emojis/752293278870929441.png`);
+    emote(`blobyes`, `575728797274472468.gif`);
+    emote(`blobno`, `575728783173091329.gif`);
+    emote(`blobzoom`, `575728934797443093.gif`);
+    emote(`discodoggo`, `647440602115473438.gif`);
+    emote(`how`, `752293278870929441.png`);
 });

@@ -1,4 +1,5 @@
 
 .idea/*
 .ignore
+*.disabled
 kubejs/exported

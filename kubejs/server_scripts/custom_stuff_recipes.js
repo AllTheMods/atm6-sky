@@ -1,14 +1,5 @@
 onEvent(`recipes`, e => {
-
-  const kjsShaped = (result, pattern, ingredients, count) => {
-    e.shaped(Item.of(result, count != null ? count : 1), pattern, ingredients);
-  };
-
-  const kjsShapeless = (result, ingredients, count) => {
-    e.shapeless(Item.of(result, count != null ? count : 1), ingredients);
-  };
-
-  kjsShapeless(`kubejs:rotten_leather`, [`minecraft:rotten_flesh`, `minecraft:rotten_flesh`, `minecraft:rotten_flesh`]);
+  e.shapeless(`kubejs:rotten_leather`, [`minecraft:rotten_flesh`, `minecraft:rotten_flesh`, `minecraft:rotten_flesh`]);
   e.smelting(Item.of(`minecraft:leather`), `kubejs:rotten_leather`).xp(0.5);
   e.recipes.minecraft.smoking(Item.of(`minecraft:leather`), `kubejs:rotten_leather`).xp(0.5);
   e.custom({
@@ -55,7 +46,7 @@ onEvent(`recipes`, e => {
     result: Item.of(`kubejs:magical_soil`).toResultJson()
   });
   /*
-  kjsShaped(`solarflux:sp_custom_allthemodium`, [
+  e.shaped(Item.of(`solarflux:sp_custom_allthemodium`, 2), [
     `PPP`,
     `SAS`,
     `SDS`
@@ -64,8 +55,8 @@ onEvent(`recipes`, e => {
     A: `#forge:storage_blocks/allthemodium`,
     D: `#forge:storage_blocks/diamond`,
     P: `solarflux:photovoltaic_cell_4`
-  }, 2);
-  kjsShaped(`solarflux:sp_custom_vibranium`, [
+  });
+  e.shaped(Item.of(`solarflux:sp_custom_vibranium`, 2), [
     `PPP`,
     `SAS`,
     `SAS`
@@ -73,8 +64,8 @@ onEvent(`recipes`, e => {
     S: `solarflux:sp_custom_allthemodium`,
     A: `#forge:storage_blocks/vibranium`,
     P: `solarflux:photovoltaic_cell_5`
-  }, 2);
-  kjsShaped(`solarflux:sp_custom_unobtainium`, [
+  });
+  e.shaped(Item.of(`solarflux:sp_custom_unobtainium`, 2), [
     `PPP`,
     `SAS`,
     `SAS`
@@ -82,11 +73,11 @@ onEvent(`recipes`, e => {
     S: `solarflux:sp_custom_vibranium`,
     A: `#forge:storage_blocks/unobtainium`,
     P: `solarflux:photovoltaic_cell_6`
-  }, 2);
+  });
  */
   const customBlock = (block, item) => {
-    kjsShapeless(item, block, 9);
-    kjsShaped(block, [
+    e.shapeless(Item.of(item, 9), block);
+    e.shaped(block, [
       `AAA`,
       `AAA`,
       `AAA`

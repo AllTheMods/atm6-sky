@@ -17,6 +17,18 @@ var atmores = [
   `vibranium`,
   `unobtainium`,
 ];
+/*
+e.remove({
+  input: `#forge:ores/${item}`,
+  type: `create:crushing`
+});
+e.remove({
+  input: `#forge:ores/${item}`,
+  type: `create:milling`
+});
+e.recipes.create.crushing([Item.of(crushedItem), Item.of(crushedItem, 2).withChance(0.3)], `#forge:ores/${item}`);
+e.recipes.create.milling([Item.of(crushedItem)], `#forge:ores/${item}`);
+*/
 
 onEvent(`recipes`, e => {
   const multiSmelt = (output, input) => {
@@ -24,7 +36,7 @@ onEvent(`recipes`, e => {
     e.blasting(output, input).xp(0.5);
   };
 
-  const unifyMetal = (item, ingotItem, dustItem, blockItem, nuggetItem) => {
+  const unifyMetal = (item, ingotItem, dustItem, blockItem, nuggetItem, crushedItem) => {
     e.replaceOutput(`#forge:ingots/${item}`, ingotItem);
     e.replaceOutput(`#forge:dusts/${item}`, dustItem);
     e.replaceOutput(`#forge:nuggets/${item}`, nuggetItem);
@@ -144,11 +156,11 @@ onEvent(`recipes`, e => {
     if (item != null) {
       e.replaceOutput(replaced, item);
     }
-    if (rep_In == true) {
+    if (rep_In) {
       e.replaceInput(replaced, replaced);
     }
   };
-  replace(`#appliedenergistics2:dusts/ender`, `thermal:ender_pearl_dust`, false);
+  replace(`#appliedenergistics2:dusts/ender`, `thermal:ender_pearl_dust`, true);
   replace(`#forge:dusts/sulfur`, `thermal:sulfur_dust`, true);
   replace(`#forge:sawdust`, `thermal:sawdust`, true);
   replace(`#forge:dusts/diamond`, `thermal:diamond_dust`, true);

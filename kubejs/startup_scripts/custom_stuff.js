@@ -1,17 +1,9 @@
 var ores = [
   `Allthemodium`,
   `Vibranium`,
-  `Unobtainium`,
-  `Aluminum`,
-  `Copper`,
-  `Lead`,
-  `Nickel`,
-  `Osmium`,
-  `Platinum`,
-  `Silver`,
-  `Tin`,
-  `Uranium`,
-  `Zinc`
+  `Unobtanium`,
+  `Azure Silver`,
+  `Crimson Iron`,
 ];
 
 onEvent(`item.registry`, e => {
@@ -37,14 +29,18 @@ onEvent(`item.registry`, e => {
     food.effect(`minecraft:regeneration`, 400, 1, 1.0);
   }).add();
   */
-  //Script for making items for the mekanism 5x process
   /*
+  //Script for making items for ore processing
   ores.forEach(ore => {
-    var oreForm = ore.toLowerCase();
-    e.create(`clump_${oreForm}`).displayName(`${ore} Clump`).texture(`kubejs:item/oreStuff/clump_${oreForm}`);
-    e.create(`shard_${oreForm}`).displayName(`${ore} Shard`).texture(`kubejs:item/oreStuff/shard_${oreForm}`);
-    e.create(`dirty_${oreForm}`).displayName(`Dirty ${ore} Dust`).texture(`kubejs:item/oreStuff/dirty_${oreForm}`);
-    e.create(`crystal_${oreForm}`).displayName(`${ore} Crystal`).texture(`kubejs:item/oreStuff/crystal_${oreForm}`);
+    var oreForm = ore.toLowerCase().replace(` `, `_`);
+    if (!ore.match(/.+ium/)) {
+      //console.log(`Created ${ore}`);
+      e.create(`clump_${oreForm}`).displayName(`${ore} Clump`).texture(`kubejs:item/oreStuff/clump_${oreForm}`);
+      e.create(`shard_${oreForm}`).displayName(`${ore} Shard`).texture(`kubejs:item/oreStuff/shard_${oreForm}`);
+      e.create(`dirty_${oreForm}`).displayName(`Dirty ${ore} Dust`).texture(`kubejs:item/oreStuff/dirty_${oreForm}`);
+      e.create(`crystal_${oreForm}`).displayName(`${ore} Crystal`).texture(`kubejs:item/oreStuff/crystal_${oreForm}`);
+    }
+    e.create(`crushed_${oreForm}_ore`).displayName(`Crushed ${ore} Ore`).texture(`kubejs:item/oreStuff/crushed_${oreForm}`);
   });
   */
 });

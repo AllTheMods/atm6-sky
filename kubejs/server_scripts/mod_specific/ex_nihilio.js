@@ -22,7 +22,7 @@ onEvent(`recipes`, e => {
     e.custom({
       type: `exnihilosequentia:hammer`,
       input: Ingredient.of(input).toJson(),
-      result: Item.of(result).toResultJson()
+      results: [Item.of(result).toResultJson()]
     });
   };
 
@@ -76,7 +76,7 @@ onEvent(`recipes`, e => {
   //Hammer recipes
   hammer(`compressium:cobblestone_1`, `compressium:gravel_1`);
   hammer(`compressium:gravel_1`, `compressium:sand_1`);
-  //hammer(`#minecraft:logs`, `thermal:sawdust`); doesn't support tags, and I'm not about to make an entry for every log.
+  hammer(`#minecraft:logs`, `thermal:sawdust`);
 
   var chunks = [
     `mod`,

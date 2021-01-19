@@ -61,6 +61,7 @@ onEvent(`jei.hide.items`, e => {
 
         `appliedenergistics2:silicon`,
         `appliedenergistics2:flour`,
+        /appliedenergistics2:facade/,
 
         `cyclic:tile_transporter_empty`,
 
@@ -88,7 +89,7 @@ onEvent(`jei.hide.items`, e => {
         `mekanism:block_charcoal`,
 
         /immersiveengineering:.+coke/,
-        `immersiveengineering:coke`,
+        `immersiveengineering:coal_coke`,
         `immersiveengineering:slag`,
 
         /exnihilosequentia:ingot_/,
@@ -98,7 +99,11 @@ onEvent(`jei.hide.items`, e => {
         /biggerreactors:yello/,
 
         /mekanism:creative_chemical_tank/,
-        /mekanism:creative_fluid_tank/
+        /mekanism:creative_fluid_tank/,
+
+        /simplyjetpacks:/,
+
+        /xreliquary:alkahestry_tome/,
     ]);
 
     colors.forEach(color => {
@@ -169,6 +174,8 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`mekanism`, `clump`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
     hideStuff(`appliedenergistics2`, `dust`, [`nether_quartz`, `ender`, `iron`, `gold`]);
     hideStuff(`create`, `sheet`, [`iron`, `golden`, `copper`]);
+    hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
+
 });
 
 onEvent(`item.tooltip`, e => {
@@ -176,4 +183,5 @@ onEvent(`item.tooltip`, e => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
     });
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
+    e.add(/simplyjetpacks:/, [`Removing in the next update, take off your enchants, etc. off from your jetpacks.`]);
 });

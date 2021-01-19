@@ -24,14 +24,6 @@ onEvent(`recipes`, e => {
     });
   };
 
-  const kjsShaped = (result, pattern, ingredients, count) => {
-    e.shaped(Item.of(result, count != null ? count : 1), pattern, ingredients);
-  };
-
-  const kjsShapeless = (result, ingredients, count) => {
-    e.shapeless(Item.of(result, count != null ? count : 1), ingredients);
-  };
-
   //Make bio fuel use tags instead of invidual items
   e.remove({
     output: `mekanism:bio_fuel`
@@ -93,7 +85,7 @@ onEvent(`recipes`, e => {
     },
     result: Item.of(`integrateddynamics:menril_sapling`).toResultJson()
   });
-  kjsShaped(`computercraft:turtle_advanced`, [
+  e.shaped(`computercraft:turtle_advanced`, [
     `III`,
     `ICI`,
     `IAI`
@@ -102,7 +94,7 @@ onEvent(`recipes`, e => {
     C: `computercraft:computer_advanced`,
     A: `#forge:ingots/allthemodium`
   });
-  kjsShaped(`computercraft:turtle_normal`, [
+  e.shaped(`computercraft:turtle_normal`, [
     `III`,
     `ICI`,
     `IAI`
@@ -111,7 +103,7 @@ onEvent(`recipes`, e => {
     C: `computercraft:computer_normal`,
     A: `#forge:ingots/allthemodium`
   });
-  kjsShaped(`minecraft:totem_of_undying`, [
+  e.shaped(`minecraft:totem_of_undying`, [
     ` E `,
     `GVG`,
     ` G `
@@ -124,7 +116,7 @@ onEvent(`recipes`, e => {
   e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1);
   e.shapeless(Item.of(`minecraft:clay_ball`, 4), `minecraft:clay`);
   e.shapeless(Item.of(`minecraft:quartz`, 4), `minecraft:quartz_block`);
-  kjsShaped(`appliedenergistics2:silicon_press`, [
+  e.shaped(`appliedenergistics2:silicon_press`, [
     `EEE`,
     `EAE`,
     `EEE`
@@ -132,7 +124,7 @@ onEvent(`recipes`, e => {
     E: `mysticalagriculture:iron_essence`,
     A: `mysticalagriculture:silicon_essence`
   });
-  kjsShaped(`appliedenergistics2:calculation_processor_press`, [
+  e.shaped(`appliedenergistics2:calculation_processor_press`, [
     `EEE`,
     `EAE`,
     `EEE`
@@ -140,7 +132,7 @@ onEvent(`recipes`, e => {
     E: `mysticalagriculture:iron_essence`,
     A: `mysticalagriculture:certus_quartz_essence`
   });
-  kjsShaped(`appliedenergistics2:engineering_processor_press`, [
+  e.shaped(`appliedenergistics2:engineering_processor_press`, [
     `EEE`,
     `EAE`,
     `EEE`
@@ -148,7 +140,7 @@ onEvent(`recipes`, e => {
     E: `mysticalagriculture:iron_essence`,
     A: `mysticalagriculture:diamond_essence`
   });
-  kjsShaped(`appliedenergistics2:logic_processor_press`, [
+  e.shaped(`appliedenergistics2:logic_processor_press`, [
     `EEE`,
     `EAE`,
     `EEE`
@@ -156,7 +148,7 @@ onEvent(`recipes`, e => {
     E: `mysticalagriculture:iron_essence`,
     A: `mysticalagriculture:gold_essence`
   });
-  kjsShaped(`minecraft:hopper`, [
+  e.shaped(`minecraft:hopper`, [
     `ILI`,
     `ILI`,
     ` I `
@@ -164,14 +156,14 @@ onEvent(`recipes`, e => {
     L: `#minecraft:logs`,
     I: `#forge:ingots/iron`
   });
-  kjsShaped(`minecraft:stick`, [
+  e.shaped(Item.of(`minecraft:stick`, 16), [
     `L`,
     `L`
   ], {
     L: `#minecraft:logs`
-  }, 16);
+  });
   /*
-  kjsShaped(`minecraft:water_bucket`, [
+  e.shaped(`minecraft:water_bucket`, [
     ` C `,
     `CBC`,
     ` C `
@@ -179,7 +171,7 @@ onEvent(`recipes`, e => {
     C: `resourcefulbees:water_honeycomb`,
     B: `minecraft:bucket`
   });
-  kjsShaped(`minecraft:lava_bucket`, [
+  e.shaped(`minecraft:lava_bucket`, [
     ` C `,
     `CBC`,
     ` C `
@@ -188,13 +180,13 @@ onEvent(`recipes`, e => {
     B: `minecraft:bucket`
   });
   */
-  kjsShaped(`minecraft:chest`, [
+  e.shaped(Item.of(`minecraft:chest`, 4), [
     `LLL`,
     `L L`,
     `LLL`
   ], {
     L: `#minecraft:logs`
-  }, 4);
+  });
   e.custom({
     type: `industrialforegoing:dissolution_chamber`,
     input: [
@@ -294,7 +286,7 @@ onEvent(`recipes`, e => {
         count: 1
       } */
   ], `mysticalagradditions:creative_essence`, 1, 4.9);
-  kjsShaped(`botania:creative_pool`, [
+  e.shaped(`botania:creative_pool`, [
     `CSC`,
     `CPC`,
     `CWC`
@@ -304,7 +296,7 @@ onEvent(`recipes`, e => {
     S: `kubejs:rune_of_sins`,
     W: `kubejs:mass_of_wills`
   });
-  kjsShaped(`pneumaticcraft:creative_compressor`, [
+  e.shaped(`pneumaticcraft:creative_compressor`, [
     `CLC`,
     `FCA`,
     `CEC`
@@ -315,7 +307,7 @@ onEvent(`recipes`, e => {
     E: `pneumaticcraft:electrostatic_compressor`,
     F: `pneumaticcraft:flux_compressor`
   });
-  kjsShaped(`create:creative_motor`, [
+  e.shaped(`create:creative_motor`, [
     `CCC`,
     `FEA`,
     `CCC`
@@ -326,7 +318,7 @@ onEvent(`recipes`, e => {
     F: `create:brass_casing`
   });
   /*
-  kjsShaped(`rats:rat_upgrade_creative`, [
+  e.shaped(`rats:rat_upgrade_creative`, [
     `HUH`,
     `CCC`,
     `HUH`
@@ -443,29 +435,19 @@ onEvent(`recipes`, e => {
   e.remove({
     id: `appliedenergistics2:grinder/flour`
   });
-  e.remove({
-    output: `#minecraft:signs`,
-    type: `pedestals:pedestal_sawing`
-  });
-  e.remove({
-    output: `#minecraft:wooden_stairs`,
-    type: `pedestals:pedestal_sawing`
-  });
-  e.remove({
-    output: `#minecraft:wooden_slabs`,
-    type: `pedestals:pedestal_sawing`
-  });
-  e.remove({
-    output: `#minecraft:wooden_trapdoors`,
-    type: `pedestals:pedestal_sawing`
-  });
-  e.remove({
-    output: `#minecraft:wooden_pressure_plates`,
-    type: `pedestals:pedestal_sawing`
-  });
-  e.remove({
-    output: `minecraft:stick`,
-    type: `pedestals:pedestal_sawing`
+  var pedSawRemove = [
+    `#minecraft:signs`,
+    `#minecraft:wooden_stairs`,
+    `#minecraft:wooden_slabs`,
+    `#minecraft:wooden_trapdoors`,
+    `#minecraft:wooden_pressure_plates`,
+    `minecraft:stick`,
+  ];
+  pedSawRemove.forEach(pedsr => {
+    e.remove({
+      output: pedsr,
+      type: `pedestals:pedestal_sawing`
+    });
   });
   pedestalCrush(`pamhc2foodcore:flouritem`, 1, `#forge:flour_plants`);
   pedestalCrush(`appliedenergistics2:fluix_dust`, 1, `appliedenergistics2:fluix_crystal`);
@@ -475,6 +457,65 @@ onEvent(`recipes`, e => {
   pedestalSaw(`thermal:sawdust`, 1, `#forge:rods/wooden`);
   pedestalSaw(`minecraft:stick`, 4, `#minecraft:planks`);
   pedestalSaw(`minecraft:stick`, 2, `#minecraft:wooden_slabs`);
+  //Exrastorage fixes
+  e.remove({
+    mod: `extrastorage`
+  });
+
+  e.shaped(`extrastorage:iron_crafter`, [
+    `B B`,
+    `PCP`,
+    `B B`
+  ], {
+    B: `#forge:storage_blocks/iron`,
+    P: `refinedstorage:improved_processor`,
+    C: `#refinedstorage:crafter`
+  });
+  e.shaped(`extrastorage:gold_crafter`, [
+    `B B`,
+    `PCP`,
+    `B B`
+  ], {
+    B: `#forge:storage_blocks/gold`,
+    P: `refinedstorage:advanced_processor`,
+    C: `extrastorage:iron_crafter`
+  });
+  e.shaped(`extrastorage:diamond_crafter`, [
+    `B B`,
+    `PCP`,
+    `B B`
+  ], {
+    B: `#forge:storage_blocks/diamond`,
+    P: `refinedstorage:advanced_processor`,
+    C: `extrastorage:gold_crafter`
+  });
+  e.shaped(`extrastorage:netherite_crafter`, [
+    `BBB`,
+    `PCP`,
+    `BBB`
+  ], {
+    B: `#forge:ingots/netherite`,
+    P: `refinedstorage:advanced_processor`,
+    C: `extrastorage:diamond_crafter`
+  });
+  e.shaped(`extrastorage:advanced_exporter`, [
+    ` T `,
+    `PCP`,
+    ` T `
+  ], {
+    T: `minecraft:redstone_torch`,
+    P: `refinedstorage:improved_processor`,
+    C: `refinedstorage:exporter`
+  });
+  e.shaped(`extrastorage:advanced_importer`, [
+    ` T `,
+    `PCP`,
+    ` T `
+  ], {
+    T: `minecraft:redstone_torch`,
+    P: `refinedstorage:improved_processor`,
+    C: `refinedstorage:importer`
+  });
   //NBT Resets
   var resetNBT = [
     `rftoolsbase:filter_module`,
@@ -520,6 +561,9 @@ onEvent(`recipes`, e => {
     `3`,
     `4`,
     `5`,
+    `6`,
+    `7`,
+    `8`,
     /*
     `custom_allthemodium`,
     `custom_vibranium`,
@@ -1195,4 +1239,9 @@ onEvent(`recipes`, e => {
     }
   });
   */
+
+  //Thermal
+  e.recipes.thermal.sawmill([Item.of(`integrateddynamics:menril_planks`, 6), Item.of(`thermal:sawdust`).withChance(0.25)], `#integrateddynamics:menril_logs`).energy(1000);
+
+  //Create
 });

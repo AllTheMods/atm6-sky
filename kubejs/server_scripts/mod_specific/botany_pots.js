@@ -206,7 +206,7 @@ onEvent(`recipes`, e => {
         `unobtainium`
         */
     ]);
-
+    /*
     //Botany Trees
     //KubeJS code relevant to botany pots: https://github.com/KubeJS-Mods/KubeJS/blob/2dd08e1f24b9619e613f5998f46eed69a4cf964f/common/src/main/java/dev/latvian/kubejs/recipe/mod/BotanyPotsCropRecipeJS.java#L44
     const growTreeUniversal = (mod, name, raredrops, soil, log) => {
@@ -247,14 +247,14 @@ onEvent(`recipes`, e => {
         e.recipes.botanypots.crop(results, `${mod}:${name}_sapling`).categories([soil]);
     };
 
-    /*
-     Use the function to add custom trees to the pots.
-       Parameter 1 is mod as the advanced tooltip sees it.
-       Parameter 2 is the tree name as the advanced tooltip sees it.
-       Parameter 3 is for the unique drops like apple/cherry etc. If none, use `null` without the quotes.
-       Parameter 4 is for the soil to grow on, using `modname:blockname`. If dirt, `null` without the quotes will default to dirt.
-       Parameter 5 is for specifying a different log than what would normally be modname:treename_log. `null` defaults to modname:treename_log.
-    */
+    
+    //  Use the function to add custom trees to the pots.
+    //      Parameter 1 is mod as the advanced tooltip sees it.
+    //      Parameter 2 is the tree name as the advanced tooltip sees it.
+    //      Parameter 3 is for the unique drops like apple/cherry etc. If none, use `null` without the quotes.
+    //      Parameter 4 is for the soil to grow on, using `modname:blockname`. If dirt, `null` without the quotes will default to dirt.
+    //      Parameter 5 is for specifying a different log than what would normally be modname:treename_log. `null` defaults to modname:treename_log.
+    
     growTreeUniversal(`minecraft`, `oak`, `minecraft:apple`, null, null);
     growTreeUniversal(`minecraft`, `dark_oak`, `minecraft:apple`, null, null);
     growTreeUniversal(`minecraft`, `jungle`, `minecraft:cocoa_beans`, null, null);
@@ -264,7 +264,6 @@ onEvent(`recipes`, e => {
     growTreeUniversal(`silentgear`, `netherwood`, `silentgear:nether_banana`, null, null);
     growTreeUniversal(`forbidden_arcanus`, `cherrywood`, `forbidden_arcanus:cherry_peach`, null, null);
     growTreeUniversal(`forbidden_arcanus`, `mysterywood`, `minecraft:golden_apple`, null, null);
-    /*
     //Quark Trees
     growTreeUniversal(`quark`, `blue_blossom`, null, null, `minecraft:spruce_log`);
     growTreeUniversal(`quark`, `lavender_blossom`, null, null, `minecraft:spruce_log`);

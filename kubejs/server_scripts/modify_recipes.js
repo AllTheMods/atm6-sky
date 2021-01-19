@@ -537,41 +537,4 @@ onEvent(`recipes`, e => {
     G: `minecraft:glass_pane`
   });
   e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`);
-  //ExtraStorage
-  modifyShaped(`extrastorage:iron_crafter`, 1, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/iron`,
-    P: `refinedstorage:improved_processor`,
-    C: `#refinedstorage:crafter`
-  });
-  modifyShaped(`extrastorage:gold_crafter`, 1, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/gold`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:iron_crafter`
-  });
-  modifyShaped(`extrastorage:diamond_crafter`, 1, [
-    `B B`,
-    `PCP`,
-    `B B`
-  ], {
-    B: `#forge:storage_blocks/diamond`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:gold_crafter`
-  });
-  modifyShaped(`extrastorage:netherite_crafter`, 1, [
-    `BBB`,
-    `PCP`,
-    `BBB`
-  ], {
-    B: `#forge:ingots/netherite`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:diamond_crafter`
-  });
 });

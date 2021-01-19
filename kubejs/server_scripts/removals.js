@@ -14,14 +14,14 @@ onEvent(`recipes`, e => {
 
     `computercraft:turtle_normal`,
     `computercraft:turtle_advanced`,
-
+    /*
     `byg:black_glass_from_sand`,
     `byg:purple_glass_from_sand`,
     `byg:blue_glass_from_sand`,
     `byg:white_glass_from_sand`,
 
     `engineerstools:crushing/aluminium_grit_crushing_recipe`,
-
+    */
     `xreliquary:alkahestry/crafting/nether_star`,
 
     `create:milling/sand`,
@@ -33,7 +33,10 @@ onEvent(`recipes`, e => {
     `exnihilosequentia:heat/wall_torch`,
     `exnihilosequentia:heat/fire`,
     `exnihilosequentia:heat/magma_block`,
-    `exnihilosequentia:heat/lava`
+    `exnihilosequentia:heat/lava`,
+
+    `thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log`,
+    `thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled`,
   ];
   idRemove.forEach(iR => {
     e.remove({
@@ -67,9 +70,7 @@ onEvent(`recipes`, e => {
       `solarflux:sp_7`,
       `solarflux:sp_8`,
 
-      `titanium:iron_gear`,
-      `titanium:gold_gear`,
-      `titanium:diamond_gear`,
+      /titanium:/,
 
       /*
       `quarryplus:solidquarry`,
@@ -84,13 +85,11 @@ onEvent(`recipes`, e => {
       `pamhc2foodcore:sweetberryjuiceitem`,
       `pamhc2foodcore:p8juiceitem`,
 
-      `angelring:itemring`,
-      `angelring:itemdiamondring`,
+      /angelring:/,
 
       `silentgear:iron_rod`,
 
-      `entangled:block`,
-      `entangled:item`,
+      /entangled:/,
 
       `refinedstorage:4096k_fluid_storage_part`,
 
@@ -114,7 +113,7 @@ onEvent(`recipes`, e => {
 
       `darkutils:ender_hopper`,
 
-      /extrastorage:block_/,
+      /simplyjetpacks:/,
     ]
   });
   e.remove({

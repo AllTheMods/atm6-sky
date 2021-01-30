@@ -13,7 +13,7 @@ onEvent(`item.tags`, e => {
   e.add(`forge:ores/rock_crystal`, `astralsorcery:rock_crystal_ore`);
   e.add(`forge:ores/aquamarine`, `astralsorcery:aquamarine_sand_ore`);
   e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
-  e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.+/);
+  e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.*/);
   e.add(`forge:ingots/starmetal`, `astralsorcery:starmetal_ingot`);
   e.add(`forge:dusts/starmetal`, `astralsorcery:stardust`);
   e.add(`forge:plastic`, [`#pneumaticcraft:plastic_sheets`, /* `silents_mechanisms:plastic_sheet`, */ `mekanism:hdpe_sheet`]);
@@ -36,7 +36,7 @@ onEvent(`item.tags`, e => {
   e.add(`appliedenergistics2:nether_quartz_dust`, `#forge:dusts/quartz`);
   e.add(`appliedenergistics2:dusts/nether_quartz`, `#forge:dusts/quartz`);
   e.add(`appliedenergistics2:dusts/quartz`, `#forge:dusts/quartz`);
-  e.add(`appliedenergistics2:purified_crystals`, /appliedenergistics2:purified_.+/);
+  e.add(`appliedenergistics2:purified_crystals`, /appliedenergistics2:purified_.*/);
   e.add(`forge:seeds`, [ /* `bluepower:flax_seeds`,  */ `immersiveengineering:seed`]);
   //e.add(`engineerstools:musli_bar_seeds`, `#forge:seeds`);
   e.add(`forge:ingots`, [`#forge:ingots/unobtainium_allthemodium_alloy`, `#forge:ingots/vibranium_unobtainium_alloy`, `#forge:ingots/vibranium_allthemodium_alloy`]);
@@ -57,19 +57,19 @@ onEvent(`item.tags`, e => {
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`);
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);
   e.add(`forge:storage_blocks/starmetal`, `astralsorcery:starmetal`);
-  e.add(`minecraft:wart_blocks`, [/.+_wart_block/]);
-  e.add(`forge:axes`, [/.+_axe/, /.+_paxel/, /.+:axe_.+/]);
-  e.add(`forge:pickaxes`, [/.+_pickaxe/, /.+_paxel/, /.+:pickaxe_.+/]);
-  e.add(`forge:shovels`, [/.+_shovel/, /.+_paxel/, /.+:shovel_.+/]);
-  e.add(`forge:swords`, [/.+_sword/, /.+:sword_.+/]);
-  e.add(`forge:hoes`, [/.+_hoe/, /.+:hoe_.+/]);
+  e.add(`minecraft:wart_blocks`, [/.*_wart_block/]);
+  e.add(`forge:axes`, [/.*_axe/, /.*_paxel/, /.*:axe_.*/]);
+  e.add(`forge:pickaxes`, [/.*_pickaxe/, /.*_paxel/, /.*:pickaxe_.*/]);
+  e.add(`forge:shovels`, [/.*_shovel/, /.*_paxel/, /.*:shovel_.*/]);
+  e.add(`forge:swords`, [/.*_sword/, /.*:sword_.*/]);
+  e.add(`forge:hoes`, [/.*_hoe/, /.*:hoe_.*/]);
   e.add(`integrateddynamics:menril_logs`, /integrateddynamics:menril_log/);
-  e.add(`create:crushed_ores`, /.+:crushed_.+_ore/);
-  e.add(`forge:dusts`, /#forge:dusts\/.+/);
-  e.add(`forge:gems`, /#forge:gems\/.+/);
-  e.add(`forge:ores`, /#forge:ores\/.+/);
-  e.add(`forge:ingots`, /#forge:ingots\/.+/);
-  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.+/);
+  e.add(`create:crushed_ores`, /.*:crushed_.*_ore/);
+  e.add(`forge:dusts`, /#forge:dusts\/.*/);
+  e.add(`forge:gems`, /#forge:gems\/.*/);
+  e.add(`forge:ores`, /#forge:ores\/.*/);
+  e.add(`forge:ingots`, /#forge:ingots\/.*/);
+  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.*/);
 
   //Remove
   e.remove(`curios:charm`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
@@ -92,10 +92,10 @@ onEvent(`block.tags`, e => {
   e.add(`forge:ores/rock_crystal`, `astralsorcery:rock_crystal_ore`);
   e.add(`forge:ores/aquamarine`, `astralsorcery:aquamarine_sand_ore`);
   e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
-  e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.+/);
-  e.add(`ftbchunks:interact_whitelist`, [/compactmachines:.+/, `#minecraft:buttons`]);
-  e.add(`misctags:concrete`, /minecraft:.+_concrete/);
-  e.add(`misctags:no_moving`, [/refinedstorage:.+/, /extrastorage:.+/, /waystones:.+/, /appliedenergistics2:.+/, `#minecraft:wither_immune`, `appliedenergistics2:cable_bus`, /compactmachines:.+/, /compactcrafting:.+/]); // `potionsmaster:cauldron`,
+  e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.*/);
+  e.add(`ftbchunks:interact_whitelist`, [/compactmachines:.*/, `#minecraft:buttons`]);
+  e.add(`misctags:concrete`, /minecraft:.*_concrete/);
+  e.add(`misctags:no_moving`, [/refinedstorage:.*/, /extrastorage:.*/, /waystones:.*/, /appliedenergistics2:.*/, `#minecraft:wither_immune`, `appliedenergistics2:cable_bus`, /compactmachines:.*/, /compactcrafting:.*/]); // `potionsmaster:cauldron`,
   e.add(`mekanism:cardboard_blacklist`, `#misctags:no_moving`);
   /*
   e.add(`bagofyurting:blacklist`, `#misctags:no_moving`);
@@ -115,8 +115,8 @@ onEvent(`block.tags`, e => {
   e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`);
   e.add(`forge:storage_blocks/starmetal`, `astralsorcery:starmetal`);
   e.add(`cyclic:scythe_brush`, `#minecraft:flowers`);
-  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.+/);
-  e.add(`forge:ores`, /#forge:ores\/.+/);
+  e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.*/);
+  e.add(`forge:ores`, /#forge:ores\/.*/);
 
   /*
   //Resourceful Bees Apiary Tags
@@ -149,7 +149,7 @@ onEvent(`block.tags`, e => {
   e.add(`resourcefulbees:valid_apiary`, [`quark:brimstone_bricks`, `quark:blaze_lantern`, `quark:soul_sandstone`, `quark:chiseled_soul_sandstone`, `quark:cut_soul_sandstone`, `quark:smooth_soul_sandstone`]);
   e.add(`resourcefulbees:valid_apiary`, [`quark:lit_lamp`, `quark:paper_wall`, `quark:paper_wall_big`, `quark:paper_wall_sakura`]);
   */
-  //e.add(`resourcefulbees:valid_apiary`, [/mcwwindows:.+_win/, /mcwroofs:.+_roof/, /darkutils:filter_.+/, /rftoolsbuilder:.+/, /enviromats:alabaster.+/]); //, ^\\w+_glass$
+  //e.add(`resourcefulbees:valid_apiary`, [/mcwwindows:.*_win/, /mcwroofs:.*_roof/, /darkutils:filter_.*/, /rftoolsbuilder:.*/, /enviromats:alabaster.*/]); //, ^\\w+_glass$
 
   //Removal
   e.removeAll(`minecraft:enderman_holdable`);

@@ -88,8 +88,7 @@ onEvent(`jei.hide.items`, e => {
         `mekanism:sawdust`,
         `mekanism:block_charcoal`,
 
-        /immersiveengineering:.+coke/,
-        `immersiveengineering:coal_coke`,
+        /immersiveengineering:.*coke/,
         `immersiveengineering:slag`,
 
         /exnihilosequentia:ingot_/,
@@ -183,5 +182,5 @@ onEvent(`item.tooltip`, e => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
     });
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
-    e.add(/simplyjetpacks:/, [`Removing in the next update, take off your enchants, etc. off from your jetpacks.`]);
+    e.add(/simplyjetpacks:/, [`§4Removing in the next update§r, take off your enchants, etc. off from your jetpacks.`]);
 });

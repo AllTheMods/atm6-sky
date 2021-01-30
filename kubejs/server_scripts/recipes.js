@@ -486,7 +486,7 @@ onEvent(`recipes`, e => {
     `B B`
   ], {
     B: `#forge:storage_blocks/diamond`,
-    P: `refinedstorage:advanced_processor`,
+    P: `extradisks:withering_processor`,
     C: `extrastorage:gold_crafter`
   });
   e.shaped(`extrastorage:netherite_crafter`, [
@@ -495,7 +495,7 @@ onEvent(`recipes`, e => {
     `BBB`
   ], {
     B: `#forge:ingots/netherite`,
-    P: `refinedstorage:advanced_processor`,
+    P: `extradisks:withering_processor`,
     C: `extrastorage:diamond_crafter`
   });
   e.shaped(`extrastorage:advanced_exporter`, [
@@ -1033,127 +1033,31 @@ onEvent(`recipes`, e => {
   });
 
   //Extra Disks
-  e.shaped(`refinedstorage:4096k_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `refinedstorage:1024k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:nuggets/allthemodium`
-  });
-  e.shaped(`extradisks:4096k_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:1024k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:nuggets/allthemodium`
-  });
-  e.shaped(`extradisks:16384k_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `refinedstorage:4096k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:ingots/allthemodium`
-  });
-  e.shaped(`extradisks:16384k_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:4096k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:ingots/allthemodium`
-  });
-
-  e.shaped(`extradisks:65536k_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:16384k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:ingots/allthemodium`
-  });
-  e.shaped(`extradisks:65536k_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:16384k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:ingots/allthemodium`
-  });
-  e.shaped(`extradisks:262144k_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:65536k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:ingots/vibranium`
-  });
-  e.shaped(`extradisks:262144k_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:65536k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:ingots/vibranium`
-  });
-  e.shaped(`extradisks:1048576k_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:262144k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:ingots/unobtainium`
-  });
-  e.shaped(`extradisks:1048576k_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:262144k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:ingots/unobtainium`
-  });
-  e.shaped(`extradisks:infinite_fluid_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:1048576k_fluid_storage_part`,
-    b: `minecraft:bucket`,
-    n: `#forge:ingots/unobtainium`
-  });
-  e.shaped(`extradisks:infinite_storage_part`, [
-    `ana`,
-    `fbf`,
-    `afa`
-  ], {
-    a: `refinedstorage:advanced_processor`,
-    f: `extradisks:1048576k_storage_part`,
-    b: `#forge:dusts/redstone`,
-    n: `#forge:ingots/unobtainium`
-  });
+  const makeDisk = (disk, part, type, material, mid) => {
+    const processor = type === 'advanced' ? `refinedstorage:${type}_processor` : `extradisks:${type}_processor`;
+    e.shaped(`${disk}_storage_part`, [
+      `121`,
+      `343`,
+      `131`
+    ], {
+      1: processor,
+      2: material,
+      3: `${part}_storage_part`,
+      4: mid
+    });
+  };
+  makeDisk(`refinedstorage:4096k_fluid`, `refinedstorage:1024k_fluid`, `advanced`, `#forge:nuggets/allthemodium`, `minecraft:bucket`);
+  makeDisk(`extradisks:16384k_fluid`, `refinedstorage:4096k_fluid`, `advanced`, `#forge:ingots/allthemodium`, `minecraft:bucket`);
+  makeDisk(`extradisks:65536k_fluid`, `extradisks:16384k_fluid`, `advanced`, `#forge:ingots/allthemodium`, `minecraft:bucket`);
+  makeDisk(`extradisks:262144k_fluid`, `extradisks:65536k_fluid`, `withering`, `#forge:ingots/vibranium`, `minecraft:bucket`);
+  makeDisk(`extradisks:1048576k_fluid`, `extradisks:262144k_fluid`, `withering`, `#forge:ingots/unobtainium`, `minecraft:bucket`);
+  makeDisk(`extradisks:infinite_fluid`, `extradisks:1048576k_fluid`, `withering`, `#forge:ingots/unobtainium`, `minecraft:bucket`);
+  makeDisk(`extradisks:4096k`, `extradisks:1024k`, `advanced`, `#forge:nuggets/allthemodium`, `#forge:dusts/redstone`);
+  makeDisk(`extradisks:16384k`, `extradisks:4096k`, `advanced`, `#forge:ingots/allthemodium`, `#forge:dusts/redstone`);
+  makeDisk(`extradisks:65536k`, `extradisks:16384k`, `advanced`, `#forge:ingots/allthemodium`, `#forge:dusts/redstone`);
+  makeDisk(`extradisks:262144k`, `extradisks:65536k`, `withering`, `#forge:ingots/vibranium`, `#forge:dusts/redstone`);
+  makeDisk(`extradisks:1048576k`, `extradisks:262144k`, `withering`, `#forge:ingots/unobtainium`, `#forge:dusts/redstone`);
+  makeDisk(`extradisks:infinite`, `extradisks:1048576k`, `withering`, `#forge:ingots/unobtainium`, `#forge:dusts/redstone`);
 
   /*
   //Quark

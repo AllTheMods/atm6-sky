@@ -319,7 +319,7 @@ onEvent(`recipes`, e => {
       D: `#minecraft:wooden_doors`,
       T: `structurize:sceptergold`
     }); */
-  modifySmelt(`refinedstorage:silicon`, `#appliedenergistics2:crystals/quartz`);
+  modifySmelt(`refinedstorage:silicon`, [`#appliedenergistics2:crystals/quartz`, `#appliedenergistics2:purified_crystals`]);
   e.replaceInput(`#appliedenergistics2:silicon`, `refinedstorage:silicon`);
   e.remove({
     id: `appliedenergistics2:inscriber/silicon_print`

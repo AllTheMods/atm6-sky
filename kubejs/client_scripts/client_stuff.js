@@ -115,20 +115,7 @@ onEvent(`jei.hide.items`, e => {
 
     const hideMetal = (mod, name, types) => {
         types.forEach(type => {
-            const typeFirst = ['mekanism', 'immersiveengineering'];
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`;
-            if (!Ingredient.of(id).stacks.empty) {
-                e.hide(id);
-                //console.log(`Hid ${id}`);
-            }
-        });
-    };
-
-    const hideStuff = (mod, type, names) => {
-        names.forEach(name => {
-            const typeFirst = ['mekanism', 'immersiveengineering'];
+            const typeFirst = [`mekanism`, `immersiveengineering`];
             const id = typeFirst.includes(mod) ?
                 `${mod}:${type}_${name}` :
                 `${mod}:${name}_${type}`;
@@ -162,6 +149,19 @@ onEvent(`jei.hide.items`, e => {
     hideMetal(`thermal`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
     hideMetal(`thermal`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
     hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+
+    const hideStuff = (mod, type, names) => {
+        names.forEach(name => {
+            const typeFirst = [`mekanism`, `immersiveengineering`];
+            const id = typeFirst.includes(mod) ?
+                `${mod}:${type}_${name}` :
+                `${mod}:${name}_${type}`;
+            if (!Ingredient.of(id).stacks.empty) {
+                e.hide(id);
+                //console.log(`Hid ${id}`);
+            }
+        });
+    };
 
     //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
     hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`]);

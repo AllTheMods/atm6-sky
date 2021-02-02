@@ -1034,7 +1034,7 @@ onEvent(`recipes`, e => {
 
   //Extra Disks
   const makeDisk = (disk, part, type, material, mid) => {
-    const processor = type === 'advanced' ? `refinedstorage:${type}_processor` : `extradisks:${type}_processor`;
+    const processor = type === `advanced` ? `refinedstorage:${type}_processor` : `extradisks:${type}_processor`;
     e.shaped(`${disk}_storage_part`, [
       `121`,
       `343`,

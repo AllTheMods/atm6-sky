@@ -9,13 +9,8 @@ onEvent(`item.tags`, e => {
   e.add(`forge:dusts/certus_quartz`, [`appliedenergistics2:certus_quartz_dust`]);
   e.add(`curios:curio`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
   e.add(`curios:angelring`, [`botania:flight_tiara`]);
-  e.add(`forge:ores/starmetal`, `astralsorcery:starmetal_ore`);
-  e.add(`forge:ores/rock_crystal`, `astralsorcery:rock_crystal_ore`);
-  e.add(`forge:ores/aquamarine`, `astralsorcery:aquamarine_sand_ore`);
   e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
   e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.*/);
-  e.add(`forge:ingots/starmetal`, `astralsorcery:starmetal_ingot`);
-  e.add(`forge:dusts/starmetal`, `astralsorcery:stardust`);
   e.add(`forge:plastic`, [`#pneumaticcraft:plastic_sheets`, /* `silents_mechanisms:plastic_sheet`, */ `mekanism:hdpe_sheet`]);
   e.add(`misctags:farmland/tier6`, [`mysticalagradditions:insanium_farmland`]);
   e.add(`misctags:farmland/tier5`, [`mysticalagriculture:supremium_farmland`, `#misctags:farmland/tier6`]);
@@ -56,7 +51,6 @@ onEvent(`item.tags`, e => {
   e.add(`forge:storage_blocks/aquamarine`, `kubejs:aquamarine_block`);
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`);
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);
-  e.add(`forge:storage_blocks/starmetal`, `astralsorcery:starmetal`);
   e.add(`minecraft:wart_blocks`, [/.*_wart_block/]);
   e.add(`forge:axes`, [/.*_axe/, /.*_paxel/, /.*:axe_.*/]);
   e.add(`forge:pickaxes`, [/.*_pickaxe/, /.*_paxel/, /.*:pickaxe_.*/]);
@@ -88,9 +82,6 @@ onEvent(`item.tags`, e => {
 //Block tags go here
 onEvent(`block.tags`, e => {
   //Add
-  e.add(`forge:ores/starmetal`, `astralsorcery:starmetal_ore`);
-  e.add(`forge:ores/rock_crystal`, `astralsorcery:rock_crystal_ore`);
-  e.add(`forge:ores/aquamarine`, `astralsorcery:aquamarine_sand_ore`);
   e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
   e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.*/);
   e.add(`ftbchunks:interact_whitelist`, [/compactmachines:.*/, `#minecraft:buttons`]);
@@ -113,7 +104,6 @@ onEvent(`block.tags`, e => {
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`);
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);
   e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`);
-  e.add(`forge:storage_blocks/starmetal`, `astralsorcery:starmetal`);
   e.add(`cyclic:scythe_brush`, `#minecraft:flowers`);
   e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.*/);
   e.add(`forge:ores`, /#forge:ores\/.*/);

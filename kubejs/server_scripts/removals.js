@@ -112,8 +112,6 @@ onEvent(`recipes`, e => {
       `rftoolsbuilder:builder`,
 
       `darkutils:ender_hopper`,
-
-      /simplyjetpacks:/,
     ]
   });
   e.remove({

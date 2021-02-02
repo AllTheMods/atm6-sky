@@ -100,8 +100,6 @@ onEvent(`jei.hide.items`, e => {
         /mekanism:creative_chemical_tank/,
         /mekanism:creative_fluid_tank/,
 
-        /simplyjetpacks:/,
-
         /xreliquary:alkahestry_tome/,
     ]);
 
@@ -182,5 +180,4 @@ onEvent(`item.tooltip`, e => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
     });
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
-    e.add(/simplyjetpacks:/, [`§4Removing in the next update§r, take off your enchants, etc. off from your jetpacks.`]);
 });

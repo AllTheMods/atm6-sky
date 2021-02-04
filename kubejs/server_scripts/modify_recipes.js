@@ -406,6 +406,20 @@ onEvent(`recipes`, e => {
 
   //Dye stuff
   colors.forEach(color => {
+    e.shapeless(Item.of(`appliedenergistics2:${color}_covered_cable`, 4), `appliedenergistics2:${color}_covered_dense_cable`);
+    e.shapeless(Item.of(`appliedenergistics2:${color}_smart_cable`, 4), `appliedenergistics2:${color}_smart_dense_cable`);
+    e.shaped(`appliedenergistics2:${color}_smart_dense_cable`, [
+      `AA`,
+      `AA`
+    ], {
+      A: `appliedenergistics2:${color}_smart_cable`
+    });
+    e.shaped(`appliedenergistics2:${color}_covered_dense_cable`, [
+      `AA`,
+      `AA`
+    ], {
+      A: `appliedenergistics2:${color}_covered_cable`
+    });
     e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
       `MPM`,
       ` H `

@@ -65,6 +65,20 @@ onEvent(`recipes`, e => {
   }], `powah:spirited_crystal_block`, 1, 9000000);
 
   //Misc recipes
+  e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`);
+  e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`);
+  e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
+    `AA`,
+    `AA`
+  ], {
+    A: `appliedenergistics2:fluix_smart_cable`
+  });
+  e.shaped(`appliedenergistics2:fluix_covered_dense_cable`, [
+    `AA`,
+    `AA`
+  ], {
+    A: `appliedenergistics2:fluix_covered_cable`
+  });
   e.recipes.create.crushing([`create:cinder_flour`, Item.of(`create:cinder_flour`).withChance(0.5)], `exnihilosequentia:crushed_netherrack`);
   e.custom({
     type: `appliedenergistics2:grinder`,
@@ -1148,4 +1162,7 @@ onEvent(`recipes`, e => {
   e.recipes.thermal.sawmill([Item.of(`integrateddynamics:menril_planks`, 6), Item.of(`thermal:sawdust`).withChance(0.25)], `#integrateddynamics:menril_logs`).energy(1000);
 
   //Create
+
+  //Blood Magic
+  e.recipes.bloodmagic.altar(`integrateddynamics:menril_sapling`, `minecraft:spruce_sapling`).upgradeLevel(2);
 });

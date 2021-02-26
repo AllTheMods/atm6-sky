@@ -46,35 +46,35 @@ onEvent(`recipes`, e => {
 		result: Item.of(`kubejs:magical_soil`).toResultJson()
 	});
 	/*
-  e.shaped(Item.of(`solarflux:sp_custom_allthemodium`, 2), [
-    `PPP`,
-    `SAS`,
-    `SDS`
-  ], {
-    S: `solarflux:sp_5`,
-    A: `#forge:storage_blocks/allthemodium`,
-    D: `#forge:storage_blocks/diamond`,
-    P: `solarflux:photovoltaic_cell_4`
-  });
-  e.shaped(Item.of(`solarflux:sp_custom_vibranium`, 2), [
-    `PPP`,
-    `SAS`,
-    `SAS`
-  ], {
-    S: `solarflux:sp_custom_allthemodium`,
-    A: `#forge:storage_blocks/vibranium`,
-    P: `solarflux:photovoltaic_cell_5`
-  });
-  e.shaped(Item.of(`solarflux:sp_custom_unobtainium`, 2), [
-    `PPP`,
-    `SAS`,
-    `SAS`
-  ], {
-    S: `solarflux:sp_custom_vibranium`,
-    A: `#forge:storage_blocks/unobtainium`,
-    P: `solarflux:photovoltaic_cell_6`
-  });
- */
+	e.shaped(Item.of(`solarflux:sp_custom_allthemodium`, 2), [
+		`PPP`,
+		`SAS`,
+		`SDS`
+	], {
+		S: `solarflux:sp_5`,
+		A: `#forge:storage_blocks/allthemodium`,
+		D: `#forge:storage_blocks/diamond`,
+		P: `solarflux:photovoltaic_cell_4`
+	});
+	e.shaped(Item.of(`solarflux:sp_custom_vibranium`, 2), [
+		`PPP`,
+		`SAS`,
+		`SAS`
+	], {
+		S: `solarflux:sp_custom_allthemodium`,
+		A: `#forge:storage_blocks/vibranium`,
+		P: `solarflux:photovoltaic_cell_5`
+	});
+	e.shaped(Item.of(`solarflux:sp_custom_unobtainium`, 2), [
+		`PPP`,
+		`SAS`,
+		`SAS`
+	], {
+		S: `solarflux:sp_custom_vibranium`,
+		A: `#forge:storage_blocks/unobtainium`,
+		P: `solarflux:photovoltaic_cell_6`
+	});
+	*/
 	const customBlock = (block, item) => {
 		e.shapeless(Item.of(item, 9), block);
 		e.shaped(block, [

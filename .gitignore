@@ -3,3 +3,4 @@
 .ignore
 *.disabled
 kubejs/exported
+kubejs/assets/kubejs/shaders

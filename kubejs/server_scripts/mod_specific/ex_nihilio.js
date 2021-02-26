@@ -1,9 +1,4 @@
 // priority: 5
-settings.logAddedRecipes = false;
-settings.logRemovedRecipes = false;
-settings.logSkippedRecipes = false;
-settings.logErroringRecipes = true;
-
 onEvent(`recipes`, e => {
 	const sieve = (mesh, chance, input, result, wlog) => {
 		e.custom({

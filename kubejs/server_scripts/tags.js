@@ -59,11 +59,6 @@ onEvent(`item.tags`, e => {
 	e.add(`forge:hoes`, [/.*_hoe/, /.*:hoe_.*/]);
 	e.add(`integrateddynamics:menril_logs`, /integrateddynamics:menril_log/);
 	e.add(`create:crushed_ores`, /.*:crushed_.*_ore/);
-	e.add(`forge:dusts`, /#forge:dusts\/.*/);
-	e.add(`forge:gems`, /#forge:gems\/.*/);
-	e.add(`forge:ores`, /#forge:ores\/.*/);
-	e.add(`forge:ingots`, /#forge:ingots\/.*/);
-	e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.*/);
 
 	//Remove
 	e.remove(`curios:charm`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
@@ -105,8 +100,6 @@ onEvent(`block.tags`, e => {
 	e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`);
 	e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`);
 	e.add(`cyclic:scythe_brush`, `#minecraft:flowers`);
-	e.add(`forge:storage_blocks`, /#forge:storage_blocks\/.*/);
-	e.add(`forge:ores`, /#forge:ores\/.*/);
 
 	/*
 	//Resourceful Bees Apiary Tags

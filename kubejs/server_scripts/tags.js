@@ -62,7 +62,6 @@ onEvent(`item.tags`, e => {
 
 	//Remove
 	e.remove(`curios:charm`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
-	e.remove(`forge:dusts/certus_quartz`, `jaopca:dusts.certus_quartz`);
 	e.remove(`forge:leather`, `forbidden_arcanus:rotten_leather`);
 	e.remove(`engineerstools:musli_bar_food_blacklisted`, `minecraft:chicken`);
 	e.remove(`forge:nether_stars`, `forbidden_arcanus:dark_nether_star`);

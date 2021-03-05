@@ -64,12 +64,12 @@ onEvent(`recipes`, e => {
 	sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true);
 
     //Pams Bushes
-	sieve(`flint`, 0.2, `#minecraft:sand`, `pamhc2crops:aridgarden`, true);
-	sieve(`flint`, 0.2, `#minecraft:dirt`, `pamhc2crops:tropicalgarden`, true);
-	sieve(`flint`, 0.2, `#minecraft:dirt`, `pamhc2crops:soggygarden`, true);
-	sieve(`flint`, 0.2, `#minecraft:dirt`, `pamhc2crops:windygarden`, true);
-	sieve(`flint`, 0.2, `#minecraft:dirt`, `pamhc2crops:shadedgarden`, true);
-	sieve(`flint`, 0.2, `#minecraft:dirt`, `pamhc2crops:frostgarden`, true);
+	sieve(`flint`, 0.2, `minecraft:sand`, `pamhc2crops:aridgarden`, true);
+	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:tropicalgarden`, true);
+	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:soggygarden`, true);
+	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:windygarden`, true);
+	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:shadedgarden`, true);
+	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:frostgarden`, true);
 
 
 	//modium integration

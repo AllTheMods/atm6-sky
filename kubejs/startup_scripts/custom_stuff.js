@@ -18,6 +18,8 @@ onEvent(`item.registry`, e => {
 	e.create(`chunk_mod`).displayName(`Allthemodium Ore Chunk`);
 	e.create(`chunk_vib`).displayName(`Vibranium Ore Chunk`);
 	e.create(`chunk_unob`).displayName(`Unobtanium Ore Chunk`);
+	e.create(`piece_osmium`).displayName(`Osmium Ore Piece`);
+	e.create(`chunk_osmium`).displayName(`Osmium Ore Chunk`);
 
 	/*
 	e.create(`example_food`).food(function(food){

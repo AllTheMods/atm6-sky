@@ -101,6 +101,8 @@ onEvent(`jei.hide.items`, e => {
 		/mekanism:creative_fluid_tank/,
 
 		/xreliquary:alkahestry_tome/,
+
+		`allthemodium:teleport_pad`,
 	]);
 
 	colors.forEach(color => {

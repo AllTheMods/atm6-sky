@@ -5,6 +5,7 @@ onEvent(`item.tags`, e => {
 	e.add(`forge:ores/allthemodium`, `kubejs:chunk_mod`);
 	e.add(`forge:ores/vibranium`, `kubejs:chunk_vib`);
 	e.add(`forge:ores/unobtainium`, `kubejs:chunk_unob`);
+	e.add(`forge:ores/osmium`, `kubejs:chunk_osmium`);
 	e.add(`forge:swords`, [`allthemodium:alloy_paxel`]);
 	e.add(`forge:dusts/certus_quartz`, [`appliedenergistics2:certus_quartz_dust`]);
 	e.add(`curios:curio`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);

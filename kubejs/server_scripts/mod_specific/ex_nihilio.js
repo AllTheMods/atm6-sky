@@ -46,6 +46,17 @@ onEvent(`recipes`, e => {
 	sieve(`diamond`, 0.3, `minecraft:gravel`, `mysticalagriculture:inferium_essence`, null);
 	sieve(`diamond`, 0.2, `minecraft:gravel`, `mysticalagriculture:prosperity_shard`, null);
 	sieve(`diamond`, 0.1, `minecraft:gravel`, `ars_nouveau:mana_gem`, null);
+	//sieve(`emerald`, 0.02, `minecraft:gravel`, `astralsorcery:rock_crystal`, null);
+	sieve(`iron`, 0.15, `#minecraft:sand`, `astralsorcery:aquamarine`, true);
+	sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true);
+	sieve(`iron`, 0.05, `minecraft:gravel`, `kubejs:piece_osmium`, null);
+	sieve(`diamond`, 0.1, `minecraft:gravel`, `kubejs:piece_osmium`, null);
+	sieve(`iron`, 0.025, `minecraft:gravel`, `kubejs:piece_osmium`, null);
+	sieve(`diamond`, 0.05, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
+	sieve(`flint`, 0.01, `minecraft:sand`, `mekanism:salt`, null);
+	sieve(`iron`, 0.02, `minecraft:sand`, `mekanism:salt`, null);
+	sieve(`diamond`, 0.4, `minecraft:sand`, `mekanism:salt`, null);
+	sieve(`flint`, 0.09, `minecraft:sand`, `mana-and-artifice:vinteum_dust`, null);
 
 	//Nether sieve
 	sieve(`diamond`, 0.2, exRack, `appliedenergistics2:fluix_crystal_seed`, null);
@@ -59,11 +70,7 @@ onEvent(`recipes`, e => {
 	//End sieve
 	sieve(`diamond`, 0.1, exEnd, `minecraft:chorus_flower`, null);
 
-	//sieve(`emerald`, 0.02, `minecraft:gravel`, `astralsorcery:rock_crystal`, null);
-	sieve(`iron`, 0.15, `#minecraft:sand`, `astralsorcery:aquamarine`, true);
-	sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true);
-
-    //Pams Bushes
+	//Pams Bushes
 	sieve(`flint`, 0.2, `minecraft:sand`, `pamhc2crops:aridgarden`, true);
 	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:tropicalgarden`, true);
 	sieve(`flint`, 0.2, `minecraft:dirt`, `pamhc2crops:soggygarden`, true);
@@ -85,7 +92,8 @@ onEvent(`recipes`, e => {
 	var chunks = [
 		`mod`,
 		`vib`,
-		`unob`
+		`unob`,
+		`osmium`
 	];
 	chunks.forEach(name => {
 		e.shaped(`kubejs:chunk_${name}`, [

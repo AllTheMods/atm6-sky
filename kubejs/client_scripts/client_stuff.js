@@ -64,6 +64,8 @@ onEvent(`jei.hide.items`, e => {
 		/appliedenergistics2:facade/,
 
 		`cyclic:tile_transporter_empty`,
+		`cyclic:.*_pipe`,
+		`cyclic:cable_wrench`,
 
 		//`naturesaura:chunk_loader`,
 

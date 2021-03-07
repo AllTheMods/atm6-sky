@@ -67,6 +67,8 @@ onEvent(`recipes`, e => {
 
 			`cyclic:uncrafter`,
 			`cyclic:tile_transporter_empty`,
+			`cyclic:.*_pipe`,
+			`cyclic:cable_wrench`,
 
 			`solarflux:sp_6`,
 			`solarflux:sp_7`,

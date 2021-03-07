@@ -1,5 +1,7 @@
 //priority: 1000
 onEvent(`item.tags`, e => {
+	e.add(`misctags:ore_pieces`, [/kubejs:piece_.*/, /exnihilosequentia:piece_.*/]);
+	e.add(`misctags:ore_chunks`, [/kubejs:chunk_.*/, /exnihilosequentia:chunk_.*/]);
 	e.add(`appliedenergistics2:dusts/ender`, `#forge:dusts/ender_pearl`);
 	e.add(`forge:rubber`, [`thermal:cured_rubber`]);
 	e.add(`forge:ores/allthemodium`, `kubejs:chunk_mod`);

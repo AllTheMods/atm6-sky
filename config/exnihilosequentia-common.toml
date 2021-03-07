@@ -81,21 +81,35 @@
 	#Range: 0 ~ 5
 	sieveRange = 2
 
-#Compatibility Configs
-[compatibility]
-	#Should Thermal Expansion ores be enabled? (Default: false)
-	enableThermalExpansion = false
-	#Should Mekanism ores be enabled? (Default: false)
-	enableMekanism = false
-	#Should Silent Mechanism ores be enabled? (Default: false)
-	enableSilentMechanism = false
-	#Should Immersive Engineering ores be enabled? (Default: false)
-	enableImmersiveEngineering = false
-	#Should Create ores be enabled? (Default: false)
-	enableCreate = false
-
 #Debug Configs
 [debug]
 	#Enable extra logging? (Default: false)
 	enableDebugLogging = false
+
+#Ore Configs
+[ore]
+	#Allows ores to be enabled or disabled by this config file. (Default: false)
+	enableOreOverride = true
+	#Enable copper ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableCopper = true
+	#Enable lead ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableLead = true
+	#Enable nickel ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableNickel = true
+	#Enable silver ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableSilver = true
+	#Enable tin ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableTin = true
+	#Enable aluminum ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableAluminum = true
+	#Enable platinum ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enablePlatinum = true
+	#Enable uranium ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableUranium = true
+	#Enable zinc ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableZinc = true
+	#Enable iron ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableIron = true
+	#Enable gold ore pieces, chunks and ingots if they exist. 'enableOreOverride' must be true for this to work. (Default: true)
+	enableGold = true
 

@@ -103,6 +103,18 @@ onEvent(`jei.hide.items`, e => {
 		/xreliquary:alkahestry_tome/,
 
 		`allthemodium:teleport_pad`,
+
+		`excompressum:compressed_cobblestone`,
+		`excompressum:compressed_gravel`,
+		`excompressum:compressed_sand`,
+		`excompressum:compressed_dirt`,
+		`excompressum:compressed_soul_sand`,
+		`excompressum:compressed_netherrack`,
+		`excompressum:compressed_end_stone`,
+		`excompressum:compressed_diorite`,
+		`excompressum:compressed_granite`,
+		`excompressum:compressed_andesite`,
+		`excompressum:.*_crucible`,
 	]);
 
 	colors.forEach(color => {

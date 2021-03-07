@@ -29,6 +29,37 @@ onEvent(`recipes`, e => {
 		});
 	};
 
+	const heavy = (item, source, rolls) => {
+		e.custom({
+			type: `excompressum:heavy_sieve_generated`,
+			input: Ingredient.of(item).toJson(),
+			source: source,
+			rolls: rolls
+		});
+	};
+
+	const hhammer = (input, output, count) => {
+		e.custom({
+			type: `excompressum:compressed_hammer`,
+			input: Ingredient.of(input).toJson(),
+			lootTable: {
+				type: `minecraft:block`,
+				pools: [{
+					rolls: 1,
+					entries: [{
+						type: `minecraft:item`,
+						name: output,
+						functions: [{
+							function: `minecraft:set_count`,
+							count: count
+						}]
+					}],
+					conditions: []
+				}]
+			}
+		});
+	};
+
 	var exDust = `exnihilosequentia:dust`;
 	var exRack = `exnihilosequentia:crushed_netherrack`;
 	var exEnd = `exnihilosequentia:crushed_end_stone`;
@@ -41,7 +72,7 @@ onEvent(`recipes`, e => {
 	heat(`minecraft:fire`, 4);
 	heat(`minecraft:lava`, 5);
 
-	//Params go like this: Mesh, Drop chanche, Input item, Output item, Waterlogged.
+	//Params go like this: Mesh, Drop chance, Input item, Output item, Waterlogged.
 	//Overworld sieve
 	sieve(`diamond`, 0.3, `minecraft:gravel`, `mysticalagriculture:inferium_essence`, null);
 	sieve(`diamond`, 0.2, `minecraft:gravel`, `mysticalagriculture:prosperity_shard`, null);
@@ -84,10 +115,27 @@ onEvent(`recipes`, e => {
 	sieve(`netherite`, 0.02, exRack, `kubejs:piece_vib`, null);
 	sieve(`netherite`, 0.02, exEnd, `kubejs:piece_unob`, null);
 
+	//Heavy sieving | Params: Item to sieve, normal sieving item, how many rolls(multiplier for drops)
+	heavy(`compressium:cobblestone_1`, `minecraft:cobblestone`, 9);
+	heavy(`compressium:gravel_1`, `minecraft:gravel`, 9);
+	heavy(`compressium:sand_1`, `minecraft:sand`, 9);
+	heavy(`compressium:dirt_1`, `minecraft:dirt`, 9);
+	heavy(`compressium:soul_sand_1`, `minecraft:soul_sand`, 9);
+
 	//Hammer recipes
 	hammer(`compressium:cobblestone_1`, `compressium:gravel_1`);
 	hammer(`compressium:gravel_1`, `compressium:sand_1`);
 	hammer(`#minecraft:logs`, `thermal:sawdust`);
+
+	//Heavy hammer
+	hhammer(`compressium:cobblestone_1`, `minecraft:gravel`, 9);
+	hhammer(`compressium:gravel_1`, `minecraft:sand`, 9);
+	hhammer(`compressium:sand_1`, `exnihilosequentia:dust`, 9);
+	hhammer(`compressium:netherrack_1`, `exnihilosequentia:crushed_netherrack`, 9);
+	hhammer(`compressium:end_stone_1`, `exnihilosequentia:crushed_end_stone`, 9);
+	hhammer(`compressium:diorite_1`, `exnihilosequentia:crushed_diorite`, 9);
+	hhammer(`compressium:granite_1`, `exnihilosequentia:crushed_granite`, 9);
+	hhammer(`compressium:andesite_1`, `exnihilosequentia:crushed_andesite`, 9);
 
 	var chunks = [
 		`mod`,

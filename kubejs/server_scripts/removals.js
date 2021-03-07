@@ -35,6 +35,8 @@ onEvent(`recipes`, e => {
 		`exnihilosequentia:heat/magma_block`,
 		`exnihilosequentia:heat/lava`,
 
+		`excompressum:hammer/logs`,
+
 		`thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log`,
 		`thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled`,
 	];
@@ -112,6 +114,18 @@ onEvent(`recipes`, e => {
 			`rftoolsbuilder:builder`,
 
 			`darkutils:ender_hopper`,
+
+			`excompressum:compressed_cobblestone`,
+			`excompressum:compressed_gravel`,
+			`excompressum:compressed_sand`,
+			`excompressum:compressed_dirt`,
+			`excompressum:compressed_soul_sand`,
+			`excompressum:compressed_netherrack`,
+			`excompressum:compressed_end_stone`,
+			`excompressum:compressed_diorite`,
+			`excompressum:compressed_granite`,
+			`excompressum:compressed_andesite`,
+			`excompressum:.*_crucible`,
 		]
 	});
 	e.remove({

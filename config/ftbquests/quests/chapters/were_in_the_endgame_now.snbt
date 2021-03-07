@@ -1,0 +1,233 @@
+{
+	id: "4B1697B3A6656D05",
+	group: "",
+	order_index: 3,
+	filename: "were_in_the_endgame_now",
+	title: "Were in the Endgame now...",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -3.0d,
+			y: -2.5d,
+			id: "0A2E8FA72A72ED0D",
+			tasks: [
+				{
+					id: "720AFFB7B6818796",
+					type: "item",
+					item: {
+						id: "allthemodium:allthemodium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "0BC8714A69BA9AA3",
+					type: "item",
+					item: {
+						id: "allthemodium:allthemodium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "383765DEE21A02EB",
+					type: "item",
+					item: {
+						id: "allthemodium:allthemodium_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "10BE61C3989EB9FE",
+					type: "item",
+					item: {
+						id: "allthemodium:allthemodium_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: "64409D3FB31E1577",
+				type: "item",
+				item: {
+					id: "mysticalagriculture:supremium_watering_can",
+					Count: 1b,
+					tag: {
+						Water: 0b,
+						Active: 0b
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -2.5d,
+			id: "6B41A07DE0A83C00",
+			tasks: [
+				{
+					id: "01B2A07006E7507B",
+					type: "item",
+					item: {
+						id: "allthemodium:vibranium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "65AE5A11A202C7FB",
+					type: "item",
+					item: {
+						id: "allthemodium:vibranium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "45F8F273A534E27E",
+					type: "item",
+					item: {
+						id: "allthemodium:vibranium_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "6ED327B8C1DCEA85",
+					type: "item",
+					item: {
+						id: "allthemodium:vibranium_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: "127322A0CA49BF54",
+				type: "item",
+				item: "mysticalagriculture:supremium_hoe"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.5d,
+			id: "3AB911A31C7D5EC2",
+			tasks: [
+				{
+					id: "08BEE0739050D406",
+					type: "item",
+					item: {
+						id: "allthemodium:unobtainium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "344E7577520B28D4",
+					type: "item",
+					item: {
+						id: "allthemodium:unobtainium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "4EC875F822530E64",
+					type: "item",
+					item: {
+						id: "allthemodium:unobtainium_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "1D5645D0DE5F28F5",
+					type: "item",
+					item: {
+						id: "allthemodium:unobtainium_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: "0A73719B9F0B7679",
+				type: "item",
+				item: "ironfurnaces:upgrade_unobtainium"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -1.0d,
+			id: "259B64B6ECD3A2AD",
+			tasks: [{
+				id: "5DFC6EA35200EF8B",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_pick",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.0d,
+			id: "719DAC25F567FC18",
+			tasks: [{
+				id: "60B215CB39131DEA",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_sword",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -1.0d,
+			id: "4617682C34208352",
+			tasks: [{
+				id: "4DB59CECF2612A46",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_axe",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

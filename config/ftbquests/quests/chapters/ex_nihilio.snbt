@@ -1,0 +1,331 @@
+{
+	id: "6C99EC6E1599B728",
+	group: "",
+	order_index: 0,
+	filename: "ex_nihilio",
+	title: "Ex nihilio",
+	icon: "kubejs:chunk_mod",
+	default_quest_shape: "diamond",
+	quests: [
+		{
+			x: 2.0d,
+			y: -7.0d,
+			description: ["This is your basic way to get materials, insert mesh, sieve a valid material and get resources, its that simple!"],
+			dependencies: ["76B1B19B5D3949F5"],
+			id: "2587A593554DBC4A",
+			tasks: [{
+				id: "78082A8F71778128",
+				type: "item",
+				item: "exnihilosequentia:sieve"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -5.5d,
+			id: "5C106B6E6409EF22",
+			tasks: [{
+				id: "44E83B5E77B733F3",
+				type: "item",
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -4.0d,
+			dependencies: ["508DEEE11F45E4F3"],
+			id: "276560C7054D7131",
+			tasks: [{
+				id: "3500358743E5638B",
+				type: "item",
+				item: "exnihilosequentia:dust"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -7.0d,
+			dependencies: ["0BF9B63E286A7C1B"],
+			id: "1B3743770E4CCF42",
+			tasks: [{
+				id: "2B6FA01BBAED1404",
+				type: "item",
+				item: "minecraft:gravel"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -5.5d,
+			dependencies: ["1B3743770E4CCF42"],
+			id: "508DEEE11F45E4F3",
+			tasks: [{
+				id: "415B428282916C73",
+				type: "item",
+				item: "minecraft:sand"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -10.0d,
+			description: ["usually packs start you off with a wooden crook, but considering you have a free cobble gen you might aswell..."],
+			dependencies: ["6712F8255BE22C00"],
+			id: "458A8414A5189198",
+			tasks: [{
+				id: "3A7FD3864A4B0C70",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:crook_stone",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -8.5d,
+			dependencies: ["0B87D8D5CC3AF30D"],
+			id: "0BF9B63E286A7C1B",
+			tasks: [{
+				id: "00FA96B88F642341",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:hammer_stone",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -5.5d,
+			id: "79FDDEC32609E563",
+			tasks: [{
+				id: "6821C664585BCA2F",
+				type: "item",
+				item: "exnihilosequentia:end_cake"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -10.0d,
+			description: ["Meshes have been given an upgrade since we last encountered them, now going upto netherite! the netherite mesh will be your method into allthemodium"],
+			dependencies: ["6712F8255BE22C00"],
+			id: "4AA6039937E51455",
+			tasks: [{
+				id: "553618FD48D28A65",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_string",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -8.5d,
+			dependencies: ["4AA6039937E51455"],
+			id: "1F057C3C6AA5FD22",
+			tasks: [{
+				id: "7AEABEE2664D85EE",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_flint",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -7.0d,
+			dependencies: ["1F057C3C6AA5FD22"],
+			id: "29B095943AD26EA9",
+			tasks: [{
+				id: "55237905F174FAA7",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_iron",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -5.5d,
+			dependencies: ["29B095943AD26EA9"],
+			dependency_requirement: "one_completed",
+			id: "42387D579F777B5E",
+			tasks: [{
+				id: "10A3924D160CC2B2",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_diamond",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: ["42387D579F777B5E"],
+			id: "3375606B7B481265",
+			tasks: [{
+				id: "5BD2F4D3D78D3E00",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_emerald",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.5d,
+			dependencies: ["3375606B7B481265"],
+			id: "5E9F6228BBC60FFC",
+			tasks: [{
+				id: "692A1A67A3A43BAD",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:mesh_netherite",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -8.5d,
+			id: "564263E35EFCAD21",
+			tasks: [{
+				id: "5F37DF3800A01F53",
+				type: "item",
+				item: "exnihilosequentia:silkworm"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -8.5d,
+			id: "046D86775F6FF8D3",
+			tasks: [{
+				id: "0ED2CEF487048036",
+				type: "item",
+				item: "exnihilosequentia:ancient_spores"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -4.0d,
+			dependencies: ["5E67AA32C8260EFE"],
+			id: "1D137ABA27562E47",
+			tasks: [{
+				id: "6AA1B47B45BC487D",
+				type: "item",
+				item: "cobblefordays:tier_1"
+			}]
+		},
+		{
+			icon: "minecraft:oak_wood",
+			x: 0.0d,
+			y: -11.5d,
+			description: ["If you are using the botania world type then this will not be of much use to you, but just incase here is a cobble gen so that you do not have to sieve dirt, lost your sapling? check the emergency items tab in the top right ;) Also sidenote: due to issues behind the scenes quests are not complete yet, so check back in for new descriptions, rewards and quests"],
+			id: "6712F8255BE22C00",
+			tasks: [{
+				id: "3CCC7AC7B158E6A7",
+				type: "item",
+				item: "minecraft:oak_wood"
+			}],
+			rewards: [
+				{
+					id: "1DA4D3D3EAE05148",
+					type: "item",
+					item: "minecraft:lava_bucket"
+				},
+				{
+					id: "033010D9DC54E822",
+					type: "item",
+					item: "minecraft:water_bucket"
+				},
+				{
+					id: "3558009CA67CCBC9",
+					type: "item",
+					item: {
+						id: "minecraft:stone_pickaxe",
+						Count: 1b,
+						tag: {
+							AS_Amulet_Holder: [I;
+								-303116761,
+								-435728559,
+								-1324848252,
+								-1440318696
+							],
+							Damage: 0,
+							Enchantments: [
+								{
+									lvl: 5s,
+									id: "minecraft:efficiency"
+								},
+								{
+									lvl: 2s,
+									id: "minecraft:unbreaking"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -8.5d,
+			dependencies: ["458A8414A5189198"],
+			id: "76B1B19B5D3949F5",
+			tasks: [{
+				id: "061D03A3DC2E464E",
+				type: "item",
+				item: "minecraft:string"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -10.0d,
+			dependencies: ["6712F8255BE22C00"],
+			id: "0B87D8D5CC3AF30D",
+			tasks: [{
+				id: "387C9E265EF2BFE0",
+				type: "item",
+				item: "minecraft:cobblestone"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -5.5d,
+			description: ["Now you have a sieve the barrel is an important step towards other materials! Place it ontop of mycellium (use an ancient spore on grass) for soul sand"],
+			dependencies: ["2587A593554DBC4A"],
+			id: "5E67AA32C8260EFE",
+			tasks: [{
+				id: "613AC40F4DDD6380",
+				type: "item",
+				item: "exnihilosequentia:barrel_wood"
+			}]
+		}
+	]
+}

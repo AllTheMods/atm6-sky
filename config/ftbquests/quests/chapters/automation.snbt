@@ -1,0 +1,258 @@
+{
+	id: "09C43717A12348D6",
+	group: "",
+	order_index: 1,
+	filename: "automation",
+	title: "Tech",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -4.5d,
+			y: -2.5d,
+			id: "7F95D4C8AEFB5A95",
+			tasks: [{
+				id: "12E015E48A8FC98A",
+				type: "item",
+				item: "excompressum:auto_sieve"
+			}],
+			rewards: [{
+				id: "1039AC49EE6CCEAC",
+				type: "item",
+				item: {
+					id: "minecraft:name_tag",
+					Count: 1b,
+					tag: {
+						RepairCost: 0,
+						display: {
+							Name: '{"text":"oly2o6"}'
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -1.0d,
+			description: [""],
+			dependencies: ["7F95D4C8AEFB5A95"],
+			id: "06821798EEECA8A4",
+			tasks: [{
+				id: "7AA84241D17CBAB8",
+				type: "item",
+				item: "excompressum:auto_heavy_sieve"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.5d,
+			description: ["Obviously you could choose any method you want to auto collect your gravel/sand/dust, but thermal is a good first shout... right?"],
+			id: "2A599150364DA2A4",
+			tasks: [{
+				id: "1E3B09CAFBF1B528",
+				type: "item",
+				item: "thermal:machine_pulverizer"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -1.0d,
+			description: ["This pipe mod is an all round powerhouse, from filtering options to greatly optimised, so give your server owner the weekend off and try them out ;)"],
+			id: "38F48F2A9BB52F24",
+			tasks: [
+				{
+					id: "799A02F7DBBCFC74",
+					type: "item",
+					item: "pipez:energy_pipe",
+					count: 16L
+				},
+				{
+					id: "33A70D9D4B35C6E3",
+					type: "item",
+					item: "pipez:item_pipe",
+					count: 16L
+				},
+				{
+					id: "7B720F644D029588",
+					type: "item",
+					item: "pipez:fluid_pipe",
+					count: 16L
+				},
+				{
+					id: "1437F85AC4883D9A",
+					type: "item",
+					item: "pipez:gas_pipe",
+					count: 16L
+				}
+			],
+			rewards: [{
+				id: "02A370F543FC7EB2",
+				type: "item",
+				item: "pipez:improved_upgrade",
+				count: 16
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.5d,
+			id: "4EE8BDAE2E49EE70",
+			tasks: [{
+				id: "791C18F3E33D57FC",
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -2.5d,
+			id: "51FF0CE575E125B8",
+			tasks: [{
+				id: "7D57D8FEF5C431F9",
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -1.0d,
+			id: "0BA678E979B4DC0A",
+			tasks: [{
+				id: "54A12BC24A3B158A",
+				type: "item",
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -1.0d,
+			id: "590BF6A08BE642AE",
+			tasks: [
+				{
+					id: "1C5049E35886498F",
+					type: "item",
+					item: "appliedenergistics2:drive"
+				},
+				{
+					id: "0E964719E5F4E94F",
+					type: "item",
+					item: "appliedenergistics2:1k_cell_component"
+				}
+			],
+			rewards: [{
+				id: "1654F31C53BE9B10",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:4k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			id: "548B3AD584C8D3B5",
+			tasks: [{
+				id: "470FA81E3476F181",
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 0.5d,
+			id: "75FF9CAB83A38030",
+			tasks: [{
+				id: "4B9F5EDFF343EA48",
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 0.5d,
+			id: "2171A3590A29FD59",
+			tasks: [{
+				id: "1351AB995405CA6B",
+				type: "item",
+				item: "refinedstorage:cable"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 2.0d,
+			id: "479D052DE3553CEF",
+			tasks: [
+				{
+					id: "647B4CFE536A1C22",
+					type: "item",
+					item: "refinedstorage:disk_drive"
+				},
+				{
+					id: "0070219C3617379F",
+					type: "item",
+					item: "refinedstorage:1k_storage_part"
+				}
+			],
+			rewards: [{
+				id: "0933C038AE0E1924",
+				type: "item",
+				item: "refinedstorage:4k_storage_disk"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.5d,
+			description: ["Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY"],
+			id: "716D9C2F74999B5A",
+			tasks: [{
+				id: "7FBEF040E634FFD4",
+				type: "item",
+				item: "thermal:dynamo_magmatic"
+			}],
+			rewards: [{
+				id: "7B6D175A3AA1A053",
+				type: "item",
+				item: "thermal:dynamo_magmatic"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.5d,
+			id: "21FB306379352D15",
+			tasks: [
+				{
+					id: "4A456EB1D0C48C47",
+					type: "item",
+					item: "fluxnetworks:flux_plug"
+				},
+				{
+					id: "3A8AD6C14676748E",
+					type: "item",
+					item: "fluxnetworks:flux_point"
+				}
+			],
+			rewards: [{
+				id: "6BAB1C2EFD5F559B",
+				type: "item",
+				item: "fluxnetworks:flux_controller"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 2.0d,
+			description: ["You are a little far away from an angel ring, so a jetpack might stop you dying to the void..."],
+			id: "7F282D66F27BA49D",
+			tasks: [{
+				id: "22862394DEF08422",
+				type: "item",
+				item: {
+					id: "ironjetpacks:wood_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,43 @@
+
+[dimensions]
+
+	[dimensions.overworld]
+		#Should structures like end portal or villages be generated in overworld? [default: false]
+		structures = false
+		#Should the stronghold with end portal be the only structure?
+		#Needs default config be 'true', otherwise it'll be ignored. [default: false]
+		stronhold-only = false
+
+	[dimensions.nether]
+		#Should nether generate as in default world type? [default: false]
+		default = false
+
+		[dimensions.nether.structures]
+			#Should structures like fortresses or bastions be generated in nether? [default: true]
+			enabled = true
+			#Use only if 'enabled' is true!
+			#Should nether fortress be disabled? [default: false]
+			disable-fortress = false
+			#Use only if 'enabled' is true!
+			#Should bastions be disabled? [default: true]
+			disable-bastions = true
+
+	[dimensions.end]
+		#Should end generate as in default world type? [default: false]
+		default = false
+		#Should the main island be generated as normal? [default: true]
+		main-island = true
+		#Should structures like end cities be generated in nether? [default: false]
+		#This also affects the large islands with chorus plants.
+		#Small islands will still be generated.
+		structures = false
+
+[spawn]
+	#Direction the player should look at initial spawn
+	#Allowed Values: NORTH, EAST, SOUTH, WEST
+	direction = "SOUTH"
+	#Height of the bottom layer from the structure.
+	#This affects where exactly the island will be generated.
+	#Range: 1 ~ 255
+	height = 64
+

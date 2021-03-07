@@ -36,7 +36,7 @@ onEvent(`recipes`, e => {
 		e.blasting(output, input).xp(0.5);
 	};
 
-	const unifyMetal = (item, ingotItem, dustItem, blockItem, nuggetItem, crushedItem) => {
+	const unifyMetal = (item, ingotItem, dustItem, blockItem, nuggetItem) => {
 		e.replaceOutput(`#forge:ingots/${item}`, ingotItem);
 		e.replaceOutput(`#forge:dusts/${item}`, dustItem);
 		e.replaceOutput(`#forge:nuggets/${item}`, nuggetItem);

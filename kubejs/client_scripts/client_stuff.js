@@ -88,7 +88,8 @@ onEvent(`jei.hide.items`, e => {
 		`mekanism:sawdust`,
 		`mekanism:block_charcoal`,
 
-		/immersiveengineering:.*coke/,
+		/immersiveengineering:.*_coke/,
+		/immersiveengineering:coke/,
 		`immersiveengineering:slag`,
 
 		/exnihilosequentia:ingot_/,

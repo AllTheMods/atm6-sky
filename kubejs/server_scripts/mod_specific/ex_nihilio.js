@@ -82,6 +82,7 @@ onEvent(`recipes`, e => {
 	sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true);
 	//sieve(`iron`, 0.05, `minecraft:gravel`, `kubejs:piece_osmium`, null);
 	sieve(`diamond`, 0.1, `minecraft:gravel`, `kubejs:piece_osmium`, null);
+	//sieve(`iron`, 0.025, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
 	sieve(`diamond`, 0.05, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
 	//sieve(`flint`, 0.01, `#minecraft:sand`, `mekanism:salt`, null);
 	sieve(`iron`, 0.02, `#minecraft:sand`, `mekanism:salt`, null);

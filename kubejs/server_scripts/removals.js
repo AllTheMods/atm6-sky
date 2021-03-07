@@ -109,8 +109,6 @@ onEvent(`recipes`, e => {
 
 			`mysticalagriculture:unattuned_augment`,
 
-			`allthemodium:teleport_pad`,
-
 			`rftoolsbuilder:builder`,
 
 			`darkutils:ender_hopper`,

@@ -103,8 +103,6 @@ onEvent(`jei.hide.items`, e => {
 
 		/xreliquary:alkahestry_tome/,
 
-		`allthemodium:teleport_pad`,
-
 		`excompressum:compressed_cobblestone`,
 		`excompressum:compressed_gravel`,
 		`excompressum:compressed_sand`,

@@ -80,26 +80,26 @@ onEvent(`recipes`, e => {
 	//sieve(`emerald`, 0.02, `minecraft:gravel`, `astralsorcery:rock_crystal`, null);
 	sieve(`iron`, 0.15, `#minecraft:sand`, `astralsorcery:aquamarine`, true);
 	sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true);
-	sieve(`iron`, 0.05, `minecraft:gravel`, `kubejs:piece_osmium`, null);
+	//sieve(`iron`, 0.05, `minecraft:gravel`, `kubejs:piece_osmium`, null);
 	sieve(`diamond`, 0.1, `minecraft:gravel`, `kubejs:piece_osmium`, null);
 	sieve(`iron`, 0.025, `minecraft:gravel`, `kubejs:piece_osmium`, null);
 	sieve(`diamond`, 0.05, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
-	sieve(`flint`, 0.01, `#minecraft:sand`, `mekanism:salt`, null);
+	//sieve(`flint`, 0.01, `#minecraft:sand`, `mekanism:salt`, null);
 	sieve(`iron`, 0.02, `#minecraft:sand`, `mekanism:salt`, null);
-	sieve(`diamond`, 0.4, `#minecraft:sand`, `mekanism:salt`, null);
+	//sieve(`diamond`, 0.4, `#minecraft:sand`, `mekanism:salt`, null);
 	sieve(`flint`, 0.09, `minecraft:sand`, `mana-and-artifice:vinteum_dust`, null);
-	sieve(`flint`, 0.05, `#forge:gravel`, `thermal:apatite`, null);
+	//sieve(`flint`, 0.05, `#forge:gravel`, `thermal:apatite`, null);
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:apatite`, null);
-	sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:apatite`, null);
-	sieve(`flint`, 0.05, `#forge:gravel`, `thermal:cinnabar`, null);
+	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:apatite`, null);
+	//sieve(`flint`, 0.05, `#forge:gravel`, `thermal:cinnabar`, null);
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:cinnabar`, null);
-	sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:cinnabar`, null);
-	sieve(`flint`, 0.05, `#forge:gravel`, `thermal:niter`, null);
+	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:cinnabar`, null);
+	//sieve(`flint`, 0.05, `#forge:gravel`, `thermal:niter`, null);
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:niter`, null);
-	sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:niter`, null);
-	sieve(`flint`, 0.05, `#forge:gravel`, `thermal:sulfur`, null);
+	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:niter`, null);
+	//sieve(`flint`, 0.05, `#forge:gravel`, `thermal:sulfur`, null);
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:sulfur`, null);
-	sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null);
+	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null);
 
 	//Nether sieve
 	sieve(`diamond`, 0.2, exRack, `appliedenergistics2:fluix_crystal_seed`, null);
@@ -132,7 +132,7 @@ onEvent(`recipes`, e => {
 	heavy(`compressium:gravel_1`, `minecraft:gravel`, 9);
 	heavy(`compressium:sand_1`, `minecraft:sand`, 9);
 	heavy(`compressium:dirt_1`, `minecraft:dirt`, 9);
-	heavy(`compressium:soul_sand_1`, `minecraft:soul_sand`, 9);
+	heavy(`compressium:soulsand_1`, `minecraft:soul_sand`, 9);
 
 	//Hammer recipes
 	hammer(`compressium:cobblestone_1`, `compressium:gravel_1`);
@@ -144,7 +144,7 @@ onEvent(`recipes`, e => {
 	hhammer(`compressium:gravel_1`, `minecraft:sand`, 9);
 	hhammer(`compressium:sand_1`, `exnihilosequentia:dust`, 9);
 	hhammer(`compressium:netherrack_1`, `exnihilosequentia:crushed_netherrack`, 9);
-	hhammer(`compressium:end_stone_1`, `exnihilosequentia:crushed_end_stone`, 9);
+	hhammer(`compressium:endstone_1`, `exnihilosequentia:crushed_end_stone`, 9);
 	hhammer(`compressium:diorite_1`, `exnihilosequentia:crushed_diorite`, 9);
 	hhammer(`compressium:granite_1`, `exnihilosequentia:crushed_granite`, 9);
 	hhammer(`compressium:andesite_1`, `exnihilosequentia:crushed_andesite`, 9);

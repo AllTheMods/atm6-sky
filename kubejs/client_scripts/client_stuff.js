@@ -162,6 +162,8 @@ onEvent(`jei.hide.items`, e => {
 	hideMetal(`thermal`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
 	hideMetal(`thermal`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
 	hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+	hideMetal(`iceandfire`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+	hideMetal(`iceandfire`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
 
 	const hideStuff = (mod, type, names) => {
 		names.forEach(name => {

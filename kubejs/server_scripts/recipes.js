@@ -35,21 +35,6 @@ onEvent(`recipes`, e => {
 
 	//Powah recipes
 	energize([{
-		tag: `forge:ingots/allthemodium`
-	}, {
-		tag: `forge:ingots/unobtainium`
-	}], `allthemodium:unobtainium_allthemodium_alloy_ingot`, 1, 50000);
-	energize([{
-		tag: `forge:ingots/vibranium`
-	}, {
-		tag: `forge:ingots/allthemodium`
-	}], `allthemodium:vibranium_allthemodium_alloy_ingot`, 1, 50000);
-	energize([{
-		tag: `forge:ingots/vibranium`
-	}, {
-		tag: `forge:ingots/unobtainium`
-	}], `allthemodium:unobtainium_vibranium_alloy_ingot`, 1, 50000);
-	energize([{
 		tag: `forge:storage_blocks/iron`
 	}, {
 		tag: `forge:storage_blocks/gold`
@@ -1665,10 +1650,10 @@ onEvent(`recipes`, e => {
 		], {
 			W: `minecraft:${color}_wool`
 		});
+		/*
 		e.remove({
 			output: `comforts:sleeping_bag_${color}`
 		});
-		/*
 		if (color !== `light_gray`) {
 		  e.shaped(Item.of(`comforts:sleeping_bag_${color}`), [
 		    `WWW`,

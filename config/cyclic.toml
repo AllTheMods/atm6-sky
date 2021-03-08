@@ -37,7 +37,7 @@
 		#Set false to disable enchantment
 		curse = false
 		#Set false to disable enchantment
-		auto_smelt = true
+		auto_smelt = false
 		#Set false to disable enchantment
 		growth = true
 		#Set false to disable enchantment

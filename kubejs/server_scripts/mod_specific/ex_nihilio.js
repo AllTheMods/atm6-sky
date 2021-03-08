@@ -29,7 +29,7 @@ onEvent(`recipes`, e => {
 		});
 	};
 
-	const heavy = (item, source, rolls) => {
+	const hsieve = (item, source, rolls) => {
 		e.custom({
 			type: `excompressum:heavy_sieve_generated`,
 			input: Ingredient.of(item).toJson(),
@@ -132,11 +132,11 @@ onEvent(`recipes`, e => {
 	sieve(`netherite`, 0.002, exEnd, `kubejs:piece_unob`, null);
 
 	//Heavy sieving | Params: Item to sieve, normal sieving item, how many rolls(multiplier for drops)
-	heavy(`compressium:cobblestone_1`, `minecraft:cobblestone`, 9);
-	heavy(`compressium:gravel_1`, `minecraft:gravel`, 9);
-	heavy(`compressium:sand_1`, `minecraft:sand`, 9);
-	heavy(`compressium:dirt_1`, `minecraft:dirt`, 9);
-	heavy(`compressium:soulsand_1`, `minecraft:soul_sand`, 9);
+	hsieve(`compressium:cobblestone_1`, `minecraft:cobblestone`, 9);
+	hsieve(`compressium:gravel_1`, `minecraft:gravel`, 9);
+	hsieve(`compressium:sand_1`, `minecraft:sand`, 9);
+	hsieve(`compressium:dirt_1`, `minecraft:dirt`, 9);
+	hsieve(`compressium:soulsand_1`, `minecraft:soul_sand`, 9);
 
 	//Hammer recipes
 	hammer(`#minecraft:logs`, `thermal:sawdust`);

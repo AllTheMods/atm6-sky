@@ -75,12 +75,12 @@ onEvent(`recipes`, e => {
 	});
 	e.custom({
 		type: `cyclic:solidifier`,
-		inputTop: Ingredient.of(`woot:light_blue_dyeplate`).toJson(),
-		inputMiddle: Ingredient.of(`#minecraft:saplings`).toJson(),
-		inputBottom: Ingredient.of(`woot:light_blue_dyeplate`).toJson(),
+		inputTop: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
+		inputMiddle: Ingredient.of(`minecraft:spruce_sapling`).toJson(),
+		inputBottom: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
 		mix: {
 			fluid: `cyclic:slime`,
-			count: 1000
+			count: 200
 		},
 		result: Item.of(`integrateddynamics:menril_sapling`).toResultJson()
 	});
@@ -113,8 +113,9 @@ onEvent(`recipes`, e => {
 	});
 	e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1);
 	e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1);
-	e.shapeless(Item.of(`minecraft:clay_ball`, 4), `minecraft:clay`);
-	e.shapeless(Item.of(`minecraft:quartz`, 4), `minecraft:quartz_block`);
+	e.shapeless(Item.of(`minecraft:clay_ball`, 4), `#forge:storage_blocks/clay`);
+	e.shapeless(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`);
+	e.shapeless(Item.of(`minecraft:glowstone_dust`, 4), `#forge:glowstone`);
 	e.shaped(`appliedenergistics2:silicon_press`, [
 		`EEE`,
 		`EAE`,

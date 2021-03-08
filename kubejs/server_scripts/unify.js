@@ -190,7 +190,7 @@ onEvent(`recipes`, e => {
 	waterReplace.forEach(wR => {
 		e.replaceInput({
 			id: wR
-		}, `#forge:water`, `#forge:water`);
+		}, `minecraft:water_bucket`, `#forge:water`);
 	});
 
 	var plates = [
@@ -209,6 +209,7 @@ onEvent(`recipes`, e => {
 		`lumium`,
 		`enderium`
 	];
+
 	plates.forEach(plate => {
 		if (!Ingredient.of(`#forge:plates/${plate}`).stacks.empty) {
 			e.replaceOutput(`#forge:plates/${plate}`, `thermal:${plate}_plate`);

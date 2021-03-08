@@ -51,7 +51,18 @@ onEvent(`jei.add.items`, e => {
 
 onEvent(`jei.hide.items`, e => {
 	e.hide([
-		//`@quark`,
+		/quark:ancient_tome/,
+		`quark:crate`,
+		`quark:ravager_hide`,
+		`quark:backpack`,
+		`quark:slime_in_a_bucket`,
+		`quark:trowel`,
+		`quark:magnet`,
+		`quark:soul_compass`,
+		`quark:pipe`,
+		`quark:boded_ravager_hide`,
+		/quark:.*_shard/,
+		/quark:.*_rune/,
 
 		`@curios`,
 

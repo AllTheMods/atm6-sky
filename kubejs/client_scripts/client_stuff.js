@@ -51,7 +51,7 @@ onEvent(`jei.add.items`, e => {
 
 onEvent(`jei.hide.items`, e => {
 	e.hide([
-		`@quark`,
+		//`@quark`,
 
 		`@curios`,
 

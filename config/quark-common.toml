@@ -26,7 +26,7 @@
 
 [categories]
 	Automation = false
-	Building = false
+	Building = true
 	Client = true
 	Experimental = false
 	Management = true
@@ -91,41 +91,41 @@
 		"Enable Randomizer" = true
 
 [building]
-	"Bamboo Mat" = false
-	"Burn Vines" = false
-	"Cobblestone Bricks" = false
-	"Compressed Blocks" = false
-	"Duskbound Blocks" = false
-	"Framed Glass" = false
-	"Gold Bars" = false
-	Grate = false
-	"Iron Plates" = false
-	"Item Frames" = false
-	"Leaf Carpet" = false
-	"Lit Lamp" = false
-	Midori = false
-	"More Brick Types" = false
-	"More Potted Plants" = false
-	"More Stone Variants" = false
-	"Nether Brick Fence Gate" = false
-	"Paper Decor" = false
-	"Quilted Wool" = false
-	Rope = false
-	"Shallow Dirt" = false
-	Shingles = false
-	"Soul Sandstone" = false
-	"Stained Planks" = false
-	"Sturdy Stone" = false
-	"Tallow And Candles" = false
-	Thatch = false
-	"Tie Leads To Fences" = false
-	Turf = false
-	"Variant Bookshelves" = false
-	"Variant Chests" = false
-	"Variant Ladders" = false
-	"Vertical Planks" = false
-	"Vertical Slabs" = false
-	"Wooden Posts" = false
+	"Bamboo Mat" = true
+	"Burn Vines" = true
+	"Cobblestone Bricks" = true
+	"Compressed Blocks" = true
+	"Duskbound Blocks" = true
+	"Framed Glass" = true
+	"Gold Bars" = true
+	Grate = true
+	"Iron Plates" = true
+	"Item Frames" = true
+	"Leaf Carpet" = true
+	"Lit Lamp" = true
+	Midori = true
+	"More Brick Types" = true
+	"More Potted Plants" = true
+	"More Stone Variants" = true
+	"Nether Brick Fence Gate" = true
+	"Paper Decor" = true
+	"Quilted Wool" = true
+	Rope = true
+	"Shallow Dirt" = true
+	Shingles = true
+	"Soul Sandstone" = true
+	"Stained Planks" = true
+	"Sturdy Stone" = true
+	"Tallow And Candles" = true
+	Thatch = true
+	"Tie Leads To Fences" = true
+	Turf = true
+	"Variant Bookshelves" = true
+	"Variant Chests" = true
+	"Variant Ladders" = true
+	"Vertical Planks" = true
+	"Vertical Slabs" = true
+	"Wooden Posts" = true
 
 	[building.compressed_blocks]
 		#Allowed values: [0,)
@@ -133,24 +133,24 @@
 		#Allowed values: [0,)
 		"Charcoal Block Fuel Time" = 16000
 		"Charcoal Block and Blaze Lantern Stay On Fire Forever" = true
-		"Enable Apple Crate" = true
-		"Enable Bamboo Block" = true
-		"Enable Beetroot Crate" = true
-		"Enable Berry Sack" = true
-		"Enable Blaze Lantern" = true
+		"Enable Apple Crate" = false
+		"Enable Bamboo Block" = false
+		"Enable Beetroot Crate" = false
+		"Enable Berry Sack" = false
+		"Enable Blaze Lantern" = false
 		"Enable Bonded Leather" = true
 		"Enable Bonded Rabbit Hide" = true
 		"Enable Cactus Block" = true
-		"Enable Carrot Crate" = true
-		"Enable Charcoal Block" = true
+		"Enable Carrot Crate" = false
+		"Enable Charcoal Block" = false
 		"Enable Chorus Fruit Block" = true
 		"Enable Cocoa Bean Sack" = true
 		"Enable Golden Apple Crate" = true
-		"Enable Gunpowder Sack" = true
+		"Enable Gunpowder Sack" = false
 		"Enable Nether Wart Sack" = true
-		"Enable Potato Crate" = true
+		"Enable Potato Crate" = false
 		"Enable Stick Block" = true
-		"Enable Sugar Cane Block" = true
+		"Enable Sugar Cane Block" = false
 		#Allowed values: [0,)
 		"Stick Block Fuel Time" = 900
 

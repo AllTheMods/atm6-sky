@@ -135,8 +135,6 @@ onEvent(`recipes`, e => {
 	heavy(`compressium:soulsand_1`, `minecraft:soul_sand`, 9);
 
 	//Hammer recipes
-	hammer(`compressium:cobblestone_1`, `compressium:gravel_1`);
-	hammer(`compressium:gravel_1`, `compressium:sand_1`);
 	hammer(`#minecraft:logs`, `thermal:sawdust`);
 
 	//Heavy hammer

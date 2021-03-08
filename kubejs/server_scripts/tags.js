@@ -62,6 +62,7 @@ onEvent(`item.tags`, e => {
 	e.add(`forge:hoes`, [/.*_hoe/, /.*:hoe_.*/]);
 	e.add(`integrateddynamics:menril_logs`, /integrateddynamics:menril_log/);
 	e.add(`create:crushed_ores`, /.*:crushed_.*_ore/);
+	e.add(`refinedstorage:crafting_tables`, [`craftingstation:crafting_station`, `cyclic:workbench`]);
 
 	//Remove
 	e.remove(`curios:charm`, [`simplemagnets:basicmagnet`, `simplemagnets:advancedmagnet`]);
@@ -73,6 +74,7 @@ onEvent(`item.tags`, e => {
 	e.remove(`appliedenergistics2:wool`, `#minecraft:wool`);
 	e.remove(`appliedenergistics2:workbench`, `minecraft:crafting_table`);
 	e.remove(`forge:dyes/yellow`, `mekanism:dust_sulfur`);
+	e.remove(`forge:clay`, `minecraft:clay`);
 	//e.remove(`minecraft:beehives`, [`resourcefulbees:t1_beehive`, `resourcefulbees:t2_beehive`, `resourcefulbees:t3_beehive`, `resourcefulbees:t4_beehive`]);
 });
 

@@ -1148,10 +1148,10 @@ onEvent(`recipes`, e => {
 	e.recipes.thermal.sawmill([Item.of(`integrateddynamics:menril_planks`, 6), Item.of(`thermal:sawdust`).withChance(0.25)], `#integrateddynamics:menril_logs`).energy(1000);
 	e.recipes.thermal.pulverizer([`mekanism:dust_coal`, Item.of(`thermal:sulfur_dust`).withChance(0.25)], `minecraft:coal`);
 	e.recipes.thermal.pulverizer(`mekanism:dust_charcoal`, `#forge:charcoal`);
-	e.recipes.thermal.smelter(`mekanism:ingot_steel`, [`#forge:dusts/coal`, `#forge:dusts/coal`, `#forge:ingots/iron`]);
+	e.recipes.thermal.smelter(`mekanism:ingot_steel`, [Item.of(`#forge:dusts/coal`, 2), `#forge:ingots/iron`]);
 
 	//Create
-	e.recipes.create.mixing(`mekanism:ingot_steel`, [Item.of(`#forge:dusts/coal`), `#forge:ingots/iron`]).heated();
+	e.recipes.create.mixing(`mekanism:ingot_steel`, [`#forge:dusts/coal`, `#forge:dusts/coal`, `#forge:ingots/iron`]).heated();
 
 	//Blood Magic
 	e.recipes.bloodmagic.altar(`integrateddynamics:menril_sapling`, `minecraft:spruce_sapling`).upgradeLevel(2);

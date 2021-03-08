@@ -180,6 +180,18 @@ onEvent(`recipes`, e => {
 	  B: `minecraft:bucket`
 	});
 	*/
+	e.shaped(`pipez:infinity_upgrade`, [
+		`CIC`,
+		`EUG`,
+		`CTC`
+	], {
+		C: `mysticalagradditions:nether_star_crux`,
+		I: `industrialforegoing:supreme_black_hole_unit`,
+		E: [`mekanism:ultimate_induction_provider`, `powah:energy_cell_nitro`],
+		U: `pipez:ultimate_upgrade`,
+		G: `mekanism:ultimate_chemical_tank`,
+		T: `industrialforegoing:supreme_black_hole_tank`
+	});
 	e.shaped(Item.of(`minecraft:chest`, 4), [
 		`LLL`,
 		`L L`,

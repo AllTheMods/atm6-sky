@@ -13,7 +13,9 @@ onEvent(`recipes`, e => {
 	};
 
 	makeSoil(`mysticalagradditions:insanium_farmland`, `insanium_farmland`, [`dirt`, `farmland`, `inferium`, `prudentium`, `tertium`, `imperium`, `supremium`, `insanium`], 0.50);
-	makeSoil(`kubejs:magical_soil`, `magical_soil`, [`dirt`, `farmland`, `inferium`, `prudentium`, `tertium`, `imperium`, `supremium`, `insanium`, `magical`], 0.75);
+	makeSoil(`kubejs:magical_soil`, `magical_soil`, [`magic`, `coarse_dirt`, `crimson_nylium`, `nylium`, `mushroom`, `end_stone`, `podzol`,
+		`dirt`, `grass`, `nether`, `farmland`, `inferium`, `prudentium`, `tertium`, `imperium`, `supremium`, `insanium`, `magical`, `botania`
+	], 0.75);
 
 	//Crops
 	let tier = (types, time, soil) => {
@@ -247,14 +249,14 @@ onEvent(`recipes`, e => {
 	    e.recipes.botanypots.crop(results, `${mod}:${name}_sapling`).categories([soil]);
 	};
 
-	
+
 	//  Use the function to add custom trees to the pots.
 	//      Parameter 1 is mod as the advanced tooltip sees it.
 	//      Parameter 2 is the tree name as the advanced tooltip sees it.
 	//      Parameter 3 is for the unique drops like apple/cherry etc. If none, use `null` without the quotes.
 	//      Parameter 4 is for the soil to grow on, using `modname:blockname`. If dirt, `null` without the quotes will default to dirt.
 	//      Parameter 5 is for specifying a different log than what would normally be modname:treename_log. `null` defaults to modname:treename_log.
-	
+
 	growTreeUniversal(`minecraft`, `oak`, `minecraft:apple`, null, null);
 	growTreeUniversal(`minecraft`, `dark_oak`, `minecraft:apple`, null, null);
 	growTreeUniversal(`minecraft`, `jungle`, `minecraft:cocoa_beans`, null, null);

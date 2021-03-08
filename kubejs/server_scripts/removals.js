@@ -30,10 +30,10 @@ onEvent(`recipes`, e => {
 
 		`immersiveengineering:crafting/paper_from_sawdust`,
 
-		`exnihilosequentia:heat/wall_torch`,
-		`exnihilosequentia:heat/fire`,
-		`exnihilosequentia:heat/magma_block`,
-		`exnihilosequentia:heat/lava`,
+		`exnihilosequentia:heat/ens_wall_torch`,
+		`exnihilosequentia:heat/ens_fire`,
+		`exnihilosequentia:heat/ens_magma_block`,
+		`exnihilosequentia:heat/ens_lava`,
 
 		`excompressum:hammer/logs`,
 

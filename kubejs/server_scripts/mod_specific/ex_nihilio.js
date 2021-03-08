@@ -66,11 +66,13 @@ onEvent(`recipes`, e => {
 
 	//Crucible heating `blocks`
 	heat(`botania:blaze_block`, 8);
-	heat(`allthemodium:molten_bluelava`, 50);
+	heat(`allthemodium:molten_bluelava`, 200);
+	heat(`allthemodium:flowing_molten_bluelava`, 200);
 	heat(`alltheores:uranium_block`, 20);
 	heat(`minecraft:magma_block`, 3);
 	heat(`minecraft:fire`, 4);
 	heat(`minecraft:lava`, 5);
+	heat(`mekanism:superheating_element`, 60);
 
 	//Params go like this: Mesh, Drop chance, Input item, Output item, Waterlogged.
 	//Overworld sieve
@@ -101,6 +103,8 @@ onEvent(`recipes`, e => {
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:sulfur`, null);
 	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null);
 
+	sieve(`emerald`, 0.05 `minecraft:dirt`, `integrateddynamics:menril_berries`, true);
+
 	//Nether sieve
 	sieve(`diamond`, 0.2, exRack, `appliedenergistics2:fluix_crystal_seed`, null);
 	sieve(`diamond`, 0.3, exRack, `mysticalagriculture:inferium_essence`, null);
@@ -123,9 +127,9 @@ onEvent(`recipes`, e => {
 
 
 	//modium integration
-	sieve(`netherite`, 0.02, `minecraft:gravel`, `kubejs:piece_mod`, null);
-	sieve(`netherite`, 0.02, exRack, `kubejs:piece_vib`, null);
-	sieve(`netherite`, 0.02, exEnd, `kubejs:piece_unob`, null);
+	sieve(`netherite`, 0.002, `minecraft:gravel`, `kubejs:piece_mod`, null);
+	sieve(`netherite`, 0.002, exRack, `kubejs:piece_vib`, null);
+	sieve(`netherite`, 0.002, exEnd, `kubejs:piece_unob`, null);
 
 	//Heavy sieving | Params: Item to sieve, normal sieving item, how many rolls(multiplier for drops)
 	heavy(`compressium:cobblestone_1`, `minecraft:cobblestone`, 9);
@@ -140,9 +144,9 @@ onEvent(`recipes`, e => {
 	//Heavy hammer
 	hhammer(`compressium:cobblestone_1`, `minecraft:gravel`, 9);
 	hhammer(`compressium:gravel_1`, `minecraft:sand`, 9);
-	hhammer(`compressium:sand_1`, `exnihilosequentia:dust`, 9);
-	hhammer(`compressium:netherrack_1`, `exnihilosequentia:crushed_netherrack`, 9);
-	hhammer(`compressium:endstone_1`, `exnihilosequentia:crushed_end_stone`, 9);
+	hhammer(`compressium:sand_1`, exDust, 9);
+	hhammer(`compressium:netherrack_1`, exRack, 9);
+	hhammer(`compressium:endstone_1`, exEnd, 9);
 	hhammer(`compressium:diorite_1`, `exnihilosequentia:crushed_diorite`, 9);
 	hhammer(`compressium:granite_1`, `exnihilosequentia:crushed_granite`, 9);
 	hhammer(`compressium:andesite_1`, `exnihilosequentia:crushed_andesite`, 9);

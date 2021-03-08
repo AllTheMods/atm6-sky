@@ -169,6 +169,29 @@ onEvent(`recipes`, e => {
 	replace(`#forge:dusts/lapis`, `thermal:lapis_dust`, true);
 	replace(`#forge:dusts/coal`, `mekanism:dust_coal`, true);
 	replace(`#forge:slag`, `thermal:slag`, true);
+	replace(`#forge:salt`, `mekanism:salt`, false);
+
+	var waterReplace = [
+		`thermal:rubber_from_vine`,
+		`thermal:rubber_from_dandelion`,
+		`xreliquary:items/attraction_potion`,
+		`xreliquary:items/fertile_potion`,
+		`xreliquary:items/glowing_water`,
+		`appliedenergistics2:network/cables/smart_fluix_clean`,
+		`appliedenergistics2:network/cables/dense_smart_fluix_clean`,
+		//`appliedenergistics2:network/cables/covered_fluix_clean`,
+		`appliedenergistics2:network/cables/dense_covered_fluix_clean`,
+		`appliedenergistics2:network/cables/glass_fluix_clean`,
+		`immersiveengineering:crafting/concrete`,
+		`create:crafting/appliances/dough`,
+		`gardenofglass:magma_cream_to_slime_ball`,
+	];
+
+	waterReplace.forEach(wR => {
+		e.replaceInput({
+			id: wR
+		}, `#forge:water`, `#forge:water`);
+	});
 
 	var plates = [
 		`iron`,

@@ -64,7 +64,7 @@ onEvent(`jei.hide.items`, e => {
 		/appliedenergistics2:facade/,
 
 		`cyclic:tile_transporter_empty`,
-		`cyclic:.*_pipe`,
+		/cyclic:.*_pipe/,
 		`cyclic:cable_wrench`,
 
 		//`naturesaura:chunk_loader`,
@@ -90,8 +90,7 @@ onEvent(`jei.hide.items`, e => {
 		`mekanism:sawdust`,
 		`mekanism:block_charcoal`,
 
-		/immersiveengineering:.*_coke/,
-		/immersiveengineering:coke/,
+		/immersiveengineering:.*coke/,
 		`immersiveengineering:slag`,
 
 		/exnihilosequentia:ingot_/,
@@ -115,7 +114,7 @@ onEvent(`jei.hide.items`, e => {
 		`excompressum:compressed_diorite`,
 		`excompressum:compressed_granite`,
 		`excompressum:compressed_andesite`,
-		`excompressum:.*_crucible`,
+		/excompressum:.*_crucible/,
 	]);
 
 	colors.forEach(color => {

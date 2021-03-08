@@ -67,7 +67,7 @@ onEvent(`recipes`, e => {
 
 			`cyclic:uncrafter`,
 			`cyclic:tile_transporter_empty`,
-			`cyclic:.*_pipe`,
+			/cyclic:.*_pipe/,
 			`cyclic:cable_wrench`,
 
 			`solarflux:sp_6`,
@@ -125,7 +125,7 @@ onEvent(`recipes`, e => {
 			`excompressum:compressed_diorite`,
 			`excompressum:compressed_granite`,
 			`excompressum:compressed_andesite`,
-			`excompressum:.*_crucible`,
+			/excompressum:.*_crucible/,
 		]
 	});
 	e.remove({

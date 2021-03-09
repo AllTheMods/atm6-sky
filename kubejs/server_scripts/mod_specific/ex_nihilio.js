@@ -66,8 +66,8 @@ onEvent(`recipes`, e => {
 
   //Crucible heating `blocks`
   heat(`botania:blaze_block`, 8);
-  heat(`allthemodium:molten_bluelava`, 200);
-  heat(`allthemodium:flowing_molten_bluelava`, 200);
+  //heat(`allthemodium:molten_bluelava`, 200);
+  //heat(`allthemodium:flowing_molten_bluelava`, 200);
   heat(`alltheores:uranium_block`, 20);
   heat(`minecraft:magma_block`, 3);
   heat(`minecraft:fire`, 4);

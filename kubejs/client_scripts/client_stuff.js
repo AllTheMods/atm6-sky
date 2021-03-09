@@ -142,7 +142,7 @@ onEvent(`jei.hide.items`, e => {
       const id = typeFirst.includes(mod) ?
         `${mod}:${type}_${name}` :
         `${mod}:${name}_${type}`;
-      if (!Ingredient.of(id).stacks.empty) {
+      if (!Ingredient.of(id).isEmpty()) {
         e.hide(id);
         //console.log(`Hid ${id}`);
       }
@@ -181,7 +181,7 @@ onEvent(`jei.hide.items`, e => {
       const id = typeFirst.includes(mod) ?
         `${mod}:${type}_${name}` :
         `${mod}:${name}_${type}`;
-      if (!Ingredient.of(id).stacks.empty) {
+      if (!Ingredient.of(id).isEmpty()) {
         e.hide(id);
         //console.log(`Hid ${id}`);
       }

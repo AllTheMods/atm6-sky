@@ -204,4 +204,33 @@ onEvent(`recipes`, e => {
   crushEm(exDust, `#minecraft:sand`);
   crushEm(exRack, `#forge:netherrack`);
   crushEm(exEnd, `#forge:end_stones`);
+
+  var pieces = [
+    `osmium`,
+    `copper`,
+    `lead`,
+    `nickel`,
+    `silver`,
+    `tin`,
+    `aluminum`,
+    `platinum`,
+    `uranium`,
+    `zinc`,
+    `iron`,
+    `gold`,
+    `mod`,
+    `vib`,
+    `unob`,
+  ];
+
+  pieces.forEach(piece => {
+    var exPiece = `exnihilosequentia:piece_${piece}`;
+    var kjsPiece = `kubejs:piece_${piece}`;
+    if (!Ingredient.of(exPiece).isEmpty()) {
+      e.recipes.thermal.press(`exnihilosequentia:chunk_${piece}`, [Item.of(exPiece, 4), `thermal:press_packing_2x2_die`]);
+    }
+    if (!Ingredient.of(kjsPiece).isEmpty()) {
+      e.recipes.thermal.press(`kubejs:chunk_${piece}`, [Item.of(kjsPiece, 4), `thermal:press_packing_2x2_die`]);
+    }
+  });
 });

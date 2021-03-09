@@ -103,7 +103,7 @@ onEvent(`recipes`, e => {
 	sieve(`iron`, 0.1, `#forge:gravel`, `thermal:sulfur`, null);
 	//sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null);
 
-	sieve(`emerald`, 0.05 `minecraft:dirt`, `integrateddynamics:menril_berries`, true);
+	sieve(`emerald`, 0.05, `minecraft:dirt`, `integrateddynamics:menril_berries`, true);
 
 	//Nether sieve
 	sieve(`diamond`, 0.2, exRack, `appliedenergistics2:fluix_crystal_seed`, null);

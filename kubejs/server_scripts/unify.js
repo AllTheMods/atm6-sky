@@ -82,7 +82,7 @@ onEvent(`recipes`, e => {
       turns: 8
     });
     e.recipes.immersiveengineering.crusher(Item.of(dustItem), `#forge:ingots/${item}`);
-    if (!Ingredient.of(`#forge:ores/${item}`).isEmpty()) {
+    if (!Ingredient.of(`#forge:ores/${item}`).stacks.empty) {
       multiSmelt(ingotItem, `#forge:ores/${item}`);
       e.recipes.mekanism.enriching(Item.of(dustItem, 2), `#forge:ores/${item}`);
       //e.recipes.mekanism.enriching(Item.of(dustItem), `#mekanism:dirty_dusts/${item}`);
@@ -211,7 +211,7 @@ onEvent(`recipes`, e => {
   ];
 
   plates.forEach(plate => {
-    if (!Ingredient.of(`#forge:plates/${plate}`).isEmpty()) {
+    if (!Ingredient.of(`#forge:plates/${plate}`).stacks.empty) {
       e.replaceOutput(`#forge:plates/${plate}`, `thermal:${plate}_plate`);
     }
   });

@@ -156,6 +156,14 @@ onEvent(`recipes`, e => {
     L: `#minecraft:logs`,
     I: `#forge:ingots/iron`
   });
+   e.shaped(Item.of(`astralsorcery:marble_raw`, 8), [
+    `III`,
+    `ILI`,
+    `III`
+  ], {
+    L: `minecraft:bone_meal`,
+    I: `minecraft:stone`
+  });
   e.shaped(Item.of(`minecraft:stick`, 16), [
     `L`,
     `L`

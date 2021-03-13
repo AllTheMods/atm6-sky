@@ -227,10 +227,10 @@ onEvent(`recipes`, e => {
     var exPiece = `exnihilosequentia:piece_${piece}`;
     var kjsPiece = `kubejs:piece_${piece}`;
     if (!Ingredient.of(exPiece).isEmpty()) {
-      e.recipes.thermal.press(`exnihilosequentia:chunk_${piece}`, [Item.of(exPiece, 4), `thermal:press_packing_2x2_die`]);
+      e.recipes.thermal.press(`exnihilosequentia:chunk_${piece}`, [Item.of(exPiece, 4), `thermal:press_packing_2x2_die`]).energy(1);
     }
     if (!Ingredient.of(kjsPiece).isEmpty()) {
-      e.recipes.thermal.press(`kubejs:chunk_${piece}`, [Item.of(kjsPiece, 4), `thermal:press_packing_2x2_die`]);
+      e.recipes.thermal.press(`kubejs:chunk_${piece}`, [Item.of(kjsPiece, 4), `thermal:press_packing_2x2_die`]).energy(1);
     }
   });
 });

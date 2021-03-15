@@ -4,6 +4,13 @@
 	order_index: 2,
 	filename: "magical_advances",
 	title: "Magical Advances",
+	icon: {
+		id: "mana-and-artifice:improvised_manaweaver_wand",
+		Count: 1b,
+		tag: {
+			Damage: 0
+		}
+	},
 	default_quest_shape: "",
 	quests: [
 		{
@@ -121,13 +128,19 @@
 			tasks: [{
 				id: "545226C85C9A5241",
 				type: "item",
-				item: "astralsorcery:starmetal_ingot"
+				item: "astralsorcery:aquamarine",
+				count: 4L
 			}],
 			rewards: [{
 				id: "04F3C6B097CD8786",
 				type: "item",
-				item: "astralsorcery:aquamarine",
-				count: 3
+				item: {
+					id: "astralsorcery:constellation_paper",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				}
 			}]
 		},
 		{

@@ -4,35 +4,177 @@
 	order_index: 1,
 	filename: "automation",
 	title: "Tech",
+	icon: "engineersdecor:small_electrical_furnace",
 	default_quest_shape: "",
 	quests: [
 		{
-			x: -4.5d,
-			y: -2.5d,
+			title: "Slave Labour",
+			x: 1.0d,
+			y: -0.5d,
+			description: [
+				"Auto-Sieves are a server friendly way to get material, and it contains a mini slave to do your bidding.",
+				"",
+				" You can change the slave by using a name tag on the auto-sieve.",
+				"",
+				"We have 4 people for you as reward. Some of the devs, and a player that helped with the quests."
+			],
 			id: "7F95D4C8AEFB5A95",
 			tasks: [{
 				id: "12E015E48A8FC98A",
 				type: "item",
 				item: "excompressum:auto_sieve"
 			}],
-			rewards: [{
-				id: "1039AC49EE6CCEAC",
-				type: "item",
-				item: {
-					id: "minecraft:name_tag",
-					Count: 1b,
-					tag: {
-						RepairCost: 0,
-						display: {
-							Name: '{"text":"oly2o6"}'
+			rewards: [
+				{
+					id: "1039AC49EE6CCEAC",
+					type: "item",
+					icon: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUyMzdkMTY1ODhjYjc5NzA2NzBiZDRlMDY0NTk3YmU1ZjMzMTU1NjI5ZDY1OGZjZDI2OGRjNjdhNzlkODkxOCJ9fX0="
+									}]
+								},
+								Id: [I;
+									77149896,
+									-197767746,
+									-1864421419,
+									-1567734303
+								]
+							},
+							display: {
+								Name: '{"text":""}'
+							}
+						}
+					},
+					item: {
+						id: "minecraft:name_tag",
+						Count: 1b,
+						tag: {
+							RepairCost: 0,
+							display: {
+								Name: '{"text":"oly2o6"}'
+							}
+						}
+					}
+				},
+				{
+					id: "67FF36D5DF072AF6",
+					type: "item",
+					icon: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
+									}]
+								},
+								Id: [I;
+									-952285457,
+									2143437411,
+									-1618251149,
+									425174478
+								]
+							},
+							display: {
+								Name: '{"text":""}'
+							}
+						}
+					},
+					item: {
+						id: "minecraft:name_tag",
+						Count: 1b,
+						tag: {
+							RepairCost: 0,
+							display: {
+								Name: '{"text":"Pun_isher"}'
+							}
+						}
+					}
+				},
+				{
+					id: "2AEF3E44F097E3B4",
+					type: "item",
+					icon: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
+									}]
+								},
+								Id: [I;
+									1464802139,
+									-399291895,
+									-1592429182,
+									-1925828862
+								]
+							},
+							display: {
+								Name: '{"text":""}'
+							}
+						}
+					},
+					item: {
+						id: "minecraft:name_tag",
+						Count: 1b,
+						tag: {
+							RepairCost: 0,
+							display: {
+								Name: '{"text":"White_Phant0m"}'
+							}
+						}
+					}
+				},
+				{
+					id: "0219C76D38B1A4B4",
+					type: "item",
+					icon: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjIxZDc2NjFiYTc5ODBjOGY1Nzg0YWZhYTljOGZmNTQ2NjgwNjE3N2E4ODU5Yzc5YjFjNjk5MjFkMmZhODhiYiJ9fX0="
+									}]
+								},
+								Id: [I;
+									1889625180,
+									1933985653,
+									-1858663942,
+									1476275747
+								]
+							},
+							display: {
+								Name: '{"text":""}'
+							}
+						}
+					},
+					item: {
+						id: "minecraft:name_tag",
+						Count: 1b,
+						tag: {
+							RepairCost: 0,
+							display: {
+								Name: '{"text":"thevortex"}'
+							}
 						}
 					}
 				}
-			}]
+			]
 		},
 		{
-			x: -4.5d,
-			y: -1.0d,
+			title: "More power to the slaves!",
+			x: 1.0d,
+			y: 1.5d,
 			description: [""],
 			dependencies: ["7F95D4C8AEFB5A95"],
 			id: "06821798EEECA8A4",
@@ -43,19 +185,41 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -2.5d,
-			description: ["Obviously you could choose any method you want to auto collect your gravel/sand/dust, but thermal is a good first shout... right?"],
+			icon: "excompressum:compressed_dust",
+			x: 1.0d,
+			y: -4.0d,
+			description: [
+				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them then just hammering.",
+				"",
+				"Maybe some automation."
+			],
+			min_required_dependencies: 1,
+			dependencies: [
+				"529BDCD9FBD4E7F3",
+				"0E0AEF15C523A650",
+				"5ECCC7CDE3E42458",
+				"0F6BB69B584D2BEB",
+				"4EFEBF1B0117570B",
+				"11B9AF634EAC4E98",
+				"2F63FABFEE484565"
+			],
+			dependency_requirement: "one_completed",
 			id: "2A599150364DA2A4",
 			tasks: [{
-				id: "1E3B09CAFBF1B528",
+				id: "4895615414B77A70",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "68A2C346936DD6D5",
 				type: "item",
-				item: "thermal:machine_pulverizer"
+				item: "minecraft:iron_ore",
+				count: 16
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -1.0d,
+			title: "Pipez",
+			x: 0.0d,
+			y: -1.5d,
 			description: ["This pipe mod is an all round powerhouse, from filtering options to greatly optimised, so give your server owner the weekend off and try them out ;)"],
 			id: "38F48F2A9BB52F24",
 			tasks: [
@@ -92,8 +256,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: -2.5d,
+			x: -2.5d,
+			y: -8.0d,
 			id: "4EE8BDAE2E49EE70",
 			tasks: [{
 				id: "791C18F3E33D57FC",
@@ -102,8 +266,13 @@
 			}]
 		},
 		{
-			x: 5.5d,
-			y: -2.5d,
+			x: -2.5d,
+			y: 0.5d,
+			dependencies: [
+				"351F47DB5DE826CD",
+				"590BF6A08BE642AE"
+			],
+			dependency_requirement: "one_completed",
 			id: "51FF0CE575E125B8",
 			tasks: [{
 				id: "7D57D8FEF5C431F9",
@@ -112,18 +281,35 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: -1.0d,
+			x: -2.5d,
+			y: -5.5d,
+			dependencies: ["4EE8BDAE2E49EE70"],
 			id: "0BA678E979B4DC0A",
-			tasks: [{
-				id: "54A12BC24A3B158A",
-				type: "item",
-				item: "appliedenergistics2:energy_acceptor"
-			}]
+			tasks: [
+				{
+					id: "54A12BC24A3B158A",
+					type: "item",
+					item: "appliedenergistics2:energy_acceptor"
+				},
+				{
+					id: "5C460871CA5B70C9",
+					type: "item",
+					item: {
+						id: "appliedenergistics2:energy_cell",
+						Count: 1b,
+						tag: {
+							internalMaxPower: 200000.0d,
+							internalCurrentPower: 200000.0d
+						}
+					}
+				}
+			]
 		},
 		{
-			x: 5.5d,
-			y: -1.0d,
+			x: -2.5d,
+			y: -2.5d,
+			dependencies: ["0BA678E979B4DC0A"],
+			optional: true,
 			id: "590BF6A08BE642AE",
 			tasks: [
 				{
@@ -148,8 +334,9 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 2.0d,
+			x: 4.5d,
+			y: -5.5d,
+			dependencies: ["2171A3590A29FD59"],
 			id: "548B3AD584C8D3B5",
 			tasks: [{
 				id: "470FA81E3476F181",
@@ -158,8 +345,12 @@
 			}]
 		},
 		{
-			x: 5.5d,
+			x: 4.5d,
 			y: 0.5d,
+			dependencies: [
+				"2D882D3D8631D8D1",
+				"479D052DE3553CEF"
+			],
 			id: "75FF9CAB83A38030",
 			tasks: [{
 				id: "4B9F5EDFF343EA48",
@@ -168,8 +359,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 0.5d,
+			x: 4.5d,
+			y: -8.0d,
 			id: "2171A3590A29FD59",
 			tasks: [{
 				id: "1351AB995405CA6B",
@@ -178,8 +369,10 @@
 			}]
 		},
 		{
-			x: 5.5d,
-			y: 2.0d,
+			x: 4.5d,
+			y: -2.5d,
+			dependencies: ["548B3AD584C8D3B5"],
+			optional: true,
 			id: "479D052DE3553CEF",
 			tasks: [
 				{
@@ -200,23 +393,63 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: 0.5d,
-			description: ["Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY"],
+			title: "Dynamic Power, needs storage.",
+			x: -0.5d,
+			y: -8.5d,
+			description: [
+				"Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY",
+				"",
+				"You must do all Dynamos! Not just Magmatic."
+			],
+			dependencies: ["095F5AE5A801000A"],
 			id: "716D9C2F74999B5A",
-			tasks: [{
-				id: "7FBEF040E634FFD4",
-				type: "item",
-				item: "thermal:dynamo_magmatic"
-			}],
+			tasks: [
+				{
+					id: "7FBEF040E634FFD4",
+					type: "item",
+					item: "thermal:dynamo_magmatic"
+				},
+				{
+					id: "2091708924EB3628",
+					type: "item",
+					item: "thermal:dynamo_stirling"
+				},
+				{
+					id: "330E6AEDD35CFFFD",
+					type: "item",
+					item: "thermal:dynamo_compression"
+				},
+				{
+					id: "1DFAC10ECCA294BF",
+					type: "item",
+					item: "thermal:dynamo_numismatic"
+				},
+				{
+					id: "6D5C848CAC32DA7A",
+					type: "item",
+					item: "thermal:dynamo_lapidary"
+				}
+			],
 			rewards: [{
 				id: "7B6D175A3AA1A053",
 				type: "item",
-				item: "thermal:dynamo_magmatic"
+				item: {
+					id: "thermal:energy_cell",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000,
+							EnergySend: 1000,
+							Energy: 0,
+							EnergyRecv: 1000
+						}
+					}
+				},
+				count: 4
 			}]
 		},
 		{
-			x: -3.0d,
+			x: 0.0d,
 			y: 0.5d,
 			id: "21FB306379352D15",
 			tasks: [
@@ -238,8 +471,8 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: 2.0d,
+			x: 2.0d,
+			y: 0.5d,
 			description: ["You are a little far away from an angel ring, so a jetpack might stop you dying to the void..."],
 			id: "7F282D66F27BA49D",
 			tasks: [{
@@ -252,6 +485,345 @@
 						Throttle: 1.0d
 					}
 				}
+			}],
+			rewards: [{
+				id: "6E203E6892B93399",
+				type: "item",
+				item: {
+					id: "powah:battery_starter",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			title: "The Power of Pedestal!",
+			icon: "pedestals:pedestal/stone333",
+			x: 2.0d,
+			y: -1.5d,
+			description: [
+				"Pedestal is a mod that greatly opens to new ideas.",
+				"",
+				"With Jei you can get info on each pedestal upgrade.",
+				"",
+				"The Upgrades can be Enchanted for better results."
+			],
+			id: "411EB0C61927576B",
+			tasks: [
+				{
+					id: "2ADEEF8356BA8D18",
+					type: "item",
+					title: "Any #pedestals:linkingtool",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "pedestals:linkingtool"
+						}
+					}
+				},
+				{
+					id: "174E809A92D0E51A",
+					type: "item",
+					item: "pedestals:coin/default"
+				},
+				{
+					id: "353A4A9746199838",
+					type: "item",
+					item: "pedestals:pedestal/stone333"
+				}
+			],
+			rewards: [{
+				id: "4C25C81F6B4C96A9",
+				type: "item",
+				item: "minecraft:coal_block",
+				count: 8
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -8.0d,
+			description: [
+				"There are many mods that generates power, some of which are better then others.",
+				"",
+				"For this, you must do at least the basic generators of certain mods."
+			],
+			id: "095F5AE5A801000A",
+			tasks: [{
+				id: "46F297EC9A31ACF8",
+				type: "checkmark",
+				title: "Generating Power",
+				icon: "mekanismgenerators:advanced_solar_generator"
+			}]
+		},
+		{
+			title: "Mekanism Basic Generators",
+			x: 2.5d,
+			y: -8.5d,
+			description: [
+				"Earth, Water, Air, and Fire, these are the ways Mekanism can generate power.",
+				"",
+				"You the player will...",
+				"",
+				"*gets smack*",
+				"",
+				"Ouch... what...",
+				"",
+				"*Background angry mumbling*",
+				"",
+				"Ok, no copyright stuff..."
+			],
+			dependencies: ["095F5AE5A801000A"],
+			id: "581A8BC06B67F682",
+			tasks: [
+				{
+					id: "388A450835FCB413",
+					type: "item",
+					item: "mekanismgenerators:heat_generator"
+				},
+				{
+					id: "241A717A225EA9A4",
+					type: "item",
+					item: "mekanismgenerators:wind_generator"
+				},
+				{
+					id: "370B7AEC18D9313A",
+					type: "item",
+					item: "mekanismgenerators:bio_generator"
+				},
+				{
+					id: "7EEBF559363F895B",
+					type: "item",
+					item: "mekanismgenerators:gas_burning_generator"
+				}
+			],
+			rewards: [{
+				id: "09385C016B12D4D9",
+				type: "item",
+				item: "mekanism:advanced_energy_cube"
+			}]
+		},
+		{
+			title: "Too little Powah",
+			x: 1.0d,
+			y: -9.5d,
+			description: [""],
+			dependencies: ["095F5AE5A801000A"],
+			id: "37B77C8C9403772C",
+			tasks: [
+				{
+					id: "42E2681F07A4509B",
+					type: "item",
+					item: "powah:thermo_generator_starter"
+				},
+				{
+					id: "27F32E94A09E1BE0",
+					type: "item",
+					item: "powah:furnator_starter"
+				},
+				{
+					id: "34A12AE48F584380",
+					type: "item",
+					item: "powah:magmator_starter"
+				}
+			],
+			rewards: [{
+				id: "54608F5D459350B7",
+				type: "item",
+				item: "powah:energy_cell_hardened"
+			}]
+		},
+		{
+			title: "Immersive in your work",
+			x: 0.0d,
+			y: -7.0d,
+			description: [
+				"These 2 blocks, are the basic generator for Immesive engineering.",
+				"",
+				"The water wheel can be placed up to 3x on the dynamo."
+			],
+			dependencies: ["095F5AE5A801000A"],
+			id: "4879018D4DB5BC04",
+			tasks: [
+				{
+					id: "10DC54541B56F70D",
+					type: "item",
+					item: "immersiveengineering:dynamo"
+				},
+				{
+					id: "28D3BF7115B74D87",
+					type: "item",
+					item: "immersiveengineering:watermill"
+				},
+				{
+					id: "486D142FDCDF6C93",
+					type: "item",
+					item: "immersiveengineering:windmill"
+				},
+				{
+					id: "0F9F5AEF48C7AC06",
+					type: "item",
+					item: "immersiveengineering:thermoelectric_generator"
+				}
+			],
+			rewards: [{
+				id: "463F7EE9CFDF5251",
+				type: "item",
+				item: "immersiveengineering:capacitor_lv",
+				count: 4
+			}]
+		},
+		{
+			title: "Too Many Coal Generators",
+			x: 2.0d,
+			y: -7.0d,
+			dependencies: ["095F5AE5A801000A"],
+			id: "56A7CAD920B3AD73",
+			tasks: [
+				{
+					id: "4DCAABBBABDC9DF4",
+					type: "item",
+					item: "rftoolspower:coalgenerator"
+				},
+				{
+					id: "6B099A02F58F9CEA",
+					type: "item",
+					item: "industrialforegoing:pitiful_generator"
+				},
+				{
+					id: "0EFF2EFF7D41B125",
+					type: "item",
+					item: "integrateddynamics:coal_generator"
+				},
+				{
+					id: "5487BC771DC648A3",
+					type: "item",
+					item: "thermal:dynamo_stirling"
+				},
+				{
+					id: "2E52FC0BF31CFCA2",
+					type: "item",
+					item: "industrialforegoing:mycelial_furnace"
+				},
+				{
+					id: "5296B30973379129",
+					type: "item",
+					item: "powah:furnator_starter"
+				}
+			],
+			rewards: [{
+				id: "2E041E87B64DE215",
+				type: "item",
+				item: {
+					id: "integrateddynamics:energy_battery",
+					Count: 1b,
+					tag: {
+						energy: 0,
+						capacity: 4000000
+					}
+				}
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -5.5d,
+			optional: true,
+			id: "529BDCD9FBD4E7F3",
+			tasks: [{
+				id: "4A65B314690FB6F2",
+				type: "item",
+				item: "thermal:machine_pulverizer"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -5.0d,
+			optional: true,
+			id: "5ECCC7CDE3E42458",
+			tasks: [{
+				id: "557A64FE9F8E8826",
+				type: "item",
+				item: "mekanism:crusher"
+			}]
+		},
+		{
+			title: "Pedestal Upgrade: Crusher",
+			x: 2.0d,
+			y: -5.0d,
+			optional: true,
+			id: "0E0AEF15C523A650",
+			tasks: [{
+				id: "080EEE9FBB7B97E3",
+				type: "item",
+				item: "pedestals:coin/crusher"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -4.0d,
+			optional: true,
+			id: "0F6BB69B584D2BEB",
+			tasks: [{
+				id: "1CC601739D5D938D",
+				type: "item",
+				item: "create:millstone"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -4.0d,
+			optional: true,
+			id: "2F63FABFEE484565",
+			tasks: [{
+				id: "2B771C3378A5ACB2",
+				type: "item",
+				item: "excompressum:auto_hammer"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			optional: true,
+			id: "11B9AF634EAC4E98",
+			tasks: [{
+				id: "1CBFBA54BEE16C39",
+				type: "item",
+				item: "excompressum:auto_compressed_hammer"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.0d,
+			optional: true,
+			id: "4EFEBF1B0117570B",
+			tasks: [{
+				id: "3DF977D6B45A04DA",
+				type: "item",
+				item: "integrateddynamics:mechanical_squeezer"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -2.5d,
+			dependencies: ["548B3AD584C8D3B5"],
+			optional: true,
+			id: "2D882D3D8631D8D1",
+			tasks: [{
+				id: "13D78A37E783CD97",
+				type: "item",
+				item: "refinedstorage:external_storage"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -2.5d,
+			dependencies: ["0BA678E979B4DC0A"],
+			optional: true,
+			id: "351F47DB5DE826CD",
+			tasks: [{
+				id: "3358BA4448AA2883",
+				type: "item",
+				item: "appliedenergistics2:storage_bus"
 			}]
 		}
 	]

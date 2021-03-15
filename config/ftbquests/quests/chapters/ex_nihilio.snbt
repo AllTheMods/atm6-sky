@@ -8,20 +8,51 @@
 	default_quest_shape: "diamond",
 	quests: [
 		{
-			x: 2.0d,
-			y: -7.0d,
-			description: ["This is your basic way to get materials, insert mesh, sieve a valid material and get resources, its that simple!"],
+			title: "To get more materials",
+			x: 3.0d,
+			y: -5.5d,
+			description: [
+				"This is your basic way to get materials, insert mesh, sieve a valid material and get resources, its that simple!",
+				"",
+				"Putting multiple sieves side by side acts as a multiblock structure, letting you sieve in bundles.",
+				"",
+				"&6&lDO NOT USE AN AUTO-CLICKER ON THEM",
+				"This will cause server issues if you start getting an overflow.",
+				"",
+				"We do have Auto-Sieves."
+			],
 			dependencies: ["76B1B19B5D3949F5"],
 			id: "2587A593554DBC4A",
 			tasks: [{
 				id: "78082A8F71778128",
 				type: "item",
 				item: "exnihilosequentia:sieve"
+			}],
+			rewards: [{
+				id: "32040DDC0BBAE7A9",
+				type: "item",
+				item: "exnihilosequentia:sieve"
 			}]
 		},
 		{
-			x: -4.0d,
-			y: -5.5d,
+			title: "Crucial Crucible",
+			x: 0.0d,
+			y: -2.0d,
+			description: [
+				"Crucible are the tip of the iceberg or in this case volcano when it comes to lava production.",
+				"",
+				"It needs a heat source under it to function.",
+				"",
+				"Torch, Fire, Lava, and some blocks provide their own level of heat.",
+				"",
+				"Once heated you can put or pump materials into the crucible(s), some materials provide more lava then others.",
+				"",
+				"This can potentionally be use as a power free AFK lava generator."
+			],
+			dependencies: [
+				"5E67AA32C8260EFE",
+				"276560C7054D7131"
+			],
 			id: "5C106B6E6409EF22",
 			tasks: [{
 				id: "44E83B5E77B733F3",
@@ -30,18 +61,51 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			title: "This is not even my final form!",
+			x: -3.0d,
 			y: -4.0d,
+			description: [
+				"The only way to transform dust beyond, is to either sieve into materials, or turn it into clay.",
+				"",
+				"You could also made it into lava... but compared to cobblestone, dust gives 1/5 the amount of lava. So not a wise choice."
+			],
 			dependencies: ["508DEEE11F45E4F3"],
 			id: "276560C7054D7131",
 			tasks: [{
 				id: "3500358743E5638B",
 				type: "item",
 				item: "exnihilosequentia:dust"
+			}],
+			rewards: [{
+				id: "49A1927E7B45852C",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:crushed_netherrack",
+					Count: 1b,
+					tag: {
+						display: {
+							Name: '[{"text":"Dust Devil"}]'
+						},
+						Enchantments: [
+							{
+								lvl: 1,
+								id: "minecraft:flame"
+							},
+							{
+								lvl: 1,
+								id: "minecraft:thorns"
+							},
+							{
+								lvl: 1,
+								id: "minecraft:vanishing_curse"
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -3.0d,
 			y: -7.0d,
 			dependencies: ["0BF9B63E286A7C1B"],
 			id: "1B3743770E4CCF42",
@@ -52,7 +116,7 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -3.0d,
 			y: -5.5d,
 			dependencies: ["1B3743770E4CCF42"],
 			id: "508DEEE11F45E4F3",
@@ -63,54 +127,118 @@
 			}]
 		},
 		{
-			x: 2.0d,
+			title: "I am not a crook! Oh wait...",
+			x: 3.0d,
 			y: -10.0d,
-			description: ["usually packs start you off with a wooden crook, but considering you have a free cobble gen you might aswell..."],
+			description: [
+				"Wooden crooks are a staple to getting silk worms and higher chance for saplings from all trees.",
+				"",
+				"There are many crooks with varying durability."
+			],
 			dependencies: ["6712F8255BE22C00"],
 			id: "458A8414A5189198",
 			tasks: [{
-				id: "3A7FD3864A4B0C70",
+				id: "217AF1AB5935DE87",
 				type: "item",
 				item: {
-					id: "exnihilosequentia:crook_stone",
+					id: "exnihilosequentia:crook_wood",
 					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "04E6F9A92D8612E4",
+				type: "item",
+				item: {
+					id: "exnihilosequentia:crook_granite",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						display: {
+							Name: '[{"text":"Shiny Pink Crook"}]'
+						},
+						Enchantments: [{
+							lvl: 1,
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
 			}]
 		},
 		{
-			x: -2.0d,
+			title: "Time to Grind",
+			x: -3.0d,
 			y: -8.5d,
+			description: [
+				"To get the next 3 sieving materials, you have to hammer them.",
+				"",
+				"Simply place the block down and break them with the hammer. The Compact Hammer will break Compact Blocks.",
+				"",
+				"Jei will show the blocks that can be broken.",
+				"",
+				"Cobble > Gravel > Sand > Dust"
+			],
 			dependencies: ["0B87D8D5CC3AF30D"],
 			id: "0BF9B63E286A7C1B",
-			tasks: [{
-				id: "00FA96B88F642341",
-				type: "item",
-				item: {
-					id: "exnihilosequentia:hammer_stone",
-					Count: 1b,
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "00FA96B88F642341",
+					type: "item",
+					item: {
+						id: "exnihilosequentia:hammer_stone",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "63E8222A6B3A7F9B",
+					type: "item",
+					item: {
+						id: "excompressum:compressed_hammer_stone",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		},
 		{
-			x: 4.0d,
-			y: -5.5d,
+			title: "A cake to drag-on.",
+			icon: "minecraft:dragon_head",
+			x: 5.0d,
+			y: -7.0d,
+			description: [
+				"This cake will teleport you to the end when eaten.",
+				"",
+				"This cake can be fixed by adding an eye of ender to it.",
+				"",
+				"It's especially Eye Catching."
+			],
 			id: "79FDDEC32609E563",
 			tasks: [{
 				id: "6821C664585BCA2F",
 				type: "item",
 				item: "exnihilosequentia:end_cake"
+			}],
+			rewards: [{
+				id: "4C8E3F4A8980B0AB",
+				type: "item",
+				item: "minecraft:ender_eye"
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -10.0d,
-			description: ["Meshes have been given an upgrade since we last encountered them, now going upto netherite! the netherite mesh will be your method into allthemodium"],
+			description: [
+				"Meshes have been given an upgrade since we last encountered them, now going upto netherite! the netherite mesh will be your method into allthemodium",
+				"",
+				"Note that Emerald mesh won't upgrade to Netherite."
+			],
 			dependencies: ["6712F8255BE22C00"],
 			id: "4AA6039937E51455",
 			tasks: [{
@@ -178,7 +306,7 @@
 			}]
 		},
 		{
-			x: 0.0d,
+			x: -1.0d,
 			y: -4.0d,
 			dependencies: ["42387D579F777B5E"],
 			id: "3375606B7B481265",
@@ -195,9 +323,9 @@
 			}]
 		},
 		{
-			x: 0.0d,
-			y: -2.5d,
-			dependencies: ["3375606B7B481265"],
+			x: 1.0d,
+			y: -4.0d,
+			dependencies: ["42387D579F777B5E"],
 			id: "5E9F6228BBC60FFC",
 			tasks: [{
 				id: "692A1A67A3A43BAD",
@@ -212,113 +340,228 @@
 			}]
 		},
 		{
-			x: 4.0d,
+			title: "There is an infestation!",
+			x: 3.0d,
 			y: -8.5d,
+			description: [
+				"Silkworms drops from leaves that been broken by a crook.",
+				"",
+				"Can be cook for food, or used on leaves to infest them.",
+				"",
+				"Infested leaves will drop strings, but no saplings."
+			],
+			dependencies: ["458A8414A5189198"],
 			id: "564263E35EFCAD21",
 			tasks: [{
 				id: "5F37DF3800A01F53",
 				type: "item",
 				item: "exnihilosequentia:silkworm"
-			}]
-		},
-		{
-			x: -4.0d,
-			y: -8.5d,
-			id: "046D86775F6FF8D3",
-			tasks: [{
-				id: "0ED2CEF487048036",
-				type: "item",
-				item: "exnihilosequentia:ancient_spores"
-			}]
-		},
-		{
-			x: 2.0d,
-			y: -4.0d,
-			dependencies: ["5E67AA32C8260EFE"],
-			id: "1D137ABA27562E47",
-			tasks: [{
-				id: "6AA1B47B45BC487D",
-				type: "item",
-				item: "cobblefordays:tier_1"
-			}]
-		},
-		{
-			icon: "minecraft:oak_wood",
-			x: 0.0d,
-			y: -11.5d,
-			description: ["If you are using the botania world type then this will not be of much use to you, but just incase here is a cobble gen so that you do not have to sieve dirt, lost your sapling? check the emergency items tab in the top right ;) Also sidenote: due to issues behind the scenes quests are not complete yet, so check back in for new descriptions, rewards and quests"],
-			id: "6712F8255BE22C00",
-			tasks: [{
-				id: "3CCC7AC7B158E6A7",
-				type: "item",
-				item: "minecraft:oak_wood"
 			}],
-			rewards: [
+			rewards: [{
+				id: "681B44C761EB49C5",
+				type: "item",
+				item: "exnihilosequentia:cooked_silkworm",
+				count: 32
+			}]
+		},
+		{
+			title: "A Dirt-y idea.",
+			icon: "minecraft:mycelium",
+			x: -5.0d,
+			y: -7.0d,
+			description: [
+				"These seeds are from sieving dirt.",
+				"",
+				"- Ancient spores will turn dirt to Mycelium",
+				"- Grass seed turns dirt to grass.",
+				"- Making a 2x2 of Spruce saplings not only spawns a giant tree but turns all grass and dirt to Podzol within an area"
+			],
+			id: "046D86775F6FF8D3",
+			tasks: [
 				{
-					id: "1DA4D3D3EAE05148",
+					id: "0ED2CEF487048036",
 					type: "item",
-					item: "minecraft:lava_bucket"
+					item: "exnihilosequentia:ancient_spores"
 				},
 				{
-					id: "033010D9DC54E822",
+					id: "52F7BD701465DEB3",
 					type: "item",
-					item: "minecraft:water_bucket"
+					item: "exnihilosequentia:grass_seeds"
 				},
 				{
-					id: "3558009CA67CCBC9",
+					id: "02E5685E1B626581",
 					type: "item",
-					item: {
-						id: "minecraft:stone_pickaxe",
-						Count: 1b,
-						tag: {
-							AS_Amulet_Holder: [I;
-								-303116761,
-								-435728559,
-								-1324848252,
-								-1440318696
-							],
-							Damage: 0,
-							Enchantments: [
-								{
-									lvl: 5s,
-									id: "minecraft:efficiency"
-								},
-								{
-									lvl: 2s,
-									id: "minecraft:unbreaking"
-								}
-							]
-						}
-					}
+					item: "exnihilosequentia:seed_spruce"
 				}
 			]
 		},
 		{
-			x: 2.0d,
-			y: -8.5d,
-			dependencies: ["458A8414A5189198"],
-			id: "76B1B19B5D3949F5",
-			tasks: [{
-				id: "061D03A3DC2E464E",
+			title: "All the cobble gens!",
+			icon: "cobblefordays:tier_1",
+			x: 0.0d,
+			y: 0.0d,
+			description: [
+				"There are many cobble generators in this modpack.",
+				"",
+				"From Vanilla, to Cobble Gens, to even Pedestals.",
+				"",
+				"Feel free to choose what you like."
+			],
+			id: "1D137ABA27562E47",
+			tasks: [
+				{
+					id: "6AA1B47B45BC487D",
+					type: "item",
+					item: "cobblefordays:tier_1"
+				},
+				{
+					id: "7FB8D2AB706F1CC0",
+					type: "item",
+					item: "pedestals:coin/cobble"
+				},
+				{
+					id: "1E6185C26D9E7515",
+					type: "item",
+					item: "minecraft:lava_bucket"
+				},
+				{
+					id: "5062BC62619299A6",
+					type: "item",
+					item: "minecraft:water_bucket"
+				}
+			],
+			rewards: [{
+				id: "50DE23B26B05CB51",
 				type: "item",
-				item: "minecraft:string"
+				item: "compressium:cobblestone_5",
+				count: 4
 			}]
 		},
 		{
-			x: -2.0d,
+			title: "From the Beginning",
+			icon: "minecraft:oak_wood",
+			x: 0.0d,
+			y: -11.5d,
+			description: [
+				"There are 2 skyblock types that exist in this pack.",
+				"",
+				"Garden of Glass, with water, grass, dirt, and roots.",
+				"There is stone from the GOG mod, you simply crouch and by default right mouse click on grass/dirt. Roots can be crafted into sapplings.",
+				"",
+				"There is also the Classic Skyblock generation.",
+				"It has a tree, on grass and dirt, plus a chest with a bucket of lava and an ice block.",
+				"",
+				"If for some reason you lost sapplings, you can get some at the top left corner of the quest page in Emergency Items."
+			],
+			id: "6712F8255BE22C00",
+			tasks: [{
+				id: "3CCC7AC7B158E6A7",
+				type: "item",
+				title: "Any #minecraft:logs",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}],
+			rewards: [{
+				id: "704537D7ABCCD8E6",
+				type: "item",
+				item: {
+					id: "forbidden_arcanus:bone_axe",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						display: {
+							Name: '[{"text":"The Pun_isher"}]'
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Strung for Strings",
+			x: 3.0d,
+			y: -7.0d,
+			description: ["Quite important to make a White bed early, especially with those Phant0ms out there."],
+			dependencies: ["564263E35EFCAD21"],
+			id: "76B1B19B5D3949F5",
+			tasks: [
+				{
+					id: "061D03A3DC2E464E",
+					type: "item",
+					item: "minecraft:string"
+				},
+				{
+					id: "6739279FF7473F48",
+					type: "item",
+					item: "minecraft:white_bed"
+				}
+			],
+			rewards: [{
+				id: "2FD8FA6A1DA0A601",
+				type: "item",
+				item: {
+					id: "cyclic:sleeping_mat",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Simply Cobble",
+			x: -3.0d,
 			y: -10.0d,
+			description: ["Cobblestone, the most basic, and useful block for skyblock since it's beginning."],
 			dependencies: ["6712F8255BE22C00"],
 			id: "0B87D8D5CC3AF30D",
 			tasks: [{
 				id: "387C9E265EF2BFE0",
 				type: "item",
 				item: "minecraft:cobblestone"
+			}],
+			rewards: [{
+				id: "188F42806B25299B",
+				type: "item",
+				item: {
+					id: "forbidden_arcanus:bone_pickaxe",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						display: {
+							Name: '[{"text":"Got a Bone to Pick with you"}]'
+						},
+						Enchantments: [
+							{
+								lvl: 5,
+								id: "minecraft:efficiency"
+							},
+							{
+								lvl: 2,
+								id: "minecraft:unbreaking"
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
-			x: 2.0d,
-			y: -5.5d,
-			description: ["Now you have a sieve the barrel is an important step towards other materials! Place it ontop of mycellium (use an ancient spore on grass) for soul sand"],
+			title: "Barrel of fun",
+			x: 3.0d,
+			y: -4.0d,
+			description: [
+				"Now you have a sieve the barrel is an important step towards other materials!",
+				"",
+				"Place it ontop of mycellium for witch water. Which can transform certain mobs, and it's to make soulsand if sand is used in the witch water filled barrel.",
+				"",
+				"Using dust in a water filled barrel and you will get clay.",
+				"",
+				"Stone Barrels can be used for both hot and cold liquids."
+			],
 			dependencies: ["2587A593554DBC4A"],
 			id: "5E67AA32C8260EFE",
 			tasks: [{
@@ -326,6 +569,34 @@
 				type: "item",
 				item: "exnihilosequentia:barrel_wood"
 			}]
+		},
+		{
+			title: "Early Cobble Gen?",
+			icon: "minecraft:lava_bucket",
+			x: 0.0d,
+			y: -13.0d,
+			description: [
+				"For people who don't want to waste too much time, or if Garden of Glass is removed or broken.",
+				"",
+				"Here is a lava and water bucket for your cobble needs."
+			],
+			id: "4141A05A8D175A5A",
+			tasks: [{
+				id: "408C9D481F909651",
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: "7E0DCF4FF0FE103E",
+					type: "item",
+					item: "minecraft:lava_bucket"
+				},
+				{
+					id: "2D007BB896810704",
+					type: "item",
+					item: "minecraft:water_bucket"
+				}
+			]
 		}
 	]
 }

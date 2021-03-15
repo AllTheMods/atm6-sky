@@ -4,11 +4,19 @@
 	order_index: 3,
 	filename: "were_in_the_endgame_now",
 	title: "Were in the Endgame now...",
+	icon: "mysticalagradditions:creative_essence",
 	default_quest_shape: "",
 	quests: [
 		{
-			x: -3.0d,
-			y: -2.5d,
+			title: "AlltheArmor",
+			x: -2.0d,
+			y: -5.5d,
+			description: [
+				"This is the start on the best armor set in the game... well other then the MekaSuit.",
+				"",
+				"Unlike the MekaSuit, the set provides abilities, such as No fall damage from just the boots"
+			],
+			dependencies: ["2F861690BA3E37D8"],
 			id: "0A2E8FA72A72ED0D",
 			tasks: [
 				{
@@ -70,8 +78,13 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: -2.5d,
+			title: "A Vibrant Green Armor",
+			x: 0.0d,
+			y: -5.5d,
+			dependencies: [
+				"0A2E8FA72A72ED0D",
+				"3EE39036AC4556AC"
+			],
 			id: "6B41A07DE0A83C00",
 			tasks: [
 				{
@@ -126,8 +139,13 @@
 			}]
 		},
 		{
-			x: 0.0d,
-			y: -2.5d,
+			title: "Wait it's not unobtainable?",
+			x: 2.0d,
+			y: -5.5d,
+			dependencies: [
+				"6B41A07DE0A83C00",
+				"4FC8820639E50086"
+			],
 			id: "3AB911A31C7D5EC2",
 			tasks: [
 				{
@@ -182,8 +200,13 @@
 			}]
 		},
 		{
-			x: -3.0d,
+			title: "I got something to Pick? Axe.",
+			x: -2.0d,
 			y: -1.0d,
+			dependencies: [
+				"2F861690BA3E37D8",
+				"5F9BED212EC770AA"
+			],
 			id: "259B64B6ECD3A2AD",
 			tasks: [{
 				id: "5DFC6EA35200EF8B",
@@ -198,8 +221,14 @@
 			}]
 		},
 		{
-			x: -1.5d,
+			title: "Not Excalibur, but it's a Calibur.",
+			x: 0.0d,
 			y: -1.0d,
+			description: [""],
+			dependencies: [
+				"5F9BED212EC770AA",
+				"2F861690BA3E37D8"
+			],
 			id: "719DAC25F567FC18",
 			tasks: [{
 				id: "60B215CB39131DEA",
@@ -214,8 +243,13 @@
 			}]
 		},
 		{
-			x: 0.0d,
+			title: "Did someone Axe for Battle?",
+			x: 2.0d,
 			y: -1.0d,
+			dependencies: [
+				"2F861690BA3E37D8",
+				"5F9BED212EC770AA"
+			],
 			id: "4617682C34208352",
 			tasks: [{
 				id: "4DB59CECF2612A46",
@@ -227,6 +261,160 @@
 						Damage: 0
 					}
 				}
+			}]
+		},
+		{
+			title: "Wait... That's not Gold?",
+			x: -1.0d,
+			y: -3.0d,
+			dependencies: ["5E9F6228BBC60FFC"],
+			dependency_requirement: "all_started",
+			id: "2F861690BA3E37D8",
+			tasks: [{
+				id: "70CAFA5C9D06D0C9",
+				type: "item",
+				item: "allthemodium:allthemodium_ingot"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			description: ["A vibrant metal born from the depths of the nether... or simply use netherrack dust to a "],
+			dependencies: ["5E9F6228BBC60FFC"],
+			id: "3EE39036AC4556AC",
+			tasks: [{
+				id: "62DC1BC0125721A7",
+				type: "item",
+				item: "allthemodium:vibranium_ingot"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -4.0d,
+			dependencies: ["5E9F6228BBC60FFC"],
+			id: "4FC8820639E50086",
+			tasks: [{
+				id: "73F698810EB48561",
+				type: "item",
+				item: "allthemodium:unobtainium_ingot"
+			}]
+		},
+		{
+			title: "Fuuuusioooon HA!",
+			x: 1.0d,
+			y: -3.0d,
+			description: [""],
+			dependencies: [
+				"4FC8820639E50086",
+				"3EE39036AC4556AC"
+			],
+			id: "5F9BED212EC770AA",
+			tasks: [{
+				id: "5B9FE17F479BDE79",
+				type: "item",
+				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+			}]
+		},
+		{
+			title: "Exo-Tic Suit",
+			x: 0.0d,
+			y: -7.0d,
+			description: ["A powerful armor that can be upgraded."],
+			id: "57FE5811063E2C8C",
+			tasks: [
+				{
+					id: "645211D1D82787AE",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_helmet",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "25FC9851D9E02125",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_bodyarmor",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "6C59BAB890603267",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_pants",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "2BCFB4912B9B5CEF",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_boots",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Creative Power!",
+			x: 7.0d,
+			y: -5.5d,
+			id: "255F31BBC346BAB5",
+			tasks: [{
+				id: "1A4FC113B01612DE",
+				type: "item",
+				item: "mysticalagradditions:creative_essence"
+			}]
+		},
+		{
+			title: "Quite some Motor skills",
+			x: 7.0d,
+			y: -4.0d,
+			description: ["1 engine to power all your Create machineries"],
+			dependencies: ["255F31BBC346BAB5"],
+			id: "60D861BF28787109",
+			tasks: [{
+				id: "38E313EBFB2671EA",
+				type: "item",
+				item: "create:creative_motor"
+			}]
+		},
+		{
+			title: "No more Mana-gement",
+			x: 5.5d,
+			y: -4.0d,
+			description: ["An infinite pool of mana."],
+			dependencies: ["255F31BBC346BAB5"],
+			id: "5C3F068974422515",
+			tasks: [{
+				id: "572F3D0C400DB9E4",
+				type: "item",
+				item: "botania:creative_pool"
+			}]
+		},
+		{
+			title: "Pressure Overwhelming",
+			x: 8.5d,
+			y: -4.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "60A3DD1F28A7D2C2",
+			tasks: [{
+				id: "19F37BCE22AF4B0F",
+				type: "item",
+				item: "pneumaticcraft:creative_compressor"
 			}]
 		}
 	]

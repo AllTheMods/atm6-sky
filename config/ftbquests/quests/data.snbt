@@ -1,5 +1,6 @@
 {
 	version: 10,
+	title: "All The Mods 6 : To The Sky",
 	default_reward_team: false,
 	default_consume_items: false,
 	default_autoclaim_rewards: "disabled",

@@ -8,7 +8,7 @@
 	flattenSieveRecipes = false
 	#The amount of times the heavy sieve should roll for compressed entries. For example, a value of 7 means for every compressed gravel you only get the equivalent drops of 7 sifted gravel blocks (2 loss). A value of 9 would therefore mean no loss.
 	#Range: > 1
-	heavySieveDefaultRolls = 7
+	heavySieveDefaultRolls = 9
 
 [baits]
 	#The chance (per second) that a wolf bait will result in a spawn.
@@ -69,7 +69,7 @@
 [compressedMobs]
 	#The chance for mobs to spawn as Compressed Mobs. Set to 0 to disable.
 	#Range: 0.0 ~ 1.0
-	compressedMobChance = 0.009999999776482582
+	compressedMobChance = 0.01
 	#The amount of mobs that will spawn upon death of a compressed mob.
 	#Range: > 1
 	compressedMobSize = 9
@@ -115,7 +115,7 @@
 	autoHammerEnergy = 40
 	#The speed at which the auto hammer will smash stuff.
 	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
-	autoHammerSpeed = 0.01
+	autoHammerSpeed = 0.03
 	#The chance for the upgrade hammers in an auto hammer to lose durability (per operation)
 	#Range: 0.0 ~ 1.0
 	autoHammerDecay = 0.0
@@ -124,7 +124,7 @@
 	autoCompressedHammerEnergy = 120
 	#The speed at which the auto compressed hammer will smash stuff.
 	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
-	autoCompressedHammerSpeed = 0.003800000064074993
+	autoCompressedHammerSpeed = 0.01
 	#The energy cost of the auto sieve per tick.
 	#Range: > 0
 	autoSieveEnergy = 40
@@ -136,13 +136,13 @@
 	autoHeavySieveEnergy = 120
 	#The speed at which the auto heavy sieve will sift stuff.
 	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
-	autoHeavySieveSpeed = 0.01
+	autoHeavySieveSpeed = 0.03
 	#The energy cost of the auto compressor per tick.
 	#Range: > 0
 	autoCompressorEnergy = 5
 	#The speed at which the auto compressor will compress stuff.
 	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
-	autoCompressorSpeed = 0.10000000149011612
+	autoCompressorSpeed = 0.11
 	#Set this to true if you want to allow automation of the heavy sieve through fake players (i.e. Autonomous Activator)
 	allowHeavySieveAutomation = false
 	#The maximum amount of clicks per second on a heavy sieve. Clicks above this will be ignored.

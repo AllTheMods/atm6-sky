@@ -39,6 +39,8 @@ onEvent(`recipes`, e => {
 
     `thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log`,
     `thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled`,
+
+    `astralsorcery:altar/illuminator`,
   ];
   idRemove.forEach(iR => {
     e.remove({

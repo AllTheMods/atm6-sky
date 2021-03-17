@@ -102,6 +102,7 @@ onEvent(`recipes`, e => {
   //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:sulfur`, null);
   sieve(`iron`, 0.1, `#forge:gravel`, `thermal:sulfur`, null);
   //sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null);
+  sieve(`emerald`, 0.25, `#forge:gravel`, `forbidden_arcanus:arcane_crystal`, null);
 
   sieve(`emerald`, 0.05, `minecraft:dirt`, `integrateddynamics:menril_berries`, true);
 
@@ -111,7 +112,6 @@ onEvent(`recipes`, e => {
   sieve(`diamond`, 0.2, exRack, `minecraft:netherite_scrap`, null);
   sieve(`diamond`, 0.15, exRack, `create:rose_quartz`, null);
   sieve(`iron`, 0.2, exRack, `minecraft:quartz`, null);
-  sieve(`iron`, 0.25, exRack, `forbidden_arcanus:arcane_crystal_dust`, null);
   sieve(`iron`, 0.15, `#forge:soul_sand`, `mysticalagriculture:soulium_dust`, null);
 
   //End sieve

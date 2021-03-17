@@ -147,7 +147,7 @@ onEvent(`block.tags`, e => {
 //Fluid tags go here
 onEvent(`fluid.tags`, e => {
   //Add
-  e.add(`forge:essence`, `pneumaticcraft:memory_essence`);
+  e.add(`forge:essence`, [`pneumaticcraft:memory_essence`, `cyclic:xpjuice`]);
   e.add(`forge:creosote`, `thermal:creosote`);
   e.add(`forge:latex`, `thermal:latex`);
   e.add(`forge:crude_oil`, `thermal:crude_oil`);

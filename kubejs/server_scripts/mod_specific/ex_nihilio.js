@@ -87,7 +87,7 @@ onEvent(`recipes`, e => {
   //sieve(`iron`, 0.025, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
   sieve(`diamond`, 0.05, `minecraft:gravel`, `mekanism:fluorite_gem`, null);
   //sieve(`flint`, 0.01, `#minecraft:sand`, `mekanism:salt`, null);
-  sieve(`iron`, 0.02, `#minecraft:sand`, `mekanism:salt`, null);
+  sieve(`iron`, 0.02, `minecraft:sand`, `mekanism:salt`, null);
   //sieve(`diamond`, 0.4, `#minecraft:sand`, `mekanism:salt`, null);
   sieve(`flint`, 0.09, `minecraft:sand`, `mana-and-artifice:vinteum_dust`, null);
   //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:apatite`, null);

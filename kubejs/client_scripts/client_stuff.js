@@ -77,6 +77,7 @@ onEvent(`jei.hide.items`, e => {
     `cyclic:tile_transporter_empty`,
     /cyclic:.*_pipe/,
     `cyclic:cable_wrench`,
+    `cyclic:uncrafter`,
 
     //`naturesaura:chunk_loader`,
 
@@ -207,6 +208,5 @@ onEvent(`item.tooltip`, e => {
     e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
   });
   e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make.`]);
-  e.add(`allthemodium:teleport_pad`, `Mining dimension is disabled.`);
-  e.add(`cyclic:uncrafter`, `Recipe disabled due to it being buggy.`);
+  e.add(`allthemodium:teleport_pad`, Text.of(`The Mining dimension is disabled.`).red());
 });

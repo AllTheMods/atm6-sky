@@ -1036,6 +1036,17 @@ onEvent(`recipes`, e => {
     S: `#forge:nether_stars`
   });
   */
+  modifyShaped(`pipez:universal_pipe`, 8, [
+    `123`,
+    `4A4`,
+    `321`
+  ], {
+    1: `pipez:item_pipe`,
+    2: `pipez:energy_pipe`,
+    3: `pipez:fluid_pipe`,
+    4: `pipez:gas_pipe`,
+    A: `#forge:ingots/iron`
+  });
   modifyShaped(`immersiveengineering:sawdust`, 27, [
     `SSS`
   ], {

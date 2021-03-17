@@ -20,7 +20,7 @@ onEvent(`recipes`, e => {
       starlight: starlight,
       pattern: pattern,
       key: items,
-      output: [Item.of(result).toResultJson()],
+      output: [result.toResultJson()],
       effects: [
         `astralsorcery:built_in_effect_discovery_central_beam`
       ]
@@ -42,7 +42,7 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`astralsorcery:glass_lens`).toJson(),
     3: Ingredient.of(`astralsorcery:liquid_starlight_bucket`).toJson(),
     4: Ingredient.of(`#forge:gems/arcane_crystal`).toJson()
-  }, `astralsorcery:rock_crystal_ore`);
+  }, Item.of(`astralsorcery:rock_crystal_ore`));
 
   altar(0, 100, 200, [
     `_____`,
@@ -59,11 +59,11 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`#forge:dusts/glowstone`).toJson(),
     3: Ingredient.of(`minecraft:clay_ball`).toJson(),
     4: Ingredient.of(`#forge:leather`).toJson()
-  }, `astralsorcery:constellation_paper`, {
+  }, Item.of(`astralsorcery:constellation_paper`, {
     astralsorcery: {
       constellationName: `astralsorcery:armara`
     }
-  });
+  }));
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -79,11 +79,11 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`minecraft:sugar_cane`).toJson(),
     3: Ingredient.of(`#minecraft:seeds`).toJson(),
     4: Ingredient.of(`#astralsorcery:stardust`).toJson()
-  }, `astralsorcery:constellation_paper`, {
+  }, Item.of(`astralsorcery:constellation_paper`, {
     astralsorcery: {
       constellationName: `astralsorcery:aevitas`
     }
-  });
+  }));
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -99,11 +99,11 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`#minecraft:fishes`).toJson(),
     3: Ingredient.of(`#forge:string`).toJson(),
     4: Ingredient.of(`#forge:sugar/sugar`).toJson()
-  }, `astralsorcery:constellation_paper`, {
+  }, Item.of(`astralsorcery:constellation_paper`, {
     astralsorcery: {
       constellationName: `astralsorcery:vicio`
     }
-  });
+  }));
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -119,11 +119,11 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`#forge:dusts/redstone`).toJson(),
     3: Ingredient.of(`#minecraft:arrows`).toJson(),
     4: Ingredient.of(`#forge:ingots/iron`).toJson()
-  }, `astralsorcery:constellation_paper`, {
+  }, Item.of(`astralsorcery:constellation_paper`, {
     astralsorcery: {
-      constellationName: `astralsorcery:dicidia`
+      constellationName: `astralsorcery:discidia`
     }
-  });
+  }));
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -139,9 +139,9 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`minecraft:tnt`).toJson(),
     3: Ingredient.of(`#forge:gunpowder`).toJson(),
     4: Ingredient.of(`minecraft:flint`).toJson()
-  }, `astralsorcery:constellation_paper`, {
+  }, Item.of(`astralsorcery:constellation_paper`, {
     astralsorcery: {
       constellationName: `astralsorcery:evorsio`
     }
-  });
+  }));
 });

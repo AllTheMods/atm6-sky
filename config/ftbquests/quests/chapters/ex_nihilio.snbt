@@ -1,7 +1,7 @@
 {
 	id: "6C99EC6E1599B728",
 	group: "",
-	order_index: 0,
+	order_index: 1,
 	filename: "ex_nihilio",
 	title: "Ex nihilio",
 	icon: "kubejs:chunk_mod",

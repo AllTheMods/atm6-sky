@@ -1,0 +1,396 @@
+{
+	id: "2150EC99F789EF62",
+	group: "",
+	order_index: 0,
+	filename: "skyblock_tips",
+	title: "Skyblock Tips",
+	icon: "astralsorcery:tree_beacon",
+	always_invisible: true,
+	default_quest_shape: "circle",
+	quests: [
+		{
+			x: 0.0d,
+			y: -7.0d,
+			shape: "heart",
+			description: [
+				"Welcome to All the Mods 6 : Sky",
+				"",
+				"Where the classic skyblock meets the creators of All the mods.",
+				"",
+				"This pack will parallel the ATM 6 modpack to some extant for Balance.",
+				"",
+				"Feel free to join us in Discord:",
+				"https://discord.com/invite/FdFDVWb",
+				"",
+				"And if any issues and suggestions feel free to post here:",
+				"https://github.com/AllTheMods/atm6-sky/issues"
+			],
+			hide_text_until_complete: false,
+			size: 1.75d,
+			id: "76200C6568457C8C",
+			tasks: [{
+				id: "0330BA82DA068045",
+				type: "checkmark",
+				title: "Welcome to ATM6: Sky",
+				icon: "astralsorcery:tree_beacon"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -4.0d,
+			description: [
+				"A useful feature of &e&lQuark &f&ris that you can place blocks on sides you can't see but reach.",
+				"",
+				"When you see your crosshair have [+] while sneaking at the bottom side of a block, you will be able to place a block under the block you are looking at.",
+				"",
+				"While seeing <+> you will put a block on the opposite side of the block you are looking at."
+			],
+			dependencies: ["1E48DA1EB612BDFA"],
+			hide: false,
+			id: "01423C3D626FBFBC",
+			tasks: [{
+				id: "0EBB2F5E907DA8BA",
+				type: "checkmark",
+				title: "Reacharound Placing",
+				icon: "ars_nouveau:glyph_place_block"
+			}],
+			rewards: [{
+				id: "6C59B88F14E5F029",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Phantom Problem?",
+			x: -3.5d,
+			y: -5.5d,
+			shape: "hexagon",
+			description: [
+				"A common problem seen by the testers of the pack is facing against phantoms at night.",
+				"",
+				"Phantoms will only spawn if the player's head is above sea level Y=64",
+				"",
+				"Making the island at most Y=62 or less will help prevent them from spawning."
+			],
+			dependencies: ["723868AAF4E86CDA"],
+			id: "728B7B0B02A2E937",
+			tasks: [{
+				id: "6A5AFD5B9D48BC52",
+				type: "checkmark",
+				title: "Phantom Problem",
+				icon: "minecraft:phantom_spawn_egg"
+			}],
+			rewards: [{
+				id: "4AB2764DC6804B99",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -5.5d,
+			dependencies: ["76200C6568457C8C"],
+			id: "723868AAF4E86CDA",
+			tasks: [{
+				id: "22CD2D0DF048E4C6",
+				type: "checkmark",
+				title: "Mob spawning tips",
+				icon: "minecraft:spawner"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -4.0d,
+			shape: "hexagon",
+			description: [
+				"There are Multiple ways to prevent mobs to spawn on your island, will even add some common knowledge tips",
+				"",
+				"- Lightsources",
+				'We have more overlays mod, pressing F7 will show Red and Yellow "X" on blocks.',
+				'Hostile Mobs will spawn on those, in which the yellow "X" is only during the night.',
+				"",
+				"- Non-Full blocks",
+				"Mainly Bottom Slabs, Stairs, Glass type blocks hostile mobs will not spawn on.",
+				"",
+				"- Range",
+				"All Mobs will spawn only outside a range of 24 blocks.",
+				"",
+				"- And special blocks which shown as the next tip"
+			],
+			dependencies: ["723868AAF4E86CDA"],
+			id: "4D24D92E56049467",
+			tasks: [{
+				id: "179C71A3797505CA",
+				type: "checkmark",
+				title: "Ways to Prevent of spawning",
+				icon: "minecraft:torch"
+			}],
+			rewards: [{
+				id: "6639AEFF62E5CF47",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Anti-Hostile Torch",
+			x: -4.5d,
+			y: -4.0d,
+			description: [
+				"&e&lTorchmaster &rgives 4 items, one of which is a mega torch.",
+				"",
+				"This torch will prevent hostile mobs within a 64 block radius by default to spawn."
+			],
+			dependencies: ["4D24D92E56049467"],
+			hide: true,
+			id: "77FC6D6DCAD00A4A",
+			tasks: [{
+				id: "57514F2EA2DA7B03",
+				type: "item",
+				item: "torchmaster:megatorch"
+			}]
+		},
+		{
+			title: "Anti-Passive Mobs",
+			x: -3.0d,
+			y: -2.5d,
+			description: [
+				"&e&lTorchmaster &rhas an item that prevents passive mobs to spawn.",
+				"",
+				"The Dread Lamp will prevent passive mobs within a 64 block radius by default to spawn."
+			],
+			dependencies: ["4D24D92E56049467"],
+			hide: true,
+			id: "7F44F3CB99BDA755",
+			tasks: [{
+				id: "6DE3255AAFC0BE9D",
+				type: "item",
+				item: "torchmaster:dreadlamp"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.5d,
+			description: [
+				"Mob Farms are a great resource once you have enough blocks to build one.",
+				"",
+				"There are so many models of farms in the internet, it's hard to point out which fits your taste.",
+				"",
+				'It might be counter productive to type this, but do some research on the internet for "skyblock mob farms" and you got some complicated and simple models to choose.',
+				"",
+				"But a simple modded tip will be related to water due to most vanilla builds.",
+				"",
+				"Enderman will teleport out of water, so if you got conveyor belts or fans, you can deal with them with those by replacing the water."
+			],
+			dependencies: ["723868AAF4E86CDA"],
+			id: "04A5BB12290114F0",
+			tasks: [{
+				id: "5046BACBA500149A",
+				type: "checkmark",
+				title: "Mob Farms",
+				icon: "darkutils:dark_glass"
+			}],
+			rewards: [{
+				id: "66299F1AD6F62304",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Cobble for days",
+			icon: "minecraft:cobblestone",
+			x: 2.0d,
+			y: -7.0d,
+			description: [
+				'&a&lGarden of Glass &f&rgives a function to get cobblestone. By crouching and "using" (default: Right mouse button) on Grass or dirt you will get pebbles.',
+				"",
+				"4 pebbles = 1 cobblestone"
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "210D944A362B883D",
+			tasks: [{
+				id: "5E59CB3730559692",
+				type: "item",
+				item: "botania:pebble",
+				count: 4L,
+				only_from_crafting: false
+			}],
+			rewards: [{
+				id: "09ED911C1B80B17A",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -7.0d,
+			description: [
+				"Grass is your friend, especially for seeds and such once you get bonemeal.",
+				"",
+				"A Grass block will transfer to dirt with time.",
+				"",
+				"Grass can be regain by sieving dirt.",
+				"",
+				"Cows, Chicken, Pigs, and Sheeps only spawn on Grass Blocks."
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "60DED58D4B7C3469",
+			tasks: [{
+				id: "071745F05B5A084E",
+				type: "checkmark",
+				title: "Grass Preservation",
+				icon: "minecraft:grass_block"
+			}],
+			rewards: [{
+				id: "65B6FD61832C78D8",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			icon: "engineersdecor:sign_caution",
+			x: 0.0d,
+			y: -9.0d,
+			shape: "hexagon",
+			description: [
+				"Excavation mods is risky for skyblocks, not because it's overpowered, but it can destroy your island by accident.",
+				"",
+				"Use it at your own risk.",
+				"",
+				"A tip for using such mod, will be using it while aiming at another block that has a slower mining speed. Such as cobblestone when mining a tree instead of dirt."
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "717BDA6A3021777F",
+			tasks: [{
+				id: "44CD1E4D2B7B292E",
+				type: "checkmark",
+				title: "Any Veinmine/Excavation Mod",
+				icon: "silentgear:hammer_template"
+			}],
+			rewards: [{
+				id: "0E281BDFD2B1244F",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -8.5d,
+			description: [
+				"This pack has Corail Tombstones, when you die you will receive a Key.",
+				"",
+				"You can teleport to your grave by crafting an enderpearl to that key, or by random chance it will already be enchanted to teleport to your grave."
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "26116A2460113D48",
+			tasks: [{
+				id: "445893DD7D8F0688",
+				type: "checkmark",
+				title: "In case of death",
+				icon: {
+					id: "tombstone:decorative_grave_cross",
+					Count: 1b,
+					tag: {
+						model_texture: 1
+					}
+				}
+			}],
+			rewards: [{
+				id: "1BC1D5DF9B1AA532",
+				type: "item",
+				item: "minecraft:ender_pearl"
+			}]
+		},
+		{
+			title: "Garden of Glass Island spawning",
+			x: -1.5d,
+			y: -8.5d,
+			shape: "gear",
+			description: ["This will spawn the player the island. Even for single player, it does help using the command for the next tip."],
+			dependencies: ["76200C6568457C8C"],
+			size: 1.5d,
+			id: "391A5F999E05CECE",
+			tasks: [{
+				id: "67FC0EC50D203431",
+				type: "checkmark",
+				title: "Island Spawning",
+				icon: "botania:green_floating_flower"
+			}],
+			rewards: [{
+				id: "47B76F6B2050C684",
+				type: "command",
+				title: "Spawn Island",
+				icon: "botania:green_floating_flower",
+				team_reward: false,
+				command: "/gog island @p",
+				player_command: false
+			}]
+		},
+		{
+			title: "Client side features",
+			x: 1.5d,
+			y: -5.5d,
+			description: [
+				"There are many mods that gives client side features, such as:",
+				"",
+				"- Quark",
+				"- Find Me",
+				"- Jei",
+				"- and more",
+				"",
+				"There is one vanilla minecraft feature people must know as well.",
+				"",
+				"Here are a few tips especially good for early game."
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "1E48DA1EB612BDFA",
+			tasks: [{
+				id: "20788A5A793454A1",
+				type: "checkmark",
+				title: "Power of the Quark"
+			}]
+		},
+		{
+			title: "Which storage has it?",
+			icon: "minecraft:chest",
+			x: 3.5d,
+			y: -5.5d,
+			description: [
+				"&b&lFind Me &f&ris a simple mod that can even use &9&lJEI &rto find which storage the item you are looking for.",
+				"",
+				"You can search the item in &9JEI&r's search bar, and press Y while hovering your mouse over the item."
+			],
+			dependencies: ["1E48DA1EB612BDFA"],
+			id: "020D76BDCC1FC60B",
+			tasks: [{
+				id: "496DE448AEEAD667",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "477B267A0D0C2832",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Chunk Borders",
+			x: 1.5d,
+			y: -3.5d,
+			description: [
+				"This is pretty much a Vanilla Minecraft thing, but to see chunk borders you simply have to:",
+				"",
+				"Hold F3 + G"
+			],
+			dependencies: ["1E48DA1EB612BDFA"],
+			id: "643C3A109D13440B",
+			tasks: [{
+				id: "3AAD6723CE9198A4",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "7B0AE0BBAEDD96E0",
+				type: "xp",
+				xp: 100
+			}]
+		}
+	]
+}

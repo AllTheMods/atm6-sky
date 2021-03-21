@@ -165,6 +165,20 @@
 				id: "4E8001DD50ABA80C",
 				type: "item",
 				item: "astralsorcery:altar_discovery"
+			}],
+			rewards: [{
+				id: "3D58F60F19805D47",
+				type: "item",
+				item: {
+					id: "astralsorcery:rock_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {},
+						display: {
+							Name: '[{"text":"Use me to craft a Lightwell"}]'
+						}
+					}
+				}
 			}]
 		}
 	]

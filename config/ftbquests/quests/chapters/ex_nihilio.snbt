@@ -76,33 +76,40 @@
 				type: "item",
 				item: "exnihilosequentia:dust"
 			}],
-			rewards: [{
-				id: "49A1927E7B45852C",
-				type: "item",
-				item: {
-					id: "exnihilosequentia:crushed_netherrack",
-					Count: 1b,
-					tag: {
-						display: {
-							Name: '[{"text":"Dust Devil"}]'
-						},
-						Enchantments: [
-							{
-								lvl: 1,
-								id: "minecraft:flame"
+			rewards: [
+				{
+					id: "49A1927E7B45852C",
+					type: "item",
+					item: {
+						id: "exnihilosequentia:crushed_netherrack",
+						Count: 1b,
+						tag: {
+							display: {
+								Name: '[{"text":"Dust Devil"}]'
 							},
-							{
-								lvl: 1,
-								id: "minecraft:thorns"
-							},
-							{
-								lvl: 1,
-								id: "minecraft:vanishing_curse"
-							}
-						]
+							Enchantments: [
+								{
+									lvl: 1,
+									id: "minecraft:flame"
+								},
+								{
+									lvl: 1,
+									id: "minecraft:thorns"
+								},
+								{
+									lvl: 1,
+									id: "minecraft:vanishing_curse"
+								}
+							]
+						}
 					}
+				},
+				{
+					id: "1223935C859A66EF",
+					type: "item",
+					item: "xreliquary:pedestals/passive/red_passive_pedestal"
 				}
-			}]
+			]
 		},
 		{
 			x: -3.0d,
@@ -211,7 +218,7 @@
 			title: "A cake to drag-on.",
 			icon: "minecraft:dragon_head",
 			x: 5.0d,
-			y: -7.0d,
+			y: -10.0d,
 			description: [
 				"This cake will teleport you to the end when eaten.",
 				"",
@@ -368,7 +375,7 @@
 			title: "A Dirt-y idea.",
 			icon: "minecraft:mycelium",
 			x: -5.0d,
-			y: -7.0d,
+			y: -10.0d,
 			description: [
 				"These seeds are from sieving dirt.",
 				"",
@@ -575,6 +582,7 @@
 			icon: "minecraft:lava_bucket",
 			x: 0.0d,
 			y: -13.0d,
+			shape: "octagon",
 			description: [
 				"For people who don't want to waste too much time, or if Garden of Glass is removed or broken.",
 				"",
@@ -595,6 +603,219 @@
 					id: "2D007BB896810704",
 					type: "item",
 					item: "minecraft:water_bucket"
+				}
+			]
+		},
+		{
+			title: "Heat Sources",
+			icon: {
+				id: "minecraft:flint_and_steel",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -1.5d,
+			y: -0.5d,
+			description: [
+				"Heat Sources can be seen from pressing U while hovering your mouse over a crucible.",
+				"",
+				"Due to some display problem, the x4 source won't display. So I will say it here, that it's fire."
+			],
+			dependencies: ["5C106B6E6409EF22"],
+			id: "7F58FDC48A15959F",
+			tasks: [
+				{
+					id: "6BC1EAC25E4E1035",
+					type: "item",
+					item: {
+						id: "minecraft:flint_and_steel",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "47D38223666E7F04",
+					type: "item",
+					item: "minecraft:netherrack"
+				}
+			],
+			rewards: [{
+				id: "73AFD3F476EF15E8",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Blocks for Lava?",
+			x: 1.5d,
+			y: -0.5d,
+			description: [
+				"Lava production not only needs heat, but also needs blocks for production.",
+				"",
+				"Pressing U while hovering over the crucible in the inventory, will show what it can take.",
+				"",
+				"Cobblestone is the most common use in the past that produces 1/4 bucket per block of lava.",
+				"",
+				"But Obsidian and Netherrack makes a whole bucket of lava."
+			],
+			dependencies: ["5C106B6E6409EF22"],
+			id: "153C83AD044BF76A",
+			tasks: [{
+				id: "2E6269CE4D1B1B91",
+				type: "item",
+				item: "minecraft:lava_bucket"
+			}],
+			rewards: [{
+				id: "05A9612A2B359215",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Fluid Transformation",
+			x: -5.0d,
+			y: -8.5d,
+			description: [
+				"Fluid Transformation is required to receive some resources.",
+				"",
+				"For this quest, I will explain how to get those fluids, as for the next quests, will explain what it can do.",
+				"",
+				"To get Witch Water, your barrel full of water must be on Mycelium, and as for Sea Water, same, but on sand instead."
+			],
+			dependencies: ["046D86775F6FF8D3"],
+			id: "2F61617F7194D76A",
+			tasks: [
+				{
+					id: "640D84EDC3A54A91",
+					type: "item",
+					item: "exnihilosequentia:bucket_witchwater"
+				},
+				{
+					id: "58155367C96BCB73",
+					type: "item",
+					item: "exnihilosequentia:bucket_sea_water"
+				}
+			]
+		},
+		{
+			title: "Mob Summoning and Changing",
+			icon: "minecraft:wither_skeleton_skull",
+			x: -5.0d,
+			y: -7.0d,
+			description: [
+				"Mob spawning and changing is a bonus from the Ex Nihilo mod.",
+				"",
+				"Mobs can be transformed when doused, mainly by witch water:",
+				"",
+				" - Villagers -> Witches",
+				" - Creepers -> Charged Creepers",
+				" - Squids -> Ghasts",
+				" - Skeletons -> Wither Skeletons",
+				"",
+				"You can also use dolls, to summon mobs from barrels. The dolls required does give you what you need to summon them in their info when you hover your mouse over the item."
+			],
+			dependencies: ["2F61617F7194D76A"],
+			id: "0202FA0848EBB3CC",
+			tasks: [
+				{
+					id: "706CBF8F52B19BA1",
+					type: "item",
+					item: "exnihilosequentia:doll_blaze"
+				},
+				{
+					id: "3990678FE9B763F5",
+					type: "item",
+					item: "exnihilosequentia:doll_guardian"
+				},
+				{
+					id: "60A0819E9AB070CE",
+					type: "item",
+					item: "exnihilosequentia:doll_shulker"
+				},
+				{
+					id: "073295EB0A883EC4",
+					type: "item",
+					item: "exnihilosequentia:doll_enderman"
+				},
+				{
+					id: "40420749EF41A5B4",
+					type: "item",
+					item: "exnihilosequentia:doll_bee"
+				}
+			],
+			rewards: [
+				{
+					id: "528B65308C4E4E87",
+					type: "item",
+					item: "minecraft:wither_skeleton_skull"
+				},
+				{
+					id: "108163429CC72B20",
+					type: "item",
+					item: "minecraft:blaze_rod"
+				},
+				{
+					id: "38B5BB78E4613CC3",
+					type: "item",
+					item: "minecraft:prismarine_shard"
+				},
+				{
+					id: "38662B47F0324D38",
+					type: "item",
+					item: "minecraft:shulker_shell"
+				},
+				{
+					id: "23F619C5B33DCB70",
+					type: "item",
+					item: "minecraft:ender_pearl"
+				},
+				{
+					id: "7340B4852F476754",
+					type: "item",
+					item: "minecraft:honey_bottle"
+				},
+				{
+					id: "53AD9B5D4BCB2961",
+					type: "item",
+					item: "minecraft:ghast_tear"
+				},
+				{
+					id: "7CCD24E1F10AA252",
+					type: "item",
+					item: "minecraft:gunpowder"
+				}
+			]
+		},
+		{
+			title: "Then drag-on the Elytra",
+			x: 5.0d,
+			y: -8.5d,
+			shape: "diamond",
+			description: [
+				"With the dragon defeated, it will drop a scale, it would be useful to have a magnet with you when it happens.",
+				"",
+				"It will drop a Quark dragon scale, which it's goal of production, "
+			],
+			dependencies: ["79FDDEC32609E563"],
+			id: "5DE56E76832DA54A",
+			tasks: [{
+				id: "6463AC0CA690D32C",
+				type: "item",
+				item: "quark:dragon_scale"
+			}],
+			rewards: [
+				{
+					id: "620B0820455AB20A",
+					type: "item",
+					item: "minecraft:phantom_membrane"
+				},
+				{
+					id: "394C0942CE52CFE1",
+					type: "item",
+					item: "minecraft:leather"
 				}
 			]
 		}

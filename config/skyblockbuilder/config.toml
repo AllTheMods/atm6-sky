@@ -1,23 +1,16 @@
 
 [dimensions]
 
-	[dimensions.overworld]
-		#Should structures like end portal or villages be generated in overworld? [default: false]
-		structures = false
-		#Should the stronghold with end portal be the only structure?
-		#Needs default config be 'true', otherwise it'll be ignored. [default: false]
-		stronhold-only = false
-
 	[dimensions.nether]
 		#Should nether generate as in default world type? [default: false]
 		default = false
 
 		[dimensions.nether.structures]
-			#Should structures like fortresses or bastions be generated in nether? [default: true]
-			enabled = true
 			#Use only if 'enabled' is true!
 			#Should nether fortress be disabled? [default: false]
 			disable-fortress = false
+			#Should structures like fortresses or bastions be generated in nether? [default: true]
+			enabled = true
 			#Use only if 'enabled' is true!
 			#Should bastions be disabled? [default: true]
 			disable-bastions = true
@@ -25,14 +18,40 @@
 	[dimensions.end]
 		#Should end generate as in default world type? [default: false]
 		default = false
-		#Should the main island be generated as normal? [default: true]
-		main-island = true
 		#Should structures like end cities be generated in nether? [default: false]
 		#This also affects the large islands with chorus plants.
 		#Small islands will still be generated.
 		structures = false
+		#Should the main island be generated as normal? [default: true]
+		main-island = true
+
+	[dimensions.overworld]
+		#Should structures like end portal or villages be generated in overworld? [default: false]
+		structures = false
+		#Should the stronghold with end portal be the only structure?
+		#Needs default config be 'true', otherwise it'll be ignored. [default: false]
+		stronhold-only = false
+
+[world]
+	#Should a surface be generated in overworld? [default: false]
+	surface = false
+	#The block settings for generating the surface.
+	#Same format as flat world generation settings (blocks only)
+	surface-settings = "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block"
+	#Sea level in world [default: 63]
+	#Range: 0 ~ 256
+	sea-level = 63
+
+	[world.single-biome]
+		#Specifies the biome for the whole world
+		biome = "minecraft:plains"
+		#Should only one biome be generated? [default: false]
+		enabled = false
 
 [spawn]
+	#The radius to find a valid spawn if no given spawn is valid
+	#Range: > 0
+	radius = 50
 	#Direction the player should look at initial spawn
 	#Allowed Values: NORTH, EAST, SOUTH, WEST
 	direction = "SOUTH"
@@ -40,4 +59,32 @@
 	#This affects where exactly the island will be generated.
 	#Range: 1 ~ 255
 	height = 64
+
+[inventory]
+	#Should players' items be dropped when leaving a team? [default: true]
+	drop = true
+	#Should all items be reset on first world join? [default: false]
+	#This will delete all the items given on spawn from other mods guide books.
+	clear = false
+
+[utility]
+	#Should players be able to leave their team or invite others? [default: true]
+	self-manage = true
+	#Should players be able to create their own team? [default: false]
+	create-own-team = true
+
+	[utility.teleports]
+		#Should players be able to teleport to spawn? [default: true]
+		spawn = true
+		#Should players be able to visit other island? [default: true]
+		allow-visits = true
+		#Should players be able to teleport to their home island? [default: true]
+		home = true
+
+	[utility.spawns]
+		#The range from island center for possible spawns to add. [default: 50]
+		#Range: > 0
+		range = 50
+		#Should players be able to modify their spawn positions? [default: false]
+		modify-spawns = false
 

@@ -50,6 +50,15 @@ onEvent(`recipes`, e => {
   }], `powah:spirited_crystal_block`, 1, 9000000);
 
   //Misc recipes
+  e.shaped(`minecraft:elytra`, [
+    `msm`,
+    `mbm`,
+    `m m`
+  ], {
+    m: `minecraft:phantom_membrane`,
+    s: `quark:dragon_scale`,
+    b: `ironjetpacks:strap`
+  });
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`);
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`);
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [

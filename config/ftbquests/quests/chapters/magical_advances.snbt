@@ -180,6 +180,99 @@
 					}
 				}
 			}]
+		},
+		{
+			title: "A crystal for your progression",
+			x: 1.5d,
+			y: -4.0d,
+			description: ["For those who doesn't want to use the void miner to get starmetal."],
+			dependencies: ["0A6B0A8336EC11CF"],
+			id: "010402FD75B45E71",
+			tasks: [{
+				id: "15C761FA7A7C9D08",
+				type: "checkmark",
+				icon: {
+					id: "astralsorcery:rock_collector_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:armara",
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:purity",
+										pLevel: 2,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:shape",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:collector.rate",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:constellation.armara",
+										pLevel: 2,
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}],
+			rewards: [{
+				id: "13B358C20634D410",
+				type: "item",
+				auto: "enabled",
+				item: {
+					id: "astralsorcery:rock_collector_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:armara",
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:purity",
+										pLevel: 2,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:shape",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:collector.rate",
+										pLevel: 3,
+										discovered: 1b
+									},
+									{
+										property: "astralsorcery:constellation.armara",
+										pLevel: 2,
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
 		}
 	]
 }

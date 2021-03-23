@@ -57,6 +57,7 @@
 			rewards: [{
 				id: "6C59B88F14E5F029",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -83,6 +84,7 @@
 			rewards: [{
 				id: "4AB2764DC6804B99",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -128,6 +130,7 @@
 			rewards: [{
 				id: "6639AEFF62E5CF47",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -192,6 +195,7 @@
 			rewards: [{
 				id: "66299F1AD6F62304",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -217,6 +221,7 @@
 			rewards: [{
 				id: "09ED911C1B80B17A",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -243,6 +248,7 @@
 			rewards: [{
 				id: "65B6FD61832C78D8",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -269,6 +275,7 @@
 			rewards: [{
 				id: "0E281BDFD2B1244F",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -297,6 +304,7 @@
 			rewards: [{
 				id: "1BC1D5DF9B1AA532",
 				type: "item",
+				auto: "enabled",
 				item: "minecraft:ender_pearl"
 			}]
 		},
@@ -321,8 +329,9 @@
 				title: "Spawn Island",
 				icon: "botania:green_floating_flower",
 				team_reward: false,
-				command: "/gog island @p",
-				player_command: false
+				auto: "no_toast",
+				command: "/gog island @s",
+				player_command: true
 			}]
 		},
 		{
@@ -368,6 +377,7 @@
 			rewards: [{
 				id: "477B267A0D0C2832",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		},
@@ -389,6 +399,7 @@
 			rewards: [{
 				id: "7B0AE0BBAEDD96E0",
 				type: "xp",
+				auto: "enabled",
 				xp: 100
 			}]
 		}

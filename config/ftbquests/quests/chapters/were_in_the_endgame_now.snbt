@@ -416,6 +416,108 @@
 				type: "item",
 				item: "pneumaticcraft:creative_compressor"
 			}]
+		},
+		{
+			title: "The Supreme Armor",
+			x: 0.0d,
+			y: -8.5d,
+			description: [
+				"Top grade armor, of the Mystical agriculture mod.",
+				"",
+				"Each armor can be upgraded, one of which can give creative flight."
+			],
+			id: "4D9B62F40846B6F1",
+			tasks: [
+				{
+					id: "3827FE60B3A67F19",
+					type: "item",
+					item: {
+						id: "mysticalagriculture:supremium_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "64F8B027D8CFE7B5",
+					type: "item",
+					item: {
+						id: "mysticalagriculture:supremium_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "0B5E407CFB4CCEBA",
+					type: "item",
+					item: {
+						id: "mysticalagriculture:supremium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "3618399518938FC6",
+					type: "item",
+					item: {
+						id: "mysticalagriculture:supremium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "4A7682D0D094A590",
+					type: "item",
+					item: "mysticalagriculture:flight_augment"
+				},
+				{
+					id: "0DAE622FC0F4E7E5",
+					type: "item",
+					item: "mysticalagriculture:tinkering_table"
+				}
+			],
+			rewards: [
+				{
+					id: "6F12B4AE2EA5F3A4",
+					type: "item",
+					item: {
+						id: "minecraft:elytra",
+						Count: 1b,
+						tag: {
+							Damage: 0,
+							display: {
+								Name: '[{"text":"Wings of Liberty"}]'
+							},
+							Enchantments: [
+								{
+									lvl: 1,
+									id: "minecraft:fortune"
+								},
+								{
+									lvl: 1,
+									id: "minecraft:infinity"
+								},
+								{
+									lvl: 1,
+									id: "minecraft:efficiency"
+								}
+							]
+						}
+					}
+				},
+				{
+					id: "714CEB55C9828F70",
+					type: "item",
+					item: "xreliquary:pedestals/passive/light_gray_passive_pedestal"
+				}
+			]
 		}
 	]
 }

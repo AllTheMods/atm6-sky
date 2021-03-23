@@ -825,6 +825,47 @@
 				type: "item",
 				item: "appliedenergistics2:storage_bus"
 			}]
+		},
+		{
+			title: "Looking for Mica?",
+			icon: {
+				id: "envirotech:litherite_void_miner_ccu",
+				Count: 1b,
+				tag: {
+					colors: {}
+				}
+			},
+			x: -6.0d,
+			y: -8.0d,
+			description: ["You have to make a void miner in the End."],
+			id: "016F783E9FAB8B11",
+			tasks: [{
+				id: "0B4BF05722606D82",
+				type: "item",
+				item: "envirocore:mica"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -8.0d,
+			id: "230970A569CB92D6",
+			tasks: [
+				{
+					id: "6FBA3F4E4ED5B5FB",
+					type: "item",
+					item: "industrialforegoing:laser_drill"
+				},
+				{
+					id: "62AEB7754A7176A9",
+					type: "item",
+					item: "industrialforegoing:ore_laser_base"
+				},
+				{
+					id: "703DAB5F6C65F7F3",
+					type: "item",
+					item: "industrialforegoing:fluid_laser_base"
+				}
+			]
 		}
 	]
 }

@@ -412,7 +412,9 @@
 				"",
 				"From Vanilla, to Cobble Gens, to even Pedestals.",
 				"",
-				"Feel free to choose what you like."
+				"Feel free to choose what you like.",
+				"",
+				'Note: to get the cobble from the "Cobble for days" machines you just have to put a storage such as a chest on top.'
 			],
 			id: "1D137ABA27562E47",
 			tasks: [
@@ -597,11 +599,13 @@
 				{
 					id: "7E0DCF4FF0FE103E",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:lava_bucket"
 				},
 				{
 					id: "2D007BB896810704",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:water_bucket"
 				}
 			]

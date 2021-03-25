@@ -1,0 +1,499 @@
+{
+	id: "293E149AC6DC5829",
+	group: "",
+	order_index: 5,
+	filename: "storage",
+	title: "Storage",
+	icon: "minecraft:chest",
+	subtitle: ["Space the final frontier we need"],
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Starting with ME?",
+			x: -0.5d,
+			y: -8.0d,
+			id: "4EE8BDAE2E49EE70",
+			tasks: [{
+				id: "791C18F3E33D57FC",
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -8.0d,
+			dependencies: ["4EE8BDAE2E49EE70"],
+			id: "0BA678E979B4DC0A",
+			tasks: [
+				{
+					id: "54A12BC24A3B158A",
+					type: "item",
+					item: "appliedenergistics2:energy_acceptor"
+				},
+				{
+					id: "5C460871CA5B70C9",
+					type: "item",
+					item: {
+						id: "appliedenergistics2:energy_cell",
+						Count: 1b,
+						tag: {
+							internalMaxPower: 200000.0d,
+							internalCurrentPower: 200000.0d
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -3.5d,
+			y: -8.0d,
+			dependencies: ["0BA678E979B4DC0A"],
+			optional: true,
+			id: "590BF6A08BE642AE",
+			tasks: [
+				{
+					id: "1C5049E35886498F",
+					type: "item",
+					item: "appliedenergistics2:drive"
+				},
+				{
+					id: "0E964719E5F4E94F",
+					type: "item",
+					item: "appliedenergistics2:1k_cell_component"
+				}
+			],
+			rewards: [{
+				id: "1654F31C53BE9B10",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:4k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			title: "Put ME on a Storage",
+			x: -3.5d,
+			y: -9.5d,
+			dependencies: ["0BA678E979B4DC0A"],
+			optional: true,
+			id: "351F47DB5DE826CD",
+			tasks: [{
+				id: "3358BA4448AA2883",
+				type: "item",
+				item: "appliedenergistics2:storage_bus"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -8.0d,
+			dependencies: [
+				"351F47DB5DE826CD",
+				"590BF6A08BE642AE"
+			],
+			dependency_requirement: "one_completed",
+			id: "51FF0CE575E125B8",
+			tasks: [{
+				id: "7D57D8FEF5C431F9",
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		},
+		{
+			title: "A Refined choice",
+			x: 2.5d,
+			y: -8.0d,
+			id: "2171A3590A29FD59",
+			tasks: [{
+				id: "1351AB995405CA6B",
+				type: "item",
+				item: "refinedstorage:cable"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -8.0d,
+			dependencies: ["2171A3590A29FD59"],
+			id: "548B3AD584C8D3B5",
+			tasks: [{
+				id: "470FA81E3476F181",
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -8.0d,
+			dependencies: ["548B3AD584C8D3B5"],
+			optional: true,
+			id: "479D052DE3553CEF",
+			tasks: [
+				{
+					id: "647B4CFE536A1C22",
+					type: "item",
+					item: "refinedstorage:disk_drive"
+				},
+				{
+					id: "0070219C3617379F",
+					type: "item",
+					item: "refinedstorage:1k_storage_part"
+				}
+			],
+			rewards: [{
+				id: "0933C038AE0E1924",
+				type: "item",
+				item: "refinedstorage:4k_storage_disk"
+			}]
+		},
+		{
+			title: "I can be place on any storage.",
+			x: 5.5d,
+			y: -9.5d,
+			dependencies: ["548B3AD584C8D3B5"],
+			optional: true,
+			id: "2D882D3D8631D8D1",
+			tasks: [{
+				id: "13D78A37E783CD97",
+				type: "item",
+				item: "refinedstorage:external_storage"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -8.0d,
+			dependencies: [
+				"2D882D3D8631D8D1",
+				"479D052DE3553CEF"
+			],
+			id: "75FF9CAB83A38030",
+			tasks: [{
+				id: "4B9F5EDFF343EA48",
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}]
+		},
+		{
+			title: "The Classic Storage",
+			x: 1.0d,
+			y: -4.5d,
+			id: "4718C291648D6C9E",
+			tasks: [{
+				id: "066B128EAC69EC6F",
+				type: "item",
+				item: "minecraft:chest"
+			}]
+		},
+		{
+			title: "Not a vanilla tank?",
+			x: 1.0d,
+			y: -2.5d,
+			id: "4FBBE976F275AD0A",
+			tasks: [{
+				id: "12632F2F2A103A66",
+				type: "item",
+				item: "minecraft:barrel"
+			}]
+		},
+		{
+			title: "The Classic Ironic Mod",
+			x: 1.0d,
+			y: -6.0d,
+			dependencies: ["4718C291648D6C9E"],
+			id: "1DC08B4002B97456",
+			tasks: [{
+				id: "609F3BEFCB1C4117",
+				type: "item",
+				item: "ironchest:iron_chest"
+			}]
+		},
+		{
+			title: "Goldylocks",
+			x: 1.0d,
+			y: -7.5d,
+			description: [""],
+			dependencies: ["1DC08B4002B97456"],
+			id: "53E41FB740965273",
+			tasks: [{
+				id: "7A2ACBE34805D5D5",
+				type: "item",
+				item: "ironchest:gold_chest"
+			}]
+		},
+		{
+			title: "Shine bright like a diamond",
+			x: 1.0d,
+			y: -9.0d,
+			dependencies: ["53E41FB740965273"],
+			id: "685E8BA279EC9D02",
+			tasks: [{
+				id: "073008F85979CB8B",
+				type: "item",
+				item: "ironchest:diamond_chest"
+			}]
+		},
+		{
+			title: "Obsidian Obsessed",
+			x: 0.0d,
+			y: -10.0d,
+			description: [""],
+			dependencies: ["685E8BA279EC9D02"],
+			id: "59CD26EDC18F69B6",
+			tasks: [{
+				id: "4D235A30824AED32",
+				type: "item",
+				item: "ironchest:obsidian_chest"
+			}]
+		},
+		{
+			title: "Clear Path",
+			x: 2.0d,
+			y: -10.0d,
+			description: [""],
+			dependencies: ["685E8BA279EC9D02"],
+			id: "0B2FB8DD2FFDEB8E",
+			tasks: [{
+				id: "3E9C218E0107A48B",
+				type: "item",
+				item: "ironchest:crystal_chest"
+			}]
+		},
+		{
+			title: "An ironic twist",
+			x: 1.0d,
+			y: -1.0d,
+			dependencies: ["4FBBE976F275AD0A"],
+			id: "0CDC24C7DD153413",
+			tasks: [{
+				id: "3491347C764C4B53",
+				type: "item",
+				item: "metalbarrels:iron_barrel"
+			}]
+		},
+		{
+			title: "Goldeneye",
+			x: 1.0d,
+			y: 0.5d,
+			dependencies: ["0CDC24C7DD153413"],
+			id: "03014FDBE447BAAB",
+			tasks: [{
+				id: "5149228FDBA63011",
+				type: "item",
+				item: "metalbarrels:gold_barrel"
+			}]
+		},
+		{
+			title: "Like a diamond in the sky",
+			x: 1.0d,
+			y: 2.0d,
+			dependencies: ["03014FDBE447BAAB"],
+			id: "30898E6A5B43DF6E",
+			tasks: [{
+				id: "39DB17F09DA029FA",
+				type: "item",
+				item: "metalbarrels:diamond_barrel"
+			}]
+		},
+		{
+			title: "Clear Ridges",
+			x: 2.0d,
+			y: 3.0d,
+			dependencies: ["30898E6A5B43DF6E"],
+			id: "30E8C5B14A269F56",
+			tasks: [{
+				id: "5507856454E8D6B3",
+				type: "item",
+				item: "metalbarrels:crystal_barrel"
+			}]
+		},
+		{
+			title: "Observed Obsidian",
+			x: 0.0d,
+			y: 3.0d,
+			dependencies: ["30898E6A5B43DF6E"],
+			id: "5590E88755BB40E9",
+			tasks: [{
+				id: "3B2E1E20CD1CBA16",
+				type: "item",
+				item: "metalbarrels:obsidian_barrel"
+			}]
+		},
+		{
+			title: "It came from the nether region",
+			x: 1.0d,
+			y: 4.0d,
+			dependencies: ["5590E88755BB40E9"],
+			id: "6F7A035746AFCEB1",
+			tasks: [{
+				id: "371E26985136A6C1",
+				type: "item",
+				item: "metalbarrels:netherite_barrel"
+			}]
+		},
+		{
+			title: "Drawers for years",
+			x: 1.0d,
+			y: -3.5d,
+			dependencies: ["4718C291648D6C9E"],
+			id: "0E463B85C9342584",
+			tasks: [{
+				id: "7C431B74195FA9DD",
+				type: "item",
+				title: "Any #storagedrawers:drawers",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				},
+				count: 4L
+			}]
+		},
+		{
+			title: "To make a system",
+			x: 2.5d,
+			y: -4.5d,
+			dependencies: ["0E463B85C9342584"],
+			id: "1146355F7739C7AE",
+			tasks: [{
+				id: "46958408A7D84351",
+				type: "item",
+				item: "storagedrawers:controller"
+			}]
+		},
+		{
+			title: "Slave to the drawers",
+			x: 2.5d,
+			y: -3.5d,
+			dependencies: ["0E463B85C9342584"],
+			id: "50DC868B62F703C0",
+			tasks: [{
+				id: "04E41E4CF1EB2120",
+				type: "item",
+				item: "storagedrawers:controller_slave"
+			}]
+		},
+		{
+			title: "Automatic Compactibility",
+			x: 2.5d,
+			y: -2.5d,
+			description: [""],
+			dependencies: ["0E463B85C9342584"],
+			id: "16E4544F74123C1F",
+			tasks: [{
+				id: "63AC4DD0816FCF91",
+				type: "item",
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		},
+		{
+			title: "The key to filtering a drawer",
+			x: 3.5d,
+			y: -4.0d,
+			dependencies: ["0E463B85C9342584"],
+			id: "488A1987071E9B48",
+			tasks: [{
+				id: "25A984075D83E0D5",
+				type: "item",
+				item: "storagedrawers:drawer_key"
+			}]
+		},
+		{
+			title: "A visual count",
+			x: 3.5d,
+			y: -3.0d,
+			description: [""],
+			dependencies: ["0E463B85C9342584"],
+			id: "3586AF99E323BF1C",
+			tasks: [{
+				id: "374A3B9B2EA94886",
+				type: "item",
+				item: "storagedrawers:quantify_key"
+			}]
+		},
+		{
+			title: "To a-void a mess",
+			x: -0.5d,
+			y: -4.5d,
+			dependencies: ["0E463B85C9342584"],
+			id: "55CE84165FBD4C71",
+			tasks: [{
+				id: "1CC53480AFDB305E",
+				type: "item",
+				item: "storagedrawers:void_upgrade"
+			}]
+		},
+		{
+			title: "Less is more",
+			x: -0.5d,
+			y: -3.5d,
+			dependencies: ["0E463B85C9342584"],
+			id: "4F7F32DDAF82DC98",
+			tasks: [{
+				id: "1328A9A38902CB3B",
+				type: "item",
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+		},
+		{
+			title: "The Green mile",
+			x: -0.5d,
+			y: -2.5d,
+			dependencies: ["0E463B85C9342584"],
+			id: "16B59FE0949336A8",
+			tasks: [{
+				id: "2C6D2ADC3ED6A956",
+				type: "item",
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+		},
+		{
+			title: "And now I see",
+			x: -1.5d,
+			y: -4.0d,
+			dependencies: ["0E463B85C9342584"],
+			id: "285E3344E94190DD",
+			tasks: [{
+				id: "28E97C020D0AB695",
+				type: "item",
+				item: "storagedrawers:illumination_upgrade"
+			}]
+		},
+		{
+			title: "Emiting your Storage",
+			x: -1.5d,
+			y: -3.0d,
+			dependencies: ["0E463B85C9342584"],
+			id: "6AA5870D4DE4EC30",
+			tasks: [{
+				id: "1CD6427E79C06CFD",
+				type: "item",
+				item: "storagedrawers:redstone_upgrade"
+			}]
+		},
+		{
+			title: "Tank you for your choice",
+			x: 2.5d,
+			y: -6.0d,
+			description: [""],
+			id: "7CE2B45914E4DCE8",
+			tasks: [{
+				id: "0D577024835AEC2A",
+				type: "item",
+				item: "industrialforegoing:common_black_hole_tank"
+			}]
+		},
+		{
+			title: "Quite a Unit",
+			x: -0.5d,
+			y: -6.0d,
+			id: "1B799395A5ACCBF0",
+			tasks: [{
+				id: "0FCA2F3E8EF32A92",
+				type: "item",
+				item: "industrialforegoing:common_black_hole_unit"
+			}]
+		}
+	]
+}

@@ -230,10 +230,10 @@
 	energyCapacity = 10000
 	#Maximum energy that can be received (RF/t)
 	#Range: > 0
-	energyRxPerTick = 10000
+	energyRxPerTick = 1000
 	#Energy used per tick (RF)
 	#Range: > 0
-	energyUsePerTick = 1000
+	energyUsePerTick = 400
 
 #Settings for the convertor
 [fluid_convertor]
@@ -248,7 +248,7 @@
 	energyCapacity = 10000
 	#Maximum energy that can be received (RF/t)
 	#Range: > 0
-	energyRxPerTick = 10000
+	energyRxPerTick = 1000
 	#Energy used per tick (RF)
 	#Range: > 0
 	energyUsePerTick = 200
@@ -283,7 +283,7 @@
 		energyCapacity = 10000
 		#Maximum energy that can be received (RF/t)
 		#Range: > 0
-		energyRxPerTick = 10000
+		energyRxPerTick = 1000
 		#Energy used per tick (RF)
 		#Range: > 0
 		energyUsePerTick = 200
@@ -297,7 +297,7 @@
 		energyCapacity = 10000
 		#Maximum energy that can be received (RF/t)
 		#Range: > 0
-		energyRxPerTick = 10000
+		energyRxPerTick = 1000
 		#Energy used per tick (RF)
 		#Range: > 0
 		energyUsePerTick = 200

@@ -139,7 +139,7 @@ onEvent(`block.tags`, e => {
   e.add(`resourcefulbees:valid_apiary`, [`quark:brimstone_bricks`, `quark:blaze_lantern`, `quark:soul_sandstone`, `quark:chiseled_soul_sandstone`, `quark:cut_soul_sandstone`, `quark:smooth_soul_sandstone`]);
   e.add(`resourcefulbees:valid_apiary`, [`quark:lit_lamp`, `quark:paper_wall`, `quark:paper_wall_big`, `quark:paper_wall_sakura`]);
   */
-  //e.add(`resourcefulbees:valid_apiary`, [/mcwwindows:.*_win/, /mcwroofs:.*_roof/, /darkutils:filter_.*/, /rftoolsbuilder:.*/, /enviromats:alabaster.*/]); //, ^\\w+_glass$
+  //e.add(`resourcefulbees:valid_apiary`, [/mcwwindows:.*_win/, /mcwroofs:.*_roof/, /darkutils:filter_.*/, /rftoolsbuilder:.*/, /enviromats:alabaster.*/, /.*glass$/, /.*glass_/]); //,
 
   //Removal
   e.removeAll(`minecraft:enderman_holdable`);

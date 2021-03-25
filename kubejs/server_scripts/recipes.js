@@ -116,7 +116,7 @@ onEvent(`recipes`, e => {
     `GVG`,
     ` G `
   ], {
-    E: `compressium:emerald_3`,
+    E: `compressium:emerald_2`,
     G: `#forge:storage_blocks/gold`,
     V: `minecraft:villager_spawn_egg`
   });

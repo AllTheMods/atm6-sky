@@ -389,11 +389,7 @@ onEvent(`recipes`, e => {
     Item.of(`minecraft:iron_nugget`, 2).toResultJson()
   ]);
 
-  //Exrastorage fixes
-  e.remove({
-    mod: `extrastorage`
-  });
-
+  //Extrastorage fixes
   e.shaped(`extrastorage:iron_crafter`, [
     `B B`,
     `PCP`,
@@ -430,24 +426,31 @@ onEvent(`recipes`, e => {
     P: `extradisks:withering_processor`,
     C: `extrastorage:diamond_crafter`
   });
-  e.shaped(`extrastorage:advanced_exporter`, [
-    ` T `,
-    `PCP`,
-    ` T `
-  ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:exporter`
-  });
-  e.shaped(`extrastorage:advanced_importer`, [
-    ` T `,
-    `PCP`,
-    ` T `
-  ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:importer`
-  });
+
+  //Cable Tiers changes
+  var caTypes = [
+    `importer`,
+    `exporter`,
+    `constructor`,
+    `destructor`
+  ];
+  const caTier = (tier, corners, processor, cables) => {
+    caTypes.forEach(caType => {
+      e.shaped(`cabletiers:${tier}_${caType}`, [
+        `a a`,
+        `bcb`,
+        `a a`
+      ], {
+        a: corners,
+        b: processor,
+        c: `${cables}${caType}`
+      });
+    });
+  };
+  caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
+  caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
+  caTier(`creative`, `#forge:ingots/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
+
   //NBT Resets
   var resetNBT = [
     `rftoolsbase:filter_module`,

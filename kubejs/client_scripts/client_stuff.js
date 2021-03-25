@@ -84,6 +84,8 @@ onEvent(`jei.hide.items`, e => {
     /extrastorage:disk_/,
     /extrastorage:storagepart_/,
     /extrastorage:block_/,
+    `extrastorage:advanced_exporter`,
+    `extrastorage:advanced_importer`,
 
     `bloodmagic:saltpeter`,
     `bloodmagic:sulfur`,

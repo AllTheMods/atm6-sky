@@ -128,6 +128,8 @@ onEvent(`recipes`, e => {
       `excompressum:compressed_granite`,
       `excompressum:compressed_andesite`,
       /excompressum:.*_crucible/,
+
+      `pedestals:dustflour`,
     ]
   });
   e.remove({
@@ -137,5 +139,11 @@ onEvent(`recipes`, e => {
   });
   e.remove({
     type: `xreliquary:alkahestry_charging`
+  });
+  e.remove({
+    mod: [
+      `extrastorage`,
+      `cabletiers`,
+    ]
   });
 });

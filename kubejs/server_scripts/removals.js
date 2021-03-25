@@ -1,5 +1,6 @@
 //priority: 999
 onEvent(`recipes`, e => {
+  //Remove via recipe IDs
   var idRemove = [
 
     `minecraft:comparator`,
@@ -47,7 +48,19 @@ onEvent(`recipes`, e => {
       id: iR
     });
   });
-  //Recipe removals
+
+  //Remove via mod name
+  var modRemove = [
+    `extrastorage`,
+    `cabletiers`,
+  ];
+  modRemove.forEach(mR => {
+    e.remove({
+      mod: mR
+    });
+  });
+
+  //Recipe via output
   e.remove({
     output: [
       `appliedenergistics2:silicon`,
@@ -132,18 +145,16 @@ onEvent(`recipes`, e => {
       `pedestals:dustflour`,
     ]
   });
+
+  //Remove via input
   e.remove({
     input: [
       `appliedenergistics2:flour`
     ]
   });
+
+  //Remove via recipe type
   e.remove({
     type: `xreliquary:alkahestry_charging`
-  });
-  e.remove({
-    mod: [
-      `extrastorage`,
-      `cabletiers`,
-    ]
   });
 });

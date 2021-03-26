@@ -24,25 +24,6 @@
       "minecraft:shattered_savanna_plateau",
       "minecraft:eroded_badlands",
       "minecraft:modified_wooded_badlands_plateau",
-      "minecraft:modified_badlands_plateau",
-      "byg:enchanted_forest",
-      "byg:enchanted_grove",
-      "byg:glowshroom_bayou",
-      "byg:redwood_tropics",
-      "byg:rose_fields",
-      "byg:shattered_glacier",
-      "byg:weeping_witch_forest",
-      "byg:allium_fields",
-      "byg:amaranth_fields",
-      "byg:ancient_forest",
-      "byg:crag_gardens",
-      "byg:blue_giant_taiga",
-      "byg:enchanted_forest_hills",
-      "byg:flowering_ancient_forest",
-      "byg:forest_fault",
-      "byg:glowing_ancient_forest",
-      "byg:pumpkin_forest",
-      "byg:snowy_blue_giant_taiga",
-      "byg:weeping_witch_clearing"
+      "minecraft:modified_badlands_plateau"
   ]
 }

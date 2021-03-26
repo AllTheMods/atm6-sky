@@ -512,13 +512,7 @@
 			rewards: [{
 				id: "2FD8FA6A1DA0A601",
 				type: "item",
-				item: {
-					id: "cyclic:sleeping_mat",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "comforts:sleeping_bag_white"
 			}]
 		},
 		{
@@ -600,13 +594,25 @@
 					id: "7E0DCF4FF0FE103E",
 					type: "item",
 					auto: "enabled",
-					item: "minecraft:lava_bucket"
+					item: {
+						id: "ceramics:cracked_clay_bucket",
+						Count: 1b,
+						tag: {
+							fluid: "minecraft:lava"
+						}
+					}
 				},
 				{
 					id: "2D007BB896810704",
 					type: "item",
 					auto: "enabled",
-					item: "minecraft:water_bucket"
+					item: {
+						id: "ceramics:clay_bucket",
+						Count: 1b,
+						tag: {
+							fluid: "minecraft:water"
+						}
+					}
 				}
 			]
 		},

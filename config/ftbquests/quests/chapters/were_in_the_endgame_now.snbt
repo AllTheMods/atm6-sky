@@ -1,7 +1,7 @@
 {
 	id: "4B1697B3A6656D05",
 	group: "",
-	order_index: 4,
+	order_index: 6,
 	filename: "were_in_the_endgame_now",
 	title: "Were in the Endgame now...",
 	icon: "mysticalagradditions:creative_essence",
@@ -277,6 +277,7 @@
 			}]
 		},
 		{
+			title: "Feel the vibrations",
 			x: 0.0d,
 			y: -4.0d,
 			description: ["A vibrant metal born from the depths of the nether... or simply use netherrack dust to a "],
@@ -289,6 +290,7 @@
 			}]
 		},
 		{
+			title: "Impossible!?... nope",
 			x: 2.0d,
 			y: -4.0d,
 			dependencies: ["5E9F6228BBC60FFC"],
@@ -518,6 +520,24 @@
 					item: "xreliquary:pedestals/passive/light_gray_passive_pedestal"
 				}
 			]
+		},
+		{
+			title: "Super Fast Flight",
+			x: 2.0d,
+			y: -7.0d,
+			dependencies: ["4FC8820639E50086"],
+			id: "13A26BFE3D713C82",
+			tasks: [{
+				id: "784EA55EF1D23907",
+				type: "item",
+				item: {
+					id: "ironjetpacks:unobtainium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
 		}
 	]
 }

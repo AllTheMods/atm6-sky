@@ -175,13 +175,19 @@
 			title: "More power to the slaves!",
 			x: -10.5d,
 			y: -7.5d,
-			description: [""],
+			description: ["Pretty much the same as the previous auto-sieve. But it can use compressed grounded up blocks."],
 			dependencies: ["7F95D4C8AEFB5A95"],
 			id: "06821798EEECA8A4",
 			tasks: [{
 				id: "7AA84241D17CBAB8",
 				type: "item",
 				item: "excompressum:auto_heavy_sieve"
+			}],
+			rewards: [{
+				id: "53AE1B7C56695780",
+				type: "item",
+				item: "minecraft:name_tag",
+				count: 8
 			}]
 		},
 		{
@@ -402,7 +408,11 @@
 			title: "Heated Bum? Need water?",
 			x: -5.5d,
 			y: -8.5d,
-			description: [""],
+			description: [
+				"The generators of this pack can be upgraded by crafting.",
+				"",
+				"This generator will produce power with a heat source underneath and filling it up with a coolant, most commonly water."
+			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "37B77C8C9403772C",
 			tasks: [{
@@ -416,9 +426,11 @@
 			x: -6.5d,
 			y: -7.5d,
 			description: [
-				"These 2 blocks, are the basic generator for Immesive engineering.",
+				"This generator, requires another part that gives a rotational force to it.",
 				"",
-				"The water wheel can be placed up to 3x on the dynamo."
+				"Thankfully it has 2 ways for it, and they can be used as decorations when not needed when you get better power.",
+				"",
+				"But the best part of this, is that the generator doesn't need fuel."
 			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "4879018D4DB5BC04",
@@ -602,6 +614,7 @@
 		{
 			x: -4.0d,
 			y: -9.5d,
+			description: ["A dynamic generator that can use most oil type fluids, even the Creosole Oil from Immersive Engineering's Blast Furnace."],
 			dependencies: ["095F5AE5A801000A"],
 			id: "27B5C6456BD16FD3",
 			tasks: [{
@@ -613,6 +626,7 @@
 		{
 			x: -3.0d,
 			y: -9.5d,
+			description: ["This dynamic generator uses Metal coins to produce a large amount of power."],
 			dependencies: ["095F5AE5A801000A"],
 			id: "2E117EDB18112FB1",
 			tasks: [{
@@ -624,6 +638,7 @@
 		{
 			x: -2.0d,
 			y: -9.5d,
+			description: ["This dynamic generator uses Crystals as a power source, such as diamonds, lapis, and quartz."],
 			dependencies: ["095F5AE5A801000A"],
 			id: "140CA8C6BF4850DB",
 			tasks: [{
@@ -636,6 +651,13 @@
 			title: "Hot and Cold",
 			x: -6.5d,
 			y: -6.5d,
+			description: [
+				"This generator requires both sides a hot and cold source block.",
+				"",
+				"All 4 sides can be used as long as their opposite side is the opposite temperature.",
+				"",
+				"This will not consume the materials. So it's another way for infinite source of low energy."
+			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "36214249EB744748",
 			tasks: [{
@@ -656,8 +678,16 @@
 			}]
 		},
 		{
+			title: "Power of the Wind",
 			x: -7.0d,
 			y: -7.0d,
+			description: [
+				"Unlike mekanism's windmill this one works the same at any hight.",
+				"",
+				"As long as nothing is in front of the windmill it will produce power, it gains more power during rainy days.",
+				"",
+				"It can be upgraded when using a Windmill sail on it."
+			],
 			dependencies: ["4879018D4DB5BC04"],
 			id: "2FC4A66AA0ADC628",
 			tasks: [{
@@ -670,6 +700,7 @@
 			title: "Thirsty for lava",
 			x: -5.0d,
 			y: -8.0d,
+			description: ["This generator requires molten lava to generate power."],
 			dependencies: ["095F5AE5A801000A"],
 			id: "53729FFD3243C14D",
 			tasks: [{

@@ -177,6 +177,11 @@
 			title: "The Classic Storage",
 			x: 1.0d,
 			y: -4.5d,
+			description: [
+				"This doesn't need any introduction. Everyone knows what a chest does.",
+				"",
+				"But it's a box to hold your stuff. Just don't block the top with a full block. Glass, Other chests, and partial blocks will not prevent it to be open."
+			],
 			id: "4718C291648D6C9E",
 			tasks: [{
 				id: "066B128EAC69EC6F",
@@ -188,6 +193,7 @@
 			title: "Not a vanilla tank?",
 			x: 1.0d,
 			y: -2.5d,
+			description: ["Unlike it's counterpart this storage block won't combine with another, yet will still open even with a full block on top."],
 			id: "4FBBE976F275AD0A",
 			tasks: [{
 				id: "12632F2F2A103A66",
@@ -334,6 +340,7 @@
 			title: "Drawers for years",
 			x: 1.0d,
 			y: -3.5d,
+			description: ["Drawers are great storages early game, especially when it comes to certain upgrades for control in automations."],
 			dependencies: ["4718C291648D6C9E"],
 			id: "0E463B85C9342584",
 			tasks: [{
@@ -354,6 +361,11 @@
 			title: "To make a system",
 			x: 2.5d,
 			y: -4.5d,
+			description: [
+				'This drawer block will combine every drawers attached to it as one. It can be connected by "Storage plug" type system to see the whole inventory.',
+				"",
+				"When a key is used on a controller, it will affect all connected drawers."
+			],
 			dependencies: ["0E463B85C9342584"],
 			id: "1146355F7739C7AE",
 			tasks: [{
@@ -366,6 +378,7 @@
 			title: "Slave to the drawers",
 			x: 2.5d,
 			y: -3.5d,
+			description: ["This is more of an Extension to the Controller, the Controller has a limited range but the Slave extends it's range when placed at it's edges."],
 			dependencies: ["0E463B85C9342584"],
 			id: "50DC868B62F703C0",
 			tasks: [{
@@ -378,7 +391,7 @@
 			title: "Automatic Compactibility",
 			x: 2.5d,
 			y: -2.5d,
-			description: [""],
+			description: ["This block will automatically compact anything that can be compacted and reverted. Such as ingots, clay balls, and such to their block version and vice versa."],
 			dependencies: ["0E463B85C9342584"],
 			id: "16E4544F74123C1F",
 			tasks: [{
@@ -391,6 +404,15 @@
 			title: "The key to filtering a drawer",
 			x: 3.5d,
 			y: -4.0d,
+			description: [
+				"This key can be used in two ways:",
+				"",
+				"1- When in offhand; When placing drawers it will automatically lock them. This is pretty useful if you have a drawer system connected to a farm and you don't want anything to pump while placing.",
+				"",
+				"2- Using key on drawer will lock/unlock it.",
+				"",
+				"When a drawer is lock it will save it's inventory in memory even when it hits zero. A lock drawer with an empty slot can still be filled if placed manually."
+			],
 			dependencies: ["0E463B85C9342584"],
 			id: "488A1987071E9B48",
 			tasks: [{
@@ -403,7 +425,7 @@
 			title: "A visual count",
 			x: 3.5d,
 			y: -3.0d,
-			description: [""],
+			description: ["This key pretty much adds inventory quantity directly to the drawers. This is pretty useful if you want to know how many you have without relying to jei to see."],
 			dependencies: ["0E463B85C9342584"],
 			id: "3586AF99E323BF1C",
 			tasks: [{
@@ -416,6 +438,7 @@
 			title: "To a-void a mess",
 			x: -0.5d,
 			y: -4.5d,
+			description: ["A very important upgrade when it comes as voiding stuff that surpasses it's limit."],
 			dependencies: ["0E463B85C9342584"],
 			id: "55CE84165FBD4C71",
 			tasks: [{
@@ -428,6 +451,7 @@
 			title: "Less is more",
 			x: -0.5d,
 			y: -3.5d,
+			description: ["Basically a storage downgrade to a stack. Very useful for certain automations with a redstone upgrade."],
 			dependencies: ["0E463B85C9342584"],
 			id: "4F7F32DDAF82DC98",
 			tasks: [{
@@ -440,6 +464,7 @@
 			title: "The Green mile",
 			x: -0.5d,
 			y: -2.5d,
+			description: ["Part of a series of Storage upgrade for drawers."],
 			dependencies: ["0E463B85C9342584"],
 			id: "16B59FE0949336A8",
 			tasks: [{
@@ -452,6 +477,7 @@
 			title: "And now I see",
 			x: -1.5d,
 			y: -4.0d,
+			description: ["This drawer upgrade will make it's display glow."],
 			dependencies: ["0E463B85C9342584"],
 			id: "285E3344E94190DD",
 			tasks: [{
@@ -464,6 +490,7 @@
 			title: "Emiting your Storage",
 			x: -1.5d,
 			y: -3.0d,
+			description: ["Redstone upgrade will emit a signal depending on how full they are, it can be useful when combined with a storage downgrade, for certain automations."],
 			dependencies: ["0E463B85C9342584"],
 			id: "6AA5870D4DE4EC30",
 			tasks: [{
@@ -476,7 +503,11 @@
 			title: "Tank you for your choice",
 			x: 2.5d,
 			y: -6.0d,
-			description: [""],
+			description: [
+				"This block stores liquid...",
+				"",
+				'&c"... I didn\'t get the flow"'
+			],
 			id: "7CE2B45914E4DCE8",
 			tasks: [{
 				id: "0D577024835AEC2A",
@@ -488,12 +519,69 @@
 			title: "Quite a Unit",
 			x: -0.5d,
 			y: -6.0d,
+			description: ["Stores a very huge amount of one item."],
 			id: "1B799395A5ACCBF0",
 			tasks: [{
 				id: "0FCA2F3E8EF32A92",
 				type: "item",
 				item: "industrialforegoing:common_black_hole_unit"
 			}]
+		},
+		{
+			title: "Hold your Gasses",
+			x: 5.5d,
+			y: -6.0d,
+			description: ["This is one of the best ways to hold your gasses, it can even void overflows."],
+			id: "05C9B5297E243633",
+			tasks: [{
+				id: "1AFE027975017A6F",
+				type: "item",
+				item: "mekanism:basic_chemical_tank"
+			}]
+		},
+		{
+			title: "Dank Inventory",
+			x: -2.0d,
+			y: -6.0d,
+			description: ["This is a storage that can hold multiple items that can be voided. Each upgrade will increase how much individual items can hold, and inventory size."],
+			id: "4CFA4F2920D8CE58",
+			tasks: [
+				{
+					id: "6810BA8646179DFA",
+					type: "item",
+					item: "dankstorage:dock"
+				},
+				{
+					id: "51E3D5738F9260CE",
+					type: "item",
+					item: "dankstorage:dank_1"
+				}
+			]
+		},
+		{
+			title: "Buckets have nothing over this.",
+			x: 4.0d,
+			y: -6.0d,
+			description: ["Similar to it's Dank version, Tank null can hold and void liquids surpassing it's limit. It also acts as a bucket in-world."],
+			id: "7C1C3007AA48AD5F",
+			tasks: [
+				{
+					id: "38B94905C73CD043",
+					type: "item",
+					item: "tanknull:dock"
+				},
+				{
+					id: "5F0F0D22853568B8",
+					type: "item",
+					item: {
+						id: "tanknull:tank_1",
+						Count: 1b,
+						tag: {
+							fluidinv: {}
+						}
+					}
+				}
+			]
 		}
 	]
 }

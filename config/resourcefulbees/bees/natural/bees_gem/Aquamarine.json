@@ -22,7 +22,7 @@
     "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:beach"
   },
   "BreedData": {

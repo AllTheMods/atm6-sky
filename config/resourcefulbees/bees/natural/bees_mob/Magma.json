@@ -19,7 +19,7 @@
     "secondaryOutputWeight": 0.01
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {

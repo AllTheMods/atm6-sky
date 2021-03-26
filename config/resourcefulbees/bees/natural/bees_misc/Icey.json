@@ -17,7 +17,7 @@
     "mainOutputWeight": 0.9
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:cold"
   },
   "BreedData": {

@@ -20,7 +20,7 @@
     "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {

@@ -18,7 +18,7 @@
     "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:ocean,tag:river"
   },
   "BreedData": {

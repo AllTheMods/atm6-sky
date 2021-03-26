@@ -20,7 +20,7 @@
     "mainInputCount": 9
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:magical"
   },
   "BreedData": {

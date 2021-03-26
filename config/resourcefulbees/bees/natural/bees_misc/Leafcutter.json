@@ -20,7 +20,7 @@
     "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:forest"
   },
   "BreedData": {

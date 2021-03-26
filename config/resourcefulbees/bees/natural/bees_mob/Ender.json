@@ -20,7 +20,7 @@
     "bottleOutputWeight": 0.01
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:end"
   },
   "BreedData": {

@@ -311,6 +311,26 @@ onEvent(`recipes`, e => {
     P: `extradisks:withering_processor`,
     C: `extrastorage:diamond_crafter`
   });
+  modifyShaped(`creativecrafter:creative_crafter`, 1, [
+    `BUB`,
+    `PCP`,
+    `BUB`
+  ], {
+    B: `#forge:storage_blocks/netherite`,
+    P: `extradisks:withering_processor`,
+    C: `extrastorage:netherite_crafter`,
+    U: `#forge:ingots/unobtainium`
+  });
+  modifyShaped(`bpm:singularity`, 1, [
+    `131`,
+    `242`,
+    `131`
+  ], {
+    1: `#forge:storage_blocks/unobtainium`,
+    2: `extradisks:withering_processor`,
+    3: `quark:dragon_scale`,
+    4: `mysticalagradditions:creative_essence`
+  });
 
   //Cable Tiers changes
   var caTypes = [
@@ -1072,7 +1092,8 @@ onEvent(`recipes`, e => {
   e.remove({
     id: `appliedenergistics2:inscriber/silicon_print`
   });
-  e.recipes.appliedenergistics2.inscriber({
+  e.custom({
+    type: `appliedenergistics2:inscriber`,
     mode: `inscribe`,
     result: {
       item: `appliedenergistics2:printed_silicon`

@@ -66,10 +66,7 @@ onEvent(`recipes`, e => {
       `appliedenergistics2:silicon`,
 
       `mekanism:upgrade_anchor`,
-      `mekanism:digital_miner`,
-      `mekanism:atomic_disassembler`,
       `mekanism:block_charcoal`,
-      `mekanismgenerators:wind_generator`,
 
       `forbidden_arcanus:rotten_leather`,
       `forbidden_arcanus:iron_chain`,
@@ -84,19 +81,13 @@ onEvent(`recipes`, e => {
       `cyclic:tile_transporter_empty`,
       /cyclic:.*_pipe/,
       `cyclic:cable_wrench`,
+      `cyclic:sleeping_mat`,
 
       `solarflux:sp_6`,
       `solarflux:sp_7`,
       `solarflux:sp_8`,
 
       /titanium:/,
-
-      /*
-      `quarryplus:solidquarry`,
-      `quarryplus:workbenchplus`,
-      */
-
-      `mininggadgets:upgrade_empty`,
 
       `pamhc2foodcore:fruitpunchitem`,
       `pamhc2foodcore:applejuiceitem`,
@@ -124,10 +115,6 @@ onEvent(`recipes`, e => {
       `extradisks:infinite_fluid_storage_part`,
       `extradisks:infinite_storage_part`,
 
-      `mysticalagriculture:unattuned_augment`,
-
-      `rftoolsbuilder:builder`,
-
       `darkutils:ender_hopper`,
 
       `excompressum:compressed_cobblestone`,
@@ -143,6 +130,8 @@ onEvent(`recipes`, e => {
       /excompressum:.*_crucible/,
 
       `pedestals:dustflour`,
+
+      /tinyredstone:silicon/,
     ]
   });
 

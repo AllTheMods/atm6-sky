@@ -171,6 +171,8 @@ onEvent(`recipes`, e => {
   replace(`#forge:slag`, `thermal:slag`, true);
   replace(`#forge:salt`, `mekanism:salt`, false);
 
+  e.replaceInput({id: `minecraft:beehive`}, `minecraft:honeycomb`, `#resourcefulbees:resourceful_honeycomb`);
+
   var waterReplace = [
     `thermal:rubber_from_vine`,
     `thermal:rubber_from_dandelion`,

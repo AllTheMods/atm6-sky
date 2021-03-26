@@ -59,13 +59,13 @@ onEvent(`recipes`, e => {
     });
   };
 
-  let t1 = types => tier(types, 1200, [`inferium`]);
-  let t2 = types => tier(types, 1900, [`prudentium`]);
-  let t3 = types => tier(types, 2400, [`tertium`]);
-  let t4 = types => tier(types, 3200, [`imperium`]);
-  let t5 = types => tier(types, 4000, [`supremium`]);
-  let t6 = types => tier(types, 5000, [`insanium`]);
-  let t7 = types => tier(types, 6000, [`magical`]);
+  let t1 = types => tier(types, 900, [`inferium`]);
+  let t2 = types => tier(types, 1600, [`prudentium`]);
+  let t3 = types => tier(types, 2000, [`tertium`]);
+  let t4 = types => tier(types, 2700, [`imperium`]);
+  let t5 = types => tier(types, 3500, [`supremium`]);
+  let t6 = types => tier(types, 4100, [`insanium`]);
+  let t7 = types => tier(types, 5200, [`magical`]);
 
 
   //Tier 1 Crops
@@ -114,12 +114,12 @@ onEvent(`recipes`, e => {
 
   //Tier 3 Crops
   t3([
-    //`azure_silver`,
+    `azure_silver`,
     `brass`,
     `bronze`,
     `certus_quartz`,
     `creeper`,
-    //`crimson_iron`,
+    `crimson_iron`,
     `ender_biotite`,
     `glowstone`,
     `graphite`,
@@ -138,7 +138,7 @@ onEvent(`recipes`, e => {
     `zinc`,
     `zombie`,
     `lumium`,
-    //`fluorite`,
+    `fluorite`,
     `aquamarine`,
     `signalum`,
     `starmetal`,
@@ -147,11 +147,11 @@ onEvent(`recipes`, e => {
 
   //Tier 4 Crops
   t4([
-    //`azure_electrum`,
+    `azure_electrum`,
     `blaze`,
     `chrome`,
     `constantan`,
-    //`crimson_steel`,
+    `crimson_steel`,
     `electrum`,
     `end`,
     `enderman`,
@@ -163,7 +163,6 @@ onEvent(`recipes`, e => {
     `lapis_lazuli`,
     `mithril`,
     `nickel`,
-    //`oratchalcum`,
     `osmium`,
     `refined_glowstone`,
     `refined_obsidian`,
@@ -202,12 +201,11 @@ onEvent(`recipes`, e => {
 
   //Magical Tier
   t7([
-    /*
     `allthemodium`,
     `vibranium`,
     `unobtainium`
-    */
   ]);
+
   /*
   //Botany Trees
   //KubeJS code relevant to botany pots: https://github.com/KubeJS-Mods/KubeJS/blob/2dd08e1f24b9619e613f5998f46eed69a4cf964f/common/src/main/java/dev/latvian/kubejs/recipe/mod/BotanyPotsCropRecipeJS.java#L44

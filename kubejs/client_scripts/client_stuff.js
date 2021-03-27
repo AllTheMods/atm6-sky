@@ -78,12 +78,15 @@ onEvent(`jei.hide.items`, e => {
     /cyclic:.*_pipe/,
     `cyclic:cable_wrench`,
     `cyclic:uncrafter`,
+    `cyclic:sleeping_mat`,
 
     //`naturesaura:chunk_loader`,
 
     /extrastorage:disk_/,
     /extrastorage:storagepart_/,
     /extrastorage:block_/,
+    `extrastorage:advanced_exporter`,
+    `extrastorage:advanced_importer`,
 
     `bloodmagic:saltpeter`,
     `bloodmagic:sulfur`,
@@ -127,6 +130,25 @@ onEvent(`jei.hide.items`, e => {
     `excompressum:compressed_granite`,
     `excompressum:compressed_andesite`,
     /excompressum:.*_crucible/,
+
+    /tinyredstone:silicon/,
+
+    `eidolon:sulfur`,
+    `eidolon:lead_ore`,
+    `eidolon:lead_ingot`,
+    `eidolon:lead_block`,
+    `eidolon:lead_nugget`,
+
+    `mininggadgets:minerslight`,
+
+    `platforms:ramp`,
+    `platforms:rise`,
+    `platforms:rail`,
+    `platforms:floor`,
+    `platforms:flat`,
+    `platforms:frame`,
+
+    /engineerstools:.+_grit/,
   ]);
 
   colors.forEach(color => {
@@ -160,21 +182,28 @@ onEvent(`jei.hide.items`, e => {
   hideMetal(`immersiveengineering`, `steel`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
   hideMetal(`immersiveengineering`, `electrum`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
   hideMetal(`immersiveengineering`, `constantan`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
+
   hideMetal(`mekanism`, `copper`, [`ingot`, `dust`, `nugget`, `block`]);
   hideMetal(`mekanism`, `tin`, [`ingot`, `dust`, `nugget`, `block`]);
   hideMetal(`mekanism`, `uranium`, [`ingot`, `dust`, `nugget`, `block`]);
   hideMetal(`mekanism`, `lead`, [`ingot`, `dust`, `nugget`, `block`]);
   hideMetal(`mekanism`, `osmium`, [`ingot`, `dust`, `nugget`, `block`]);
   hideMetal(`mekanism`, `bronze`, [`ingot`, `dust`, `nugget`, `block`]);
+
   hideMetal(`create`, `copper`, [`ingot`, `ore`, `nugget`, `block`]);
   hideMetal(`create`, `zinc`, [`ingot`, `ore`, `nugget`, `block`]);
+
   hideMetal(`thermal`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
   hideMetal(`thermal`, `tin`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
   hideMetal(`thermal`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
   hideMetal(`thermal`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
   hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+
   hideMetal(`iceandfire`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
   hideMetal(`iceandfire`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+
+  hideMetal(`tmechworks`, `copper`, [`ingot`, `ore`, `block`, `nugget`]);
+  hideMetal(`tmechworks`, `aluminum`, [`ingot`, `ore`, `block`, `nugget`]);
 
   const hideStuff = (mod, type, names) => {
     names.forEach(name => {
@@ -192,15 +221,18 @@ onEvent(`jei.hide.items`, e => {
   //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
   hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`]);
   hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`]);
+
   hideStuff(`mekanism`, `dust`, [`sulfur`, `lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`]);
   hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
   hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
   hideStuff(`mekanism`, `dirty_dust`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
   hideStuff(`mekanism`, `clump`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
-  hideStuff(`appliedenergistics2`, `dust`, [`nether_quartz`, `ender`, `iron`, `gold`]);
-  hideStuff(`create`, `sheet`, [`iron`, `golden`, `copper`]);
-  hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
 
+  hideStuff(`appliedenergistics2`, `dust`, [`nether_quartz`, `ender`, `iron`, `gold`]);
+
+  hideStuff(`create`, `sheet`, [`iron`, `golden`, `copper`]);
+
+  hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
 });
 
 onEvent(`item.tooltip`, e => {

@@ -24,6 +24,33 @@ onEvent(`recipes`, e => {
     });
   };
 
+  const modifyShaped = (result, count, pattern, ingridients) => {
+    e.remove({
+      output: result,
+      type: `minecraft:crafting_shaped`
+    });
+    e.shaped(Item.of(result, count),
+      pattern,
+      ingridients
+    );
+  };
+
+  const modifyShapeless = (result, count, ingridients) => {
+    e.remove({
+      output: result,
+      type: `minecraft:crafting_shapeless`
+    });
+    e.shapeless(Item.of(result, count), ingridients);
+  };
+
+  const modifySmelt = (result, ingridients) => {
+    e.remove({
+      output: result,
+      type: `minecraft:smelting`
+    });
+    e.smelting(result, ingridients);
+  };
+
   //Make bio fuel use tags instead of invidual items
   e.remove({
     output: `mekanism:bio_fuel`
@@ -116,7 +143,7 @@ onEvent(`recipes`, e => {
     `GVG`,
     ` G `
   ], {
-    E: `compressium:emerald_3`,
+    E: `compressium:emerald_2`,
     G: `#forge:storage_blocks/gold`,
     V: `minecraft:villager_spawn_egg`
   });
@@ -179,24 +206,6 @@ onEvent(`recipes`, e => {
   ], {
     L: `#minecraft:logs`
   });
-  /*
-  e.shaped(`minecraft:water_bucket`, [
-    ` C `,
-    `CBC`,
-    ` C `
-  ], {
-    C: `resourcefulbees:water_honeycomb`,
-    B: `minecraft:bucket`
-  });
-  e.shaped(`minecraft:lava_bucket`, [
-    ` C `,
-    `CBC`,
-    ` C `
-  ], {
-    C: `resourcefulbees:lava_honeycomb`,
-    B: `minecraft:bucket`
-  });
-  */
   e.shaped(`pipez:infinity_upgrade`, [
     `CIC`,
     `EUG`,
@@ -209,13 +218,7 @@ onEvent(`recipes`, e => {
     G: `mekanism:ultimate_chemical_tank`,
     T: `industrialforegoing:supreme_black_hole_tank`
   });
-  e.shaped(Item.of(`minecraft:chest`, 4), [
-    `LLL`,
-    `L L`,
-    `LLL`
-  ], {
-    L: `#minecraft:logs`
-  });
+
   e.custom({
     type: `industrialforegoing:dissolution_chamber`,
     input: [
@@ -239,124 +242,6 @@ onEvent(`recipes`, e => {
   mekEnrich(Item.of(`powah:uraninite`, 2), `powah:uraninite_ore_poor`);
   mekEnrich(Item.of(`powah:uraninite`, 4), `powah:uraninite_ore`);
   mekEnrich(Item.of(`powah:uraninite`, 8), `powah:uraninite_ore_dense`);
-
-  //Creative recipes
-  energize([{
-    item: `appliedenergistics2:dense_energy_cell`
-  }], `appliedenergistics2:creative_energy_cell`, 1, 420000000);
-  energize([{
-    item: `refinedstorage:controller`
-  }], `refinedstorage:creative_controller`, 1, 420000000);
-  energize([{
-    item: `refinedstorageaddons:wireless_crafting_grid`
-  }], `refinedstorageaddons:creative_wireless_crafting_grid`, 1, 420000);
-  energize([{
-    item: `refinedstorage:wireless_crafting_monitor`
-  }], `refinedstorage:creative_wireless_crafting_monitor`, 1, 420000);
-  energize([{
-    item: `refinedstorage:wireless_fluid_grid`
-  }], `refinedstorage:creative_wireless_fluid_grid`, 1, 420000);
-  energize([{
-    item: `refinedstorage:wireless_grid`
-  }], `refinedstorage:creative_wireless_grid`, 1, 420000);
-  e.shapeless(Item.of(`botania:mana_tablet`, {
-    mana: 500000,
-    creative: 1
-  }), [`botania:creative_pool`]);
-  e.shapeless(`botania:creative_pool`, [Item.of(`botania:mana_tablet`, {
-    mana: 500000,
-    creative: 1
-  })]);
-  pressure([{
-      type: `pneumaticcraft:stacked_item`,
-      item: `mysticalagradditions:insanium_block`,
-      count: 16
-    },
-    {
-      type: `pneumaticcraft:stacked_item`,
-      tag: `forge:pellets/antimatter`,
-      count: 16
-    },
-    {
-      type: `pneumaticcraft:stacked_item`,
-      item: `botania:gaia_ingot`,
-      count: 8
-    },
-    {
-      type: `pneumaticcraft:stacked_item`,
-      tag: `forge:storage_blocks/allthemodium`,
-      count: 4
-    },
-    {
-      type: `pneumaticcraft:stacked_item`,
-      tag: `forge:storage_blocks/vibranium`,
-      count: 4
-    },
-    {
-      type: `pneumaticcraft:stacked_item`,
-      tag: `forge:storage_blocks/unobtainium`,
-      count: 4
-    },
-    /*
-      {
-        type: `pneumaticcraft:stacked_item`,
-        item: `elementalcraft:purerock`,
-        count: 8
-      }, */
-    {
-      type: `pneumaticcraft:stacked_item`,
-      item: `xreliquary:angelheart_vial`,
-      count: 12
-    }
-    /* ,
-      {
-        type: `pneumaticcraft:stacked_item`,
-        item: `mahoutsukai:fae_essence`,
-        count: 1
-      } */
-  ], `mysticalagradditions:creative_essence`, 1, 4.9);
-  e.shaped(`botania:creative_pool`, [
-    `CSC`,
-    `CPC`,
-    `CWC`
-  ], {
-    C: `mysticalagradditions:creative_essence`,
-    P: `botania:fabulous_pool`,
-    S: `kubejs:rune_of_sins`,
-    W: `kubejs:mass_of_wills`
-  });
-  e.shaped(`pneumaticcraft:creative_compressor`, [
-    `CLC`,
-    `FCA`,
-    `CEC`
-  ], {
-    C: `mysticalagradditions:creative_essence`,
-    L: `pneumaticcraft:advanced_liquid_compressor`,
-    A: `pneumaticcraft:advanced_air_compressor`,
-    E: `pneumaticcraft:electrostatic_compressor`,
-    F: `pneumaticcraft:flux_compressor`
-  });
-  e.shaped(`create:creative_motor`, [
-    `CCC`,
-    `FEA`,
-    `CCC`
-  ], {
-    C: `mysticalagradditions:creative_essence`,
-    A: `create:shaft`,
-    E: `create:furnace_engine`,
-    F: `create:brass_casing`
-  });
-  /*
-  e.shaped(`rats:rat_upgrade_creative`, [
-    `HUH`,
-    `CCC`,
-    `HUH`
-  ], {
-    C: `mysticalagradditions:creative_essence`,
-    H: `rats:creative_cheese`,
-    U: `rats:rat_upgrade_nonbeliever`
-  });
-  */
 
   //SGear salvaging
   const salvage = (item, results) => {
@@ -389,11 +274,7 @@ onEvent(`recipes`, e => {
     Item.of(`minecraft:iron_nugget`, 2).toResultJson()
   ]);
 
-  //Exrastorage fixes
-  e.remove({
-    mod: `extrastorage`
-  });
-
+  //Extrastorage fixes
   e.shaped(`extrastorage:iron_crafter`, [
     `B B`,
     `PCP`,
@@ -430,24 +311,51 @@ onEvent(`recipes`, e => {
     P: `extradisks:withering_processor`,
     C: `extrastorage:diamond_crafter`
   });
-  e.shaped(`extrastorage:advanced_exporter`, [
-    ` T `,
+  modifyShaped(`creativecrafter:creative_crafter`, 1, [
+    `BUB`,
     `PCP`,
-    ` T `
+    `BUB`
   ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:exporter`
+    B: `#forge:storage_blocks/netherite`,
+    P: `extradisks:withering_processor`,
+    C: `extrastorage:netherite_crafter`,
+    U: `#forge:ingots/unobtainium`
   });
-  e.shaped(`extrastorage:advanced_importer`, [
-    ` T `,
-    `PCP`,
-    ` T `
+  modifyShaped(`bpm:singularity`, 1, [
+    `131`,
+    `242`,
+    `131`
   ], {
-    T: `minecraft:redstone_torch`,
-    P: `refinedstorage:improved_processor`,
-    C: `refinedstorage:importer`
+    1: `#forge:storage_blocks/unobtainium`,
+    2: `extradisks:withering_processor`,
+    3: `quark:dragon_scale`,
+    4: `mysticalagradditions:creative_essence`
   });
+
+  //Cable Tiers changes
+  var caTypes = [
+    `importer`,
+    `exporter`,
+    `constructor`,
+    `destructor`
+  ];
+  const caTier = (tier, corners, processor, cables) => {
+    caTypes.forEach(caType => {
+      e.shaped(`cabletiers:${tier}_${caType}`, [
+        `a a`,
+        `bcb`,
+        `a a`
+      ], {
+        a: corners,
+        b: processor,
+        c: `${cables}${caType}`
+      });
+    });
+  };
+  caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
+  caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
+  caTier(`creative`, `#forge:ingots/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
+
   //NBT Resets
   var resetNBT = [
     `rftoolsbase:filter_module`,
@@ -516,7 +424,6 @@ onEvent(`recipes`, e => {
   smithing(`metalbarrels:wood_to_netherite`, `metalbarrels:wood_to_obsidian`, `#forge:ingots/netherite`);
 
   //Jumbo Furnace
-  /*
   const jumbo = (ingredients, result, xp) => {
     e.custom({
       type: `jumbofurnace:jumbo_smelting`,
@@ -525,45 +432,7 @@ onEvent(`recipes`, e => {
       experience: xp
     });
   };
-  jumbo([
-      Ingredient.of(`storagedrawers:emerald_storage_upgrade`, 16).toJson(),
-      Ingredient.of(`#forge:ingots/unobtainium`, 2).toJson(),
-      Ingredient.of(`#forge:ingots/allthemodium`, 4).toJson(),
-      Ingredient.of(`#forge:ender_pearls`, 16).toJson()
-    ],
-    `storagedrawers:creative_storage_upgrade`, 5
-  );
-  */
-  //Quark marble to Astral Sorcery Marble
-  /*
-  e.custom({
-    type: `astralsorcery:block_transmutation`,
-    input: {
-      block: `quark:marble`,
-    },
-    output: {
-      block: `astralsorcery:marble_raw`
-    },
-    starlight: 200.0
-  });
 
-  e.custom({
-    type: `astralsorcery:infuser`,
-    fluidInput: `astralsorcery:liquid_starlight`,
-    input: {
-      item: `quark:marble`
-    },
-    output: {
-      item: `astralsorcery:marble_raw`,
-      count: 1
-    },
-    consumptionChance: 0.1,
-    duration: 100,
-    consumeMultipleFluids: false,
-    acceptChaliceInput: true,
-    copyNBTToOutputs: false
-  });
-  */
   //Reliquary changes
   e.remove({
     output: `xreliquary:fertile_lily_pad`,
@@ -580,32 +449,8 @@ onEvent(`recipes`, e => {
     F: `mysticalagriculture:mystical_fertilizer`
   });
 
-  /*
-  //QuarryPlus
-  e.shaped(`quarryplus:solidquarry`, [
-    `FFF`,
-    `DGD`,
-    `AAA`
-  ], {
-    F: `minecraft:furnace`,
-    D: `minecraft:diamond_pickaxe`,
-    G: `#forge:storage_blocks/gold`,
-    A: `#forge:nuggets/allthemodium`
-  });
-  e.shaped(`quarryplus:workbenchplus`, [
-    `III`,
-    `GDG`,
-    `AAA`
-  ], {
-    I: `#forge:storage_blocks/iron`,
-    G: `#forge:storage_blocks/gold`,
-    D: `#forge:storage_blocks/diamond`,
-    A: `#forge:nuggets/allthemodium`
-  });
-  */
-
   //Mining Gadgets
-  e.shaped(`mininggadgets:upgrade_empty`, [
+  modifyShaped(`mininggadgets:upgrade_empty`, 1, [
     `RAL`,
     `DGD`,
     `LAR`
@@ -618,7 +463,7 @@ onEvent(`recipes`, e => {
   });
 
   //Mystical Agriculture
-  e.shaped(`mysticalagriculture:unattuned_augment`, [
+  modifyShaped(`mysticalagriculture:unattuned_augment`, 1, [
     `PMP`,
     `AMA`,
     `PMP`
@@ -629,7 +474,7 @@ onEvent(`recipes`, e => {
   });
 
   //Mekanism
-  e.shaped(`mekanism:digital_miner`, [
+  modifyShaped(`mekanism:digital_miner`, 1, [
     `AUA`,
     `LRL`,
     `TST`
@@ -641,7 +486,7 @@ onEvent(`recipes`, e => {
     S: `mekanism:steel_casing`,
     U: `#forge:ingots/unobtainium`
   });
-  e.shaped(`mekanism:atomic_disassembler`, [
+  modifyShaped(`mekanism:atomic_disassembler`, 1, [
     `RER`,
     `RUR`,
     ` V `
@@ -651,7 +496,7 @@ onEvent(`recipes`, e => {
     U: `#forge:circuits/ultimate`,
     V: `#forge:ingots/vibranium`
   });
-  e.shaped(`mekanismgenerators:wind_generator`, [
+  modifyShaped(`mekanismgenerators:wind_generator`, 1, [
     ` O `,
     `OCO`,
     `EBE`
@@ -662,8 +507,7 @@ onEvent(`recipes`, e => {
     O: `#forge:ingots/osmium`
   });
 
-  /* //Jetpacks
-
+  //Jetpacks
   e.shaped(`ironjetpacks:diamond_cell`, [
     ` R `,
     `TCT`,
@@ -739,7 +583,7 @@ onEvent(`recipes`, e => {
     J: [`ironjetpacks:steel_jetpack`, `ironjetpacks:electrum_jetpack`, `ironjetpacks:invar_jetpack`],
     T: `ironjetpacks:platinum_thruster`,
     R: `angelring:itemdiamondring`
-  }); */
+  });
 
   //Foods
   e.shaped(`pamhc2foodcore:fruitpunchitem`, [
@@ -817,7 +661,7 @@ onEvent(`recipes`, e => {
     N: `#forge:nuggets/iron`,
     I: `#forge:ingots/iron`
   });
-  e.shaped(`entangled:block`, [
+  modifyShaped(`entangled:block`, 1, [
     `UEU`,
     `ECE`,
     `UEU`
@@ -826,7 +670,7 @@ onEvent(`recipes`, e => {
     E: `#forge:ender_pearls`,
     C: `minecraft:ender_chest`
   });
-  e.shaped(`entangled:item`, [
+  modifyShaped(`entangled:item`, 1, [
     ` EC`,
     ` UE`,
     `U  `
@@ -890,7 +734,7 @@ onEvent(`recipes`, e => {
   buildQuarkChest(`purpur`, `minecraft:purpur_block`);
 
   //RFTools
-  e.shaped(`rftoolsbuilder:builder`, [
+  modifyShaped(`rftoolsbuilder:builder`, 1, [
     `aea`,
     `rmr`,
     `ara`
@@ -973,38 +817,6 @@ onEvent(`recipes`, e => {
   //Blood Magic
   e.recipes.bloodmagic.altar(`integrateddynamics:menril_sapling`, `minecraft:spruce_sapling`).upgradeLevel(2);
 
-  //Functions
-  const modifyShaped = (result, count, pattern, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:crafting_shaped`
-    });
-    e.shaped(Item.of(result, count),
-      pattern,
-      ingridients
-    );
-  };
-
-  const modifyShapeless = (result, count, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:crafting_shapeless`
-    });
-    e.shapeless(Item.of(result, count), ingridients);
-  };
-
-  const modifySmelt = (result, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:smelting`
-    });
-    e.smelting(result, ingridients);
-  };
-
-  /*
-  e.replaceOutput(`#forge:cheese`, `rats:cheese`);
-  */
-
   //Modified recipes
   /*
   const combBlock = `#resourcefulbees:resourceful_honeycomb_block`;
@@ -1062,17 +874,6 @@ onEvent(`recipes`, e => {
     S: `thermal:sawdust_block`
   });
   modifyShapeless(`botania:lexicon`, 1, [`#minecraft:flowers`, `minecraft:book`]);
-  modifyShaped(`buildinggadgets:gadget_exchanging`, 1, [
-    `iri`,
-    `dld`,
-    `iai`
-  ], {
-    i: `#forge:ingots/iron`,
-    r: `#forge:dusts/redstone`,
-    l: `#forge:gems/lapis`,
-    d: `#forge:gems/diamond`,
-    a: `#forge:nuggets/allthemodium`
-  }); //gated since it can change modium ores easily
   modifyShaped(`minecraft:honeycomb_block`, 1, [
     `CCC`,
     `CCC`,
@@ -1114,7 +915,6 @@ onEvent(`recipes`, e => {
     I: `mekanism:alloy_infused`,
     O: `#forge:ingots/osmium`
   });
-  /*
   modifyShaped(`engineerstools:crushing_hammer`, 1, [
     `RI `,
     `BS `,
@@ -1125,7 +925,6 @@ onEvent(`recipes`, e => {
     B: `#forge:storage_blocks/iron`,
     S: `#forge:rods/wooden`
   });
-  */
   modifyShaped(`forbidden_arcanus:candle_lamp`, 1, [
     `NDN`,
     `GAG`,
@@ -1156,20 +955,6 @@ onEvent(`recipes`, e => {
     T: `#forge:treated_wood`,
     R: `mekanism:resistive_heater`
   });
-  /*
-  e.remove({
-    id: `bagofyurting:bag_of_yurting`
-  });
-  e.shaped(Item.of(`bagofyurting:bag_of_yurting`, 1), [
-    `WSW`,
-    `WEW`,
-    `WWW`
-  ], {
-    W: `#minecraft:wool`,
-    E: `#forge:ender_pearls`,
-    S: `#forge:string`
-  });
-  */
   var ingots = [
     `#forge:ingots/gold`,
     `#forge:ingots/iron`,
@@ -1279,15 +1064,6 @@ onEvent(`recipes`, e => {
     Q: `#forge:gems/quartz`,
     S: `#minecraft:wooden_slabs`
   });
-  /*
-  modifyShaped(`minecraft:beehive`, 1, [
-    `PPP`,
-    `CCC`,
-    `PPP`
-  ], {
-    P: `#minecraft:planks`,
-    C: `#resourcefulbees:resourceful_honeycomb`
-  });
   modifyShaped(`resourcefulbees:centrifuge_controller`, 1, [
     `ICI`,
     `BAB`,
@@ -1299,6 +1075,8 @@ onEvent(`recipes`, e => {
     A: `minecraft:comparator`,
     R: `#forge:storage_blocks/redstone`
   });
+
+  /*
   modifyShaped(`minecolonies:blockhutbuilder`, 1, [
     `PTP`,
     `PDP`,
@@ -1314,7 +1092,8 @@ onEvent(`recipes`, e => {
   e.remove({
     id: `appliedenergistics2:inscriber/silicon_print`
   });
-  e.recipes.appliedenergistics2.inscriber({
+  e.custom({
+    type: `appliedenergistics2:inscriber`,
     mode: `inscribe`,
     result: {
       item: `appliedenergistics2:printed_silicon`

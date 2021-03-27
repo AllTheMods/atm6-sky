@@ -9,8 +9,8 @@
 	quests: [
 		{
 			title: "Slave Labour",
-			x: 1.0d,
-			y: -0.5d,
+			x: -10.5d,
+			y: -9.5d,
 			description: [
 				"Auto-Sieves are a server friendly way to get material, and it contains a mini slave to do your bidding.",
 				"",
@@ -173,21 +173,27 @@
 		},
 		{
 			title: "More power to the slaves!",
-			x: 1.0d,
-			y: 1.5d,
-			description: [""],
+			x: -10.5d,
+			y: -7.5d,
+			description: ["Pretty much the same as the previous auto-sieve. But it can use compressed grounded up blocks."],
 			dependencies: ["7F95D4C8AEFB5A95"],
 			id: "06821798EEECA8A4",
 			tasks: [{
 				id: "7AA84241D17CBAB8",
 				type: "item",
 				item: "excompressum:auto_heavy_sieve"
+			}],
+			rewards: [{
+				id: "53AE1B7C56695780",
+				type: "item",
+				item: "minecraft:name_tag",
+				count: 8
 			}]
 		},
 		{
 			icon: "excompressum:compressed_dust",
 			x: 1.0d,
-			y: -4.0d,
+			y: -9.5d,
 			description: [
 				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them then just hammering.",
 				"",
@@ -218,8 +224,8 @@
 		},
 		{
 			title: "Pipez",
-			x: 0.0d,
-			y: -1.5d,
+			x: -11.5d,
+			y: -10.5d,
 			description: ["This pipe mod is an all round powerhouse, from filtering options to greatly optimised, so give your server owner the weekend off and try them out ;)"],
 			id: "38F48F2A9BB52F24",
 			tasks: [
@@ -256,201 +262,21 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: -8.0d,
-			id: "4EE8BDAE2E49EE70",
-			tasks: [{
-				id: "791C18F3E33D57FC",
-				type: "item",
-				item: "appliedenergistics2:fluix_glass_cable"
-			}]
-		},
-		{
-			x: -2.5d,
-			y: 0.5d,
-			dependencies: [
-				"351F47DB5DE826CD",
-				"590BF6A08BE642AE"
-			],
-			dependency_requirement: "one_completed",
-			id: "51FF0CE575E125B8",
-			tasks: [{
-				id: "7D57D8FEF5C431F9",
-				type: "item",
-				item: "appliedenergistics2:crafting_terminal"
-			}]
-		},
-		{
-			x: -2.5d,
-			y: -5.5d,
-			dependencies: ["4EE8BDAE2E49EE70"],
-			id: "0BA678E979B4DC0A",
-			tasks: [
-				{
-					id: "54A12BC24A3B158A",
-					type: "item",
-					item: "appliedenergistics2:energy_acceptor"
-				},
-				{
-					id: "5C460871CA5B70C9",
-					type: "item",
-					item: {
-						id: "appliedenergistics2:energy_cell",
-						Count: 1b,
-						tag: {
-							internalMaxPower: 200000.0d,
-							internalCurrentPower: 200000.0d
-						}
-					}
-				}
-			]
-		},
-		{
-			x: -2.5d,
-			y: -2.5d,
-			dependencies: ["0BA678E979B4DC0A"],
-			optional: true,
-			id: "590BF6A08BE642AE",
-			tasks: [
-				{
-					id: "1C5049E35886498F",
-					type: "item",
-					item: "appliedenergistics2:drive"
-				},
-				{
-					id: "0E964719E5F4E94F",
-					type: "item",
-					item: "appliedenergistics2:1k_cell_component"
-				}
-			],
-			rewards: [{
-				id: "1654F31C53BE9B10",
-				type: "item",
-				item: {
-					id: "appliedenergistics2:4k_storage_cell",
-					Count: 1b,
-					tag: {}
-				}
-			}]
-		},
-		{
-			x: 4.5d,
-			y: -5.5d,
-			dependencies: ["2171A3590A29FD59"],
-			id: "548B3AD584C8D3B5",
-			tasks: [{
-				id: "470FA81E3476F181",
-				type: "item",
-				item: "refinedstorage:controller"
-			}]
-		},
-		{
-			x: 4.5d,
-			y: 0.5d,
-			dependencies: [
-				"2D882D3D8631D8D1",
-				"479D052DE3553CEF"
-			],
-			id: "75FF9CAB83A38030",
-			tasks: [{
-				id: "4B9F5EDFF343EA48",
-				type: "item",
-				item: "refinedstorage:crafting_grid"
-			}]
-		},
-		{
-			x: 4.5d,
-			y: -8.0d,
-			id: "2171A3590A29FD59",
-			tasks: [{
-				id: "1351AB995405CA6B",
-				type: "item",
-				item: "refinedstorage:cable"
-			}]
-		},
-		{
-			x: 4.5d,
-			y: -2.5d,
-			dependencies: ["548B3AD584C8D3B5"],
-			optional: true,
-			id: "479D052DE3553CEF",
-			tasks: [
-				{
-					id: "647B4CFE536A1C22",
-					type: "item",
-					item: "refinedstorage:disk_drive"
-				},
-				{
-					id: "0070219C3617379F",
-					type: "item",
-					item: "refinedstorage:1k_storage_part"
-				}
-			],
-			rewards: [{
-				id: "0933C038AE0E1924",
-				type: "item",
-				item: "refinedstorage:4k_storage_disk"
-			}]
-		},
-		{
-			title: "Dynamic Power, needs storage.",
-			x: -0.5d,
-			y: -8.5d,
-			description: [
-				"Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY",
-				"",
-				"You must do all Dynamos! Not just Magmatic."
-			],
+			title: "Dynamic Lava Power",
+			x: -5.0d,
+			y: -9.5d,
+			description: ["Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY"],
 			dependencies: ["095F5AE5A801000A"],
 			id: "716D9C2F74999B5A",
-			tasks: [
-				{
-					id: "7FBEF040E634FFD4",
-					type: "item",
-					item: "thermal:dynamo_magmatic"
-				},
-				{
-					id: "2091708924EB3628",
-					type: "item",
-					item: "thermal:dynamo_stirling"
-				},
-				{
-					id: "330E6AEDD35CFFFD",
-					type: "item",
-					item: "thermal:dynamo_compression"
-				},
-				{
-					id: "1DFAC10ECCA294BF",
-					type: "item",
-					item: "thermal:dynamo_numismatic"
-				},
-				{
-					id: "6D5C848CAC32DA7A",
-					type: "item",
-					item: "thermal:dynamo_lapidary"
-				}
-			],
-			rewards: [{
-				id: "7B6D175A3AA1A053",
+			tasks: [{
+				id: "7FBEF040E634FFD4",
 				type: "item",
-				item: {
-					id: "thermal:energy_cell",
-					Count: 1b,
-					tag: {
-						BlockEntityTag: {
-							EnergyMax: 1000000,
-							EnergySend: 1000,
-							Energy: 0,
-							EnergyRecv: 1000
-						}
-					}
-				},
-				count: 4
+				item: "thermal:dynamo_magmatic"
 			}]
 		},
 		{
-			x: 0.0d,
-			y: 0.5d,
+			x: -11.5d,
+			y: -8.5d,
 			id: "21FB306379352D15",
 			tasks: [
 				{
@@ -471,8 +297,8 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: 0.5d,
+			x: -9.5d,
+			y: -8.5d,
 			description: ["You are a little far away from an angel ring, so a jetpack might stop you dying to the void..."],
 			id: "7F282D66F27BA49D",
 			tasks: [{
@@ -499,8 +325,8 @@
 		{
 			title: "The Power of Pedestal!",
 			icon: "pedestals:pedestal/stone333",
-			x: 2.0d,
-			y: -1.5d,
+			x: -9.5d,
+			y: -10.5d,
 			description: [
 				"Pedestal is a mod that greatly opens to new ideas.",
 				"",
@@ -541,12 +367,15 @@
 			}]
 		},
 		{
-			x: 1.0d,
-			y: -8.0d,
+			x: -6.5d,
+			y: -9.5d,
 			description: [
 				"There are many mods that generates power, some of which are better then others.",
 				"",
-				"For this, you must do at least the basic generators of certain mods."
+				"For this, you must do at least the basic generators of certain mods.",
+				"",
+				'&c"These quest weren\'t meant to be proportionate at 1st. They were meant for teaching the energy production of their mod, and reward you their mod\'s battery. I will make some more optional. But the rewards will still be related to their mod. With the exception of coal generators."',
+				"- Pun_isher"
 			],
 			id: "095F5AE5A801000A",
 			tasks: [{
@@ -557,126 +386,64 @@
 			}]
 		},
 		{
-			title: "Mekanism Basic Generators",
-			x: 2.5d,
-			y: -8.5d,
+			title: "I can swim in lava!",
+			x: -5.5d,
+			y: -10.5d,
 			description: [
-				"Earth, Water, Air, and Fire, these are the ways Mekanism can generate power.",
+				"This is one special machine that works when surrounded by lava.",
 				"",
-				"You the player will...",
+				'You can even "Lava-log" it to generate more power.',
 				"",
-				"*gets smack*",
-				"",
-				"Ouch... what...",
-				"",
-				"*Background angry mumbling*",
-				"",
-				"Ok, no copyright stuff..."
+				"It can also be filled for EVEN MOAR POWAH!"
 			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "581A8BC06B67F682",
-			tasks: [
-				{
-					id: "388A450835FCB413",
-					type: "item",
-					item: "mekanismgenerators:heat_generator"
-				},
-				{
-					id: "241A717A225EA9A4",
-					type: "item",
-					item: "mekanismgenerators:wind_generator"
-				},
-				{
-					id: "370B7AEC18D9313A",
-					type: "item",
-					item: "mekanismgenerators:bio_generator"
-				},
-				{
-					id: "7EEBF559363F895B",
-					type: "item",
-					item: "mekanismgenerators:gas_burning_generator"
-				}
-			],
-			rewards: [{
-				id: "09385C016B12D4D9",
+			tasks: [{
+				id: "388A450835FCB413",
 				type: "item",
-				item: "mekanism:advanced_energy_cube"
+				item: "mekanismgenerators:heat_generator"
 			}]
 		},
 		{
-			title: "Too little Powah",
-			x: 1.0d,
-			y: -9.5d,
-			description: [""],
+			title: "Heated Bum? Need water?",
+			x: -5.5d,
+			y: -8.5d,
+			description: [
+				"The generators of this pack can be upgraded by crafting.",
+				"",
+				"This generator will produce power with a heat source underneath and filling it up with a coolant, most commonly water."
+			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "37B77C8C9403772C",
-			tasks: [
-				{
-					id: "42E2681F07A4509B",
-					type: "item",
-					item: "powah:thermo_generator_starter"
-				},
-				{
-					id: "27F32E94A09E1BE0",
-					type: "item",
-					item: "powah:furnator_starter"
-				},
-				{
-					id: "34A12AE48F584380",
-					type: "item",
-					item: "powah:magmator_starter"
-				}
-			],
-			rewards: [{
-				id: "54608F5D459350B7",
+			tasks: [{
+				id: "42E2681F07A4509B",
 				type: "item",
-				item: "powah:energy_cell_hardened"
+				item: "powah:thermo_generator_starter"
 			}]
 		},
 		{
-			title: "Immersive in your work",
-			x: 0.0d,
-			y: -7.0d,
+			title: "Immersive Twist",
+			x: -6.5d,
+			y: -7.5d,
 			description: [
-				"These 2 blocks, are the basic generator for Immesive engineering.",
+				"This generator, requires another part that gives a rotational force to it.",
 				"",
-				"The water wheel can be placed up to 3x on the dynamo."
+				"Thankfully it has 2 ways for it, and they can be used as decorations when not needed when you get better power.",
+				"",
+				"But the best part of this, is that the generator doesn't need fuel."
 			],
 			dependencies: ["095F5AE5A801000A"],
 			id: "4879018D4DB5BC04",
-			tasks: [
-				{
-					id: "10DC54541B56F70D",
-					type: "item",
-					item: "immersiveengineering:dynamo"
-				},
-				{
-					id: "28D3BF7115B74D87",
-					type: "item",
-					item: "immersiveengineering:watermill"
-				},
-				{
-					id: "486D142FDCDF6C93",
-					type: "item",
-					item: "immersiveengineering:windmill"
-				},
-				{
-					id: "0F9F5AEF48C7AC06",
-					type: "item",
-					item: "immersiveengineering:thermoelectric_generator"
-				}
-			],
-			rewards: [{
-				id: "463F7EE9CFDF5251",
+			tasks: [{
+				id: "10DC54541B56F70D",
 				type: "item",
-				item: "immersiveengineering:capacitor_lv",
-				count: 4
+				item: "immersiveengineering:dynamo"
 			}]
 		},
 		{
 			title: "Too Many Coal Generators",
-			x: 2.0d,
-			y: -7.0d,
+			x: -6.5d,
+			y: -11.0d,
 			dependencies: ["095F5AE5A801000A"],
 			id: "56A7CAD920B3AD73",
 			tasks: [
@@ -726,7 +493,7 @@
 		},
 		{
 			x: 1.0d,
-			y: -5.5d,
+			y: -11.0d,
 			optional: true,
 			id: "529BDCD9FBD4E7F3",
 			tasks: [{
@@ -737,7 +504,7 @@
 		},
 		{
 			x: 0.0d,
-			y: -5.0d,
+			y: -10.5d,
 			optional: true,
 			id: "5ECCC7CDE3E42458",
 			tasks: [{
@@ -748,19 +515,20 @@
 		},
 		{
 			title: "Pedestal Upgrade: Crusher",
+			icon: "pedestals:coin/crusher",
 			x: 2.0d,
-			y: -5.0d,
+			y: -10.5d,
+			dependencies: ["021ED6FBC7CF522F"],
 			optional: true,
 			id: "0E0AEF15C523A650",
 			tasks: [{
-				id: "080EEE9FBB7B97E3",
-				type: "item",
-				item: "pedestals:coin/crusher"
+				id: "5D34EACA1BDD4457",
+				type: "checkmark"
 			}]
 		},
 		{
-			x: -0.5d,
-			y: -4.0d,
+			x: 1.0d,
+			y: -8.0d,
 			optional: true,
 			id: "0F6BB69B584D2BEB",
 			tasks: [{
@@ -771,7 +539,7 @@
 		},
 		{
 			x: 2.5d,
-			y: -4.0d,
+			y: -9.5d,
 			optional: true,
 			id: "2F63FABFEE484565",
 			tasks: [{
@@ -782,7 +550,7 @@
 		},
 		{
 			x: 2.0d,
-			y: -3.0d,
+			y: -8.5d,
 			optional: true,
 			id: "11B9AF634EAC4E98",
 			tasks: [{
@@ -793,37 +561,13 @@
 		},
 		{
 			x: 0.0d,
-			y: -3.0d,
+			y: -8.5d,
 			optional: true,
 			id: "4EFEBF1B0117570B",
 			tasks: [{
 				id: "3DF977D6B45A04DA",
 				type: "item",
 				item: "integrateddynamics:mechanical_squeezer"
-			}]
-		},
-		{
-			x: 5.5d,
-			y: -2.5d,
-			dependencies: ["548B3AD584C8D3B5"],
-			optional: true,
-			id: "2D882D3D8631D8D1",
-			tasks: [{
-				id: "13D78A37E783CD97",
-				type: "item",
-				item: "refinedstorage:external_storage"
-			}]
-		},
-		{
-			x: -3.5d,
-			y: -2.5d,
-			dependencies: ["0BA678E979B4DC0A"],
-			optional: true,
-			id: "351F47DB5DE826CD",
-			tasks: [{
-				id: "3358BA4448AA2883",
-				type: "item",
-				item: "appliedenergistics2:storage_bus"
 			}]
 		},
 		{
@@ -835,8 +579,8 @@
 					colors: {}
 				}
 			},
-			x: -6.0d,
-			y: -8.0d,
+			x: -12.5d,
+			y: -9.5d,
 			description: ["You have to make a void miner in the End."],
 			id: "016F783E9FAB8B11",
 			tasks: [{
@@ -846,8 +590,8 @@
 			}]
 		},
 		{
-			x: 8.0d,
-			y: -8.0d,
+			x: -8.5d,
+			y: -9.5d,
 			id: "230970A569CB92D6",
 			tasks: [
 				{
@@ -866,6 +610,249 @@
 					item: "industrialforegoing:fluid_laser_base"
 				}
 			]
+		},
+		{
+			x: -4.0d,
+			y: -9.5d,
+			description: ["A dynamic generator that can use most oil type fluids, even the Creosole Oil from Immersive Engineering's Blast Furnace."],
+			dependencies: ["095F5AE5A801000A"],
+			id: "27B5C6456BD16FD3",
+			tasks: [{
+				id: "566F8329836605AD",
+				type: "item",
+				item: "thermal:dynamo_compression"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -9.5d,
+			description: ["This dynamic generator uses Metal coins to produce a large amount of power."],
+			dependencies: ["095F5AE5A801000A"],
+			id: "2E117EDB18112FB1",
+			tasks: [{
+				id: "5EDA891B5A56AA6C",
+				type: "item",
+				item: "thermal:dynamo_numismatic"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -9.5d,
+			description: ["This dynamic generator uses Crystals as a power source, such as diamonds, lapis, and quartz."],
+			dependencies: ["095F5AE5A801000A"],
+			id: "140CA8C6BF4850DB",
+			tasks: [{
+				id: "31B9353A0F3ACA75",
+				type: "item",
+				item: "thermal:dynamo_lapidary"
+			}]
+		},
+		{
+			title: "Hot and Cold",
+			x: -6.5d,
+			y: -6.5d,
+			description: [
+				"This generator requires both sides a hot and cold source block.",
+				"",
+				"All 4 sides can be used as long as their opposite side is the opposite temperature.",
+				"",
+				"This will not consume the materials. So it's another way for infinite source of low energy."
+			],
+			dependencies: ["095F5AE5A801000A"],
+			id: "36214249EB744748",
+			tasks: [{
+				id: "08649E1117B4A726",
+				type: "item",
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -7.0d,
+			dependencies: ["4879018D4DB5BC04"],
+			id: "04800925F49E61C8",
+			tasks: [{
+				id: "356374D0A4BF17C5",
+				type: "item",
+				item: "immersiveengineering:watermill"
+			}]
+		},
+		{
+			title: "Power of the Wind",
+			x: -7.0d,
+			y: -7.0d,
+			description: [
+				"Unlike mekanism's windmill this one works the same at any hight.",
+				"",
+				"As long as nothing is in front of the windmill it will produce power, it gains more power during rainy days.",
+				"",
+				"It can be upgraded when using a Windmill sail on it."
+			],
+			dependencies: ["4879018D4DB5BC04"],
+			id: "2FC4A66AA0ADC628",
+			tasks: [{
+				id: "230F522BBBE1588A",
+				type: "item",
+				item: "immersiveengineering:windmill"
+			}]
+		},
+		{
+			title: "Thirsty for lava",
+			x: -5.0d,
+			y: -8.0d,
+			description: ["This generator requires molten lava to generate power."],
+			dependencies: ["095F5AE5A801000A"],
+			id: "53729FFD3243C14D",
+			tasks: [{
+				id: "1622B9AF4200EA21",
+				type: "item",
+				item: "powah:magmator_starter"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -7.5d,
+			description: [""],
+			dependencies: [
+				"53729FFD3243C14D",
+				"37B77C8C9403772C"
+			],
+			id: "403C338D68F8E280",
+			tasks: [{
+				id: "3542F42E5302F664",
+				type: "checkmark",
+				title: "Tiered Storage",
+				icon: "powah:furnator_basic"
+			}],
+			rewards: [{
+				id: "29F484754DED98AC",
+				type: "item",
+				item: "powah:furnator_basic"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -9.5d,
+			min_required_dependencies: 2,
+			dependencies: [
+				"27B5C6456BD16FD3",
+				"716D9C2F74999B5A",
+				"140CA8C6BF4850DB",
+				"2E117EDB18112FB1"
+			],
+			id: "5B1E465F7D89B8D0",
+			tasks: [{
+				id: "07F88E97C40CEAA8",
+				type: "checkmark",
+				title: "Thermal Power Containment",
+				icon: {
+					id: "thermal:energy_cell",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000,
+							EnergySend: 1000,
+							Energy: 0,
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}],
+			rewards: [{
+				id: "278175352AD881AC",
+				type: "item",
+				auto: "enabled",
+				item: {
+					id: "thermal:energy_cell",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000,
+							EnergySend: 1000,
+							Energy: 0,
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Low Voltage Battery",
+			x: -6.5d,
+			y: -5.5d,
+			description: [""],
+			dependencies: [
+				"04800925F49E61C8",
+				"2FC4A66AA0ADC628",
+				"36214249EB744748"
+			],
+			dependency_requirement: "one_completed",
+			id: "5C70B442B8643DF5",
+			tasks: [{
+				id: "5E4C4C02DE4AC00D",
+				type: "checkmark",
+				title: "Low Voltage",
+				icon: "immersiveengineering:capacitor_lv"
+			}],
+			rewards: [{
+				id: "194F1D171CBFA2C8",
+				type: "item",
+				auto: "enabled",
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		},
+		{
+			title: "Power from the skies",
+			x: -5.0d,
+			y: -11.0d,
+			description: ["The wind generators of this mod works best the higher up you place them."],
+			dependencies: ["095F5AE5A801000A"],
+			id: "1FD37CCE9DBF0679",
+			tasks: [{
+				id: "0EBDD83B52213E06",
+				type: "item",
+				item: "mekanismgenerators:wind_generator"
+			}]
+		},
+		{
+			title: "Plant Power!",
+			x: -4.5d,
+			y: -11.5d,
+			description: [
+				"This uses Bio Fuel as... well Fuel.",
+				"",
+				"It's only dependant to it."
+			],
+			dependencies: ["095F5AE5A801000A"],
+			id: "27F08F9636B45063",
+			tasks: [{
+				id: "2D62119658E9DB42",
+				type: "item",
+				item: "mekanismgenerators:bio_generator"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -12.0d,
+			dependencies: [
+				"1FD37CCE9DBF0679",
+				"27F08F9636B45063",
+				"581A8BC06B67F682"
+			],
+			dependency_requirement: "one_completed",
+			id: "18F9866F1DE04F02",
+			tasks: [{
+				id: "0D3510017784F0A5",
+				type: "checkmark",
+				title: "Loki though it was Frostmourn",
+				icon: "mekanism:basic_energy_cube"
+			}],
+			rewards: [{
+				id: "779EA989793AB122",
+				type: "item",
+				auto: "enabled",
+				item: "mekanism:basic_energy_cube"
+			}]
 		}
 	]
 }

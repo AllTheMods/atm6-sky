@@ -34,10 +34,6 @@ onEvent(`recipes`, e => {
     });
   });
 
-  e.remove({
-    output: `pedestals:dustflour`
-  });
-
   const pedestalCrush = (result, count, ingredient) => {
     e.custom({
       type: `pedestals:pedestal_crushing`,

@@ -16,7 +16,7 @@ onEvent(`recipes`, e => {
   let t4 = type => tier(type, 5200, `#misctags:farmland/tier4`, 2);
   let t5 = type => tier(type, 6400, `#misctags:farmland/tier5`, 2);
   let t6 = type => tier(type, 7600, `#misctags:farmland/tier6`, 2);
-  let t7 = type => tier(type, 8900, `mysticalagradditions:insanium_block`, 2);
+  let t7 = type => tier(type, 8900, `kubejs:magical_soil`, 2);
   let inf = (rCount, time, soil) => tier([`inferium`], time, soil, rCount);
 
   const regular = (results, seed, crop) => {

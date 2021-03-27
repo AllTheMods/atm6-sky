@@ -1095,4 +1095,31 @@ onEvent('recipes', e => {
   for (let i = 0; i < recipes.length; i++) {
     add(recipes[i]);
   }
+
+  const crystals = [
+    `litherite`,
+    `erodium`,
+    `kyronite`,
+    `pladium`,
+    `ionite`,
+    `aethium`,
+    `nanorite`,
+    `xerothium`,
+    `lonsdaleite`,
+  ];
+
+  crystals.forEach(crystal => {
+    e.shaped(Item.of('envirocore:lens', {
+      config: {
+        focus: `envirotech:${crystal}`
+      }
+    }), [
+      ` a `,
+      `aba`,
+      ` a `
+    ], {
+      a: `envirocore:${crystal}_crystal`,
+      b: `envirocore:lens`
+    });
+  });
 });

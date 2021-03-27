@@ -5,7 +5,6 @@
 	filename: "skyblock_tips",
 	title: "Skyblock Tips",
 	icon: "astralsorcery:tree_beacon",
-	always_invisible: true,
 	default_quest_shape: "circle",
 	quests: [
 		{

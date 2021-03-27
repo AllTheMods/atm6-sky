@@ -1,7 +1,7 @@
 {
 	id: "03453C143A905442",
 	group: "",
-	order_index: 3,
+	order_index: 4,
 	filename: "magical_advances",
 	title: "Magical Advances",
 	icon: {
@@ -15,8 +15,11 @@
 	quests: [
 		{
 			x: -4.0d,
-			y: -2.5d,
-			dependencies: ["0475EFD9F3906E09"],
+			y: -1.0d,
+			dependencies: [
+				"295F69BF78D56F74",
+				"40A8C36D20CB12F3"
+			],
 			id: "0DB37AF30E537DCB",
 			tasks: [{
 				id: "5C733970C42A34C6",
@@ -31,7 +34,7 @@
 		},
 		{
 			x: -4.0d,
-			y: -1.0d,
+			y: 0.5d,
 			description: ["This should help you with some items you do not yet have access to"],
 			dependencies: ["0DB37AF30E537DCB"],
 			id: "618D587AAE75694D",
@@ -43,7 +46,8 @@
 		},
 		{
 			x: -4.0d,
-			y: -4.0d,
+			y: -5.5d,
+			description: ["This can be used on grass, to produce Mystical Flowers to get started on Botania."],
 			id: "0475EFD9F3906E09",
 			tasks: [{
 				id: "7729C7AF35F7FDB3",
@@ -273,6 +277,158 @@
 					}
 				}
 			}]
+		},
+		{
+			x: -4.0d,
+			y: -4.0d,
+			description: [
+				"The primary flower needed.",
+				"",
+				"You need this flower to make a pure daisy.",
+				"",
+				"In which when wood and stone are placed around the pure daisy it will change to Livingwood and livingstone respectively."
+			],
+			dependencies: ["0475EFD9F3906E09"],
+			id: "40A8C36D20CB12F3",
+			tasks: [{
+				id: "7130D2ACE31A3F45",
+				type: "item",
+				item: "botania:white_mystical_flower"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -2.5d,
+			dependencies: ["0475EFD9F3906E09"],
+			id: "295F69BF78D56F74",
+			tasks: [{
+				id: "65889CA378DC5229",
+				type: "item",
+				item: "botania:apothecary_default"
+			}]
+		},
+		{
+			title: "The most commonly use Flower Generator",
+			x: -5.5d,
+			y: -2.5d,
+			description: [
+				"The most basic, and hugely used even late game for many. This flower burns furnace fuels that are drop near it to produce mana.",
+				"",
+				"Some setups can be use to automate fuel so that your drops won't despawn."
+			],
+			dependencies: ["295F69BF78D56F74"],
+			id: "61796B03EBC8A12F",
+			tasks: [{
+				id: "62ABD7C889338813",
+				type: "item",
+				item: "botania:endoflame"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -1.0d,
+			dependencies: ["0DB37AF30E537DCB"],
+			id: "4C2E23B4D178BE6A",
+			tasks: [{
+				id: "1870F60CB875B20A",
+				type: "item",
+				item: "botania:terra_plate"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -1.0d,
+			dependencies: ["4C2E23B4D178BE6A"],
+			id: "2DBBD4DD0E836E19",
+			tasks: [{
+				id: "732EAF3A3C1928F8",
+				type: "item",
+				item: "botania:natura_pylon",
+				count: 2L
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -1.0d,
+			dependencies: ["2DBBD4DD0E836E19"],
+			id: "6FD8058B759E34A7",
+			tasks: [{
+				id: "497FCA60E506CE0F",
+				type: "item",
+				item: "botania:alfheim_portal"
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -1.0d,
+			dependencies: ["6FD8058B759E34A7"],
+			id: "054206FCE4CCF781",
+			tasks: [{
+				id: "616D5421B6479042",
+				type: "item",
+				item: "mythicbotany:mana_infuser"
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -1.0d,
+			dependencies: ["054206FCE4CCF781"],
+			id: "067AAF21412FC656",
+			tasks: [{
+				id: "790BC4DB9EE4DFC6",
+				type: "item",
+				item: "mythicbotany:alfsteel_pylon"
+			}]
+		},
+		{
+			x: -14.5d,
+			y: -1.0d,
+			dependencies: ["4507F0160726286A"],
+			id: "6C5913CD5A2915F3",
+			tasks: [{
+				id: "3FCEFB23EF72768A",
+				type: "item",
+				item: "botania:life_essence"
+			}],
+			rewards: [
+				{
+					id: "714C511C2DFC0318",
+					type: "item",
+					item: "botania:gaia_head"
+				},
+				{
+					id: "0D15A8FE4F77D945",
+					type: "item",
+					item: "xreliquary:pedestals/passive/lime_passive_pedestal"
+				}
+			]
+		},
+		{
+			title: "Summoning Gaia",
+			icon: "botania:gaia_pylon",
+			x: -13.0d,
+			y: -1.0d,
+			dependencies: ["067AAF21412FC656"],
+			id: "4507F0160726286A",
+			tasks: [
+				{
+					id: "44BB4A3D26108522",
+					type: "item",
+					item: "botania:gaia_pylon",
+					count: 4L
+				},
+				{
+					id: "1ED5D4C34D511B0F",
+					type: "item",
+					item: "minecraft:beacon"
+				},
+				{
+					id: "4E41FD1D8FBC6843",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 9L
+				}
+			]
 		}
 	]
 }

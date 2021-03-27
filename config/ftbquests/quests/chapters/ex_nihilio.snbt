@@ -28,11 +28,18 @@
 				type: "item",
 				item: "exnihilosequentia:sieve"
 			}],
-			rewards: [{
-				id: "32040DDC0BBAE7A9",
-				type: "item",
-				item: "exnihilosequentia:sieve"
-			}]
+			rewards: [
+				{
+					id: "32040DDC0BBAE7A9",
+					type: "item",
+					item: "exnihilosequentia:sieve"
+				},
+				{
+					id: "7F193A56F566C456",
+					type: "random",
+					table_id: 643952101224112939L
+				}
+			]
 		},
 		{
 			title: "Crucial Crucible",
@@ -58,6 +65,11 @@
 				id: "44E83B5E77B733F3",
 				type: "item",
 				item: "exnihilosequentia:crucible_fired"
+			}],
+			rewards: [{
+				id: "130985B1FFE5D6C9",
+				type: "random",
+				table_id: 643952101224112939L
 			}]
 		},
 		{
@@ -108,6 +120,11 @@
 					id: "1223935C859A66EF",
 					type: "item",
 					item: "xreliquary:pedestals/passive/red_passive_pedestal"
+				},
+				{
+					id: "5C6249E7A01AC280",
+					type: "random",
+					table_id: 643952101224112939L
 				}
 			]
 		},
@@ -120,6 +137,11 @@
 				id: "2B6FA01BBAED1404",
 				type: "item",
 				item: "minecraft:gravel"
+			}],
+			rewards: [{
+				id: "4D3E5EB9C57057E3",
+				type: "random",
+				table_id: 643952101224112939L
 			}]
 		},
 		{
@@ -131,6 +153,11 @@
 				id: "415B428282916C73",
 				type: "item",
 				item: "minecraft:sand"
+			}],
+			rewards: [{
+				id: "185D301CE33BA582",
+				type: "random",
+				table_id: 643952101224112939L
 			}]
 		},
 		{
@@ -155,24 +182,31 @@
 					}
 				}
 			}],
-			rewards: [{
-				id: "04E6F9A92D8612E4",
-				type: "item",
-				item: {
-					id: "exnihilosequentia:crook_granite",
-					Count: 1b,
-					tag: {
-						Damage: 0,
-						display: {
-							Name: '[{"text":"Shiny Pink Crook"}]'
-						},
-						Enchantments: [{
-							lvl: 1,
-							id: "minecraft:unbreaking"
-						}]
+			rewards: [
+				{
+					id: "04E6F9A92D8612E4",
+					type: "item",
+					item: {
+						id: "exnihilosequentia:crook_granite",
+						Count: 1b,
+						tag: {
+							Damage: 0,
+							display: {
+								Name: '[{"text":"Shiny Pink Crook"}]'
+							},
+							Enchantments: [{
+								lvl: 1,
+								id: "minecraft:unbreaking"
+							}]
+						}
 					}
+				},
+				{
+					id: "72673372F1A284B4",
+					type: "random",
+					table_id: 643952101224112939L
 				}
-			}]
+			]
 		},
 		{
 			title: "Time to Grind",
@@ -212,7 +246,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: "3210DAA45EDFFB3D",
+				type: "random",
+				table_id: 643952101224112939L
+			}]
 		},
 		{
 			title: "A cake to drag-on.",
@@ -364,12 +403,19 @@
 				type: "item",
 				item: "exnihilosequentia:silkworm"
 			}],
-			rewards: [{
-				id: "681B44C761EB49C5",
-				type: "item",
-				item: "exnihilosequentia:cooked_silkworm",
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "681B44C761EB49C5",
+					type: "item",
+					item: "exnihilosequentia:cooked_silkworm",
+					count: 32
+				},
+				{
+					id: "349C3BB989A6CA84",
+					type: "random",
+					table_id: 643952101224112939L
+				}
+			]
 		},
 		{
 			title: "A Dirt-y idea.",
@@ -400,7 +446,12 @@
 					type: "item",
 					item: "exnihilosequentia:seed_spruce"
 				}
-			]
+			],
+			rewards: [{
+				id: "5E36424B76F234BD",
+				type: "random",
+				table_id: 643952101224112939L
+			}]
 		},
 		{
 			title: "All the cobble gens!",
@@ -512,13 +563,7 @@
 			rewards: [{
 				id: "2FD8FA6A1DA0A601",
 				type: "item",
-				item: {
-					id: "cyclic:sleeping_mat",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "comforts:sleeping_bag_white"
 			}]
 		},
 		{
@@ -577,6 +622,11 @@
 				id: "613AC40F4DDD6380",
 				type: "item",
 				item: "exnihilosequentia:barrel_wood"
+			}],
+			rewards: [{
+				id: "15597723B7B9A09E",
+				type: "random",
+				table_id: 643952101224112939L
 			}]
 		},
 		{
@@ -600,13 +650,25 @@
 					id: "7E0DCF4FF0FE103E",
 					type: "item",
 					auto: "enabled",
-					item: "minecraft:lava_bucket"
+					item: {
+						id: "ceramics:cracked_clay_bucket",
+						Count: 1b,
+						tag: {
+							fluid: "minecraft:lava"
+						}
+					}
 				},
 				{
 					id: "2D007BB896810704",
 					type: "item",
 					auto: "enabled",
-					item: "minecraft:water_bucket"
+					item: {
+						id: "ceramics:clay_bucket",
+						Count: 1b,
+						tag: {
+							fluid: "minecraft:water"
+						}
+					}
 				}
 			]
 		},

@@ -92,4 +92,49 @@ onEvent(`recipes`, e => {
   pedestalSaw(`thermal:sawdust`, 1, `#forge:rods/wooden`);
   pedestalSaw(`minecraft:stick`, 4, `#minecraft:planks`);
   pedestalSaw(`minecraft:stick`, 2, `#minecraft:wooden_slabs`);
+  
+  
+  // Remove Fluid XP Conversiond defaults.
+  e.remove({id: 'pedestals:pedestal_fluid_to_xp/if_essence_to_xp'});
+  e.remove({id: 'pedestals:pedestal_fluid_to_xp/lava_to_xp'});
+  
+
+  // With default settings, cyclic appears to use a 91/1 ratio here.
+  // This already created a kind of fluid xp loop which is very hard
+  // to fix, so we simply do our best to not make it worse.
+  const expMappings = [
+    ['industrialforegoing:essence_bucket', 91],
+    ['cyclic:xpjuice_bucket', 91],
+    ['integrateddynamics:bucket_menril_resin', 60],
+    ['bloodmagic:life_essence_bucket', 60], // Some automation can make this a double tap, so it's not 1:1 with xp.
+    ['minecraft:lava_bucket', 5], // Since lava is trivially infinite, make it even less profitable.
+  ]
+
+  const registerPedestalsFluidConversion = function(tup) {
+    const id  = tup[0];
+    const amt = tup[1];
+
+    if( id != null && amt != null ) {
+      e.custom({
+        type: 'pedestals:pedestal_fluid_to_xp',
+        ingredient: {
+          item: id
+        },
+        result: {
+          item: "minecraft:experience_bottle",
+          count: amt
+        },
+      });
+    } else {
+      console.warn('Skipped invalid recipe for Pedestals fluid conversion')
+    }
+  };
+
+  expMappings.forEach(registerPedestalsFluidConversion);
 });
+
+// Limit Break Pedestals.
+onEvent('item.tags', event => {
+  event.get('pedestals:enchant_limits/advanced_blacklist').remove('pedestals:coin/xpanvil')
+});
+  

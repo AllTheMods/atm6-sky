@@ -15,8 +15,7 @@
     "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:cropy"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

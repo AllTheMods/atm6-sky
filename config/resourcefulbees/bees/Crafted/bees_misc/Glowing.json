@@ -20,8 +20,7 @@
     "mainOutputCount": 3
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:nether"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

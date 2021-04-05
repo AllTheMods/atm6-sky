@@ -20,9 +20,7 @@
     "secondaryOutputWeight": 0.8
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

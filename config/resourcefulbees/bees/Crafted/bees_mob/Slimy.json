@@ -20,8 +20,7 @@
     "secondaryOutputWeight": 0.05
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:swamp"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

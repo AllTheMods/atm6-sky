@@ -25,12 +25,14 @@
 "resourcefulbees:redstone_bee",
 "resourcefulbees:creeper_bee",
 "resourcefulbees:crimson_iron_bee",
+"resourcefulbees:cropy_bee",
 "resourcefulbees:unobtainium_bee",
 "resourcefulbees:aquamarine_bee",
 "resourcefulbees:allthemodium_bee",
 "resourcefulbees:aluminum_bee",
 "resourcefulbees:rocky_bee",
 "resourcefulbees:gold_bee",
+"resourcefulbees:mystical_bee",
 "resourcefulbees:lava_bee",
 "resourcefulbees:ghost_bee",
 "resourcefulbees:mason_bee",
@@ -44,6 +46,7 @@
 "resourcefulbees:lumber_bee",
 "resourcefulbees:osmium_bee",
 "resourcefulbees:quartz_bee",
+"resourcefulbees:gravely_bee",
 "resourcefulbees:lead_bee",
 "resourcefulbees:diamond_bee",
 "resourcefulbees:uraninite_bee",
@@ -56,6 +59,7 @@
 "resourcefulbees:iron_bee",
 "resourcefulbees:wither_bee",
 "resourcefulbees:spider_bee",
+"resourcefulbees:soul_lava_bee",
 "resourcefulbees:icey_bee"
 ]
 }

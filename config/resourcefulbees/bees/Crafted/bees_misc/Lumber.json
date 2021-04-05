@@ -22,8 +22,7 @@
     "bottleOutputWeight": 0.01
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:forest"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

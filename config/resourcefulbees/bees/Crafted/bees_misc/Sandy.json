@@ -17,8 +17,7 @@
     "mainOutputCount": 3
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:sandy"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

@@ -1,29 +1,30 @@
 {
-  "flower": "minecraft:water",
+  "flower": "minecraft:lava",
   "maxTimeInHive": 1200,
-  "traits": ["can_swim"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
-    "primaryColor": "#0F3653",
-    "honeycombColor": "#0F3653"
+    "primaryColor": "#DB4819",
+    "honeycombColor": "#DB4819",
+    "isGlowing": true,
+    "glowColor": "#DB4819"
   },
   "MutationData": {
     "hasMutation": false
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:water",
+    "mainOutput": "minecraft:lava",
     "mainOutputCount": 1000,
     "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:ocean,tag:river"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,
-    "feedItem": "minecraft:water_bucket",
+    "feedItem": "minecraft:lava_bucket",
     "feedAmount": 1
   },
   "TraitData": {

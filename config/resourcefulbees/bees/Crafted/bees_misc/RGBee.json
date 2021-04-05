@@ -15,9 +15,7 @@
     "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

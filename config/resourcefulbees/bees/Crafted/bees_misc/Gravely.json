@@ -1,29 +1,28 @@
 {
-  "flower": "minecraft:blue_ice",
+  "flower": "tag:forge:gravel",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "baseLayerTexture": "misc/gravely_bee",
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#86aefd",
-    "honeycombColor": "#86aefd"
+    "isBeeColored": false,
+    "honeycombColor": "#726b69"
   },
   "MutationData": {
     "hasMutation": false
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:ice",
+    "mainOutput": "minecraft:gravel",
     "mainOutputCount": 3,
     "mainOutputWeight": 0.9
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:cold"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,
-    "feedItem": "minecraft:blue_ice",
-    "feedAmount": 3
+    "feedItem": "tag:forge:gravel",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": false

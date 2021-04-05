@@ -17,8 +17,7 @@
     "mainOutputWeight": 0.9
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:mountain"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,

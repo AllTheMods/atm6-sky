@@ -1,34 +1,35 @@
 {
-  "flower": "tag:minecraft:leaves",
+  "flower": "tag:forge:storage_blocks/quartz",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "traits": ["nether"],
+  "baseLayerTexture": "misc/quartz_bee",
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#06B805",
-    "honeycombColor": "#06B805"
+    "isBeeColored": false,
+    "honeycombColor": "#D4CABA",
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "mysticalagriculture:nature_essence",
+    "mainOutput": "minecraft:nether_quartz_ore",
     "mainOutputWeight": 0.50,
     "mainOutputCount": 1,
-    "secondaryOutput": "mysticalagriculture:nature_essence",
+    "secondaryOutput": "minecraft:quartz",
     "secondaryOutputWeight": 0.01,
     "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:forest"
+    "canSpawnInWorld": false
   },
   "BreedData": {
     "isBreedable": true,
-    "feedItem": "tag:minecraft:leaves",
+    "feedItem": "tag:forge:storage_blocks/quartz",
     "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+    "hasTraits": true
   }
 }

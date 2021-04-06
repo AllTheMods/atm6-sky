@@ -1,5 +1,56 @@
-onEvent(`recipes`, e => {
-  var cuShaped = e.recipes.cucumber.shaped_no_mirror;
+events.listen('recipes', function(e) {
+    const bess = 'resourcefulbees'
+    const scale = 'mysticalagradditions:dragon_scale'
+    function energize(ingredient, result, rCount, power) {
+        e.recipes.powah.energizing({
+            ingredients: ingredient,
+            energy: power,
+            result: {
+                item: result,
+                count: rCount
+            }
+        })
+    }
+    function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
+        e.recipes.mysticalagriculture.infusion({
+            input: {
+                item: middle
+            },
+            ingredients: [{
+                    item: item1
+                },
+                {
+                    item: item2
+                },
+                {
+                    item: item3
+                },
+                {
+                    item: item4
+                },
+                {
+                    item: item5
+                },
+                {
+                    item: item6
+                },
+                {
+                    item: item7
+                },
+                {
+                    item: item8
+                }
+            ],
+            result: {
+                item: output
+            }
+        })
+    }
+//egg recipes
+mainfusion (`bees:cobbee_bee_spawn_egg`,`scale`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`,`compressium:cobblestone_3`)
+
+//comb recipes
+var cuShaped = e.recipes.cucumber.shaped_no_mirror;
 
   //Comb to Bucket
   e.shaped(`minecraft:water_bucket`, [
@@ -264,4 +315,7 @@ onEvent(`recipes`, e => {
     `C  `,
     `C  `
   ]);
-});
+
+
+
+})

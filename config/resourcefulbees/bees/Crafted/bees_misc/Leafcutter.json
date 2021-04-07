@@ -3,31 +3,41 @@
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#06B805",
-    "honeycombColor": "#06B805"
+      "isBeeColored": true,
+      "primaryColor": "#06B805",
+      "honeycombColor": "#06B805"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:leafcutter_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "mysticalagriculture:nature_essence",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 1,
-    "secondaryOutput": "mysticalagriculture:nature_essence",
-    "secondaryOutputWeight": 0.01,
-    "secondaryOutputCount": 2
+      "hasCentrifugeOutput": true,
+      "mainOutput": "mysticalagriculture:nature_essence",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "mysticalagriculture:nature_essence",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false,
+      "biomeWhitelist": "tag:forest"
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "tag:minecraft:leaves",
-    "feedAmount": 3
+      "isBreedable": true,
+      "feedItem": "tag:minecraft:leaves",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

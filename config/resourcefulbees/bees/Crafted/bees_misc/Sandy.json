@@ -4,27 +4,36 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/sandy_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#DDD2B7"
+      "isBeeColored": false,
+      "honeycombColor": "#DDD2B7"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:sandy_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:sand",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 3
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:sand",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 3
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "tag:forge:sand",
-    "feedAmount": 4
+      "isBreedable": true,
+      "feedItem": "tag:forge:sand",
+      "feedAmount": 4
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

@@ -4,27 +4,36 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/gravely_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#726b69"
+      "isBeeColored": false,
+      "honeycombColor": "#726b69"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:gravely_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:gravel",
-    "mainOutputCount": 3,
-    "mainOutputWeight": 0.9
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:gravel",
+      "mainOutputCount": 3,
+      "mainOutputWeight": 0.9
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "tag:forge:gravel",
-    "feedAmount": 4
+      "isBreedable": true,
+      "feedItem": "tag:forge:gravel",
+      "feedAmount": 4
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

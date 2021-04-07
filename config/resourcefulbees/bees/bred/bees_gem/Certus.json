@@ -4,34 +4,34 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/certus_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#d2d6f7",
-    "modelType": "ORE"
+      "isBeeColored": false,
+      "honeycombColor": "#d2d6f7",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "appliedenergistics2:quartz_ore",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 1,
-    "secondaryOutput": "appliedenergistics2:certus_quartz_crystal",
-    "secondaryOutputWeight": 0.01,
-    "secondaryOutputCount": 2
+      "hasCentrifugeOutput": true,
+      "mainOutput": "appliedenergistics2:quartz_ore",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "appliedenergistics2:certus_quartz_crystal",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "breedChance": 0.80,
-    "parent1": "Quartz",
-    "parent2": "Diamond",
-    "feedItem": "appliedenergistics2:quartz_block",
-    "feedAmount": 3
+      "isBreedable": true,
+      "breedChance": 0.80,
+      "parent1": "Quartz",
+      "parent2": "Diamond",
+      "feedItem": "appliedenergistics2:quartz_block",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

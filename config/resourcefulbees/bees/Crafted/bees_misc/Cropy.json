@@ -4,25 +4,34 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "crop/wheat_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "modelType": "CROP",
-    "honeycombColor": "#dcbb65"
+      "isBeeColored": false,
+      "modelType": "CROP",
+      "honeycombColor": "#dcbb65"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:cropy_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": false
+      "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "minecraft:hay_block",
-    "feedAmount": 3
+      "isBreedable": true,
+      "feedItem": "minecraft:hay_block",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

@@ -9,7 +9,20 @@
     "primaryColor": "#885956"
   },
   "MutationData": {
-    "hasMutation": false
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "compressium:cobblestone_3",
+        "chance": 0.25,
+        "outputs": [
+          {
+            "outputID": "resourcefulbees:magma_bee_spawn_egg"
+            }
+        ]
+      }
+    ]
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
@@ -22,9 +35,7 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "xreliquary:molten_core",
-    "feedAmount": 2
+    "isBreedable": false
   },
   "TraitData": {
     "hasTraits": true

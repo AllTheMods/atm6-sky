@@ -27,7 +27,7 @@
       "isBreedable": true,
       "breedChance": 0.8,
       "parent1": "Iron",
-      "parent2": "Lapis",
+      "parent2": "Redstone",
       "feedItem": "tag:forge:storage_blocks/osmium",
       "feedAmount": 3
   },

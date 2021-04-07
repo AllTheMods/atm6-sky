@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Iron",
-      "parent2": "Creeper",
+      "parent1": "Ender",
+      "parent2": "Beeper",
       "feedItem": "tag:forge:storage_blocks/uranium",
       "feedAmount": 3
   },

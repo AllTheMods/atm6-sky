@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Emerald",
-      "parent2": "Uranium",
+      "parent1": "Slimy",
+      "parent2": "Beeper",
       "feedItem": "tag:forge:storage_blocks/uraninite",
       "feedAmount": 3
   },

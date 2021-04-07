@@ -1,11 +1,11 @@
 {
-  "flower": "tag:forge:storage_blocks/iron",
-  "hasHoneycomb": true,
+  "flower": "tag:forge:storage_blocks/coal",
   "maxTimeInHive": 1200,
-  "baseLayerTexture": "ores/iron/iron_bee",
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ores/coal/coal_bee",
   "ColorData": {
       "isBeeColored": false,
-      "honeycombColor": "#ffcc99",
+      "honeycombColor": "#303030",
       "modelType": "ORE"
   },
   "MutationData": {
@@ -13,10 +13,10 @@
   },
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:iron_ore",
+      "mainOutput": "minecraft:coal_ore",
       "mainOutputWeight": 0.50,
       "mainOutputCount": 1,
-      "secondaryOutput": "minecraft:iron_ingot",
+      "secondaryOutput": "minecraft:coal",
       "secondaryOutputWeight": 0.01,
       "secondaryOutputCount": 2
   },
@@ -25,11 +25,11 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.8,
-      "parent1": "Quartz",
-      "parent2": "Stoned",
-      "feedItem": "tag:forge:storage_blocks/iron",
-      "feedAmount": 3
+      "breedChance": 0.80,
+      "parent1": "Blazing",
+      "parent2": "Lumber",
+      "feedItem": "tag:forge:storage_blocks/coal",
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

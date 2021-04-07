@@ -27,7 +27,7 @@
       "isBreedable": true,
       "breedChance": 0.8,
       "parent1": "Quartz",
-      "parent2": "Mason",
+      "parent2": "Stoned",
       "feedItem": "tag:forge:storage_blocks/gold",
       "feedAmount": 3
   },

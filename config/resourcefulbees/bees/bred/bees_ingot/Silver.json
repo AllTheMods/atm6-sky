@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Iron",
-      "parent2": "Mason",
+      "parent1": "Aluminum",
+      "parent2": "Gold",
       "feedItem": "tag:forge:storage_blocks/silver",
       "feedAmount": 3
   },

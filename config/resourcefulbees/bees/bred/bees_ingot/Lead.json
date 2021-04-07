@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Iron",
-      "parent2": "RGBee",
+      "parent1": "Coal",
+      "parent2": "Iron",
       "feedItem": "tag:forge:storage_blocks/lead",
       "feedAmount": 3
   },

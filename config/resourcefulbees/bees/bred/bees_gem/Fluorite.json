@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Osmium",
-      "parent2": "Lapis",
+      "parent1": "Redstone",
+      "parent2": "Tin",
       "feedItem": "mekanism:fluorite_gem",
       "feedAmount": 6
   },

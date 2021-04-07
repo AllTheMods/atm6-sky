@@ -26,8 +26,8 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Diamond",
-      "parent2": "Slimy",
+      "parent1": "Slimy",
+      "parent2": "Gold",
       "feedItem": "tag:forge:storage_blocks/emerald",
       "feedAmount": 3
   },

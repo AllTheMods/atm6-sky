@@ -26,10 +26,10 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Ender",
-      "parent2": "Lapis",
+      "parent1": "Obsidian",
+      "parent2": "Coal",
       "feedItem": "tag:forge:storage_blocks/diamond",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

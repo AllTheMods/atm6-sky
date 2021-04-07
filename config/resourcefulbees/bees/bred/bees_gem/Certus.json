@@ -27,7 +27,7 @@
       "isBreedable": true,
       "breedChance": 0.80,
       "parent1": "Quartz",
-      "parent2": "Diamond",
+      "parent2": "Copper",
       "feedItem": "appliedenergistics2:quartz_block",
       "feedAmount": 3
   },

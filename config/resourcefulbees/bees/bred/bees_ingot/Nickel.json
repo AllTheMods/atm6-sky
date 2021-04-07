@@ -27,7 +27,7 @@
       "isBreedable": true,
       "breedChance": 0.8,
       "parent1": "Iron",
-      "parent2": "Warm",
+      "parent2": "Zinc",
       "feedItem": "tag:forge:storage_blocks/nickel",
       "feedAmount": 3
   },

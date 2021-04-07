@@ -26,7 +26,7 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Redstone",
+      "parent1": "Stoned",
       "parent2": "RGBee",
       "feedItem": "tag:forge:storage_blocks/lapis",
       "feedAmount": 3

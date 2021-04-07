@@ -27,9 +27,9 @@
       "isBreedable": true,
       "breedChance": 0.8,
       "parent1": "Magma",
-      "parent2": "Skeleton",
+      "parent2": "Spooky",
       "feedItem": "xreliquary:molten_core",
-      "feedAmount": 4
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

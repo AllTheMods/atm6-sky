@@ -26,7 +26,7 @@
   "BreedData": {
       "isBreedable": true,
       "breedChance": 0.8,
-      "parent1": "Ender",
+      "parent1": "Silver",
       "parent2": "Gold",
       "feedItem": "tag:forge:storage_blocks/platinum",
       "feedAmount": 3

@@ -3,7 +3,7 @@
 
 	[dimensions.nether]
 		#Should nether generate as in default world type? [default: false]
-		default = false
+		default = true
 
 		[dimensions.nether.structures]
 			#Use only if 'enabled' is true!

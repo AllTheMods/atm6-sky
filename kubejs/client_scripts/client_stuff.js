@@ -77,7 +77,6 @@ onEvent(`jei.hide.items`, e => {
     `cyclic:tile_transporter_empty`,
     /cyclic:.*_pipe/,
     `cyclic:cable_wrench`,
-    `cyclic:uncrafter`,
     `cyclic:sleeping_mat`,
 
     //`naturesaura:chunk_loader`,

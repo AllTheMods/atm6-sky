@@ -160,7 +160,6 @@ onEvent(`recipes`, e => {
       e.replaceInput(replaced, replaced);
     }
   };
-  replace(`#appliedenergistics2:dusts/ender`, `thermal:ender_pearl_dust`, true);
   replace(`#forge:dusts/sulfur`, `thermal:sulfur_dust`, true);
   replace(`#forge:sawdust`, `thermal:sawdust`, true);
   replace(`#forge:dusts/diamond`, `thermal:diamond_dust`, true);

@@ -149,6 +149,11 @@
 				id: "57514F2EA2DA7B03",
 				type: "item",
 				item: "torchmaster:megatorch"
+			}],
+			rewards: [{
+				id: "79B7C8A3BD049075",
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -167,6 +172,11 @@
 				id: "6DE3255AAFC0BE9D",
 				type: "item",
 				item: "torchmaster:dreadlamp"
+			}],
+			rewards: [{
+				id: "2BA18CC7C593BAFE",
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -205,6 +215,8 @@
 			y: -7.0d,
 			description: [
 				'&a&lGarden of Glass &f&rgives a function to get cobblestone. By crouching and "using" (default: Right mouse button) on Grass or dirt you will get pebbles.',
+				"",
+				"It works in all worlds.",
 				"",
 				"4 pebbles = 1 cobblestone"
 			],
@@ -309,11 +321,21 @@
 		},
 		{
 			title: "Garden of Glass Island spawning",
+			icon: "astralsorcery:tree_beacon",
 			x: -1.5d,
-			y: -8.5d,
+			y: -9.75d,
 			shape: "gear",
-			description: ["This will spawn the player the island. Even for single player, it does help using the command for the next tip."],
-			dependencies: ["76200C6568457C8C"],
+			description: [
+				"This will spawn the player the island. Even for single player, it does help using the command for the next tip.",
+				"",
+				"Once an island is created, you can return from the GoG overworld with",
+				"",
+				"&b/gog visit {Username}",
+				"",
+				"It's due to the lack of the commands we added",
+				"&l&bFTB Essentials"
+			],
+			dependencies: ["3E01A250909FFC9A"],
 			size: 1.5d,
 			id: "391A5F999E05CECE",
 			tasks: [{
@@ -401,6 +423,291 @@
 				auto: "enabled",
 				xp: 100
 			}]
+		},
+		{
+			title: "Important Commands",
+			icon: "computercraft:computer_command",
+			x: -1.5d,
+			y: -8.5d,
+			shape: "gear",
+			description: [
+				"There are 2 skyblock type world generation, and both provide their own commands.",
+				"",
+				"Their list of commands only work in their respective world Generation; in which will be provided as the next tips.",
+				"",
+				"We also have the Mod &l&bFTB Essentials",
+				"",
+				"Which provides the classic",
+				"&b/sethome",
+				"&b/home",
+				"&b/spawn",
+				"&b/tpa",
+				"&b/tpahere",
+				"",
+				"Even for server owners they can set up warps as well"
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "3E01A250909FFC9A",
+			tasks: [{
+				id: "575F1B676879DCDA",
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Skyblock World Commands",
+			icon: "astralsorcery:tree_beacon",
+			x: -2.8d,
+			y: -8.45d,
+			shape: "gear",
+			description: [
+				"This world gen provides a semi-classic Skyblock island provided with a tree, a chest with lava and ice, and grass.",
+				"",
+				"Creating skyblock (provided by checking here)",
+				"&c/skyblock create",
+				"",
+				"Teleporting to your island",
+				"&c/skyblock home",
+				"",
+				"Seeing Teams (seeing all the names in the team if you add the team name)",
+				"&c/skyblock list",
+				"",
+				"Visiting other islands",
+				"&c/skyblock visit <team>",
+				"",
+				"Renaming Team",
+				"&c/skyblock <new name>",
+				"",
+				"Inviting Players",
+				"&c/skyblock invite <player>",
+				"",
+				"Accepting or Declining invite",
+				"&c/skyblock accept/decline <team>",
+				"",
+				"Sending Join Request",
+				"&c/skyblock join <team>",
+				"",
+				"Accept/Deny Request",
+				"&c/skyblock tean accept/deny <player>",
+				"",
+				"Disabling requests",
+				"&c/skyblock team allowRequests true/false"
+			],
+			dependencies: ["3E01A250909FFC9A"],
+			size: 1.5d,
+			id: "05CBE9E9C9898250",
+			tasks: [{
+				id: "6C05E568E67A6C7A",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "2DBF52D6FA12240A",
+				type: "command",
+				title: "/skyblock create",
+				icon: "astralsorcery:tree_beacon",
+				auto: "no_toast",
+				command: "/skyblock create",
+				player_command: true
+			}]
+		},
+		{
+			title: "Quest Suggestions?",
+			icon: {
+				id: "minecraft:player_head",
+				Count: 1b,
+				tag: {
+					SkullOwner: {
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
+							}]
+						},
+						Id: [I;
+							1066572180,
+							-2033627309,
+							-1907633071,
+							-1809080761
+						]
+					},
+					display: {
+						Name: '{"text":""}'
+					}
+				}
+			},
+			x: 0.0d,
+			y: -4.5d,
+			shape: "gear",
+			description: [
+				"Hello there, I am Thunder_Nova (Pun_isher), I am the person who is making the quests.",
+				"",
+				"I am currently open to suggestions from you the players.",
+				"",
+				"In the All the mods Discord you can Ping me with",
+				"&b@Thunder_Nova (Pun_isher)░░▒▒▓▓██",
+				"",
+				"Please do it in the &b#suggestion &fchannel",
+				"",
+				"even for a fix, I am trying to add random rewards and stories as well. I do know how to balance them, yet with a huge modpack, it takes time to make decisions.",
+				"",
+				"My weakness is probably the magic mods, so I am happy to receive some suggestions.",
+				"",
+				"And if you guys want, you can add your jokes in relation to some quests. Which will be credited if you want. I love adding a bit of humour. Even child friendly bad ones (puns lol).",
+				"",
+				"So giving you guys a Heads up... or 2"
+			],
+			dependencies: ["76200C6568457C8C"],
+			size: 1.5d,
+			id: "476411824D37FEFC",
+			tasks: [{
+				id: "786759A885281430",
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: "5F6052D4C79D864E",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
+									}]
+								},
+								Id: [I;
+									-1922613489,
+									512904955,
+									-1782719762,
+									1065663
+								]
+							},
+							display: {
+								Name: '{"text":"Pun_isher"}'
+							}
+						}
+					}
+				},
+				{
+					id: "3C4A402C75327401",
+					type: "item",
+					auto: "no_toast",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM0OTA4NjE3YmI2ZTgwMmExNDExZTViZTBiNzhkMTEzNjg3MjJmYjc5YTRhMDdiZmZmYzg5Njk5MDJlZjNkNiJ9fX0="
+									}]
+								},
+								Id: [I;
+									-1740143482,
+									1807240694,
+									-1498895100,
+									441554382
+								]
+							},
+							display: {
+								Name: '{"text":"Thunder_Nova"}'
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Modpack Issues and Suggestions?",
+			icon: "mekanism:cardboard_box",
+			x: 0.0d,
+			y: -2.5d,
+			shape: "gear",
+			description: [
+				"The best way to communicate with us is by going thru &dGithub",
+				"",
+				"It's ok going thru Discord, but it tends to get missed if a lot chats into it.",
+				"",
+				"In &dGithub &falso has a search for open and closed issues. Someone might already have a problem similar to you, or a fix."
+			],
+			dependencies: ["76200C6568457C8C"],
+			size: 1.5d,
+			id: "0C917A0D4CCFB869",
+			tasks: [{
+				id: "6A78A8A9D7E6C001",
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: "50FC5B7E2F23DB45",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUyMzdkMTY1ODhjYjc5NzA2NzBiZDRlMDY0NTk3YmU1ZjMzMTU1NjI5ZDY1OGZjZDI2OGRjNjdhNzlkODkxOCJ9fX0="
+									}]
+								},
+								Id: [I;
+									458087096,
+									409289075,
+									-1848270642,
+									-1037332660
+								]
+							},
+							display: {
+								Name: '{"text":"oly2o6"}'
+							}
+						}
+					}
+				},
+				{
+					id: "65449A732F2E814A",
+					type: "item",
+					auto: "no_toast",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
+									}]
+								},
+								Id: [I;
+									10980745,
+									1636517645,
+									-1644603319,
+									752000299
+								]
+							},
+							display: {
+								Name: '{"text":"White_Phant0m"}'
+							}
+						}
+					}
+				},
+				{
+					id: "1FC3B067295AE63B",
+					type: "item",
+					item: {
+						id: "minecraft:written_book",
+						Count: 1b,
+						tag: {
+							pages: ['["",{"text":"Github Issue Page","bold":true,"underlined":true,"color":"dark_purple","clickEvent":{"action":"open_url","value":"https://github.com/AllTheMods/atm6-sky/issues"}},{"text":"\\n\\n","color":"reset","underlined":true},{"text":"Discord","bold":true,"underlined":true,"color":"dark_blue","clickEvent":{"action":"open_url","value":"https://discord.gg/K5FBPYa"}},{"text":"\\n\\n","color":"reset","underlined":true},{"text":"Patreon","bold":true,"underlined":true,"color":"dark_red","clickEvent":{"action":"open_url","value":"https://www.patreon.com/join/allthemods"}}]'],
+							title: "ATM6s Book of Links",
+							author: "All the Mods 6: To the Sky",
+							display: {}
+						}
+					}
+				}
+			]
 		}
 	]
 }

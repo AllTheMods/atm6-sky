@@ -1,0 +1,43 @@
+{
+  "flower": "tag:Minecraft:wool",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#3b0000",
+      "primaryColor": "#030303",
+      "secondaryColor": "#910000"
+  },
+  "MutationData": {
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:spider_bee_spawn_egg"
+          }]
+      }]
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:string",
+      "mainOutputCount": 1,
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "xreliquary:chelicerae",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 1
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": false,
+      "feedItem": "xreliquary:chelicerae",
+      "feedAmount": 5
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

@@ -4,34 +4,34 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "ato/uranium_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#fff37f",
-    "modelType": "ORE"
+      "isBeeColored": false,
+      "honeycombColor": "#fff37f",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "alltheores:ore_uranium",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 1,
-    "secondaryOutput": "alltheores:uranium_ingot",
-    "secondaryOutputWeight": 0.01,
-    "secondaryOutputCount": 2
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_uranium",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:uranium_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "spawnInWorld": false
+      "spawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "breedChance": 0.8,
-    "parent1": "Iron",
-    "parent2": "Creeper",
-    "feedItem": "tag:forge:storage_blocks/uranium",
-    "feedAmount": 3
+      "isBreedable": true,
+      "breedChance": 0.6,
+      "parent1": "Ender",
+      "parent2": "Beeper",
+      "feedItem": "tag:forge:storage_blocks/uranium",
+      "feedAmount": 5
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

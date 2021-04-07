@@ -1,36 +1,36 @@
 {
-  "flower": "allthemodium:molten_bluelava",
+  "flower": "allthemodium:molten_bluelava_block",
   "maxTimeInHive": 2400,
-  "traits": ["nether", "angry"],
+  "traits": ["nether", "angry", "soul_fire"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/soul_lava_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#7cc7d6"
+      "isBeeColored": false,
+      "honeycombColor": "#7cc7d6"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "allthemodium:molten_bluelava",
-    "mainOutputCount": 10,
-    "mainOutputWeight": 0.50,
-    "hasFluidOutput": true
+      "hasCentrifugeOutput": true,
+      "mainOutput": "allthemodium:molten_bluelava",
+      "mainOutputCount": 10,
+      "mainOutputWeight": 0.50,
+      "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
+      "isBreedable": false
   },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   },
   "CombatData": {
-    "isPassive": false,
-    "removeStingerOnAttack": false,
-    "inflictsPoison": true,
-    "attackDamage": 100
+      "isPassive": false,
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 100
   }
 }

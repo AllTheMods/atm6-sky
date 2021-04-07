@@ -1,0 +1,39 @@
+{
+  "flower": "minecraft:blue_ice",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#86aefd",
+      "honeycombColor": "#86aefd"
+  },
+  "MutationData": {
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:icey_bee_spawn_egg"
+          }]
+      }]
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:ice",
+      "mainOutputCount": 3,
+      "mainOutputWeight": 0.9
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": false,
+      "feedItem": "minecraft:blue_ice",
+      "feedAmount": 5
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

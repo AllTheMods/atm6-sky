@@ -1,0 +1,41 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#ffffff",
+    "isRainbowBee": true,
+    "isGlowing": true
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "compressium:cobblestone_3",
+        "chance": 0.25,
+        "outputs": [
+          {
+            "outputID": "resourcefulbees:rgbee_bee_spawn_egg"
+            }
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "feedItem": "tag:forge:storage_blocks/lapis",
+    "feedAmount": 5
+},
+  "TraitData": {
+    "hasTraits": false
+  }
+}

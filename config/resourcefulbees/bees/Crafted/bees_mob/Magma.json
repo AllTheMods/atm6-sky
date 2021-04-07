@@ -1,0 +1,45 @@
+{
+  "flower": "minecraft:magma_block",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "traits": ["nether"],
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#885956",
+    "primaryColor": "#885956"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "compressium:cobblestone_3",
+        "chance": 0.25,
+        "outputs": [
+          {
+            "outputID": "resourcefulbees:magma_bee_spawn_egg"
+            }
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:magma_cream",
+    "mainOutputWeight": 0.50,
+    "secondaryOutput": "minecraft:magma_block",
+    "secondaryOutputWeight": 0.01
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "feedItem": "minecraft:magma_block",
+    "feedAmount": 5
+},
+  "TraitData": {
+    "hasTraits": true
+  }
+}

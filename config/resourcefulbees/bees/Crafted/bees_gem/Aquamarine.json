@@ -1,0 +1,44 @@
+{
+  "flower": "astralsorcery:starmetal",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "traits": [],
+  "baseLayerTexture": "misc/aquamarine_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#35b3ff",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:aquamarine_bee_spawn_egg"
+          }]
+      }]
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "astralsorcery:aquamarine",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "astralsorcery:aquamarine",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": false,
+      "feedItem": "astralsorcery:resonating_gem",
+      "feedAmount": 5
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

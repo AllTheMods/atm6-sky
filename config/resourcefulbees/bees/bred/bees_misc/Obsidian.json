@@ -24,7 +24,7 @@
       "parent1": "Water",
       "parent2": "Lava",
       "feedItem": "minecraft:obsidian",
-      "feedAmount": 2
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

@@ -32,8 +32,10 @@
       "canSpawnInWorld": false
   },
   "BreedData": {
-      "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "botania:mana_pylon",
+    "feedAmount": 5
+},
   "TraitData": {
       "hasTraits": false
   }

@@ -25,11 +25,11 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.8,
+      "breedChance": 0.6,
       "parent1": "Stoned",
       "parent2": "RGBee",
       "feedItem": "tag:forge:storage_blocks/lapis",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

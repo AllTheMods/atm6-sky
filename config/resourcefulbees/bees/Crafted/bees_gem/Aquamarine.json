@@ -34,9 +34,9 @@
       "canSpawnInWorld": false
   },
   "BreedData": {
-      "isBreedable": true,
-      "feedItem": "astralsorcery:aquamarine",
-      "feedAmount": 18
+      "isBreedable": false,
+      "feedItem": "astralsorcery:resonating_gem",
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

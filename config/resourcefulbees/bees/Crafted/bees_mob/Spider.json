@@ -33,9 +33,9 @@
       "canSpawnInWorld": false
   },
   "BreedData": {
-      "isBreedable": true,
+      "isBreedable": false,
       "feedItem": "xreliquary:chelicerae",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

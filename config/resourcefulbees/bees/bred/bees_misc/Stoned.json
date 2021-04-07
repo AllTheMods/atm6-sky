@@ -21,11 +21,11 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.80,
+      "breedChance": 0.6,
       "parent1": "Lava",
       "parent2": "Cobbee",
       "feedItem": "immersiveengineering:hemp_fiber",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

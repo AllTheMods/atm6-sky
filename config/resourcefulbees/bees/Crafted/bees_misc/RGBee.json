@@ -31,8 +31,10 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "tag:forge:storage_blocks/lapis",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": false
   }

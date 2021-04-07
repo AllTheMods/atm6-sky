@@ -21,11 +21,8 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.7,
-      "parent1": "Wither",
-      "parent2": "Diamond",
-      "feedItem": "minecraft:netherite_ingot",
-      "feedAmount": 3
+      "feedItem": "tag:forge:storage_blocks/netherite",
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

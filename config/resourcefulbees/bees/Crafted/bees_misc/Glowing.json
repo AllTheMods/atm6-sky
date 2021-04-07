@@ -36,8 +36,10 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "tag:misctags:flowers/glowing_flowers",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": true
   }

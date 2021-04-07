@@ -21,10 +21,11 @@
   },
   "BreedData": {
       "isBreedable": true,
+      "breedChance": 0.2,
       "parent1": "Coal",
-      "parent2": "Skeleton",
+      "parent2": "Spooky",
       "feedItem": "xreliquary:withered_rib",
-      "feedAmount": 2
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

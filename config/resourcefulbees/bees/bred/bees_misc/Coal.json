@@ -25,7 +25,7 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.80,
+      "breedChance": 0.6,
       "parent1": "Blazing",
       "parent2": "Lumber",
       "feedItem": "tag:forge:storage_blocks/coal",

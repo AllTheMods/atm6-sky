@@ -34,8 +34,10 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "botania:rune_water",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": true
   }

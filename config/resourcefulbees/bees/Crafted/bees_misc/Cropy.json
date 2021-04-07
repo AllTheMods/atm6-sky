@@ -27,9 +27,9 @@
       "canSpawnInWorld": false
   },
   "BreedData": {
-      "isBreedable": true,
+      "isBreedable": false,
       "feedItem": "minecraft:hay_block",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

@@ -33,9 +33,9 @@
       "biomeWhitelist": "tag:forest"
   },
   "BreedData": {
-      "isBreedable": true,
+      "isBreedable": false,
       "feedItem": "tag:minecraft:leaves",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

@@ -35,8 +35,10 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "minecraft:magma_block",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": true
   }

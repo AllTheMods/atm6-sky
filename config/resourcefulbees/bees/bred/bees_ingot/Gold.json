@@ -9,8 +9,22 @@
       "modelType": "ORE"
   },
   "MutationData": {
-      "hasMutation": false
-  },
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [{
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "minecraft:netherite_block",
+        "outputs": [{
+                "outputID": "minecraft:cobble_stone",
+                "weight": 90
+            },
+            {
+                "outputID": "resourcefulbees:netherite_bee_spawn_egg",
+                "weight": 10
+            }
+        ]
+    }]
+},
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
       "mainOutput": "minecraft:gold_ore",
@@ -25,11 +39,11 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.8,
+      "breedChance": 0.6,
       "parent1": "Quartz",
       "parent2": "Stoned",
       "feedItem": "tag:forge:storage_blocks/gold",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

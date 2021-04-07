@@ -37,8 +37,10 @@
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "bloodmagic:lavacrystal",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": true
   }

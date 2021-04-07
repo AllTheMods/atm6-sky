@@ -29,9 +29,9 @@
       "canSpawnInWorld": false
   },
   "BreedData": {
-      "isBreedable": true,
+      "isBreedable": false,
       "feedItem": "tag:forge:sand",
-      "feedAmount": 4
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": false

@@ -11,8 +11,22 @@
       "modelType": "ORE"
   },
   "MutationData": {
-      "hasMutation": false
-  },
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [{
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "tag:forge:storage_blocks/vibranium",
+        "outputs": [{
+                "outputID": "minecraft:cobble_stone",
+                "weight": 80
+            },
+            {
+                "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
+                "weight": 20
+            }
+        ]
+    }]
+},
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
       "mainOutput": "allthemodium:allthemodium_nugget",
@@ -24,11 +38,8 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.6,
-      "parent1": "Netherite",
-      "parent2": "Wither",
       "feedItem": "tag:forge:storage_blocks/allthemodium",
-      "feedAmount": 3
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

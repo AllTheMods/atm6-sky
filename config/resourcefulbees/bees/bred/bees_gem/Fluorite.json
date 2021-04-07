@@ -25,11 +25,11 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "breedChance": 0.8,
+      "breedChance": 0.6,
       "parent1": "Redstone",
       "parent2": "Tin",
       "feedItem": "mekanism:fluorite_gem",
-      "feedAmount": 6
+      "feedAmount": 36
   },
   "TraitData": {
       "hasTraits": false

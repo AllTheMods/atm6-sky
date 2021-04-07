@@ -38,8 +38,10 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false
-  },
+    "isBreedable": false,
+    "feedItem": "tag:forge:storage_blocks/quartz",
+    "feedAmount": 5
+},
   "TraitData": {
     "hasTraits": true
   }

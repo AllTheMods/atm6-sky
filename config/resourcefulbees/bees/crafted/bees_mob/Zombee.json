@@ -33,8 +33,8 @@
   },
   "BreedData": {
       "isBreedable": true,
-      "feedItem": "xreliquary:zombie_heart",
-      "feedAmount": 2
+      "feedItem": "biomesoplenty:flesh",
+      "feedAmount": 5
   },
   "TraitData": {
       "hasTraits": true

@@ -18,11 +18,11 @@
             "inputID": "resourcefulbees:lava_bee",
             "outputs": [{
                     "outputID": "resourcefulbees:lava_bee",
-                    "weight": 90
+                    "weight": 80
                 },
                 {
                     "outputID": "resourcefulbees:soul_lava_bee",
-                    "weight": 10
+                    "weight": 20
                 }
             ]
         }]
@@ -38,11 +38,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "breedChance": 0.6,
-        "parent1": "Vibranium",
-        "parent2": "Allthemodium",
         "feedItem": "tag:forge:storage_blocks/unobtainium",
-        "feedAmount": 3
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": true

@@ -77,7 +77,10 @@ onEvent(`recipes`, e => {
       `naturesaura:chunk_loader`,
       */
 
+      /*
       `cyclic:uncrafter`,
+      */
+
       `cyclic:tile_transporter_empty`,
       /cyclic:.*_pipe/,
       `cyclic:cable_wrench`,

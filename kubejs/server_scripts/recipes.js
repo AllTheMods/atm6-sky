@@ -321,16 +321,6 @@ onEvent(`recipes`, e => {
     C: `extrastorage:netherite_crafter`,
     U: `#forge:ingots/unobtainium`
   });
-  modifyShaped(`bpm:singularity`, 1, [
-    `131`,
-    `242`,
-    `131`
-  ], {
-    1: `#forge:storage_blocks/unobtainium`,
-    2: `extradisks:withering_processor`,
-    3: `quark:dragon_scale`,
-    4: `mysticalagradditions:creative_essence`
-  });
 
   //Cable Tiers changes
   var caTypes = [

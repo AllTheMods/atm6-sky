@@ -5,32 +5,11 @@
 		#Should nether generate as in default world type? [default: false]
 		default = true
 
-		[dimensions.nether.structures]
-			#Use only if 'enabled' is true!
-			#Should nether fortress be disabled? [default: false]
-			disable-fortress = false
-			#Should structures like fortresses or bastions be generated in nether? [default: true]
-			enabled = true
-			#Use only if 'enabled' is true!
-			#Should bastions be disabled? [default: true]
-			disable-bastions = true
-
 	[dimensions.end]
 		#Should end generate as in default world type? [default: false]
 		default = false
-		#Should structures like end cities be generated in nether? [default: false]
-		#This also affects the large islands with chorus plants.
-		#Small islands will still be generated.
-		structures = false
 		#Should the main island be generated as normal? [default: true]
 		main-island = true
-
-	[dimensions.overworld]
-		#Should structures like end portal or villages be generated in overworld? [default: false]
-		structures = false
-		#Should the stronghold with end portal be the only structure?
-		#Needs default config be 'true', otherwise it'll be ignored. [default: false]
-		stronhold-only = false
 
 [world]
 	#Should a surface be generated in overworld? [default: false]
@@ -41,11 +20,21 @@
 	#Sea level in world [default: 63]
 	#Range: 0 ~ 256
 	sea-level = 63
+	#Distance between islands in overworld [default: 8192]
+	#nether the distance is 1/8
+	#Range: 64 ~ 29999900
+	island-distance = 8192
+	#The radius for the biomes to repeat [default: 8192]
+	#By default it's the perfect range that each team has the same biomes
+	#WARNING: Too small biome range will prevent some structures to generate, if structures are enabled, because some need a special biome!
+	#Range: 64 ~ 29999900
+	biome-range = 8192
 
 	[world.single-biome]
 		#Specifies the biome for the whole world
 		biome = "minecraft:plains"
 		#Should only one biome be generated? [default: false]
+		#WARNING: Some structures need a special biome, e.g. Mansion needs Dark Oak Forest! These structures will not be generated if you have only one biome!
 		enabled = false
 
 [spawn]
@@ -87,4 +76,15 @@
 		range = 50
 		#Should players be able to modify their spawn positions? [default: false]
 		modify-spawns = false
+
+[structures]
+	#All the structures that should be generated.
+	#A list with all possible structures can be found in config/skyblockbuilder/structures.txt
+	structures = ["minecraft:fortress"]
+	#All the features that should be generated.
+	#A list with all possible structures can be found in config/skyblockbuilder/features.txt
+	#INFO: The two default values are required for the obsidian towers in end. If this is missing, they will be first generated when respawning the dragon.
+	features = ["minecraft:end_spike", "minecraft:end_gateway"]
+	#If this is true, the structure and feature whitelist will be blacklists and everything except of the given structures/features are being generated. [default: false]
+	whitelist-is-blacklist = false
 

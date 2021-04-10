@@ -77,7 +77,18 @@ onEvent(`recipes`, e => {
     E: `pneumaticcraft:electrostatic_compressor`,
     F: `pneumaticcraft:flux_compressor`
   });
-
+  //Create
+  e.recipes.create.mechanical_crafting('create:creative_motor', [
+    'ABA',
+    'CDC',
+    'BEB'
+  ], {
+    A: 'create:cogwheel',
+    B: 'create:large_cogwheel',
+    C: 'create:shaft',
+    D: atm_star,
+    E: 'create:gearbox'
+  })
   energize([{
     item: `appliedenergistics2:dense_energy_cell`
   }], `appliedenergistics2:creative_energy_cell`, 1, 420000000);

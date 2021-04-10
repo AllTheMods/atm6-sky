@@ -1,12 +1,12 @@
 {
   "items": [
-    {
+  {
       "item": "ceramics:clay_bucket",
-	  "nbt": {
+	"nbt": {
         "fluid": "minecraft:lava"
       }
-    },
-	{
+   },
+   {
       "item": "minecraft:ice"
     }
   ]

@@ -800,8 +800,13 @@ onEvent(`recipes`, e => {
     output: `minecraft:honeycomb_block`,
     type: `thermal:press`
   });
+  e.remove({
+    output: `minecraft:honeycomb`,
+    type: `thermal:press`
+  });
   e.recipes.thermal.sawmill([Item.of(`integrateddynamics:menril_planks`, 6), Item.of(`thermal:sawdust`).withChance(0.25)], `#integrateddynamics:menril_logs`).energy(1000);
   e.recipes.thermal.press(`minecraft:honeycomb_block`, [Item.of(`minecraft:honeycomb`, 9), `thermal:press_packing_3x3_die`]);
+  e.recipes.thermal.press(Item.of(`minecraft:honeycomb`, 9), [`minecraft:honeycomb`, `thermal:press_unpacking_die`]);
   e.recipes.thermal.pulverizer([`mekanism:dust_coal`, Item.of(`thermal:sulfur_dust`).withChance(0.25)], `minecraft:coal`);
   e.recipes.thermal.pulverizer(`mekanism:dust_charcoal`, `#forge:charcoal`);
   e.recipes.thermal.smelter(`mekanism:ingot_steel`, [Item.of(`#forge:dusts/coal`, 2), `#forge:ingots/iron`]);

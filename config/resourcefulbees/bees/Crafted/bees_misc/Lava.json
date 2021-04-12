@@ -38,7 +38,7 @@
   },
   "BreedData": {
     "isBreedable": false,
-    "feedItem": "bloodmagic:lavacrystal",
+    "feedItem": "bloodmagic:reagentlava",
     "feedAmount": 5
 },
   "TraitData": {

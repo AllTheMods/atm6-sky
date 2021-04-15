@@ -206,18 +206,6 @@ onEvent(`recipes`, e => {
   ], {
     L: `#minecraft:logs`
   });
-  e.shaped(`pipez:infinity_upgrade`, [
-    `CIC`,
-    `EUG`,
-    `CTC`
-  ], {
-    C: `mysticalagradditions:nether_star_crux`,
-    I: `industrialforegoing:supreme_black_hole_unit`,
-    E: [`mekanism:ultimate_induction_provider`, `powah:energy_cell_nitro`],
-    U: `pipez:ultimate_upgrade`,
-    G: `mekanism:ultimate_chemical_tank`,
-    T: `industrialforegoing:supreme_black_hole_tank`
-  });
 
   e.custom({
     type: `industrialforegoing:dissolution_chamber`,

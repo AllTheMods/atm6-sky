@@ -1,39 +1,39 @@
 {
-  "flower": "tag:forge:cobblestone",
-  "maxTimeInHive": 1200,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "misc/cobbee_bee",
-  "ColorData": {
-      "isBeeColored": false,
-      "honeycombColor": "#1c1823"
-  },
-  "MutationData": {
-      "hasMutation": true,
-      "mutationCount": 1,
-      "mutations": [{
-          "type": "BLOCK_TO_ITEM",
-          "inputID": "compressium:cobblestone_3",
-          "chance": 0.25,
-          "outputs": [{
-              "outputID": "resourcefulbees:cobbee_bee_spawn_egg"
-          }]
-      }]
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:cobblestone",
-      "mainOutputCount": 32,
-      "mainOutputWeight": 0.9
-  },
-  "SpawnData": {
-      "canSpawnInWorld": false
-  },
-  "BreedData": {
-    "isBreedable": false,
-    "feedItem": "compressium:cobblestone_3",
-    "feedAmount": 5
-},
-  "TraitData": {
-      "hasTraits": false
-  }
+    "flower": "tag:forge:cobblestone",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/cobbee_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#1c1823"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "compressium:cobblestone_3",
+            "chance": 0.25,
+            "outputs": [{
+                "outputID": "resourcefulbees:cobbee_bee_spawn_egg"
+            }]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:cobblestone",
+        "mainOutputCount": 32,
+        "mainOutputWeight": 0.9
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "feedItem": "compressium:cobblestone_3",
+        "feedAmount": 5
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }

@@ -4,43 +4,39 @@
   "hasHoneycomb": true,
   "traits": ["nether", "pigman"],
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#F1ED95",
-    "primaryColor": "#D6D30D",
-    "isGlowing": true,
-    "glowColor": "#D6D30D"
+      "isBeeColored": true,
+      "honeycombColor": "#F1ED95",
+      "primaryColor": "#D6D30D",
+      "isGlowing": true,
+      "glowColor": "#D6D30D"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:glowing_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:glowing_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:glowstone_dust",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 3
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:glowstone_dust",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 3
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "tag:misctags:flowers/glowing_flowers",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "tag:misctags:flowers/glowing_flowers",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

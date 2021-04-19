@@ -45,131 +45,131 @@ onEvent(`jei.information`, e => {
 
 onEvent(`jei.add.items`, e => {
   e.add([
-    `minecraft:dragon_egg`
+      `minecraft:dragon_egg`
   ]);
 });
 
 onEvent(`jei.hide.items`, e => {
   e.hide([
-    /quark:ancient_tome/,
-    `quark:crate`,
-    `quark:ravager_hide`,
-    `quark:backpack`,
-    `quark:slime_in_a_bucket`,
-    `quark:trowel`,
-    `quark:magnet`,
-    `quark:soul_compass`,
-    `quark:pipe`,
-    `quark:boded_ravager_hide`,
-    /quark:.*_shard/,
-    /quark:.*_rune/,
+      /quark:ancient_tome/,
+      `quark:crate`,
+      `quark:ravager_hide`,
+      `quark:backpack`,
+      `quark:slime_in_a_bucket`,
+      `quark:trowel`,
+      `quark:magnet`,
+      `quark:soul_compass`,
+      `quark:pipe`,
+      `quark:boded_ravager_hide`,
+      /quark:.*_shard/,
+      /quark:.*_rune/,
 
-    `@curios`,
+      `@curios`,
 
-    `@titanium`,
+      `@titanium`,
 
-    `forbidden_arcanus:rotten_leather`,
+      `forbidden_arcanus:rotten_leather`,
 
-    `appliedenergistics2:silicon`,
-    `appliedenergistics2:flour`,
-    /appliedenergistics2:facade/,
+      `appliedenergistics2:silicon`,
+      `appliedenergistics2:flour`,
+      /appliedenergistics2:facade/,
 
-    `cyclic:tile_transporter_empty`,
-    /cyclic:.*_pipe/,
-    `cyclic:cable_wrench`,
-    `cyclic:uncrafter`,
-    `cyclic:sleeping_mat`,
+      `cyclic:tile_transporter_empty`,
+      /cyclic:.*_pipe/,
+      `cyclic:cable_wrench`,
+      `cyclic:uncrafter`,
+      `cyclic:sleeping_mat`,
 
-    //`naturesaura:chunk_loader`,
+      //`naturesaura:chunk_loader`,
 
-    /extrastorage:disk_/,
-    /extrastorage:storagepart_/,
-    /extrastorage:block_/,
-    `extrastorage:advanced_exporter`,
-    `extrastorage:advanced_importer`,
+      /extrastorage:disk_/,
+      /extrastorage:storagepart_/,
+      /extrastorage:block_/,
+      `extrastorage:advanced_exporter`,
+      `extrastorage:advanced_importer`,
 
-    `bloodmagic:saltpeter`,
-    `bloodmagic:sulfur`,
-    `bloodmagic:coalsand`,
-    `bloodmagic:ironsand`,
-    `bloodmagic:goldsand`,
+      `bloodmagic:saltpeter`,
+      `bloodmagic:sulfur`,
+      `bloodmagic:coalsand`,
+      `bloodmagic:ironsand`,
+      `bloodmagic:goldsand`,
 
-    /pedestals:dust/,
-    /pedestals:pedestal\/stone(?!333)\d{3}/,
+      /pedestals:dust/,
+      /pedestals:pedestal\/stone(?!333)\d{3}/,
 
-    `mekanism:copper_ore`,
-    `mekanism:tin_ore`,
-    `mekanism:osmium_ore`,
-    `mekanism:uranium_ore`,
-    `mekanism:lead_ore`,
-    `mekanism:sawdust`,
-    `mekanism:block_charcoal`,
+      `mekanism:copper_ore`,
+      `mekanism:tin_ore`,
+      `mekanism:osmium_ore`,
+      `mekanism:uranium_ore`,
+      `mekanism:lead_ore`,
+      `mekanism:sawdust`,
+      `mekanism:block_charcoal`,
 
-    /immersiveengineering:.*coke$/,
-    `immersiveengineering:slag`,
+      /immersiveengineering:.*coke$/,
+      `immersiveengineering:slag`,
 
-    /exnihilosequentia:ingot_/,
+      /exnihilosequentia:ingot_/,
 
-    `darkutils:ender_hopper`,
+      `darkutils:ender_hopper`,
 
-    /biggerreactors:yello/,
+      /biggerreactors:yello/,
 
-    /mekanism:creative_chemical_tank/,
-    /mekanism:creative_fluid_tank/,
+      /mekanism:creative_chemical_tank/,
+      /mekanism:creative_fluid_tank/,
 
-    /xreliquary:alkahestry_tome/,
+      /xreliquary:alkahestry_tome/,
 
-    `excompressum:compressed_cobblestone`,
-    `excompressum:compressed_gravel`,
-    `excompressum:compressed_sand`,
-    `excompressum:compressed_dirt`,
-    `excompressum:compressed_soul_sand`,
-    `excompressum:compressed_netherrack`,
-    `excompressum:compressed_end_stone`,
-    `excompressum:compressed_diorite`,
-    `excompressum:compressed_granite`,
-    `excompressum:compressed_andesite`,
-    /excompressum:.*_crucible/,
+      `excompressum:compressed_cobblestone`,
+      `excompressum:compressed_gravel`,
+      `excompressum:compressed_sand`,
+      `excompressum:compressed_dirt`,
+      `excompressum:compressed_soul_sand`,
+      `excompressum:compressed_netherrack`,
+      `excompressum:compressed_end_stone`,
+      `excompressum:compressed_diorite`,
+      `excompressum:compressed_granite`,
+      `excompressum:compressed_andesite`,
+      /excompressum:.*_crucible/,
 
-    /tinyredstone:silicon/,
+      /tinyredstone:silicon/,
 
-    `eidolon:sulfur`,
-    `eidolon:lead_ore`,
-    `eidolon:lead_ingot`,
-    `eidolon:lead_block`,
-    `eidolon:lead_nugget`,
+      `eidolon:sulfur`,
+      `eidolon:lead_ore`,
+      `eidolon:lead_ingot`,
+      `eidolon:lead_block`,
+      `eidolon:lead_nugget`,
 
-    `mininggadgets:minerslight`,
+      `mininggadgets:minerslight`,
 
-    `platforms:ramp`,
-    `platforms:rise`,
-    `platforms:rail`,
-    `platforms:floor`,
-    `platforms:flat`,
-    `platforms:frame`,
+      `platforms:ramp`,
+      `platforms:rise`,
+      `platforms:rail`,
+      `platforms:floor`,
+      `platforms:flat`,
+      `platforms:frame`,
 
-    /engineerstools:.+_grit/,
+      /engineerstools:.+_grit/
   ]);
 
   colors.forEach(color => {
-    refined.forEach(refin => {
-      e.hide([
-        `refinedstorage:${color}_${refin}`
-      ]);
-    });
+      refined.forEach(refin => {
+          e.hide([
+              `refinedstorage:${color}_${refin}`
+          ]);
+      });
   });
 
   const hideMetal = (mod, name, types) => {
-    types.forEach(type => {
-      const typeFirst = [`mekanism`, `immersiveengineering`];
-      const id = typeFirst.includes(mod) ?
-        `${mod}:${type}_${name}` :
-        `${mod}:${name}_${type}`;
-      if (!Ingredient.of(id).isEmpty()) {
-        e.hide(id);
-        //console.log(`Hid ${id}`);
-      }
-    });
+      types.forEach(type => {
+          const typeFirst = [`mekanism`, `immersiveengineering`];
+          const id = typeFirst.includes(mod) ?
+              `${mod}:${type}_${name}` :
+              `${mod}:${name}_${type}`;
+          if (!Ingredient.of(id).isEmpty()) {
+              e.hide(id);
+              //console.log(`Hid ${id}`);
+          }
+      });
   };
 
   //Hides items based name, format: `mod`, `metal`, [`type1`, `type2`, `etc`]
@@ -206,16 +206,16 @@ onEvent(`jei.hide.items`, e => {
   hideMetal(`tmechworks`, `aluminum`, [`ingot`, `ore`, `block`, `nugget`]);
 
   const hideStuff = (mod, type, names) => {
-    names.forEach(name => {
-      const typeFirst = [`mekanism`, `immersiveengineering`];
-      const id = typeFirst.includes(mod) ?
-        `${mod}:${type}_${name}` :
-        `${mod}:${name}_${type}`;
-      if (!Ingredient.of(id).isEmpty()) {
-        e.hide(id);
-        //console.log(`Hid ${id}`);
-      }
-    });
+      names.forEach(name => {
+          const typeFirst = [`mekanism`, `immersiveengineering`];
+          const id = typeFirst.includes(mod) ?
+              `${mod}:${type}_${name}` :
+              `${mod}:${name}_${type}`;
+          if (!Ingredient.of(id).isEmpty()) {
+              e.hide(id);
+              //console.log(`Hid ${id}`);
+          }
+      });
   };
 
   //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
@@ -234,10 +234,9 @@ onEvent(`jei.hide.items`, e => {
 
   hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
 });
-
 onEvent(`item.tooltip`, e => {
   refined.forEach(refin => {
-    e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
+      e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
   });
   e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make.`]);
   e.add(`allthemodium:teleport_pad`, Text.of(`The Mining dimension is disabled.`).red());

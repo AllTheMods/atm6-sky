@@ -4,44 +4,40 @@
   "traits": ["nether"],
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#DB4819",
-    "honeycombColor": "#DB4819",
-    "isGlowing": true,
-    "glowColor": "#DB4819"
+      "isBeeColored": true,
+      "primaryColor": "#DB4819",
+      "honeycombColor": "#DB4819",
+      "isGlowing": true,
+      "glowColor": "#DB4819"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:lava_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:lava_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:lava",
-    "mainOutputCount": 1000,
-    "hasFluidOutput": true
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:lava",
+      "mainOutputCount": 1000,
+      "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:nether"
+      "canSpawnInWorld": false,
+      "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "bloodmagic:reagentlava",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "bloodmagic:reagentlava",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

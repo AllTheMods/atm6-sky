@@ -20,20 +20,20 @@ events.listen('recipes', function(e) {
             }]
         })
     }
-	//Exchangers
-	e.shaped('exchangers:creative_exchanger', [
+    //Exchangers
+    e.shaped('exchangers:creative_exchanger', [
         ' E ',
         'RSH',
         ' U '
     ], {
         S: atm_star,
         E: 'exchangers:end_exchanger',
-		H: 'exchangers:hv_exchanger',
-		U: 'exchangers:ultimate_exchanger',
-		R: 'exchangers:resonant_exchanger'
+        H: 'exchangers:hv_exchanger',
+        U: 'exchangers:ultimate_exchanger',
+        R: 'exchangers:resonant_exchanger'
     })
-	//Strainer
-	e.shaped('waterstrainer:super_worm', [
+    //Strainer
+    e.shaped('waterstrainer:super_worm', [
         'WWW',
         'WSW',
         'WWW'

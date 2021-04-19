@@ -4,42 +4,38 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "skeleton/skeleton_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#F6F2E6"
+      "isBeeColored": false,
+      "honeycombColor": "#F6F2E6"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:skeleton_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:skeleton_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:bone",
-    "mainOutputWeight": 0.50,
-    "secondaryOutput": "minecraft:bone_meal",
-    "secondaryOutputWeight": 0.5,
-    "secondaryOutputCount": 3
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:bone",
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:bone_meal",
+      "secondaryOutputWeight": 0.5,
+      "secondaryOutputCount": 3
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "minecraft:bone_block",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "minecraft:bone_block",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

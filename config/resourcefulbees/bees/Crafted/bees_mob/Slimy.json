@@ -4,43 +4,39 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "slime/slime_bee",
   "ColorData": {
-    "modelType": "GELATINOUS",
-    "gelLayerTexture": "/slime/slime_gel_Layer",
-    "honeycombColor": "#1ad920"
+      "modelType": "GELATINOUS",
+      "gelLayerTexture": "/slime/slime_gel_Layer",
+      "honeycombColor": "#1ad920"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:slimy_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:slimy_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:slime_ball",
-    "mainOutputCount": 2,
-    "mainOutputWeight": 0.50,
-    "secondaryOutput": "xreliquary:slime_pearl",
-    "secondaryOutputWeight": 0.05
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:slime_ball",
+      "mainOutputCount": 2,
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "xreliquary:slime_pearl",
+      "secondaryOutputWeight": 0.05
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "minecraft:slime_block",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "minecraft:slime_block",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

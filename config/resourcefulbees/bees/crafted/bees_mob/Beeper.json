@@ -5,44 +5,40 @@
   "baseLayerTexture": "/creeper/creeper_bee",
   "traits": ["creeper"],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#0C9F0A",
-    "isGlowing": true,
-    "glowColor": "#E2D3D3",
-    "glowingPulse": 2,
-    "emissiveLayerTexture": "/creeper/creeper_bee_emissive"
+      "isBeeColored": false,
+      "honeycombColor": "#0C9F0A",
+      "isGlowing": true,
+      "glowColor": "#E2D3D3",
+      "glowingPulse": 2,
+      "emissiveLayerTexture": "/creeper/creeper_bee_emissive"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:creeper_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:creeper_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:gunpowder",
-    "mainOutputWeight": 0.50,
-    "mainOutputCount": 4
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:gunpowder",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 4
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "tag:forge:storage_blocks/gunpowder",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "tag:forge:storage_blocks/gunpowder",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

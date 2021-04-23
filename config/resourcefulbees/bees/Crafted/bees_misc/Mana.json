@@ -1,42 +1,42 @@
 {
-  "flower": "mythicbotany:alfsteel_block",
-  "maxTimeInHive": 1200,
-  "hasHoneycomb": true,
-  "ColorData": {
-      "isBeeColored": true,
-      "primaryColor": "#00C9EA",
-      "honeycombColor": "#00C9EA"
-  },
-  "MutationData": {
-      "hasMutation": true,
-      "mutationCount": 1,
-      "mutations": [{
-          "type": "BLOCK_TO_ITEM",
-          "inputID": "compressium:cobblestone_3",
-          "chance": 0.25,
-          "outputs": [{
-              "outputID": "resourcefulbees:mana_bee_spawn_egg"
-          }]
-      }]
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "botania:black_lotus",
-      "secondaryOutput": "botania:blacker_lotus",
-      "bottleOutput": "botania:mana_bottle",
-      "mainOutputWeight": 0.33,
-      "secondaryOutputWeight": 0.01,
-      "mainInputCount": 9
-  },
-  "SpawnData": {
-      "canSpawnInWorld": false
-  },
-  "BreedData": {
-    "isBreedable": false,
-    "feedItem": "botania:mana_pylon",
-    "feedAmount": 5
-},
-  "TraitData": {
-      "hasTraits": false
-  }
+    "flower": "mythicbotany:alfsteel_block",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "ColorData": {
+        "isBeeColored": true,
+        "primaryColor": "#00C9EA",
+        "honeycombColor": "#00C9EA"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "compressium:cobblestone_3",
+            "chance": 0.25,
+            "outputs": [{
+                "outputID": "resourcefulbees:mana_bee_spawn_egg"
+            }]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "botania:black_lotus",
+        "secondaryOutput": "botania:blacker_lotus",
+        "bottleOutput": "botania:mana_bottle",
+        "mainOutputWeight": 0.33,
+        "secondaryOutputWeight": 0.01,
+        "mainInputCount": 9
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "feedItem": "botania:mana_pylon",
+        "feedAmount": 5
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }

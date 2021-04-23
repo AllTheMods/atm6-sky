@@ -1,37 +1,37 @@
 {
-  "flower": "tag:forge:storage_blocks/diamond",
-  "maxTimeInHive": 1200,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "ores/diamond/diamond_bee",
-  "ColorData": {
-      "isBeeColored": false,
-      "honeycombColor": "#00ffff",
-      "modelType": "ORE"
-  },
-  "MutationData": {
-      "hasMutation": false
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:diamond_ore",
-      "mainOutputWeight": 0.50,
-      "mainOutputCount": 1,
-      "secondaryOutput": "minecraft:diamond",
-      "secondaryOutputWeight": 0.01,
-      "secondaryOutputCount": 2
-  },
-  "SpawnData": {
-      "canSpawnInWorld": false
-  },
-  "BreedData": {
-      "isBreedable": true,
-      "breedChance": 0.6,
-      "parent1": "Obsidian",
-      "parent2": "Coal",
-      "feedItem": "tag:forge:storage_blocks/diamond",
-      "feedAmount": 5
-  },
-  "TraitData": {
-      "hasTraits": false
-  }
+    "flower": "tag:forge:storage_blocks/diamond",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/diamond/diamond_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#00ffff",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:diamond_ore",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "secondaryOutput": "minecraft:diamond",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "breedChance": 0.6,
+        "parent1": "Obsidian",
+        "parent2": "Coal",
+        "feedItem": "tag:forge:storage_blocks/diamond",
+        "feedAmount": 5
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }

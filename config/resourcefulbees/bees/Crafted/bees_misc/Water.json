@@ -4,41 +4,37 @@
   "traits": ["can_swim"],
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#0F3653",
-    "honeycombColor": "#0F3653"
+      "isBeeColored": true,
+      "primaryColor": "#0F3653",
+      "honeycombColor": "#0F3653"
   },
   "MutationData": {
-    "hasMutation": true,
-    "mutationCount": 1,
-    "mutations": [
-      {
-        "type": "BLOCK_TO_ITEM",
-        "inputID": "compressium:cobblestone_3",
-        "chance": 0.25,
-        "outputs": [
-          {
-            "outputID": "resourcefulbees:water_bee_spawn_egg"
-            }
-        ]
-      }
-    ]
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "compressium:cobblestone_3",
+          "chance": 0.25,
+          "outputs": [{
+              "outputID": "resourcefulbees:water_bee_spawn_egg"
+          }]
+      }]
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:water",
-    "mainOutputCount": 1000,
-    "hasFluidOutput": true
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:water",
+      "mainOutputCount": 1000,
+      "hasFluidOutput": true
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "botania:rune_water",
-    "feedAmount": 5
-},
+      "isBreedable": false,
+      "feedItem": "botania:rune_water",
+      "feedAmount": 5
+  },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

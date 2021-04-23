@@ -3,149 +3,149 @@ onEvent(`recipes`, e => {
   var mekEnrich = e.recipes.mekanism.enriching;
 
   const energize = (ingredient, result, rCount, power) => {
-    e.recipes.powah.energizing({
-      ingredients: ingredient,
-      energy: power,
-      result: {
-        item: result,
-        count: rCount
-      }
-    });
+      e.recipes.powah.energizing({
+          ingredients: ingredient,
+          energy: power,
+          result: {
+              item: result,
+              count: rCount
+          }
+      });
   };
 
   const pressure = (inputs, result, rCount, pressure) => {
-    e.recipes.pneumaticcraft.pressure_chamber({
-      inputs: inputs,
-      pressure: pressure,
-      results: [{
-        item: result,
-        count: rCount
-      }]
-    });
+      e.recipes.pneumaticcraft.pressure_chamber({
+          inputs: inputs,
+          pressure: pressure,
+          results: [{
+              item: result,
+              count: rCount
+          }]
+      });
   };
 
   const modifyShaped = (result, count, pattern, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:crafting_shaped`
-    });
-    e.shaped(Item.of(result, count),
-      pattern,
-      ingridients
-    );
+      e.remove({
+          output: result,
+          type: `minecraft:crafting_shaped`
+      });
+      e.shaped(Item.of(result, count),
+          pattern,
+          ingridients
+      );
   };
 
   const modifyShapeless = (result, count, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:crafting_shapeless`
-    });
-    e.shapeless(Item.of(result, count), ingridients);
+      e.remove({
+          output: result,
+          type: `minecraft:crafting_shapeless`
+      });
+      e.shapeless(Item.of(result, count), ingridients);
   };
 
   const modifySmelt = (result, ingridients) => {
-    e.remove({
-      output: result,
-      type: `minecraft:smelting`
-    });
-    e.smelting(result, ingridients);
+      e.remove({
+          output: result,
+          type: `minecraft:smelting`
+      });
+      e.smelting(result, ingridients);
   };
 
   //Make bio fuel use tags instead of invidual items
   e.remove({
-    output: `mekanism:bio_fuel`
+      output: `mekanism:bio_fuel`
   });
   var bioFuels = [2, 4, 5, 7, 8];
   bioFuels.forEach(bioFuel => {
-    mekCrush(Item.of(`mekanism:bio_fuel`, bioFuel), `#misctags:biofuel${bioFuel}`);
+      mekCrush(Item.of(`mekanism:bio_fuel`, bioFuel), `#misctags:biofuel${bioFuel}`);
   });
 
   //Powah recipes
   energize([{
-    tag: `forge:storage_blocks/iron`
+      tag: `forge:storage_blocks/iron`
   }, {
-    tag: `forge:storage_blocks/gold`
+      tag: `forge:storage_blocks/gold`
   }], `powah:energized_steel_block`, 2, 90000);
   energize([{
-    item: `botania:blaze_block`
+      item: `botania:blaze_block`
   }], `powah:blazing_crystal_block`, 1, 810000);
   energize([{
-    tag: `forge:storage_blocks/diamond`
+      tag: `forge:storage_blocks/diamond`
   }], `powah:niotic_crystal_block`, 1, 2700000);
   energize([{
-    tag: `forge:storage_blocks/emerald`
+      tag: `forge:storage_blocks/emerald`
   }], `powah:spirited_crystal_block`, 1, 9000000);
 
   //Misc recipes
   e.shaped(`minecraft:elytra`, [
-    `msm`,
-    `mbm`,
-    `m m`
+      `msm`,
+      `mbm`,
+      `m m`
   ], {
-    m: `minecraft:phantom_membrane`,
-    s: `quark:dragon_scale`,
-    b: `ironjetpacks:strap`
+      m: `minecraft:phantom_membrane`,
+      s: `quark:dragon_scale`,
+      b: `ironjetpacks:strap`
   });
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`);
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`);
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
-    `AA`,
-    `AA`
+      `AA`,
+      `AA`
   ], {
-    A: `appliedenergistics2:fluix_smart_cable`
+      A: `appliedenergistics2:fluix_smart_cable`
   });
   e.shaped(`appliedenergistics2:fluix_covered_dense_cable`, [
-    `AA`,
-    `AA`
+      `AA`,
+      `AA`
   ], {
-    A: `appliedenergistics2:fluix_covered_cable`
+      A: `appliedenergistics2:fluix_covered_cable`
   });
   e.recipes.create.crushing([`create:cinder_flour`, Item.of(`create:cinder_flour`).withChance(0.5)], `exnihilosequentia:crushed_netherrack`);
   e.custom({
-    type: `appliedenergistics2:grinder`,
-    input: Ingredient.of(`#forge:flour_plants`).toJson(),
-    result: {
-      primary: Item.of(`pamhc2foodcore:flouritem`).toResultJson()
-    },
-    turns: 8
+      type: `appliedenergistics2:grinder`,
+      input: Ingredient.of(`#forge:flour_plants`).toJson(),
+      result: {
+          primary: Item.of(`pamhc2foodcore:flouritem`).toResultJson()
+      },
+      turns: 8
   });
   e.custom({
-    type: `cyclic:solidifier`,
-    inputTop: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
-    inputMiddle: Ingredient.of(`minecraft:spruce_sapling`).toJson(),
-    inputBottom: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
-    mix: {
-      fluid: `cyclic:slime`,
-      count: 200
-    },
-    result: Item.of(`integrateddynamics:menril_sapling`).toResultJson()
+      type: `cyclic:solidifier`,
+      inputTop: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
+      inputMiddle: Ingredient.of(`minecraft:spruce_sapling`).toJson(),
+      inputBottom: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
+      mix: {
+          fluid: `cyclic:slime`,
+          count: 200
+      },
+      result: Item.of(`integrateddynamics:menril_sapling`).toResultJson()
   });
   e.shaped(`computercraft:turtle_advanced`, [
-    `III`,
-    `ICI`,
-    `IAI`
+      `III`,
+      `ICI`,
+      `IAI`
   ], {
-    I: `#forge:ingots/gold`,
-    C: `computercraft:computer_advanced`,
-    A: `#forge:ingots/allthemodium`
+      I: `#forge:ingots/gold`,
+      C: `computercraft:computer_advanced`,
+      A: `#forge:ingots/allthemodium`
   });
   e.shaped(`computercraft:turtle_normal`, [
-    `III`,
-    `ICI`,
-    `IAI`
+      `III`,
+      `ICI`,
+      `IAI`
   ], {
-    I: `#forge:ingots/iron`,
-    C: `computercraft:computer_normal`,
-    A: `#forge:ingots/allthemodium`
+      I: `#forge:ingots/iron`,
+      C: `computercraft:computer_normal`,
+      A: `#forge:ingots/allthemodium`
   });
   e.shaped(`minecraft:totem_of_undying`, [
-    ` E `,
-    `GVG`,
-    ` G `
+      ` E `,
+      `GVG`,
+      ` G `
   ], {
-    E: `compressium:emerald_2`,
-    G: `#forge:storage_blocks/gold`,
-    V: `minecraft:villager_spawn_egg`
+      E: `compressium:emerald_2`,
+      G: `#forge:storage_blocks/gold`,
+      V: `minecraft:villager_spawn_egg`
   });
   e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1);
   e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1);
@@ -153,75 +153,75 @@ onEvent(`recipes`, e => {
   e.shapeless(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`);
   e.shapeless(Item.of(`minecraft:glowstone_dust`, 4), `#forge:glowstone`);
   e.shaped(`appliedenergistics2:silicon_press`, [
-    `EEE`,
-    `EAE`,
-    `EEE`
+      `EEE`,
+      `EAE`,
+      `EEE`
   ], {
-    E: `mysticalagriculture:iron_essence`,
-    A: `mysticalagriculture:silicon_essence`
+      E: `mysticalagriculture:iron_essence`,
+      A: `mysticalagriculture:silicon_essence`
   });
   e.shaped(`appliedenergistics2:calculation_processor_press`, [
-    `EEE`,
-    `EAE`,
-    `EEE`
+      `EEE`,
+      `EAE`,
+      `EEE`
   ], {
-    E: `mysticalagriculture:iron_essence`,
-    A: `mysticalagriculture:certus_quartz_essence`
+      E: `mysticalagriculture:iron_essence`,
+      A: `mysticalagriculture:certus_quartz_essence`
   });
   e.shaped(`appliedenergistics2:engineering_processor_press`, [
-    `EEE`,
-    `EAE`,
-    `EEE`
+      `EEE`,
+      `EAE`,
+      `EEE`
   ], {
-    E: `mysticalagriculture:iron_essence`,
-    A: `mysticalagriculture:diamond_essence`
+      E: `mysticalagriculture:iron_essence`,
+      A: `mysticalagriculture:diamond_essence`
   });
   e.shaped(`appliedenergistics2:logic_processor_press`, [
-    `EEE`,
-    `EAE`,
-    `EEE`
+      `EEE`,
+      `EAE`,
+      `EEE`
   ], {
-    E: `mysticalagriculture:iron_essence`,
-    A: `mysticalagriculture:gold_essence`
+      E: `mysticalagriculture:iron_essence`,
+      A: `mysticalagriculture:gold_essence`
   });
   e.shaped(`minecraft:hopper`, [
-    `ILI`,
-    `ILI`,
-    ` I `
+      `ILI`,
+      `ILI`,
+      ` I `
   ], {
-    L: `#minecraft:logs`,
-    I: `#forge:ingots/iron`
+      L: `#minecraft:logs`,
+      I: `#forge:ingots/iron`
   });
   e.shaped(Item.of(`astralsorcery:marble_raw`, 8), [
-    `III`,
-    `ILI`,
-    `III`
+      `III`,
+      `ILI`,
+      `III`
   ], {
-    L: `minecraft:bone_meal`,
-    I: `minecraft:stone`
+      L: `minecraft:bone_meal`,
+      I: `minecraft:stone`
   });
   e.shaped(Item.of(`minecraft:stick`, 16), [
-    `L`,
-    `L`
+      `L`,
+      `L`
   ], {
-    L: `#minecraft:logs`
+      L: `#minecraft:logs`
   });
 
   e.custom({
-    type: `industrialforegoing:dissolution_chamber`,
-    input: [
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson(),
-      Ingredient.of(`#minecraft:planks`).toJson()
-    ],
-    inputFluid: `{FluidName:\"immersiveengineering:creosote\",Amount:1000}`,
-    processingTime: 1,
-    output: Item.of(`immersiveengineering:treated_wood_horizontal`, 8).toResultJson()
+      type: `industrialforegoing:dissolution_chamber`,
+      input: [
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson(),
+          Ingredient.of(`#minecraft:planks`).toJson()
+      ],
+      inputFluid: `{FluidName:\"immersiveengineering:creosote\",Amount:1000}`,
+      processingTime: 1,
+      output: Item.of(`immersiveengineering:treated_wood_horizontal`, 8).toResultJson()
   });
 
   mekCrush(Item.of(`minecraft:blaze_powder`, 4), `#forge:rods/blaze`);
@@ -233,102 +233,102 @@ onEvent(`recipes`, e => {
 
   //SGear salvaging
   const salvage = (item, results) => {
-    e.custom({
-      type: `silentgear:salvaging`,
-      ingredient: Ingredient.of(item).toJson(),
-      results: results
-    });
+      e.custom({
+          type: `silentgear:salvaging`,
+          ingredient: Ingredient.of(item).toJson(),
+          results: results
+      });
   };
   salvage(`minecraft:anvil`, [
-    Item.of(`minecraft:iron_ingot`, 31).toResultJson()
+      Item.of(`minecraft:iron_ingot`, 31).toResultJson()
   ]);
   salvage(`minecraft:diamond_horse_armor`, [
-    Item.of(`minecraft:diamond`, 7).toResultJson()
+      Item.of(`minecraft:diamond`, 7).toResultJson()
   ]);
   salvage(`minecraft:golden_horse_armor`, [
-    Item.of(`minecraft:gold_ingot`, 7).toResultJson()
+      Item.of(`minecraft:gold_ingot`, 7).toResultJson()
   ]);
   salvage(`minecraft:iron_horse_armor`, [
-    Item.of(`minecraft:iron_ingot`, 7).toResultJson()
+      Item.of(`minecraft:iron_ingot`, 7).toResultJson()
   ]);
   salvage(`minecraft:leather_horse_armor`, [
-    Item.of(`minecraft:leather`, 7).toResultJson()
+      Item.of(`minecraft:leather`, 7).toResultJson()
   ]);
   salvage(`minecraft:minecart`, [
-    Item.of(`minecraft:iron_ingot`, 5).toResultJson()
+      Item.of(`minecraft:iron_ingot`, 5).toResultJson()
   ]);
   salvage(`minecraft:saddle`, [
-    Item.of(`minecraft:leather`, 5).toResultJson(),
-    Item.of(`minecraft:iron_nugget`, 2).toResultJson()
+      Item.of(`minecraft:leather`, 5).toResultJson(),
+      Item.of(`minecraft:iron_nugget`, 2).toResultJson()
   ]);
 
   //Extrastorage fixes
   e.shaped(`extrastorage:iron_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
+      `B B`,
+      `PCP`,
+      `B B`
   ], {
-    B: `#forge:storage_blocks/iron`,
-    P: `refinedstorage:improved_processor`,
-    C: `#refinedstorage:crafter`
+      B: `#forge:storage_blocks/iron`,
+      P: `refinedstorage:improved_processor`,
+      C: `#refinedstorage:crafter`
   });
   e.shaped(`extrastorage:gold_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
+      `B B`,
+      `PCP`,
+      `B B`
   ], {
-    B: `#forge:storage_blocks/gold`,
-    P: `refinedstorage:advanced_processor`,
-    C: `extrastorage:iron_crafter`
+      B: `#forge:storage_blocks/gold`,
+      P: `refinedstorage:advanced_processor`,
+      C: `extrastorage:iron_crafter`
   });
   e.shaped(`extrastorage:diamond_crafter`, [
-    `B B`,
-    `PCP`,
-    `B B`
+      `B B`,
+      `PCP`,
+      `B B`
   ], {
-    B: `#forge:storage_blocks/diamond`,
-    P: `extradisks:withering_processor`,
-    C: `extrastorage:gold_crafter`
+      B: `#forge:storage_blocks/diamond`,
+      P: `extradisks:withering_processor`,
+      C: `extrastorage:gold_crafter`
   });
   e.shaped(`extrastorage:netherite_crafter`, [
-    `BBB`,
-    `PCP`,
-    `BBB`
+      `BBB`,
+      `PCP`,
+      `BBB`
   ], {
-    B: `#forge:ingots/netherite`,
-    P: `extradisks:withering_processor`,
-    C: `extrastorage:diamond_crafter`
+      B: `#forge:ingots/netherite`,
+      P: `extradisks:withering_processor`,
+      C: `extrastorage:diamond_crafter`
   });
   modifyShaped(`creativecrafter:creative_crafter`, 1, [
-    `BUB`,
-    `PCP`,
-    `BUB`
+      `BUB`,
+      `PCP`,
+      `BUB`
   ], {
-    B: `#forge:storage_blocks/netherite`,
-    P: `extradisks:withering_processor`,
-    C: `extrastorage:netherite_crafter`,
-    U: `#forge:ingots/unobtainium`
+      B: `#forge:storage_blocks/netherite`,
+      P: `extradisks:withering_processor`,
+      C: `extrastorage:netherite_crafter`,
+      U: `#forge:ingots/unobtainium`
   });
 
   //Cable Tiers changes
   var caTypes = [
-    `importer`,
-    `exporter`,
-    `constructor`,
-    `destructor`
+      `importer`,
+      `exporter`,
+      `constructor`,
+      `destructor`
   ];
   const caTier = (tier, corners, processor, cables) => {
-    caTypes.forEach(caType => {
-      e.shaped(`cabletiers:${tier}_${caType}`, [
-        `a a`,
-        `bcb`,
-        `a a`
-      ], {
-        a: corners,
-        b: processor,
-        c: `${cables}${caType}`
+      caTypes.forEach(caType => {
+          e.shaped(`cabletiers:${tier}_${caType}`, [
+              `a a`,
+              `bcb`,
+              `a a`
+          ], {
+              a: corners,
+              b: processor,
+              c: `${cables}${caType}`
+          });
       });
-    });
   };
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
@@ -336,341 +336,341 @@ onEvent(`recipes`, e => {
 
   //NBT Resets
   var resetNBT = [
-    `rftoolsbase:filter_module`,
-    `rftoolspower:dimensionalcell_simple`,
-    `rftoolspower:dimensionalcell`,
-    `rftoolspower:dimensionalcell_advanced`,
-    `rftoolspower:powercell_card`,
-    `rftoolsutility:syringe`
+      `rftoolsbase:filter_module`,
+      `rftoolspower:dimensionalcell_simple`,
+      `rftoolspower:dimensionalcell`,
+      `rftoolspower:dimensionalcell_advanced`,
+      `rftoolspower:powercell_card`,
+      `rftoolsutility:syringe`
   ];
   resetNBT.forEach(reset => {
-    e.shapeless(Item.of(reset), reset);
+      e.shapeless(Item.of(reset), reset);
   });
 
   var tiersPowah = [
-    `starter`,
-    `basic`,
-    `hardened`,
-    `blazing`,
-    `niotic`,
-    `spirited`,
-    `nitro`
+      `starter`,
+      `basic`,
+      `hardened`,
+      `blazing`,
+      `niotic`,
+      `spirited`,
+      `nitro`
   ];
   var typesPowah = [
-    `energy_cell`,
-    `reactor`,
-    `furnator`,
-    `magmator`,
-    `thermo_generator`,
-    `solar_panel`,
-    `player_transmitter`,
-    `energy_hopper`,
-    `energy_discharger`,
-    `energizing_rod`
+      `energy_cell`,
+      `reactor`,
+      `furnator`,
+      `magmator`,
+      `thermo_generator`,
+      `solar_panel`,
+      `player_transmitter`,
+      `energy_hopper`,
+      `energy_discharger`,
+      `energizing_rod`
   ];
   typesPowah.forEach(type => {
-    tiersPowah.forEach(tier => {
-      e.shapeless(Item.of(`powah:${type}_${tier}`), `powah:${type}_${tier}`);
-    });
+      tiersPowah.forEach(tier => {
+          e.shapeless(Item.of(`powah:${type}_${tier}`), `powah:${type}_${tier}`);
+      });
   });
   var solars = [
-    `1`,
-    `2`,
-    `3`,
-    `4`,
-    `5`,
-    `6`,
-    `7`,
-    `8`,
-    /*
-    `custom_allthemodium`,
-    `custom_vibranium`,
-    `custom_unobtainium`
-    */
+      `1`,
+      `2`,
+      `3`,
+      `4`,
+      `5`,
+      `6`,
+      `7`,
+      `8`,
+      /*
+      `custom_allthemodium`,
+      `custom_vibranium`,
+      `custom_unobtainium`
+      */
   ];
   solars.forEach(solar => {
-    e.shapeless(Item.of(`solarflux:sp_${solar}`), `solarflux:sp_${solar}`);
+      e.shapeless(Item.of(`solarflux:sp_${solar}`), `solarflux:sp_${solar}`);
   });
   //Smithing stuff
   const smithing = (result, base, addition) => {
-    e.recipes.minecraft.smithing({
-      base: Ingredient.of(base).toJson(),
-      addition: Ingredient.of(addition).toJson(),
-      result: Item.of(result).toResultJson()
-    });
+      e.recipes.minecraft.smithing({
+          base: Ingredient.of(base).toJson(),
+          addition: Ingredient.of(addition).toJson(),
+          result: Item.of(result).toResultJson()
+      });
   };
   smithing(`metalbarrels:wood_to_netherite`, `metalbarrels:wood_to_obsidian`, `#forge:ingots/netherite`);
 
   //Jumbo Furnace
   const jumbo = (ingredients, result, xp) => {
-    e.custom({
-      type: `jumbofurnace:jumbo_smelting`,
-      ingredients: ingredients,
-      result: Item.of(result).toResultJson(),
-      experience: xp
-    });
+      e.custom({
+          type: `jumbofurnace:jumbo_smelting`,
+          ingredients: ingredients,
+          result: Item.of(result).toResultJson(),
+          experience: xp
+      });
   };
 
   //Reliquary changes
   e.remove({
-    output: `xreliquary:fertile_lily_pad`,
-    type: `minecraft:crafting_shapeless`
+      output: `xreliquary:fertile_lily_pad`,
+      type: `minecraft:crafting_shapeless`
   });
   e.shaped(`xreliquary:fertile_lily_pad`, [
-    `ESE`,
-    `FLF`,
-    `ESE`
+      `ESE`,
+      `FLF`,
+      `ESE`
   ], {
-    E: `xreliquary:fertile_essence`,
-    S: `mysticalagriculture:supremium_growth_accelerator`,
-    L: `minecraft:lily_pad`,
-    F: `mysticalagriculture:mystical_fertilizer`
+      E: `xreliquary:fertile_essence`,
+      S: `mysticalagriculture:supremium_growth_accelerator`,
+      L: `minecraft:lily_pad`,
+      F: `mysticalagriculture:mystical_fertilizer`
   });
 
   //Mining Gadgets
   modifyShaped(`mininggadgets:upgrade_empty`, 1, [
-    `RAL`,
-    `DGD`,
-    `LAR`
+      `RAL`,
+      `DGD`,
+      `LAR`
   ], {
-    L: `#forge:storage_blocks/lapis`,
-    R: `#forge:storage_blocks/redstone`,
-    D: `#forge:gems/diamond`,
-    A: `#forge:nuggets/allthemodium`,
-    G: `minecraft:glass_pane`
+      L: `#forge:storage_blocks/lapis`,
+      R: `#forge:storage_blocks/redstone`,
+      D: `#forge:gems/diamond`,
+      A: `#forge:nuggets/allthemodium`,
+      G: `minecraft:glass_pane`
   });
 
   //Mystical Agriculture
   modifyShaped(`mysticalagriculture:unattuned_augment`, 1, [
-    `PMP`,
-    `AMA`,
-    `PMP`
+      `PMP`,
+      `AMA`,
+      `PMP`
   ], {
-    P: `mysticalagriculture:prosperity_ingot`,
-    M: `botania:manasteel_ingot`,
-    A: `#forge:nuggets/allthemodium`
+      P: `mysticalagriculture:prosperity_ingot`,
+      M: `botania:manasteel_ingot`,
+      A: `#forge:nuggets/allthemodium`
   });
 
   //Mekanism
   modifyShaped(`mekanism:digital_miner`, 1, [
-    `AUA`,
-    `LRL`,
-    `TST`
+      `AUA`,
+      `LRL`,
+      `TST`
   ], {
-    L: `mekanism:logistical_sorter`,
-    R: `mekanism:robit`,
-    T: `mekanism:teleportation_core`,
-    A: `#mekanism:alloys/atomic`,
-    S: `mekanism:steel_casing`,
-    U: `#forge:ingots/unobtainium`
+      L: `mekanism:logistical_sorter`,
+      R: `mekanism:robit`,
+      T: `mekanism:teleportation_core`,
+      A: `#mekanism:alloys/atomic`,
+      S: `mekanism:steel_casing`,
+      U: `#forge:ingots/unobtainium`
   });
   modifyShaped(`mekanism:atomic_disassembler`, 1, [
-    `RER`,
-    `RUR`,
-    ` V `
+      `RER`,
+      `RUR`,
+      ` V `
   ], {
-    E: `mekanism:energy_tablet`,
-    R: `#mekanism:alloys/reinforced`,
-    U: `#forge:circuits/ultimate`,
-    V: `#forge:ingots/vibranium`
+      E: `mekanism:energy_tablet`,
+      R: `#mekanism:alloys/reinforced`,
+      U: `#forge:circuits/ultimate`,
+      V: `#forge:ingots/vibranium`
   });
   modifyShaped(`mekanismgenerators:wind_generator`, 1, [
-    ` O `,
-    `OCO`,
-    `EBE`
+      ` O `,
+      `OCO`,
+      `EBE`
   ], {
-    E: `mekanism:energy_tablet`,
-    C: `mekanismgenerators:electromagnetic_coil`,
-    B: `#forge:circuits/basic`,
-    O: `#forge:ingots/osmium`
+      E: `mekanism:energy_tablet`,
+      C: `mekanismgenerators:electromagnetic_coil`,
+      B: `#forge:circuits/basic`,
+      O: `#forge:ingots/osmium`
   });
 
   //Jetpacks
   e.shaped(`ironjetpacks:diamond_cell`, [
-    ` R `,
-    `TCT`,
-    ` R `
+      ` R `,
+      `TCT`,
+      ` R `
   ], {
-    R: `#forge:dusts/redstone`,
-    C: `ironjetpacks:advanced_coil`,
-    T: `#forge:gems/diamond`
+      R: `#forge:dusts/redstone`,
+      C: `ironjetpacks:advanced_coil`,
+      T: `#forge:gems/diamond`
   });
   e.shaped(`ironjetpacks:diamond_thruster`, [
-    `TAT`,
-    `ACA`,
-    `TFT`
+      `TAT`,
+      `ACA`,
+      `TFT`
   ], {
-    F: `minecraft:furnace`,
-    A: `ironjetpacks:advanced_coil`,
-    C: `ironjetpacks:diamond_cell`,
-    T: `#forge:gems/diamond`
+      F: `minecraft:furnace`,
+      A: `ironjetpacks:advanced_coil`,
+      C: `ironjetpacks:diamond_cell`,
+      T: `#forge:gems/diamond`
   });
   e.shaped(`ironjetpacks:diamond_capacitor`, [
-    `RCR`,
-    `RCR`,
-    `RCR`
+      `RCR`,
+      `RCR`,
+      `RCR`
   ], {
-    R: `#forge:gems/diamond`,
-    C: `ironjetpacks:diamond_cell`
+      R: `#forge:gems/diamond`,
+      C: `ironjetpacks:diamond_cell`
   });
   e.shaped(`ironjetpacks:diamond_jetpack`, [
-    `DCD`,
-    `DJD`,
-    `TRT`
+      `DCD`,
+      `DJD`,
+      `TRT`
   ], {
-    D: `#forge:gems/diamond`,
-    C: `ironjetpacks:diamond_capacitor`,
-    J: [`ironjetpacks:steel_jetpack`, `ironjetpacks:electrum_jetpack`, `ironjetpacks:invar_jetpack`],
-    T: `ironjetpacks:diamond_thruster`,
-    R: `angelring:itemdiamondring`
+      D: `#forge:gems/diamond`,
+      C: `ironjetpacks:diamond_capacitor`,
+      J: [`ironjetpacks:steel_jetpack`, `ironjetpacks:electrum_jetpack`, `ironjetpacks:invar_jetpack`],
+      T: `ironjetpacks:diamond_thruster`,
+      R: `angelring:itemdiamondring`
   });
   e.shaped(`ironjetpacks:platinum_cell`, [
-    ` R `,
-    `TCT`,
-    ` R `
+      ` R `,
+      `TCT`,
+      ` R `
   ], {
-    R: `#forge:dusts/redstone`,
-    C: `ironjetpacks:advanced_coil`,
-    T: `#forge:ingots/platinum`
+      R: `#forge:dusts/redstone`,
+      C: `ironjetpacks:advanced_coil`,
+      T: `#forge:ingots/platinum`
   });
   e.shaped(`ironjetpacks:platinum_thruster`, [
-    `TAT`,
-    `ACA`,
-    `TFT`
+      `TAT`,
+      `ACA`,
+      `TFT`
   ], {
-    F: `minecraft:furnace`,
-    A: `ironjetpacks:advanced_coil`,
-    C: `ironjetpacks:platinum_cell`,
-    T: `#forge:ingots/platinum`
+      F: `minecraft:furnace`,
+      A: `ironjetpacks:advanced_coil`,
+      C: `ironjetpacks:platinum_cell`,
+      T: `#forge:ingots/platinum`
   });
   e.shaped(`ironjetpacks:platinum_capacitor`, [
-    `RCR`,
-    `RCR`,
-    `RCR`
+      `RCR`,
+      `RCR`,
+      `RCR`
   ], {
-    R: `#forge:ingots/platinum`,
-    C: `ironjetpacks:platinum_cell`
+      R: `#forge:ingots/platinum`,
+      C: `ironjetpacks:platinum_cell`
   });
   e.shaped(`ironjetpacks:platinum_jetpack`, [
-    `PCP`,
-    `PJP`,
-    `TRT`
+      `PCP`,
+      `PJP`,
+      `TRT`
   ], {
-    P: `#forge:ingots/platinum`,
-    C: `ironjetpacks:platinum_capacitor`,
-    J: [`ironjetpacks:steel_jetpack`, `ironjetpacks:electrum_jetpack`, `ironjetpacks:invar_jetpack`],
-    T: `ironjetpacks:platinum_thruster`,
-    R: `angelring:itemdiamondring`
+      P: `#forge:ingots/platinum`,
+      C: `ironjetpacks:platinum_capacitor`,
+      J: [`ironjetpacks:steel_jetpack`, `ironjetpacks:electrum_jetpack`, `ironjetpacks:invar_jetpack`],
+      T: `ironjetpacks:platinum_thruster`,
+      R: `angelring:itemdiamondring`
   });
 
   //Foods
   e.shaped(`pamhc2foodcore:fruitpunchitem`, [
-    `FFF`,
-    `FBF`,
-    `FFF`
+      `FFF`,
+      `FBF`,
+      `FFF`
   ], {
-    F: `#forge:fruits`,
-    B: `pamhc2foodcore:applejuiceitem`
+      F: `#forge:fruits`,
+      B: `pamhc2foodcore:applejuiceitem`
   });
   e.shaped(`pamhc2foodcore:applejuiceitem`, [
-    `FFF`,
-    `FBF`,
-    `FFF`
+      `FFF`,
+      `FBF`,
+      `FFF`
   ], {
-    F: `minecraft:apple`,
-    B: `minecraft:glass_bottle`
+      F: `minecraft:apple`,
+      B: `minecraft:glass_bottle`
   });
   e.shaped(`pamhc2foodcore:melonjuiceitem`, [
-    `FFF`,
-    `FBF`,
-    `FFF`
+      `FFF`,
+      `FBF`,
+      `FFF`
   ], {
-    F: `minecraft:melon_slice`,
-    B: `minecraft:glass_bottle`
+      F: `minecraft:melon_slice`,
+      B: `minecraft:glass_bottle`
   });
   e.shaped(`pamhc2foodcore:sweetberryjuiceitem`, [
-    `FFF`,
-    `FBF`,
-    `FFF`
+      `FFF`,
+      `FBF`,
+      `FFF`
   ], {
-    F: `minecraft:sweet_berries`,
-    B: `minecraft:glass_bottle`
+      F: `minecraft:sweet_berries`,
+      B: `minecraft:glass_bottle`
   });
   e.shaped(`pamhc2foodcore:p8juiceitem`, [
-    `FFF`,
-    `FBF`,
-    `FFF`
+      `FFF`,
+      `FBF`,
+      `FFF`
   ], {
-    F: `#forge:vegetables`,
-    B: `minecraft:glass_bottle`
+      F: `#forge:vegetables`,
+      B: `minecraft:glass_bottle`
   });
 
   //Angel Ring
   e.shaped(`angelring:itemdiamondring`, [
-    `DND`,
-    `VEU`,
-    `DAD`
+      `DND`,
+      `VEU`,
+      `DAD`
   ], {
-    D: `#forge:storage_blocks/diamond`,
-    N: `#forge:storage_blocks/netherite`,
-    V: `#forge:storage_blocks/vibranium`,
-    U: `#forge:storage_blocks/unobtainium`,
-    A: `#forge:storage_blocks/allthemodium`,
-    E: `minecraft:elytra`
+      D: `#forge:storage_blocks/diamond`,
+      N: `#forge:storage_blocks/netherite`,
+      V: `#forge:storage_blocks/vibranium`,
+      U: `#forge:storage_blocks/unobtainium`,
+      A: `#forge:storage_blocks/allthemodium`,
+      E: `minecraft:elytra`
   });
   e.shaped(`angelring:itemring`, [
-    `CAC`,
-    `ARA`,
-    `DGD`
+      `CAC`,
+      `ARA`,
+      `DGD`
   ], {
-    C: `botania:pixie_dust`,
-    A: `#forge:storage_blocks/terrasteel`,
-    R: `angelring:itemdiamondring`,
-    D: `#forge:nether_stars`,
-    G: `botania:gaia_ingot`
+      C: `botania:pixie_dust`,
+      A: `#forge:storage_blocks/terrasteel`,
+      R: `angelring:itemdiamondring`,
+      D: `#forge:nether_stars`,
+      G: `botania:gaia_ingot`
   });
 
   //Other recipes
   e.shaped(Item.of(`forbidden_arcanus:iron_chain`, 3), [
-    `N  `,
-    ` I `,
-    `  N`
+      `N  `,
+      ` I `,
+      `  N`
   ], {
-    N: `#forge:nuggets/iron`,
-    I: `#forge:ingots/iron`
+      N: `#forge:nuggets/iron`,
+      I: `#forge:ingots/iron`
   });
   modifyShaped(`entangled:block`, 1, [
-    `UEU`,
-    `ECE`,
-    `UEU`
+      `UEU`,
+      `ECE`,
+      `UEU`
   ], {
-    U: `#forge:ingots/unobtainium`,
-    E: `#forge:ender_pearls`,
-    C: `minecraft:ender_chest`
+      U: `#forge:ingots/unobtainium`,
+      E: `#forge:ender_pearls`,
+      C: `minecraft:ender_chest`
   });
   modifyShaped(`entangled:item`, 1, [
-    ` EC`,
-    ` UE`,
-    `U  `
+      ` EC`,
+      ` UE`,
+      `U  `
   ], {
-    U: `#forge:ingots/unobtainium`,
-    E: `#forge:ender_pearls`,
-    C: `minecraft:ender_chest`
+      U: `#forge:ingots/unobtainium`,
+      E: `#forge:ender_pearls`,
+      C: `minecraft:ender_chest`
   });
 
   //Extra Disks
   const makeDisk = (disk, part, type, material, mid) => {
-    const processor = type === `advanced` ? `refinedstorage:${type}_processor` : `extradisks:${type}_processor`;
-    e.shaped(`${disk}_storage_part`, [
-      `121`,
-      `343`,
-      `131`
-    ], {
-      1: processor,
-      2: material,
-      3: `${part}_storage_part`,
-      4: mid
-    });
+      const processor = type === `advanced` ? `refinedstorage:${type}_processor` : `extradisks:${type}_processor`;
+      e.shaped(`${disk}_storage_part`, [
+          `121`,
+          `343`,
+          `131`
+      ], {
+          1: processor,
+          2: material,
+          3: `${part}_storage_part`,
+          4: mid
+      });
   };
   makeDisk(`refinedstorage:4096k_fluid`, `refinedstorage:1024k_fluid`, `advanced`, `#forge:nuggets/allthemodium`, `minecraft:bucket`);
   makeDisk(`extradisks:16384k_fluid`, `refinedstorage:4096k_fluid`, `advanced`, `#forge:ingots/allthemodium`, `minecraft:bucket`);
@@ -691,19 +691,19 @@ onEvent(`recipes`, e => {
 
   const quarkWoodTypes = [`oak`, `dark_oak`, `acacia`, `spruce`, `birch`, `jungle`, `warped`, `crimson`];
   quarkWoodTypes.forEach(wood => {
-    e.shapeless(`quark:${wood}_chest`, [`minecraft:${wood}_planks`, `#forge:chests/wooden`]);
-    e.shapeless(`quark:${wood}_trapped_chest`, [`quark:${wood}_chest`, `minecraft:tripwire_hook`]);
+      e.shapeless(`quark:${wood}_chest`, [`minecraft:${wood}_planks`, `#forge:chests/wooden`]);
+      e.shapeless(`quark:${wood}_trapped_chest`, [`quark:${wood}_chest`, `minecraft:tripwire_hook`]);
   });
 
   const buildQuarkChest = (type, material) => {
-    e.shaped(`quark:${type}_chest`, [
-      `aaa`,
-      `a a`,
-      `aaa`
-    ], {
-      a: material
-    });
-    e.shapeless(`quark:${type}_trapped_chest`, [`quark:${type}_chest`, `minecraft:tripwire_hook`]);
+      e.shaped(`quark:${type}_chest`, [
+          `aaa`,
+          `a a`,
+          `aaa`
+      ], {
+          a: material
+      });
+      e.shapeless(`quark:${type}_trapped_chest`, [`quark:${type}_chest`, `minecraft:tripwire_hook`]);
   };
 
   buildQuarkChest(`nether_brick`, `minecraft:nether_bricks`);
@@ -713,25 +713,25 @@ onEvent(`recipes`, e => {
 
   //RFTools
   modifyShaped(`rftoolsbuilder:builder`, 1, [
-    `aea`,
-    `rmr`,
-    `ara`
+      `aea`,
+      `rmr`,
+      `ara`
   ], {
-    a: `#forge:nuggets/allthemodium`,
-    e: `#forge:ender_pearls`,
-    r: `#forge:storage_blocks/redstone`,
-    m: `rftoolsbase:machine_frame`
+      a: `#forge:nuggets/allthemodium`,
+      e: `#forge:ender_pearls`,
+      r: `#forge:storage_blocks/redstone`,
+      m: `rftoolsbase:machine_frame`
   });
 
   //Astral Sorcery
   e.shaped(`astralsorcery:altar_discovery`, [
-    `MSM`,
-    ` P `,
-    `PPP`
+      `MSM`,
+      ` P `,
+      `PPP`
   ], {
-    M: `astralsorcery:marble_raw`,
-    S: `astralsorcery:black_marble_raw`,
-    P: `#minecraft:planks`
+      M: `astralsorcery:marble_raw`,
+      S: `astralsorcery:black_marble_raw`,
+      P: `#minecraft:planks`
   });
   /*
   e.custom({
@@ -836,108 +836,108 @@ onEvent(`recipes`, e => {
   });
   */
   modifyShaped(`pipez:universal_pipe`, 8, [
-    `123`,
-    `4A4`,
-    `321`
+      `123`,
+      `4A4`,
+      `321`
   ], {
-    1: `pipez:item_pipe`,
-    2: `pipez:energy_pipe`,
-    3: `pipez:fluid_pipe`,
-    4: `pipez:gas_pipe`,
-    A: `#forge:ingots/iron`
+      1: `pipez:item_pipe`,
+      2: `pipez:energy_pipe`,
+      3: `pipez:fluid_pipe`,
+      4: `pipez:gas_pipe`,
+      A: `#forge:ingots/iron`
   });
   modifyShaped(`immersiveengineering:sawdust`, 27, [
-    `SSS`
+      `SSS`
   ], {
-    S: `thermal:sawdust_block`
+      S: `thermal:sawdust_block`
   });
   modifyShapeless(`botania:lexicon`, 1, [`#minecraft:flowers`, `minecraft:book`]);
   modifyShaped(`minecraft:honeycomb_block`, 1, [
-    `CCC`,
-    `CCC`,
-    `CCC`
+      `CCC`,
+      `CCC`,
+      `CCC`
   ], {
-    C: `minecraft:honeycomb`
+      C: `minecraft:honeycomb`
   });
   e.shapeless(Item.of(`minecraft:honeycomb`, 9), `minecraft:honeycomb_block`);
   modifyShaped(`solarflux:mirror`, 3, [
-    `GGG`,
-    `III`
+      `GGG`,
+      `III`
   ], {
-    G: `#forge:glass`,
-    I: `#forge:ingots`
+      G: `#forge:glass`,
+      I: `#forge:ingots`
   });
   modifyShaped(`solarflux:sp_1`, 1, [
-    `MMM`,
-    `ILI`,
-    `III`
+      `MMM`,
+      `ILI`,
+      `III`
   ], {
-    M: `solarflux:mirror`,
-    L: `#forge:storage_blocks/lapis`,
-    I: `#forge:ingots/iron`
+      M: `solarflux:mirror`,
+      L: `#forge:storage_blocks/lapis`,
+      I: `#forge:ingots/iron`
   });
   modifyShaped(`minecraft:sticky_piston`, 1, [
-    `B`,
-    `P`
+      `B`,
+      `P`
   ], {
-    B: `#forge:slimeballs`,
-    P: `minecraft:piston`
+      B: `#forge:slimeballs`,
+      P: `minecraft:piston`
   });
   modifyShaped(`mekanismgenerators:solar_panel`, 1, [
-    `PPP`,
-    `RIR`,
-    `OOO`
+      `PPP`,
+      `RIR`,
+      `OOO`
   ], {
-    P: `powah:solar_panel_starter`,
-    R: `#forge:dusts/redstone`,
-    I: `mekanism:alloy_infused`,
-    O: `#forge:ingots/osmium`
+      P: `powah:solar_panel_starter`,
+      R: `#forge:dusts/redstone`,
+      I: `mekanism:alloy_infused`,
+      O: `#forge:ingots/osmium`
   });
   modifyShaped(`engineerstools:crushing_hammer`, 1, [
-    `RI `,
-    `BS `,
-    `  S`
+      `RI `,
+      `BS `,
+      `  S`
   ], {
-    R: `#forge:string`,
-    I: `#forge:ingots/iron`,
-    B: `#forge:storage_blocks/iron`,
-    S: `#forge:rods/wooden`
+      R: `#forge:string`,
+      I: `#forge:ingots/iron`,
+      B: `#forge:storage_blocks/iron`,
+      S: `#forge:rods/wooden`
   });
   modifyShaped(`forbidden_arcanus:candle_lamp`, 1, [
-    `NDN`,
-    `GAG`,
-    `NDN`
+      `NDN`,
+      `GAG`,
+      `NDN`
   ], {
-    N: `forbidden_arcanus:arcane_gold_nugget`,
-    A: `forbidden_arcanus:candle`,
-    D: `forbidden_arcanus:darkstone`,
-    G: `forbidden_arcanus:arcane_gold_ingot`
+      N: `forbidden_arcanus:arcane_gold_nugget`,
+      A: `forbidden_arcanus:candle`,
+      D: `forbidden_arcanus:darkstone`,
+      G: `forbidden_arcanus:arcane_gold_ingot`
   });
   modifyShaped(`torchmaster:megatorch`, 1, [
-    `TTT`,
-    `GLG`,
-    `DLD`
+      `TTT`,
+      `GLG`,
+      `DLD`
   ], {
-    T: `xreliquary:interdiction_torch`,
-    G: `#forge:storage_blocks/gold`,
-    D: `#forge:storage_blocks/diamond`,
-    L: `#minecraft:logs`
+      T: `xreliquary:interdiction_torch`,
+      G: `#forge:storage_blocks/gold`,
+      D: `#forge:storage_blocks/diamond`,
+      L: `#minecraft:logs`
   });
   modifyShaped(`immersiveengineering:cloche`, 1, [
-    `GEG`,
-    `G G`,
-    `TRT`
+      `GEG`,
+      `G G`,
+      `TRT`
   ], {
-    G: `#forge:glass`,
-    E: `immersiveengineering:electron_tube`,
-    T: `#forge:treated_wood`,
-    R: `mekanism:resistive_heater`
+      G: `#forge:glass`,
+      E: `immersiveengineering:electron_tube`,
+      T: `#forge:treated_wood`,
+      R: `mekanism:resistive_heater`
   });
   var ingots = [
-    `#forge:ingots/gold`,
-    `#forge:ingots/iron`,
-    `#forge:ingots/copper`,
-    `#forge:ingots/tin`
+      `#forge:ingots/gold`,
+      `#forge:ingots/iron`,
+      `#forge:ingots/copper`,
+      `#forge:ingots/tin`
   ];
   modifyShapeless(`appliedenergistics2:cable_anchor`, 3, [ingots, `#appliedenergistics2:knife`]);
   modifyShapeless(`appliedenergistics2:fluix_covered_cable`, 1, [`#minecraft:wool`, `appliedenergistics2:fluix_glass_cable`]);
@@ -945,113 +945,113 @@ onEvent(`recipes`, e => {
   modifyShapeless(`appliedenergistics2:fuzzy_card`, 1, [`#minecraft:wool`, `appliedenergistics2:advanced_card`]);
   modifyShapeless(`appliedenergistics2:crafting_terminal`, 1, [`appliedenergistics2:terminal`, `minecraft:crafting_table`, `appliedenergistics2:calculation_processor`]);
   modifyShaped(`appliedenergistics2:quartz_glass`, 4, [
-    `GDG`,
-    `DGD`,
-    `GDG`
+      `GDG`,
+      `DGD`,
+      `GDG`
   ], {
-    G: `#appliedenergistics2:dusts/quartz`,
-    D: `#forge:glass`
+      G: `#appliedenergistics2:dusts/quartz`,
+      D: `#forge:glass`
   });
   modifyShaped(`appliedenergistics2:quartz_fiber`, 3, [
-    `DDD`,
-    `GGG`,
-    `DDD`
+      `DDD`,
+      `GGG`,
+      `DDD`
   ], {
-    G: `#appliedenergistics2:dusts/quartz`,
-    D: `#forge:glass`
+      G: `#appliedenergistics2:dusts/quartz`,
+      D: `#forge:glass`
   });
   modifyShaped(`appliedenergistics2:chest`, 1, [
-    `GTG`,
-    `C C`,
-    `IFI`
+      `GTG`,
+      `C C`,
+      `IFI`
   ], {
-    G: `#forge:glass`,
-    T: `appliedenergistics2:terminal`,
-    C: `appliedenergistics2:fluix_glass_cable`,
-    I: `#forge:ingots/iron`,
-    F: `#appliedenergistics2:crystals/fluix`
+      G: `#forge:glass`,
+      T: `appliedenergistics2:terminal`,
+      C: `appliedenergistics2:fluix_glass_cable`,
+      I: `#forge:ingots/iron`,
+      F: `#appliedenergistics2:crystals/fluix`
   });
   modifyShaped(`appliedenergistics2:condenser`, 1, [
-    `IGI`,
-    `GDG`,
-    `IGI`
+      `IGI`,
+      `GDG`,
+      `IGI`
   ], {
-    G: `#forge:glass`,
-    I: `#forge:ingots/iron`,
-    D: `#appliedenergistics2:dusts/fluix`,
+      G: `#forge:glass`,
+      I: `#forge:ingots/iron`,
+      D: `#appliedenergistics2:dusts/fluix`,
   });
   modifyShaped(`appliedenergistics2:spatial_io_port`, 1, [
-    `GGG`,
-    `CPC`,
-    `IEI`
+      `GGG`,
+      `CPC`,
+      `IEI`
   ], {
-    G: `#forge:glass`,
-    C: `appliedenergistics2:fluix_glass_cable`,
-    P: `appliedenergistics2:io_port`,
-    I: `#forge:ingots/iron`,
-    E: `appliedenergistics2:engineering_processor`
+      G: `#forge:glass`,
+      C: `appliedenergistics2:fluix_glass_cable`,
+      P: `appliedenergistics2:io_port`,
+      I: `#forge:ingots/iron`,
+      E: `appliedenergistics2:engineering_processor`
   });
   modifyShaped(`appliedenergistics2:io_port`, 1, [
-    `GGG`,
-    `DCD`,
-    `IPI`
+      `GGG`,
+      `DCD`,
+      `IPI`
   ], {
-    G: `#forge:glass`,
-    C: `appliedenergistics2:fluix_glass_cable`,
-    P: `appliedenergistics2:logic_processor`,
-    I: `#forge:ingots/iron`,
-    D: `appliedenergistics2:drive`
+      G: `#forge:glass`,
+      C: `appliedenergistics2:fluix_glass_cable`,
+      P: `appliedenergistics2:logic_processor`,
+      I: `#forge:ingots/iron`,
+      D: `appliedenergistics2:drive`
   });
   modifyShaped(`appliedenergistics2:interface`, 1, [
-    `IGI`,
-    `A F`,
-    `IGI`
+      `IGI`,
+      `A F`,
+      `IGI`
   ], {
-    G: `#forge:glass`,
-    A: `appliedenergistics2:annihilation_core`,
-    F: `appliedenergistics2:formation_core`,
-    I: `#forge:ingots/iron`
+      G: `#forge:glass`,
+      A: `appliedenergistics2:annihilation_core`,
+      F: `appliedenergistics2:formation_core`,
+      I: `#forge:ingots/iron`
   });
   modifyShaped(`appliedenergistics2:molecular_assembler`, 1, [
-    `IGI`,
-    `ACF`,
-    `IGI`
+      `IGI`,
+      `ACF`,
+      `IGI`
   ], {
-    G: `appliedenergistics2:quartz_glass`,
-    A: `appliedenergistics2:annihilation_core`,
-    F: `appliedenergistics2:formation_core`,
-    I: `#forge:ingots/iron`,
-    C: `minecraft:crafting_table`
+      G: `appliedenergistics2:quartz_glass`,
+      A: `appliedenergistics2:annihilation_core`,
+      F: `appliedenergistics2:formation_core`,
+      I: `#forge:ingots/iron`,
+      C: `minecraft:crafting_table`
   });
   modifyShaped(`appliedenergistics2:cell_workbench`, 1, [
-    `WEW`,
-    `ICI`,
-    `III`
+      `WEW`,
+      `ICI`,
+      `III`
   ], {
-    W: `#minecraft:wool`,
-    E: `appliedenergistics2:calculation_processor`,
-    I: `#forge:ingots/iron`,
-    C: `#forge:chests/wooden`
+      W: `#minecraft:wool`,
+      E: `appliedenergistics2:calculation_processor`,
+      I: `#forge:ingots/iron`,
+      C: `#forge:chests/wooden`
   });
   modifyShaped(`minecraft:daylight_detector`, 1, [
-    `GGG`,
-    `QQQ`,
-    `SSS`
+      `GGG`,
+      `QQQ`,
+      `SSS`
   ], {
-    G: `#forge:glass`,
-    Q: `#forge:gems/quartz`,
-    S: `#minecraft:wooden_slabs`
+      G: `#forge:glass`,
+      Q: `#forge:gems/quartz`,
+      S: `#minecraft:wooden_slabs`
   });
   modifyShaped(`resourcefulbees:centrifuge_controller`, 1, [
-    `ICI`,
-    `BAB`,
-    `IRI`
+      `ICI`,
+      `BAB`,
+      `IRI`
   ], {
-    I: `resourcefulbees:centrifuge_casing`,
-    C: `resourcefulbees:centrifuge`,
-    B: `minecraft:iron_bars`,
-    A: `minecraft:comparator`,
-    R: `#forge:storage_blocks/redstone`
+      I: `resourcefulbees:centrifuge_casing`,
+      C: `resourcefulbees:centrifuge`,
+      B: `minecraft:iron_bars`,
+      A: `minecraft:comparator`,
+      R: `#forge:storage_blocks/redstone`
   });
 
   /*
@@ -1068,234 +1068,234 @@ onEvent(`recipes`, e => {
   modifySmelt(`refinedstorage:silicon`, [`#appliedenergistics2:crystals/quartz`, `#appliedenergistics2:purified_crystals`]);
   e.replaceInput(`#appliedenergistics2:silicon`, `refinedstorage:silicon`);
   e.remove({
-    id: `appliedenergistics2:inscriber/silicon_print`
+      id: `appliedenergistics2:inscriber/silicon_print`
   });
   e.custom({
-    type: `appliedenergistics2:inscriber`,
-    mode: `inscribe`,
-    result: {
-      item: `appliedenergistics2:printed_silicon`
-    },
-    ingredients: {
-      top: {
-        item: `appliedenergistics2:silicon_press`
+      type: `appliedenergistics2:inscriber`,
+      mode: `inscribe`,
+      result: {
+          item: `appliedenergistics2:printed_silicon`
       },
-      middle: {
-        tag: `forge:silicon`
+      ingredients: {
+          top: {
+              item: `appliedenergistics2:silicon_press`
+          },
+          middle: {
+              tag: `forge:silicon`
+          }
       }
-    }
   });
   e.remove({
-    output: `#botanypots:botany_pots`
+      output: `#botanypots:botany_pots`
   });
   e.shaped(Item.of(`botanypots:botany_pot`), [
-    `T T`,
-    `TPT`,
-    ` T `
+      `T T`,
+      `TPT`,
+      ` T `
   ], {
-    T: `minecraft:terracotta`,
-    P: `minecraft:flower_pot`
+      T: `minecraft:terracotta`,
+      P: `minecraft:flower_pot`
   });
   e.shaped(Item.of(`botanypots:hopper_botany_pot`), [
-    `MPM`,
-    ` H `
+      `MPM`,
+      ` H `
   ], {
-    M: `#forge:nuggets/terrasteel`,
-    P: `botanypots:botany_pot`,
-    H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
+      M: `#forge:nuggets/terrasteel`,
+      P: `botanypots:botany_pot`,
+      H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
   });
   e.shaped(Item.of(`botanypots:hopper_botany_pot`), [
-    `MPM`,
-    ` H `
+      `MPM`,
+      ` H `
   ], {
-    M: `pneumaticcraft:printed_circuit_board`,
-    P: `botanypots:botany_pot`,
-    H: `pneumaticcraft:omnidirectional_hopper`
+      M: `pneumaticcraft:printed_circuit_board`,
+      P: `botanypots:botany_pot`,
+      H: `pneumaticcraft:omnidirectional_hopper`
   });
 
   const pots = [
-    `botanypots:botany_pot`,
-    `botanypots:white_botany_pot`,
-    `botanypots:orange_botany_pot`,
-    `botanypots:magenta_botany_pot`,
-    `botanypots:light_blue_botany_pot`,
-    `botanypots:yellow_botany_pot`,
-    `botanypots:lime_botany_pot`,
-    `botanypots:pink_botany_pot`,
-    `botanypots:gray_botany_pot`,
-    `botanypots:light_gray_botany_pot`,
-    `botanypots:cyan_botany_pot`,
-    `botanypots:purple_botany_pot`,
-    `botanypots:blue_botany_pot`,
-    `botanypots:brown_botany_pot`,
-    `botanypots:green_botany_pot`,
-    `botanypots:red_botany_pot`,
-    `botanypots:black_botany_pot`,
+      `botanypots:botany_pot`,
+      `botanypots:white_botany_pot`,
+      `botanypots:orange_botany_pot`,
+      `botanypots:magenta_botany_pot`,
+      `botanypots:light_blue_botany_pot`,
+      `botanypots:yellow_botany_pot`,
+      `botanypots:lime_botany_pot`,
+      `botanypots:pink_botany_pot`,
+      `botanypots:gray_botany_pot`,
+      `botanypots:light_gray_botany_pot`,
+      `botanypots:cyan_botany_pot`,
+      `botanypots:purple_botany_pot`,
+      `botanypots:blue_botany_pot`,
+      `botanypots:brown_botany_pot`,
+      `botanypots:green_botany_pot`,
+      `botanypots:red_botany_pot`,
+      `botanypots:black_botany_pot`,
   ];
   var colors = [
-    `white`,
-    `light_gray`,
-    `gray`,
-    `black`,
-    `red`,
-    `orange`,
-    `yellow`,
-    `lime`,
-    `green`,
-    `light_blue`,
-    `cyan`,
-    `blue`,
-    `purple`,
-    `magenta`,
-    `pink`,
-    `brown`
+      `white`,
+      `light_gray`,
+      `gray`,
+      `black`,
+      `red`,
+      `orange`,
+      `yellow`,
+      `lime`,
+      `green`,
+      `light_blue`,
+      `cyan`,
+      `blue`,
+      `purple`,
+      `magenta`,
+      `pink`,
+      `brown`
   ];
 
   //Dye stuff
   colors.forEach(color => {
-    e.shapeless(Item.of(`appliedenergistics2:${color}_covered_cable`, 4), `appliedenergistics2:${color}_covered_dense_cable`);
-    e.shapeless(Item.of(`appliedenergistics2:${color}_smart_cable`, 4), `appliedenergistics2:${color}_smart_dense_cable`);
-    e.shaped(`appliedenergistics2:${color}_smart_dense_cable`, [
-      `AA`,
-      `AA`
-    ], {
-      A: `appliedenergistics2:${color}_smart_cable`
-    });
-    e.shaped(`appliedenergistics2:${color}_covered_dense_cable`, [
-      `AA`,
-      `AA`
-    ], {
-      A: `appliedenergistics2:${color}_covered_cable`
-    });
-    e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
-      `MPM`,
-      ` H `
-    ], {
-      M: `#forge:nuggets/terrasteel`,
-      P: `botanypots:${color}_botany_pot`,
-      H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
-    });
-    e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
-      `MPM`,
-      ` H `
-    ], {
-      M: `pneumaticcraft:printed_circuit_board`,
-      P: `botanypots:${color}_botany_pot`,
-      H: `pneumaticcraft:omnidirectional_hopper`
-    });
-    e.shapeless(Item.of(`botanypots:${color}_botany_pot`), [pots, `#forge:dyes/${color}`]);
-    e.shapeless(Item.of(`botanypots:hopper_${color}_botany_pot`), [`#botanypots:hopper_botany_pots`, `#forge:dyes/${color}`]);
-    /*
-    e.recipes.mekanism.enriching(Item.of(`minecraft:${color}_dye`, 2), `#byg:${color}_dye`);
-    e.custom({
-      type: `pedestals:pedestal_crushing`,
-      ingredient: Ingredient.of(`#byg:${color}_dye`).toJson(),
-      result: Item.of(`minecraft:${color}_dye`, 2).toResultJson()
-    });
-    */
-    e.remove({
-      output: `minecraft:${color}_bed`
-    });
-    //e.replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`);
-    e.shaped(Item.of(`minecraft:${color}_bed`), [
-      `WWW`,
-      `PPP`
-    ], {
-      P: `#minecraft:planks`,
-      W: `minecraft:${color}_wool`
-    });
-    e.shapeless(Item.of(`minecraft:${color}_bed`), [`#minecraft:beds`, `#forge:dyes/${color}`]);
-    e.remove({
-      output: `minecraft:${color}_wool`
-    });
-    e.shaped(Item.of(`minecraft:${color}_wool`, 8), [
-      `WWW`,
-      `WCW`,
-      `WWW`
-    ], {
-      C: `#forge:dyes/${color}`,
-      W: `#minecraft:wool`
-    });
-    e.shaped(Item.of(`minecraft:${color}_wool`, 2), [
-      `C`,
-      `C`,
-      `C`,
-    ], {
-      C: `minecraft:${color}_carpet`
-    });
-    e.remove({
-      output: `minecraft:${color}_carpet`
-    });
-    e.shapeless(Item.of(`minecraft:${color}_carpet`), [`#minecraft:carpets`, `#forge:dyes/${color}`]);
-    e.shaped(Item.of(`minecraft:${color}_carpet`, 8), [
-      `WWW`,
-      `WCW`,
-      `WWW`
-    ], {
-      C: `#forge:dyes/${color}`,
-      W: `#minecraft:carpets`
-    });
-    e.shaped(Item.of(`minecraft:${color}_carpet`, 3), [
-      `WW`
-    ], {
-      W: `minecraft:${color}_wool`
-    });
-    /*
-    e.remove({
-        output: `comforts:sleeping_bag_${color}`
-    });
-    if (color !== `light_gray`) {
-      e.shaped(Item.of(`comforts:sleeping_bag_${color}`), [
-        `WWW`,
-        `SSS`,
-        `WWW`,
+      e.shapeless(Item.of(`appliedenergistics2:${color}_covered_cable`, 4), `appliedenergistics2:${color}_covered_dense_cable`);
+      e.shapeless(Item.of(`appliedenergistics2:${color}_smart_cable`, 4), `appliedenergistics2:${color}_smart_dense_cable`);
+      e.shaped(`appliedenergistics2:${color}_smart_dense_cable`, [
+          `AA`,
+          `AA`
       ], {
-        W: `absentbydesign:slab_wool_${color}`,
-        S: `#forge:string`
+          A: `appliedenergistics2:${color}_smart_cable`
       });
-      e.shaped(Item.of(`minecraft:${color}_wool`), [
-        `W`,
-        `W`
+      e.shaped(`appliedenergistics2:${color}_covered_dense_cable`, [
+          `AA`,
+          `AA`
       ], {
-        W: `absentbydesign:slab_wool_${color}`
+          A: `appliedenergistics2:${color}_covered_cable`
       });
-    } else {
-      e.shaped(Item.of(`comforts:sleeping_bag_light_gray`), [
-        `WWW`,
-        `SSS`,
-        `WWW`,
+      e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
+          `MPM`,
+          ` H `
       ], {
-        W: `absentbydesign:slab_wool_silver`,
-        S: `#forge:string`
+          M: `#forge:nuggets/terrasteel`,
+          P: `botanypots:${color}_botany_pot`,
+          H: [`botania:hopperhock`, `botania:hopperhock_chibi`]
       });
-      e.shaped(Item.of(`minecraft:light_gray_wool`), [
-        `W`,
-        `W`
+      e.shaped(Item.of(`botanypots:hopper_${color}_botany_pot`), [
+          `MPM`,
+          ` H `
       ], {
-        W: `absentbydesign:slab_wool_silver`
+          M: `pneumaticcraft:printed_circuit_board`,
+          P: `botanypots:${color}_botany_pot`,
+          H: `pneumaticcraft:omnidirectional_hopper`
       });
-    }
-    */
-    e.shaped(Item.of(`minecraft:${color}_stained_glass`, 3), [
+      e.shapeless(Item.of(`botanypots:${color}_botany_pot`), [pots, `#forge:dyes/${color}`]);
+      e.shapeless(Item.of(`botanypots:hopper_${color}_botany_pot`), [`#botanypots:hopper_botany_pots`, `#forge:dyes/${color}`]);
+      /*
+      e.recipes.mekanism.enriching(Item.of(`minecraft:${color}_dye`, 2), `#byg:${color}_dye`);
+      e.custom({
+        type: `pedestals:pedestal_crushing`,
+        ingredient: Ingredient.of(`#byg:${color}_dye`).toJson(),
+        result: Item.of(`minecraft:${color}_dye`, 2).toResultJson()
+      });
+      */
+      e.remove({
+          output: `minecraft:${color}_bed`
+      });
+      //e.replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`);
+      e.shaped(Item.of(`minecraft:${color}_bed`), [
+          `WWW`,
+          `PPP`
+      ], {
+          P: `#minecraft:planks`,
+          W: `minecraft:${color}_wool`
+      });
+      e.shapeless(Item.of(`minecraft:${color}_bed`), [`#minecraft:beds`, `#forge:dyes/${color}`]);
+      e.remove({
+          output: `minecraft:${color}_wool`
+      });
+      e.shaped(Item.of(`minecraft:${color}_wool`, 8), [
+          `WWW`,
+          `WCW`,
+          `WWW`
+      ], {
+          C: `#forge:dyes/${color}`,
+          W: `#minecraft:wool`
+      });
+      e.shaped(Item.of(`minecraft:${color}_wool`, 2), [
+          `C`,
+          `C`,
+          `C`,
+      ], {
+          C: `minecraft:${color}_carpet`
+      });
+      e.remove({
+          output: `minecraft:${color}_carpet`
+      });
+      e.shapeless(Item.of(`minecraft:${color}_carpet`), [`#minecraft:carpets`, `#forge:dyes/${color}`]);
+      e.shaped(Item.of(`minecraft:${color}_carpet`, 8), [
+          `WWW`,
+          `WCW`,
+          `WWW`
+      ], {
+          C: `#forge:dyes/${color}`,
+          W: `#minecraft:carpets`
+      });
+      e.shaped(Item.of(`minecraft:${color}_carpet`, 3), [
+          `WW`
+      ], {
+          W: `minecraft:${color}_wool`
+      });
+      /*
+      e.remove({
+          output: `comforts:sleeping_bag_${color}`
+      });
+      if (color !== `light_gray`) {
+        e.shaped(Item.of(`comforts:sleeping_bag_${color}`), [
+          `WWW`,
+          `SSS`,
+          `WWW`,
+        ], {
+          W: `absentbydesign:slab_wool_${color}`,
+          S: `#forge:string`
+        });
+        e.shaped(Item.of(`minecraft:${color}_wool`), [
+          `W`,
+          `W`
+        ], {
+          W: `absentbydesign:slab_wool_${color}`
+        });
+      } else {
+        e.shaped(Item.of(`comforts:sleeping_bag_light_gray`), [
+          `WWW`,
+          `SSS`,
+          `WWW`,
+        ], {
+          W: `absentbydesign:slab_wool_silver`,
+          S: `#forge:string`
+        });
+        e.shaped(Item.of(`minecraft:light_gray_wool`), [
+          `W`,
+          `W`
+        ], {
+          W: `absentbydesign:slab_wool_silver`
+        });
+      }
+      */
+      e.shaped(Item.of(`minecraft:${color}_stained_glass`, 3), [
+          `GGG`,
+          `G G`,
+          `GGG`,
+      ], {
+          G: `minecraft:${color}_stained_glass_pane`
+      });
+  });
+  e.shaped(Item.of(`minecraft:white_wool`), [
+      `SS`,
+      `SS`
+  ], {
+      S: `#forge:string`
+  });
+  e.shaped(Item.of(`minecraft:glass`, 3), [
       `GGG`,
       `G G`,
       `GGG`,
-    ], {
-      G: `minecraft:${color}_stained_glass_pane`
-    });
-  });
-  e.shaped(Item.of(`minecraft:white_wool`), [
-    `SS`,
-    `SS`
   ], {
-    S: `#forge:string`
-  });
-  e.shaped(Item.of(`minecraft:glass`, 3), [
-    `GGG`,
-    `G G`,
-    `GGG`,
-  ], {
-    G: `minecraft:glass_pane`
+      G: `minecraft:glass_pane`
   });
   e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`);
 });

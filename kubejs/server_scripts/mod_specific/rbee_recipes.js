@@ -394,8 +394,8 @@ events.listen('recipes', function (e) {
         `C  `
     ]);
 
-    comb_types.forEach(lol => {
-        e.recipes.thermal.press(`resourcefulbees:${lol}_honeycomb_block`, [Item.of(`resourcefulbees:${lol}_honeycomb`, 9), `thermal:press_packing_3x3_die`]);
-        e.recipes.thermal.press(Item.of(`resourcefulbees:${lol}_honeycomb`, 9), [`resourcefulbees:${lol}_honeycomb_block`, `thermal:press_unpacking_die`]);
+    comb_types.forEach(type => {
+        e.recipes.thermal.press(`resourcefulbees:${type}_honeycomb_block`, [Item.of(`resourcefulbees:${type}_honeycomb`, 9), `thermal:press_packing_3x3_die`]);
+        e.recipes.thermal.press(Item.of(`resourcefulbees:${type}_honeycomb`, 9), [`resourcefulbees:${type}_honeycomb_block`, `thermal:press_unpacking_die`]);
     });
 });

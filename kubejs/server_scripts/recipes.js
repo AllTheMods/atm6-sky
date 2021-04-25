@@ -26,8 +26,7 @@ onEvent(`recipes`, e => {
 
   const modifyShaped = (result, count, pattern, ingridients) => {
       e.remove({
-          output: result,
-          type: `minecraft:crafting_shaped`
+          output: result
       });
       e.shaped(Item.of(result, count),
           pattern,

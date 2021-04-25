@@ -15,12 +15,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "minecraft:netherite_block",
             "outputs": [{
-                    "outputID": "minecraft:cobble_stone",
-                    "weight": 90
+                    "outputID": "minecraft:cobblestone",
+                    "weight": 80
                 },
                 {
                     "outputID": "resourcefulbees:netherite_bee_spawn_egg",
-                    "weight": 10
+                    "weight": 20
                 }
             ]
         }]

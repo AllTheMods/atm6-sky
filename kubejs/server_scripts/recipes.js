@@ -1282,6 +1282,14 @@ onEvent(`recipes`, e => {
       ], {
           G: `minecraft:${color}_stained_glass_pane`
       });
+      e.shaped(Item.of(`minecraft:${color}_concrete`, 8), [
+        `PPP`,
+        `PWP`,
+        `PPP`,
+    ], {
+        P: `minecraft:${color}_concrete_powder`,
+        W: ['resourcefulbees:water_honeycomb', 'mysticalagriculture:water_essence', 'minecraft:water_bucket']
+    }).id(`kubejs:${color}_concrete`)
   });
   e.shaped(Item.of(`minecraft:white_wool`), [
       `SS`,

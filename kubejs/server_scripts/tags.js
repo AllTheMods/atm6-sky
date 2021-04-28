@@ -154,7 +154,7 @@ e.add(`resourcefulbees:valid_apiary`, [
 //Misc
 e.add(`resourcefulbees:valid_apiary`, [`compactmachines:solid_wall`, /mcwwindows:.*_win /, /mcwroofs:.*_roof/, /darkutils:filter_.*/, /rftoolsbuilder:.*/, /enviromats:alabaster.*/, /.*glass$/, /.*glass_/]);
 //Flowers
-e.add('resourcefulbees:valid_apiary', ['tconstruct:blood_congealed_slime', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal', 'minecraft:slime_block', 'botania:terrasteel_block', 'minecraft:hay_block', 'allthemodium:molten_bluelava_block','kubejs:nether_star_block']);
+e.add('resourcefulbees:valid_apiary', ['tconstruct:blood_congealed_slime', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal', 'minecraft:slime_block', 'botania:terrasteel_block', 'minecraft:hay_block', 'allthemodium:molten_bluelava_block', 'kubejs:nether_star_block']);
 //Immersive Engineering 
 e.add('resourcefulbees:valid_apiary', [
     /immersiveengineering:slab_sheetmetal_+/,
@@ -170,8 +170,8 @@ e.removeAll(`minecraft:enderman_holdable`);
 
 //Entity tags go here
 onEvent('entity_type.tags', e => {
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', ['iceandfire:dragon_multipart','iceandfire:dragon_egg',/iceandfire:.+_dragon/,]);
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/]);
+e.add('industrialforegoing:mob_imprisonment_tool_blacklist', ['iceandfire:dragon_multipart', 'iceandfire:dragon_egg', /iceandfire:.+_dragon/, ]);
+e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/]);
 });
 //Fluid tags go here
 onEvent(`fluid.tags`, e => {

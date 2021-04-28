@@ -106,17 +106,17 @@
 			description: [
 				"There are Multiple ways to prevent mobs to spawn on your island, will even add some common knowledge tips",
 				"",
-				"- Lightsources",
+				"- &aLightsources",
 				'We have more overlays mod, pressing F7 will show Red and Yellow "X" on blocks.',
 				'Hostile Mobs will spawn on those, in which the yellow "X" is only during the night.',
 				"",
-				"- Non-Full blocks",
+				"- &aNon-Full blocks",
 				"Mainly Bottom Slabs, Stairs, Glass type blocks hostile mobs will not spawn on.",
 				"",
-				"- Range",
+				"- &aRange",
 				"All Mobs will spawn only outside a range of 24 blocks.",
 				"",
-				"- And special blocks which shown as the next tip"
+				"- &bAnd special blocks which shown as the next tip"
 			],
 			dependencies: ["723868AAF4E86CDA"],
 			id: "4D24D92E56049467",
@@ -140,7 +140,9 @@
 			description: [
 				"&e&lTorchmaster &rgives 4 items, one of which is a mega torch.",
 				"",
-				"This torch will prevent hostile mobs within a 64 block radius by default to spawn."
+				"This torch will prevent hostile mobs within a 64 block radius by default to spawn.",
+				"",
+				"&eBest used in Open grassy fields which you don't want a bunch of torches on them, and more chance for passive mobs to spawn."
 			],
 			dependencies: ["4D24D92E56049467"],
 			hide: true,
@@ -163,7 +165,9 @@
 			description: [
 				"&e&lTorchmaster &rhas an item that prevents passive mobs to spawn.",
 				"",
-				"The Dread Lamp will prevent passive mobs within a 64 block radius by default to spawn."
+				"The Dread Lamp will prevent passive mobs within a 64 block radius by default to spawn.",
+				"",
+				"&cIt's best used in mob grinders to prevent &bbats &cfrom spawning."
 			],
 			dependencies: ["4D24D92E56049467"],
 			hide: true,
@@ -404,6 +408,7 @@
 		},
 		{
 			title: "Chunk Borders",
+			icon: "restrictions:oneway_wall",
 			x: 1.5d,
 			y: -3.5d,
 			description: [
@@ -544,7 +549,7 @@
 				"In the All the mods Discord you can Ping me with",
 				"&b@Thunder_Nova (Pun_isher)",
 				"",
-				"&cWarning: &eI do not deal with server issues, nor program recipes and such. I do know how mods work. So please, don't ask me about something I have no control over. Just ask me about Quests, or guides to mods. &cThe Quest bellow will is supposed to disclose you on how to report issues.",
+				"&cWarning: &eI do not deal with server issues, nor program recipes and such. I do know how mods work; code wise. So please, don't ask me about something I have no control over. Just ask me about Quests, or guides to mods. &cThe Quest bellow will is supposed to disclose you on how to report issues.",
 				"",
 				"Please do it in the &b#suggestion &fchannel",
 				"",
@@ -627,9 +632,9 @@
 			y: -2.5d,
 			shape: "gear",
 			description: [
-				"The best way to communicate with us is by going thru &dGithub",
+				"The best way to communicate with us is by going through &dGithub",
 				"",
-				"It's ok going thru Discord, but it tends to get missed if a lot chats into it.",
+				"It's ok going through Discord, but it tends to get missed if a lot chats into it.",
 				"",
 				"In &dGithub &falso has a search for open and closed issues. Someone might already have a problem similar to you, or a fix."
 			],
@@ -669,35 +674,9 @@
 					}
 				},
 				{
-					id: "65449A732F2E814A",
-					type: "item",
-					auto: "no_toast",
-					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
-						tag: {
-							SkullOwner: {
-								Properties: {
-									textures: [{
-										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
-									}]
-								},
-								Id: [I;
-									10980745,
-									1636517645,
-									-1644603319,
-									752000299
-								]
-							},
-							display: {
-								Name: '{"text":"White_Phant0m"}'
-							}
-						}
-					}
-				},
-				{
 					id: "1FC3B067295AE63B",
 					type: "item",
+					auto: "enabled",
 					item: {
 						id: "minecraft:written_book",
 						Count: 1b,
@@ -710,6 +689,187 @@
 					}
 				}
 			]
+		},
+		{
+			title: "The rest of the team",
+			icon: {
+				id: "botania:lens_paint",
+				Count: 1b,
+				tag: {}
+			},
+			x: 0.0d,
+			y: -0.5d,
+			shape: "gear",
+			description: [
+				"The team that contributed massively to the pack.",
+				"",
+				"We got Artists, Modders, Editors, and so on."
+			],
+			dependencies: ["76200C6568457C8C"],
+			size: 1.8d,
+			id: "5043283E6D399AC0",
+			tasks: [{
+				id: "1CA968EF12D35F9E",
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: "5D695B3F767A9B34",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVhNjUzODc4MzBlMjFkMmE1NWY5OWUzNzRhZTI4YmRiNDJjZGU1NzFlM2UwODc1YWU3ZjVjNTA5OWVjMTcyYSJ9fX0="
+									}]
+								},
+								Id: [I;
+									699138965,
+									585977033,
+									-1670264954,
+									1006517275
+								]
+							},
+							display: {
+								Name: '{"text":"VLKH"}'
+							}
+						}
+					}
+				},
+				{
+					id: "18AA8A83D2AB6FEC",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjIxZDc2NjFiYTc5ODBjOGY1Nzg0YWZhYTljOGZmNTQ2NjgwNjE3N2E4ODU5Yzc5YjFjNjk5MjFkMmZhODhiYiJ9fX0="
+									}]
+								},
+								Id: [I;
+									-1481517540,
+									1727415680,
+									-1466223642,
+									1286807245
+								]
+							},
+							display: {
+								Name: '{"text":"thevortex"}'
+							}
+						}
+					}
+				},
+				{
+					id: "11115A1EB396FB9B",
+					type: "item",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkZDZmNTkwM2NiNmZkMDZkZTM3NjNlZjI3MjZmMzE1MDljZjVhYjhhZGZmZmY5YzMyYjU0ZjllNzIwMmYxNSJ9fX0="
+									}]
+								},
+								Id: [I;
+									-130471678,
+									-332837835,
+									-1496012281,
+									848629620
+								]
+							},
+							display: {
+								Name: '{"text":"whatthedrunk"}'
+							}
+						}
+					}
+				},
+				{
+					id: "251C4AE44B5B1338",
+					type: "item",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
+									}]
+								},
+								Id: [I;
+									1008420455,
+									545931945,
+									-1128469462,
+									-1780327108
+								]
+							},
+							display: {
+								Name: '{"text":"White_Phant0m"}'
+							}
+						}
+					}
+				},
+				{
+					id: "2DB53A06ED462158",
+					type: "item",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU2ZDg3NTczMTU5MzhhNWY0Mjg5ZDY0ZTViNDZkZjllM2ZlMmQ3NmI2MGIyYzk2MTcxMGFhMWQ1ZWU4MTI1YSJ9fX0="
+									}]
+								},
+								Id: [I;
+									113362993,
+									412633426,
+									-1982481287,
+									-900388682
+								]
+							},
+							display: {
+								Name: '{"text":"MutantGumdrop"}'
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Teleporting Problems?",
+			icon: "minecraft:ender_pearl",
+			x: -3.5d,
+			y: -7.0d,
+			description: [
+				"Enderman, endermites, and some other mobs and players can teleport.",
+				"",
+				"A way to prevent it is to use the Mob inhibitor from Mob Utilities mod.",
+				"",
+				"It can prevent anything in it's range to teleport."
+			],
+			dependencies: ["76200C6568457C8C"],
+			id: "7E2556F91B1A852C",
+			tasks: [{
+				id: "0561DE78192EC83E",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "41B76D89134CF815",
+				type: "item",
+				item: "mob_grinding_utils:ender_inhibitor_on"
+			}]
 		}
 	]
 }

@@ -853,6 +853,460 @@
 				auto: "enabled",
 				item: "mekanism:basic_energy_cube"
 			}]
+		},
+		{
+			title: "The world of Pressure.",
+			x: -6.5d,
+			y: -13.0d,
+			description: [
+				"Welcome to the explosive side of the Tech mods, &b&lPneumaticraft&r &f(&cThe P is Silent&f).",
+				"",
+				"You actually need to blow up Iron on the ground to get compressed Iron.",
+				"",
+				"I feel generous and will give 32 compressed iron for this explosive effort.",
+				"",
+				"You must have a blast resistant floor such as obsidian. The Cheapest explosive is Tiny TNT and it works."
+			],
+			id: "2F58BC36AC629184",
+			tasks: [
+				{
+					id: "5ACC38ACA360B0E6",
+					type: "item",
+					item: "appliedenergistics2:tiny_tnt"
+				},
+				{
+					id: "7651324895AF1F0B",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 32L
+				},
+				{
+					id: "619C2EC4BC8AF023",
+					type: "item",
+					item: "pneumaticcraft:ingot_iron_compressed"
+				}
+			],
+			rewards: [{
+				id: "2E42D29B6775259E",
+				type: "item",
+				item: "pneumaticcraft:ingot_iron_compressed",
+				count: 32
+			}]
+		},
+		{
+			title: "Pipes and... Explosions?",
+			x: -6.5d,
+			y: -14.0d,
+			description: [
+				"One of the main reasons that pneumaticraft was much avoided by many are that... they can explode even the pipes.",
+				"",
+				"But pneumaticraft has ways to prevent the explosions for the pipes and machines:",
+				"",
+				"- The &cSafety Tube Modual &fin which you place on top of tubes to release pressure past 4.9.",
+				"",
+				"- The &cSecurity Upgrade &fwhich is an upgrade for to be place inside your machines and generators."
+			],
+			dependencies: ["2F58BC36AC629184"],
+			id: "3C092849EDB6A134",
+			tasks: [
+				{
+					id: "020D60CC4267BB85",
+					type: "item",
+					item: "pneumaticcraft:pressure_tube",
+					count: 8L
+				},
+				{
+					id: "7BAE94793DBDDA15",
+					type: "item",
+					item: "pneumaticcraft:safety_tube_module"
+				}
+			],
+			rewards: [
+				{
+					id: "4501947906DFD0FD",
+					type: "item",
+					item: "pneumaticcraft:safety_tube_module"
+				},
+				{
+					id: "0C74FB3DFD6F85CC",
+					type: "item",
+					item: "pneumaticcraft:security_upgrade"
+				}
+			]
+		},
+		{
+			title: "Lava Pressured",
+			x: -7.5d,
+			y: -16.0d,
+			description: ["The best early machine especially if you have a way to get indefinate quantities of lava."],
+			dependencies: ["0AAE038955CF936E"],
+			id: "48DF6486F398241D",
+			tasks: [{
+				id: "199C2878362C3BB2",
+				type: "item",
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+		},
+		{
+			title: "Stressing an Air Head",
+			x: -6.5d,
+			y: -16.0d,
+			description: [
+				"The 1st generator to produce Pressure.",
+				"",
+				"It consumes solid fuel such as coal."
+			],
+			dependencies: ["3C092849EDB6A134"],
+			id: "0AAE038955CF936E",
+			tasks: [{
+				id: "4A45FF9A0F0BF95C",
+				type: "item",
+				item: "pneumaticcraft:air_compressor"
+			}]
+		},
+		{
+			title: "Hot and Cold",
+			x: -7.5d,
+			y: -15.0d,
+			description: [
+				"This generator uses heat difference to generate pressure.",
+				"",
+				"It will cool the heat, and heat the cold, but there are ways around that.",
+				"",
+				"&aBotania &fand &bMekanism &fdoes provide a indefinate source of heat and cold blocks that can help with this machine.",
+				"",
+				"And yes, &bMekanism &fpipes works on Pneumaticraft.",
+				"",
+				"But for &aBotania&f, you need to make Ice with it's pure daisy. It will refreeze the ice. Pneumaticraft &cHeat pipes do connect to ice blocks&f."
+			],
+			dependencies: ["0AAE038955CF936E"],
+			id: "409B4DCEB49CD49E",
+			tasks: [{
+				id: "1F90E0D17275E6C8",
+				type: "item",
+				item: "pneumaticcraft:thermal_compressor"
+			}],
+			rewards: [
+				{
+					id: "6B841F5671E6A658",
+					type: "item",
+					item: "pneumaticcraft:heat_pipe",
+					count: 6
+				},
+				{
+					id: "393E0897BE0DF9DA",
+					type: "item",
+					item: "mekanism:basic_thermodynamic_conductor",
+					count: 8
+				},
+				{
+					id: "5AFC08FEAB19079F",
+					type: "item",
+					item: "pneumaticcraft:vortex_tube"
+				}
+			]
+		},
+		{
+			title: "Multiblock Pressurization",
+			x: -6.5d,
+			y: -17.0d,
+			description: [
+				"This is the main machine of the pneumaticraft mod.",
+				"",
+				"The Pressure Chamber.",
+				"",
+				"No more need to risk your iron in explosions, you can pressurize the iron in a 1 by 1 ratio.",
+				"",
+				"It can even be use to Enchant your items, as long as it's a valid enchantment and no experience cost. But it won't upgrade your enchantments. In other words: Unbreaking 2 won't upgrade to unbreaking 3 if you add another unbreaking 2. But it can still accept other enchantments that are not on the gear."
+			],
+			dependencies: ["0AAE038955CF936E"],
+			id: "75BB0A1F44907F1B",
+			tasks: [
+				{
+					id: "159B91C9F5BE46C6",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_valve"
+				},
+				{
+					id: "0BA78B257F4452C6",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_interface",
+					count: 2L
+				},
+				{
+					id: "3E07C0CDEA8544BD",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_wall",
+					count: 23L
+				}
+			]
+		},
+		{
+			x: -6.5d,
+			y: -18.0d,
+			description: [
+				"This vacuum pump will reverse pressure into the negatives.",
+				"",
+				"When used on a pressure chamber it currently only extract enchantments from items, by using the item and a book."
+			],
+			dependencies: ["75BB0A1F44907F1B"],
+			id: "729FCC7F807A70A1",
+			tasks: [{
+				id: "1F4CE8736A224248",
+				type: "item",
+				item: "pneumaticcraft:vacuum_pump"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -17.0d,
+			description: [
+				"Pneumaticraft has many tools in their shed. But it requires pressure to be used.",
+				"",
+				"So having a charging station is better to get things on the roll. But it helps if you have the wrench as well from then on."
+			],
+			dependencies: ["0AAE038955CF936E"],
+			id: "532C675899B504DF",
+			tasks: [{
+				id: "1FDB7ECED60D3807",
+				type: "item",
+				item: "pneumaticcraft:charging_station"
+			}],
+			rewards: [{
+				id: "20453EF76D3E95A1",
+				type: "item",
+				item: "pneumaticcraft:pneumatic_wrench"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -17.0d,
+			dependencies: ["5B20C2A5E4247C0E"],
+			id: "5D45A740DEBDA45D",
+			tasks: [{
+				id: "76F54BFFCE4933E7",
+				type: "item",
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+		},
+		{
+			title: "Processing Transformation",
+			x: -5.5d,
+			y: -16.0d,
+			description: [
+				"This machine can work the same way as the Refinery but with extra steps.",
+				"",
+				"It is the main machine to get Pneumaticraft Plastic.",
+				"",
+				"The Amadron Tablet might get Lubricant, but for automation, it is best to use this machine.",
+				"",
+				"Plus you don't need to use crude oil to get to plastic using this. As it provides Ethenol, and Plant Oil for the Fluid Mixer."
+			],
+			dependencies: ["0AAE038955CF936E"],
+			id: "5B20C2A5E4247C0E",
+			tasks: [{
+				id: "626F2538FAADD1CB",
+				type: "item",
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		},
+		{
+			title: "Plastic, with pink slime.",
+			x: -5.5d,
+			y: -15.0d,
+			description: [
+				"This machine will process crude oil into various liquids such as LPG which is the one of the main ingrediants to make Pneumaticraft Plastic.",
+				"",
+				"It also gives other liquids that are very useful."
+			],
+			dependencies: ["0AAE038955CF936E"],
+			id: "6BAD995798816F59",
+			tasks: [
+				{
+					id: "6A8DCA32240E853E",
+					type: "item",
+					item: "pneumaticcraft:refinery"
+				},
+				{
+					id: "6BCD0928E6F0F9DE",
+					type: "item",
+					item: "pneumaticcraft:refinery_output"
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -16.0d,
+			description: [
+				"Speed Upgrade does what it does, it speeds up all your pneumaticraft machines at that they do.",
+				"",
+				"Fluid Mixer is optional, but it does give a byproduct that can double the amount you get for crafting speed upgrades."
+			],
+			dependencies: [
+				"5B20C2A5E4247C0E",
+				"0C9740F4B4DEAAF5"
+			],
+			id: "34F8CE78BB7EE6A3",
+			tasks: [{
+				id: "1C97943684E66017",
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade"
+			}]
+		},
+		{
+			title: "Plastic, without pink slime.",
+			x: -5.5d,
+			y: -17.0d,
+			description: [
+				"This machine will give the main ingrediant for Plastic without the use of the Fluid Mining Laser. It does give more steps to the pneumaticraft branch, but it's only for that branch without the need to visit other mods.",
+				"",
+				"It can use Ethenol, and Plant/Vegetable Oil to make Biodiesel. Which can be use to make Lubricant and Plastic."
+			],
+			dependencies: [
+				"0AAE038955CF936E",
+				"75BB0A1F44907F1B"
+			],
+			optional: true,
+			id: "0C9740F4B4DEAAF5",
+			tasks: [{
+				id: "6C7D3873C9E1AB98",
+				type: "item",
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -18.0d,
+			description: [""],
+			dependencies: ["5E7CDDE79405AC6C"],
+			id: "3B015C185E7C46FF",
+			tasks: [{
+				id: "04D5E86AEE6245E5",
+				type: "item",
+				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -18.0d,
+			dependencies: ["75BB0A1F44907F1B"],
+			id: "1FB895BAF5546CD1",
+			tasks: [{
+				id: "1D4D6F372073D9B9",
+				type: "item",
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -18.0d,
+			dependencies: ["5D45A740DEBDA45D"],
+			id: "2C0EEFA9A35EE9D5",
+			tasks: [{
+				id: "0D1B88F0BE3E711C",
+				type: "item",
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -19.0d,
+			dependencies: [
+				"1FB895BAF5546CD1",
+				"2C0EEFA9A35EE9D5"
+			],
+			id: "5FF072FA50A6E921",
+			tasks: [{
+				id: "2BCC1FDD326657CD",
+				type: "item",
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		},
+		{
+			title: "Some assembly required",
+			x: -3.5d,
+			y: -18.0d,
+			dependencies: [
+				"5FF072FA50A6E921",
+				"5D45A740DEBDA45D"
+			],
+			id: "5E7CDDE79405AC6C",
+			tasks: [
+				{
+					id: "1A61D8DA70480C59",
+					type: "item",
+					item: "pneumaticcraft:assembly_platform"
+				},
+				{
+					id: "4FB9620EDEC2B04F",
+					type: "item",
+					item: "pneumaticcraft:assembly_io_unit_import"
+				},
+				{
+					id: "1906C98B980DFBCD",
+					type: "item",
+					item: "pneumaticcraft:assembly_io_unit_export"
+				},
+				{
+					id: "22053ABFA103DCF1",
+					type: "item",
+					item: "pneumaticcraft:assembly_controller"
+				},
+				{
+					id: "1575BEE7896E63B2",
+					type: "item",
+					item: "pneumaticcraft:assembly_laser"
+				},
+				{
+					id: "7D1C7F7359ADDC07",
+					type: "item",
+					item: "pneumaticcraft:assembly_drill"
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: -18.0d,
+			dependencies: ["3B015C185E7C46FF"],
+			id: "41C2A3D360F57474",
+			tasks: [{
+				id: "5637500A54EAE9F2",
+				type: "item",
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -18.0d,
+			dependencies: ["41C2A3D360F57474"],
+			id: "3D0476FC7A0B51BF",
+			tasks: [{
+				id: "0A444F317B410FC8",
+				type: "item",
+				item: "pneumaticcraft:electrostatic_compressor"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -19.0d,
+			dependencies: ["3B015C185E7C46FF"],
+			id: "3E6298F9FBDAB0F5",
+			tasks: [{
+				id: "6CD1034FFB2B7305",
+				type: "item",
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -17.0d,
+			dependencies: ["3B015C185E7C46FF"],
+			id: "089E412549552976",
+			tasks: [{
+				id: "126AC6388A7093E0",
+				type: "item",
+				item: "pneumaticcraft:flux_compressor"
+			}]
 		}
 	]
 }

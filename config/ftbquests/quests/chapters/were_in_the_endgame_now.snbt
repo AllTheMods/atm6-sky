@@ -376,15 +376,15 @@
 			y: -5.5d,
 			id: "255F31BBC346BAB5",
 			tasks: [{
-				id: "1A4FC113B01612DE",
+				id: "09C3D7C73B495609",
 				type: "item",
-				item: "mysticalagradditions:creative_essence"
+				item: "atmadditions:atm_star"
 			}]
 		},
 		{
 			title: "Quite some Motor skills",
-			x: 7.0d,
-			y: -4.0d,
+			x: 6.5d,
+			y: -3.5d,
 			description: ["1 engine to power all your Create machineries"],
 			dependencies: ["255F31BBC346BAB5"],
 			id: "60D861BF28787109",
@@ -396,8 +396,8 @@
 		},
 		{
 			title: "No more Mana-gement",
-			x: 5.5d,
-			y: -4.0d,
+			x: 7.5d,
+			y: -3.5d,
 			description: ["An infinite pool of mana."],
 			dependencies: ["255F31BBC346BAB5"],
 			id: "5C3F068974422515",
@@ -409,9 +409,16 @@
 		},
 		{
 			title: "Pressure Overwhelming",
-			x: 8.5d,
+			x: 7.0d,
 			y: -4.0d,
-			dependencies: ["255F31BBC346BAB5"],
+			description: [""],
+			dependencies: [
+				"255F31BBC346BAB5",
+				"41C2A3D360F57474",
+				"3E6298F9FBDAB0F5",
+				"3D0476FC7A0B51BF",
+				"089E412549552976"
+			],
 			id: "60A3DD1F28A7D2C2",
 			tasks: [{
 				id: "19F37BCE22AF4B0F",
@@ -537,6 +544,165 @@
 						Throttle: 1.0d
 					}
 				}
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -5.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "1B3999D56002A99D",
+			tasks: [{
+				id: "6BAD4FC3F96800E8",
+				type: "item",
+				item: "woot:creative_conatus"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -5.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "1D2427C393888C47",
+			tasks: [{
+				id: "378CF3BB196A9AD8",
+				type: "item",
+				item: "storagedrawers:creative_storage_upgrade"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -7.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "0DF591DAA40A1458",
+			tasks: [{
+				id: "6FD8F2AB242005ED",
+				type: "item",
+				item: "iceandfire:creative_dragon_meal"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -7.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "1652A70132B7457D",
+			tasks: [{
+				id: "6983627E03EA57DD",
+				type: "item",
+				item: "ars_nouveau:creative_spell_book"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -5.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "6E01265F041E2E38",
+			tasks: [{
+				id: "60277C11A9A1AB9E",
+				type: "item",
+				item: "immersiveengineering:capacitor_creative"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -6.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "31F86C73C6B248F6",
+			tasks: [{
+				id: "4D101C58EBA25D69",
+				type: "item",
+				item: "refinedstorage:creative_controller"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: -5.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "38B06445E59695AD",
+			tasks: [{
+				id: "5EF7CB3B1AF0D1D4",
+				type: "item",
+				item: "mekanism:creative_energy_cube"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -7.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "36F0672B42F108CD",
+			tasks: [{
+				id: "5B87CCB9B4EA1A1F",
+				type: "item",
+				item: "waterstrainer:super_worm"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -7.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "4FA854804AE1034E",
+			tasks: [{
+				id: "11AB5FA8F895F633",
+				type: "item",
+				item: "ars_nouveau:creative_mana_jar"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -7.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "4E1E94270BC4FF81",
+			tasks: [{
+				id: "03E76D4C453B6E8A",
+				type: "item",
+				item: {
+					id: "exchangers:creative_exchanger",
+					Count: 1b,
+					tag: {
+						mode: 0,
+						fuzzyPlacementChance: 100,
+						directionalPlacement: 0b,
+						forceDropItems: 0b,
+						fuzzyPlacement: 0b,
+						voidItems: 0b,
+						range: 0,
+						Damage: 0,
+						blockstate: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -6.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "7D6222FE46361F29",
+			tasks: [{
+				id: "29D34579AC7972DB",
+				type: "item",
+				item: "appliedenergistics2:creative_energy_cell"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -7.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "6456C7E493802457",
+			tasks: [{
+				id: "1F80AE839B995DC6",
+				type: "item",
+				item: "iceandfire:dragonegg_gray"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -5.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "29F51931B71B52D7",
+			tasks: [{
+				id: "728298E3AA51171C",
+				type: "item",
+				item: "integrateddynamics:energy_battery_creative"
 			}]
 		}
 	]

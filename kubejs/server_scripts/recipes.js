@@ -206,6 +206,139 @@ onEvent(`recipes`, e => {
         L: `#minecraft:logs`
     });
 
+    //Misc recipes
+    e.shaped(`minecraft:elytra`, [
+        `msm`,
+        `mbm`,
+        `m m`
+    ], {
+        m: `minecraft:phantom_membrane`,
+        s: `quark:dragon_scale`,
+        b: `ironjetpacks:strap`
+    });
+    e.shapeless(`appliedenergistics2:ender_dust`, `#forge:dusts/ender_pearl`);
+    e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`);
+    e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`);
+    e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
+        `AA`,
+        `AA`
+    ], {
+        A: `appliedenergistics2:fluix_smart_cable`
+    });
+    e.shaped(`appliedenergistics2:fluix_covered_dense_cable`, [
+        `AA`,
+        `AA`
+    ], {
+        A: `appliedenergistics2:fluix_covered_cable`
+    });
+    e.recipes.create.crushing([`create:cinder_flour`, Item.of(`create:cinder_flour`).withChance(0.5)], `exnihilosequentia:crushed_netherrack`);
+    e.custom({
+        type: `appliedenergistics2:grinder`,
+        input: Ingredient.of(`#forge:flour_plants`).toJson(),
+        result: {
+            primary: Item.of(`pamhc2foodcore:flouritem`).toResultJson()
+        },
+        turns: 8
+    });
+    e.custom({
+        type: `cyclic:solidifier`,
+        inputTop: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
+        inputMiddle: Ingredient.of(`minecraft:spruce_sapling`).toJson(),
+        inputBottom: Ingredient.of(`integrateddynamics:menril_berries`).toJson(),
+        mix: {
+            fluid: `cyclic:slime`,
+            count: 200
+        },
+        result: Item.of(`integrateddynamics:menril_sapling`).toResultJson()
+    });
+    e.shaped(`computercraft:turtle_advanced`, [
+        `III`,
+        `ICI`,
+        `IAI`
+    ], {
+        I: `#forge:ingots/gold`,
+        C: `computercraft:computer_advanced`,
+        A: `#forge:ingots/allthemodium`
+    });
+    e.shaped(`computercraft:turtle_normal`, [
+        `III`,
+        `ICI`,
+        `IAI`
+    ], {
+        I: `#forge:ingots/iron`,
+        C: `computercraft:computer_normal`,
+        A: `#forge:ingots/allthemodium`
+    });
+    e.shaped(`minecraft:totem_of_undying`, [
+        ` E `,
+        `GVG`,
+        ` G `
+    ], {
+        E: `compressium:emerald_2`,
+        G: `#forge:storage_blocks/gold`,
+        V: `minecraft:villager_spawn_egg`
+    });
+    e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1);
+    e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1);
+    e.shapeless(Item.of(`minecraft:clay_ball`, 4), `#forge:storage_blocks/clay`);
+    e.shapeless(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`);
+    e.shapeless(Item.of(`minecraft:glowstone_dust`, 4), `#forge:glowstone`);
+    e.shaped(`appliedenergistics2:silicon_press`, [
+        `EEE`,
+        `EAE`,
+        `EEE`
+    ], {
+        E: `mysticalagriculture:iron_essence`,
+        A: `mysticalagriculture:silicon_essence`
+    });
+    e.shaped(`appliedenergistics2:calculation_processor_press`, [
+        `EEE`,
+        `EAE`,
+        `EEE`
+    ], {
+        E: `mysticalagriculture:iron_essence`,
+        A: `mysticalagriculture:certus_quartz_essence`
+    });
+    e.shaped(`appliedenergistics2:engineering_processor_press`, [
+        `EEE`,
+        `EAE`,
+        `EEE`
+    ], {
+        E: `mysticalagriculture:iron_essence`,
+        A: `mysticalagriculture:diamond_essence`
+    });
+    e.shaped(`appliedenergistics2:logic_processor_press`, [
+        `EEE`,
+        `EAE`,
+        `EEE`
+    ], {
+        E: `mysticalagriculture:iron_essence`,
+        A: `mysticalagriculture:gold_essence`
+    });
+    e.shaped(`minecraft:hopper`, [
+        `ILI`,
+        `ILI`,
+        ` I `
+    ], {
+        L: `#minecraft:logs`,
+        I: `#forge:ingots/iron`
+    });
+    e.shaped(Item.of(`astralsorcery:marble_raw`, 8), [
+        `III`,
+        `ILI`,
+        `III`
+    ], {
+        L: `minecraft:bone_meal`,
+        I: `minecraft:stone`
+    });
+    e.shaped(Item.of(`minecraft:stick`, 16), [
+        `L`,
+        `L`
+    ], {
+        L: `#minecraft:logs`
+    });
+
+
     e.custom({
         type: `industrialforegoing:dissolution_chamber`,
         input: [

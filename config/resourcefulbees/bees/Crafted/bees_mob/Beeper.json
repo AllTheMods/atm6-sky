@@ -20,7 +20,7 @@
           "inputID": "compressium:cobblestone_3",
           "chance": 0.25,
           "outputs": [{
-              "outputID": "resourcefulbees:creeper_bee_spawn_egg"
+              "outputID": "resourcefulbees:beeper_bee_spawn_egg"
           }]
       }]
   },

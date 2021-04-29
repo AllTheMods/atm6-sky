@@ -13,6 +13,11 @@ onEvent(`recipes`, e => {
 
         `forbidden_arcanus:leather`,
 
+        //creative apiary
+        'creativeapiary:tcreative_apiary',
+        'creativeapiary:creative_apiary_storage',
+        'creativeapiary:creative_apiary_breeder',
+
         `computercraft:turtle_normal`,
         `computercraft:turtle_advanced`,
         /*

@@ -15,7 +15,7 @@
           "inputID": "compressium:cobblestone_3",
           "chance": 0.25,
           "outputs": [{
-              "outputID": "resourcefulbees:skeleton_bee_spawn_egg"
+              "outputID": "resourcefulbees:spooky_bee_spawn_egg"
           }]
       }]
   },

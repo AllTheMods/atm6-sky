@@ -559,11 +559,7 @@
 		},
 		{
 			x: 5.5d,
-<<<<<<< Updated upstream
-			y: -5.5d,
-=======
 			y: -4.0d,
->>>>>>> Stashed changes
 			dependencies: ["255F31BBC346BAB5"],
 			id: "1D2427C393888C47",
 			tasks: [{
@@ -708,8 +704,6 @@
 				type: "item",
 				item: "integrateddynamics:energy_battery_creative"
 			}]
-<<<<<<< Updated upstream
-=======
 		},
 		{
 			x: 5.5d,
@@ -769,7 +763,6 @@
 				type: "item",
 				item: "creativeapiary:creative_apiary_breeder"
 			}]
->>>>>>> Stashed changes
 		}
 	]
 }

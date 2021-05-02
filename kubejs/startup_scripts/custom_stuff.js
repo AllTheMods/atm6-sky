@@ -1,7 +1,7 @@
 var ores = [
   'Allthemodium',
   'Vibranium',
-  'Unobtanium',
+  'Unobtainium',
   'Azure Silver',
   'Crimson Iron',
 ];
@@ -9,10 +9,10 @@ var ores = [
 events.listen('item.registry', function(e) {
 	e.create('piece_mod').displayName('Allthemodium Ore Piece');
 	e.create('piece_vib').displayName('Vibranium Ore Piece');
-	e.create('piece_unob').displayName('Unobtanium Ore Piece');
+	e.create('piece_unob').displayName('Unobtainium Ore Piece');
 	e.create('chunk_mod').displayName('Allthemodium Ore Chunk');
 	e.create('chunk_vib').displayName('Vibranium Ore Chunk');
-	e.create('chunk_unob').displayName('Unobtanium Ore Chunk');
+	e.create('chunk_unob').displayName('Unobtainium Ore Chunk');
 	e.create('piece_osmium').displayName('Osmium Ore Piece');
 	e.create('chunk_osmium').displayName('Osmium Ore Chunk');
     e.create('mass_of_wills').displayName('§6Mass of Wills').tooltip('§8Combination of the six wills of the ancients').unstackable()

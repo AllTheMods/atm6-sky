@@ -1,0 +1,33 @@
+{
+  "modId": "ars_nouveau",
+  "group": {
+    "name": "Ars Nouveau Saplings",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "ars_nouveau:marvelous_clay"
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "ars_nouveau:blue_archwood_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:purple_archwood_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:green_archwood_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "ars_nouveau:red_archwood_sapling"
+      }
+    }
+  ]
+}

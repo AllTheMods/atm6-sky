@@ -1,0 +1,18 @@
+{
+  "modId": "silentgear",
+  "group": {
+    "name": "Silent Gear",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "silentgear:netherwood_sapling"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "modId": "forbidden_arcanus",
+  "group": {
+    "name": "Forbidden Arcanus",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "forbidden_arcanus:arcane_crystal_dust"
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "forbidden_arcanus:cherrywood_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "forbidden_arcanus:mysterywood_sapling"
+      }
+    }
+  ]
+}

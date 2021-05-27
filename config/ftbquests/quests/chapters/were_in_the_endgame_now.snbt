@@ -559,7 +559,7 @@
 		},
 		{
 			x: 5.5d,
-			y: -5.5d,
+			y: -4.0d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "1D2427C393888C47",
 			tasks: [{
@@ -703,6 +703,65 @@
 				id: "728298E3AA51171C",
 				type: "item",
 				item: "integrateddynamics:energy_battery_creative"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -5.5d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "15BD8A6112C96F00",
+			tasks: [{
+				id: "356F157FB8BC0703",
+				type: "item",
+				item: "ctiers:centrifuge_casing_tier_creative"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -6.0d,
+			description: ["NEARLY INFINITE RESOURCES!"],
+			dependencies: ["15BD8A6112C96F00"],
+			id: "50CD18673A0F9996",
+			tasks: [{
+				id: "36170DF1566529F1",
+				type: "item",
+				item: "ctiers:centrifuge_controller_tier_creative"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -5.0d,
+			dependencies: ["15BD8A6112C96F00"],
+			dependency_requirement: "one_completed",
+			id: "64BAD4ED9E13D05C",
+			tasks: [{
+				id: "7E0317F39F0C4AFE",
+				type: "item",
+				item: "creativeapiary:creative_apiary_storage"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -5.5d,
+			description: ["INFINITE RESOURCES!"],
+			dependencies: ["50CD18673A0F9996"],
+			id: "59E335143ADA5361",
+			tasks: [{
+				id: "202AAC8D773ECBB4",
+				type: "item",
+				item: "creativeapiary:tcreative_apiary"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -4.0d,
+			description: ["INSTANT BREADING!"],
+			dependencies: ["255F31BBC346BAB5"],
+			id: "46A1DB0964D51064",
+			tasks: [{
+				id: "2E9F45FFC5428C96",
+				type: "item",
+				item: "creativeapiary:creative_apiary_breeder"
 			}]
 		}
 	]

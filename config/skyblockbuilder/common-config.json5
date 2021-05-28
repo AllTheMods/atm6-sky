@@ -1,0 +1,171 @@
+{
+  // Setting this to false will disable the reminder to use the new config
+  "_reminder": false,
+  
+  "Dimensions": {
+  
+    "End": {
+    
+      // Should end generate as in default world type? [default: false]
+      "Default": false,
+      
+      // Should the main island be generated as normal? [default: true]
+      "mainIsland": true
+    },
+    
+    "Nether": {
+    
+      // Should nether generate as in default world type? [default: false]
+      "Default": true
+    }
+  },
+  
+  "Inventory": {
+  
+    // Should all items be reset on first world join? [default: false]
+    // This will delete all the items given on spawn from other mods guide books.
+    "clearInv": false,
+    
+    // Should players' items be dropped when leaving a team? [default: true]
+    "dropItems": true
+  },
+  
+  "Spawn": {
+  
+    // The dimension the islands will be generated in. Vanilla dimensions:
+    // minecraft:overworld
+    // minecraft:the_nether
+    // minecraft:the_end
+    "dimension": "minecraft:overworld",
+    
+    // Direction the player should look at initial spawn
+    // Allowed values: north, east, south, west
+    "direction": "south",
+    
+    // Height of the bottom layer from the structure.
+    // This affects where exactly the island will be generated.
+    // Range: 0 - 255
+    "height": 64,
+    
+    // The radius to find a valid spawn if no given spawn is valid
+    // Minimum: 0
+    "radius": 50
+  },
+  
+  // With this you can configure the structures and features which are generated.
+  // INFO: You can also just use the modid as wildcard for all features/structures from this mod.
+  // WARNING: Some features like trees need special surface!
+  // WARNING: Some structures like mansions only exist in special biomes! If the biome range is too low, the "/locate" command will run for a lot of minutes where you cannot play because it blocks the whole server tick.
+  // WARNING: This only works for vanilla dimensions (Overworld, Nether, End)
+  "Structures": {
+  
+    // All the features that should be generated.
+    // A list with all possible structures can be found in config/skyblockbuilder/features.txt
+    // INFO: The two default values are required for the obsidian towers in end. If this is missing, they will be first generated when respawning the dragon.
+    // This is a resource list. In the `whitelist` field you can specify whether all entries will be accepted by
+    // default or rejected.
+    // `elements` is an array of rules. Each resource location that is matched against this list, will traverse these
+    // rules from top to bottom. The first rule that matches a resource location determines its result.
+    // Rules are resource locations, where asterisks (*) can be added to match any number of characters.
+    // However an asterisk can not match a colon. The nly exception to this is the single asterisk which matches everything.
+    // When a rule is matched, it will yield the result specified in `whitelist` as a result. To alter this
+    // add a plus (+) or a minus (-) in front of the rule. This will make it a whitelist or blacklist rule respectively.
+    // You can also add regex rules. These are objects with two keys: `allow` - a boolean that specifies whether this
+    // is a whitelist or blacklist rule and `regex` - which is a regex that must match the resource location.
+    "generationFeatures": {
+      "whitelist": true,
+      "elements": [
+        "minecraft:end_spike",
+        "minecraft:end_gateway"
+      ]
+    },
+    
+    // All the structures that should be generated.
+    // A list with all possible structures can be found in config/skyblockbuilder/structures.txt
+    // This is a resource list. In the `whitelist` field you can specify whether all entries will be accepted by
+    // default or rejected.
+    // `elements` is an array of rules. Each resource location that is matched against this list, will traverse these
+    // rules from top to bottom. The first rule that matches a resource location determines its result.
+    // Rules are resource locations, where asterisks (*) can be added to match any number of characters.
+    // However an asterisk can not match a colon. The nly exception to this is the single asterisk which matches everything.
+    // When a rule is matched, it will yield the result specified in `whitelist` as a result. To alter this
+    // add a plus (+) or a minus (-) in front of the rule. This will make it a whitelist or blacklist rule respectively.
+    // You can also add regex rules. These are objects with two keys: `allow` - a boolean that specifies whether this
+    // is a whitelist or blacklist rule and `regex` - which is a regex that must match the resource location.
+    "generationStructures": {
+      "whitelist": true,
+      "elements": [
+        "minecraft:fortress"
+      ]
+    }
+  },
+  
+  "Utility": {
+  
+    // Should players be able to create their own team? [default: false]
+    "createOwnTeam": true,
+    
+    // Should players be able to leave their team or invite others? [default: true]
+    "selfManage": true,
+    
+    "Spawns": {
+    
+      // Should players be able to modify their spawn positions? [default: false]
+      "modifySpawns": false,
+      
+      // The range from island center for possible spawns to add. [default: 50]
+      "range": 50
+    },
+    
+    "Teleports": {
+    
+      // Should players be able to visit other island? [default: true]
+      "allowVisits": true,
+      
+      // Should players be able to teleport to their home island? [default: true]
+      "home": true,
+      
+      // Should players be able to teleport to spawn? [default: true]
+      "spawn": true
+    }
+  },
+  
+  "World": {
+  
+    // The radius for the biomes to repeat [default: 8192]
+    // By default it's the perfect range that each team has the same biomes
+    // WARNING: Too small biome range will prevent some structures to generate, if structures are enabled, because some need a special biome!
+    // Range: 64 - 29999900
+    "biomeRange": 8192,
+    
+    // Distance between islands in overworld [default: 8192]
+    // nether the distance is 1/8
+    // Range: 64 - 29999900
+    "islandDistance": 8192,
+    
+    // The offset from 0, 0 to generate the islands
+    // Can be used to generate them in the middle of .mca files
+    "offset": 0,
+    
+    // Sea level in world [default: 63]
+    // Range: 0 - 256
+    "seaHeight": 63,
+    
+    // Should a surface be generated in overworld? [default: false]
+    "surface": false,
+    
+    // The block settings for generating the surface.
+    // Same format as flat world generation settings (blocks only)
+    "surfaceSettings": "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block",
+    
+    "SingleBiome": {
+    
+      // Specifies the biome for the whole world
+      "biome": "minecraft:plains",
+      
+      // Should only one biome be generated? [default: false]
+      // WARNING: Some structures need a special biome, e.g. Mansion needs Dark Oak Forest! These structures will not be generated if you have only one biome!
+      "enabled": false
+    }
+  }
+}

@@ -15,6 +15,7 @@ e.add(`curios:angelring`, [`botania:flight_tiara`]);
 e.add(`forge:ores/certus_quartz`, [`appliedenergistics2:quartz_ore`, `appliedenergistics2:charged_quartz_ore`]);
 e.add(`forge:ores/dimensionalshard`, /rftoolsbase:dimensionalshard_.*/);
 e.add(`forge:gems`, [`quark:biotite`, `psi:psigem`, `mekanism:fluorite_gem`, `iceandfire:amythest_gem`, `forbidden_arcanus:end_crystal_gem`, `astralsorcery:aquamarine`, `appliedenergistics2:fluix_crystal`, `appliedenergistics2:charged_certus_quartz_crystal`, `appliedenergistics2:certus_quartz_crystal`,]);
+e.add(`forge:dusts`, [`appliedenergistics2:sky_dust`, `appliedenergistics2:fluix_dust`, `appliedenergistics2:certus_quartz_dust`]);
 e.add(`forge:plastic`, [`#pneumaticcraft:plastic_sheets`, /* `silents_mechanisms:plastic_sheet`, */ `mekanism:hdpe_sheet`]);
 e.add(`misctags:farmland/tier6`, [`mysticalagradditions:insanium_farmland`]);
 e.add(`misctags:farmland/tier5`, [`mysticalagriculture:supremium_farmland`, `#misctags:farmland/tier6`]);

@@ -28,13 +28,14 @@ onEvent(`recipes`, e => {
         id: `mysticalagriculture:crops/${type}`
       })
 
+      // the property entry for the age will likely be changed in future versions of MA
       e.recipes.botanypots.crop({
         seed: Ingredient.of(inItem).toJson(),
         categories: [soil],
         growthTicks: time,
         display: {
           block: renBlock,
-          properties: {
+          property: {
             age: 7
           }
         },

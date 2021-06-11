@@ -1,7 +1,6 @@
 //priority: 1000
 const ApiaryBlocks = [
     //Flowers
-    'biomesoplenty:flesh',
     'botania:blaze_block',
     'minecraft:magma_block',
     'minecraft:clay',
@@ -96,10 +95,6 @@ const ApiaryBlocks = [
     //Botania
     'botania:mana_glass',
     'botania:elf_glass',
-
-    //BYG
-    'byg:nylium_soul_sand',
-    'byg:nylium_soul_soil',
 
     //Misc
     '#forge:bookshelves',

@@ -2,14 +2,13 @@
 // priority: 99
 onEvent('recipes', e => {
   function key(x, ingredients) {
-    ingredients[x] ? x : ' '
+    return ingredients[x] ? x : ' '
   }
 
   function add(recipe) {
     const i = recipe[0]
     const result = recipe[1]
     const nbt = recipe[2]
-    const merge_nbt = recipe[3] // Not sure what this did in the source recipes? Copy energy? If so, that's the penalty for migrating this to shaped crafting!
 
     e.shaped(Item.of(result, nbt), [
       ` ${key('T', i)} `,
@@ -33,8 +32,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:amplification': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -47,8 +45,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:amplification': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:erodium_interconnect',
@@ -64,8 +61,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.1,
         'envirocore:amplification': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:kyronite_interconnect',
@@ -81,8 +77,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.2,
         'envirocore:amplification': 0.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:pladium_interconnect',
@@ -98,8 +93,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.3,
         'envirocore:amplification': 0.8
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -115,8 +109,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.4,
         'envirocore:amplification': 1.0
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -132,8 +125,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.5,
         'envirocore:amplification': 1.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -149,8 +141,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.6,
         'envirocore:amplification': 1.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -166,8 +157,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.7,
         'envirocore:amplification': 1.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -183,8 +173,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:bandwidth': 1
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -197,8 +186,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:bandwidth': 1
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -214,8 +202,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.2,
         'envirocore:bandwidth': 2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -231,8 +218,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.4,
         'envirocore:bandwidth': 3
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -248,8 +234,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.6,
         'envirocore:bandwidth': 4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -264,8 +249,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:electrostatic': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -277,8 +261,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:electrostatic': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -293,8 +276,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:electrostatic': 0.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -309,8 +291,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:electrostatic': 0.8
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -325,8 +306,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:electrostatic': 1.0
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -342,8 +322,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:frequency': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -356,8 +335,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.0,
         'envirocore:frequency': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:erodium_interconnect',
@@ -373,8 +351,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.1,
         'envirocore:frequency': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:kyronite_interconnect',
@@ -390,8 +367,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.2,
         'envirocore:frequency': 0.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:pladium_interconnect',
@@ -407,8 +383,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.3,
         'envirocore:frequency': 0.8
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -424,8 +399,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.4,
         'envirocore:frequency': 1.0
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -441,8 +415,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.5,
         'envirocore:frequency': 1.1
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -458,8 +431,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.6,
         'envirocore:frequency': 1.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -475,8 +447,7 @@ onEvent('recipes', e => {
         'envirocore:energy_cost_multiplier': 1.7,
         'envirocore:frequency': 1.3
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -491,8 +462,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 1024
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -507,8 +477,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 8192
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -523,8 +492,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 65536
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -539,8 +507,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 524288
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -555,8 +522,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 4194304
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -571,8 +537,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 33554432
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -587,8 +552,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 268435456
       }
-    },
-      true
+    }
     ],
     [{
       T: '#forge:storage_blocks/redstone',
@@ -603,8 +567,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 2147483647
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -619,8 +582,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 1024
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:erodium_interconnect',
@@ -635,8 +597,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 8192
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:kyronite_interconnect',
@@ -651,8 +612,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 65536
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:pladium_interconnect',
@@ -667,8 +627,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 524288
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -683,8 +642,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 4194304
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -699,8 +657,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 33554432
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -715,8 +672,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 268435456
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -731,8 +687,7 @@ onEvent('recipes', e => {
       energy: {
         capacity: 2147483647
       }
-    },
-      true
+    }
     ],
     [{
       T: 'minecraft:redstone',
@@ -823,8 +778,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -836,8 +790,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:erodium_interconnect',
@@ -852,8 +805,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:kyronite_interconnect',
@@ -868,8 +820,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 0.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:pladium_interconnect',
@@ -884,8 +835,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 0.8
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -900,8 +850,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 1.0
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -916,8 +865,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 1.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -932,8 +880,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 1.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -948,8 +895,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:piezo': 1.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -964,8 +910,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:litherite_interconnect',
@@ -977,8 +922,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 0.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:erodium_interconnect',
@@ -993,8 +937,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 0.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:kyronite_interconnect',
@@ -1009,8 +952,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 0.6
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:pladium_interconnect',
@@ -1025,8 +967,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 0.8
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:ionite_interconnect',
@@ -1041,8 +982,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 1.0
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:aethium_interconnect',
@@ -1057,8 +997,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 1.2
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:nanorite_interconnect',
@@ -1073,8 +1012,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 1.4
       }
-    },
-      true
+    }
     ],
     [{
       T: 'envirocore:xerothium_interconnect',
@@ -1089,8 +1027,7 @@ onEvent('recipes', e => {
       attributes: {
         'envirocore:radiant': 1.6
       }
-    },
-      true
+    }
     ]
   ]
 

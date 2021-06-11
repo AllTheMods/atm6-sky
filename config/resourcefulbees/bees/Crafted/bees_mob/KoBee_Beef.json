@@ -1,23 +1,23 @@
 {
-    "flower": "tag:Minecraft:wool",
+    "flower": "cookingforblockheads:fridge",
     "maxTimeInHive": 1200,
-    "traits": ["spider"],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "primaryColor": "#030303",
-        "secondaryColor": "#910000",
-        "honeycombColor": "#3b0000",
+        "primaryColor": "#FF6666",
+        "secondaryColor": "#663300",
+        "honeycombColor": "#FF6666",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "/empty_layer",
+        "emissiveLayerTexture": "empty_layer",
         "isBeeColored": true,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#243281",
+        "glowColor": "#FF6666",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -29,29 +29,30 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:spider_honeycomb_block",
-            "outputs": [{
-                    "outputID": "minecraft:string",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:spider_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
-        }]
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
+                "outputs": [{
+                        "outputID": "minecraft:beef",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:kobee_beef_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": true,
+        "hasCentrifugeOutput": false,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:string",
-        "mainOutputWeight": 0.5,
+        "mainOutput": "minecraft:beef",
+        "mainOutputWeight": 0.01,
         "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "xreliquary:chelicerae",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -67,6 +68,6 @@
         "isBreedable": false
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }

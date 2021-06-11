@@ -1,5 +1,32 @@
 // priority: 5
 onEvent(`recipes`, e => {
+  const exDust = `exnihilosequentia:dust`
+  const exRack = `exnihilosequentia:crushed_netherrack`
+  const exEnd = `exnihilosequentia:crushed_end_stone`
+  const chunks = [
+    `mod`,
+    `vib`,
+    `unob`,
+    `osmium`
+  ]
+  const pieces = [
+    `osmium`,
+    `copper`,
+    `lead`,
+    `nickel`,
+    `silver`,
+    `tin`,
+    `aluminum`,
+    `platinum`,
+    `uranium`,
+    `zinc`,
+    `iron`,
+    `gold`,
+    `mod`,
+    `vib`,
+    `unob`,
+  ]
+
   function sieve(mesh, chance, input, result, wlog) {
     e.custom({
       type: `exnihilosequentia:sieve`,
@@ -60,48 +87,64 @@ onEvent(`recipes`, e => {
     })
   }
 
-  var exDust = `exnihilosequentia:dust`
-  var exRack = `exnihilosequentia:crushed_netherrack`
-  var exEnd = `exnihilosequentia:crushed_end_stone`
+  function crushEm(result, crush) {
+    e.recipes.mekanism.crushing(Item.of(result), crush)
+    e.recipes.thermal.pulverizer(Item.of(result), crush)
+    e.recipes.immersiveengineering.crusher(Item.of(result), crush)
+    e.recipes.create.milling(Item.of(result), Item.of(crush))
+    e.custom({
+      type: `pedestals:pedestal_crushing`,
+      ingredient: Ingredient.of(crush).toJson(),
+      result: Item.of(result).toResultJson(),
+    })
+    e.custom({
+      type: `appliedenergistics2:grinder`,
+      input: Ingredient.of(crush).toJson(),
+      result: {
+        primary: Item.of(result).toResultJson()
+      },
+      turns: 8
+    })
+    e.custom({
+      type: `integrateddynamics:squeezer`,
+      item: Ingredient.of(crush).toJson(),
+      result: {
+        items: [Item.of(result).toResultJson()]
+      }
+    })
+    e.custom({
+      type: `integrateddynamics:mechanical_squeezer`,
+      item: Ingredient.of(crush).toJson(),
+      result: {
+        items: [Item.of(result).toResultJson()]
+      },
+      duration: 40
+    })
+  }
 
-  //Crucible heating `blocks`
+  //Crucible heating blocks
   heat(`botania:blaze_block`, 8)
-  //heat(`allthemodium:molten_bluelava`, 200)
-  //heat(`allthemodium:flowing_molten_bluelava`, 200)
   heat(`alltheores:uranium_block`, 20)
   heat(`minecraft:magma_block`, 3)
   heat(`minecraft:fire`, 4)
   heat(`minecraft:lava`, 5)
   heat(`mekanism:superheating_element`, 60)
 
-  //Params go like this: Mesh, Drop chance, Input item, Output item, Waterlogged.
+  //Params: Mesh, Drop chance, Input item, Output item, Waterlogged.
   //Overworld sieve
   sieve(`diamond`, 0.3, `minecraft:gravel`, `mysticalagriculture:inferium_essence`, null)
   sieve(`diamond`, 0.2, `minecraft:gravel`, `mysticalagriculture:prosperity_shard`, null)
   sieve(`diamond`, 0.1, `minecraft:gravel`, `ars_nouveau:mana_gem`, null)
-  //sieve(`emerald`, 0.02, `minecraft:gravel`, `astralsorcery:rock_crystal`, null)
   sieve(`iron`, 0.15, `#minecraft:sand`, `astralsorcery:aquamarine`, true)
   sieve(`iron`, 0.25, `#minecraft:sand`, `minecraft:ink_sac`, true)
-  //sieve(`iron`, 0.05, `minecraft:gravel`, `kubejs:piece_osmium`, null)
   sieve(`diamond`, 0.1, `minecraft:gravel`, `kubejs:piece_osmium`, null)
-  //sieve(`iron`, 0.025, `minecraft:gravel`, `mekanism:fluorite_gem`, null)
   sieve(`diamond`, 0.05, `minecraft:gravel`, `mekanism:fluorite_gem`, null)
-  //sieve(`flint`, 0.01, `#minecraft:sand`, `mekanism:salt`, null)
   sieve(`iron`, 0.02, `minecraft:sand`, `mekanism:salt`, null)
-  //sieve(`diamond`, 0.4, `#minecraft:sand`, `mekanism:salt`, null)
   sieve(`flint`, 0.09, `minecraft:sand`, `mana-and-artifice:vinteum_dust`, null)
-  //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:apatite`, null)
   sieve(`iron`, 0.1, `#forge:gravel`, `thermal:apatite`, null)
-  //sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:apatite`, null)
-  //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:cinnabar`, null)
   sieve(`iron`, 0.1, `#forge:gravel`, `thermal:cinnabar`, null)
-  //sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:cinnabar`, null)
-  //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:niter`, null)
   sieve(`iron`, 0.1, `#forge:gravel`, `thermal:niter`, null)
-  //sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:niter`, null)
-  //sieve(`flint`, 0.05, `#forge:gravel`, `thermal:sulfur`, null)
   sieve(`iron`, 0.1, `#forge:gravel`, `thermal:sulfur`, null)
-  //sieve(`diamond`, 0.15, `#forge:gravel`, `thermal:sulfur`, null)
   sieve(`emerald`, 0.25, `#forge:gravel`, `forbidden_arcanus:arcane_crystal`, null)
   sieve(`emerald`, 0.05, `minecraft:dirt`, `integrateddynamics:menril_berries`, true)
 
@@ -149,13 +192,6 @@ onEvent(`recipes`, e => {
   hhammer(`compressium:granite_1`, `exnihilosequentia:crushed_granite`, 9)
   hhammer(`compressium:andesite_1`, `exnihilosequentia:crushed_andesite`, 9)
 
-  const chunks = [
-    `mod`,
-    `vib`,
-    `unob`,
-    `osmium`
-  ]
-
   chunks.forEach(name => {
     e.shaped(`kubejs:chunk_${name}`, [
       `aa`,
@@ -165,62 +201,9 @@ onEvent(`recipes`, e => {
     })
   })
 
-  function crushEm(result, crush) {
-    e.recipes.mekanism.crushing(Item.of(result), crush)
-    e.recipes.thermal.pulverizer(Item.of(result), crush)
-    e.recipes.immersiveengineering.crusher(Item.of(result), crush)
-    e.recipes.create.milling(Item.of(result), Item.of(crush))
-    e.custom({
-      type: `pedestals:pedestal_crushing`,
-      ingredient: Ingredient.of(crush).toJson(),
-      result: Item.of(result).toResultJson(),
-    })
-    e.custom({
-      type: `appliedenergistics2:grinder`,
-      input: Ingredient.of(crush).toJson(),
-      result: {
-        primary: Item.of(result).toResultJson()
-      },
-      turns: 8
-    })
-    e.custom({
-      type: `integrateddynamics:squeezer`,
-      item: Ingredient.of(crush).toJson(),
-      result: {
-        items: [Item.of(result).toResultJson()]
-      }
-    })
-    e.custom({
-      type: `integrateddynamics:mechanical_squeezer`,
-      item: Ingredient.of(crush).toJson(),
-      result: {
-        items: [Item.of(result).toResultJson()]
-      },
-      duration: 40
-    })
-  }
-
   crushEm(exDust, `#minecraft:sand`)
   crushEm(exRack, `#forge:netherrack`)
   crushEm(exEnd, `#forge:end_stones`)
-
-  const pieces = [
-    `osmium`,
-    `copper`,
-    `lead`,
-    `nickel`,
-    `silver`,
-    `tin`,
-    `aluminum`,
-    `platinum`,
-    `uranium`,
-    `zinc`,
-    `iron`,
-    `gold`,
-    `mod`,
-    `vib`,
-    `unob`,
-  ]
 
   pieces.forEach(piece => {
     var exPiece = `exnihilosequentia:piece_${piece}`

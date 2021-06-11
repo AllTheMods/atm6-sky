@@ -878,6 +878,69 @@ onEvent(`recipes`, e => {
     E: `#forge:ender_pearls`,
     C: `minecraft:ender_chest`
   })
+  modifyShaped('forbidden_arcanus:eternal_stella', 1, [
+    'DBC',
+    'BAB',
+    'CBD'
+], {
+    A: 'forbidden_arcanus:stellarite_piece',
+    B: 'forbidden_arcanus:xpetrified_orb',
+    C: 'allthemodium:allthemodium_ingot',
+    D: 'allthemodium:vibranium_ingot'
+})
+  //Mekasuit
+  e.shaped(Item.of('mekanism:mekasuit_helmet', {
+    HideFlags: 2
+}), [
+    'HCH',
+    'HUH',
+    'PIP'
+], {
+    H: 'mekanism:hdpe_sheet',
+    C: 'mekanism:ultimate_control_circuit',
+    P: 'mekanism:pellet_polonium',
+    I: 'mekanism:basic_induction_cell',
+    U: 'allthemodium:unobtainium_helmet'
+}).id(`kubejs:mekasuit_helmet`)
+e.shaped(Item.of('mekanism:mekasuit_bodyarmor', {
+    HideFlags: 2
+}), [
+    'HCH',
+    'HUH',
+    'PIP'
+], {
+    H: 'mekanism:hdpe_sheet',
+    C: 'mekanism:ultimate_control_circuit',
+    P: 'mekanism:pellet_polonium',
+    I: 'mekanism:basic_induction_cell',
+    U: 'allthemodium:unobtainium_chestplate'
+}).id(`kubejs:mekasuit_bodyarmor`)
+e.shaped(Item.of('mekanism:mekasuit_pants', {
+    HideFlags: 2
+}), [
+    'HCH',
+    'HUH',
+    'PIP'
+], {
+    H: 'mekanism:hdpe_sheet',
+    C: 'mekanism:ultimate_control_circuit',
+    P: 'mekanism:pellet_polonium',
+    I: 'mekanism:basic_induction_cell',
+    U: 'allthemodium:unobtainium_leggings'
+}).id(`kubejs:mekasuit_pants`)
+e.shaped(Item.of('mekanism:mekasuit_boots', {
+    HideFlags: 2
+}), [
+    'HCH',
+    'HUH',
+    'PIP'
+], {
+    H: 'mekanism:hdpe_sheet',
+    C: 'mekanism:ultimate_control_circuit',
+    P: 'mekanism:pellet_polonium',
+    I: 'mekanism:basic_induction_cell',
+    U: 'allthemodium:unobtainium_boots'
+}).id(`kubejs:mekasuit_boots`)
 
   //Extra Disks
   makeDisk(`refinedstorage:4096k_fluid`, `refinedstorage:1024k_fluid`, `advanced`, `#forge:nuggets/allthemodium`, `minecraft:bucket`)

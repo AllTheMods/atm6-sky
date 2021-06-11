@@ -82,19 +82,6 @@ events.listen('recipes', e => {
     N: 'kubejs:nether_star_block'
   })
 
-  //Exchangers
-  e.shaped('exchangers:creative_exchanger', [
-    ' E ',
-    'RSH',
-    ' U '
-  ], {
-    S: atm_star,
-    E: 'exchangers:end_exchanger',
-    H: 'exchangers:hv_exchanger',
-    U: 'exchangers:ultimate_exchanger',
-    R: 'exchangers:resonant_exchanger'
-  })
-
   //Strainer
   e.shaped('waterstrainer:super_worm', [
     'WWW',

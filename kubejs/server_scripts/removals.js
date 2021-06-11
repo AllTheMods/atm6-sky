@@ -41,7 +41,12 @@ onEvent(`recipes`, e => {
 
     `mekanism:atomic_disassembler`,
 
-    'thermal:machine/press/unpacking/press_honeycomb_unpacking'
+    'thermal:machine/press/unpacking/press_honeycomb_unpacking',
+
+    'mekanism:mekasuit_helmet',
+    'mekanism:mekasuit_bodyarmor',
+    'mekanism:mekasuit_pants',
+    'mekanism:mekasuit_boots'
   ]
   //Remove via mod name
   const modRemove = [

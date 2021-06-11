@@ -1,0 +1,21 @@
+{
+	id: "5C339B8F5E186C52",
+	order_index: 4,
+	title: "Farm Tier 1",
+	icon: "mysticalagriculture:prudentium_farmland",
+	loot_size: 1,
+	rewards: [
+		{
+			item: "mysticalagriculture:inferium_farmland",
+			weight: 100
+		},
+		{
+			item: "mysticalagriculture:prudentium_farmland",
+			weight: 75
+		},
+		{
+			item: "mysticalagriculture:tertium_farmland",
+			weight: 50
+		}
+	]
+}

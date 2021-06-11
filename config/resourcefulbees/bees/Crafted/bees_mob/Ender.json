@@ -1,42 +1,72 @@
 {
-  "flower": "minecraft:purpur_block",
-  "hasHoneycomb": true,
-  "traits": ["ender"],
-  "maxTimeInHive": 1200,
-  "ColorData": {
-      "isBeeColored": true,
-      "honeycombColor": "#339786",
-      "primaryColor": "#339786",
-      "secondaryColor": "#303030"
-  },
-  "MutationData": {
-      "hasMutation": true,
-      "mutationCount": 1,
-      "mutations": [{
-          "type": "BLOCK_TO_ITEM",
-          "inputID": "compressium:cobblestone_3",
-          "chance": 0.25,
-          "outputs": [{
-              "outputID": "resourcefulbees:ender_bee_spawn_egg"
-          }]
-      }]
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:ender_pearl",
-      "mainOutputWeight": 0.50,
-      "bottleOutput": "botania:ender_air_bottle",
-      "bottleOutputWeight": 0.01
-  },
-  "SpawnData": {
-      "canSpawnInWorld": false
-  },
-  "BreedData": {
-      "isBreedable": false,
-      "feedItem": "jaopca:storage_blocks.ender_pearl",
-      "feedAmount": 5
-  },
-  "TraitData": {
-      "hasTraits": true
-  }
+    "flower": "minecraft:purpur_block",
+    "maxTimeInHive": 1200,
+    "traits": ["ender"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "/custom/bee",
+    "ColorData": {
+        "primaryColor": "#339786",
+        "secondaryColor": "#303030",
+        "honeycombColor": "#339786",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#303030",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "default"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:ender_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:ender_pearl",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:ender_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:ender_pearl",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }

@@ -135,7 +135,7 @@
 			rewards: [{
 				id: "127322A0CA49BF54",
 				type: "item",
-				item: "mysticalagriculture:supremium_hoe"
+				item: "mysticalagriculture:tilling_aoe_iv_augment"
 			}]
 		},
 		{
@@ -497,27 +497,17 @@
 					id: "6F12B4AE2EA5F3A4",
 					type: "item",
 					item: {
-						id: "minecraft:elytra",
+						id: "mana-and-artifice:spectral_elytra",
 						Count: 1b,
 						tag: {
-							Damage: 0,
 							display: {
-								Name: '[{"text":"Wings of Liberty"}]'
-							},
-							Enchantments: [
-								{
-									lvl: 1,
-									id: "minecraft:fortune"
-								},
-								{
-									lvl: 1,
-									id: "minecraft:infinity"
-								},
-								{
-									lvl: 1,
-									id: "minecraft:efficiency"
-								}
-							]
+								Lore: [
+									'[{"text":"Nice try trying to exploit the old Elytra, this one won\'t be.","italic":false,"color":"gold"},{"text":"","italic":false,"color":"dark_purple"}]',
+									'[{"text":"-","italic":false,"color":"dark_purple"}]',
+									'[{"text":"The actual Elytra is craftable. This here is a trophy.","italic":false,"color":"gold"}]'
+								],
+								Name: '[{"text":"Wings of Liberty","italic":false,"color":"aqua"}]'
+							}
 						}
 					}
 				},

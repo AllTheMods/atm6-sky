@@ -3,7 +3,7 @@
 	group: "",
 	order_index: 1,
 	filename: "ex_nihilio",
-	title: "Ex nihilo",
+	title: "Ex Nihilo",
 	icon: "kubejs:chunk_mod",
 	default_quest_shape: "diamond",
 	quests: [

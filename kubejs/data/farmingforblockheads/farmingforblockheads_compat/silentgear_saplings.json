@@ -8,11 +8,9 @@
     },
     "defaultCategory": "farmingforblockheads:saplings"
   },
-  "customEntries": [
-    {
-      "output": {
-        "item": "silentgear:netherwood_sapling"
-      }
+  "customEntries": [{
+    "output": {
+      "item": "silentgear:netherwood_sapling"
     }
-  ]
+  }]
 }

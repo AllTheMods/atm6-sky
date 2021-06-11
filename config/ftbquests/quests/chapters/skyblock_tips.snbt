@@ -480,7 +480,7 @@
 				"&c/skyblock visit <team>",
 				"",
 				"Renaming Team",
-				"&c/skyblock <new name>",
+				"&c/skyblock team rename <new name>",
 				"",
 				"Inviting Players",
 				"&c/skyblock invite <player>",
@@ -492,10 +492,13 @@
 				"&c/skyblock join <team>",
 				"",
 				"Accept/Deny Request",
-				"&c/skyblock tean accept/deny <player>",
+				"&c/skyblock team accept/deny <player>",
 				"",
 				"Disabling requests",
-				"&c/skyblock team allowRequests true/false"
+				"&c/skyblock team allowRequests true/false",
+				"",
+				"&eSpawn and For Single Player Worlds for players who started on Spawn",
+				"&c/skyblock spawn"
 			],
 			dependencies: ["3E01A250909FFC9A"],
 			size: 1.5d,
@@ -504,15 +507,25 @@
 				id: "6C05E568E67A6C7A",
 				type: "checkmark"
 			}],
-			rewards: [{
-				id: "2DBF52D6FA12240A",
-				type: "command",
-				title: "/skyblock create",
-				icon: "astralsorcery:tree_beacon",
-				auto: "no_toast",
-				command: "/skyblock create",
-				player_command: true
-			}]
+			rewards: [
+				{
+					id: "2DBF52D6FA12240A",
+					type: "command",
+					title: "/skyblock create",
+					icon: "astralsorcery:tree_beacon",
+					auto: "disabled",
+					command: "/skyblock create",
+					player_command: true
+				},
+				{
+					id: "5B47867875B024BC",
+					type: "command",
+					title: "/skyblock spawn",
+					icon: "astralsorcery:tree_beacon",
+					command: "/skyblock spawn",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Quest Suggestions?",

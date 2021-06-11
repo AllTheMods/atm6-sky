@@ -3,7 +3,7 @@
 	group: "",
 	order_index: 3,
 	filename: "resourceful_ways",
-	title: "Resourceful Ways (WIP)",
+	title: "Resourceful Ways",
 	default_quest_shape: "hexagon",
 	quests: [
 		{
@@ -649,16 +649,16 @@
 		},
 		{
 			title: "Drag-in the Egg",
-			x: 1.0d,
+			x: 2.0d,
 			y: 2.5d,
 			description: [
-				"Welcome to the mutation line",
+				"Welcome to the true 2nd mutation bee of the mutation line.",
 				"",
 				"To get this bee, you have to mutate a dragon egg by pollinating it, with a wither bee.",
 				"",
 				"Then from the Dragon to the next material and so on for these mutation quests."
 			],
-			dependencies: ["7DB9AE9AA5B725EC"],
+			dependencies: ["3078D0FA79DACF69"],
 			id: "64DEE67107E6ABCB",
 			tasks: [{
 				id: "6BE74EFECB95C0CF",
@@ -667,7 +667,7 @@
 			}]
 		},
 		{
-			x: 1.760204081632672d,
+			x: 2.760204081632672d,
 			y: 2.4965986394557618d,
 			dependencies: ["64DEE67107E6ABCB"],
 			id: "1868C74AFE23E97D",
@@ -678,7 +678,7 @@
 			}]
 		},
 		{
-			x: 2.5153061224489974d,
+			x: 3.5153061224489974d,
 			y: 2.4965986394557618d,
 			dependencies: ["1868C74AFE23E97D"],
 			id: "3CC2E426B5E8ECA8",
@@ -689,7 +689,7 @@
 			}]
 		},
 		{
-			x: 3.270408163265323d,
+			x: 4.270408163265323d,
 			y: 2.4965986394557618d,
 			dependencies: ["3CC2E426B5E8ECA8"],
 			id: "40C80481893AA3CD",
@@ -700,7 +700,7 @@
 			}]
 		},
 		{
-			x: 4.025510204081648d,
+			x: 5.025510204081648d,
 			y: 2.4965986394557618d,
 			dependencies: ["40C80481893AA3CD"],
 			id: "0CC7F94A9035ECAA",
@@ -724,7 +724,7 @@
 			rewards: [{
 				id: "48FB762626AA811F",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -739,9 +739,9 @@
 				item: "mysticalagriculture:air_seeds"
 			}],
 			rewards: [{
-				id: "63506630209AF250",
-				type: "loot",
-				table_id: 3968376212287991603L
+				id: "1D1EC42A100FDBC9",
+				type: "random",
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -769,9 +769,9 @@
 				item: "mysticalagriculture:water_seeds"
 			}],
 			rewards: [{
-				id: "65AE09A0E27F4F24",
+				id: "4F701076BE0CD0BE",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -786,9 +786,9 @@
 				item: "mysticalagriculture:ice_seeds"
 			}],
 			rewards: [{
-				id: "2E7BE97A3A81D697",
+				id: "33228F5C4BA961C2",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -803,9 +803,9 @@
 				item: "mysticalagriculture:wood_seeds"
 			}],
 			rewards: [{
-				id: "05AE0D033E9E9B56",
+				id: "295C42792A648486",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -820,9 +820,9 @@
 				item: "mysticalagriculture:stone_seeds"
 			}],
 			rewards: [{
-				id: "5A17FE1BEB7D0A40",
+				id: "59F032DB9A686245",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -837,9 +837,9 @@
 				item: "mysticalagriculture:dirt_seeds"
 			}],
 			rewards: [{
-				id: "4423903A48EDBC82",
+				id: "5D49CB44B75FE95C",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -854,9 +854,9 @@
 				item: "mysticalagriculture:earth_seeds"
 			}],
 			rewards: [{
-				id: "439E00CBFDFD3A86",
+				id: "2B1D1B209CAB73FB",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -871,9 +871,9 @@
 				item: "mysticalagriculture:fire_seeds"
 			}],
 			rewards: [{
-				id: "16C30E600FC17EEB",
+				id: "52C0C1DF2D626205",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -937,9 +937,9 @@
 				item: "mysticalagriculture:coral_seeds"
 			}],
 			rewards: [{
-				id: "569B159B01545945",
+				id: "66F31AB427BBED53",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -954,9 +954,9 @@
 				item: "mysticalagriculture:saltpeter_seeds"
 			}],
 			rewards: [{
-				id: "4063BBA79D28F651",
+				id: "3F80FA12F803BBDB",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -971,9 +971,9 @@
 				item: "mysticalagriculture:mystical_flower_seeds"
 			}],
 			rewards: [{
-				id: "434D081EDD7BC151",
+				id: "57AADAE21DF66F68",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -988,9 +988,9 @@
 				item: "mysticalagriculture:coal_seeds"
 			}],
 			rewards: [{
-				id: "7E4B2E0E0E70F98A",
+				id: "057C5596DD8218DC",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1005,9 +1005,9 @@
 				item: "mysticalagriculture:dye_seeds"
 			}],
 			rewards: [{
-				id: "0A08A524A688DFD9",
+				id: "6DF0F61F24B54927",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1022,9 +1022,9 @@
 				item: "mysticalagriculture:aluminum_seeds"
 			}],
 			rewards: [{
-				id: "5DB49C959071AEF2",
+				id: "3E8F5F2D9A7417B4",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1039,9 +1039,9 @@
 				item: "mysticalagriculture:honey_seeds"
 			}],
 			rewards: [{
-				id: "33EE09FA8FDE9D7A",
+				id: "00CCC9183339B158",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1056,9 +1056,9 @@
 				item: "mysticalagriculture:copper_seeds"
 			}],
 			rewards: [{
-				id: "5720A8D7325E3B9B",
+				id: "5C0822761199DCA3",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1073,9 +1073,9 @@
 				item: "mysticalagriculture:rubber_seeds"
 			}],
 			rewards: [{
-				id: "648AF43C63ED12E9",
+				id: "0513038E82DDE064",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1090,9 +1090,9 @@
 				item: "mysticalagriculture:silicon_seeds"
 			}],
 			rewards: [{
-				id: "4624C4CB0CC875BA",
+				id: "44E2866A1C64F954",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1107,9 +1107,9 @@
 				item: "mysticalagriculture:nature_seeds"
 			}],
 			rewards: [{
-				id: "18603B6D7D362286",
+				id: "14CEE6584B7AFFAB",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1124,9 +1124,9 @@
 				item: "mysticalagriculture:nether_seeds"
 			}],
 			rewards: [{
-				id: "4B3F5828821C0E17",
-				type: "random",
-				table_id: 3968376212287991603L
+				id: "4E24B2632585F88B",
+				type: "choice",
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1141,9 +1141,9 @@
 				item: "mysticalagriculture:sulfur_seeds"
 			}],
 			rewards: [{
-				id: "14DFD4F579E44DE2",
+				id: "003C460A3DCCB1E9",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1158,9 +1158,9 @@
 				item: "mysticalagriculture:apatite_seeds"
 			}],
 			rewards: [{
-				id: "47A730ADB7B96ED9",
+				id: "5D4F734E3B332845",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1175,9 +1175,9 @@
 				item: "mysticalagriculture:chicken_seeds"
 			}],
 			rewards: [{
-				id: "78FB3E452F08D2FE",
+				id: "248A489B5A8CBAA5",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1192,9 +1192,9 @@
 				item: "mysticalagriculture:squid_seeds"
 			}],
 			rewards: [{
-				id: "559F123C8AB8561F",
+				id: "4018BA5F4ECEF8CA",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1210,9 +1210,9 @@
 				item: "mysticalagriculture:cow_seeds"
 			}],
 			rewards: [{
-				id: "0C40D47684B38AA8",
+				id: "625EDE815355520E",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1227,9 +1227,9 @@
 				item: "mysticalagriculture:pig_seeds"
 			}],
 			rewards: [{
-				id: "0B74DAE5A1C56FFE",
+				id: "3FCD7740445E570F",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1245,9 +1245,9 @@
 				item: "mysticalagriculture:sheep_seeds"
 			}],
 			rewards: [{
-				id: "127DCB39CDA2E821",
+				id: "28AA4567D6C045C1",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1262,9 +1262,9 @@
 				item: "mysticalagriculture:fish_seeds"
 			}],
 			rewards: [{
-				id: "2F8FEA7FE442ED44",
+				id: "6B4847054E846165",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1279,9 +1279,9 @@
 				item: "mysticalagriculture:turtle_seeds"
 			}],
 			rewards: [{
-				id: "6181D5E613023447",
+				id: "7C77AE60BF7E5F52",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1296,9 +1296,9 @@
 				item: "mysticalagriculture:slime_seeds"
 			}],
 			rewards: [{
-				id: "27EB8943630C4AB7",
+				id: "276B849CD4D62618",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 6643824915362901074L
 			}]
 		},
 		{
@@ -1325,9 +1325,9 @@
 				item: "mysticalagriculture:blitz_seeds"
 			}],
 			rewards: [{
-				id: "62B6A0CF4098A9C7",
+				id: "6DFCAB0F3C8EE4C7",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1342,9 +1342,9 @@
 				item: "mysticalagriculture:blizz_seeds"
 			}],
 			rewards: [{
-				id: "4D63FCADA4DC5DA2",
+				id: "115C72D09DDD5740",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1359,9 +1359,9 @@
 				item: "mysticalagriculture:basalz_seeds"
 			}],
 			rewards: [{
-				id: "3640B0BD73F934A5",
+				id: "7FD70F952A77A549",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1376,9 +1376,9 @@
 				item: "mysticalagriculture:rabbit_seeds"
 			}],
 			rewards: [{
-				id: "7FCC433CAE4F2E4F",
+				id: "0DC3BAF886BE3775",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1393,9 +1393,9 @@
 				item: "mysticalagriculture:spider_seeds"
 			}],
 			rewards: [{
-				id: "14F28970F3167140",
+				id: "1FB48BD2970B8658",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1410,9 +1410,9 @@
 				item: "mysticalagriculture:skeleton_seeds"
 			}],
 			rewards: [{
-				id: "3268689DA60F6A7C",
+				id: "0CF69FA72917F5CA",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1427,9 +1427,9 @@
 				item: "mysticalagriculture:zombie_seeds"
 			}],
 			rewards: [{
-				id: "65C1CC6513E00573",
+				id: "634586CA2122A800",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1444,9 +1444,9 @@
 				item: "mysticalagriculture:creeper_seeds"
 			}],
 			rewards: [{
-				id: "48F7B3B74C965545",
+				id: "6E26ED09EC1643B2",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1461,9 +1461,9 @@
 				item: "mysticalagriculture:iron_seeds"
 			}],
 			rewards: [{
-				id: "614ECB81894B36B9",
+				id: "2E8388840136F8A0",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1478,9 +1478,9 @@
 				item: "mysticalagriculture:tin_seeds"
 			}],
 			rewards: [{
-				id: "078949B6BD40AF18",
+				id: "24D32595FD3FEF12",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1495,9 +1495,9 @@
 				item: "mysticalagriculture:silver_seeds"
 			}],
 			rewards: [{
-				id: "02976D3D09C8DEE1",
+				id: "2DBB7635C9E057A8",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1512,9 +1512,9 @@
 				item: "mysticalagriculture:lead_seeds"
 			}],
 			rewards: [{
-				id: "72B9DB8B0B4313CD",
+				id: "67943886E1BEEE97",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1529,9 +1529,9 @@
 				item: "mysticalagriculture:zinc_seeds"
 			}],
 			rewards: [{
-				id: "7357DA8B60AABDC6",
+				id: "23EC60A3CD54EEA1",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1546,9 +1546,9 @@
 				item: "mysticalagriculture:redstone_seeds"
 			}],
 			rewards: [{
-				id: "67634C03646E23DF",
+				id: "49994BD57498E5BD",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1563,9 +1563,9 @@
 				item: "mysticalagriculture:glowstone_seeds"
 			}],
 			rewards: [{
-				id: "3257898BFB18199F",
+				id: "7EA19682476195DF",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1580,9 +1580,9 @@
 				item: "mysticalagriculture:aquamarine_seeds"
 			}],
 			rewards: [{
-				id: "5E249920E6AF446D",
+				id: "44EDC95D72204BE8",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1597,9 +1597,9 @@
 				item: "mysticalagriculture:nether_quartz_seeds"
 			}],
 			rewards: [{
-				id: "695D2FB150AF8CEF",
+				id: "0EABDECC3F8D36C9",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1614,9 +1614,9 @@
 				item: "mysticalagriculture:certus_quartz_seeds"
 			}],
 			rewards: [{
-				id: "4E30D97246A32A0D",
+				id: "5A509E45A9220898",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1631,9 +1631,9 @@
 				item: "mysticalagriculture:obsidian_seeds"
 			}],
 			rewards: [{
-				id: "0CE34A2DF96EDE5D",
+				id: "28968D2F4CEB1B99",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1648,9 +1648,9 @@
 				item: "mysticalagriculture:fluorite_seeds"
 			}],
 			rewards: [{
-				id: "7E911F4E29B6AFC6",
+				id: "5AF1A9EA805B4D93",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1665,9 +1665,9 @@
 				item: "mysticalagriculture:crimson_iron_seeds"
 			}],
 			rewards: [{
-				id: "6F2208F46A24EBED",
+				id: "4BAA26F0FC06A044",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1682,9 +1682,9 @@
 				item: "mysticalagriculture:azure_silver_seeds"
 			}],
 			rewards: [{
-				id: "07CFB84A75708BF4",
+				id: "38BDE66EE6A81609",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1699,9 +1699,9 @@
 				item: "mysticalagriculture:sky_stone_seeds"
 			}],
 			rewards: [{
-				id: "06B41C9951D1480A",
+				id: "2BDEA98E2DF69A7A",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1716,9 +1716,9 @@
 				item: "mysticalagriculture:bronze_seeds"
 			}],
 			rewards: [{
-				id: "66A971D8074026BE",
+				id: "37515DF80C0253CF",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1733,9 +1733,9 @@
 				item: "mysticalagriculture:brass_seeds"
 			}],
 			rewards: [{
-				id: "435D7C38F5AF8AA8",
+				id: "2CDFF8DF4C2AFF78",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1750,9 +1750,9 @@
 				item: "mysticalagriculture:ender_biotite_seeds"
 			}],
 			rewards: [{
-				id: "5265152DE64041E6",
+				id: "769C2FC8AA1AE9BE",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1767,9 +1767,9 @@
 				item: "mysticalagriculture:graphite_seeds"
 			}],
 			rewards: [{
-				id: "338C5EC20AB6A3AF",
+				id: "5CFCCD761F72D507",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1784,9 +1784,9 @@
 				item: "mysticalagriculture:quartz_enriched_iron_seeds"
 			}],
 			rewards: [{
-				id: "5C9F1BFF88835411",
+				id: "5B8FDA6D36507763",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1801,9 +1801,9 @@
 				item: "mysticalagriculture:prismarine_seeds"
 			}],
 			rewards: [{
-				id: "1CD98AC81EB64196",
+				id: "290B928B94D91FCC",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 2081350532424205669L
 			}]
 		},
 		{
@@ -1832,7 +1832,7 @@
 			rewards: [{
 				id: "7DB21988A0FA3647",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1849,7 +1849,7 @@
 			rewards: [{
 				id: "12F6018771C09662",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1866,7 +1866,7 @@
 			rewards: [{
 				id: "7DB8CACBB54C2641",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1883,7 +1883,7 @@
 			rewards: [{
 				id: "56E072687B84ADE1",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1898,9 +1898,9 @@
 				item: "mysticalagriculture:energized_steel_seeds"
 			}],
 			rewards: [{
-				id: "67A8623753038101",
+				id: "2EBC78D27A778BB2",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1915,9 +1915,9 @@
 				item: "mysticalagriculture:blazing_crystal_seeds"
 			}],
 			rewards: [{
-				id: "166E3DCDF01072E7",
+				id: "1B8004788582B169",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1932,9 +1932,9 @@
 				item: "mysticalagriculture:steel_seeds"
 			}],
 			rewards: [{
-				id: "2F713BDDE295E485",
+				id: "03804DDDF5E45AAB",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1949,9 +1949,9 @@
 				item: "mysticalagriculture:gold_seeds"
 			}],
 			rewards: [{
-				id: "3C0960290274663B",
+				id: "2740D9447CC28657",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1966,9 +1966,9 @@
 				item: "mysticalagriculture:nickel_seeds"
 			}],
 			rewards: [{
-				id: "53FC8292AE8196CF",
+				id: "1519EBAE83F6999B",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -1983,9 +1983,9 @@
 				item: "mysticalagriculture:lapis_lazuli_seeds"
 			}],
 			rewards: [{
-				id: "348B2B7C0A71F122",
+				id: "5B4FFF3AD4E7A96E",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2000,9 +2000,9 @@
 				item: "mysticalagriculture:osmium_seeds"
 			}],
 			rewards: [{
-				id: "1786035A90D4A756",
+				id: "5BF3015144163302",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2017,9 +2017,9 @@
 				item: "mysticalagriculture:end_seeds"
 			}],
 			rewards: [{
-				id: "582BCE3CD4DA4F45",
+				id: "5A762CE9A304DDDD",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2034,9 +2034,9 @@
 				item: "mysticalagriculture:compressed_iron_seeds"
 			}],
 			rewards: [{
-				id: "0D85D2F3D2DE2972",
+				id: "3AE3EB484A30124C",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2051,9 +2051,9 @@
 				item: "mysticalagriculture:electrum_seeds"
 			}],
 			rewards: [{
-				id: "32B8BC8EEA846231",
+				id: "19C2547F415B50B5",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2068,9 +2068,9 @@
 				item: "mysticalagriculture:constantan_seeds"
 			}],
 			rewards: [{
-				id: "74E389884F1DDA21",
+				id: "0C577EB4251BDAAD",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2085,9 +2085,9 @@
 				item: "mysticalagriculture:signalum_seeds"
 			}],
 			rewards: [{
-				id: "4AAF22CEB3F74D48",
+				id: "4CEA8B8B2B67ACF6",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2102,9 +2102,9 @@
 				item: "mysticalagriculture:invar_seeds"
 			}],
 			rewards: [{
-				id: "4196F9F6AAE16D65",
+				id: "3DADA4DD9FD2AE9D",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2119,9 +2119,9 @@
 				item: "mysticalagriculture:fluix_seeds"
 			}],
 			rewards: [{
-				id: "4213E6580932A5C5",
+				id: "414E2A12D5A89E1B",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2136,9 +2136,9 @@
 				item: "mysticalagriculture:refined_glowstone_seeds"
 			}],
 			rewards: [{
-				id: "62DDA47B8C63460A",
+				id: "33B5F2DC47138F23",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2153,9 +2153,9 @@
 				item: "mysticalagriculture:lumium_seeds"
 			}],
 			rewards: [{
-				id: "6BC68767EA10AEC6",
+				id: "0FE49AD3108A6910",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2170,9 +2170,9 @@
 				item: "mysticalagriculture:azure_electrum_seeds"
 			}],
 			rewards: [{
-				id: "7C99EC15CF1D76C5",
+				id: "0220131D66AD9988",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2187,9 +2187,9 @@
 				item: "mysticalagriculture:starmetal_seeds"
 			}],
 			rewards: [{
-				id: "3525D5417A11CF13",
+				id: "692B797D5F1E1DE7",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2204,9 +2204,9 @@
 				item: "mysticalagriculture:hop_graphite_seeds"
 			}],
 			rewards: [{
-				id: "7D08830D270017F1",
+				id: "5CDEC582F3D04896",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2221,9 +2221,9 @@
 				item: "mysticalagriculture:crimson_steel_seeds"
 			}],
 			rewards: [{
-				id: "12833E2883A153EB",
+				id: "705CD609317EA306",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2252,7 +2252,7 @@
 			rewards: [{
 				id: "238D4AA478EEA8BC",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2269,7 +2269,7 @@
 			rewards: [{
 				id: "78814C676485382D",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2286,7 +2286,7 @@
 			rewards: [{
 				id: "7890E50E2DF9AE2E",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2303,7 +2303,7 @@
 			rewards: [{
 				id: "1A44C69086F51155",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2320,7 +2320,7 @@
 			rewards: [{
 				id: "77D2B134CD7A08EC",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2337,7 +2337,7 @@
 			rewards: [{
 				id: "417608BDD13C47C7",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2354,7 +2354,7 @@
 			rewards: [{
 				id: "33C711E8E83089AE",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2371,7 +2371,7 @@
 			rewards: [{
 				id: "761B184FE2A23623",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2388,7 +2388,7 @@
 			rewards: [{
 				id: "256DCBB15911E1E5",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2405,7 +2405,7 @@
 			rewards: [{
 				id: "37200C1917637FDE",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2422,7 +2422,7 @@
 			rewards: [{
 				id: "6DFA9E174E702A65",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2439,7 +2439,7 @@
 			rewards: [{
 				id: "14069CFE41D22A84",
 				type: "random",
-				table_id: 3968376212287991603L
+				table_id: 972096620368381850L
 			}]
 		},
 		{
@@ -2865,6 +2865,107 @@
 					item: "mob_grinding_utils:rotten_egg"
 				}
 			]
+		},
+		{
+			title: "Wither there bee stars",
+			x: 0.72704081632655d,
+			y: 2.5314625850340065d,
+			description: [
+				"Welcome to the 2nd bee in the Mutation Line... oh wait... no.. you simply breed a netherite bee and a withered bee to get this.",
+				"",
+				"To get this bee, you have to mutate a dragon egg by pollinating it, with a withered bee."
+			],
+			dependencies: ["7DB9AE9AA5B725EC"],
+			id: "3078D0FA79DACF69",
+			tasks: [{
+				id: "62F5A481B6282ED0",
+				type: "item",
+				item: "resourcefulbees:wither_honeycomb"
+			}]
+		},
+		{
+			title: "Nethermind the Error",
+			x: -0.022959183673449957d,
+			y: 2.5314625850340065d,
+			description: [
+				"Welcome to the 1st bee of the mutation line",
+				"",
+				"To get this bee, you need a gold bee to pollinate on a netherite block. You will get a Spawn Egg."
+			],
+			hide_dependency_lines: true,
+			dependencies: ["29F8515D25952A95"],
+			id: "2E3B9E9B1C48C13F",
+			tasks: [{
+				id: "2E0F66F76BFB851E",
+				type: "item",
+				item: "resourcefulbees:netherite_honeycomb"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -6.0d,
+			shape: "pentagon",
+			dependencies: ["748485FEC1097A71"],
+			id: "573AAC30B09B0BAE",
+			tasks: [{
+				id: "40B061A5347127EB",
+				type: "item",
+				item: "immersiveengineering:cloche"
+			}],
+			rewards: [{
+				id: "2593738FE907BFBD",
+				type: "item",
+				item: "botania:overgrowth_seed"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -6.0d,
+			shape: "pentagon",
+			dependencies: ["748485FEC1097A71"],
+			id: "17549F4A0B59DEA4",
+			tasks: [{
+				id: "551B10C952DD6686",
+				type: "item",
+				item: "mysticalagriculture:supremium_hoe"
+			}],
+			rewards: [{
+				id: "73E3A399DF6BCA64",
+				type: "item",
+				item: "botania:overgrowth_seed"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -6.0d,
+			shape: "pentagon",
+			dependencies: ["748485FEC1097A71"],
+			id: "6FFC449DE313A1BD",
+			tasks: [{
+				id: "3A91C6FD4E68A1DD",
+				type: "item",
+				item: "botanypots:hopper_botany_pot"
+			}],
+			rewards: [{
+				id: "4384FB4F5DDD70EB",
+				type: "item",
+				item: "botania:overgrowth_seed"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -5.0d,
+			description: [
+				"These are 3 quests given to receive a 100% chance of an Overgrowth Seed Each to craft magical soil.",
+				"",
+				"So don't go accidently spend them if you didn't get any from the random rewards."
+			],
+			id: "748485FEC1097A71",
+			tasks: [{
+				id: "6B6CD08FAF249745",
+				type: "checkmark",
+				title: "Tools of Farming"
+			}]
 		}
 	]
 }

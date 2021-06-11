@@ -8,8 +8,7 @@
     },
     "defaultCategory": "farmingforblockheads:saplings"
   },
-  "customEntries": [
-    {
+  "customEntries": [{
       "output": {
         "item": "quark:blue_blossom_sapling"
       }

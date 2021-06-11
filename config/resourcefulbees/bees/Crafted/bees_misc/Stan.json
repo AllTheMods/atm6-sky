@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/clay",
+    "flower": "tag:forge:stone",
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/stan_bee",
     "ColorData": {
-        "primaryColor": "#48544F",
-        "secondaryColor": "#48544F",
-        "honeycombColor": "#48544F",
+        "primaryColor": "#5A5A5A",
+        "secondaryColor": "#5A5A5A",
+        "honeycombColor": "#5A5A5A",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
         "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": true,
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#48544F",
+        "glowColor": "#5A5A5A",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,35 +30,20 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:mason_honeycomb_block",
+            "inputID": "resourcefulbees:stan_bee_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:clay_ball",
+                    "outputID": "resourcefulbees:stan_bee_honeycomb",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:mason_bee_spawn_egg",
+                    "outputID": "resourcefulbees:stan_bee_bee_spawn_egg",
                     "weight": 20
                 }
             ]
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:clay_ball",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 3,
-        "mainNBTData": {},
-        "secondaryOutput": "minecraft:brick",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "hasCentrifugeOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false

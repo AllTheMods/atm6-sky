@@ -61,16 +61,8 @@ onEvent(`recipes`, e => {
     })
   }
 
-  let t1 = types => tier(types, 900, [`inferium`])
-  let t2 = types => tier(types, 1600, [`prudentium`])
-  let t3 = types => tier(types, 2000, [`tertium`])
-  let t4 = types => tier(types, 2700, [`imperium`])
-  let t5 = types => tier(types, 3500, [`supremium`])
-  let t6 = types => tier(types, 4100, [`insanium`])
-  let t7 = types => tier(types, 5200, [`magical`])
-
   //Tier 1 Crops
-  t1([
+  const t1 = [
     `inferium`,
     `air`,
     `earth`,
@@ -80,10 +72,10 @@ onEvent(`recipes`, e => {
     `wood`,
     `ice`,
     `stone`
-  ])
+  ]
 
   //Tier 2 Crops
-  t2([
+  const t2 = [
     `aluminum`,
     `chicken`,
     `coal`,
@@ -110,10 +102,10 @@ onEvent(`recipes`, e => {
     `basalz`,
     `blizz`,
     `blitz`
-  ])
+  ]
 
   //Tier 3 Crops
-  t3([
+  const t3 = [
     `azure_silver`,
     `brass`,
     `bronze`,
@@ -143,10 +135,10 @@ onEvent(`recipes`, e => {
     `signalum`,
     `starmetal`,
     `manasteel`
-  ])
+  ]
 
   //Tier 4 Crops
-  t4([
+  const t4 = [
     `azure_electrum`,
     `blaze`,
     `chrome`,
@@ -174,10 +166,10 @@ onEvent(`recipes`, e => {
     `elementium`,
     `energized_steel`,
     `blazing_crystal`
-  ])
+  ]
 
   //Tier 5 Crops
-  t5([
+  const t5 = [
     `diamond`,
     `emerald`,
     `netherite`,
@@ -190,21 +182,29 @@ onEvent(`recipes`, e => {
     `rock_crystal`,
     `niotic_crystal`,
     `terrasteel`
-  ])
+  ]
 
   //Tier 6 Crops
-  t6([
+  const t6 = [
     `dragon_egg`,
     `nether_star`,
     `nitro_crystal`
-  ])
+  ]
 
   //Magical Tier
-  t7([
+  const t7 = [
     `allthemodium`,
     `vibranium`,
     `unobtainium`
-  ])
+  ]
+
+  tier(t1, 900, [`inferium`])
+  tier(t2, 1600, [`prudentium`])
+  tier(t3, 2000, [`tertium`])
+  tier(t4, 2700, [`imperium`])
+  tier(t5, 3500, [`supremium`])
+  tier(t6, 4100, [`insanium`])
+  tier(t7, 5200, [`magical`])
 
   //Ars Nouveau Mana Bloom
   const results = [

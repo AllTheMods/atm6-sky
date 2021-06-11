@@ -40,7 +40,7 @@ onEvent(`item.tags`, e => {
   e.add(`forge:ingots`, [`#forge:ingots/unobtainium_allthemodium_alloy`, `#forge:ingots/vibranium_unobtainium_alloy`, `#forge:ingots/vibranium_allthemodium_alloy`])
   e.add(`forge:mushrooms`, [`minecraft:warped_fungus`, `minecraft:crimson_fungus`])
   e.add(`misctags:bat_wing`, [`xreliquary:bat_wing`, `forbidden_arcanus:bat_wing`])
-
+  e.add('dankstorage:blacklisted_usage', ['/^usefulbackpacks:/'])
   e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`)
   e.add(`forge:storage_blocks/aquamarine`, `kubejs:aquamarine_block`)
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`)

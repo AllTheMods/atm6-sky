@@ -1,5 +1,5 @@
 onEvent(`recipes`, e => {
-  const transmutate = (block, output, starlight) => {
+  function transmutate(block, output, starlight){
     e.custom({
       type: `astralsorcery:block_transmutation`,
       input: [{
@@ -9,10 +9,10 @@ onEvent(`recipes`, e => {
         block: output
       },
       starlight: starlight
-    });
-  };
+    })
+  }
 
-  const altar = (tier, duration, starlight, pattern, items, result) => {
+  function altar(tier, duration, starlight, pattern, items, result){
     e.custom({
       type: `astralsorcery:altar`,
       altar_type: tier,
@@ -24,11 +24,11 @@ onEvent(`recipes`, e => {
       effects: [
         `astralsorcery:built_in_effect_discovery_central_beam`
       ]
-    });
-  };
+    })
+  }
 
   //Transmutation recipes
-  transmutate(`minecraft:spruce_sapling`, `integrateddynamics:menril_sapling`, 100);
+  transmutate(`minecraft:spruce_sapling`, `integrateddynamics:menril_sapling`, 100)
 
   //Altar recipes
   altar(0, 100, 200, [
@@ -42,7 +42,7 @@ onEvent(`recipes`, e => {
     2: Ingredient.of(`astralsorcery:glass_lens`).toJson(),
     3: Ingredient.of(`astralsorcery:liquid_starlight_bucket`).toJson(),
     4: Ingredient.of(`#forge:gems/arcane_crystal`).toJson()
-  }, Item.of(`astralsorcery:rock_crystal_ore`));
+  }, Item.of(`astralsorcery:rock_crystal_ore`))
 
   altar(0, 100, 200, [
     `_____`,
@@ -63,7 +63,7 @@ onEvent(`recipes`, e => {
     astralsorcery: {
       constellationName: `astralsorcery:armara`
     }
-  }));
+  }))
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -83,7 +83,7 @@ onEvent(`recipes`, e => {
     astralsorcery: {
       constellationName: `astralsorcery:aevitas`
     }
-  }));
+  }))
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -103,7 +103,7 @@ onEvent(`recipes`, e => {
     astralsorcery: {
       constellationName: `astralsorcery:vicio`
     }
-  }));
+  }))
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -123,7 +123,7 @@ onEvent(`recipes`, e => {
     astralsorcery: {
       constellationName: `astralsorcery:discidia`
     }
-  }));
+  }))
   altar(0, 100, 200, [
     `_____`,
     `_1A2_`,
@@ -143,5 +143,5 @@ onEvent(`recipes`, e => {
     astralsorcery: {
       constellationName: `astralsorcery:evorsio`
     }
-  }));
-});
+  }))
+})

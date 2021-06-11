@@ -1,37 +1,70 @@
 {
     "flower": "minecraft:blue_ice",
     "maxTimeInHive": 1200,
+    "traits": [],
     "hasHoneycomb": true,
+    "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "isBeeColored": true,
         "primaryColor": "#86aefd",
-        "honeycombColor": "#86aefd"
+        "secondaryColor": "#86aefd",
+        "honeycombColor": "#86aefd",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#86aefd",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "default"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "compressium:cobblestone_3",
-            "chance": 0.25,
+            "inputID": "resourcefulbees:icey_honeycomb_block",
             "outputs": [{
-                "outputID": "resourcefulbees:icey_bee_spawn_egg"
-            }]
+                    "outputID": "minecraft:ice",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:icey_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
         }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
         "mainOutput": "minecraft:ice",
-        "mainOutputCount": 3,
-        "mainOutputWeight": 0.9
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 8,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "feedItem": "minecraft:blue_ice",
-        "feedAmount": 5
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": false

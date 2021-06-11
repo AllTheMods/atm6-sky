@@ -1,44 +1,72 @@
 {
     "flower": "astralsorcery:starmetal",
     "maxTimeInHive": 1200,
-    "hasHoneycomb": true,
     "traits": [],
+    "hasHoneycomb": true,
     "baseLayerTexture": "misc/aquamarine_bee",
     "ColorData": {
-        "isBeeColored": false,
+        "primaryColor": "#35b3ff",
+        "secondaryColor": "#35b3ff",
         "honeycombColor": "#35b3ff",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#35b3ff",
+        "isEnchanted": false,
+        "glowingPulse": 0,
         "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "compressium:cobblestone_3",
-            "chance": 0.25,
+            "inputID": "resourcefulbees:aquamarine_honeycomb_block",
             "outputs": [{
-                "outputID": "resourcefulbees:aquamarine_bee_spawn_egg"
-            }]
+                    "outputID": "astralsorcery:aquamarine",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:aquamarine_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
         }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
         "mainOutput": "astralsorcery:aquamarine",
-        "mainOutputWeight": 0.50,
+        "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
+        "mainNBTData": {},
         "secondaryOutput": "astralsorcery:aquamarine",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "feedItem": "astralsorcery:resonating_gem",
-        "feedAmount": 5
+        "isBreedable": false
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }

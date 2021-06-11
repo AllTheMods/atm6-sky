@@ -9,8 +9,7 @@
     },
     "defaultCategory": "farmingforblockheads:saplings"
   },
-  "customEntries": [
-    {
+  "customEntries": [{
       "output": {
         "item": "tconstruct:sky_slime_sapling"
       }

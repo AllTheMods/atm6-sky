@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "xreliquary:guardian_spike",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": true

@@ -25,7 +25,7 @@
 	"Use Piston Logic Replacement" = true
 
 [categories]
-	Automation = false
+	Automation = true
 	Building = true
 	Client = true
 	Experimental = false
@@ -48,10 +48,10 @@
 	Gravisand = false
 	"Iron Rod" = false
 	"Metal Buttons" = false
-	"Obsidian Plate" = false
+	"Obsidian Plate" = true
 	"Pistons Move Tile Entities" = false
 	"Redstone Circuit" = false
-	"Weather Sensor" = false
+	"Weather Sensor" = true
 
 	[automation.chain_linkage]
 		#Can vehicle-linking chains be used for crafting chain armor?

@@ -49,7 +49,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "compressium:andesite_2",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

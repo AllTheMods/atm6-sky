@@ -195,7 +195,7 @@
 			x: 1.0d,
 			y: -9.5d,
 			description: [
-				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them then just hammering.",
+				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them than just hammering.",
 				"",
 				"Maybe some automation."
 			],

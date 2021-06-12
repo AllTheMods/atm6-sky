@@ -107,6 +107,7 @@ events.listen('recipes', e => {
   mainfusion(`resourcefulbees:cobalt_bee_spawn_egg`, 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block')
   mainfusion(`resourcefulbees:salt_baee_bee_spawn_egg`, 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt')
   mainfusion(`resourcefulbees:stan_bee_spawn_egg`, 'minecraft:andesite', 'minecraft:diorite', 'minecraft:granite', 'minecraft:basalt', 'minecraft:andesite', 'minecraft:diorite', 'minecraft:granite', 'minecraft:basalt')
+  mainfusion(`resourcefulbees:dirty_bee_spawn_egg`, 'minecraft:dirt', 'minecraft:mycelium', 'minecraft:coarse_dirt', 'minecraft:podzol', 'mob_grinding_utils:delightful_dirt', 'mob_grinding_utils:dreadful_dirt', 'engineersdecor:dense_grit_dirt_block', 'minecraft:grass')
 
   //Comb to Bucket
   e.shaped('minecraft:water_bucket', [

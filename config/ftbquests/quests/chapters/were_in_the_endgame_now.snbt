@@ -593,8 +593,8 @@
 		},
 		{
 			disable_toast: true,
-			x: 8.5d,
-			y: -6.5d,
+			x: 10.0d,
+			y: -6.0d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "31F86C73C6B248F6",
 			tasks: [{
@@ -637,8 +637,8 @@
 			}]
 		},
 		{
-			x: 8.0d,
-			y: -7.0d,
+			x: 10.0d,
+			y: -5.0d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "7D6222FE46361F29",
 			tasks: [{
@@ -726,6 +726,23 @@
 				id: "2E9F45FFC5428C96",
 				type: "item",
 				item: "creativeapiary:creative_apiary_breeder"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -7.0d,
+			dependencies: ["255F31BBC346BAB5"],
+			id: "0F5833EBFE152E9B",
+			tasks: [{
+				id: "0243034C3BD49C99",
+				type: "item",
+				item: {
+					id: "ironjetpacks:creative_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
 			}]
 		}
 	]

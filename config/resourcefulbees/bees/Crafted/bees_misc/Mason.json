@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "tag:forge:storage_blocks/clay",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

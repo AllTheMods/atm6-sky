@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "compressium:sand_4",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

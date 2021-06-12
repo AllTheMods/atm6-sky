@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "minecraft:blue_ice",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

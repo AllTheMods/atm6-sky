@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "jaopca:storage_blocks.ender_pearl",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": true

@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "compressium:cobblestone_3",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

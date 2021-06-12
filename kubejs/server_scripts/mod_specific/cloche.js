@@ -77,7 +77,8 @@ onEvent(`recipes`, e => {
     `sky_stone`,
     `basalz`,
     `blizz`,
-    `blitz`
+    `blitz`,
+    `apatite`
   ])
 
   //Tier 3 Crops
@@ -106,11 +107,14 @@ onEvent(`recipes`, e => {
     `zinc`,
     `zombie`,
     `lumium`,
-    //`fluorite`,
+    `fluorite`,
     `aquamarine`,
     `signalum`,
     `starmetal`,
-    `manasteel`
+    `manasteel`,
+    `pig_iron`,
+    `slimesteel`,
+    `tinkers_bronze`
   ])
 
   //Tier 4 Crops
@@ -142,7 +146,9 @@ onEvent(`recipes`, e => {
     `hop_graphite`,
     `elementium`,
     `energized_steel`,
-    `blazing_crystal`
+    `blazing_crystal`,
+    `rose_gold`,
+    `cobalt`
   ])
 
   //Tier 5 Crops
@@ -158,7 +164,10 @@ onEvent(`recipes`, e => {
     `spirited_crystal`,
     `rock_crystal`,
     `niotic_crystal`,
-    `terrasteel`
+    `terrasteel`,
+    `manyullyn`,
+    `queens_slime`,
+    `hepatizon`
   ])
 
   //Tier 6 Crops

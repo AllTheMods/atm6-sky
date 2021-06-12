@@ -65,7 +65,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "minecraft:beef",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "tag:botania:mystical_flowers",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

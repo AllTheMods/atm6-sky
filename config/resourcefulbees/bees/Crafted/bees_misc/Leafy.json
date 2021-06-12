@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "tag:minecraft:leaves",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

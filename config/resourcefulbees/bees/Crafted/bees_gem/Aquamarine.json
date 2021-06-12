@@ -64,7 +64,9 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "feedItem": "astralsorcery:resonating_gem",
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": false

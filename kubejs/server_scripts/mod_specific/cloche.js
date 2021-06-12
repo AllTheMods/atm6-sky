@@ -107,7 +107,7 @@ onEvent(`recipes`, e => {
     `zinc`,
     `zombie`,
     `lumium`,
-    //`fluorite`,
+    `fluorite`,
     `aquamarine`,
     `signalum`,
     `starmetal`,

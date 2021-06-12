@@ -592,8 +592,9 @@
 			}]
 		},
 		{
-			x: 9.0d,
-			y: -6.0d,
+			disable_toast: true,
+			x: 8.5d,
+			y: -6.5d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "31F86C73C6B248F6",
 			tasks: [{
@@ -636,35 +637,8 @@
 			}]
 		},
 		{
-			x: 8.5d,
+			x: 8.0d,
 			y: -7.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "4E1E94270BC4FF81",
-			tasks: [{
-				id: "03E76D4C453B6E8A",
-				type: "item",
-				item: {
-					id: "exchangers:creative_exchanger",
-					Count: 1b,
-					tag: {
-						mode: 0,
-						fuzzyPlacementChance: 100,
-						directionalPlacement: 0b,
-						forceDropItems: 0b,
-						fuzzyPlacement: 0b,
-						voidItems: 0b,
-						range: 0,
-						Damage: 0,
-						blockstate: {
-							Name: "minecraft:air"
-						}
-					}
-				}
-			}]
-		},
-		{
-			x: 10.0d,
-			y: -6.0d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "7D6222FE46361F29",
 			tasks: [{
@@ -685,8 +659,8 @@
 			}]
 		},
 		{
-			x: 10.0d,
-			y: -5.0d,
+			x: 9.0d,
+			y: -6.0d,
 			dependencies: ["255F31BBC346BAB5"],
 			id: "29F51931B71B52D7",
 			tasks: [{

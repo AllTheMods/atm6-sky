@@ -2,12 +2,12 @@
   "biomes": [
     [
     {
-      "type": "BIOME_DICT",
+      "type": "REGISTRY_NAME",
       "negate": false,
       "value": "allthemodium:desert"
     },
     {
-      "type": "BIOME_DICT",
+      "type": "REGISTRY_NAME",
       "negate": false,
       "value": "allthemodium:desert_hills"
     }

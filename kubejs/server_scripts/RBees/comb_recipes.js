@@ -1,23 +1,6 @@
 events.listen('recipes', e => {
   const cuShaped = e.recipes.cucumber.shaped_no_mirror
-  const colors = [
-    `white`,
-    `light_gray`,
-    `gray`,
-    `black`,
-    `red`,
-    `orange`,
-    `yellow`,
-    `lime`,
-    `green`,
-    `light_blue`,
-    `cyan`,
-    `blue`,
-    `purple`,
-    `magenta`,
-    `pink`,
-    `brown`
-  ]
+  const colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
   const craftingShapes = [
     //vertical
     [
@@ -33,7 +16,7 @@ events.listen('recipes', e => {
       'C  ',
       'C  '
     ],
-    //horizontal 
+    //horizontal
     [
       'CCC',
       '   ',
@@ -169,6 +152,15 @@ events.listen('recipes', e => {
     `quark:basalt`,
     `astralsorcery:marble_raw`
   ]
+  const honey = [
+    'resourcefulbees:honey',
+    'cyclic:honey',
+    'create:honey',
+  ]
+  const customHoney = [
+    'resourcefulbees:rainbow_honey',
+    'resourcefulbees:catnip_honey',
+  ]
 
   function shapedRecipe(results_, craftingItem_, itemCount_) {
     const maxLength = Math.min(craftingShapes.length, results_.length)
@@ -187,6 +179,39 @@ events.listen('recipes', e => {
       })
     }
   }
+
+  //Comb to Bucket
+  e.shaped('minecraft:water_bucket', [
+    ' C ',
+    'CBC',
+    ' C '
+  ], {
+    'C': 'resourcefulbees:water_honeycomb',
+    'B': 'minecraft:bucket'
+  }).id(`kubejs:water_comb_bucket`)
+  e.shaped('minecraft:lava_bucket', [
+    ' C ',
+    'CBC',
+    ' C '
+  ], {
+    'C': 'resourcefulbees:lava_honeycomb',
+    'B': 'minecraft:bucket'
+  }).id(`kubejs:lava_comb_bucket`)
+
+  //Honey Compatibility
+  honey.forEach(type => {
+    e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000))
+  })
+  customHoney.forEach(type => {
+    e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
+    e.shaped('compressium:honey_1', [
+      'AAA',
+      'AAA',
+      'AAA'
+    ], {
+      A: `${type}_block`
+    })
+  })
 
   shapedRecipe(dyes, `resourcefulbees:rainbow_honey_block`, 32)
   shapedRecipe(botaniaFlowers, `resourcefulbees:mystical_honeycomb`, 2)

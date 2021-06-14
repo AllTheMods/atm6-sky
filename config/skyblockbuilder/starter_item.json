@@ -26,7 +26,12 @@
                     },
                     "theoneprobe": {
                         "id": "theoneprobe:probenote",
-                        "Count": 1
+                        "Count": 1,
+                        "tag": {
+                            "akashictome:displayName": {
+                                "text": "ProbeSettings"
+                            }
+                        }
                     },
                     "resourcefulbees": {
                         "id": "patchouli:guide_book",

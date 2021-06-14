@@ -25,6 +25,15 @@ events.listen('recipes', e => {
               }
             }
           },
+		  "theoneprobe": {
+			"id": "theoneprobe:probenote",
+			"Count": 1,
+            "tag": {
+              "akashictome:displayName": {
+                "text": "ProbeSettings"
+              }
+            }
+		  },
           "resourcefulbees": {
             "id": "patchouli:guide_book",
             "Count": 1,

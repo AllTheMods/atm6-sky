@@ -146,11 +146,11 @@ events.listen('recipes', e => {
   })
 
   //Immersive Engineering
-  energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', 2147483647)
+  energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', "2147483647")
   //Integrated Dynamics
-  energize(['integrateddynamics:coal_generator', 'integrateddynamics:coal_generator', atm_star, 'integrateddynamics:coal_generator', 'integrateddynamics:coal_generator'], 'integrateddynamics:energy_battery_creative', 2147483647)
+  energize(['integrateddynamics:coal_generator', 'integrateddynamics:coal_generator', atm_star, 'integrateddynamics:coal_generator', 'integrateddynamics:coal_generator'], 'integrateddynamics:energy_battery_creative', "2147483647")
   //Applied Energistics 2
-  energize(['appliedenergistics2:dense_energy_cell', atm_star], 'appliedenergistics2:creative_energy_cell', 2147483647)
+  energize(['appliedenergistics2:dense_energy_cell', atm_star], 'appliedenergistics2:creative_energy_cell', "2147483647")
   //Mekanism
   e.shaped('mekanism:creative_energy_cube', [
     'ATA',
@@ -170,7 +170,7 @@ events.listen('recipes', e => {
         stored: "18446744073709551615.9999"
       }]
     }
-  }), 2147483647)
+  }), "2147483647")
 
   //Create
   e.recipes.create.mechanical_crafting('create:creative_motor', [
@@ -186,12 +186,12 @@ events.listen('recipes', e => {
   })
 
   //Refined Storage
-  energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', 2147483647)
-  energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', 2147483647)
-  energize(['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', 2147483647)
-  energize(['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', 2147483647)
-  energize(['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', 2147483647)
-  energize(['refinedstorage:controller', atm_star], 'refinedstorage:creative_controller', 2147483647)
+  energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', "2147483647")
+  energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', "2147483647")
+  energize(['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', "2147483647")
+  energize(['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', "2147483647")
+  energize(['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', "2147483647")
+  energize(['refinedstorage:controller', atm_star], 'refinedstorage:creative_controller', "2147483647")
 
   //Pneumatic Craft
   pressure([{
@@ -250,6 +250,51 @@ events.listen('recipes', e => {
     A: 'storagedrawers:emerald_storage_upgrade',
     B: atm_star,
     C: 'allthemodium:allthemodium_block'
+  })
+
+  //Iron Jetpacks
+  e.shaped('ironjetpacks:creative_cell', [
+    ' A ',
+    'BCB',
+    ' A '
+  ], {
+    A: '#forge:storage_blocks/redstone',
+    B: 'allthemodium:unobtainium_block',
+    C: 'powah:battery_nitro'
+  })
+  e.shaped('ironjetpacks:creative_thruster', [
+    'ABA',
+    'BCB',
+    'ADA'
+  ], {
+    A: 'allthemodium:unobtainium_block',
+    B: 'powah:nitro_crystal_block',
+    C: 'ironjetpacks:creative_cell',
+    D: 'ironfurnaces:unobtainium_furnace'
+  })
+  e.shaped('ironjetpacks:creative_capacitor', [
+    'ADA',
+    'BEB',
+    'CFC'
+  ], {
+    A: 'create:refined_radiance_casing',
+    B: 'create:shadow_steel_casing',
+    C: 'extradisks:advanced_machine_casing',
+    D: 'industrialforegoing:mycelial_reactor',
+    E: 'mekanism:ultimate_induction_cell',
+    F: 'powah:reactor_nitro'
+  })
+  e.shaped('ironjetpacks:creative_jetpack', [
+    'ACA',
+    'BFB',
+    'DED'
+  ], {
+    A: 'mysticalagradditions:creative_essence',
+    B: 'allthemodium:vibranium_allthemodium_alloy_block',
+    C: 'ironjetpacks:creative_capacitor',
+    D: 'ironjetpacks:creative_thruster',
+    E: atm_star,
+    F: 'ironjetpacks:unobtainium_jetpack'
   })
 
   //Ice And Fire

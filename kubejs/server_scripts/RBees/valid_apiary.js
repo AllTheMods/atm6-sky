@@ -31,7 +31,6 @@ const whitelistVA = [
   'minecraft:hay_block',
   'cookingforblockheads:fridge',
   'minecraft:bone_block',
-  'kubejs:nether_star_block',
 
   // /minecraft:.*nether_bricks/,
   /minecraft:.*terracotta/,

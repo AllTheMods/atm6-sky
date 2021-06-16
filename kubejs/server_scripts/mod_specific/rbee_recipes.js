@@ -63,7 +63,8 @@ events.listen('recipes', function (e) {
   mainfusion(`resourcefulbees:spider_bee_spawn_egg`, scale, 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth')
   mainfusion(`resourcefulbees:spooky_bee_spawn_egg`, scale, 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone')
   mainfusion(`resourcefulbees:zombee_bee_spawn_egg`, scale, 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head')
-
+  mainfusion(`resourcefulbees:oreo_bee_spawn_egg`, scale, 'minecraft:cookie', 'minecraft:cookie', 'pamhc2foodcore:cookiesandmilkitem', 'pamhc2foodcore:cookiesandmilkitem', 'botania:mana_cookie', 'botania:mana_cookie', 'minecraft:cocoa_beans', 'minecraft:cocoa_beans')
+  
   //Honey Compatibility
   const honey = [
     'resourcefulbees:honey',

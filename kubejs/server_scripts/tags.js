@@ -99,6 +99,7 @@ onEvent(`block.tags`, e => {
   e.add(`forge:storage_blocks/fluorite`, `kubejs:fluorite_block`)
   e.add(`forge:storage_blocks/lithium`, `kubejs:lithium_block`)
   e.add(`forge:storage_blocks/nether_star`, `kubejs:nether_star_block`)
+  e.add('forge:storage_blocks', ['#forge:storage_blocks/nether_star'])
   e.add(`cyclic:scythe_brush`, `#minecraft:flowers`)
 
   //Flower tags for Resourceful bees

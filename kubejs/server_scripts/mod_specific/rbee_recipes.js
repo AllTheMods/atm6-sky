@@ -1,5 +1,6 @@
 events.listen('recipes', function (e) {
   const scale = 'mysticalagradditions:dragon_scale'
+  const beds = ('minecraft:white_bed', 'minecraft:light_gray_bed', 'minecraft:gray_bed', 'minecraft:black_bed', 'minecraft:red_bed', 'minecraft:orange_bed', 'minecraft:yellow_bed', 'minecraft:lime_bed', 'minecraft:green_bed', 'minecraft:light_blue_bed', 'minecraft:cyan_bed', 'minecraft:blue_bed', 'minecraft:purple_bed', 'minecraft:magenta_bed', 'minecraft:pink_bed', 'minecraft:brown_bed')
 
   function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
     e.recipes.mysticalagriculture.infusion({
@@ -65,6 +66,10 @@ events.listen('recipes', function (e) {
   mainfusion(`resourcefulbees:zombee_bee_spawn_egg`, scale, 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head')
   mainfusion(`resourcefulbees:oreo_bee_spawn_egg`, scale, 'minecraft:cookie', 'minecraft:cookie', 'pamhc2foodcore:cookiesandmilkitem', 'pamhc2foodcore:cookiesandmilkitem', 'botania:mana_cookie', 'botania:mana_cookie', 'minecraft:cocoa_beans', 'minecraft:cocoa_beans')
 
+  beds.forEach(bed => {
+    mainfusion(`resourcefulbees:kitten_bee_spawn_egg`, scale, 'minecraft:cod', 'minecraft:cod', 'minecraft:salmon', 'minecraft:salmon', bed, 'botania:cosmetic_cat_ears', 'excompressum:cat_bait', 'excompressum:ocelot_bait')
+  })
+  
   //Honey Compatibility
   const honey = [
     'resourcefulbees:honey',

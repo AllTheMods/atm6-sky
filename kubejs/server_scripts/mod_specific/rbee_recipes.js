@@ -37,6 +37,12 @@ events.listen('recipes', function (e) {
     })
   }
 
+  function kittenBee(beds) {
+    beds.forEach(bed => {
+      mainfusion(`resourcefulbees:kitten_bee_spawn_egg`, scale, 'minecraft:cod', 'minecraft:cod', 'minecraft:salmon', 'minecraft:salmon', bed, 'botania:cosmetic_cat_ears', 'excompressum:cat_bait', 'excompressum:ocelot_bait')
+    })
+  }
+
   //egg recipes
   mainfusion(`resourcefulbees:aquamarine_bee_spawn_egg`, scale, 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem')
   mainfusion(`resourcefulbees:quartz_bee_spawn_egg`, scale, 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3')
@@ -65,18 +71,13 @@ events.listen('recipes', function (e) {
   mainfusion(`resourcefulbees:zombee_bee_spawn_egg`, scale, 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head')
   mainfusion(`resourcefulbees:oreo_bee_spawn_egg`, scale, 'minecraft:cookie', 'minecraft:cookie', 'pamhc2foodcore:cookiesandmilkitem', 'pamhc2foodcore:cookiesandmilkitem', 'botania:mana_cookie', 'botania:mana_cookie', 'minecraft:cocoa_beans', 'minecraft:cocoa_beans')
 
-  function addKittenBee(beds) {
-    beds.forEach(bed => {
-      mainfusion(`resourcefulbees:kitten_bee_spawn_egg`, scale, 'minecraft:cod', 'minecraft:cod', 'minecraft:salmon', 'minecraft:salmon', bed, 'botania:cosmetic_cat_ears', 'excompressum:cat_bait', 'excompressum:ocelot_bait')
-  })
-  }
+  kittenBee([
+    'minecraft:white_bed', 'minecraft:light_gray_bed', 'minecraft:gray_bed', 'minecraft:black_bed',
+    'minecraft:red_bed', 'minecraft:orange_bed', 'minecraft:yellow_bed', 'minecraft:lime_bed',
+    'minecraft:green_bed', 'minecraft:light_blue_bed', 'minecraft:cyan_bed', 'minecraft:blue_bed',
+    'minecraft:purple_bed', 'minecraft:magenta_bed', 'minecraft:pink_bed', 'minecraft:brown_bed'
+  ])
 
-  addKittenBee(['minecraft:white_bed', 'minecraft:light_gray_bed', 'minecraft:gray_bed',
-    'minecraft:black_bed', 'minecraft:red_bed', 'minecraft:orange_bed', 'minecraft:yellow_bed',
-    'minecraft:lime_bed', 'minecraft:green_bed', 'minecraft:light_blue_bed', 'minecraft:cyan_bed',
-    'minecraft:blue_bed', 'minecraft:purple_bed', 'minecraft:magenta_bed', 'minecraft:pink_bed',
-    'minecraft:brown_bed'])
-    
   //Honey Compatibility
   const honey = [
     'resourcefulbees:honey',

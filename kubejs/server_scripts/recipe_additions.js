@@ -1,4 +1,21 @@
 events.listen('recipes', e => {
+  //Ice and Fire Lillies
+  function dragonFlowers(dragons){
+    dragons.forEach(dragon => {
+      e.shaped(Item.of(`iceandfire:${dragon.equals('ice') ? 'frost' : dragon}_lily`, 4), [
+        'ACA',
+        'BDB',
+        'ACA'
+      ], {
+        A: 'minecraft:lily_of_the_valley',
+        B: `iceandfire:${dragon}_dragon_heart`,
+        C: `iceandfire:${dragon}_dragon_flesh`,
+        D: 'mysticalagriculture:master_infusion_crystal'
+      })
+    })
+  }
+  dragonFlowers([`fire`,`lightning`,`ice`])
+  
   //Pipez
   e.shaped('pipez:infinity_upgrade', [
     'ABA',

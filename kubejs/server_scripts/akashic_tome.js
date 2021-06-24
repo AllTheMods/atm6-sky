@@ -15,6 +15,16 @@ events.listen('recipes', e => {
             }
           }
         },
+        psi: {
+          id: 'patchouli:guide_book',
+          Count: 1,
+          tag: {
+            'patchouli:book': 'psi:encyclopaedia_psionica',
+            'akashictome:displayName': {
+              text: "EncylopaediaPsionica"
+            }
+          }
+        },
         tconstruct: {
           id: 'tconstruct:materials_and_you',
           Count: 1,

@@ -15,6 +15,16 @@
                             "patchouli:book": "industrialforegoing:industrial_foregoing"
                         }
                     },
+                    "psi": {
+                        "id": "patchouli:guide_book",
+                        "Count": 1,
+                        "tag": {
+                            "akashictome:displayName": {
+                                "text": "EncylopaediaPsionica"
+                            },
+                            "patchouli:book": "psi:encyclopaedia_psionica"
+                        }
+                    },
                     "tconstruct": {
                         "id": "tconstruct:materials_and_you",
                         "Count": 1,

@@ -49,7 +49,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "compressium:andesite_2",
         "feedAmount": 5
     },

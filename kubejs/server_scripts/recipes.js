@@ -1459,5 +1459,27 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     C: `minecraft:pufferfish_bucket`,
     D: `minecraft:guardian_spawn_egg`
   })
+  e.shaped(`minecraft:spawner`, [
+    'ACA',
+    'BDB',
+    'ACA'
+  ], {
+    A: `compressium:netherite_2`,
+    B: `mysticalagradditions:creative_essence`,
+    C: `forbidden_arcanus:spawner_scrap`,
+    D: `minecraft:dragon_egg`
+  })
+  e.shaped(`forbidden_arcanus:spawner_scrap`, [
+    'ABA',
+    'CFD',
+    'AEA'
+  ], {
+    A: `compressium:obsidian_2`,
+    B: `allthemodium:allthemodium_block`,
+    C: `allthemodium:vibranium_block`,
+    D: `allthemodium:unobtainium_block`,
+    E: `mekanism:teleportation_core`,
+    F: `forbidden_arcanus:dark_nether_star`
+  })
   e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`)
 })

@@ -1449,6 +1449,15 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
   ], {
     G: `minecraft:glass_pane`
   })
-
+  e.shaped(`minecraft:elder_guardian_spawn_egg`, [
+    'ACA',
+    'BDB',
+    'ACA'
+  ], {
+    A: `minecraft:sea_lantern`,
+    B: `xreliquary:guardian_spike`,
+    C: `minecraft:pufferfish_bucket`,
+    D: `minecraft:guardian_spawn_egg`
+  })
   e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`)
 })

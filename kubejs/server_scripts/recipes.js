@@ -314,6 +314,7 @@ onEvent(`recipes`, e => {
 
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`)
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`)
+  e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
 
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
     `AA`,

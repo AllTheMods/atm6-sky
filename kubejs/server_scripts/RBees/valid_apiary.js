@@ -31,6 +31,7 @@ const whitelistVA = [
   'minecraft:hay_block',
   'cookingforblockheads:fridge',
   'minecraft:bone_block',
+  'mekanism:block_salt'
 
   // /minecraft:.*nether_bricks/,
   /minecraft:.*terracotta/,

@@ -36,6 +36,4 @@ onEvent(`recipes`, e => {
   circle(`silentgear:azure_silver_ingot`, 6, `azure_silver`)
   circle(`silentgear:crimson_iron_ingot`, 6, `crimson_iron`)
   circle(`silentgear:crimson_steel_ingot`, 4, `crimson_steel`)
-
-  circle(`mekanism:fluorite_gem`, 12, `fluorite`)
 })

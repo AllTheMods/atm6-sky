@@ -1288,7 +1288,77 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     A: `minecraft:comparator`,
     R: `#forge:storage_blocks/redstone`
   })
-
+//ET
+modifyShaped('envirotech:erodium_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:erodium_crystal',
+  M: 'envirotech:litherite_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'minecraft:netherite_block'
+})
+modifyShaped('envirotech:kyronite_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:kyronite_crystal',
+  M: 'envirotech:erodium_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:allthemodium_block'
+})
+modifyShaped('envirotech:pladium_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:pladium_crystal',
+  M: 'envirotech:kyronite_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:vibranium_block'
+})
+modifyShaped('envirotech:ionite_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:ionite_crystal',
+  M: 'envirotech:pladium_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:unobtainium_block'
+})
+modifyShaped('envirotech:aethium_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:aethium_crystal',
+  M: 'envirotech:ionite_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:vibranium_allthemodium_alloy_block'
+})
+modifyShaped('envirotech:nanorite_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:nanorite_crystal',
+  M: 'envirotech:aethium_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:unobtainium_allthemodium_alloy_block'
+})
+modifyShaped('envirotech:xerothium_void_miner_ccu', 1, [
+  'CBC',
+  'CMC',
+  'CLC'
+], {
+  C: 'envirocore:xerothium_crystal',
+  M: 'envirotech:nanorite_void_miner_ccu',
+  L: 'envirocore:laser_core',
+  B: 'allthemodium:unobtainium_vibranium_alloy_block'
+})
   modifySmelt(`refinedstorage:silicon`, [`#appliedenergistics2:crystals/quartz`, `#appliedenergistics2:purified_crystals`])
   e.replaceInput(`#appliedenergistics2:silicon`, `refinedstorage:silicon`)
   e.remove({

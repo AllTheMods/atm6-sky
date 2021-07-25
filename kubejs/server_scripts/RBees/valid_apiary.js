@@ -21,6 +21,7 @@ events.listen('block.tags', e => {
 
 const whitelistVA = [
   //Flowers
+  'biomesoplenty:flesh',
   'botania:blaze_block',
   'minecraft:magma_block',
   'minecraft:clay',
@@ -31,7 +32,7 @@ const whitelistVA = [
   'minecraft:hay_block',
   'cookingforblockheads:fridge',
   'minecraft:bone_block',
-  'mekanism:block_salt'
+  'mekanism:block_salt',
 
   // /minecraft:.*nether_bricks/,
   /minecraft:.*terracotta/,
@@ -51,7 +52,8 @@ const whitelistVA = [
   '#minecraft:wart_blocks',
   '#forge:soul_sand',
   '#minecraft:nylium',
-  // 'minecraft:soul_soil',
+  'minecraft:soul_soil',
+  'minecraft:soul_sand',
   'minecraft:glowstone',
 
   /create:.+_window/,
@@ -88,7 +90,7 @@ const whitelistVA = [
   /quark:.*shingles/,
   /quark:.*prismarine/,
   /quark:.*soul_sandstone/,
-  /quark:.*verticle_slab/,
+  /quark:.*vertical_slab/,
   /quark:.*duskbound.*/,
   'quark:lit_lamp',
   'quark:blaze_lantern',
@@ -101,6 +103,9 @@ const whitelistVA = [
 
   'botania:mana_glass',
   'botania:elf_glass',
+
+  'byg:nylium_soul_sand',
+  'byg:nylium_soul_soil',
 
   '#forge:bookshelves',
   '#forge:cobblestone',

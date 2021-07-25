@@ -112,14 +112,35 @@ onEvent(`block.tags`, e => {
   e.add(`misctags:flowers/swamp_flowers`, [`minecraft:lily_pad`, `minecraft:sugar_cane`, `minecraft:brown_mushroom`, `minecraft:red_mushroom`])
   e.add(`misctags:flowers/wither_flowers`, [`minecraft:wither_rose`])
 
+  //No Moving
+  e.add('misctags:no_moving', [
+    '#minecraft:wither_immune',
+    'potionsmaster:cauldron',
+    'appliedenergistics2:cable_bus',
+    'cookingforblockheads:fridge',
+    /^refinedstorage:/,
+    /^extrastorage:/,
+    /^waystones:/,
+    /^compactmachines:/,
+    /^appliedenergistics2:/,
+])
+e.add('create:brittle', '#misctags:no_moving')
   //Removal
   e.removeAll(`minecraft:enderman_holdable`)
 })
 
-//Entity tags go here
+//Entity tags
 onEvent('entity_type.tags', e => {
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', ['iceandfire:dragon_multipart', 'iceandfire:dragon_egg', /iceandfire:.+_dragon/,])
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/])
+  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [    
+      /resourcefulbees:.+_bee/,
+      /iceandfire:.+_dragon/,
+      'iceandfire:dragon_multipart',
+      'iceandfire:dragon_egg',])
+  e.add('mob_grinding_utils:noswab', [    
+      /resourcefulbees:.+_bee/,
+      /iceandfire:.+_dragon/,
+      'iceandfire:dragon_multipart',
+      'iceandfire:dragon_egg',])
 })
 
 //Fluid tags go here

@@ -117,7 +117,7 @@
 
 	[Dragons.Griefing]
 		#Blocks that a dragon cannot break. Use the format like "minecraft:chest" or "rats:block_of_cheese" 
-		blacklistedBreakBlocks = ["minecraft:obsidian"]
+		blacklistedBreakBlocks = ["minecraft:obsidian", "minecraft:bedrock", "minecraft:ancient_debris", "minecraft:barrier", "cyclic:unbreakable_block", "cyclic:unbreakable_reactive", "metalbarrels:obsidian_barrel", "ironfurnaces:million_furnace", "powah:energy_cell_creative", "mekanism:creative_energy_cube", "ctiers:centrifuge_controller_tier_creative", "ctiers:centrifuge_casing_tier_creative", "refinedstorage:creative_controller", "creativewirelesstransmitter:creative_wireless_transmitter", "creativecrafter:creative_crafter", "creativeapiary:tcreative_apiary", "compactmachines:solid_wall"]
 		#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 		#Range: 0 ~ 2
 		"Dragon Griefing" = 1
@@ -286,7 +286,7 @@
 		"Spawn Cyclopes Caves" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Cyclops Cave Chance" = 55
+		"Spawn Cyclops Cave Chance" = 45
 		#Maximum cyclops health
 		#Range: 1.0 ~ 10000.0
 		"Cyclops Max Health" = 3500.0
@@ -310,7 +310,7 @@
 	[Mobs.Trolls]
 		#Troll spawn weight. Lower = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Troll Spawn Weight" = 40
+		"Troll Spawn Weight" = 50
 		#Troll attack strength
 		#Range: 1.0 ~ 10000.0
 		"Troll Attack Strength" = 10.0
@@ -343,6 +343,9 @@
 		#How many maximum individuals a myrmex colony can have.
 		#Range: 10 ~ 10000
 		"Myrmex Colony Max Size" = 80
+		#The maximum radius myrmex area allowed to wander/forage
+		#Range: 100 ~ 20000
+		"Myrmex Maximum Wnader Radius" = 100
 
 	[Mobs.Pixies]
 		#size of pixie villages
@@ -410,14 +413,14 @@
 	"Dragonsteel Base Durability" = 8000
 	#Default armor value of dragonsteel chestplate.
 	#Range: > 7
-	"Dragonsteel Base Armor" = 12
+	"Dragonsteel Base Armor" = 75
 	#Disable this to remove easter egg with tinkers installed.
 	Weezer = true
 	#True if the summon crystal can load chunks to find dragons.
 	"Chunk Load Summon Crystal" = true
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
-	"Dragonsteel Sword Base Attack Strength" = 25.0
+	"Dragonsteel Sword Base Attack Strength" = 1350.0
 	#Percentage of critical strike that will disarm with easter egg tinkers material.
 	#Range: 0.0 ~ 1.0
 	"Easter Egg Tinkers Tool Disarm chance" = 0.20000000298023224

@@ -314,6 +314,7 @@ onEvent(`recipes`, e => {
 
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`)
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`)
+  e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
 
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
     `AA`,
@@ -598,6 +599,9 @@ onEvent(`recipes`, e => {
 
   mekCrush(Item.of(`minecraft:blaze_powder`, 4), `#forge:rods/blaze`)
   mekCrush(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`)
+  mekCrush(`6x thermal:sulfur`, `thermal:sulfur_ore`)
+  mekCrush(`thermal:diamond_dust`, `minecraft:diamond`)
+  e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`)
   mekEnrich(Item.of(`minecraft:blaze_rod`), [Item.of(`minecraft:blaze_powder`, 6)])
   mekEnrich(Item.of(`powah:uraninite`, 2), `powah:uraninite_ore_poor`)
   mekEnrich(Item.of(`powah:uraninite`, 4), `powah:uraninite_ore`)

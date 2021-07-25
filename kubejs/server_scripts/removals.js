@@ -46,7 +46,11 @@ onEvent(`recipes`, e => {
     'mekanism:mekasuit_helmet',
     'mekanism:mekasuit_bodyarmor',
     'mekanism:mekasuit_pants',
-    'mekanism:mekasuit_boots'
+    'mekanism:mekasuit_boots',
+    'mekanism:processing/diamond/to_dust',
+    'mekanism:gas_conversion/salt_to_hydrogen_chloride',
+
+    'immersiveengineering:crusher/nether_wart'
   ]
   //Remove via mod name
   const modRemove = [

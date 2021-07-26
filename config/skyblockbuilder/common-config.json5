@@ -17,6 +17,12 @@
     
       // Should nether generate as in default world type? [default: false]
       "Default": true
+    },
+    
+    "Overworld": {
+    
+      // Should overworld generate as in default world type? [default: false]
+      "Default": false
     }
   },
   
@@ -27,7 +33,7 @@
     "clearInv": false,
     
     // Should players' items be dropped when leaving a team? [default: true]
-    "dropItems": true
+    "dropItems": false
   },
   
   "Spawn": {
@@ -165,7 +171,11 @@
       
       // Should only one biome be generated? [default: false]
       // WARNING: Some structures need a special biome, e.g. Mansion needs Dark Oak Forest! These structures will not be generated if you have only one biome!
-      "enabled": false
+      "enabled": false,
+      
+      // The dimension where the single biome should be applied. Use "default" for spawn dimension
+      // Allowed values: default, overworld, the_nether, the_end
+      "singleBiomeDimension": "default"
     }
   }
 }

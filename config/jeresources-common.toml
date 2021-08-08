@@ -7,5 +7,4 @@ showDevData = false
 enchantsBlacklist = ["flimflam", "soulBound", "reactive"]
 hiddenTabs = []
 dimensionsBlacklist = [-11]
-disableLootManagerReloading = false
-
+disableLootManagerReloading = true

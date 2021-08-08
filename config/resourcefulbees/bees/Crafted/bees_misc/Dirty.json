@@ -64,7 +64,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "compressium:dirt_3",
         "feedAmount": 5
     },

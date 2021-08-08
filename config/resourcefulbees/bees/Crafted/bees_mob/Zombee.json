@@ -64,7 +64,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "biomesoplenty:flesh",
         "feedAmount": 5
     },

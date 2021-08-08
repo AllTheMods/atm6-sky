@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
   const cuShaped = e.recipes.cucumber.shaped_no_mirror
   const colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
   const craftingShapes = [
@@ -16,7 +16,7 @@ events.listen('recipes', e => {
       'C  ',
       'C  '
     ],
-    //horizontal
+    //horizontal 
     [
       'CCC',
       '   ',

@@ -64,7 +64,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "mekanism:block_salt",
         "feedAmount": 5
     },

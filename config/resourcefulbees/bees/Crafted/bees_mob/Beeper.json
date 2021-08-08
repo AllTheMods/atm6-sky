@@ -64,7 +64,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "tag:forge:storage_blocks/gunpowder",
         "feedAmount": 5
     },

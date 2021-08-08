@@ -64,7 +64,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
+        "isBreedable": true,
         "feedItem": "minecraft:slime_block",
         "feedAmount": 5
     },

@@ -49,6 +49,8 @@ onEvent(`recipes`, e => {
     'mekanism:mekasuit_boots',
     'mekanism:processing/diamond/to_dust',
     'mekanism:gas_conversion/salt_to_hydrogen_chloride',
+    'mekanism:compat/appliedenergistics2/certus_crystal_purification',
+    'mekanism:compat/appliedenergistics2/fluix_crystal_purification',
 
     'immersiveengineering:crusher/nether_wart'
   ]

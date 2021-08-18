@@ -115,7 +115,6 @@ onEvent(`block.tags`, e => {
   //No Moving
   e.add('misctags:no_moving', [
     '#minecraft:wither_immune',
-    'potionsmaster:cauldron',
     'appliedenergistics2:cable_bus',
     'cookingforblockheads:fridge',
     /^refinedstorage:/,

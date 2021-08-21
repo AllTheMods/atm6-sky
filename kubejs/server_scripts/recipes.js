@@ -520,6 +520,7 @@ onEvent(`recipes`, e => {
 
   e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1)
   e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1)
+  e.smelting(Item.of(`alltheores:platinum_ingot`), `create:crushed_platinum_ore`).xp(0.1) 
 
   e.shapeless(Item.of(`minecraft:clay_ball`, 4), `#forge:storage_blocks/clay`)
   e.shapeless(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`)

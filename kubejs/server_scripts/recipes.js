@@ -779,9 +779,6 @@ onEvent(`recipes`, e => {
     O: `#forge:ingots/osmium`
   })
 
-  mekEnrich(`appliedenergistics2:purified_certus_quartz_crystal`, `#appliedenergistics2:crystals/certus_quartz`)
-  mekEnrich(`appliedenergistics2:purified_fluix_crystal`, `#forge:gems/fluix`)
-
   //Jetpacks
   e.shaped(`ironjetpacks:diamond_cell`, [
     ` R `,

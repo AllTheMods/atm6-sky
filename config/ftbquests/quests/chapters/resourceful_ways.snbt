@@ -1,2969 +1,2970 @@
 {
-	id: "5C764279146E5E66",
-	group: "",
-	order_index: 3,
-	filename: "resourceful_ways",
-	title: "Resourceful Ways",
-	default_quest_shape: "hexagon",
+	id: "5C764279146E5E66"
+	group: ""
+	order_index: 3
+	filename: "resourceful_ways"
+	title: "Resourceful Ways"
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d,
-			y: -1.0d,
+			x: 0.0d
+			y: -1.0d
 			description: [
-				"Incomming quests in this page will be mainly Bees, and Mystical Agriculture",
-				"",
-				"For Sky, the Natural spawning Bees will have a crafting recipe to spawn them.",
-				"",
+				"Incomming quests in this page will be mainly Bees, and Mystical Agriculture"
+				""
+				"For Sky, the Natural spawning Bees will have a crafting recipe to spawn them."
+				""
 				"Currently Quartz, Cobbee, Lava, Water, RGB, Glowing, Lumber, Spooky, Magma, Ender, Slimy, and Beeper."
-			],
-			id: "52F21A2514CC6100",
+			]
+			id: "52F21A2514CC6100"
 			tasks: [{
-				id: "22C0CA9512E29BD7",
+				id: "22C0CA9512E29BD7"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "Grounded Mobs",
-			x: 1.0d,
-			y: -4.0d,
-			shape: "square",
-			dependencies: ["6F376B7752A5CC72"],
-			id: "0B1BC6C283362824",
+			title: "Grounded Mobs"
+			x: 1.0d
+			y: -4.0d
+			shape: "square"
+			dependencies: ["6F376B7752A5CC72"]
+			id: "0B1BC6C283362824"
 			tasks: [{
-				id: "137011B743829C9D",
-				type: "item",
+				id: "137011B743829C9D"
+				type: "item"
 				item: "mob_grinding_utils:spikes"
 			}]
-		},
+		}
 		{
-			title: "Mystical Path",
-			x: -3.5d,
-			y: -1.5d,
-			shape: "circle",
-			id: "6D750A38944E9B68",
+			title: "Mystical Path"
+			x: -3.5d
+			y: -1.5d
+			shape: "circle"
+			id: "6D750A38944E9B68"
 			tasks: [
 				{
-					id: "49A0E9D22020400E",
-					type: "item",
+					id: "49A0E9D22020400E"
+					type: "item"
 					item: "mysticalagriculture:infusion_pedestal"
-				},
+				}
 				{
-					id: "46517C1CEB2EFD8D",
-					type: "item",
+					id: "46517C1CEB2EFD8D"
+					type: "item"
 					item: "mysticalagriculture:infusion_altar"
 				}
-			],
+			]
 			rewards: [{
-				id: "575174F0D7DB32A9",
-				type: "item",
+				id: "575174F0D7DB32A9"
+				type: "item"
 				item: "mysticalagriculture:prosperity_seed_base"
 			}]
-		},
+		}
 		{
-			title: "Danger, Player! Danger!",
-			icon: "allthemodium:molten_bluelava_bucket",
-			x: 1.5d,
-			y: -1.0d,
+			title: "Danger, Player! Danger!"
+			icon: "allthemodium:molten_bluelava_bucket"
+			x: 1.5d
+			y: -1.0d
 			description: [
-				"Thanks to Tinker's Construct, Soul Lava is now craftable.",
-				"",
-				"Take note, that Soul Lava has a burn radius of at most 10 blocks, so &cDON'T PUT IT NEAR ANY WOOD PLATFORMS.",
-				"",
-				"It's best if you use bottom stone slabs, since the fire does spread on all blocks.",
-				"",
+				"Thanks to Tinker's Construct, Soul Lava is now craftable."
+				""
+				"Take note, that Soul Lava has a burn radius of at most 10 blocks, so &cDON'T PUT IT NEAR ANY WOOD PLATFORMS."
+				""
+				"It's best if you use bottom stone slabs, since the fire does spread on all blocks."
+				""
 				"Soul Lava has some neat attributes when combined with certain liquids. (mainly water and lava)"
-			],
-			hide: true,
-			id: "5D005AFE039F1F97",
+			]
+			hide: true
+			id: "5D005AFE039F1F97"
 			tasks: [{
-				id: "13105B47381E7BC9",
-				type: "item",
+				id: "13105B47381E7BC9"
+				type: "item"
 				item: "allthemodium:molten_bluelava_bucket"
-			}],
+			}]
 			rewards: [{
-				id: "7AF02A22BF65B4DC",
-				type: "item",
+				id: "7AF02A22BF65B4DC"
+				type: "item"
 				item: {
-					id: "ceramics:cracked_clay_bucket",
-					Count: 1b,
+					id: "ceramics:cracked_clay_bucket"
+					Count: 1b
 					tag: {
 						fluid: "allthemodium:molten_bluelava"
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "YEET!",
-			x: -3.87244897959183d,
-			y: 1.7210884353741278d,
-			id: "66066AD2A9F4EB73",
+			title: "YEET!"
+			x: -3.87244897959183d
+			y: 1.7210884353741278d
+			id: "66066AD2A9F4EB73"
 			tasks: [{
-				id: "17BAD14662AEF72B",
-				type: "item",
+				id: "17BAD14662AEF72B"
+				type: "item"
 				item: "resourcefulbees:cobbee_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "788A32337D3240C8",
-				type: "loot",
+				id: "788A32337D3240C8"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Lava Larva",
-			x: -3.5d,
-			y: 1.0d,
-			id: "23FCBE52D856E62B",
+			title: "Lava Larva"
+			x: -3.5d
+			y: 1.0d
+			id: "23FCBE52D856E62B"
 			tasks: [{
-				id: "0960E6D8030562F8",
-				type: "item",
+				id: "0960E6D8030562F8"
+				type: "item"
 				item: "resourcefulbees:lava_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "79BC6D90E66721C2",
-				type: "loot",
+				id: "79BC6D90E66721C2"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Don't do drugs",
-			x: -3.5459183673469283d,
-			y: 3.1904761904761685d,
+			title: "Don't do drugs"
+			x: -3.5459183673469283d
+			y: 3.1904761904761685d
 			dependencies: [
-				"66066AD2A9F4EB73",
+				"66066AD2A9F4EB73"
 				"23FCBE52D856E62B"
-			],
-			id: "3986047E88E48604",
+			]
+			id: "3986047E88E48604"
 			tasks: [{
-				id: "0418D550B6B7361A",
-				type: "item",
+				id: "0418D550B6B7361A"
+				type: "item"
 				item: "resourcefulbees:stoned_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "A B from the C",
-			x: -2.714285714285708d,
-			y: 1.0178571428571388d,
-			id: "4C84735F39851790",
+			title: "A B from the C"
+			x: -2.714285714285708d
+			y: 1.0178571428571388d
+			id: "4C84735F39851790"
 			tasks: [{
-				id: "56EFCD574370DE11",
-				type: "item",
+				id: "56EFCD574370DE11"
+				type: "item"
 				item: "resourcefulbees:water_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "4A9D230ED4418432",
-				type: "loot",
+				id: "4A9D230ED4418432"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Bee-ing Obsidian",
-			x: -3.107142857142854d,
-			y: 1.732142857142854d,
+			title: "Bee-ing Obsidian"
+			x: -3.107142857142854d
+			y: 1.732142857142854d
 			dependencies: [
-				"23FCBE52D856E62B",
+				"23FCBE52D856E62B"
 				"4C84735F39851790"
-			],
-			id: "2972D710845811F8",
+			]
+			id: "2972D710845811F8"
 			tasks: [{
-				id: "258768431921B8D8",
-				type: "item",
+				id: "258768431921B8D8"
+				type: "item"
 				item: "resourcefulbees:obsidian_honeycomb"
 			}]
-		},
+		}
 		{
-			x: -1.948979591836732d,
-			y: 1.0102040816326507d,
-			id: "4C8617562A51DE02",
+			x: -1.948979591836732d
+			y: 1.0102040816326507d
+			id: "4C8617562A51DE02"
 			tasks: [{
-				id: "155537D0362673F2",
-				type: "item",
+				id: "155537D0362673F2"
+				type: "item"
 				item: "resourcefulbees:lumber_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "24228D067F9430E1",
-				type: "loot",
+				id: "24228D067F9430E1"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "The Coal-ition of Bees",
-			x: -2.3367346938775455d,
-			y: 1.724489795918359d,
+			title: "The Coal-ition of Bees"
+			x: -2.3367346938775455d
+			y: 1.724489795918359d
 			dependencies: [
-				"4C8617562A51DE02",
+				"4C8617562A51DE02"
 				"26F5B5A14ADD596C"
-			],
-			id: "5408CBF245AB6EFF",
+			]
+			id: "5408CBF245AB6EFF"
 			tasks: [{
-				id: "298F51C13398564B",
-				type: "item",
+				id: "298F51C13398564B"
+				type: "item"
 				item: "resourcefulbees:coal_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Spooky Scary Bee, Sends shiver...",
-			x: -1.1734693877551194d,
-			y: 1.0102040816326507d,
-			id: "3BEF05D9B023AD14",
+			title: "Spooky Scary Bee, Sends shiver..."
+			x: -1.1734693877551194d
+			y: 1.0102040816326507d
+			id: "3BEF05D9B023AD14"
 			tasks: [{
-				id: "4148971BF2EC17AB",
-				type: "item",
+				id: "4148971BF2EC17AB"
+				type: "item"
 				item: "resourcefulbees:spooky_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "725B155920539ADA",
-				type: "loot",
+				id: "725B155920539ADA"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "What in Blazes?",
-			x: -1.5408163265306314d,
-			y: 1.724489795918366d,
-			description: [""],
+			title: "What in Blazes?"
+			x: -1.5408163265306314d
+			y: 1.724489795918366d
+			description: [""]
 			dependencies: [
-				"06B89EB00EAA91B2",
+				"06B89EB00EAA91B2"
 				"3BEF05D9B023AD14"
-			],
-			id: "26F5B5A14ADD596C",
+			]
+			id: "26F5B5A14ADD596C"
 			tasks: [{
-				id: "0D7D496579661EC9",
-				type: "item",
+				id: "0D7D496579661EC9"
+				type: "item"
 				item: "resourcefulbees:blazing_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Beehave for Mama Magma",
-			x: -0.7653061224489974d,
-			y: 1.724489795918366d,
-			id: "06B89EB00EAA91B2",
+			title: "Beehave for Mama Magma"
+			x: -0.7653061224489974d
+			y: 1.724489795918366d
+			id: "06B89EB00EAA91B2"
 			tasks: [{
-				id: "6E873FDD9DBF4555",
-				type: "item",
+				id: "6E873FDD9DBF4555"
+				type: "item"
 				item: "resourcefulbees:magma_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "2C727EB3ACF685E7",
-				type: "loot",
+				id: "2C727EB3ACF685E7"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Diamond in the rough",
-			x: -2.724489795918366d,
-			y: 2.4387755102040813d,
+			title: "Diamond in the rough"
+			x: -2.724489795918366d
+			y: 2.4387755102040813d
 			dependencies: [
-				"2972D710845811F8",
+				"2972D710845811F8"
 				"5408CBF245AB6EFF"
-			],
-			id: "611B2FADB4564A19",
+			]
+			id: "611B2FADB4564A19"
 			tasks: [{
-				id: "7CD57940E7760D3F",
-				type: "item",
+				id: "7CD57940E7760D3F"
+				type: "item"
 				item: "resourcefulbees:diamond_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Lead the way to the Hive",
-			x: -1.9336734693877489d,
-			y: 2.4353741496598573d,
+			title: "Lead the way to the Hive"
+			x: -1.9336734693877489d
+			y: 2.4353741496598573d
 			dependencies: [
-				"02E7731EC1322FF1",
+				"02E7731EC1322FF1"
 				"5408CBF245AB6EFF"
-			],
-			id: "1EF973CDF135EDD3",
+			]
+			id: "1EF973CDF135EDD3"
 			tasks: [{
-				id: "084919CE9FCC86CD",
-				type: "item",
+				id: "084919CE9FCC86CD"
+				type: "item"
 				item: "resourcefulbees:lead_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Golden Opportunibee",
-			x: -5.030612244897959d,
-			y: 4.421768707482961d,
+			title: "Golden Opportunibee"
+			x: -5.030612244897959d
+			y: 4.421768707482961d
 			dependencies: [
-				"3986047E88E48604",
+				"3986047E88E48604"
 				"0842B444F9F9281E"
-			],
-			id: "29F8515D25952A95",
+			]
+			id: "29F8515D25952A95"
 			tasks: [{
-				id: "6842CA40251D771F",
-				type: "item",
+				id: "6842CA40251D771F"
+				type: "item"
 				item: "resourcefulbees:gold_honeycomb"
 			}]
-		},
+		}
 		{
-			x: -4.255102040816325d,
-			y: 4.421768707482961d,
+			x: -4.255102040816325d
+			y: 4.421768707482961d
 			dependencies: [
-				"3986047E88E48604",
+				"3986047E88E48604"
 				"0842B444F9F9281E"
-			],
-			id: "44E02124877454D2",
+			]
+			id: "44E02124877454D2"
 			tasks: [{
-				id: "6A7B5D4B0383EE8E",
-				type: "item",
+				id: "6A7B5D4B0383EE8E"
+				type: "item"
 				item: "resourcefulbees:aluminum_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Tintin",
-			x: -2.0357142857142847d,
-			y: 4.3741496598639245d,
+			title: "Tintin"
+			x: -2.0357142857142847d
+			y: 4.3741496598639245d
 			dependencies: [
-				"3986047E88E48604",
+				"3986047E88E48604"
 				"0842B444F9F9281E"
-			],
-			id: "03878B6C7C307742",
+			]
+			id: "03878B6C7C307742"
 			tasks: [{
-				id: "44F9F4ACCBBBB31E",
-				type: "item",
+				id: "44F9F4ACCBBBB31E"
+				type: "item"
 				item: "resourcefulbees:tin_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Bad boys what you gotta do?",
-			x: -3.051020408163268d,
-			y: 4.36054421768705d,
+			title: "Bad boys what you gotta do?"
+			x: -3.051020408163268d
+			y: 4.36054421768705d
 			dependencies: [
-				"3986047E88E48604",
+				"3986047E88E48604"
 				"0842B444F9F9281E"
-			],
-			id: "65FE1DA0534DC0F9",
+			]
+			id: "65FE1DA0534DC0F9"
 			tasks: [{
-				id: "67981CB5A73CB503",
-				type: "item",
+				id: "67981CB5A73CB503"
+				type: "item"
 				item: "resourcefulbees:copper_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Ironic Bee",
-			x: -0.549999999999983d,
-			y: 3.3578231292516776d,
+			title: "Ironic Bee"
+			x: -0.549999999999983d
+			y: 3.3578231292516776d
 			dependencies: [
-				"3986047E88E48604",
+				"3986047E88E48604"
 				"0842B444F9F9281E"
-			],
-			id: "02E7731EC1322FF1",
+			]
+			id: "02E7731EC1322FF1"
 			tasks: [{
-				id: "7209FC2C6726D61C",
-				type: "item",
+				id: "7209FC2C6726D61C"
+				type: "item"
 				item: "resourcefulbees:iron_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Singing the Blues",
-			x: -0.1581632653061149d,
-			y: 5.068027210884338d,
-			hide_dependency_lines: true,
+			title: "Singing the Blues"
+			x: -0.1581632653061149d
+			y: 5.068027210884338d
+			hide_dependency_lines: true
 			dependencies: [
-				"014CF7F75E8ADFEF",
+				"014CF7F75E8ADFEF"
 				"3986047E88E48604"
-			],
-			id: "4EA04EB64FCCFFC6",
+			]
+			id: "4EA04EB64FCCFFC6"
 			tasks: [{
-				id: "54125FA8E1637595",
-				type: "item",
+				id: "54125FA8E1637595"
+				type: "item"
 				item: "resourcefulbees:lapis_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Off-Quartz you do...",
-			x: -2.382653061224481d,
-			y: 3.2925170068027185d,
-			id: "0842B444F9F9281E",
+			title: "Off-Quartz you do..."
+			x: -2.382653061224481d
+			y: 3.2925170068027185d
+			id: "0842B444F9F9281E"
 			tasks: [{
-				id: "10BFBF4154FCCCA6",
-				type: "item",
+				id: "10BFBF4154FCCCA6"
+				type: "item"
 				item: "resourcefulbees:quartz_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "1FD322FCBA7EE665",
-				type: "loot",
+				id: "1FD322FCBA7EE665"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "I am Certus",
-			x: -3.4387755102040813d,
-			y: 5.054421768707456d,
-			hide_dependency_lines: true,
+			title: "I am Certus"
+			x: -3.4387755102040813d
+			y: 5.054421768707456d
+			hide_dependency_lines: true
 			dependencies: [
-				"0842B444F9F9281E",
+				"0842B444F9F9281E"
 				"65FE1DA0534DC0F9"
-			],
-			id: "099A1C1A74E1E644",
+			]
+			id: "099A1C1A74E1E644"
 			tasks: [{
-				id: "5CA4A6593DA0DE9E",
-				type: "item",
+				id: "5CA4A6593DA0DE9E"
+				type: "item"
 				item: "resourcefulbees:certus_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "The Silver of hope",
-			x: -4.642857142857146d,
-			y: 5.115646258503375d,
-			description: [""],
+			title: "The Silver of hope"
+			x: -4.642857142857146d
+			y: 5.115646258503375d
+			description: [""]
 			dependencies: [
-				"44E02124877454D2",
+				"44E02124877454D2"
 				"29F8515D25952A95"
-			],
-			id: "21F1FC265D207847",
+			]
+			id: "21F1FC265D207847"
 			tasks: [{
-				id: "02E40936E391DB8D",
-				type: "item",
+				id: "02E40936E391DB8D"
+				type: "item"
 				item: "resourcefulbees:silver_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Are G Bees?",
-			x: 0.20918367346939704d,
-			y: 5.761904761904738d,
-			id: "014CF7F75E8ADFEF",
+			title: "Are G Bees?"
+			x: 0.20918367346939704d
+			y: 5.761904761904738d
+			id: "014CF7F75E8ADFEF"
 			tasks: [{
-				id: "1C59B467CC94F986",
-				type: "item",
+				id: "1C59B467CC94F986"
+				type: "item"
 				item: "resourcefulbees:rgbee_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "3DAFD9667A1552D4",
-				type: "loot",
+				id: "3DAFD9667A1552D4"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Red October",
-			x: -0.5459183673469354d,
-			y: 5.761904761904745d,
+			title: "Red October"
+			x: -0.5459183673469354d
+			y: 5.761904761904745d
 			dependencies: [
-				"014CF7F75E8ADFEF",
+				"014CF7F75E8ADFEF"
 				"7F784E785A4B4FBD"
-			],
-			id: "5274F79297634194",
+			]
+			id: "5274F79297634194"
 			tasks: [{
-				id: "73C65A81ADF77A16",
-				type: "item",
+				id: "73C65A81ADF77A16"
+				type: "item"
 				item: "resourcefulbees:redstone_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Happy Bee",
-			x: -0.9132653061224403d,
-			y: 6.455782312925159d,
-			id: "7F784E785A4B4FBD",
+			title: "Happy Bee"
+			x: -0.9132653061224403d
+			y: 6.455782312925159d
+			id: "7F784E785A4B4FBD"
 			tasks: [{
-				id: "6CD3388A28C0F049",
-				type: "item",
+				id: "6CD3388A28C0F049"
+				type: "item"
 				item: "resourcefulbees:glowing_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "456E0901BEF1F592",
-				type: "loot",
+				id: "456E0901BEF1F592"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "The Ozzy Bee",
-			x: -0.9132653061224403d,
-			y: 5.068027210884345d,
+			title: "The Ozzy Bee"
+			x: -0.9132653061224403d
+			y: 5.068027210884345d
 			dependencies: [
-				"02E7731EC1322FF1",
+				"02E7731EC1322FF1"
 				"5274F79297634194"
-			],
-			id: "5D9DDEA28CDFDFC3",
+			]
+			id: "5D9DDEA28CDFDFC3"
 			tasks: [{
-				id: "5442F775C5C6DD98",
-				type: "item",
+				id: "5442F775C5C6DD98"
+				type: "item"
 				item: "resourcefulbees:osmium_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Fluo Rights",
-			x: -1.3010204081632537d,
-			y: 5.761904761904738d,
+			title: "Fluo Rights"
+			x: -1.3010204081632537d
+			y: 5.761904761904738d
 			dependencies: [
-				"03878B6C7C307742",
+				"03878B6C7C307742"
 				"5274F79297634194"
-			],
-			id: "685F28DD2CD3EBE2",
+			]
+			id: "685F28DD2CD3EBE2"
 			tasks: [{
-				id: "09C9073B0F799ABF",
-				type: "item",
+				id: "09C9073B0F799ABF"
+				type: "item"
 				item: "resourcefulbees:fluorite_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Surprise! I am not Electrum.",
-			x: -5.397959183673464d,
-			y: 5.115646258503375d,
-			description: [""],
+			title: "Surprise! I am not Electrum."
+			x: -5.397959183673464d
+			y: 5.115646258503375d
+			description: [""]
 			dependencies: [
-				"29F8515D25952A95",
+				"29F8515D25952A95"
 				"21F1FC265D207847"
-			],
-			id: "4C48AAEE2868ABC7",
+			]
+			id: "4C48AAEE2868ABC7"
 			tasks: [{
-				id: "28AD6E5E0392CA44",
-				type: "item",
+				id: "28AD6E5E0392CA44"
+				type: "item"
 				item: "resourcefulbees:platinum_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "I am Sliming",
-			x: -5.418367346938773d,
-			y: 3.7278911564625545d,
-			id: "62A65412CFE0446B",
+			title: "I am Sliming"
+			x: -5.418367346938773d
+			y: 3.7278911564625545d
+			id: "62A65412CFE0446B"
 			tasks: [{
-				id: "6F7EC2790E8CFB05",
-				type: "item",
+				id: "6F7EC2790E8CFB05"
+				type: "item"
 				item: "resourcefulbees:slimy_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "51641537A75D354B",
-				type: "loot",
+				id: "51641537A75D354B"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Admiral Emerald",
-			x: -4.642857142857146d,
-			y: 3.707482993197246d,
+			title: "Admiral Emerald"
+			x: -4.642857142857146d
+			y: 3.707482993197246d
 			dependencies: [
-				"62A65412CFE0446B",
+				"62A65412CFE0446B"
 				"29F8515D25952A95"
-			],
-			id: "10D84411E0CAEE47",
+			]
+			id: "10D84411E0CAEE47"
 			tasks: [{
-				id: "785F5150CFF63FBE",
-				type: "item",
+				id: "785F5150CFF63FBE"
+				type: "item"
 				item: "resourcefulbees:emerald_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "The Urini Knight",
-			x: -5.8061224489796d,
-			y: 4.421768707482961d,
+			title: "The Urini Knight"
+			x: -5.8061224489796d
+			y: 4.421768707482961d
 			dependencies: [
-				"687CBC2E8411A21E",
+				"687CBC2E8411A21E"
 				"62A65412CFE0446B"
-			],
-			id: "74C3637B7174E24F",
+			]
+			id: "74C3637B7174E24F"
 			tasks: [{
-				id: "1C4E520FD91F4ADD",
-				type: "item",
+				id: "1C4E520FD91F4ADD"
+				type: "item"
 				item: "resourcefulbees:uraninite_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Bee-p Bee-p Boom",
-			x: -6.183673469387742d,
-			y: 5.115646258503375d,
-			id: "687CBC2E8411A21E",
+			title: "Bee-p Bee-p Boom"
+			x: -6.183673469387742d
+			y: 5.115646258503375d
+			id: "687CBC2E8411A21E"
 			tasks: [{
-				id: "58EF84537A67724F",
-				type: "item",
+				id: "58EF84537A67724F"
+				type: "item"
 				item: "resourcefulbees:beeper_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "2896E0F0CCB60AAA",
-				type: "loot",
+				id: "2896E0F0CCB60AAA"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "This is my Ender Game",
-			x: -5.040816326530603d,
-			y: 5.809523809523782d,
-			id: "16CCA9D98EA8F08F",
+			title: "This is my Ender Game"
+			x: -5.040816326530603d
+			y: 5.809523809523782d
+			id: "16CCA9D98EA8F08F"
 			tasks: [{
-				id: "3617A2ED3988A96B",
-				type: "item",
+				id: "3617A2ED3988A96B"
+				type: "item"
 				item: "resourcefulbees:ender_bee_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "3665EC8EE20A0031",
-				type: "loot",
+				id: "3665EC8EE20A0031"
+				type: "loot"
 				table_id: 5194189128545251890L
 			}]
-		},
+		}
 		{
-			title: "Radio Active",
-			x: -5.795918367346928d,
-			y: 5.809523809523775d,
+			title: "Radio Active"
+			x: -5.795918367346928d
+			y: 5.809523809523775d
 			dependencies: [
-				"687CBC2E8411A21E",
+				"687CBC2E8411A21E"
 				"16CCA9D98EA8F08F"
-			],
-			id: "3CAB63938191F927",
+			]
+			id: "3CAB63938191F927"
 			tasks: [{
-				id: "52E7A2C64D568429",
-				type: "item",
+				id: "52E7A2C64D568429"
+				type: "item"
 				item: "resourcefulbees:uranium_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Skidamarink A Zinc A Zinc",
-			x: -1.6683673469387656d,
-			y: 5.068027210884345d,
+			title: "Skidamarink A Zinc A Zinc"
+			x: -1.6683673469387656d
+			y: 5.068027210884345d
 			dependencies: [
-				"02E7731EC1322FF1",
+				"02E7731EC1322FF1"
 				"03878B6C7C307742"
-			],
-			id: "7200034958F35277",
+			]
+			id: "7200034958F35277"
 			tasks: [{
-				id: "0498E37761DC311E",
-				type: "item",
+				id: "0498E37761DC311E"
+				type: "item"
 				item: "resourcefulbees:zinc_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Nickel Nicknamed Nick",
-			x: -1.2806122448979522d,
-			y: 4.3741496598639245d,
+			title: "Nickel Nicknamed Nick"
+			x: -1.2806122448979522d
+			y: 4.3741496598639245d
 			dependencies: [
-				"7200034958F35277",
+				"7200034958F35277"
 				"02E7731EC1322FF1"
-			],
-			id: "4F24BB14D0266EBF",
+			]
+			id: "4F24BB14D0266EBF"
 			tasks: [{
-				id: "701F7EE37F214466",
-				type: "item",
+				id: "701F7EE37F214466"
+				type: "item"
 				item: "resourcefulbees:nickel_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Wither bee here or there",
-			x: -1.1499999999999773d,
-			y: 2.4435374149659665d,
+			title: "Wither bee here or there"
+			x: -1.1499999999999773d
+			y: 2.4435374149659665d
 			dependencies: [
-				"5408CBF245AB6EFF",
+				"5408CBF245AB6EFF"
 				"3BEF05D9B023AD14"
-			],
-			id: "7DB9AE9AA5B725EC",
+			]
+			id: "7DB9AE9AA5B725EC"
 			tasks: [{
-				id: "5F4D22424ACB1144",
-				type: "item",
+				id: "5F4D22424ACB1144"
+				type: "item"
 				item: "resourcefulbees:withered_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Drag-in the Egg",
-			x: 2.0d,
-			y: 2.5d,
+			title: "Drag-in the Egg"
+			x: 2.0d
+			y: 2.5d
 			description: [
-				"Welcome to the true 2nd mutation bee of the mutation line.",
-				"",
-				"To get this bee, you have to mutate a dragon egg by pollinating it, with a wither bee.",
-				"",
+				"Welcome to the true 2nd mutation bee of the mutation line."
+				""
+				"To get this bee, you have to mutate a dragon egg by pollinating it, with a wither bee."
+				""
 				"Then from the Dragon to the next material and so on for these mutation quests."
-			],
-			dependencies: ["3078D0FA79DACF69"],
-			id: "64DEE67107E6ABCB",
+			]
+			dependencies: ["3078D0FA79DACF69"]
+			id: "64DEE67107E6ABCB"
 			tasks: [{
-				id: "6BE74EFECB95C0CF",
-				type: "item",
+				id: "6BE74EFECB95C0CF"
+				type: "item"
 				item: "resourcefulbees:dragonic_honeycomb"
 			}]
-		},
+		}
 		{
-			x: 2.760204081632672d,
-			y: 2.4965986394557618d,
-			dependencies: ["64DEE67107E6ABCB"],
-			id: "1868C74AFE23E97D",
+			x: 2.760204081632672d
+			y: 2.4965986394557618d
+			dependencies: ["64DEE67107E6ABCB"]
+			id: "1868C74AFE23E97D"
 			tasks: [{
-				id: "41D6DA522910B2BA",
-				type: "item",
+				id: "41D6DA522910B2BA"
+				type: "item"
 				item: "resourcefulbees:allthemodium_honeycomb"
 			}]
-		},
+		}
 		{
-			x: 3.5153061224489974d,
-			y: 2.4965986394557618d,
-			dependencies: ["1868C74AFE23E97D"],
-			id: "3CC2E426B5E8ECA8",
+			x: 3.5153061224489974d
+			y: 2.4965986394557618d
+			dependencies: ["1868C74AFE23E97D"]
+			id: "3CC2E426B5E8ECA8"
 			tasks: [{
-				id: "7522EBAE50ED0314",
-				type: "item",
+				id: "7522EBAE50ED0314"
+				type: "item"
 				item: "resourcefulbees:vibranium_honeycomb"
 			}]
-		},
+		}
 		{
-			x: 4.270408163265323d,
-			y: 2.4965986394557618d,
-			dependencies: ["3CC2E426B5E8ECA8"],
-			id: "40C80481893AA3CD",
+			x: 4.270408163265323d
+			y: 2.4965986394557618d
+			dependencies: ["3CC2E426B5E8ECA8"]
+			id: "40C80481893AA3CD"
 			tasks: [{
-				id: "45A76169C601DCDD",
-				type: "item",
+				id: "45A76169C601DCDD"
+				type: "item"
 				item: "resourcefulbees:unobtainium_honeycomb"
 			}]
-		},
+		}
 		{
-			x: 5.025510204081648d,
-			y: 2.4965986394557618d,
-			dependencies: ["40C80481893AA3CD"],
-			id: "0CC7F94A9035ECAA",
+			x: 5.025510204081648d
+			y: 2.4965986394557618d
+			dependencies: ["40C80481893AA3CD"]
+			id: "0CC7F94A9035ECAA"
 			tasks: [{
-				id: "1F1083AB11F64495",
-				type: "item",
+				id: "1F1083AB11F64495"
+				type: "item"
 				item: "resourcefulbees:soul_lava_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Seed for Though",
-			x: -3.5d,
-			y: -2.5d,
-			shape: "diamond",
-			id: "0A731CA172FB9188",
+			title: "Seed for Though"
+			x: -3.5d
+			y: -2.5d
+			shape: "diamond"
+			id: "0A731CA172FB9188"
 			tasks: [{
-				id: "53A2218A89F26A4E",
-				type: "item",
+				id: "53A2218A89F26A4E"
+				type: "item"
 				item: "mysticalagriculture:inferium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "48FB762626AA811F",
-				type: "random",
+				id: "48FB762626AA811F"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "54D72C234EA76054",
+			x: -5.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "54D72C234EA76054"
 			tasks: [{
-				id: "66A22C64B978D14E",
-				type: "item",
+				id: "66A22C64B978D14E"
+				type: "item"
 				item: "mysticalagriculture:air_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "1D1EC42A100FDBC9",
-				type: "random",
+				id: "1D1EC42A100FDBC9"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			title: "The Inferior Essence",
-			x: -5.0d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["6D750A38944E9B68"],
-			id: "7DFF18CFEB0B8DBE",
+			title: "The Inferior Essence"
+			x: -5.0d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["6D750A38944E9B68"]
+			id: "7DFF18CFEB0B8DBE"
 			tasks: [{
-				id: "3BE2200A7B852974",
-				type: "item",
+				id: "3BE2200A7B852974"
+				type: "item"
 				item: "mysticalagriculture:inferium_essence"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "1E7DC8E0493BE99E",
+			x: -4.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "1E7DC8E0493BE99E"
 			tasks: [{
-				id: "549F9D9ED163CF60",
-				type: "item",
+				id: "549F9D9ED163CF60"
+				type: "item"
 				item: "mysticalagriculture:water_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4F701076BE0CD0BE",
-				type: "random",
+				id: "4F701076BE0CD0BE"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -5.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "712EB19B26D405DD",
+			x: -5.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "712EB19B26D405DD"
 			tasks: [{
-				id: "5865E21723C2C04C",
-				type: "item",
+				id: "5865E21723C2C04C"
+				type: "item"
 				item: "mysticalagriculture:ice_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "33228F5C4BA961C2",
-				type: "random",
+				id: "33228F5C4BA961C2"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "409A92D40F539485",
+			x: -5.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "409A92D40F539485"
 			tasks: [{
-				id: "7DEB271808127E13",
-				type: "item",
+				id: "7DEB271808127E13"
+				type: "item"
 				item: "mysticalagriculture:wood_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "295C42792A648486",
-				type: "random",
+				id: "295C42792A648486"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "1609BF52108238B0",
+			x: -4.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "1609BF52108238B0"
 			tasks: [{
-				id: "5ABAC0A86621FDAE",
-				type: "item",
+				id: "5ABAC0A86621FDAE"
+				type: "item"
 				item: "mysticalagriculture:stone_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "59F032DB9A686245",
-				type: "random",
+				id: "59F032DB9A686245"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -5.0d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "4526E151BAE88310",
+			x: -5.0d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "4526E151BAE88310"
 			tasks: [{
-				id: "2515FBAF4FB435D1",
-				type: "item",
+				id: "2515FBAF4FB435D1"
+				type: "item"
 				item: "mysticalagriculture:dirt_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5D49CB44B75FE95C",
-				type: "random",
+				id: "5D49CB44B75FE95C"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "13124A7E22999850",
+			x: -5.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "13124A7E22999850"
 			tasks: [{
-				id: "39C1F0936A29423F",
-				type: "item",
+				id: "39C1F0936A29423F"
+				type: "item"
 				item: "mysticalagriculture:earth_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2B1D1B209CAB73FB",
-				type: "random",
+				id: "2B1D1B209CAB73FB"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "27A0BCE75F198A82",
+			x: -4.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "27A0BCE75F198A82"
 			tasks: [{
-				id: "06CFF66846E1CE0F",
-				type: "item",
+				id: "06CFF66846E1CE0F"
+				type: "item"
 				item: "mysticalagriculture:fire_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "52C0C1DF2D626205",
-				type: "random",
+				id: "52C0C1DF2D626205"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			title: "Circle of Souls",
-			x: -3.5d,
-			y: -0.5d,
-			shape: "rsquare",
+			title: "Circle of Souls"
+			x: -3.5d
+			y: -0.5d
+			shape: "rsquare"
 			description: [
-				"Some seeds require you to kill the mobs needed to get the seeds.",
-				"",
-				"It does require 4 jars of the same creature. The dagger helps a lot when killing the passive mobs.",
-				"",
+				"Some seeds require you to kill the mobs needed to get the seeds."
+				""
+				"It does require 4 jars of the same creature. The dagger helps a lot when killing the passive mobs."
+				""
 				"There is also the experience jar, it's just for the experience seed."
-			],
-			id: "75560045ED084900",
+			]
+			id: "75560045ED084900"
 			tasks: [
 				{
-					id: "46E948B8C21361D8",
-					type: "item",
+					id: "46E948B8C21361D8"
+					type: "item"
 					item: "mysticalagriculture:soul_jar"
-				},
+				}
 				{
-					id: "1D0225C66C7B48F3",
-					type: "item",
+					id: "1D0225C66C7B48F3"
+					type: "item"
 					item: {
-						id: "mysticalagriculture:soulium_dagger",
-						Count: 1b,
+						id: "mysticalagriculture:soulium_dagger"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "57F62564C8D35376",
-					type: "item",
+					id: "57F62564C8D35376"
+					type: "item"
 					item: "mysticalagriculture:experience_capsule"
 				}
 			]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["7DFF18CFEB0B8DBE"],
-			id: "576ABF43FCF886B7",
+			x: -7.5d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["7DFF18CFEB0B8DBE"]
+			id: "576ABF43FCF886B7"
 			tasks: [{
-				id: "5093432E189F5F6F",
-				type: "item",
+				id: "5093432E189F5F6F"
+				type: "item"
 				item: "mysticalagriculture:prudentium_essence"
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "31BAC57972148E1F",
+			x: -7.0d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "31BAC57972148E1F"
 			tasks: [{
-				id: "68C2E4443A30EBCD",
-				type: "item",
+				id: "68C2E4443A30EBCD"
+				type: "item"
 				item: "mysticalagriculture:coral_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "66F31AB427BBED53",
-				type: "random",
+				id: "66F31AB427BBED53"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "0E25CDB09FE88A63",
+			x: -7.0d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "0E25CDB09FE88A63"
 			tasks: [{
-				id: "612BAEBF597FE2EB",
-				type: "item",
+				id: "612BAEBF597FE2EB"
+				type: "item"
 				item: "mysticalagriculture:saltpeter_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3F80FA12F803BBDB",
-				type: "random",
+				id: "3F80FA12F803BBDB"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "4A6AC3D1ACBC3BFC",
+			x: -8.0d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "4A6AC3D1ACBC3BFC"
 			tasks: [{
-				id: "6AEC16A4BA18B9AE",
-				type: "item",
+				id: "6AEC16A4BA18B9AE"
+				type: "item"
 				item: "mysticalagriculture:mystical_flower_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "57AADAE21DF66F68",
-				type: "random",
+				id: "57AADAE21DF66F68"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "573885D6EF32B7BC",
+			x: -7.0d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "573885D6EF32B7BC"
 			tasks: [{
-				id: "0EE2D7787F6BCC5B",
-				type: "item",
+				id: "0EE2D7787F6BCC5B"
+				type: "item"
 				item: "mysticalagriculture:coal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "057C5596DD8218DC",
-				type: "random",
+				id: "057C5596DD8218DC"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "2777FEB022346947",
+			x: -7.5d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "2777FEB022346947"
 			tasks: [{
-				id: "05F63F2B26AC3813",
-				type: "item",
+				id: "05F63F2B26AC3813"
+				type: "item"
 				item: "mysticalagriculture:dye_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6DF0F61F24B54927",
-				type: "random",
+				id: "6DF0F61F24B54927"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "2A049419C78E96F4",
+			x: -8.0d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "2A049419C78E96F4"
 			tasks: [{
-				id: "7BDE7BF288BF4C12",
-				type: "item",
+				id: "7BDE7BF288BF4C12"
+				type: "item"
 				item: "mysticalagriculture:aluminum_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3E8F5F2D9A7417B4",
-				type: "random",
+				id: "3E8F5F2D9A7417B4"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -6.0d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "594F6ED00D1619EE",
+			x: -7.5d
+			y: -6.0d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "594F6ED00D1619EE"
 			tasks: [{
-				id: "710F8974F3DC637A",
-				type: "item",
+				id: "710F8974F3DC637A"
+				type: "item"
 				item: "mysticalagriculture:honey_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "00CCC9183339B158",
-				type: "random",
+				id: "00CCC9183339B158"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "5A17C762CDB680B5",
+			x: -7.0d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "5A17C762CDB680B5"
 			tasks: [{
-				id: "643B2B1220202107",
-				type: "item",
+				id: "643B2B1220202107"
+				type: "item"
 				item: "mysticalagriculture:copper_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5C0822761199DCA3",
-				type: "random",
+				id: "5C0822761199DCA3"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "47F081DDF9F0A5D1",
+			x: -8.0d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "47F081DDF9F0A5D1"
 			tasks: [{
-				id: "5E5E161F0EA13442",
-				type: "item",
+				id: "5E5E161F0EA13442"
+				type: "item"
 				item: "mysticalagriculture:rubber_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0513038E82DDE064",
-				type: "random",
+				id: "0513038E82DDE064"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "0FBE82BB6454EC8C",
+			x: -7.0d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "0FBE82BB6454EC8C"
 			tasks: [{
-				id: "4B5CD03F16733D39",
-				type: "item",
+				id: "4B5CD03F16733D39"
+				type: "item"
 				item: "mysticalagriculture:silicon_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "44E2866A1C64F954",
-				type: "random",
+				id: "44E2866A1C64F954"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "40B13424FA523E11",
+			x: -8.0d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "40B13424FA523E11"
 			tasks: [{
-				id: "782E7DB1D1B935F9",
-				type: "item",
+				id: "782E7DB1D1B935F9"
+				type: "item"
 				item: "mysticalagriculture:nature_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "14CEE6584B7AFFAB",
-				type: "random",
+				id: "14CEE6584B7AFFAB"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -5.0d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "3DDB7C8E61BA048F",
+			x: -7.5d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "3DDB7C8E61BA048F"
 			tasks: [{
-				id: "02578ADBCFF855EA",
-				type: "item",
+				id: "02578ADBCFF855EA"
+				type: "item"
 				item: "mysticalagriculture:nether_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4E24B2632585F88B",
-				type: "choice",
+				id: "4E24B2632585F88B"
+				type: "choice"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "64B41394897A2D66",
+			x: -8.0d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "64B41394897A2D66"
 			tasks: [{
-				id: "1AF4D3DEA884BA85",
-				type: "item",
+				id: "1AF4D3DEA884BA85"
+				type: "item"
 				item: "mysticalagriculture:sulfur_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "003C460A3DCCB1E9",
-				type: "random",
+				id: "003C460A3DCCB1E9"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "13EDB9956517B349",
+			x: -7.5d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "13EDB9956517B349"
 			tasks: [{
-				id: "291B67AB95D93F72",
-				type: "item",
+				id: "291B67AB95D93F72"
+				type: "item"
 				item: "mysticalagriculture:apatite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5D4F734E3B332845",
-				type: "random",
+				id: "5D4F734E3B332845"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "3384308C78D86059",
+			x: -7.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "3384308C78D86059"
 			tasks: [{
-				id: "47EB67F67390D09C",
-				type: "item",
+				id: "47EB67F67390D09C"
+				type: "item"
 				item: "mysticalagriculture:chicken_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "248A489B5A8CBAA5",
-				type: "random",
+				id: "248A489B5A8CBAA5"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: 1.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "2AECDD9E2DEA708C",
+			x: -8.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "2AECDD9E2DEA708C"
 			tasks: [{
-				id: "1E4845AD1FC5216D",
-				type: "item",
+				id: "1E4845AD1FC5216D"
+				type: "item"
 				item: "mysticalagriculture:squid_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4018BA5F4ECEF8CA",
-				type: "random",
+				id: "4018BA5F4ECEF8CA"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			title: "Meow Meow I'm a Cow... NO!",
-			x: -8.0d,
-			y: 0.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "7580037DB8ADEB3C",
+			title: "Meow Meow I'm a Cow... NO!"
+			x: -8.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "7580037DB8ADEB3C"
 			tasks: [{
-				id: "2866EA9311E575B6",
-				type: "item",
+				id: "2866EA9311E575B6"
+				type: "item"
 				item: "mysticalagriculture:cow_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "625EDE815355520E",
-				type: "random",
+				id: "625EDE815355520E"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "75D09040185B0E40",
+			x: -8.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "75D09040185B0E40"
 			tasks: [{
-				id: "4AC1F7DF47EB532C",
-				type: "item",
+				id: "4AC1F7DF47EB532C"
+				type: "item"
 				item: "mysticalagriculture:pig_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3FCD7740445E570F",
-				type: "random",
+				id: "3FCD7740445E570F"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			title: "Beep Beep I'm a Sheep",
-			x: -7.0d,
-			y: 0.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "2C73E3C5113BF2AC",
+			title: "Beep Beep I'm a Sheep"
+			x: -7.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "2C73E3C5113BF2AC"
 			tasks: [{
-				id: "745EDBA102BB6C91",
-				type: "item",
+				id: "745EDBA102BB6C91"
+				type: "item"
 				item: "mysticalagriculture:sheep_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "28AA4567D6C045C1",
-				type: "random",
+				id: "28AA4567D6C045C1"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: 1.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "29AE69722AB4C75C",
+			x: -7.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "29AE69722AB4C75C"
 			tasks: [{
-				id: "0B7F79DE8130BAE9",
-				type: "item",
+				id: "0B7F79DE8130BAE9"
+				type: "item"
 				item: "mysticalagriculture:fish_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6B4847054E846165",
-				type: "random",
+				id: "6B4847054E846165"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: 2.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "092A23FDA5D50812",
+			x: -8.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "092A23FDA5D50812"
 			tasks: [{
-				id: "697EBA0A6EF9183E",
-				type: "item",
+				id: "697EBA0A6EF9183E"
+				type: "item"
 				item: "mysticalagriculture:turtle_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7C77AE60BF7E5F52",
-				type: "random",
+				id: "7C77AE60BF7E5F52"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: 2.5d,
-			shape: "rsquare",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "04B6E31120663EB2",
+			x: -7.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "04B6E31120663EB2"
 			tasks: [{
-				id: "180DD2AAD6C8F073",
-				type: "item",
+				id: "180DD2AAD6C8F073"
+				type: "item"
 				item: "mysticalagriculture:slime_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "276B849CD4D62618",
-				type: "random",
+				id: "276B849CD4D62618"
+				type: "random"
 				table_id: 6643824915362901074L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["576ABF43FCF886B7"],
-			id: "76071C22A73A2026",
+			x: -10.0d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["576ABF43FCF886B7"]
+			id: "76071C22A73A2026"
 			tasks: [{
-				id: "65F226B04C4E0440",
-				type: "item",
+				id: "65F226B04C4E0440"
+				type: "item"
 				item: "mysticalagriculture:tertium_essence"
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "5846AEB49B426676",
+			x: -10.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "5846AEB49B426676"
 			tasks: [{
-				id: "382762D59344A457",
-				type: "item",
+				id: "382762D59344A457"
+				type: "item"
 				item: "mysticalagriculture:blitz_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6DFCAB0F3C8EE4C7",
-				type: "random",
+				id: "6DFCAB0F3C8EE4C7"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "23A4B2917FDA0E37",
+			x: -9.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "23A4B2917FDA0E37"
 			tasks: [{
-				id: "1BFC0CC9745EA1B1",
-				type: "item",
+				id: "1BFC0CC9745EA1B1"
+				type: "item"
 				item: "mysticalagriculture:blizz_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "115C72D09DDD5740",
-				type: "random",
+				id: "115C72D09DDD5740"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: 0.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "77B7487649A26F58",
+			x: -10.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "77B7487649A26F58"
 			tasks: [{
-				id: "47CB20A1A77DA303",
-				type: "item",
+				id: "47CB20A1A77DA303"
+				type: "item"
 				item: "mysticalagriculture:basalz_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7FD70F952A77A549",
-				type: "random",
+				id: "7FD70F952A77A549"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: 0.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "38A77DBAD24C4B53",
+			x: -9.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "38A77DBAD24C4B53"
 			tasks: [{
-				id: "4645F8968B0B8BE5",
-				type: "item",
+				id: "4645F8968B0B8BE5"
+				type: "item"
 				item: "mysticalagriculture:rabbit_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0DC3BAF886BE3775",
-				type: "random",
+				id: "0DC3BAF886BE3775"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: 1.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "6A18B971C3DB83AE",
+			x: -10.5d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "6A18B971C3DB83AE"
 			tasks: [{
-				id: "633406C0560295F7",
-				type: "item",
+				id: "633406C0560295F7"
+				type: "item"
 				item: "mysticalagriculture:spider_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "1FB48BD2970B8658",
-				type: "random",
+				id: "1FB48BD2970B8658"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: 1.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "26A7746051A4A079",
+			x: -9.5d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "26A7746051A4A079"
 			tasks: [{
-				id: "4315AB4B19D55458",
-				type: "item",
+				id: "4315AB4B19D55458"
+				type: "item"
 				item: "mysticalagriculture:skeleton_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0CF69FA72917F5CA",
-				type: "random",
+				id: "0CF69FA72917F5CA"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: 2.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "155A843A562DB7C4",
+			x: -10.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "155A843A562DB7C4"
 			tasks: [{
-				id: "622AAF6C554CA027",
-				type: "item",
+				id: "622AAF6C554CA027"
+				type: "item"
 				item: "mysticalagriculture:zombie_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "634586CA2122A800",
-				type: "random",
+				id: "634586CA2122A800"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: 2.5d,
-			shape: "rsquare",
-			dependencies: ["76071C22A73A2026"],
-			id: "7ADE214373DE135F",
+			x: -9.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["76071C22A73A2026"]
+			id: "7ADE214373DE135F"
 			tasks: [{
-				id: "72BC6673FB44DBB2",
-				type: "item",
+				id: "72BC6673FB44DBB2"
+				type: "item"
 				item: "mysticalagriculture:creeper_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6E26ED09EC1643B2",
-				type: "random",
+				id: "6E26ED09EC1643B2"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "7A89560F303A8BE6",
+			x: -9.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "7A89560F303A8BE6"
 			tasks: [{
-				id: "195459EDA666625B",
-				type: "item",
+				id: "195459EDA666625B"
+				type: "item"
 				item: "mysticalagriculture:iron_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2E8388840136F8A0",
-				type: "random",
+				id: "2E8388840136F8A0"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "56B58CAFCB707565",
+			x: -10.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "56B58CAFCB707565"
 			tasks: [{
-				id: "4F0C1B7C6A7D8B48",
-				type: "item",
+				id: "4F0C1B7C6A7D8B48"
+				type: "item"
 				item: "mysticalagriculture:tin_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "24D32595FD3FEF12",
-				type: "random",
+				id: "24D32595FD3FEF12"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "6950FC974624C6AA",
+			x: -10.0d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "6950FC974624C6AA"
 			tasks: [{
-				id: "22752792321F5533",
-				type: "item",
+				id: "22752792321F5533"
+				type: "item"
 				item: "mysticalagriculture:silver_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2DBB7635C9E057A8",
-				type: "random",
+				id: "2DBB7635C9E057A8"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "7361BD20A6B95D14",
+			x: -10.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "7361BD20A6B95D14"
 			tasks: [{
-				id: "688CF4D959B2C166",
-				type: "item",
+				id: "688CF4D959B2C166"
+				type: "item"
 				item: "mysticalagriculture:lead_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "67943886E1BEEE97",
-				type: "random",
+				id: "67943886E1BEEE97"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "0A8F44B9B3C8FC0F",
+			x: -9.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "0A8F44B9B3C8FC0F"
 			tasks: [{
-				id: "0C4C662FE28C30A5",
-				type: "item",
+				id: "0C4C662FE28C30A5"
+				type: "item"
 				item: "mysticalagriculture:zinc_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "23EC60A3CD54EEA1",
-				type: "random",
+				id: "23EC60A3CD54EEA1"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "5EE485880EA9FACF",
+			x: -10.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "5EE485880EA9FACF"
 			tasks: [{
-				id: "49E42AE6E840232B",
-				type: "item",
+				id: "49E42AE6E840232B"
+				type: "item"
 				item: "mysticalagriculture:redstone_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "49994BD57498E5BD",
-				type: "random",
+				id: "49994BD57498E5BD"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "02D45E3FB37ED0AD",
+			x: -9.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "02D45E3FB37ED0AD"
 			tasks: [{
-				id: "2D62D0EC3AC2BA8D",
-				type: "item",
+				id: "2D62D0EC3AC2BA8D"
+				type: "item"
 				item: "mysticalagriculture:glowstone_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7EA19682476195DF",
-				type: "random",
+				id: "7EA19682476195DF"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "62020721A69D40F2",
+			x: -10.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "62020721A69D40F2"
 			tasks: [{
-				id: "702FF74EA6FCA251",
-				type: "item",
+				id: "702FF74EA6FCA251"
+				type: "item"
 				item: "mysticalagriculture:aquamarine_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "44EDC95D72204BE8",
-				type: "random",
+				id: "44EDC95D72204BE8"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -5.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "30DF8297FEEC9F22",
+			x: -10.0d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "30DF8297FEEC9F22"
 			tasks: [{
-				id: "073DB8EBFC3BC948",
-				type: "item",
+				id: "073DB8EBFC3BC948"
+				type: "item"
 				item: "mysticalagriculture:nether_quartz_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0EABDECC3F8D36C9",
-				type: "random",
+				id: "0EABDECC3F8D36C9"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "47045A0E8E3457C2",
+			x: -9.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "47045A0E8E3457C2"
 			tasks: [{
-				id: "26E5425CC40CE5EE",
-				type: "item",
+				id: "26E5425CC40CE5EE"
+				type: "item"
 				item: "mysticalagriculture:certus_quartz_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5A509E45A9220898",
-				type: "random",
+				id: "5A509E45A9220898"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "2581B7D8E6C6E510",
+			x: -10.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "2581B7D8E6C6E510"
 			tasks: [{
-				id: "756BEE3608FFA0A4",
-				type: "item",
+				id: "756BEE3608FFA0A4"
+				type: "item"
 				item: "mysticalagriculture:obsidian_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "28968D2F4CEB1B99",
-				type: "random",
+				id: "28968D2F4CEB1B99"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -6.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "21F654C968722841",
+			x: -13.0d
+			y: -9.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "21F654C968722841"
 			tasks: [{
-				id: "5E6AA14A531DC749",
-				type: "item",
+				id: "5E6AA14A531DC749"
+				type: "item"
 				item: "mysticalagriculture:fluorite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5AF1A9EA805B4D93",
-				type: "random",
+				id: "5AF1A9EA805B4D93"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "242820928E62F027",
+			x: -9.5d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "242820928E62F027"
 			tasks: [{
-				id: "2DE619E982B3E937",
-				type: "item",
+				id: "2DE619E982B3E937"
+				type: "item"
 				item: "mysticalagriculture:crimson_iron_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4BAA26F0FC06A044",
-				type: "random",
+				id: "4BAA26F0FC06A044"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "62EF10105680383C",
+			x: -10.5d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "62EF10105680383C"
 			tasks: [{
-				id: "6850E7A8EE9F812D",
-				type: "item",
+				id: "6850E7A8EE9F812D"
+				type: "item"
 				item: "mysticalagriculture:azure_silver_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "38BDE66EE6A81609",
-				type: "random",
+				id: "38BDE66EE6A81609"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -8.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "7134EBC7908334A3",
+			x: -10.5d
+			y: -8.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "7134EBC7908334A3"
 			tasks: [{
-				id: "6A4258C1CC7E3E8A",
-				type: "item",
+				id: "6A4258C1CC7E3E8A"
+				type: "item"
 				item: "mysticalagriculture:sky_stone_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2BDEA98E2DF69A7A",
-				type: "random",
+				id: "2BDEA98E2DF69A7A"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -7.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "32EC28199E1E4C41",
+			x: -9.5d
+			y: -7.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "32EC28199E1E4C41"
 			tasks: [{
-				id: "5370D5385CC870B6",
-				type: "item",
+				id: "5370D5385CC870B6"
+				type: "item"
 				item: "mysticalagriculture:bronze_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "37515DF80C0253CF",
-				type: "random",
+				id: "37515DF80C0253CF"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.5d,
-			y: -7.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "7618D00BA6531ECC",
+			x: -10.5d
+			y: -7.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "7618D00BA6531ECC"
 			tasks: [{
-				id: "0EF5EDC046232B85",
-				type: "item",
+				id: "0EF5EDC046232B85"
+				type: "item"
 				item: "mysticalagriculture:brass_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2CDFF8DF4C2AFF78",
-				type: "random",
+				id: "2CDFF8DF4C2AFF78"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -7.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "5DCF26AD0DC47AFA",
+			x: -10.0d
+			y: -7.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "5DCF26AD0DC47AFA"
 			tasks: [{
-				id: "2022763632B3E1A9",
-				type: "item",
+				id: "2022763632B3E1A9"
+				type: "item"
 				item: "mysticalagriculture:ender_biotite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "769C2FC8AA1AE9BE",
-				type: "random",
+				id: "769C2FC8AA1AE9BE"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -8.5d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "39D91E0AB862BC1F",
+			x: -9.5d
+			y: -8.5d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "39D91E0AB862BC1F"
 			tasks: [{
-				id: "462D45E98604AFC1",
-				type: "item",
+				id: "462D45E98604AFC1"
+				type: "item"
 				item: "mysticalagriculture:graphite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5CFCCD761F72D507",
-				type: "random",
+				id: "5CFCCD761F72D507"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -8.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "3BCE1CC36B46047C",
+			x: -10.0d
+			y: -8.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "3BCE1CC36B46047C"
 			tasks: [{
-				id: "4DA7A4F6BEA7948A",
-				type: "item",
+				id: "4DA7A4F6BEA7948A"
+				type: "item"
 				item: "mysticalagriculture:quartz_enriched_iron_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5B8FDA6D36507763",
-				type: "random",
+				id: "5B8FDA6D36507763"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -9.0d,
-			shape: "diamond",
-			dependencies: ["76071C22A73A2026"],
-			id: "67AA59BD340FEC62",
+			x: -10.0d
+			y: -6.0d
+			shape: "diamond"
+			dependencies: ["76071C22A73A2026"]
+			id: "67AA59BD340FEC62"
 			tasks: [{
-				id: "42624C9B608A803A",
-				type: "item",
+				id: "42624C9B608A803A"
+				type: "item"
 				item: "mysticalagriculture:prismarine_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "290B928B94D91FCC",
-				type: "random",
+				id: "290B928B94D91FCC"
+				type: "random"
 				table_id: 2081350532424205669L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["76071C22A73A2026"],
-			id: "5BC4250E4C9F803C",
+			x: -13.0d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["76071C22A73A2026"]
+			id: "5BC4250E4C9F803C"
 			tasks: [{
-				id: "19D0A5FD97D7E3E8",
-				type: "item",
+				id: "19D0A5FD97D7E3E8"
+				type: "item"
 				item: "mysticalagriculture:imperium_essence"
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "260F9C98DC2E485B",
+			x: -13.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "260F9C98DC2E485B"
 			tasks: [{
-				id: "61058B1004B5C97C",
-				type: "item",
+				id: "61058B1004B5C97C"
+				type: "item"
 				item: "mysticalagriculture:blaze_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7DB21988A0FA3647",
-				type: "random",
+				id: "7DB21988A0FA3647"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "4F0DD86CF6E5F1B5",
+			x: -12.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "4F0DD86CF6E5F1B5"
 			tasks: [{
-				id: "67E85827062B8B79",
-				type: "item",
+				id: "67E85827062B8B79"
+				type: "item"
 				item: "mysticalagriculture:ghast_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "12F6018771C09662",
-				type: "random",
+				id: "12F6018771C09662"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: 0.5d,
-			shape: "rsquare",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "27E8ED4B5F8127F9",
+			x: -13.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "27E8ED4B5F8127F9"
 			tasks: [{
-				id: "23CCD297E830C925",
-				type: "item",
+				id: "23CCD297E830C925"
+				type: "item"
 				item: "mysticalagriculture:enderman_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7DB8CACBB54C2641",
-				type: "random",
+				id: "7DB8CACBB54C2641"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: 0.5d,
-			shape: "octagon",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "07564DBB023EE2A6",
+			x: -12.5d
+			y: 0.5d
+			shape: "octagon"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "07564DBB023EE2A6"
 			tasks: [{
-				id: "0932A42E423E21A3",
-				type: "item",
+				id: "0932A42E423E21A3"
+				type: "item"
 				item: "mysticalagriculture:experience_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "56E072687B84ADE1",
-				type: "random",
+				id: "56E072687B84ADE1"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "2ABBE15C1114178B",
+			x: -12.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "2ABBE15C1114178B"
 			tasks: [{
-				id: "6AC634BAE9F6C2EB",
-				type: "item",
+				id: "6AC634BAE9F6C2EB"
+				type: "item"
 				item: "mysticalagriculture:energized_steel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2EBC78D27A778BB2",
-				type: "random",
+				id: "2EBC78D27A778BB2"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "5D0FEA8F2641E072",
+			x: -13.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "5D0FEA8F2641E072"
 			tasks: [{
-				id: "39F95C274EA840F5",
-				type: "item",
+				id: "39F95C274EA840F5"
+				type: "item"
 				item: "mysticalagriculture:blazing_crystal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "1B8004788582B169",
-				type: "random",
+				id: "1B8004788582B169"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "6858731470A20E1B",
+			x: -13.5d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "6858731470A20E1B"
 			tasks: [{
-				id: "16CDE01890E6A069",
-				type: "item",
+				id: "16CDE01890E6A069"
+				type: "item"
 				item: "mysticalagriculture:steel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "03804DDDF5E45AAB",
-				type: "random",
+				id: "03804DDDF5E45AAB"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "0AF5FB1B5AA5AA11",
+			x: -12.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "0AF5FB1B5AA5AA11"
 			tasks: [{
-				id: "737A74FAB46C9E54",
-				type: "item",
+				id: "737A74FAB46C9E54"
+				type: "item"
 				item: "mysticalagriculture:gold_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2740D9447CC28657",
-				type: "random",
+				id: "2740D9447CC28657"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "25D84D82DBADA0DB",
+			x: -13.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "25D84D82DBADA0DB"
 			tasks: [{
-				id: "238B6815E9C74478",
-				type: "item",
+				id: "238B6815E9C74478"
+				type: "item"
 				item: "mysticalagriculture:nickel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "1519EBAE83F6999B",
-				type: "random",
+				id: "1519EBAE83F6999B"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "64B04D1CBC923789",
+			x: -13.0d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "64B04D1CBC923789"
 			tasks: [{
-				id: "09233415005F6331",
-				type: "item",
+				id: "09233415005F6331"
+				type: "item"
 				item: "mysticalagriculture:lapis_lazuli_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5B4FFF3AD4E7A96E",
-				type: "random",
+				id: "5B4FFF3AD4E7A96E"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "222739E77C745519",
+			x: -12.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "222739E77C745519"
 			tasks: [{
-				id: "1DC4FE7A037EC52E",
-				type: "item",
+				id: "1DC4FE7A037EC52E"
+				type: "item"
 				item: "mysticalagriculture:osmium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5BF3015144163302",
-				type: "random",
+				id: "5BF3015144163302"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "248AEF5537E48B1A",
+			x: -13.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "248AEF5537E48B1A"
 			tasks: [{
-				id: "2FF27D7E36203A68",
-				type: "item",
+				id: "2FF27D7E36203A68"
+				type: "item"
 				item: "mysticalagriculture:end_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5A762CE9A304DDDD",
-				type: "random",
+				id: "5A762CE9A304DDDD"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -5.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "172EB263C8239BDC",
+			x: -13.0d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "172EB263C8239BDC"
 			tasks: [{
-				id: "11DE6BACF437EB90",
-				type: "item",
+				id: "11DE6BACF437EB90"
+				type: "item"
 				item: "mysticalagriculture:compressed_iron_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3AE3EB484A30124C",
-				type: "random",
+				id: "3AE3EB484A30124C"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "54B3F1626AAF1CCA",
+			x: -12.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "54B3F1626AAF1CCA"
 			tasks: [{
-				id: "07E168D126769321",
-				type: "item",
+				id: "07E168D126769321"
+				type: "item"
 				item: "mysticalagriculture:electrum_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "19C2547F415B50B5",
-				type: "random",
+				id: "19C2547F415B50B5"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "524E97B2BEE084B9",
+			x: -13.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "524E97B2BEE084B9"
 			tasks: [{
-				id: "6032968152631CC7",
-				type: "item",
+				id: "6032968152631CC7"
+				type: "item"
 				item: "mysticalagriculture:constantan_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0C577EB4251BDAAD",
-				type: "random",
+				id: "0C577EB4251BDAAD"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -6.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "0AE23BAFE82168E6",
+			x: -13.0d
+			y: -6.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "0AE23BAFE82168E6"
 			tasks: [{
-				id: "58F4B063BC12F9B9",
-				type: "item",
+				id: "58F4B063BC12F9B9"
+				type: "item"
 				item: "mysticalagriculture:signalum_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4CEA8B8B2B67ACF6",
-				type: "random",
+				id: "4CEA8B8B2B67ACF6"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -6.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "2A6DEFBB145EE1A7",
+			x: -12.5d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "2A6DEFBB145EE1A7"
 			tasks: [{
-				id: "49614D5571D31480",
-				type: "item",
+				id: "49614D5571D31480"
+				type: "item"
 				item: "mysticalagriculture:invar_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3DADA4DD9FD2AE9D",
-				type: "random",
+				id: "3DADA4DD9FD2AE9D"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "47D8A9BBAD2DE451",
+			x: -13.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "47D8A9BBAD2DE451"
 			tasks: [{
-				id: "5C50870611266B89",
-				type: "item",
+				id: "5C50870611266B89"
+				type: "item"
 				item: "mysticalagriculture:fluix_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "414E2A12D5A89E1B",
-				type: "random",
+				id: "414E2A12D5A89E1B"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -7.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "08BDD90F742B3E3B",
+			x: -13.0d
+			y: -7.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "08BDD90F742B3E3B"
 			tasks: [{
-				id: "1509819206450582",
-				type: "item",
+				id: "1509819206450582"
+				type: "item"
 				item: "mysticalagriculture:refined_glowstone_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "33B5F2DC47138F23",
-				type: "random",
+				id: "33B5F2DC47138F23"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -7.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "3242A44E4B6613D2",
+			x: -12.5d
+			y: -7.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "3242A44E4B6613D2"
 			tasks: [{
-				id: "05C6282AF1FC6521",
-				type: "item",
+				id: "05C6282AF1FC6521"
+				type: "item"
 				item: "mysticalagriculture:lumium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0FE49AD3108A6910",
-				type: "random",
+				id: "0FE49AD3108A6910"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -7.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "3D888A965033D446",
+			x: -13.5d
+			y: -7.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "3D888A965033D446"
 			tasks: [{
-				id: "434F2F8BC13FAEEA",
-				type: "item",
+				id: "434F2F8BC13FAEEA"
+				type: "item"
 				item: "mysticalagriculture:azure_electrum_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "0220131D66AD9988",
-				type: "random",
+				id: "0220131D66AD9988"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.0d,
-			y: -8.0d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "418AEDFCEA8CE154",
+			x: -13.0d
+			y: -8.0d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "418AEDFCEA8CE154"
 			tasks: [{
-				id: "600E371258F78259",
-				type: "item",
+				id: "600E371258F78259"
+				type: "item"
 				item: "mysticalagriculture:starmetal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "692B797D5F1E1DE7",
-				type: "random",
+				id: "692B797D5F1E1DE7"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -12.5d,
-			y: -8.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "4C6C54CAFBF21536",
+			x: -12.5d
+			y: -8.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "4C6C54CAFBF21536"
 			tasks: [{
-				id: "19D2CAF1FAEC33B2",
-				type: "item",
+				id: "19D2CAF1FAEC33B2"
+				type: "item"
 				item: "mysticalagriculture:hop_graphite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "5CDEC582F3D04896",
-				type: "random",
+				id: "5CDEC582F3D04896"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -13.5d,
-			y: -8.5d,
-			shape: "diamond",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "40A04EE31A1C6530",
+			x: -13.5d
+			y: -8.5d
+			shape: "diamond"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "40A04EE31A1C6530"
 			tasks: [{
-				id: "1C7B24EC5D50A65B",
-				type: "item",
+				id: "1C7B24EC5D50A65B"
+				type: "item"
 				item: "mysticalagriculture:crimson_steel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "705CD609317EA306",
-				type: "random",
+				id: "705CD609317EA306"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.0d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["5BC4250E4C9F803C"],
-			id: "48BF71269DEA1AB1",
+			x: -16.0d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["5BC4250E4C9F803C"]
+			id: "48BF71269DEA1AB1"
 			tasks: [{
-				id: "7F969AA823C4157B",
-				type: "item",
+				id: "7F969AA823C4157B"
+				type: "item"
 				item: "mysticalagriculture:supremium_essence"
 			}]
-		},
+		}
 		{
-			x: -16.0d,
-			y: -0.5d,
-			shape: "rsquare",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "7CFA92CC48D1E7E3",
+			x: -16.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "7CFA92CC48D1E7E3"
 			tasks: [{
-				id: "3E93D20A19EEAD09",
-				type: "item",
+				id: "3E93D20A19EEAD09"
+				type: "item"
 				item: "mysticalagriculture:wither_skeleton_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "238D4AA478EEA8BC",
-				type: "random",
+				id: "238D4AA478EEA8BC"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -15.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "7D6C1EFD0AA0AEFE",
+			x: -15.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "7D6C1EFD0AA0AEFE"
 			tasks: [{
-				id: "027DA0F6532BB646",
-				type: "item",
+				id: "027DA0F6532BB646"
+				type: "item"
 				item: "mysticalagriculture:spirited_crystal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "78814C676485382D",
-				type: "random",
+				id: "78814C676485382D"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.5d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "365E8820245343D6",
+			x: -16.5d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "365E8820245343D6"
 			tasks: [{
-				id: "2F4BD2B5B6F71DCC",
-				type: "item",
+				id: "2F4BD2B5B6F71DCC"
+				type: "item"
 				item: "mysticalagriculture:niotic_crystal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "7890E50E2DF9AE2E",
-				type: "random",
+				id: "7890E50E2DF9AE2E"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.0d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "5B52389583A70E66",
+			x: -16.0d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "5B52389583A70E66"
 			tasks: [{
-				id: "69C9CEC467EB00C0",
-				type: "item",
+				id: "69C9CEC467EB00C0"
+				type: "item"
 				item: "mysticalagriculture:uraninite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "1A44C69086F51155",
-				type: "random",
+				id: "1A44C69086F51155"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -15.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "6A2AD67569F91F1F",
+			x: -15.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "6A2AD67569F91F1F"
 			tasks: [{
-				id: "4EA95AE9AF641FB4",
-				type: "item",
+				id: "4EA95AE9AF641FB4"
+				type: "item"
 				item: "mysticalagriculture:diamond_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "77D2B134CD7A08EC",
-				type: "random",
+				id: "77D2B134CD7A08EC"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.5d,
-			y: -3.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "4E09BBC0BAED3440",
+			x: -16.5d
+			y: -3.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "4E09BBC0BAED3440"
 			tasks: [{
-				id: "403DE50D5B8CFE29",
-				type: "item",
+				id: "403DE50D5B8CFE29"
+				type: "item"
 				item: "mysticalagriculture:emerald_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "417608BDD13C47C7",
-				type: "random",
+				id: "417608BDD13C47C7"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "2B0553F307A024F7",
+			x: -16.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "2B0553F307A024F7"
 			tasks: [{
-				id: "50F4429AB337EF8A",
-				type: "item",
+				id: "50F4429AB337EF8A"
+				type: "item"
 				item: "mysticalagriculture:platinum_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "33C711E8E83089AE",
-				type: "random",
+				id: "33C711E8E83089AE"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "06A7A3FC8634D2DA",
+			x: -16.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "06A7A3FC8634D2DA"
 			tasks: [{
-				id: "591B86E8274AE821",
-				type: "item",
+				id: "591B86E8274AE821"
+				type: "item"
 				item: "mysticalagriculture:netherite_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "761B184FE2A23623",
-				type: "random",
+				id: "761B184FE2A23623"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -15.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "3DD0B67ADE37ADF3",
+			x: -15.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "3DD0B67ADE37ADF3"
 			tasks: [{
-				id: "344D7021D5B55F29",
-				type: "item",
+				id: "344D7021D5B55F29"
+				type: "item"
 				item: "mysticalagriculture:rock_crystal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "256DCBB15911E1E5",
-				type: "random",
+				id: "256DCBB15911E1E5"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.0d,
-			y: -5.0d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "4E7990AEBCCC3C95",
+			x: -16.0d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "4E7990AEBCCC3C95"
 			tasks: [{
-				id: "275EBE6C08104C69",
-				type: "item",
+				id: "275EBE6C08104C69"
+				type: "item"
 				item: "mysticalagriculture:uranium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "37200C1917637FDE",
-				type: "random",
+				id: "37200C1917637FDE"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -16.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "4A9A8EA6E0BAAEB1",
+			x: -16.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "4A9A8EA6E0BAAEB1"
 			tasks: [{
-				id: "78FCC96FBA79C345",
-				type: "item",
+				id: "78FCC96FBA79C345"
+				type: "item"
 				item: "mysticalagriculture:enderium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6DFA9E174E702A65",
-				type: "random",
+				id: "6DFA9E174E702A65"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -15.5d,
-			y: -5.5d,
-			shape: "diamond",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "78272261B08D2D99",
+			x: -15.5d
+			y: -5.5d
+			shape: "diamond"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "78272261B08D2D99"
 			tasks: [{
-				id: "205437D38FA78BAD",
-				type: "item",
+				id: "205437D38FA78BAD"
+				type: "item"
 				item: "mysticalagriculture:refined_obsidian_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "14069CFE41D22A84",
-				type: "random",
+				id: "14069CFE41D22A84"
+				type: "random"
 				table_id: 972096620368381850L
 			}]
-		},
+		}
 		{
-			x: -18.5d,
-			y: -1.5d,
-			shape: "circle",
-			dependencies: ["48BF71269DEA1AB1"],
-			id: "2FA6B8A1C8713DE0",
+			x: -18.5d
+			y: -1.5d
+			shape: "circle"
+			dependencies: ["48BF71269DEA1AB1"]
+			id: "2FA6B8A1C8713DE0"
 			tasks: [{
-				id: "5A17FCC895F52C8B",
-				type: "item",
+				id: "5A17FCC895F52C8B"
+				type: "item"
 				item: "mysticalagradditions:insanium_essence"
 			}]
-		},
+		}
 		{
-			x: -19.0d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "70184B76B5ECC25A",
+			x: -19.0d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "70184B76B5ECC25A"
 			tasks: [{
-				id: "6D7FB2F98F6FE821",
-				type: "item",
+				id: "6D7FB2F98F6FE821"
+				type: "item"
 				item: "mysticalagriculture:nitro_crystal_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "430BF11AD0143800",
-				type: "random",
+				id: "430BF11AD0143800"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -18.0d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "4A96A0456680837C",
+			x: -18.0d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "4A96A0456680837C"
 			tasks: [{
-				id: "7E1EA6614D3AD212",
-				type: "item",
+				id: "7E1EA6614D3AD212"
+				type: "item"
 				item: "mysticalagriculture:nether_star_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2B85F48518B62738",
-				type: "random",
+				id: "2B85F48518B62738"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -18.5d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "6AB1C7B6251FE9F5",
+			x: -18.5d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "6AB1C7B6251FE9F5"
 			tasks: [{
-				id: "2DB99A45CE808456",
-				type: "item",
+				id: "2DB99A45CE808456"
+				type: "item"
 				item: "mysticalagriculture:dragon_egg_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "099FAED9E82D4C41",
-				type: "random",
+				id: "099FAED9E82D4C41"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -18.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "5E13C11CAD0AF38C",
+			x: -18.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "5E13C11CAD0AF38C"
 			tasks: [{
-				id: "043E429E762E0644",
-				type: "item",
+				id: "043E429E762E0644"
+				type: "item"
 				item: "mysticalagriculture:allthemodium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "53CA488ABA6AA4BA",
-				type: "random",
+				id: "53CA488ABA6AA4BA"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -19.0d,
-			y: -4.0d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "370297F4982AEED4",
+			x: -19.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "370297F4982AEED4"
 			tasks: [{
-				id: "7AFE3875987AFA64",
-				type: "item",
+				id: "7AFE3875987AFA64"
+				type: "item"
 				item: "mysticalagriculture:vibranium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "657AF8E837FF40A6",
-				type: "random",
+				id: "657AF8E837FF40A6"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -18.5d,
-			y: -4.5d,
-			shape: "diamond",
-			dependencies: ["2FA6B8A1C8713DE0"],
-			id: "11948ECF241B2923",
+			x: -18.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["2FA6B8A1C8713DE0"]
+			id: "11948ECF241B2923"
 			tasks: [{
-				id: "7E372EC07A6238D1",
-				type: "item",
+				id: "7E372EC07A6238D1"
+				type: "item"
 				item: "mysticalagriculture:unobtainium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "3C6C72DE6A140554",
-				type: "random",
+				id: "3C6C72DE6A140554"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -1.5d,
-			shape: "gear",
-			dependencies: ["6D750A38944E9B68"],
-			id: "36DE5D11F473E002",
+			x: -2.0d
+			y: -1.5d
+			shape: "gear"
+			dependencies: ["6D750A38944E9B68"]
+			id: "36DE5D11F473E002"
 			tasks: [{
-				id: "62F8129318B3451D",
-				type: "item",
+				id: "62F8129318B3451D"
+				type: "item"
 				item: "botania:life_essence"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -2.5d,
-			shape: "diamond",
-			dependencies: ["36DE5D11F473E002"],
-			id: "47742DA277C0DD43",
+			x: -2.0d
+			y: -2.5d
+			shape: "diamond"
+			dependencies: ["36DE5D11F473E002"]
+			id: "47742DA277C0DD43"
 			tasks: [{
-				id: "2BC2492057C6D014",
-				type: "item",
+				id: "2BC2492057C6D014"
+				type: "item"
 				item: "mysticalagriculture:manasteel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "6388EAE7468E2534",
-				type: "random",
+				id: "6388EAE7468E2534"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -2.5d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["36DE5D11F473E002"],
-			id: "52B4BF64DAA66A19",
+			x: -2.5d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["36DE5D11F473E002"]
+			id: "52B4BF64DAA66A19"
 			tasks: [{
-				id: "6FD736F99F72CBD7",
-				type: "item",
+				id: "6FD736F99F72CBD7"
+				type: "item"
 				item: "mysticalagriculture:terrasteel_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "4E7378404CD066C0",
-				type: "random",
+				id: "4E7378404CD066C0"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -3.0d,
-			shape: "diamond",
-			dependencies: ["36DE5D11F473E002"],
-			id: "6D3310B592980497",
+			x: -1.5d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["36DE5D11F473E002"]
+			id: "6D3310B592980497"
 			tasks: [{
-				id: "0F3A67D698562A08",
-				type: "item",
+				id: "0F3A67D698562A08"
+				type: "item"
 				item: "mysticalagriculture:elementium_seeds"
-			}],
+			}]
 			rewards: [{
-				id: "2927E0FC53531259",
-				type: "random",
+				id: "2927E0FC53531259"
+				type: "random"
 				table_id: 3968376212287991603L
 			}]
-		},
+		}
 		{
-			title: "Wither me down",
-			x: 0.0d,
-			y: -4.0d,
-			shape: "square",
+			title: "Wither me down"
+			x: 0.0d
+			y: -4.0d
+			shape: "square"
 			description: [
-				"This glass prevents light to go through.",
-				"",
+				"This glass prevents light to go through."
+				""
 				"Yet surprisingly it also prevents the wither boss to break it."
-			],
-			dependencies: ["6F376B7752A5CC72"],
-			id: "47EA4649851B1524",
+			]
+			dependencies: ["6F376B7752A5CC72"]
+			id: "47EA4649851B1524"
 			tasks: [{
-				id: "7A50BA934C3FF232",
-				type: "item",
+				id: "7A50BA934C3FF232"
+				type: "item"
 				item: "mob_grinding_utils:tinted_glass"
 			}]
-		},
+		}
 		{
-			title: "Mob Grinding utilities",
-			x: 0.0d,
-			y: -2.5d,
-			shape: "square",
-			id: "6F376B7752A5CC72",
+			title: "Mob Grinding utilities"
+			x: 0.0d
+			y: -2.5d
+			shape: "square"
+			id: "6F376B7752A5CC72"
 			tasks: [{
-				id: "5989A26CC826ACF7",
+				id: "5989A26CC826ACF7"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "Will it blend?",
-			x: 1.0d,
-			y: -5.0d,
-			shape: "square",
+			title: "Will it blend?"
+			x: 1.0d
+			y: -5.0d
+			shape: "square"
 			description: [
-				"This works with redstone, but it's way more powerful then the spikes.",
-				"",
+				"This works with redstone, but it's way more powerful then the spikes."
+				""
 				"It can be upgraded. Which will be provided in the next quest."
-			],
-			dependencies: ["0B1BC6C283362824"],
-			id: "19C870C6C67CA851",
+			]
+			dependencies: ["0B1BC6C283362824"]
+			id: "19C870C6C67CA851"
 			tasks: [{
-				id: "49E8EDE1A41131C4",
-				type: "item",
+				id: "49E8EDE1A41131C4"
+				type: "item"
 				item: "mob_grinding_utils:saw"
 			}]
-		},
+		}
 		{
-			title: "Bad Time Trio",
-			x: 1.0d,
-			y: -6.0d,
+			title: "Bad Time Trio"
+			x: 1.0d
+			y: -6.0d
 			description: [
-				"These are the most popular to be added those bonified blenders.",
-				"",
+				"These are the most popular to be added those bonified blenders."
+				""
 				"There are more that can be added and combined."
-			],
-			dependencies: ["19C870C6C67CA851"],
-			id: "0C05F7B6F9578894",
+			]
+			dependencies: ["19C870C6C67CA851"]
+			id: "0C05F7B6F9578894"
 			tasks: [
 				{
-					id: "54C8D499BBA37388",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_looting",
+					id: "54C8D499BBA37388"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_looting"
 					count: 10L
-				},
+				}
 				{
-					id: "3874CF29F5138FB9",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_beheading",
+					id: "3874CF29F5138FB9"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_beheading"
 					count: 10L
-				},
+				}
 				{
-					id: "2F2F94F8DA8E6ADB",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_sharpness",
+					id: "2F2F94F8DA8E6ADB"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_sharpness"
 					count: 10L
 				}
 			]
-		},
+		}
 		{
-			title: "Extra fire power",
-			x: 1.0d,
-			y: -7.0d,
+			title: "Extra fire power"
+			x: 1.0d
+			y: -7.0d
 			description: [
-				"Unlike enchanting, even if you have sharpness you can still add the other two specific mob damage upgrade.",
-				"",
+				"Unlike enchanting, even if you have sharpness you can still add the other two specific mob damage upgrade."
+				""
 				"Fire upgrade... it pretty much cooks up your mobs to oblivion."
-			],
-			dependencies: ["19C870C6C67CA851"],
-			id: "2AD275B10F52236E",
+			]
+			dependencies: ["19C870C6C67CA851"]
+			id: "2AD275B10F52236E"
 			tasks: [
 				{
-					id: "59709E1B9915D455",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_smite",
+					id: "59709E1B9915D455"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_smite"
 					count: 10L
-				},
+				}
 				{
-					id: "21E533E466045860",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_arthropod",
+					id: "21E533E466045860"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_arthropod"
 					count: 10L
-				},
+				}
 				{
-					id: "1E4AAB27B4AE195B",
-					type: "item",
-					item: "mob_grinding_utils:saw_upgrade_fire",
+					id: "1E4AAB27B4AE195B"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_fire"
 					count: 10L
 				}
 			]
-		},
+		}
 		{
-			title: "This is a must for enderman farming",
-			x: 2.0d,
-			y: -5.0d,
+			title: "This is a must for enderman farming"
+			x: 2.0d
+			y: -5.0d
 			description: [
-				"Since I already gave one in Tips and Tricks, this is just here for the mob grinding set.",
-				"",
+				"Since I already gave one in Tips and Tricks, this is just here for the mob grinding set."
+				""
 				"When you make a mob farm do use these to prevent enderman from teleporting out of your farms."
-			],
-			id: "1F66068EFCC15AFF",
+			]
+			id: "1F66068EFCC15AFF"
 			tasks: [{
-				id: "37785CCA8BE97A0C",
-				type: "item",
+				id: "37785CCA8BE97A0C"
+				type: "item"
 				item: "mob_grinding_utils:ender_inhibitor_on"
 			}]
-		},
+		}
 		{
-			title: "Mob's Biggest Fan",
-			x: 0.0d,
-			y: -5.0d,
-			shape: "square",
+			title: "Mob's Biggest Fan"
+			x: 0.0d
+			y: -5.0d
+			shape: "square"
 			description: [
-				"This is the best fan in the game in terms of area of effect when upgraded. It is redstone activated but it can push mobs at a wider range then other fans.",
-				"",
+				"This is the best fan in the game in terms of area of effect when upgraded. It is redstone activated but it can push mobs at a wider range then other fans."
+				""
 				"Just by itself it's pushes mobs 5 blocks from itself."
-			],
-			hide_dependency_lines: true,
-			dependencies: ["6F376B7752A5CC72"],
-			id: "751AD1599757DA6C",
+			]
+			hide_dependency_lines: true
+			dependencies: ["6F376B7752A5CC72"]
+			id: "751AD1599757DA6C"
 			tasks: [{
-				id: "6CF1755A115F067D",
-				type: "item",
+				id: "6CF1755A115F067D"
+				type: "item"
 				item: "mob_grinding_utils:fan"
 			}]
-		},
+		}
 		{
-			title: "Upgrading your fanbase",
-			x: 0.0d,
-			y: -6.0d,
+			title: "Upgrading your fanbase"
+			x: 0.0d
+			y: -6.0d
 			description: [
-				"These upgrades will increase the fan from it's 1 block wide 5 blocks front, to when fully upgraded 7 blocks wide 15 blocks front.",
-				"",
-				"There is also a hight upgrade which is only useful against flying mobs and spiders climbing the walls.",
-				"",
+				"These upgrades will increase the fan from it's 1 block wide 5 blocks front, to when fully upgraded 7 blocks wide 15 blocks front."
+				""
+				"There is also a hight upgrade which is only useful against flying mobs and spiders climbing the walls."
+				""
 				"The upgrades can be adjusted so the fans don't overlap."
-			],
-			dependencies: ["751AD1599757DA6C"],
-			id: "3C0ADFF7BE9FDD16",
+			]
+			dependencies: ["751AD1599757DA6C"]
+			id: "3C0ADFF7BE9FDD16"
 			tasks: [
 				{
-					id: "4E68F38BB33CEE0D",
-					type: "item",
-					item: "mob_grinding_utils:fan_upgrade_width",
+					id: "4E68F38BB33CEE0D"
+					type: "item"
+					item: "mob_grinding_utils:fan_upgrade_width"
 					count: 3L
-				},
+				}
 				{
-					id: "09EDC3E18F00EA2E",
-					type: "item",
-					item: "mob_grinding_utils:fan_upgrade_speed",
+					id: "09EDC3E18F00EA2E"
+					type: "item"
+					item: "mob_grinding_utils:fan_upgrade_speed"
 					count: 10L
 				}
 			]
-		},
+		}
 		{
-			x: -1.0d,
-			y: -5.0d,
-			shape: "square",
+			x: -1.0d
+			y: -5.0d
+			shape: "square"
 			description: [
-				"This will solidify your experience into a solid state. This means you can even put it into storage such as drawers. As a bonus, it can be put into a compact drawer.",
-				"",
+				"This will solidify your experience into a solid state. This means you can even put it into storage such as drawers. As a bonus, it can be put into a compact drawer."
+				""
 				"Also note that it can take all form of liquid experience, such as Essence, Knowledge Essence, Liquid Experience, and so on."
-			],
-			hide_dependency_lines: true,
-			dependencies: ["6F376B7752A5CC72"],
-			id: "2CB65B5B8D798268",
+			]
+			hide_dependency_lines: true
+			dependencies: ["6F376B7752A5CC72"]
+			id: "2CB65B5B8D798268"
 			tasks: [
 				{
-					id: "281B8A453B31F29D",
-					type: "item",
+					id: "281B8A453B31F29D"
+					type: "item"
 					item: "mob_grinding_utils:xpsolidifier"
-				},
+				}
 				{
-					id: "215643E892ED6854",
-					type: "item",
+					id: "215643E892ED6854"
+					type: "item"
 					item: "mob_grinding_utils:solid_xp_mould_baby"
 				}
-			],
+			]
 			rewards: [{
-				id: "7FAA08085E5178AE",
-				type: "item",
+				id: "7FAA08085E5178AE"
+				type: "item"
 				item: "storagedrawers:compacting_drawers_3"
 			}]
-		},
+		}
 		{
-			title: "Pulling in items and experience",
-			x: -1.0d,
-			y: -4.0d,
-			shape: "square",
+			title: "Pulling in items and experience"
+			x: -1.0d
+			y: -4.0d
+			shape: "square"
 			description: [
-				'The classic Vacuum for your mob grinding needs, it pulls in both items and experience. You just have to set up an output by "using" the Absorption Hopper.',
-				"",
+				"The classic Vacuum for your mob grinding needs, it pulls in both items and experience. You just have to set up an output by \"using\" the Absorption Hopper."
+				""
 				"The left icons shows the output, when selected will show the hopper. Drag the hopper to turn it, and select a side for your output."
-			],
-			dependencies: ["6F376B7752A5CC72"],
-			id: "7F22A38F1922FCAA",
+			]
+			dependencies: ["6F376B7752A5CC72"]
+			id: "7F22A38F1922FCAA"
 			tasks: [{
-				id: "09DA32F6738AD8CB",
-				type: "item",
+				id: "09DA32F6738AD8CB"
+				type: "item"
 				item: "mob_grinding_utils:absorption_hopper"
 			}]
-		},
+		}
 		{
-			title: "Chickens will Curse the Earth",
-			x: 2.0d,
-			y: -4.0d,
-			shape: "square",
+			title: "Chickens will Curse the Earth"
+			x: 2.0d
+			y: -4.0d
+			shape: "square"
 			description: [
-				"Use this feed to create rotten eggs, using the egg on dirt will turn it into cursed earth. Mobs will spawn more on that earth.",
-				"",
-				'"Mwahaha, I have a chicken Army" - Taku_'
-			],
-			dependencies: ["6F376B7752A5CC72"],
-			id: "155893E252EE4DE2",
+				"Use this feed to create rotten eggs, using the egg on dirt will turn it into cursed earth. Mobs will spawn more on that earth."
+				""
+				"\"Mwahaha, I have a chicken Army\" - Taku_"
+			]
+			dependencies: ["6F376B7752A5CC72"]
+			id: "155893E252EE4DE2"
 			tasks: [
 				{
-					id: "48196F137E3062F4",
-					type: "item",
+					id: "48196F137E3062F4"
+					type: "item"
 					item: "mob_grinding_utils:gm_chicken_feed_cursed"
-				},
+				}
 				{
-					id: "77E3342C36F71A8D",
-					type: "item",
+					id: "77E3342C36F71A8D"
+					type: "item"
 					item: "mob_grinding_utils:rotten_egg"
 				}
 			]
-		},
+		}
 		{
-			title: "Wither there bee stars",
-			x: 0.72704081632655d,
-			y: 2.5314625850340065d,
+			title: "Wither there bee stars"
+			x: 0.72704081632655d
+			y: 2.5314625850340065d
 			description: [
-				"Welcome to the 2nd bee in the Mutation Line... oh wait... no.. you simply breed a netherite bee and a withered bee to get this.",
-				"",
+				"Welcome to the 2nd bee in the Mutation Line... oh wait... no.. you simply breed a netherite bee and a withered bee to get this."
+				""
 				"To get this bee, you have to mutate a dragon egg by pollinating it, with a withered bee."
-			],
-			dependencies: ["7DB9AE9AA5B725EC"],
-			id: "3078D0FA79DACF69",
+			]
+			dependencies: ["7DB9AE9AA5B725EC"]
+			id: "3078D0FA79DACF69"
 			tasks: [{
-				id: "62F5A481B6282ED0",
-				type: "item",
+				id: "62F5A481B6282ED0"
+				type: "item"
 				item: "resourcefulbees:wither_honeycomb"
 			}]
-		},
+		}
 		{
-			title: "Nethermind the Error",
-			x: -0.022959183673449957d,
-			y: 2.5314625850340065d,
+			title: "Nethermind the Error"
+			x: -0.022959183673449957d
+			y: 2.5314625850340065d
 			description: [
-				"Welcome to the 1st bee of the mutation line",
-				"",
+				"Welcome to the 1st bee of the mutation line"
+				""
 				"To get this bee, you need a gold bee to pollinate on a netherite block. You will get a Spawn Egg."
-			],
-			hide_dependency_lines: true,
-			dependencies: ["29F8515D25952A95"],
-			id: "2E3B9E9B1C48C13F",
+			]
+			hide_dependency_lines: true
+			dependencies: ["29F8515D25952A95"]
+			id: "2E3B9E9B1C48C13F"
 			tasks: [{
-				id: "2E0F66F76BFB851E",
-				type: "item",
+				id: "2E0F66F76BFB851E"
+				type: "item"
 				item: "resourcefulbees:netherite_honeycomb"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -6.0d,
-			shape: "pentagon",
-			dependencies: ["748485FEC1097A71"],
-			id: "573AAC30B09B0BAE",
+			x: -4.5d
+			y: -6.0d
+			shape: "pentagon"
+			dependencies: ["748485FEC1097A71"]
+			id: "573AAC30B09B0BAE"
 			tasks: [{
-				id: "40B061A5347127EB",
-				type: "item",
+				id: "40B061A5347127EB"
+				type: "item"
 				item: "immersiveengineering:cloche"
-			}],
+			}]
 			rewards: [{
-				id: "2593738FE907BFBD",
-				type: "item",
+				id: "2593738FE907BFBD"
+				type: "item"
 				item: "botania:overgrowth_seed"
 			}]
-		},
+		}
 		{
-			x: -2.5d,
-			y: -6.0d,
-			shape: "pentagon",
-			dependencies: ["748485FEC1097A71"],
-			id: "17549F4A0B59DEA4",
+			x: -2.5d
+			y: -6.0d
+			shape: "pentagon"
+			dependencies: ["748485FEC1097A71"]
+			id: "17549F4A0B59DEA4"
 			tasks: [{
-				id: "551B10C952DD6686",
-				type: "item",
+				id: "551B10C952DD6686"
+				type: "item"
 				item: "mysticalagriculture:supremium_hoe"
-			}],
+			}]
 			rewards: [{
-				id: "73E3A399DF6BCA64",
-				type: "item",
+				id: "73E3A399DF6BCA64"
+				type: "item"
 				item: "botania:overgrowth_seed"
 			}]
-		},
+		}
 		{
-			x: -3.5d,
-			y: -6.0d,
-			shape: "pentagon",
-			dependencies: ["748485FEC1097A71"],
-			id: "6FFC449DE313A1BD",
+			x: -3.5d
+			y: -6.0d
+			shape: "pentagon"
+			dependencies: ["748485FEC1097A71"]
+			id: "6FFC449DE313A1BD"
 			tasks: [{
-				id: "3A91C6FD4E68A1DD",
-				type: "item",
+				id: "3A91C6FD4E68A1DD"
+				type: "item"
 				item: "botanypots:hopper_botany_pot"
-			}],
+			}]
 			rewards: [{
-				id: "4384FB4F5DDD70EB",
-				type: "item",
+				id: "4384FB4F5DDD70EB"
+				type: "item"
 				item: "botania:overgrowth_seed"
 			}]
-		},
+		}
 		{
-			x: -3.5d,
-			y: -5.0d,
+			x: -3.5d
+			y: -5.0d
 			description: [
-				"These are 3 quests given to receive a 100% chance of an Overgrowth Seed Each to craft magical soil.",
-				"",
+				"These are 3 quests given to receive a 100% chance of an Overgrowth Seed Each to craft magical soil."
+				""
 				"So don't go accidently spend them if you didn't get any from the random rewards."
-			],
-			id: "748485FEC1097A71",
+			]
+			id: "748485FEC1097A71"
 			tasks: [{
-				id: "6B6CD08FAF249745",
-				type: "checkmark",
+				id: "6B6CD08FAF249745"
+				type: "checkmark"
 				title: "Tools of Farming"
 			}]
 		}

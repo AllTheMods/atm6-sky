@@ -6,7 +6,8 @@ onEvent(`recipes`, e => {
     `importer`,
     `exporter`,
     `constructor`,
-    `destructor`
+    `destructor`,
+    `disk_manipulator`
   ]
   const tiersPowah = [
     `starter`,

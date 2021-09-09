@@ -166,6 +166,18 @@ onEvent(`recipes`, e => {
       })
     })
   }
+  
+  function caTierSingle(tier, corners, processor, cables, caType){
+    e.shaped(`cabletiers:${tier}_${caType}`, [
+      `a a`,
+      `bcb`,
+      `a a`
+    ], {
+      a: corners,
+      b: processor,
+      c: `${cables}${caType}`
+     })
+  }
 
   function smithing(result, base, addition) {
     e.recipes.minecraft.smithing({
@@ -686,6 +698,9 @@ onEvent(`recipes`, e => {
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
   caTier(`creative`, `#forge:ingots/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
+  caTierSingle(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `rsrequestify:`, `requester`)
+  caTierSingle(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`, `requester`)
+  caTierSingle(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`, `requester`)
 
   //NBT Resets
   resetNBT.forEach(reset => {

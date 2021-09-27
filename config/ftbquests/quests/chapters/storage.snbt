@@ -378,7 +378,7 @@
 			title: "Slave to the drawers",
 			x: 2.5d,
 			y: -3.5d,
-			description: ["This is more of an Extension to the Controller, the Controller has a limited range but the Slave extends it's range when placed at it's edges."],
+			description: ["Adds another place to interact with a Drawer Controller for when it's hard to reach otherwise."],
 			dependencies: ["0E463B85C9342584"],
 			id: "50DC868B62F703C0",
 			tasks: [{

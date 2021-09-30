@@ -78,72 +78,6 @@ onEvent(`recipes`, e => {
     `botanypots:red_botany_pot`,
     `botanypots:black_botany_pot`,
   ]
-  const colors = [
-    `white`,
-    `light_gray`,
-    `gray`,
-    `black`,
-    `red`,
-    `orange`,
-    `yellow`,
-    `lime`,
-    `green`,
-    `light_blue`,
-    `cyan`,
-    `blue`,
-    `purple`,
-    `magenta`,
-    `pink`,
-    `brown`
-  ]
-
-  function energize(ingredient, result, rCount, power) {
-    e.recipes.powah.energizing({
-      ingredients: ingredient,
-      energy: power,
-      result: {
-        item: result,
-        count: rCount
-      }
-    })
-  }
-
-  function pressure(inputs, result, rCount, pressure) {
-    e.recipes.pneumaticcraft.pressure_chamber({
-      inputs: inputs,
-      pressure: pressure,
-      results: [{
-        item: result,
-        count: rCount
-      }]
-    })
-  }
-
-  function modifyShaped(result, count, pattern, ingridients) {
-    e.remove({
-      output: result
-    })
-    e.shaped(Item.of(result, count),
-      pattern,
-      ingridients
-    )
-  }
-
-  function modifyShapeless(result, count, ingridients) {
-    e.remove({
-      output: result,
-      type: `minecraft:crafting_shapeless`
-    })
-    e.shapeless(Item.of(result, count), ingridients)
-  }
-
-  function modifySmelt(result, ingridients) {
-    e.remove({
-      output: result,
-      type: `minecraft:smelting`
-    })
-    e.smelting(result, ingridients)
-  }
 
   function salvage(item, results) {
     e.custom({
@@ -166,8 +100,8 @@ onEvent(`recipes`, e => {
       })
     })
   }
-  
-  function caTierSingle(tier, corners, processor, cables, caType){
+
+  function caTierSingle(tier, corners, processor, cables, caType) {
     e.shaped(`cabletiers:${tier}_${caType}`, [
       `a a`,
       `bcb`,
@@ -176,7 +110,7 @@ onEvent(`recipes`, e => {
       a: corners,
       b: processor,
       c: `${cables}${caType}`
-     })
+    })
   }
 
   function smithing(result, base, addition) {
@@ -221,74 +155,6 @@ onEvent(`recipes`, e => {
     e.shapeless(`quark:${type}_trapped_chest`, [`quark:${type}_chest`, `minecraft:tripwire_hook`])
   }
 
-  function mainfusion(output, item1, item2, item3, item4, item5, item6, item7, item8) {
-    e.recipes.mysticalagriculture.infusion({
-      input: {
-        item: 'mysticalagradditions:dragon_scale'
-      },
-      ingredients: [{
-        item: item1
-      },
-      {
-        item: item2
-      },
-      {
-        item: item3
-      },
-      {
-        item: item4
-      },
-      {
-        item: item5
-      },
-      {
-        item: item6
-      },
-      {
-        item: item7
-      },
-      {
-        item: item8
-      }
-      ],
-      result: {
-        item: output
-      }
-    })
-  }
-
-  //egg recipes
-  mainfusion(`resourcefulbees:aquamarine_bee_spawn_egg`, 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem', 'astralsorcery:aquamarine_sand_ore', 'astralsorcery:resonating_gem')
-  mainfusion(`resourcefulbees:quartz_bee_spawn_egg`, 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3', 'compressium:quartz_3')
-  mainfusion(`resourcefulbees:crimson_iron_bee_spawn_egg`, 'silentgear:golden_nether_banana', 'silentgear:golden_nether_banana', 'silentgear:golden_nether_banana', 'silentgear:golden_nether_banana', 'silentgear:crimson_iron_block', 'silentgear:crimson_iron_block', 'silentgear:crimson_steel_block', 'silentgear:crimson_steel_block')
-  mainfusion(`resourcefulbees:cobbee_bee_spawn_egg`, 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3', 'compressium:cobblestone_3')
-  mainfusion(`resourcefulbees:cropy_bee_spawn_egg`, 'thermal:phytogro', 'industrialforegoing:fertilizer', 'minecraft:bone_meal', 'mysticalagriculture:mystical_fertilizer', 'mysticalagriculture:nature_agglomeratio', 'mysticalagriculture:nature_agglomeratio', 'mysticalagriculture:nature_agglomeratio', 'mysticalagriculture:nature_agglomeratio')
-  mainfusion(`resourcefulbees:glowing_bee_spawn_egg`, 'torchmaster:megatorch', 'minecraft:shroomlight', 'torchmaster:megatorch', 'minecraft:shroomlight', 'torchmaster:megatorch', 'minecraft:shroomlight', 'torchmaster:megatorch', 'minecraft:shroomlight')
-  mainfusion(`resourcefulbees:gravely_bee_spawn_egg`, 'excompressum:compressed_flint', 'compressium:gravel_4', 'excompressum:compressed_flint', 'compressium:gravel_4', 'excompressum:compressed_flint', 'compressium:gravel_4', 'excompressum:compressed_flint', 'compressium:gravel_4')
-  mainfusion(`resourcefulbees:icey_bee_spawn_egg`, 'thermal:blizz_powder', 'powah:dry_ice', 'thermal:blizz_powder', 'powah:dry_ice', 'thermal:blizz_powder', 'powah:dry_ice', 'thermal:blizz_powder', 'powah:dry_ice')
-  mainfusion(`resourcefulbees:lava_bee_spawn_egg`, 'bloodmagic:lavasigil', 'bloodmagic:lavacrystal', 'bloodmagic:lavasigil', 'bloodmagic:lavacrystal', 'bloodmagic:lavasigil', 'bloodmagic:lavacrystal', 'bloodmagic:lavasigil', 'bloodmagic:lavacrystal')
-  mainfusion(`resourcefulbees:leafy_bee_spawn_egg`, 'compressium:dirt_4', 'compressium:dirt_4', 'compressium:dirt_4', 'compressium:dirt_4', 'minecraft:dried_kelp_block', 'quark:cactus_block', 'thermal:sugar_cane_block', 'thermal:bamboo_block')
-  mainfusion(`resourcefulbees:lumber_bee_spawn_egg`, 'minecraft:oak_log', 'minecraft:spruce_log', 'minecraft:birch_log', 'astralsorcery:crystal_axe', 'minecraft:jungle_log', 'minecraft:acacia_log', 'minecraft:dark_oak_log', 'astralsorcery:crystal_axe')
-  mainfusion(`resourcefulbees:mana_bee_spawn_egg`, 'botania:mana_pylon', 'botania:mana_pylon', 'botania:natura_pylon', 'botania:natura_pylon', 'botania:gaia_pylon', 'botania:gaia_pylon', 'mythicbotany:alfsteel_pylon', 'mythicbotany:alfsteel_pylon')
-  mainfusion(`resourcefulbees:mason_bee_spawn_egg`, 'ars_nouveau:mythical_clay', 'compressium:clay_4', 'ars_nouveau:mythical_clay', 'compressium:clay_4', 'ars_nouveau:mythical_clay', 'compressium:clay_4', 'ars_nouveau:mythical_clay', 'compressium:clay_4')
-  mainfusion(`resourcefulbees:mystical_bee_spawn_egg`, 'botania:jaded_amaranthus', 'botania:fertilizer', 'botania:jaded_amaranthus', 'botania:fertilizer', 'botania:jaded_amaranthus', 'botania:fertilizer', 'botania:jaded_amaranthus', 'botania:fertilizer')
-  mainfusion(`resourcefulbees:rgbee_bee_spawn_egg`, 'mysticalagriculture:dye_agglomeratio', 'compressium:lapis_3', 'mysticalagriculture:dye_agglomeratio', 'compressium:lapis_3', 'mysticalagriculture:dye_agglomeratio', 'compressium:lapis_3', 'mysticalagriculture:dye_agglomeratio', 'compressium:lapis_3')
-  mainfusion(`resourcefulbees:sandy_bee_spawn_egg`, 'compressium:sand_4', 'compressium:redsand_4', 'compressium:sand_4', 'compressium:redsand_4', 'compressium:sand_4', 'compressium:redsand_4', 'compressium:sand_4', 'compressium:redsand_4')
-  mainfusion(`resourcefulbees:water_bee_spawn_egg`, 'botania:rune_water', 'botania:rune_water', 'botania:rune_water', 'botania:rune_water', 'botania:rune_water', 'botania:rune_water', 'botania:rune_water', 'botania:rune_water')
-  mainfusion(`resourcefulbees:beeper_bee_spawn_egg`, 'thermal:gunpowder_block', 'minecraft:tnt', 'thermal:gunpowder_block', 'minecraft:tnt', 'thermal:gunpowder_block', 'minecraft:tnt', 'thermal:gunpowder_block', 'minecraft:tnt')
-  mainfusion(`resourcefulbees:ender_bee_spawn_egg`, 'thermal:enderium_block', 'thermal:enderium_block', 'thermal:enderium_block', 'naturesaura:chorus_generator', 'thermal:enderium_block', 'thermal:enderium_block', 'thermal:enderium_block', 'naturesaura:chorus_generator')
-  mainfusion(`resourcefulbees:guardian_bee_spawn_egg`, 'exnihilosequentia:doll_guardian', 'xreliquary:guardian_spike', 'exnihilosequentia:doll_guardian', 'xreliquary:guardian_spike', 'exnihilosequentia:doll_guardian', 'xreliquary:guardian_spike', 'exnihilosequentia:doll_guardian', 'xreliquary:guardian_spike')
-  mainfusion(`resourcefulbees:magma_bee_spawn_egg`, 'tconstruct:magma_bucket', 'cyclic:magma_bucket', 'tconstruct:magma_bucket', 'cyclic:magma_bucket', 'tconstruct:magma_bucket', 'cyclic:magma_bucket', 'tconstruct:magma_bucket', 'cyclic:magma_bucket')
-  mainfusion(`resourcefulbees:slimy_bee_spawn_egg`, 'industrialforegoing:pink_slime_ingot', 'xreliquary:slime_pearl', 'industrialforegoing:pink_slime_ingot', 'xreliquary:slime_pearl', 'industrialforegoing:pink_slime_ingot', 'xreliquary:slime_pearl', 'industrialforegoing:pink_slime_ingot', 'xreliquary:slime_pearl')
-  mainfusion(`resourcefulbees:spider_bee_spawn_egg`, 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth', 'minecraft:fermented_spider_eye', 'silentgear:fine_silk_cloth')
-  mainfusion(`resourcefulbees:spooky_bee_spawn_egg`, 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone', 'mana-and-artifice:bone_ash', 'xreliquary:rib_bone')
-  mainfusion(`resourcefulbees:zombee_bee_spawn_egg`, 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head', 'eidolon:zombie_heart', 'minecraft:zombie_head')
-  mainfusion(`resourcefulbees:kobee_beef_bee_spawn_egg`, 'minecraft:porkchop', 'minecraft:beef', 'minecraft:porkchop', 'minecraft:beef', 'minecraft:porkchop', 'minecraft:beef', 'minecraft:porkchop', 'minecraft:beef')
-  mainfusion(`resourcefulbees:cobalt_bee_spawn_egg`, 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_block')
-  mainfusion(`resourcefulbees:salt_baee_bee_spawn_egg`, 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt', 'mekanism:block_salt')
-  mainfusion(`resourcefulbees:stan_bee_spawn_egg`, 'minecraft:andesite', 'minecraft:diorite', 'minecraft:granite', 'minecraft:basalt', 'minecraft:andesite', 'minecraft:diorite', 'minecraft:granite', 'minecraft:basalt')
-  mainfusion(`resourcefulbees:dirty_bee_spawn_egg`, 'minecraft:dirt', 'minecraft:mycelium', 'minecraft:coarse_dirt', 'minecraft:podzol', 'mob_grinding_utils:delightful_dirt', 'mob_grinding_utils:dreadful_dirt', 'engineersdecor:dense_grit_dirt_block', 'minecraft:grass')
-
   //Make bio fuel use tags instead of invidual items
   e.remove({
     output: `mekanism:bio_fuel`
@@ -297,22 +163,6 @@ onEvent(`recipes`, e => {
   bioFuels.forEach(bioFuel => {
     mekCrush(Item.of(`mekanism:bio_fuel`, bioFuel), `#misctags:biofuel${bioFuel}`)
   })
-
-  //Powah recipes
-  energize([{
-    tag: `forge:storage_blocks/iron`
-  }, {
-    tag: `forge:storage_blocks/gold`
-  }], `powah:energized_steel_block`, 2, "90000")
-  energize([{
-    item: `botania:blaze_block`
-  }], `powah:blazing_crystal_block`, 1, "810000")
-  energize([{
-    tag: `forge:storage_blocks/diamond`
-  }], `powah:niotic_crystal_block`, 1, "2700000")
-  energize([{
-    tag: `forge:storage_blocks/emerald`
-  }], `powah:spirited_crystal_block`, 1, "9000000")
 
   //Misc recipes
   e.shaped(`minecraft:elytra`, [
@@ -327,7 +177,6 @@ onEvent(`recipes`, e => {
 
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`)
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`)
-  e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
 
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
     `AA`,
@@ -533,7 +382,7 @@ onEvent(`recipes`, e => {
 
   e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1)
   e.smelting(Item.of(`minecraft:glass`), `#forge:sand`).xp(0.1)
-  e.smelting(Item.of(`alltheores:platinum_ingot`), `create:crushed_platinum_ore`).xp(0.1) 
+  e.smelting(Item.of(`alltheores:platinum_ingot`), `create:crushed_platinum_ore`).xp(0.1)
 
   e.shapeless(Item.of(`minecraft:clay_ball`, 4), `#forge:storage_blocks/clay`)
   e.shapeless(Item.of(`minecraft:quartz`, 4), `#forge:storage_blocks/quartz`)
@@ -683,7 +532,7 @@ onEvent(`recipes`, e => {
     C: `extrastorage:diamond_crafter`
   })
 
-  modifyShaped(`creativecrafter:creative_crafter`, 1, [
+  modifyShaped(e, `creativecrafter:creative_crafter`, 1, [
     `BUB`,
     `PCP`,
     `BUB`
@@ -738,7 +587,7 @@ onEvent(`recipes`, e => {
   })
 
   //Mining Gadgets
-  modifyShaped(`mininggadgets:upgrade_empty`, 1, [
+  modifyShaped(e, `mininggadgets:upgrade_empty`, 1, [
     `RAL`,
     `DGD`,
     `LAR`
@@ -751,7 +600,7 @@ onEvent(`recipes`, e => {
   })
 
   //Mystical Agriculture
-  modifyShaped(`mysticalagriculture:unattuned_augment`, 1, [
+  modifyShaped(e, `mysticalagriculture:unattuned_augment`, 1, [
     `PMP`,
     `AMA`,
     `PMP`
@@ -762,7 +611,10 @@ onEvent(`recipes`, e => {
   })
 
   //Mekanism
-  modifyShaped(`mekanism:digital_miner`, 1, [
+  e.shaped('kubejs:yellow_cake_uranium_block', ['UUU', 'UUU', 'UUU'], {
+    U: 'mekanism:yellow_cake_uranium'
+  }).id(`kubejs:mekanism/yellow_cake_uranium_block`)
+  modifyShaped(e, `mekanism:digital_miner`, 1, [
     `AUA`,
     `LRL`,
     `TST`
@@ -774,7 +626,7 @@ onEvent(`recipes`, e => {
     S: `mekanism:steel_casing`,
     U: `#forge:ingots/unobtainium`
   })
-  modifyShaped(`mekanism:atomic_disassembler`, 1, [
+  modifyShaped(e, `mekanism:atomic_disassembler`, 1, [
     `RER`,
     `RUR`,
     ` V `
@@ -784,7 +636,7 @@ onEvent(`recipes`, e => {
     U: `#forge:circuits/ultimate`,
     V: `#forge:ingots/vibranium`
   })
-  modifyShaped(`mekanismgenerators:wind_generator`, 1, [
+  modifyShaped(e, `mekanismgenerators:wind_generator`, 1, [
     ` O `,
     `OCO`,
     `EBE`
@@ -949,7 +801,7 @@ onEvent(`recipes`, e => {
     N: `#forge:nuggets/iron`,
     I: `#forge:ingots/iron`
   })
-  modifyShaped(`entangled:block`, 1, [
+  modifyShaped(e, `entangled:block`, 1, [
     `UEU`,
     `ECE`,
     `UEU`
@@ -958,7 +810,7 @@ onEvent(`recipes`, e => {
     E: `#forge:ender_pearls`,
     C: `minecraft:ender_chest`
   })
-  modifyShaped(`entangled:item`, 1, [
+  modifyShaped(e, `entangled:item`, 1, [
     ` EC`,
     ` UE`,
     `U  `
@@ -967,69 +819,69 @@ onEvent(`recipes`, e => {
     E: `#forge:ender_pearls`,
     C: `minecraft:ender_chest`
   })
-  modifyShaped('forbidden_arcanus:eternal_stella', 1, [
+  modifyShaped(e, 'forbidden_arcanus:eternal_stella', 1, [
     'DBC',
     'BAB',
     'CBD'
-], {
+  ], {
     A: 'forbidden_arcanus:stellarite_piece',
     B: 'forbidden_arcanus:xpetrified_orb',
     C: 'allthemodium:allthemodium_ingot',
     D: 'allthemodium:vibranium_ingot'
-})
+  })
   //Mekasuit
   e.shaped(Item.of('mekanism:mekasuit_helmet', {
     HideFlags: 2
-}), [
+  }), [
     'HCH',
     'HUH',
     'PIP'
-], {
+  ], {
     H: 'mekanism:hdpe_sheet',
     C: 'mekanism:ultimate_control_circuit',
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_helmet'
-}).id(`kubejs:mekasuit_helmet`)
-e.shaped(Item.of('mekanism:mekasuit_bodyarmor', {
+  }).id(`kubejs:mekasuit_helmet`)
+  e.shaped(Item.of('mekanism:mekasuit_bodyarmor', {
     HideFlags: 2
-}), [
+  }), [
     'HCH',
     'HUH',
     'PIP'
-], {
+  ], {
     H: 'mekanism:hdpe_sheet',
     C: 'mekanism:ultimate_control_circuit',
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_chestplate'
-}).id(`kubejs:mekasuit_bodyarmor`)
-e.shaped(Item.of('mekanism:mekasuit_pants', {
+  }).id(`kubejs:mekasuit_bodyarmor`)
+  e.shaped(Item.of('mekanism:mekasuit_pants', {
     HideFlags: 2
-}), [
+  }), [
     'HCH',
     'HUH',
     'PIP'
-], {
+  ], {
     H: 'mekanism:hdpe_sheet',
     C: 'mekanism:ultimate_control_circuit',
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_leggings'
-}).id(`kubejs:mekasuit_pants`)
-e.shaped(Item.of('mekanism:mekasuit_boots', {
+  }).id(`kubejs:mekasuit_pants`)
+  e.shaped(Item.of('mekanism:mekasuit_boots', {
     HideFlags: 2
-}), [
+  }), [
     'HCH',
     'HUH',
     'PIP'
-], {
+  ], {
     H: 'mekanism:hdpe_sheet',
     C: 'mekanism:ultimate_control_circuit',
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_boots'
-}).id(`kubejs:mekasuit_boots`)
+  }).id(`kubejs:mekasuit_boots`)
 
   //Extra Disks
   makeDisk(`refinedstorage:4096k_fluid`, `refinedstorage:1024k_fluid`, `advanced`, `#forge:nuggets/allthemodium`, `minecraft:bucket`)
@@ -1061,7 +913,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
   buildQuarkChest(`purpur`, `minecraft:purpur_block`)
 
   //RFTools
-  modifyShaped(`rftoolsbuilder:builder`, 1, [
+  modifyShaped(e, `rftoolsbuilder:builder`, 1, [
     `aea`,
     `rmr`,
     `ara`
@@ -1097,7 +949,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
   e.recipes.bloodmagic.altar(`integrateddynamics:menril_sapling`, `minecraft:spruce_sapling`).upgradeLevel(2)
 
   //Modified recipes
-  modifyShaped(`pipez:universal_pipe`, 8, [
+  modifyShaped(e, `pipez:universal_pipe`, 8, [
     `123`,
     `4A4`,
     `321`
@@ -1108,13 +960,13 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     4: `pipez:gas_pipe`,
     A: `#forge:ingots/iron`
   })
-  modifyShaped(`immersiveengineering:sawdust`, 27, [
+  modifyShaped(e, `immersiveengineering:sawdust`, 27, [
     `SSS`
   ], {
     S: `thermal:sawdust_block`
   })
-  modifyShapeless(`botania:lexicon`, 1, [`#minecraft:flowers`, `minecraft:book`])
-  modifyShaped(`minecraft:honeycomb_block`, 1, [
+  modifyShapeless(e, `botania:lexicon`, 1, [`#minecraft:flowers`, `minecraft:book`])
+  modifyShaped(e, `minecraft:honeycomb_block`, 1, [
     `CCC`,
     `CCC`,
     `CCC`
@@ -1122,14 +974,14 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     C: `minecraft:honeycomb`
   })
   e.shapeless(Item.of(`minecraft:honeycomb`, 9), `minecraft:honeycomb_block`)
-  modifyShaped(`solarflux:mirror`, 3, [
+  modifyShaped(e, `solarflux:mirror`, 3, [
     `GGG`,
     `III`
   ], {
     G: `#forge:glass`,
     I: `#forge:ingots`
   })
-  modifyShaped(`solarflux:sp_1`, 1, [
+  modifyShaped(e, `solarflux:sp_1`, 1, [
     `MMM`,
     `ILI`,
     `III`
@@ -1138,14 +990,14 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     L: `#forge:storage_blocks/lapis`,
     I: `#forge:ingots/iron`
   })
-  modifyShaped(`minecraft:sticky_piston`, 1, [
+  modifyShaped(e, `minecraft:sticky_piston`, 1, [
     `B`,
     `P`
   ], {
     B: `#forge:slimeballs`,
     P: `minecraft:piston`
   })
-  modifyShaped(`mekanismgenerators:solar_panel`, 1, [
+  modifyShaped(e, `mekanismgenerators:solar_panel`, 1, [
     `PPP`,
     `RIR`,
     `OOO`
@@ -1155,7 +1007,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `mekanism:alloy_infused`,
     O: `#forge:ingots/osmium`
   })
-  modifyShaped(`engineerstools:crushing_hammer`, 1, [
+  modifyShaped(e, `engineerstools:crushing_hammer`, 1, [
     `RI `,
     `BS `,
     `  S`
@@ -1165,7 +1017,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     B: `#forge:storage_blocks/iron`,
     S: `#forge:rods/wooden`
   })
-  modifyShaped(`forbidden_arcanus:candle_lamp`, 1, [
+  modifyShaped(e, `forbidden_arcanus:candle_lamp`, 1, [
     `NDN`,
     `GAG`,
     `NDN`
@@ -1175,7 +1027,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     D: `forbidden_arcanus:darkstone`,
     G: `forbidden_arcanus:arcane_gold_ingot`
   })
-  modifyShaped(`torchmaster:megatorch`, 1, [
+  modifyShaped(e, `torchmaster:megatorch`, 1, [
     `TTT`,
     `GLG`,
     `DLD`
@@ -1185,7 +1037,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     D: `#forge:storage_blocks/diamond`,
     L: `#minecraft:logs`
   })
-  modifyShaped(`immersiveengineering:cloche`, 1, [
+  modifyShaped(e, `immersiveengineering:cloche`, 1, [
     `GEG`,
     `G G`,
     `TRT`
@@ -1195,12 +1047,12 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     T: `#forge:treated_wood`,
     R: `mekanism:resistive_heater`
   })
-  modifyShapeless(`appliedenergistics2:cable_anchor`, 3, [ingots, `#appliedenergistics2:knife`])
-  modifyShapeless(`appliedenergistics2:fluix_covered_cable`, 1, [`#minecraft:wool`, `appliedenergistics2:fluix_glass_cable`])
-  modifyShapeless(`appliedenergistics2:crafting_card`, 1, [`minecraft:crafting_table`, `appliedenergistics2:basic_card`])
-  modifyShapeless(`appliedenergistics2:fuzzy_card`, 1, [`#minecraft:wool`, `appliedenergistics2:advanced_card`])
-  modifyShapeless(`appliedenergistics2:crafting_terminal`, 1, [`appliedenergistics2:terminal`, `minecraft:crafting_table`, `appliedenergistics2:calculation_processor`])
-  modifyShaped(`appliedenergistics2:quartz_glass`, 4, [
+  modifyShapeless(e, `appliedenergistics2:cable_anchor`, 3, [ingots, `#appliedenergistics2:knife`])
+  modifyShapeless(e, `appliedenergistics2:fluix_covered_cable`, 1, [`#minecraft:wool`, `appliedenergistics2:fluix_glass_cable`])
+  modifyShapeless(e, `appliedenergistics2:crafting_card`, 1, [`minecraft:crafting_table`, `appliedenergistics2:basic_card`])
+  modifyShapeless(e, `appliedenergistics2:fuzzy_card`, 1, [`#minecraft:wool`, `appliedenergistics2:advanced_card`])
+  modifyShapeless(e, `appliedenergistics2:crafting_terminal`, 1, [`appliedenergistics2:terminal`, `minecraft:crafting_table`, `appliedenergistics2:calculation_processor`])
+  modifyShaped(e, `appliedenergistics2:quartz_glass`, 4, [
     `GDG`,
     `DGD`,
     `GDG`
@@ -1208,7 +1060,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     G: `#appliedenergistics2:dusts/quartz`,
     D: `#forge:glass`
   })
-  modifyShaped(`appliedenergistics2:quartz_fiber`, 3, [
+  modifyShaped(e, `appliedenergistics2:quartz_fiber`, 3, [
     `DDD`,
     `GGG`,
     `DDD`
@@ -1216,7 +1068,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     G: `#appliedenergistics2:dusts/quartz`,
     D: `#forge:glass`
   })
-  modifyShaped(`appliedenergistics2:chest`, 1, [
+  modifyShaped(e, `appliedenergistics2:chest`, 1, [
     `GTG`,
     `C C`,
     `IFI`
@@ -1227,7 +1079,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     F: `#appliedenergistics2:crystals/fluix`
   })
-  modifyShaped(`appliedenergistics2:condenser`, 1, [
+  modifyShaped(e, `appliedenergistics2:condenser`, 1, [
     `IGI`,
     `GDG`,
     `IGI`
@@ -1236,7 +1088,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     D: `#appliedenergistics2:dusts/fluix`,
   })
-  modifyShaped(`appliedenergistics2:spatial_io_port`, 1, [
+  modifyShaped(e, `appliedenergistics2:spatial_io_port`, 1, [
     `GGG`,
     `CPC`,
     `IEI`
@@ -1247,7 +1099,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     E: `appliedenergistics2:engineering_processor`
   })
-  modifyShaped(`appliedenergistics2:io_port`, 1, [
+  modifyShaped(e, `appliedenergistics2:io_port`, 1, [
     `GGG`,
     `DCD`,
     `IPI`
@@ -1258,7 +1110,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     D: `appliedenergistics2:drive`
   })
-  modifyShaped(`appliedenergistics2:interface`, 1, [
+  modifyShaped(e, `appliedenergistics2:interface`, 1, [
     `IGI`,
     `A F`,
     `IGI`
@@ -1268,7 +1120,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     F: `appliedenergistics2:formation_core`,
     I: `#forge:ingots/iron`
   })
-  modifyShaped(`appliedenergistics2:molecular_assembler`, 1, [
+  modifyShaped(e, `appliedenergistics2:molecular_assembler`, 1, [
     `IGI`,
     `ACF`,
     `IGI`
@@ -1279,7 +1131,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     C: `minecraft:crafting_table`
   })
-  modifyShaped(`appliedenergistics2:cell_workbench`, 1, [
+  modifyShaped(e, `appliedenergistics2:cell_workbench`, 1, [
     `WEW`,
     `ICI`,
     `III`
@@ -1289,7 +1141,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     I: `#forge:ingots/iron`,
     C: `#forge:chests/wooden`
   })
-  modifyShaped(`minecraft:daylight_detector`, 1, [
+  modifyShaped(e, `minecraft:daylight_detector`, 1, [
     `GGG`,
     `QQQ`,
     `SSS`
@@ -1298,7 +1150,7 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     Q: `#forge:gems/quartz`,
     S: `#minecraft:wooden_slabs`
   })
-  modifyShaped(`resourcefulbees:centrifuge_controller`, 1, [
+  modifyShaped(e, `resourcefulbees:centrifuge_controller`, 1, [
     `ICI`,
     `BAB`,
     `IRI`
@@ -1309,78 +1161,78 @@ e.shaped(Item.of('mekanism:mekasuit_boots', {
     A: `minecraft:comparator`,
     R: `#forge:storage_blocks/redstone`
   })
-//ET
-modifyShaped('envirotech:erodium_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:erodium_crystal',
-  M: 'envirotech:litherite_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'minecraft:netherite_block'
-})
-modifyShaped('envirotech:kyronite_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:kyronite_crystal',
-  M: 'envirotech:erodium_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:allthemodium_block'
-})
-modifyShaped('envirotech:pladium_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:pladium_crystal',
-  M: 'envirotech:kyronite_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:vibranium_block'
-})
-modifyShaped('envirotech:ionite_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:ionite_crystal',
-  M: 'envirotech:pladium_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:unobtainium_block'
-})
-modifyShaped('envirotech:aethium_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:aethium_crystal',
-  M: 'envirotech:ionite_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:vibranium_allthemodium_alloy_block'
-})
-modifyShaped('envirotech:nanorite_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:nanorite_crystal',
-  M: 'envirotech:aethium_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:unobtainium_allthemodium_alloy_block'
-})
-modifyShaped('envirotech:xerothium_void_miner_ccu', 1, [
-  'CBC',
-  'CMC',
-  'CLC'
-], {
-  C: 'envirocore:xerothium_crystal',
-  M: 'envirotech:nanorite_void_miner_ccu',
-  L: 'envirocore:laser_core',
-  B: 'allthemodium:unobtainium_vibranium_alloy_block'
-})
-  modifySmelt(`refinedstorage:silicon`, [`#appliedenergistics2:crystals/quartz`, `#appliedenergistics2:purified_crystals`])
+  //ET
+  modifyShaped(e, 'envirotech:erodium_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:erodium_crystal',
+    M: 'envirotech:litherite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'minecraft:netherite_block'
+  })
+  modifyShaped(e, 'envirotech:kyronite_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:kyronite_crystal',
+    M: 'envirotech:erodium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:allthemodium_block'
+  })
+  modifyShaped(e, 'envirotech:pladium_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:pladium_crystal',
+    M: 'envirotech:kyronite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:vibranium_block'
+  })
+  modifyShaped(e, 'envirotech:ionite_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:ionite_crystal',
+    M: 'envirotech:pladium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_block'
+  })
+  modifyShaped(e, 'envirotech:aethium_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:aethium_crystal',
+    M: 'envirotech:ionite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:vibranium_allthemodium_alloy_block'
+  })
+  modifyShaped(e, 'envirotech:nanorite_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:nanorite_crystal',
+    M: 'envirotech:aethium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_allthemodium_alloy_block'
+  })
+  modifyShaped(e, 'envirotech:xerothium_void_miner_ccu', 1, [
+    'CBC',
+    'CMC',
+    'CLC'
+  ], {
+    C: 'envirocore:xerothium_crystal',
+    M: 'envirotech:nanorite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_vibranium_alloy_block'
+  })
+  modifySmelt(e, `refinedstorage:silicon`, [`#appliedenergistics2:crystals/quartz`, `#appliedenergistics2:purified_crystals`])
   e.replaceInput(`#appliedenergistics2:silicon`, `refinedstorage:silicon`)
   e.remove({
     id: `appliedenergistics2:inscriber/silicon_print`
@@ -1573,4 +1425,6 @@ modifyShaped('envirotech:xerothium_void_miner_ccu', 1, [
     F: `forbidden_arcanus:dark_nether_star`
   })
   e.replaceInput(`minecraft:glass_pane`, `#forge:glass_panes`)
+  e.replaceInput(`allthecompressed:nether_star_block`, `kubejs:nether_star_block`)
+  e.replaceOutput(`allthecompressed:nether_star_block`, `kubejs:nether_star_block`)
 })

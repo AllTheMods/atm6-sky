@@ -148,7 +148,9 @@ onEvent(`jei.hide.items`, e => {
     `platforms:flat`,
     `platforms:frame`,
 
-    /engineerstools:.+_grit/
+    /engineerstools:.+_grit/,
+
+    `allthecompressed:nether_star_block`
   ])
 
   colors.forEach(color => {
@@ -240,4 +242,5 @@ onEvent(`item.tooltip`, e => {
   e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make.`])
   e.add(`allthemodium:teleport_pad`, Text.of(`The Mining dimension is disabled.`).red())
   e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
+  e.add(`atmadditions:atm_star_shard`, `Check JEI Info page for more info`)
 })

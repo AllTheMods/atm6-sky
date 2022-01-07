@@ -1,5 +1,5 @@
 onEvent(`recipes`, e => {
-  function transmutate(block, output, starlight){
+  function transmutate(block, output, starlight) {
     e.custom({
       type: `astralsorcery:block_transmutation`,
       input: [{
@@ -12,7 +12,7 @@ onEvent(`recipes`, e => {
     })
   }
 
-  function altar(tier, duration, starlight, pattern, items, result){
+  function altar(tier, duration, starlight, pattern, items, result) {
     e.custom({
       type: `astralsorcery:altar`,
       altar_type: tier,

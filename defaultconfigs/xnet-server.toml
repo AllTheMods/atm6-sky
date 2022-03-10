@@ -5,7 +5,7 @@
 	unsidedBlocks = ["minecraft:chest", "minecraft:trapped_chest", "rftools:modular_storage", "rftools:storage_scanner", "rftools:pearl_injector"]
 	#Maximum RF the controller can store
 	#Range: 1 ~ 1000000000
-	controllerMaxRF = 10000000
+	controllerMaxRF = 100000
 	#Maximum RF the controller can receive per tick
 	#Range: 1 ~ 1000000000
 	controllerRfPerTick = 1000000

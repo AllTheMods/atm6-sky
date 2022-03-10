@@ -1,6 +1,6 @@
 events.listen('recipes', e => {
   //Ice and Fire Lillies
-  function dragonFlowers(dragons){
+  function dragonFlowers(dragons) {
     dragons.forEach(dragon => {
       e.shaped(Item.of(`iceandfire:${dragon.equals('ice') ? 'frost' : dragon}_lily`, 4), [
         'ACA',
@@ -14,19 +14,7 @@ events.listen('recipes', e => {
       })
     })
   }
-  dragonFlowers([`fire`,`lightning`,`ice`])
-  
-  //Pipez
-  e.shaped('pipez:infinity_upgrade', [
-    'ABA',
-    'BCB',
-    'ABA'
-  ], {
-    A: 'allthemodium:unobtainium_ingot',
-    B: 'compressium:redstone_4',
-    C: 'pipez:ultimate_upgrade'
-  })
-
+  dragonFlowers([`fire`, `lightning`, `ice`])
   //Minecraft
   e.shaped('minecraft:dragon_egg', [
     'SSS',
@@ -36,7 +24,7 @@ events.listen('recipes', e => {
     S: 'mysticalagradditions:dragon_egg_chunk',
     D: 'atmadditions:dragon_soul'
   })
-  
+
   //Tombstone 
   e.shaped('tombstone:soul_receptacle', [
     'ABA',

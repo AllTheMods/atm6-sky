@@ -21,7 +21,6 @@ events.listen('block.tags', e => {
 
 const whitelistVA = [
   //Flowers
-  'biomesoplenty:flesh',
   'botania:blaze_block',
   'minecraft:magma_block',
   'minecraft:clay',
@@ -103,9 +102,6 @@ const whitelistVA = [
 
   'botania:mana_glass',
   'botania:elf_glass',
-
-  'byg:nylium_soul_sand',
-  'byg:nylium_soul_soil',
 
   '#forge:bookshelves',
   '#forge:cobblestone',

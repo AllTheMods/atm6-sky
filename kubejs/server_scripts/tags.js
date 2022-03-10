@@ -115,7 +115,6 @@ onEvent(`block.tags`, e => {
   //No Moving
   e.add('misctags:no_moving', [
     '#minecraft:wither_immune',
-    'potionsmaster:cauldron',
     'appliedenergistics2:cable_bus',
     'cookingforblockheads:fridge',
     /^refinedstorage:/,
@@ -123,24 +122,24 @@ onEvent(`block.tags`, e => {
     /^waystones:/,
     /^compactmachines:/,
     /^appliedenergistics2:/,
-])
-e.add('create:brittle', '#misctags:no_moving')
+  ])
+  e.add('create:brittle', '#misctags:no_moving')
   //Removal
   e.removeAll(`minecraft:enderman_holdable`)
 })
 
 //Entity tags
 onEvent('entity_type.tags', e => {
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [    
-      /resourcefulbees:.+_bee/,
-      /iceandfire:.+_dragon/,
-      'iceandfire:dragon_multipart',
-      'iceandfire:dragon_egg',])
-  e.add('mob_grinding_utils:noswab', [    
-      /resourcefulbees:.+_bee/,
-      /iceandfire:.+_dragon/,
-      'iceandfire:dragon_multipart',
-      'iceandfire:dragon_egg',])
+  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [
+    /resourcefulbees:.+_bee/,
+    /iceandfire:.+_dragon/,
+    'iceandfire:dragon_multipart',
+    'iceandfire:dragon_egg',])
+  e.add('mob_grinding_utils:noswab', [
+    /resourcefulbees:.+_bee/,
+    /iceandfire:.+_dragon/,
+    'iceandfire:dragon_multipart',
+    'iceandfire:dragon_egg',])
 })
 
 //Fluid tags go here

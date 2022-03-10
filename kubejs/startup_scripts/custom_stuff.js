@@ -36,4 +36,5 @@ events.listen('block.registry', e => {
 	e.create('aquamarine_block').displayName('Aquamarine Block').material('rock').hardness(2).lightLevel(1)
 	e.create('fluorite_block').displayName('Fluorite Block').material('ice').hardness(1.2)
 	e.create('lithium_block').displayName('Lithium Block').material('iron').hardness(1)
+	e.create('yellow_cake_uranium_block').displayName('§eYellow Cake Uranium Block').material('sand')
 })

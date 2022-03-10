@@ -274,7 +274,7 @@
 		"Ghost Attack Strength" = 3.0
 		#One out of this number chance per chunk to generate a hydra cave.
 		#Range: 1 ~ 10000
-		"Hydra Caves Gen Chance" = 80
+		"Hydra Caves Gen Chance" = 20
 		#True if hippocampi are allowed to spawn
 		"Spawn Hippocampus" = true
 		#1 out of this number chance per chunk for generation

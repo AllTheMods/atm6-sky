@@ -1,20 +1,11 @@
 {
-	id: "0D7D94B9D06A479A",
-	order_index: 6,
-	title: "Farm Tier 3",
-	loot_size: 1,
+	id: "0D7D94B9D06A479A"
+	order_index: 6
+	title: "Farm Tier 3"
+	loot_size: 1
 	rewards: [
-		{
-			item: "mysticalagriculture:tertium_farmland",
-			weight: 100
-		},
-		{
-			item: "mysticalagriculture:imperium_farmland",
-			weight: 75
-		},
-		{
-			item: "mysticalagriculture:supremium_farmland",
-			weight: 50
-		}
+		{ item: "mysticalagriculture:tertium_farmland", weight: 100 }
+		{ item: "mysticalagriculture:imperium_farmland", weight: 75 }
+		{ item: "mysticalagriculture:supremium_farmland", weight: 50 }
 	]
 }

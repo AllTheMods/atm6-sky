@@ -1,46 +1,26 @@
 {
-	id: "4815777E0F22B232",
-	order_index: 2,
-	title: "Average Reward",
-	loot_size: 1,
+	id: "4815777E0F22B232"
+	order_index: 2
+	title: "Average Reward"
+	loot_size: 1
 	rewards: [
+		{ item: "minecraft:bucket", count: 4, weight: 4 }
+		{ item: "minecraft:clay", count: 64, weight: 4 }
+		{ item: "minecraft:glass", count: 64, weight: 4 }
+		{ item: "minecraft:scute", count: 32, weight: 3 }
 		{
-			item: "minecraft:bucket",
-			count: 4,
-			weight: 4
-		},
-		{
-			item: "minecraft:clay",
-			count: 64,
-			weight: 4
-		},
-		{
-			item: "minecraft:glass",
-			count: 64,
-			weight: 4
-		},
-		{
-			item: "minecraft:scute",
-			count: 32,
-			weight: 3
-		},
-		{
+			title: "Silk Touch"
 			item: {
-				id: "minecraft:enchanted_book",
-				Count: 1b,
+				id: "minecraft:enchanted_book"
+				Count: 1b
 				tag: {
 					StoredEnchantments: [{
-						lvl: 1s,
+						lvl: 1s
 						id: "minecraft:silk_touch"
 					}]
 				}
-			},
-			title: "Silk Touch"
-		},
-		{
-			item: "minecraft:wither_rose",
-			count: 4,
-			weight: 2
+			}
 		}
+		{ item: "minecraft:wither_rose", count: 4, weight: 2 }
 	]
 }

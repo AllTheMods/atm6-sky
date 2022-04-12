@@ -1,744 +1,745 @@
 {
-	id: "4B1697B3A6656D05",
-	group: "",
-	order_index: 7,
-	filename: "were_in_the_endgame_now",
-	title: "Were in the Endgame now...",
-	icon: "mysticalagradditions:creative_essence",
-	default_quest_shape: "",
+	id: "4B1697B3A6656D05"
+	group: ""
+	order_index: 7
+	filename: "were_in_the_endgame_now"
+	title: "Were in the Endgame now..."
+	icon: "mysticalagradditions:creative_essence"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "AlltheArmor",
-			x: -2.0d,
-			y: -5.5d,
+			title: "AlltheArmor"
+			x: -2.0d
+			y: -5.5d
 			description: [
-				"This is the start on the best armor set in the game... well other then the MekaSuit.",
-				"",
+				"This is the start on the best armor set in the game... well other then the MekaSuit."
+				""
 				"Unlike the MekaSuit, the set provides abilities, such as No fall damage from just the boots"
-			],
-			dependencies: ["2F861690BA3E37D8"],
-			id: "0A2E8FA72A72ED0D",
+			]
+			dependencies: ["2F861690BA3E37D8"]
+			id: "0A2E8FA72A72ED0D"
 			tasks: [
 				{
-					id: "720AFFB7B6818796",
-					type: "item",
+					id: "720AFFB7B6818796"
+					type: "item"
 					item: {
-						id: "allthemodium:allthemodium_boots",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "0BC8714A69BA9AA3",
-					type: "item",
-					item: {
-						id: "allthemodium:allthemodium_leggings",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "383765DEE21A02EB",
-					type: "item",
-					item: {
-						id: "allthemodium:allthemodium_chestplate",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "10BE61C3989EB9FE",
-					type: "item",
-					item: {
-						id: "allthemodium:allthemodium_helmet",
-						Count: 1b,
+						id: "allthemodium:allthemodium_boots"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "0BC8714A69BA9AA3"
+					type: "item"
+					item: {
+						id: "allthemodium:allthemodium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "383765DEE21A02EB"
+					type: "item"
+					item: {
+						id: "allthemodium:allthemodium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "10BE61C3989EB9FE"
+					type: "item"
+					item: {
+						id: "allthemodium:allthemodium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "64409D3FB31E1577",
-				type: "item",
+				id: "64409D3FB31E1577"
+				type: "item"
 				item: {
-					id: "mysticalagriculture:supremium_watering_can",
-					Count: 1b,
+					id: "mysticalagriculture:supremium_watering_can"
+					Count: 1b
 					tag: {
-						Water: 0b,
+						Water: 0b
 						Active: 0b
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "A Vibrant Green Armor",
-			x: 0.0d,
-			y: -5.5d,
+			title: "A Vibrant Green Armor"
+			x: 0.0d
+			y: -5.5d
 			dependencies: [
-				"0A2E8FA72A72ED0D",
+				"0A2E8FA72A72ED0D"
 				"3EE39036AC4556AC"
-			],
-			id: "6B41A07DE0A83C00",
+			]
+			id: "6B41A07DE0A83C00"
 			tasks: [
 				{
-					id: "01B2A07006E7507B",
-					type: "item",
+					id: "01B2A07006E7507B"
+					type: "item"
 					item: {
-						id: "allthemodium:vibranium_boots",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "65AE5A11A202C7FB",
-					type: "item",
-					item: {
-						id: "allthemodium:vibranium_leggings",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "45F8F273A534E27E",
-					type: "item",
-					item: {
-						id: "allthemodium:vibranium_chestplate",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "6ED327B8C1DCEA85",
-					type: "item",
-					item: {
-						id: "allthemodium:vibranium_helmet",
-						Count: 1b,
+						id: "allthemodium:vibranium_boots"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "65AE5A11A202C7FB"
+					type: "item"
+					item: {
+						id: "allthemodium:vibranium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45F8F273A534E27E"
+					type: "item"
+					item: {
+						id: "allthemodium:vibranium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6ED327B8C1DCEA85"
+					type: "item"
+					item: {
+						id: "allthemodium:vibranium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "127322A0CA49BF54",
-				type: "item",
+				id: "127322A0CA49BF54"
+				type: "item"
 				item: "mysticalagriculture:tilling_aoe_iv_augment"
 			}]
-		},
+		}
 		{
-			title: "Wait it's not unobtainable?",
-			x: 2.0d,
-			y: -5.5d,
+			title: "Wait it's not unobtainable?"
+			x: 2.0d
+			y: -5.5d
 			dependencies: [
-				"6B41A07DE0A83C00",
+				"6B41A07DE0A83C00"
 				"4FC8820639E50086"
-			],
-			id: "3AB911A31C7D5EC2",
+			]
+			id: "3AB911A31C7D5EC2"
 			tasks: [
 				{
-					id: "08BEE0739050D406",
-					type: "item",
+					id: "08BEE0739050D406"
+					type: "item"
 					item: {
-						id: "allthemodium:unobtainium_boots",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "344E7577520B28D4",
-					type: "item",
-					item: {
-						id: "allthemodium:unobtainium_leggings",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "4EC875F822530E64",
-					type: "item",
-					item: {
-						id: "allthemodium:unobtainium_chestplate",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "1D5645D0DE5F28F5",
-					type: "item",
-					item: {
-						id: "allthemodium:unobtainium_helmet",
-						Count: 1b,
+						id: "allthemodium:unobtainium_boots"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "344E7577520B28D4"
+					type: "item"
+					item: {
+						id: "allthemodium:unobtainium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4EC875F822530E64"
+					type: "item"
+					item: {
+						id: "allthemodium:unobtainium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D5645D0DE5F28F5"
+					type: "item"
+					item: {
+						id: "allthemodium:unobtainium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "0A73719B9F0B7679",
-				type: "item",
+				id: "0A73719B9F0B7679"
+				type: "item"
 				item: "ironfurnaces:upgrade_unobtainium"
 			}]
-		},
+		}
 		{
-			title: "I got something to Pick? Axe.",
-			x: -2.0d,
-			y: -1.0d,
+			title: "I got something to Pick? Axe."
+			x: -2.0d
+			y: -1.0d
 			dependencies: [
-				"2F861690BA3E37D8",
-				"5F9BED212EC770AA"
-			],
-			id: "259B64B6ECD3A2AD",
-			tasks: [{
-				id: "5DFC6EA35200EF8B",
-				type: "item",
-				item: {
-					id: "allthemodium:alloy_pick",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		},
-		{
-			title: "Not Excalibur, but it's a Calibur.",
-			x: 0.0d,
-			y: -1.0d,
-			description: [""],
-			dependencies: [
-				"5F9BED212EC770AA",
 				"2F861690BA3E37D8"
-			],
-			id: "719DAC25F567FC18",
-			tasks: [{
-				id: "60B215CB39131DEA",
-				type: "item",
-				item: {
-					id: "allthemodium:alloy_sword",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		},
-		{
-			title: "Did someone Axe for Battle?",
-			x: 2.0d,
-			y: -1.0d,
-			dependencies: [
-				"2F861690BA3E37D8",
 				"5F9BED212EC770AA"
-			],
-			id: "4617682C34208352",
+			]
+			id: "259B64B6ECD3A2AD"
 			tasks: [{
-				id: "4DB59CECF2612A46",
-				type: "item",
+				id: "5DFC6EA35200EF8B"
+				type: "item"
 				item: {
-					id: "allthemodium:alloy_axe",
-					Count: 1b,
+					id: "allthemodium:alloy_pick"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Wait... That's not Gold?",
-			x: -1.0d,
-			y: -3.0d,
-			dependencies: ["5E9F6228BBC60FFC"],
-			dependency_requirement: "all_started",
-			id: "2F861690BA3E37D8",
+			title: "Not Excalibur, but it's a Calibur."
+			x: 0.0d
+			y: -1.0d
+			description: [""]
+			dependencies: [
+				"5F9BED212EC770AA"
+				"2F861690BA3E37D8"
+			]
+			id: "719DAC25F567FC18"
 			tasks: [{
-				id: "70CAFA5C9D06D0C9",
-				type: "item",
+				id: "60B215CB39131DEA"
+				type: "item"
+				item: {
+					id: "allthemodium:alloy_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Did someone Axe for Battle?"
+			x: 2.0d
+			y: -1.0d
+			dependencies: [
+				"2F861690BA3E37D8"
+				"5F9BED212EC770AA"
+			]
+			id: "4617682C34208352"
+			tasks: [{
+				id: "4DB59CECF2612A46"
+				type: "item"
+				item: {
+					id: "allthemodium:alloy_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Wait... That's not Gold?"
+			x: -1.0d
+			y: -3.0d
+			dependencies: ["5E9F6228BBC60FFC"]
+			dependency_requirement: "all_started"
+			id: "2F861690BA3E37D8"
+			tasks: [{
+				id: "70CAFA5C9D06D0C9"
+				type: "item"
 				item: "allthemodium:allthemodium_ingot"
 			}]
-		},
+		}
 		{
-			title: "Feel the vibrations",
-			x: 0.0d,
-			y: -4.0d,
-			description: ["A vibrant metal born from the depths of the nether... or simply use netherrack dust to a "],
-			dependencies: ["5E9F6228BBC60FFC"],
-			id: "3EE39036AC4556AC",
+			title: "Feel the vibrations"
+			x: 0.0d
+			y: -4.0d
+			description: ["A vibrant metal born from the depths of the nether... or simply use netherrack dust to a "]
+			dependencies: ["5E9F6228BBC60FFC"]
+			id: "3EE39036AC4556AC"
 			tasks: [{
-				id: "62DC1BC0125721A7",
-				type: "item",
+				id: "62DC1BC0125721A7"
+				type: "item"
 				item: "allthemodium:vibranium_ingot"
 			}]
-		},
+		}
 		{
-			title: "Impossible!?... nope",
-			x: 2.0d,
-			y: -4.0d,
-			dependencies: ["5E9F6228BBC60FFC"],
-			id: "4FC8820639E50086",
+			title: "Impossible!?... nope"
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["5E9F6228BBC60FFC"]
+			id: "4FC8820639E50086"
 			tasks: [{
-				id: "73F698810EB48561",
-				type: "item",
+				id: "73F698810EB48561"
+				type: "item"
 				item: "allthemodium:unobtainium_ingot"
 			}]
-		},
+		}
 		{
-			title: "Fuuuusioooon HA!",
-			x: 1.0d,
-			y: -3.0d,
-			description: [""],
+			title: "Fuuuusioooon HA!"
+			x: 1.0d
+			y: -3.0d
+			description: [""]
 			dependencies: [
-				"4FC8820639E50086",
+				"4FC8820639E50086"
 				"3EE39036AC4556AC"
-			],
-			id: "5F9BED212EC770AA",
+			]
+			id: "5F9BED212EC770AA"
 			tasks: [{
-				id: "5B9FE17F479BDE79",
-				type: "item",
+				id: "5B9FE17F479BDE79"
+				type: "item"
 				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
 			}]
-		},
+		}
 		{
-			title: "Exo-Tic Suit",
-			x: 0.0d,
-			y: -7.0d,
-			description: ["A powerful armor that can be upgraded."],
-			id: "57FE5811063E2C8C",
+			title: "Exo-Tic Suit"
+			x: 0.0d
+			y: -7.0d
+			description: ["A powerful armor that can be upgraded."]
+			id: "57FE5811063E2C8C"
 			tasks: [
 				{
-					id: "645211D1D82787AE",
-					type: "item",
+					id: "645211D1D82787AE"
+					type: "item"
 					item: {
-						id: "mekanism:mekasuit_helmet",
-						Count: 1b,
+						id: "mekanism:mekasuit_helmet"
+						Count: 1b
 						tag: {
 							HideFlags: 2
 						}
 					}
-				},
+				}
 				{
-					id: "25FC9851D9E02125",
-					type: "item",
+					id: "25FC9851D9E02125"
+					type: "item"
 					item: {
-						id: "mekanism:mekasuit_bodyarmor",
-						Count: 1b,
+						id: "mekanism:mekasuit_bodyarmor"
+						Count: 1b
 						tag: {
 							HideFlags: 2
 						}
 					}
-				},
+				}
 				{
-					id: "6C59BAB890603267",
-					type: "item",
+					id: "6C59BAB890603267"
+					type: "item"
 					item: {
-						id: "mekanism:mekasuit_pants",
-						Count: 1b,
+						id: "mekanism:mekasuit_pants"
+						Count: 1b
 						tag: {
 							HideFlags: 2
 						}
 					}
-				},
+				}
 				{
-					id: "2BCFB4912B9B5CEF",
-					type: "item",
+					id: "2BCFB4912B9B5CEF"
+					type: "item"
 					item: {
-						id: "mekanism:mekasuit_boots",
-						Count: 1b,
+						id: "mekanism:mekasuit_boots"
+						Count: 1b
 						tag: {
 							HideFlags: 2
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Creative Power!",
-			x: 7.0d,
-			y: -5.5d,
-			id: "255F31BBC346BAB5",
+			title: "Creative Power!"
+			x: 7.0d
+			y: -5.5d
+			id: "255F31BBC346BAB5"
 			tasks: [{
-				id: "09C3D7C73B495609",
-				type: "item",
+				id: "09C3D7C73B495609"
+				type: "item"
 				item: "atmadditions:atm_star"
 			}]
-		},
+		}
 		{
-			title: "Quite some Motor skills",
-			x: 6.5d,
-			y: -3.5d,
-			description: ["1 engine to power all your Create machineries"],
-			dependencies: ["255F31BBC346BAB5"],
-			id: "60D861BF28787109",
+			title: "Quite some Motor skills"
+			x: 6.5d
+			y: -3.5d
+			description: ["1 engine to power all your Create machineries"]
+			dependencies: ["255F31BBC346BAB5"]
+			id: "60D861BF28787109"
 			tasks: [{
-				id: "38E313EBFB2671EA",
-				type: "item",
+				id: "38E313EBFB2671EA"
+				type: "item"
 				item: "create:creative_motor"
 			}]
-		},
+		}
 		{
-			title: "No more Mana-gement",
-			x: 7.5d,
-			y: -3.5d,
-			description: ["An infinite pool of mana."],
-			dependencies: ["255F31BBC346BAB5"],
-			id: "5C3F068974422515",
+			title: "No more Mana-gement"
+			x: 7.5d
+			y: -3.5d
+			description: ["An infinite pool of mana."]
+			dependencies: ["255F31BBC346BAB5"]
+			id: "5C3F068974422515"
 			tasks: [{
-				id: "572F3D0C400DB9E4",
-				type: "item",
+				id: "572F3D0C400DB9E4"
+				type: "item"
 				item: "botania:creative_pool"
 			}]
-		},
+		}
 		{
-			title: "Pressure Overwhelming",
-			x: 7.0d,
-			y: -4.0d,
-			description: [""],
+			title: "Pressure Overwhelming"
+			x: 7.0d
+			y: -4.0d
+			description: [""]
 			dependencies: [
-				"255F31BBC346BAB5",
-				"41C2A3D360F57474",
-				"3E6298F9FBDAB0F5",
-				"3D0476FC7A0B51BF",
+				"255F31BBC346BAB5"
+				"41C2A3D360F57474"
+				"3E6298F9FBDAB0F5"
+				"3D0476FC7A0B51BF"
 				"089E412549552976"
-			],
-			id: "60A3DD1F28A7D2C2",
+			]
+			id: "60A3DD1F28A7D2C2"
 			tasks: [{
-				id: "19F37BCE22AF4B0F",
-				type: "item",
+				id: "19F37BCE22AF4B0F"
+				type: "item"
 				item: "pneumaticcraft:creative_compressor"
 			}]
-		},
+		}
 		{
-			title: "The Supreme Armor",
-			x: 0.0d,
-			y: -8.5d,
+			title: "The Supreme Armor"
+			x: 0.0d
+			y: -8.5d
 			description: [
-				"Top grade armor, of the Mystical agriculture mod.",
-				"",
+				"Top grade armor, of the Mystical agriculture mod."
+				""
 				"Each armor can be upgraded, one of which can give creative flight."
-			],
-			id: "4D9B62F40846B6F1",
+			]
+			id: "4D9B62F40846B6F1"
 			tasks: [
 				{
-					id: "3827FE60B3A67F19",
-					type: "item",
+					id: "3827FE60B3A67F19"
+					type: "item"
 					item: {
-						id: "mysticalagriculture:supremium_helmet",
-						Count: 1b,
+						id: "mysticalagriculture:supremium_helmet"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "64F8B027D8CFE7B5",
-					type: "item",
+					id: "64F8B027D8CFE7B5"
+					type: "item"
 					item: {
-						id: "mysticalagriculture:supremium_chestplate",
-						Count: 1b,
+						id: "mysticalagriculture:supremium_chestplate"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "0B5E407CFB4CCEBA",
-					type: "item",
+					id: "0B5E407CFB4CCEBA"
+					type: "item"
 					item: {
-						id: "mysticalagriculture:supremium_leggings",
-						Count: 1b,
+						id: "mysticalagriculture:supremium_leggings"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "3618399518938FC6",
-					type: "item",
+					id: "3618399518938FC6"
+					type: "item"
 					item: {
-						id: "mysticalagriculture:supremium_boots",
-						Count: 1b,
+						id: "mysticalagriculture:supremium_boots"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "4A7682D0D094A590",
-					type: "item",
+					id: "4A7682D0D094A590"
+					type: "item"
 					item: "mysticalagriculture:flight_augment"
-				},
+				}
 				{
-					id: "0DAE622FC0F4E7E5",
-					type: "item",
+					id: "0DAE622FC0F4E7E5"
+					type: "item"
 					item: "mysticalagriculture:tinkering_table"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "6F12B4AE2EA5F3A4",
-					type: "item",
+					id: "6F12B4AE2EA5F3A4"
+					type: "item"
 					item: {
-						id: "mana-and-artifice:spectral_elytra",
-						Count: 1b,
+						id: "mana-and-artifice:spectral_elytra"
+						Count: 1b
 						tag: {
 							display: {
 								Lore: [
-									'[{"text":"Nice try trying to exploit the old Elytra, this one won\'t be.","italic":false,"color":"gold"},{"text":"","italic":false,"color":"dark_purple"}]',
-									'[{"text":"-","italic":false,"color":"dark_purple"}]',
-									'[{"text":"The actual Elytra is craftable. This here is a trophy.","italic":false,"color":"gold"}]'
-								],
-								Name: '[{"text":"Wings of Liberty","italic":false,"color":"aqua"}]'
+									"[{\"text\":\"Nice try trying to exploit the old Elytra, this one wont be.\",\"italic\":false,\"color\":\"gold\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]"
+									"[{\"text\":\"-\",\"italic\":false,\"color\":\"dark_purple\"}]"
+									"[{\"text\":\"The actual Elytra is craftable. This here is a trophy.\",\"italic\":false,\"color\":\"gold\"}]"
+								]
+								Name: "[{\"text\":\"Wings of Liberty\",\"italic\":false,\"color\":\"aqua\"}]"
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "714CEB55C9828F70",
-					type: "item",
+					id: "714CEB55C9828F70"
+					type: "item"
 					item: "xreliquary:pedestals/passive/light_gray_passive_pedestal"
 				}
 			]
-		},
+		}
 		{
-			title: "Super Fast Flight",
-			x: 2.0d,
-			y: -7.0d,
-			dependencies: ["4FC8820639E50086"],
-			id: "13A26BFE3D713C82",
+			title: "Super Fast Flight"
+			x: 2.0d
+			y: -7.0d
+			dependencies: ["4FC8820639E50086"]
+			id: "13A26BFE3D713C82"
 			tasks: [{
-				id: "784EA55EF1D23907",
-				type: "item",
+				id: "784EA55EF1D23907"
+				type: "item"
 				item: {
-					id: "ironjetpacks:unobtainium_jetpack",
-					Count: 1b,
+					id: "ironjetpacks:unobtainium_jetpack"
+					Count: 1b
 					tag: {
 						Throttle: 1.0d
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 8.5d,
-			y: -5.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "1B3999D56002A99D",
+			x: 8.5d
+			y: -5.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "1B3999D56002A99D"
 			tasks: [{
-				id: "6BAD4FC3F96800E8",
-				type: "item",
+				id: "6BAD4FC3F96800E8"
+				type: "item"
 				item: "woot:creative_conatus"
 			}]
-		},
+		}
 		{
-			x: 5.5d,
-			y: -4.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "1D2427C393888C47",
+			x: 5.5d
+			y: -4.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "1D2427C393888C47"
 			tasks: [{
-				id: "378CF3BB196A9AD8",
-				type: "item",
+				id: "378CF3BB196A9AD8"
+				type: "item"
 				item: "storagedrawers:creative_storage_upgrade"
 			}]
-		},
+		}
 		{
-			x: 7.0d,
-			y: -7.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "0DF591DAA40A1458",
+			x: 7.0d
+			y: -7.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "0DF591DAA40A1458"
 			tasks: [{
-				id: "6FD8F2AB242005ED",
-				type: "item",
+				id: "6FD8F2AB242005ED"
+				type: "item"
 				item: "iceandfire:creative_dragon_meal"
 			}]
-		},
+		}
 		{
-			x: 5.5d,
-			y: -7.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "1652A70132B7457D",
+			x: 5.5d
+			y: -7.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "1652A70132B7457D"
 			tasks: [{
-				id: "6983627E03EA57DD",
-				type: "item",
+				id: "6983627E03EA57DD"
+				type: "item"
 				item: "ars_nouveau:creative_spell_book"
 			}]
-		},
+		}
 		{
-			x: 9.0d,
-			y: -5.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "6E01265F041E2E38",
+			x: 9.0d
+			y: -5.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "6E01265F041E2E38"
 			tasks: [{
-				id: "60277C11A9A1AB9E",
-				type: "item",
+				id: "60277C11A9A1AB9E"
+				type: "item"
 				item: "immersiveengineering:capacitor_creative"
 			}]
-		},
+		}
 		{
-			disable_toast: true,
-			x: 10.0d,
-			y: -6.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "31F86C73C6B248F6",
+			disable_toast: true
+			x: 10.0d
+			y: -6.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "31F86C73C6B248F6"
 			tasks: [{
-				id: "4D101C58EBA25D69",
-				type: "item",
+				id: "4D101C58EBA25D69"
+				type: "item"
 				item: "refinedstorage:creative_controller"
 			}]
-		},
+		}
 		{
-			x: 9.5d,
-			y: -5.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "38B06445E59695AD",
+			x: 9.5d
+			y: -5.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "38B06445E59695AD"
 			tasks: [{
-				id: "5EF7CB3B1AF0D1D4",
-				type: "item",
+				id: "5EF7CB3B1AF0D1D4"
+				type: "item"
 				item: "mekanism:creative_energy_cube"
 			}]
-		},
+		}
 		{
-			x: 7.5d,
-			y: -7.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "36F0672B42F108CD",
+			x: 7.5d
+			y: -7.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "36F0672B42F108CD"
 			tasks: [{
-				id: "5B87CCB9B4EA1A1F",
-				type: "item",
+				id: "5B87CCB9B4EA1A1F"
+				type: "item"
 				item: "waterstrainer:super_worm"
 			}]
-		},
+		}
 		{
-			x: 5.0d,
-			y: -7.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "4FA854804AE1034E",
+			x: 5.0d
+			y: -7.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "4FA854804AE1034E"
 			tasks: [{
-				id: "11AB5FA8F895F633",
-				type: "item",
+				id: "11AB5FA8F895F633"
+				type: "item"
 				item: "ars_nouveau:creative_mana_jar"
 			}]
-		},
+		}
 		{
-			x: 10.0d,
-			y: -5.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "7D6222FE46361F29",
+			x: 10.0d
+			y: -5.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "7D6222FE46361F29"
 			tasks: [{
-				id: "29D34579AC7972DB",
-				type: "item",
+				id: "29D34579AC7972DB"
+				type: "item"
 				item: "appliedenergistics2:creative_energy_cell"
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: -7.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "6456C7E493802457",
+			x: 6.5d
+			y: -7.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "6456C7E493802457"
 			tasks: [{
-				id: "1F80AE839B995DC6",
-				type: "item",
+				id: "1F80AE839B995DC6"
+				type: "item"
 				item: "iceandfire:dragonegg_gray"
 			}]
-		},
+		}
 		{
-			x: 9.0d,
-			y: -6.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "29F51931B71B52D7",
+			x: 9.0d
+			y: -6.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "29F51931B71B52D7"
 			tasks: [{
-				id: "728298E3AA51171C",
-				type: "item",
+				id: "728298E3AA51171C"
+				type: "item"
 				item: "integrateddynamics:energy_battery_creative"
 			}]
-		},
+		}
 		{
-			x: 5.5d,
-			y: -5.5d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "15BD8A6112C96F00",
+			x: 5.5d
+			y: -5.5d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "15BD8A6112C96F00"
 			tasks: [{
-				id: "356F157FB8BC0703",
-				type: "item",
+				id: "356F157FB8BC0703"
+				type: "item"
 				item: "ctiers:centrifuge_casing_tier_creative"
 			}]
-		},
+		}
 		{
-			x: 5.0d,
-			y: -6.0d,
-			description: ["NEARLY INFINITE RESOURCES!"],
-			dependencies: ["15BD8A6112C96F00"],
-			id: "50CD18673A0F9996",
+			x: 5.0d
+			y: -6.0d
+			description: ["NEARLY INFINITE RESOURCES!"]
+			dependencies: ["15BD8A6112C96F00"]
+			id: "50CD18673A0F9996"
 			tasks: [{
-				id: "36170DF1566529F1",
-				type: "item",
+				id: "36170DF1566529F1"
+				type: "item"
 				item: "ctiers:centrifuge_controller_tier_creative"
 			}]
-		},
+		}
 		{
-			x: 5.0d,
-			y: -5.0d,
-			dependencies: ["15BD8A6112C96F00"],
-			dependency_requirement: "one_completed",
-			id: "64BAD4ED9E13D05C",
+			x: 5.0d
+			y: -5.0d
+			dependencies: ["15BD8A6112C96F00"]
+			dependency_requirement: "one_completed"
+			id: "64BAD4ED9E13D05C"
 			tasks: [{
-				id: "7E0317F39F0C4AFE",
-				type: "item",
+				id: "7E0317F39F0C4AFE"
+				type: "item"
 				item: "creativeapiary:creative_apiary_storage"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -5.5d,
-			description: ["INFINITE RESOURCES!"],
-			dependencies: ["50CD18673A0F9996"],
-			id: "59E335143ADA5361",
+			x: 4.5d
+			y: -5.5d
+			description: ["INFINITE RESOURCES!"]
+			dependencies: ["50CD18673A0F9996"]
+			id: "59E335143ADA5361"
 			tasks: [{
-				id: "202AAC8D773ECBB4",
-				type: "item",
+				id: "202AAC8D773ECBB4"
+				type: "item"
 				item: "creativeapiary:tcreative_apiary"
 			}]
-		},
+		}
 		{
-			x: 8.5d,
-			y: -4.0d,
-			description: ["INSTANT BREADING!"],
-			dependencies: ["255F31BBC346BAB5"],
-			id: "46A1DB0964D51064",
+			x: 8.5d
+			y: -4.0d
+			description: ["INSTANT BREADING!"]
+			dependencies: ["255F31BBC346BAB5"]
+			id: "46A1DB0964D51064"
 			tasks: [{
-				id: "2E9F45FFC5428C96",
-				type: "item",
+				id: "2E9F45FFC5428C96"
+				type: "item"
 				item: "creativeapiary:creative_apiary_breeder"
 			}]
-		},
+		}
 		{
-			x: 8.5d,
-			y: -7.0d,
-			dependencies: ["255F31BBC346BAB5"],
-			id: "0F5833EBFE152E9B",
+			x: 8.5d
+			y: -7.0d
+			dependencies: ["255F31BBC346BAB5"]
+			id: "0F5833EBFE152E9B"
 			tasks: [{
-				id: "0243034C3BD49C99",
-				type: "item",
+				id: "0243034C3BD49C99"
+				type: "item"
 				item: {
-					id: "ironjetpacks:creative_jetpack",
-					Count: 1b,
+					id: "ironjetpacks:creative_jetpack"
+					Count: 1b
 					tag: {
 						Throttle: 1.0d
 					}

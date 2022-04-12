@@ -1,66 +1,27 @@
 {
-	id: "08EFC70635D4632B",
-	order_index: 1,
-	title: "Basic Reward",
-	loot_size: 1,
+	id: "08EFC70635D4632B"
+	order_index: 1
+	title: "Basic Reward"
+	loot_size: 1
 	rewards: [
-		{
-			item: "minecraft:dirt",
-			count: 16,
-			weight: 3
-		},
-		{
-			item: "minecraft:cobblestone",
-			count: 64,
-			weight: 3
-		},
-		{
-			item: "minecraft:oak_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "minecraft:jungle_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "minecraft:dark_oak_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "minecraft:spruce_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "minecraft:birch_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "minecraft:acacia_sapling",
-			count: 4,
-			weight: 3
-		},
-		{
-			item: "silentgear:netherwood_sapling",
-			count: 4
-		},
-		{
-			item: "minecraft:bone_meal",
-			count: 64,
-			weight: 2
-		}
-	],
+		{ item: "minecraft:dirt", count: 16, weight: 3 }
+		{ item: "minecraft:cobblestone", count: 64, weight: 3 }
+		{ item: "minecraft:oak_sapling", count: 4, weight: 3 }
+		{ item: "minecraft:jungle_sapling", count: 4, weight: 3 }
+		{ item: "minecraft:dark_oak_sapling", count: 4, weight: 3 }
+		{ item: "minecraft:spruce_sapling", count: 4, weight: 3 }
+		{ item: "minecraft:birch_sapling", count: 4, weight: 3 }
+		{ item: "minecraft:acacia_sapling", count: 4, weight: 3 }
+		{ item: "silentgear:netherwood_sapling", count: 4 }
+		{ item: "minecraft:bone_meal", count: 64, weight: 2 }
+	]
 	loot_crate: {
 		drops: {
-			boss: 0,
-			passive: 0,
+			boss: 0
+			passive: 0
 			monster: 0
-		},
-		color: 16777215,
+		}
+		color: 16777215
 		string_id: "basic_reward"
 	}
 }

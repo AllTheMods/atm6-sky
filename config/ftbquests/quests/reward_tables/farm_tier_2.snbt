@@ -1,21 +1,12 @@
 {
-	id: "1CE2714822370565",
-	order_index: 5,
-	title: "Farm Tier 2",
-	icon: "mysticalagriculture:tertium_farmland",
-	loot_size: 1,
+	id: "1CE2714822370565"
+	order_index: 5
+	title: "Farm Tier 2"
+	icon: "mysticalagriculture:tertium_farmland"
+	loot_size: 1
 	rewards: [
-		{
-			item: "mysticalagriculture:prudentium_farmland",
-			weight: 100
-		},
-		{
-			item: "mysticalagriculture:tertium_farmland",
-			weight: 75
-		},
-		{
-			item: "mysticalagriculture:imperium_farmland",
-			weight: 50
-		}
+		{ item: "mysticalagriculture:prudentium_farmland", weight: 100 }
+		{ item: "mysticalagriculture:tertium_farmland", weight: 75 }
+		{ item: "mysticalagriculture:imperium_farmland", weight: 50 }
 	]
 }

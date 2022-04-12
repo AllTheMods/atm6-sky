@@ -1,325 +1,326 @@
 {
-	id: "2DDD653E421C4ABA",
-	group: "",
-	order_index: 4,
-	filename: "pedestals",
-	title: "Pedestals",
-	icon: "pedestals:pedestal/stone333",
-	default_quest_shape: "",
+	id: "2DDD653E421C4ABA"
+	group: ""
+	order_index: 4
+	filename: "pedestals"
+	title: "Pedestals"
+	icon: "pedestals:pedestal/stone333"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Getting Started",
-			x: 0.0d,
-			y: -1.0d,
+			title: "Getting Started"
+			x: 0.0d
+			y: -1.0d
 			description: [
-				"Pedestal is a fun and very useful mod to have.",
-				"",
-				"It can Cook, it can Farm, it can Kill.",
-				"",
+				"Pedestal is a fun and very useful mod to have."
+				""
+				"It can Cook, it can Farm, it can Kill."
+				""
 				"Many of the details are provided by JEI and their usage. Which will save me some writing time."
-			],
-			id: "00B0DF55F0747072",
+			]
+			id: "00B0DF55F0747072"
 			tasks: [
 				{
-					id: "7953FEAE7AB4B50F",
-					type: "item",
+					id: "7953FEAE7AB4B50F"
+					type: "item"
 					item: "pedestals:pedestal/stone333"
-				},
+				}
 				{
-					id: "7B74DC6D16B75D81",
-					type: "item",
-					title: "Any #pedestals:linkingtool",
+					id: "7B74DC6D16B75D81"
+					type: "item"
+					title: "Any #pedestals:linkingtool"
 					item: {
-						id: "itemfilters:tag",
-						Count: 1b,
+						id: "itemfilters:tag"
+						Count: 1b
 						tag: {
 							value: "pedestals:linkingtool"
 						}
 					}
-				},
+				}
 				{
-					id: "562C6F9B84B6E554",
-					type: "item",
+					id: "562C6F9B84B6E554"
+					type: "item"
 					item: "pedestals:coin/default"
 				}
 			]
-		},
+		}
 		{
-			title: "Energy Transfer",
-			x: 7.5d,
-			y: -2.5d,
-			description: [""],
-			dependencies: ["1B5B736D66906AD3"],
-			id: "363055C99710649B",
+			title: "Energy Transfer"
+			x: 7.5d
+			y: -2.5d
+			description: [""]
+			dependencies: ["1B5B736D66906AD3"]
+			id: "363055C99710649B"
 			tasks: [{
-				id: "5E55B03C93FC08D2",
-				type: "item",
+				id: "5E55B03C93FC08D2"
+				type: "item"
 				item: "pedestals:coin/rfimport"
 			}]
-		},
+		}
 		{
-			title: "Crop Farming",
-			x: -6.0d,
-			y: -2.5d,
-			dependencies: ["758C5B6B7CA89721"],
-			id: "429EF71F04A92B80",
+			title: "Crop Farming"
+			x: -6.0d
+			y: -2.5d
+			dependencies: ["758C5B6B7CA89721"]
+			id: "429EF71F04A92B80"
 			tasks: [{
-				id: "7BAB53D960F3042A",
-				type: "item",
+				id: "7BAB53D960F3042A"
+				type: "item"
 				item: "pedestals:coin/harvester"
 			}]
-		},
+		}
 		{
-			title: "Fluid Transfer",
-			x: 5.5d,
-			y: -2.5d,
-			description: [""],
-			dependencies: ["1B5B736D66906AD3"],
-			id: "0427CA793C961DFA",
+			title: "Fluid Transfer"
+			x: 5.5d
+			y: -2.5d
+			description: [""]
+			dependencies: ["1B5B736D66906AD3"]
+			id: "0427CA793C961DFA"
 			tasks: [{
-				id: "1AD49CA8C6467C60",
-				type: "item",
+				id: "1AD49CA8C6467C60"
+				type: "item"
 				item: "pedestals:coin/fluidimport"
 			}]
-		},
+		}
 		{
-			title: "Item Transfer",
-			x: 3.5d,
-			y: -2.5d,
-			dependencies: ["1B5B736D66906AD3"],
-			id: "42E1109A386D735C",
+			title: "Item Transfer"
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["1B5B736D66906AD3"]
+			id: "42E1109A386D735C"
 			tasks: [{
-				id: "3AE671DC59AF36A2",
-				type: "item",
+				id: "3AE671DC59AF36A2"
+				type: "item"
 				item: "pedestals:coin/import"
 			}]
-		},
+		}
 		{
-			title: "Tree Feller... or Feeler...",
-			x: -4.0d,
-			y: -2.5d,
-			dependencies: ["758C5B6B7CA89721"],
-			id: "4992D0DA96411D09",
+			title: "Tree Feller... or Feeler..."
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["758C5B6B7CA89721"]
+			id: "4992D0DA96411D09"
 			tasks: [{
-				id: "2A3F85A609CF52C4",
-				type: "item",
+				id: "2A3F85A609CF52C4"
+				type: "item"
 				item: "pedestals:coin/chopper"
 			}]
-		},
+		}
 		{
-			title: "Experience Gathering",
-			x: 9.5d,
-			y: -2.5d,
-			dependencies: ["1B5B736D66906AD3"],
-			id: "64970739021B8540",
+			title: "Experience Gathering"
+			x: 9.5d
+			y: -2.5d
+			dependencies: ["1B5B736D66906AD3"]
+			id: "64970739021B8540"
 			tasks: [{
-				id: "715029CC773E0DAF",
-				type: "item",
+				id: "715029CC773E0DAF"
+				type: "item"
 				item: "pedestals:coin/xpmagnet"
 			}]
-		},
+		}
 		{
-			title: "A filtered Quarry",
-			x: -8.0d,
-			y: -3.5d,
-			dependencies: ["6A89FC624B4807D7"],
-			id: "5311DD7A57A5A302",
+			title: "A filtered Quarry"
+			x: -8.0d
+			y: -3.5d
+			dependencies: ["6A89FC624B4807D7"]
+			id: "5311DD7A57A5A302"
 			tasks: [{
-				id: "1E5CB7BEC7002A9C",
-				type: "item",
+				id: "1E5CB7BEC7002A9C"
+				type: "item"
 				item: "pedestals:coin/quarry"
 			}]
-		},
+		}
 		{
-			title: "Blood Metal",
-			x: -10.0d,
-			y: -2.5d,
-			dependencies: ["758C5B6B7CA89721"],
-			id: "65E1A14473BAD57B",
+			title: "Blood Metal"
+			x: -10.0d
+			y: -2.5d
+			dependencies: ["758C5B6B7CA89721"]
+			id: "65E1A14473BAD57B"
 			tasks: [{
-				id: "7F2DD876CFE7BEAF",
-				type: "item",
+				id: "7F2DD876CFE7BEAF"
+				type: "item"
 				item: "pedestals:coin/attack"
 			}]
-		},
+		}
 		{
-			title: "Furnace it...",
-			x: 3.5d,
-			y: 0.5d,
-			dependencies: ["2450F86834046039"],
-			id: "4542A85CA2CC3E64",
+			title: "Furnace it..."
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["2450F86834046039"]
+			id: "4542A85CA2CC3E64"
 			tasks: [{
-				id: "0A95F7C818E477EA",
-				type: "item",
+				id: "0A95F7C818E477EA"
+				type: "item"
 				item: "pedestals:coin/smelter"
 			}]
-		},
+		}
 		{
-			title: "Crush it...",
-			x: 5.5d,
-			y: 0.5d,
-			dependencies: ["2450F86834046039"],
-			id: "021ED6FBC7CF522F",
+			title: "Crush it..."
+			x: 5.5d
+			y: 0.5d
+			dependencies: ["2450F86834046039"]
+			id: "021ED6FBC7CF522F"
 			tasks: [{
-				id: "531361D10761F9EC",
-				type: "item",
+				id: "531361D10761F9EC"
+				type: "item"
 				item: "pedestals:coin/crusher"
 			}]
-		},
+		}
 		{
-			title: "I Saw Dust...",
-			x: 7.5d,
-			y: 0.5d,
-			dependencies: ["2450F86834046039"],
-			id: "09C2E616B9920FB9",
+			title: "I Saw Dust..."
+			x: 7.5d
+			y: 0.5d
+			dependencies: ["2450F86834046039"]
+			id: "09C2E616B9920FB9"
 			tasks: [{
-				id: "49256196739A20B9",
-				type: "item",
+				id: "49256196739A20B9"
+				type: "item"
 				item: "pedestals:coin/sawmill"
 			}]
-		},
+		}
 		{
-			title: "Enchanting Medal",
-			x: 9.5d,
-			y: 0.5d,
-			dependencies: ["2450F86834046039"],
-			id: "330222CECA0D9C91",
+			title: "Enchanting Medal"
+			x: 9.5d
+			y: 0.5d
+			dependencies: ["2450F86834046039"]
+			id: "330222CECA0D9C91"
 			tasks: [{
-				id: "64CE8C6845626D72",
-				type: "item",
+				id: "64CE8C6845626D72"
+				type: "item"
 				item: "pedestals:coin/xpenchanter"
 			}]
-		},
+		}
 		{
-			title: "Transport Type Upgrades",
-			x: 1.5d,
-			y: -2.5d,
-			dependencies: ["00B0DF55F0747072"],
-			id: "1B5B736D66906AD3",
+			title: "Transport Type Upgrades"
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["00B0DF55F0747072"]
+			id: "1B5B736D66906AD3"
 			tasks: [{
-				id: "0EC86D1F34EC1403",
+				id: "0EC86D1F34EC1403"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "Farming Type Upgrades",
-			x: -1.5d,
-			y: -2.5d,
-			dependencies: ["00B0DF55F0747072"],
-			id: "758C5B6B7CA89721",
+			title: "Farming Type Upgrades"
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["00B0DF55F0747072"]
+			id: "758C5B6B7CA89721"
 			tasks: [{
-				id: "2CA95BD79614D4E3",
+				id: "2CA95BD79614D4E3"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "Transformation Type Upgrades",
-			x: 1.5d,
-			y: 0.5d,
-			dependencies: ["00B0DF55F0747072"],
-			id: "2450F86834046039",
+			title: "Transformation Type Upgrades"
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["00B0DF55F0747072"]
+			id: "2450F86834046039"
 			tasks: [{
-				id: "61BED09CC8795ADA",
+				id: "61BED09CC8795ADA"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "XP Storage",
-			x: 9.5d,
-			y: -3.5d,
-			description: [""],
-			dependencies: ["64970739021B8540"],
-			id: "7F3107E77E01FEB2",
+			title: "XP Storage"
+			x: 9.5d
+			y: -3.5d
+			description: [""]
+			dependencies: ["64970739021B8540"]
+			id: "7F3107E77E01FEB2"
 			tasks: [{
-				id: "368F1B3F3A9BA7BD",
-				type: "item",
+				id: "368F1B3F3A9BA7BD"
+				type: "item"
 				item: "pedestals:coin/xptank"
 			}]
-		},
+		}
 		{
-			title: "Energy Storage",
-			x: 7.5d,
-			y: -3.5d,
-			dependencies: ["363055C99710649B"],
-			id: "5A2382FD3E629EF3",
+			title: "Energy Storage"
+			x: 7.5d
+			y: -3.5d
+			dependencies: ["363055C99710649B"]
+			id: "5A2382FD3E629EF3"
 			tasks: [{
-				id: "354788C8319EC015",
-				type: "item",
+				id: "354788C8319EC015"
+				type: "item"
 				item: "pedestals:coin/rftank"
 			}]
-		},
+		}
 		{
-			title: "Fluid Storage",
-			x: 5.5d,
-			y: -3.5d,
-			dependencies: ["0427CA793C961DFA"],
-			id: "43BEC58386C84AA9",
+			title: "Fluid Storage"
+			x: 5.5d
+			y: -3.5d
+			dependencies: ["0427CA793C961DFA"]
+			id: "43BEC58386C84AA9"
 			tasks: [{
-				id: "2C648EA0B016A598",
-				type: "item",
+				id: "2C648EA0B016A598"
+				type: "item"
 				item: "pedestals:coin/fluidtank"
 			}]
-		},
+		}
 		{
-			title: "At least it doesn't degrade",
-			x: 11.5d,
-			y: 0.5d,
-			dependencies: ["2450F86834046039"],
-			id: "6892C4962E59C4BE",
+			title: "At least it doesn't degrade"
+			x: 11.5d
+			y: 0.5d
+			dependencies: ["2450F86834046039"]
+			id: "6892C4962E59C4BE"
 			tasks: [{
-				id: "3CCC69A30C8DC23F",
-				type: "item",
+				id: "3CCC69A30C8DC23F"
+				type: "item"
 				item: "pedestals:coin/xpanvil"
 			}]
-		},
+		}
 		{
-			title: "Furnace it!",
-			x: 3.5d,
-			y: 1.5d,
-			hide_dependency_lines: true,
-			dependencies: ["2450F86834046039"],
-			id: "145F9EADFBF3E5EC",
+			title: "Furnace it!"
+			x: 3.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["2450F86834046039"]
+			id: "145F9EADFBF3E5EC"
 			tasks: [{
-				id: "4A2A257B5EB5111B",
-				type: "item",
+				id: "4A2A257B5EB5111B"
+				type: "item"
 				item: "pedestals:coin/rfsmelter"
 			}]
-		},
+		}
 		{
-			title: "Crush it!",
-			x: 5.5d,
-			y: 1.5d,
-			hide_dependency_lines: true,
-			dependencies: ["2450F86834046039"],
-			id: "44B4B9C2428BC760",
+			title: "Crush it!"
+			x: 5.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["2450F86834046039"]
+			id: "44B4B9C2428BC760"
 			tasks: [{
-				id: "727B9B2BC90E1D46",
-				type: "item",
+				id: "727B9B2BC90E1D46"
+				type: "item"
 				item: "pedestals:coin/rfcrusher"
 			}]
-		},
+		}
 		{
-			title: "I Saw Dust!",
-			x: 7.5d,
-			y: 1.5d,
-			hide_dependency_lines: true,
-			dependencies: ["2450F86834046039"],
-			id: "44B07BFB0EE9D1E6",
+			title: "I Saw Dust!"
+			x: 7.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["2450F86834046039"]
+			id: "44B07BFB0EE9D1E6"
 			tasks: [{
-				id: "4F5B3EE57828E051",
-				type: "item",
+				id: "4F5B3EE57828E051"
+				type: "item"
 				item: "pedestals:coin/rfsawmill"
 			}]
-		},
+		}
 		{
-			title: "Block Breaker",
-			x: -8.0d,
-			y: -2.5d,
-			dependencies: ["758C5B6B7CA89721"],
-			id: "6A89FC624B4807D7",
+			title: "Block Breaker"
+			x: -8.0d
+			y: -2.5d
+			dependencies: ["758C5B6B7CA89721"]
+			id: "6A89FC624B4807D7"
 			tasks: [{
-				id: "1D9D007B930E2674",
-				type: "item",
+				id: "1D9D007B930E2674"
+				type: "item"
 				item: "pedestals:coin/breaker"
 			}]
 		}

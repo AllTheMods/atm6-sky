@@ -1,30 +1,14 @@
 {
-	id: "7CE467CE28968A1A",
-	order_index: 0,
-	title: "chests",
-	loot_size: 1,
+	id: "7CE467CE28968A1A"
+	order_index: 0
+	title: "chests"
+	loot_size: 1
 	rewards: [
-		{
-			item: "pipez:item_pipe",
-			count: 8
-		},
-		{
-			item: "pipez:fluid_pipe",
-			count: 8
-		},
-		{
-			item: "pipez:energy_pipe",
-			count: 8
-		},
-		{
-			item: "allthemodium:allthemodium_nugget"
-		},
-		{
-			item: "minecraft:bucket"
-		},
-		{
-			item: "mekanism:upgrade_speed",
-			count: 4
-		}
+		{ item: "pipez:item_pipe", count: 8 }
+		{ item: "pipez:fluid_pipe", count: 8 }
+		{ item: "pipez:energy_pipe", count: 8 }
+		{ item: "allthemodium:allthemodium_nugget" }
+		{ item: "minecraft:bucket" }
+		{ item: "mekanism:upgrade_speed", count: 4 }
 	]
 }

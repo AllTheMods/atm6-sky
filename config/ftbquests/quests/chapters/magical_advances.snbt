@@ -1,274 +1,232 @@
 {
-	id: "03453C143A905442",
-	group: "",
-	order_index: 5,
-	filename: "magical_advances",
-	title: "Magical Advances",
+	id: "03453C143A905442"
+	group: ""
+	order_index: 5
+	filename: "magical_advances"
+	title: "Magical Advances"
 	icon: {
-		id: "mana-and-artifice:improvised_manaweaver_wand",
-		Count: 1b,
+		id: "mana-and-artifice:improvised_manaweaver_wand"
+		Count: 1b
 		tag: {
 			Damage: 0
 		}
-	},
-	default_quest_shape: "",
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.0d,
-			y: -1.0d,
+			x: -4.0d
+			y: -1.0d
 			dependencies: [
-				"295F69BF78D56F74",
+				"295F69BF78D56F74"
 				"40A8C36D20CB12F3"
-			],
-			id: "0DB37AF30E537DCB",
+			]
+			id: "0DB37AF30E537DCB"
 			tasks: [{
-				id: "5C733970C42A34C6",
-				type: "item",
+				id: "5C733970C42A34C6"
+				type: "item"
 				item: "botania:mana_pool"
-			}],
+			}]
 			rewards: [{
-				id: "3140706CDE31DFA4",
-				type: "item",
+				id: "3140706CDE31DFA4"
+				type: "item"
 				item: "botania:mana_spreader"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 0.5d,
-			description: ["This should help you with some items you do not yet have access to"],
-			dependencies: ["0DB37AF30E537DCB"],
-			id: "618D587AAE75694D",
+			x: -4.0d
+			y: 0.5d
+			description: ["This should help you with some items you do not yet have access to"]
+			dependencies: ["0DB37AF30E537DCB"]
+			id: "618D587AAE75694D"
 			tasks: [{
-				id: "03AD97C3D53FF4DD",
-				type: "item",
+				id: "03AD97C3D53FF4DD"
+				type: "item"
 				item: "botania:alchemy_catalyst"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -5.5d,
-			description: ["This can be used on grass, to produce Mystical Flowers to get started on Botania."],
-			id: "0475EFD9F3906E09",
+			x: -4.0d
+			y: -5.5d
+			description: ["This can be used on grass, to produce Mystical Flowers to get started on Botania."]
+			id: "0475EFD9F3906E09"
 			tasks: [{
-				id: "7729C7AF35F7FDB3",
-				type: "item",
-				item: "botania:fertilizer",
+				id: "7729C7AF35F7FDB3"
+				type: "item"
+				item: "botania:fertilizer"
 				count: 4L
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -4.0d,
-			id: "0F4B90B8B6267C25",
+			x: -2.0d
+			y: -4.0d
+			id: "0F4B90B8B6267C25"
 			tasks: [{
-				id: "2E0EC6F460876CFE",
-				type: "item",
+				id: "2E0EC6F460876CFE"
+				type: "item"
 				item: "bloodmagic:altar"
-			}],
+			}]
 			rewards: [{
-				id: "04D612871794B2CE",
-				type: "item",
-				item: "bloodmagic:blankrune",
+				id: "04D612871794B2CE"
+				type: "item"
+				item: "bloodmagic:blankrune"
 				count: 3
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -2.5d,
-			description: [""],
-			dependencies: ["0F4B90B8B6267C25"],
-			id: "0928D072C63CE772",
+			x: -2.0d
+			y: -2.5d
+			description: [""]
+			dependencies: ["0F4B90B8B6267C25"]
+			id: "0928D072C63CE772"
 			tasks: [{
-				id: "1CBF64C5026E8BE8",
-				type: "item",
+				id: "1CBF64C5026E8BE8"
+				type: "item"
 				item: "bloodmagic:blankslate"
-			}],
+			}]
 			rewards: [{
-				id: "79119D429DDE7C75",
-				type: "item",
-				item: "bloodmagic:blankslate",
+				id: "79119D429DDE7C75"
+				type: "item"
+				item: "bloodmagic:blankslate"
 				count: 4
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -1.0d,
-			dependencies: ["0928D072C63CE772"],
-			id: "515A853949163702",
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["0928D072C63CE772"]
+			id: "515A853949163702"
 			tasks: [{
-				id: "6913E9F819D2FEBC",
-				type: "item",
+				id: "6913E9F819D2FEBC"
+				type: "item"
 				item: {
-					id: "bloodmagic:soulsword",
-					Count: 1b,
+					id: "bloodmagic:soulsword"
+					Count: 1b
 					tag: {
-						Damage: 0,
+						Damage: 0
 						AS_Amulet_Holder: [I;
-							-303116761,
-							-435728559,
-							-1324848252,
+							-303116761
+							-435728559
+							-1324848252
 							-1440318696
 						]
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "6EBC252BC81F6746",
-				type: "item",
+				id: "6EBC252BC81F6746"
+				type: "item"
 				item: {
-					id: "bloodmagic:soulgempetty",
-					Count: 1b,
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
 					tag: {
-						souls: 64.0d,
+						souls: 64.0d
 						demonWillType: "steadfast"
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -4.0d,
-			id: "0A6B0A8336EC11CF",
+			x: 0.0d
+			y: -4.0d
+			id: "0A6B0A8336EC11CF"
 			tasks: [{
-				id: "545226C85C9A5241",
-				type: "item",
-				item: "astralsorcery:aquamarine",
+				id: "545226C85C9A5241"
+				type: "item"
+				item: "astralsorcery:aquamarine"
 				count: 4L
-			}],
+			}]
 			rewards: [{
-				id: "04F3C6B097CD8786",
-				type: "item",
+				id: "04F3C6B097CD8786"
+				type: "item"
 				item: {
-					id: "astralsorcery:constellation_paper",
-					Count: 1b,
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -2.5d,
-			description: ["The recipe is temporary, please do not judge it, it's shy"],
-			dependencies: ["0A6B0A8336EC11CF"],
-			id: "6A0F37C65BAAEC95",
+			x: 0.0d
+			y: -2.5d
+			description: ["The recipe is temporary, please do not judge it, it's shy"]
+			dependencies: ["0A6B0A8336EC11CF"]
+			id: "6A0F37C65BAAEC95"
 			tasks: [{
-				id: "17A4726F369ABBBF",
-				type: "item",
-				item: "astralsorcery:marble_raw",
+				id: "17A4726F369ABBBF"
+				type: "item"
+				item: "astralsorcery:marble_raw"
 				count: 8L
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -1.0d,
-			dependencies: ["6A0F37C65BAAEC95"],
-			id: "7205C49B873FDC16",
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["6A0F37C65BAAEC95"]
+			id: "7205C49B873FDC16"
 			tasks: [{
-				id: "4E8001DD50ABA80C",
-				type: "item",
+				id: "4E8001DD50ABA80C"
+				type: "item"
 				item: "astralsorcery:altar_discovery"
-			}],
+			}]
 			rewards: [{
-				id: "3D58F60F19805D47",
-				type: "item",
+				id: "3D58F60F19805D47"
+				type: "item"
 				item: {
-					id: "astralsorcery:rock_crystal",
-					Count: 1b,
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
 					tag: {
-						astralsorcery: {},
+						astralsorcery: { }
 						display: {
-							Name: '[{"text":"Use me to craft a Lightwell"}]'
+							Name: "[{\"text\":\"Use me to craft a Lightwell\"}]"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "A crystal for your progression",
-			x: 1.5d,
-			y: -4.0d,
-			description: ["For those who doesn't want to use the void miner to get starmetal."],
-			dependencies: ["0A6B0A8336EC11CF"],
-			id: "010402FD75B45E71",
+			title: "A crystal for your progression"
+			x: 1.5d
+			y: -4.0d
+			description: ["For those who doesn't want to use the void miner to get starmetal."]
+			dependencies: ["0A6B0A8336EC11CF"]
+			id: "010402FD75B45E71"
 			tasks: [{
-				id: "15C761FA7A7C9D08",
-				type: "checkmark",
+				id: "15C761FA7A7C9D08"
+				type: "checkmark"
 				icon: {
-					id: "astralsorcery:rock_collector_crystal",
-					Count: 1b,
+					id: "astralsorcery:rock_collector_crystal"
+					Count: 1b
 					tag: {
 						astralsorcery: {
-							constellation: "astralsorcery:armara",
+							constellation: "astralsorcery:armara"
 							crystalProperties: {
 								attributes: [
 									{
-										property: "astralsorcery:size",
-										pLevel: 3,
-										discovered: 1b
-									},
-									{
-										property: "astralsorcery:purity",
-										pLevel: 2,
-										discovered: 1b
-									},
-									{
-										property: "astralsorcery:shape",
-										pLevel: 3,
-										discovered: 1b
-									},
-									{
-										property: "astralsorcery:collector.rate",
-										pLevel: 3,
-										discovered: 1b
-									},
-									{
-										property: "astralsorcery:constellation.armara",
-										pLevel: 2,
+										property: "astralsorcery:size"
+										pLevel: 3
 										discovered: 1b
 									}
-								]
-							}
-						}
-					}
-				}
-			}],
-			rewards: [{
-				id: "13B358C20634D410",
-				type: "item",
-				auto: "enabled",
-				item: {
-					id: "astralsorcery:rock_collector_crystal",
-					Count: 1b,
-					tag: {
-						astralsorcery: {
-							constellation: "astralsorcery:armara",
-							crystalProperties: {
-								attributes: [
 									{
-										property: "astralsorcery:size",
-										pLevel: 3,
+										property: "astralsorcery:purity"
+										pLevel: 2
 										discovered: 1b
-									},
+									}
 									{
-										property: "astralsorcery:purity",
-										pLevel: 2,
+										property: "astralsorcery:shape"
+										pLevel: 3
 										discovered: 1b
-									},
+									}
 									{
-										property: "astralsorcery:shape",
-										pLevel: 3,
+										property: "astralsorcery:collector.rate"
+										pLevel: 3
 										discovered: 1b
-									},
+									}
 									{
-										property: "astralsorcery:collector.rate",
-										pLevel: 3,
-										discovered: 1b
-									},
-									{
-										property: "astralsorcery:constellation.armara",
-										pLevel: 2,
+										property: "astralsorcery:constellation.armara"
+										pLevel: 2
 										discovered: 1b
 									}
 								]
@@ -277,155 +235,198 @@
 					}
 				}
 			}]
-		},
+			rewards: [{
+				id: "13B358C20634D410"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "astralsorcery:rock_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:armara"
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:constellation.armara"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+		}
 		{
-			x: -4.0d,
-			y: -4.0d,
+			x: -4.0d
+			y: -4.0d
 			description: [
-				"The primary flower needed.",
-				"",
-				"You need this flower to make a pure daisy.",
-				"",
+				"The primary flower needed."
+				""
+				"You need this flower to make a pure daisy."
+				""
 				"In which when wood and stone are placed around the pure daisy it will change to Livingwood and livingstone respectively."
-			],
-			dependencies: ["0475EFD9F3906E09"],
-			id: "40A8C36D20CB12F3",
+			]
+			dependencies: ["0475EFD9F3906E09"]
+			id: "40A8C36D20CB12F3"
 			tasks: [{
-				id: "7130D2ACE31A3F45",
-				type: "item",
+				id: "7130D2ACE31A3F45"
+				type: "item"
 				item: "botania:white_mystical_flower"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -2.5d,
-			dependencies: ["0475EFD9F3906E09"],
-			id: "295F69BF78D56F74",
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["0475EFD9F3906E09"]
+			id: "295F69BF78D56F74"
 			tasks: [{
-				id: "65889CA378DC5229",
-				type: "item",
+				id: "65889CA378DC5229"
+				type: "item"
 				item: "botania:apothecary_default"
 			}]
-		},
+		}
 		{
-			title: "The most commonly use Flower Generator",
-			x: -5.5d,
-			y: -2.5d,
+			title: "The most commonly use Flower Generator"
+			x: -5.5d
+			y: -2.5d
 			description: [
-				"The most basic, and hugely used even late game for many. This flower burns furnace fuels that are drop near it to produce mana.",
-				"",
+				"The most basic, and hugely used even late game for many. This flower burns furnace fuels that are drop near it to produce mana."
+				""
 				"Some setups can be use to automate fuel so that your drops won't despawn."
-			],
-			dependencies: ["295F69BF78D56F74"],
-			id: "61796B03EBC8A12F",
+			]
+			dependencies: ["295F69BF78D56F74"]
+			id: "61796B03EBC8A12F"
 			tasks: [{
-				id: "62ABD7C889338813",
-				type: "item",
+				id: "62ABD7C889338813"
+				type: "item"
 				item: "botania:endoflame"
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -1.0d,
-			dependencies: ["0DB37AF30E537DCB"],
-			id: "4C2E23B4D178BE6A",
+			x: -5.5d
+			y: -1.0d
+			dependencies: ["0DB37AF30E537DCB"]
+			id: "4C2E23B4D178BE6A"
 			tasks: [{
-				id: "1870F60CB875B20A",
-				type: "item",
+				id: "1870F60CB875B20A"
+				type: "item"
 				item: "botania:terra_plate"
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -1.0d,
-			dependencies: ["4C2E23B4D178BE6A"],
-			id: "2DBBD4DD0E836E19",
+			x: -7.0d
+			y: -1.0d
+			dependencies: ["4C2E23B4D178BE6A"]
+			id: "2DBBD4DD0E836E19"
 			tasks: [{
-				id: "732EAF3A3C1928F8",
-				type: "item",
-				item: "botania:natura_pylon",
+				id: "732EAF3A3C1928F8"
+				type: "item"
+				item: "botania:natura_pylon"
 				count: 2L
 			}]
-		},
+		}
 		{
-			x: -8.5d,
-			y: -1.0d,
-			dependencies: ["2DBBD4DD0E836E19"],
-			id: "6FD8058B759E34A7",
+			x: -8.5d
+			y: -1.0d
+			dependencies: ["2DBBD4DD0E836E19"]
+			id: "6FD8058B759E34A7"
 			tasks: [{
-				id: "497FCA60E506CE0F",
-				type: "item",
+				id: "497FCA60E506CE0F"
+				type: "item"
 				item: "botania:alfheim_portal"
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -1.0d,
-			dependencies: ["6FD8058B759E34A7"],
-			id: "054206FCE4CCF781",
+			x: -10.0d
+			y: -1.0d
+			dependencies: ["6FD8058B759E34A7"]
+			id: "054206FCE4CCF781"
 			tasks: [{
-				id: "616D5421B6479042",
-				type: "item",
+				id: "616D5421B6479042"
+				type: "item"
 				item: "mythicbotany:mana_infuser"
 			}]
-		},
+		}
 		{
-			x: -11.5d,
-			y: -1.0d,
-			dependencies: ["054206FCE4CCF781"],
-			id: "067AAF21412FC656",
+			x: -11.5d
+			y: -1.0d
+			dependencies: ["054206FCE4CCF781"]
+			id: "067AAF21412FC656"
 			tasks: [{
-				id: "790BC4DB9EE4DFC6",
-				type: "item",
+				id: "790BC4DB9EE4DFC6"
+				type: "item"
 				item: "mythicbotany:alfsteel_pylon"
 			}]
-		},
+		}
 		{
-			x: -14.5d,
-			y: -1.0d,
-			dependencies: ["4507F0160726286A"],
-			id: "6C5913CD5A2915F3",
+			x: -14.5d
+			y: -1.0d
+			dependencies: ["4507F0160726286A"]
+			id: "6C5913CD5A2915F3"
 			tasks: [{
-				id: "3FCEFB23EF72768A",
-				type: "item",
+				id: "3FCEFB23EF72768A"
+				type: "item"
 				item: "botania:life_essence"
-			}],
+			}]
 			rewards: [
 				{
-					id: "714C511C2DFC0318",
-					type: "item",
+					id: "714C511C2DFC0318"
+					type: "item"
 					item: "botania:gaia_head"
-				},
+				}
 				{
-					id: "0D15A8FE4F77D945",
-					type: "item",
+					id: "0D15A8FE4F77D945"
+					type: "item"
 					item: "xreliquary:pedestals/passive/lime_passive_pedestal"
 				}
 			]
-		},
+		}
 		{
-			title: "Summoning Gaia",
-			icon: "botania:gaia_pylon",
-			x: -13.0d,
-			y: -1.0d,
-			dependencies: ["067AAF21412FC656"],
-			id: "4507F0160726286A",
+			title: "Summoning Gaia"
+			icon: "botania:gaia_pylon"
+			x: -13.0d
+			y: -1.0d
+			dependencies: ["067AAF21412FC656"]
+			id: "4507F0160726286A"
 			tasks: [
 				{
-					id: "44BB4A3D26108522",
-					type: "item",
-					item: "botania:gaia_pylon",
+					id: "44BB4A3D26108522"
+					type: "item"
+					item: "botania:gaia_pylon"
 					count: 4L
-				},
+				}
 				{
-					id: "1ED5D4C34D511B0F",
-					type: "item",
+					id: "1ED5D4C34D511B0F"
+					type: "item"
 					item: "minecraft:beacon"
-				},
+				}
 				{
-					id: "4E41FD1D8FBC6843",
-					type: "item",
-					item: "minecraft:iron_block",
+					id: "4E41FD1D8FBC6843"
+					type: "item"
+					item: "minecraft:iron_block"
 					count: 9L
 				}
 			]

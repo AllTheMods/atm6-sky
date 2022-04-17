@@ -1,886 +1,871 @@
 {
-	id: "6C99EC6E1599B728",
-	group: "",
-	order_index: 1,
-	filename: "ex_nihilio",
-	title: "Ex Nihilo",
-	icon: "kubejs:chunk_mod",
-	default_quest_shape: "diamond",
+	id: "6C99EC6E1599B728"
+	group: ""
+	order_index: 1
+	filename: "ex_nihilio"
+	title: "Ex Nihilo"
+	icon: "kubejs:chunk_mod"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "To get more materials",
-			x: 3.0d,
-			y: -5.5d,
+			title: "To get more materials"
+			x: 3.0d
+			y: -5.5d
 			description: [
-				"This is your basic way to get materials, insert mesh, sieve a valid material and get resources, its that simple!",
-				"",
-				"Putting multiple sieves side by side acts as a multiblock structure, letting you sieve in bundles.",
-				"",
-				"&6&lDO NOT USE AN AUTO-CLICKER ON THEM",
-				"This will cause server issues if you start getting an overflow.",
-				"",
+				"This is your basic way to get materials, insert mesh, sieve a valid material and get resources, its that simple!"
+				""
+				"Putting multiple sieves side by side acts as a multiblock structure, letting you sieve in bundles."
+				""
+				"&6&lDO NOT USE AN AUTO-CLICKER ON THEM"
+				"This will cause server issues if you start getting an overflow."
+				""
 				"We do have Auto-Sieves."
-			],
-			dependencies: ["76B1B19B5D3949F5"],
-			id: "2587A593554DBC4A",
+			]
+			dependencies: ["76B1B19B5D3949F5"]
+			id: "2587A593554DBC4A"
 			tasks: [{
-				id: "78082A8F71778128",
-				type: "item",
+				id: "78082A8F71778128"
+				type: "item"
 				item: "exnihilosequentia:sieve"
-			}],
+			}]
 			rewards: [
 				{
-					id: "32040DDC0BBAE7A9",
-					type: "item",
+					id: "32040DDC0BBAE7A9"
+					type: "item"
 					item: "exnihilosequentia:sieve"
-				},
+				}
 				{
-					id: "7F193A56F566C456",
-					type: "random",
+					id: "7F193A56F566C456"
+					type: "random"
 					table_id: 643952101224112939L
 				}
 			]
-		},
+		}
 		{
-			title: "Crucial Crucible",
-			x: 0.0d,
-			y: -2.0d,
+			title: "Crucial Crucible"
+			x: 0.0d
+			y: -2.0d
 			description: [
-				"Crucible are the tip of the iceberg or in this case volcano when it comes to lava production.",
-				"",
-				"It needs a heat source under it to function.",
-				"",
-				"Torch, Fire, Lava, and some blocks provide their own level of heat.",
-				"",
-				"Once heated you can put or pump materials into the crucible(s), some materials provide more lava then others.",
-				"",
+				"Crucible are the tip of the iceberg or in this case volcano when it comes to lava production."
+				""
+				"It needs a heat source under it to function."
+				""
+				"Torch, Fire, Lava, and some blocks provide their own level of heat."
+				""
+				"Once heated you can put or pump materials into the crucible(s), some materials provide more lava then others."
+				""
 				"This can potentionally be use as a power free AFK lava generator."
-			],
+			]
 			dependencies: [
-				"5E67AA32C8260EFE",
+				"5E67AA32C8260EFE"
 				"276560C7054D7131"
-			],
-			id: "5C106B6E6409EF22",
+			]
+			id: "5C106B6E6409EF22"
 			tasks: [{
-				id: "44E83B5E77B733F3",
-				type: "item",
+				id: "44E83B5E77B733F3"
+				type: "item"
 				item: "exnihilosequentia:crucible_fired"
-			}],
+			}]
 			rewards: [{
-				id: "130985B1FFE5D6C9",
-				type: "random",
+				id: "130985B1FFE5D6C9"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			title: "This is not even my final form!",
-			x: -3.0d,
-			y: -4.0d,
+			title: "This is not even my final form!"
+			x: -3.0d
+			y: -4.0d
 			description: [
-				"The only way to transform dust beyond, is to either sieve into materials, or turn it into clay.",
-				"",
+				"The only way to transform dust beyond, is to either sieve into materials, or turn it into clay."
+				""
 				"You could also made it into lava... but compared to cobblestone, dust gives 1/5 the amount of lava. So not a wise choice."
-			],
-			dependencies: ["508DEEE11F45E4F3"],
-			id: "276560C7054D7131",
+			]
+			dependencies: ["508DEEE11F45E4F3"]
+			id: "276560C7054D7131"
 			tasks: [{
-				id: "3500358743E5638B",
-				type: "item",
+				id: "3500358743E5638B"
+				type: "item"
 				item: "exnihilosequentia:dust"
-			}],
+			}]
 			rewards: [
 				{
-					id: "49A1927E7B45852C",
-					type: "item",
+					id: "49A1927E7B45852C"
+					type: "item"
 					item: {
-						id: "exnihilosequentia:crushed_netherrack",
-						Count: 1b,
+						id: "exnihilosequentia:crushed_netherrack"
+						Count: 1b
 						tag: {
 							display: {
-								Name: '[{"text":"Dust Devil"}]'
-							},
+								Name: "[{\"text\":\"Dust Devil\"}]"
+							}
 							Enchantments: [
 								{
-									lvl: 1,
+									lvl: 1
 									id: "minecraft:flame"
-								},
+								}
 								{
-									lvl: 1,
+									lvl: 1
 									id: "minecraft:thorns"
-								},
+								}
 								{
-									lvl: 1,
+									lvl: 1
 									id: "minecraft:vanishing_curse"
 								}
 							]
 						}
 					}
-				},
+				}
 				{
-					id: "1223935C859A66EF",
-					type: "item",
+					id: "1223935C859A66EF"
+					type: "item"
 					item: "xreliquary:pedestals/passive/red_passive_pedestal"
-				},
+				}
 				{
-					id: "5C6249E7A01AC280",
-					type: "random",
+					id: "5C6249E7A01AC280"
+					type: "random"
 					table_id: 643952101224112939L
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -7.0d,
-			dependencies: ["0BF9B63E286A7C1B"],
-			id: "1B3743770E4CCF42",
+			x: -3.0d
+			y: -7.0d
+			dependencies: ["0BF9B63E286A7C1B"]
+			id: "1B3743770E4CCF42"
 			tasks: [{
-				id: "2B6FA01BBAED1404",
-				type: "item",
+				id: "2B6FA01BBAED1404"
+				type: "item"
 				item: "minecraft:gravel"
-			}],
+			}]
 			rewards: [{
-				id: "4D3E5EB9C57057E3",
-				type: "random",
+				id: "4D3E5EB9C57057E3"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -5.5d,
-			dependencies: ["1B3743770E4CCF42"],
-			id: "508DEEE11F45E4F3",
+			x: -3.0d
+			y: -5.5d
+			dependencies: ["1B3743770E4CCF42"]
+			id: "508DEEE11F45E4F3"
 			tasks: [{
-				id: "415B428282916C73",
-				type: "item",
+				id: "415B428282916C73"
+				type: "item"
 				item: "minecraft:sand"
-			}],
+			}]
 			rewards: [{
-				id: "185D301CE33BA582",
-				type: "random",
+				id: "185D301CE33BA582"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			title: "I am not a crook! Oh wait...",
-			x: 3.0d,
-			y: -10.0d,
+			title: "I am not a crook! Oh wait..."
+			x: 3.0d
+			y: -10.0d
 			description: [
-				"Wooden crooks are a staple to getting silk worms and higher chance for saplings from all trees.",
-				"",
+				"Wooden crooks are a staple to getting silk worms and higher chance for saplings from all trees."
+				""
 				"There are many crooks with varying durability."
-			],
-			dependencies: ["6712F8255BE22C00"],
-			id: "458A8414A5189198",
+			]
+			dependencies: ["6712F8255BE22C00"]
+			id: "458A8414A5189198"
 			tasks: [{
-				id: "217AF1AB5935DE87",
-				type: "item",
+				id: "217AF1AB5935DE87"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:crook_wood",
-					Count: 1b,
+					id: "exnihilosequentia:crook_wood"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "04E6F9A92D8612E4",
-					type: "item",
+					id: "04E6F9A92D8612E4"
+					type: "item"
 					item: {
-						id: "exnihilosequentia:crook_granite",
-						Count: 1b,
+						id: "exnihilosequentia:crook_granite"
+						Count: 1b
 						tag: {
-							Damage: 0,
+							Damage: 0
 							display: {
-								Name: '[{"text":"Shiny Pink Crook"}]'
-							},
+								Name: "[{\"text\":\"Shiny Pink Crook\"}]"
+							}
 							Enchantments: [{
-								lvl: 1,
+								lvl: 1
 								id: "minecraft:unbreaking"
 							}]
 						}
 					}
-				},
+				}
 				{
-					id: "72673372F1A284B4",
-					type: "random",
+					id: "72673372F1A284B4"
+					type: "random"
 					table_id: 643952101224112939L
 				}
 			]
-		},
+		}
 		{
-			title: "Time to Grind",
-			x: -3.0d,
-			y: -8.5d,
+			title: "Time to Grind"
+			x: -3.0d
+			y: -8.5d
 			description: [
-				"To get the next 3 sieving materials, you have to hammer them.",
-				"",
-				"Simply place the block down and break them with the hammer. The Compact Hammer will break Compact Blocks.",
-				"",
-				"Jei will show the blocks that can be broken.",
-				"",
+				"To get the next 3 sieving materials, you have to hammer them."
+				""
+				"Simply place the block down and break them with the hammer. The Compact Hammer will break Compact Blocks."
+				""
+				"Jei will show the blocks that can be broken."
+				""
 				"Cobble > Gravel > Sand > Dust"
-			],
-			dependencies: ["0B87D8D5CC3AF30D"],
-			id: "0BF9B63E286A7C1B",
+			]
+			dependencies: ["0B87D8D5CC3AF30D"]
+			id: "0BF9B63E286A7C1B"
 			tasks: [
 				{
-					id: "00FA96B88F642341",
-					type: "item",
+					id: "00FA96B88F642341"
+					type: "item"
 					item: {
-						id: "exnihilosequentia:hammer_stone",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "63E8222A6B3A7F9B",
-					type: "item",
-					item: {
-						id: "excompressum:compressed_hammer_stone",
-						Count: 1b,
+						id: "exnihilosequentia:hammer_stone"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "63E8222A6B3A7F9B"
+					type: "item"
+					item: {
+						id: "excompressum:compressed_hammer_stone"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "3210DAA45EDFFB3D",
-				type: "random",
+				id: "3210DAA45EDFFB3D"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			title: "A cake to drag-on.",
-			icon: "minecraft:dragon_head",
-			x: 5.0d,
-			y: -10.0d,
+			title: "A cake to drag-on."
+			icon: "minecraft:dragon_head"
+			x: 5.0d
+			y: -10.0d
 			description: [
-				"This cake will teleport you to the end when eaten.",
-				"",
-				"This cake can be fixed by adding an eye of ender to it.",
-				"",
+				"This cake will teleport you to the end when eaten."
+				""
+				"This cake can be fixed by adding an eye of ender to it."
+				""
 				"It's especially Eye Catching."
-			],
-			id: "79FDDEC32609E563",
+			]
+			id: "79FDDEC32609E563"
 			tasks: [{
-				id: "6821C664585BCA2F",
-				type: "item",
+				id: "6821C664585BCA2F"
+				type: "item"
 				item: "exnihilosequentia:end_cake"
-			}],
+			}]
 			rewards: [{
-				id: "4C8E3F4A8980B0AB",
-				type: "item",
+				id: "4C8E3F4A8980B0AB"
+				type: "item"
 				item: "minecraft:ender_eye"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -10.0d,
+			x: 0.0d
+			y: -10.0d
 			description: [
-				"Meshes have been given an upgrade since we last encountered them, now going upto netherite! the netherite mesh will be your method into allthemodium",
-				"",
+				"Meshes have been given an upgrade since we last encountered them, now going upto netherite! the netherite mesh will be your method into allthemodium"
+				""
 				"Note that Emerald mesh won't upgrade to Netherite."
-			],
-			dependencies: ["6712F8255BE22C00"],
-			id: "4AA6039937E51455",
+			]
+			dependencies: ["6712F8255BE22C00"]
+			id: "4AA6039937E51455"
 			tasks: [{
-				id: "553618FD48D28A65",
-				type: "item",
+				id: "553618FD48D28A65"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_string",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_string"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -8.5d,
-			dependencies: ["4AA6039937E51455"],
-			id: "1F057C3C6AA5FD22",
+			x: 0.0d
+			y: -8.5d
+			dependencies: ["4AA6039937E51455"]
+			id: "1F057C3C6AA5FD22"
 			tasks: [{
-				id: "7AEABEE2664D85EE",
-				type: "item",
+				id: "7AEABEE2664D85EE"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_flint",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_flint"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -7.0d,
-			dependencies: ["1F057C3C6AA5FD22"],
-			id: "29B095943AD26EA9",
+			x: 0.0d
+			y: -7.0d
+			dependencies: ["1F057C3C6AA5FD22"]
+			id: "29B095943AD26EA9"
 			tasks: [{
-				id: "55237905F174FAA7",
-				type: "item",
+				id: "55237905F174FAA7"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_iron",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_iron"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -5.5d,
-			dependencies: ["29B095943AD26EA9"],
-			dependency_requirement: "one_completed",
-			id: "42387D579F777B5E",
+			x: 0.0d
+			y: -5.5d
+			dependencies: ["29B095943AD26EA9"]
+			dependency_requirement: "one_completed"
+			id: "42387D579F777B5E"
 			tasks: [{
-				id: "10A3924D160CC2B2",
-				type: "item",
+				id: "10A3924D160CC2B2"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_diamond",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_diamond"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -1.0d,
-			y: -4.0d,
-			dependencies: ["42387D579F777B5E"],
-			id: "3375606B7B481265",
+			x: -1.0d
+			y: -4.0d
+			dependencies: ["42387D579F777B5E"]
+			id: "3375606B7B481265"
 			tasks: [{
-				id: "5BD2F4D3D78D3E00",
-				type: "item",
+				id: "5BD2F4D3D78D3E00"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_emerald",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_emerald"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -4.0d,
-			dependencies: ["42387D579F777B5E"],
-			id: "5E9F6228BBC60FFC",
+			x: 1.0d
+			y: -4.0d
+			dependencies: ["42387D579F777B5E"]
+			id: "5E9F6228BBC60FFC"
 			tasks: [{
-				id: "692A1A67A3A43BAD",
-				type: "item",
+				id: "692A1A67A3A43BAD"
+				type: "item"
 				item: {
-					id: "exnihilosequentia:mesh_netherite",
-					Count: 1b,
+					id: "exnihilosequentia:mesh_netherite"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "There is an infestation!",
-			x: 3.0d,
-			y: -8.5d,
+			title: "There is an infestation!"
+			x: 3.0d
+			y: -8.5d
 			description: [
-				"Silkworms drops from leaves that been broken by a crook.",
-				"",
-				"Can be cook for food, or used on leaves to infest them.",
-				"",
+				"Silkworms drops from leaves that been broken by a crook."
+				""
+				"Can be cook for food, or used on leaves to infest them."
+				""
 				"Infested leaves will drop strings, but no saplings."
-			],
-			dependencies: ["458A8414A5189198"],
-			id: "564263E35EFCAD21",
+			]
+			dependencies: ["458A8414A5189198"]
+			id: "564263E35EFCAD21"
 			tasks: [{
-				id: "5F37DF3800A01F53",
-				type: "item",
+				id: "5F37DF3800A01F53"
+				type: "item"
 				item: "exnihilosequentia:silkworm"
-			}],
+			}]
 			rewards: [
 				{
-					id: "681B44C761EB49C5",
-					type: "item",
-					item: "exnihilosequentia:cooked_silkworm",
+					id: "681B44C761EB49C5"
+					type: "item"
+					item: "exnihilosequentia:cooked_silkworm"
 					count: 32
-				},
+				}
 				{
-					id: "349C3BB989A6CA84",
-					type: "random",
+					id: "349C3BB989A6CA84"
+					type: "random"
 					table_id: 643952101224112939L
 				}
 			]
-		},
+		}
 		{
-			title: "A Dirt-y idea.",
-			icon: "minecraft:mycelium",
-			x: -5.0d,
-			y: -10.0d,
+			title: "A Dirt-y idea."
+			icon: "minecraft:mycelium"
+			x: -5.0d
+			y: -10.0d
 			description: [
-				"These seeds are from sieving dirt.",
-				"",
-				"- Ancient spores will turn dirt to Mycelium",
-				"- Grass seed turns dirt to grass.",
+				"These seeds are from sieving dirt."
+				""
+				"- Ancient spores will turn dirt to Mycelium"
+				"- Grass seed turns dirt to grass."
 				"- Making a 2x2 of Spruce saplings not only spawns a giant tree but turns all grass and dirt to Podzol within an area"
-			],
-			id: "046D86775F6FF8D3",
+			]
+			id: "046D86775F6FF8D3"
 			tasks: [
 				{
-					id: "0ED2CEF487048036",
-					type: "item",
+					id: "0ED2CEF487048036"
+					type: "item"
 					item: "exnihilosequentia:ancient_spores"
-				},
+				}
 				{
-					id: "52F7BD701465DEB3",
-					type: "item",
+					id: "52F7BD701465DEB3"
+					type: "item"
 					item: "exnihilosequentia:grass_seeds"
-				},
+				}
 				{
-					id: "02E5685E1B626581",
-					type: "item",
+					id: "02E5685E1B626581"
+					type: "item"
 					item: "exnihilosequentia:seed_spruce"
 				}
-			],
+			]
 			rewards: [{
-				id: "5E36424B76F234BD",
-				type: "random",
+				id: "5E36424B76F234BD"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			title: "All the cobble gens!",
-			icon: "cobblefordays:tier_1",
-			x: 0.0d,
-			y: 0.0d,
+			title: "All the cobble gens!"
+			icon: "cobblefordays:tier_1"
+			x: 0.0d
+			y: 0.0d
 			description: [
-				"There are many cobble generators in this modpack.",
-				"",
-				"From Vanilla, to Cobble Gens, to even Pedestals.",
-				"",
-				"Feel free to choose what you like.",
-				"",
-				'Note: to get the cobble from the "Cobble for days" machines you just have to put a storage such as a chest on top.'
-			],
-			id: "1D137ABA27562E47",
+				"There are many cobble generators in this modpack."
+				""
+				"From Vanilla, to Cobble Gens, to even Pedestals."
+				""
+				"Feel free to choose what you like."
+				""
+				"Note: to get the cobble from the \"Cobble for days\" machines you just have to put a storage such as a chest on top."
+			]
+			id: "1D137ABA27562E47"
 			tasks: [
 				{
-					id: "6AA1B47B45BC487D",
-					type: "item",
+					id: "6AA1B47B45BC487D"
+					type: "item"
 					item: "cobblefordays:tier_1"
-				},
+				}
 				{
-					id: "7FB8D2AB706F1CC0",
-					type: "item",
+					id: "7FB8D2AB706F1CC0"
+					type: "item"
 					item: "pedestals:coin/cobble"
-				},
+				}
 				{
-					id: "1E6185C26D9E7515",
-					type: "item",
+					id: "1E6185C26D9E7515"
+					type: "item"
 					item: "minecraft:lava_bucket"
-				},
+				}
 				{
-					id: "5062BC62619299A6",
-					type: "item",
+					id: "5062BC62619299A6"
+					type: "item"
 					item: "minecraft:water_bucket"
 				}
-			],
+			]
 			rewards: [{
-				id: "50DE23B26B05CB51",
-				type: "item",
-				item: "compressium:cobblestone_5",
+				id: "50DE23B26B05CB51"
+				type: "item"
+				item: "compressium:cobblestone_5"
 				count: 4
 			}]
-		},
+		}
 		{
-			title: "From the Beginning",
-			icon: "minecraft:oak_wood",
-			x: 0.0d,
-			y: -11.5d,
+			title: "From the Beginning"
+			icon: "minecraft:oak_wood"
+			x: 0.0d
+			y: -11.5d
 			description: [
-				"There are 2 skyblock types that exist in this pack.",
-				"",
-				"Garden of Glass, with water, grass, dirt, and roots.",
-				"There is stone from the GOG mod, you simply crouch and by default right mouse click on grass/dirt. Roots can be crafted into sapplings.",
-				"",
-				"There is also the Classic Skyblock generation.",
-				"It has a tree, on grass and dirt, plus a chest with a bucket of lava and an ice block.",
-				"",
+				"There are 2 skyblock types that exist in this pack."
+				""
+				"Garden of Glass, with water, grass, dirt, and roots."
+				"There is stone from the GOG mod, you simply crouch and by default right mouse click on grass/dirt. Roots can be crafted into sapplings."
+				""
+				"There is also the Classic Skyblock generation."
+				"It has a tree, on grass and dirt, plus a chest with a bucket of lava and an ice block."
+				""
 				"If for some reason you lost sapplings, you can get some at the top left corner of the quest page in Emergency Items."
-			],
-			id: "6712F8255BE22C00",
+			]
+			id: "6712F8255BE22C00"
 			tasks: [{
-				id: "3CCC7AC7B158E6A7",
-				type: "item",
-				title: "Any #minecraft:logs",
+				id: "3CCC7AC7B158E6A7"
+				type: "item"
+				title: "Any #minecraft:logs"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "minecraft:logs"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "704537D7ABCCD8E6",
-				type: "item",
+				id: "2FE66ED823AB5CE1"
+				type: "item"
 				item: {
-					id: "forbidden_arcanus:bone_axe",
-					Count: 1b,
+					id: "minecraft:stone_axe"
+					Count: 1b
 					tag: {
-						Damage: 0,
-						display: {
-							Name: '[{"text":"The Pun_isher"}]'
-						}
+						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Strung for Strings",
-			x: 3.0d,
-			y: -7.0d,
-			description: ["Quite important to make a White bed early, especially with those Phant0ms out there."],
-			dependencies: ["564263E35EFCAD21"],
-			id: "76B1B19B5D3949F5",
+			title: "Strung for Strings"
+			x: 3.0d
+			y: -7.0d
+			description: ["Quite important to make a White bed early, especially with those Phant0ms out there."]
+			dependencies: ["564263E35EFCAD21"]
+			id: "76B1B19B5D3949F5"
 			tasks: [
 				{
-					id: "061D03A3DC2E464E",
-					type: "item",
+					id: "061D03A3DC2E464E"
+					type: "item"
 					item: "minecraft:string"
-				},
+				}
 				{
-					id: "6739279FF7473F48",
-					type: "item",
+					id: "6739279FF7473F48"
+					type: "item"
 					item: "minecraft:white_bed"
 				}
-			],
+			]
 			rewards: [{
-				id: "2FD8FA6A1DA0A601",
-				type: "item",
+				id: "2FD8FA6A1DA0A601"
+				type: "item"
 				item: "comforts:sleeping_bag_white"
 			}]
-		},
+		}
 		{
-			title: "Simply Cobble",
-			x: -3.0d,
-			y: -10.0d,
-			description: ["Cobblestone, the most basic, and useful block for skyblock since it's beginning."],
-			dependencies: ["6712F8255BE22C00"],
-			id: "0B87D8D5CC3AF30D",
+			title: "Simply Cobble"
+			x: -3.0d
+			y: -10.0d
+			description: ["Cobblestone, the most basic, and useful block for skyblock since it's beginning."]
+			dependencies: ["6712F8255BE22C00"]
+			id: "0B87D8D5CC3AF30D"
 			tasks: [{
-				id: "387C9E265EF2BFE0",
-				type: "item",
+				id: "387C9E265EF2BFE0"
+				type: "item"
 				item: "minecraft:cobblestone"
-			}],
+			}]
 			rewards: [{
-				id: "188F42806B25299B",
-				type: "item",
+				id: "3E13878CF5AF3F18"
+				type: "item"
 				item: {
-					id: "forbidden_arcanus:bone_pickaxe",
-					Count: 1b,
+					id: "minecraft:stone_pickaxe"
+					Count: 1b
 					tag: {
-						Damage: 0,
-						display: {
-							Name: '[{"text":"Got a Bone to Pick with you"}]'
-						},
-						Enchantments: [
-							{
-								lvl: 5,
-								id: "minecraft:efficiency"
-							},
-							{
-								lvl: 2,
-								id: "minecraft:unbreaking"
-							}
-						]
+						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Barrel of fun",
-			x: 3.0d,
-			y: -4.0d,
+			title: "Barrel of fun"
+			x: 3.0d
+			y: -4.0d
 			description: [
-				"Now you have a sieve the barrel is an important step towards other materials!",
-				"",
-				"Place it ontop of mycellium for witch water. Which can transform certain mobs, and it's to make soulsand if sand is used in the witch water filled barrel.",
-				"",
-				"Using dust in a water filled barrel and you will get clay.",
-				"",
+				"Now you have a sieve the barrel is an important step towards other materials!"
+				""
+				"Place it ontop of mycellium for witch water. Which can transform certain mobs, and it's to make soulsand if sand is used in the witch water filled barrel."
+				""
+				"Using dust in a water filled barrel and you will get clay."
+				""
 				"Stone Barrels can be used for both hot and cold liquids."
-			],
-			dependencies: ["2587A593554DBC4A"],
-			id: "5E67AA32C8260EFE",
+			]
+			dependencies: ["2587A593554DBC4A"]
+			id: "5E67AA32C8260EFE"
 			tasks: [{
-				id: "613AC40F4DDD6380",
-				type: "item",
+				id: "613AC40F4DDD6380"
+				type: "item"
 				item: "exnihilosequentia:barrel_wood"
-			}],
+			}]
 			rewards: [{
-				id: "15597723B7B9A09E",
-				type: "random",
+				id: "15597723B7B9A09E"
+				type: "random"
 				table_id: 643952101224112939L
 			}]
-		},
+		}
 		{
-			title: "Early Cobble Gen?",
-			icon: "minecraft:lava_bucket",
-			x: 0.0d,
-			y: -13.0d,
-			shape: "octagon",
+			title: "Early Cobble Gen?"
+			icon: "minecraft:lava_bucket"
+			x: 0.0d
+			y: -13.0d
+			shape: "octagon"
 			description: [
-				"For people who don't want to waste too much time, or if Garden of Glass is removed or broken.",
-				"",
+				"For people who don't want to waste too much time, or if Garden of Glass is removed or broken."
+				""
 				"Here is a lava and water bucket for your cobble needs."
-			],
-			id: "4141A05A8D175A5A",
+			]
+			id: "4141A05A8D175A5A"
 			tasks: [{
-				id: "408C9D481F909651",
+				id: "408C9D481F909651"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [
 				{
-					id: "7E0DCF4FF0FE103E",
-					type: "item",
-					auto: "enabled",
+					id: "7E0DCF4FF0FE103E"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "ceramics:cracked_clay_bucket",
-						Count: 1b,
+						id: "ceramics:cracked_clay_bucket"
+						Count: 1b
 						tag: {
 							fluid: "minecraft:lava"
 						}
 					}
-				},
+				}
 				{
-					id: "2D007BB896810704",
-					type: "item",
-					auto: "enabled",
+					id: "2D007BB896810704"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "ceramics:clay_bucket",
-						Count: 1b,
+						id: "ceramics:clay_bucket"
+						Count: 1b
 						tag: {
 							fluid: "minecraft:water"
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Heat Sources",
+			title: "Heat Sources"
 			icon: {
-				id: "minecraft:flint_and_steel",
-				Count: 1b,
+				id: "minecraft:flint_and_steel"
+				Count: 1b
 				tag: {
 					Damage: 0
 				}
-			},
-			x: -1.5d,
-			y: -0.5d,
+			}
+			x: -1.5d
+			y: -0.5d
 			description: [
-				"Heat Sources can be seen from pressing U while hovering your mouse over a crucible.",
-				"",
+				"Heat Sources can be seen from pressing U while hovering your mouse over a crucible."
+				""
 				"Due to some display problem, the x4 source won't display. So I will say it here, that it's fire."
-			],
-			dependencies: ["5C106B6E6409EF22"],
-			id: "7F58FDC48A15959F",
+			]
+			dependencies: ["5C106B6E6409EF22"]
+			id: "7F58FDC48A15959F"
 			tasks: [
 				{
-					id: "6BC1EAC25E4E1035",
-					type: "item",
+					id: "6BC1EAC25E4E1035"
+					type: "item"
 					item: {
-						id: "minecraft:flint_and_steel",
-						Count: 1b,
+						id: "minecraft:flint_and_steel"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "47D38223666E7F04",
-					type: "item",
+					id: "47D38223666E7F04"
+					type: "item"
 					item: "minecraft:netherrack"
 				}
-			],
+			]
 			rewards: [{
-				id: "73AFD3F476EF15E8",
-				type: "xp",
+				id: "73AFD3F476EF15E8"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Blocks for Lava?",
-			x: 1.5d,
-			y: -0.5d,
+			title: "Blocks for Lava?"
+			x: 1.5d
+			y: -0.5d
 			description: [
-				"Lava production not only needs heat, but also needs blocks for production.",
-				"",
-				"Pressing U while hovering over the crucible in the inventory, will show what it can take.",
-				"",
-				"Cobblestone is the most common use in the past that produces 1/4 bucket per block of lava.",
-				"",
+				"Lava production not only needs heat, but also needs blocks for production."
+				""
+				"Pressing U while hovering over the crucible in the inventory, will show what it can take."
+				""
+				"Cobblestone is the most common use in the past that produces 1/4 bucket per block of lava."
+				""
 				"But Obsidian and Netherrack makes a whole bucket of lava."
-			],
-			dependencies: ["5C106B6E6409EF22"],
-			id: "153C83AD044BF76A",
+			]
+			dependencies: ["5C106B6E6409EF22"]
+			id: "153C83AD044BF76A"
 			tasks: [{
-				id: "2E6269CE4D1B1B91",
-				type: "item",
+				id: "2E6269CE4D1B1B91"
+				type: "item"
 				item: "minecraft:lava_bucket"
-			}],
+			}]
 			rewards: [{
-				id: "05A9612A2B359215",
-				type: "xp",
+				id: "05A9612A2B359215"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Fluid Transformation",
-			x: -5.0d,
-			y: -8.5d,
+			title: "Fluid Transformation"
+			x: -5.0d
+			y: -8.5d
 			description: [
-				"Fluid Transformation is required to receive some resources.",
-				"",
-				"For this quest, I will explain how to get those fluids, as for the next quests, will explain what it can do.",
-				"",
+				"Fluid Transformation is required to receive some resources."
+				""
+				"For this quest, I will explain how to get those fluids, as for the next quests, will explain what it can do."
+				""
 				"To get Witch Water, your barrel full of water must be on Mycelium, and as for Sea Water, same, but on sand instead."
-			],
-			dependencies: ["046D86775F6FF8D3"],
-			id: "2F61617F7194D76A",
+			]
+			dependencies: ["046D86775F6FF8D3"]
+			id: "2F61617F7194D76A"
 			tasks: [
 				{
-					id: "640D84EDC3A54A91",
-					type: "item",
+					id: "640D84EDC3A54A91"
+					type: "item"
 					item: "exnihilosequentia:bucket_witchwater"
-				},
+				}
 				{
-					id: "58155367C96BCB73",
-					type: "item",
+					id: "58155367C96BCB73"
+					type: "item"
 					item: "exnihilosequentia:bucket_sea_water"
 				}
 			]
-		},
+		}
 		{
-			title: "Mob Summoning and Changing",
-			icon: "minecraft:wither_skeleton_skull",
-			x: -5.0d,
-			y: -7.0d,
+			title: "Mob Summoning and Changing"
+			icon: "minecraft:wither_skeleton_skull"
+			x: -5.0d
+			y: -7.0d
 			description: [
-				"Mob spawning and changing is a bonus from the Ex Nihilo mod.",
-				"",
-				"Mobs can be transformed when doused, mainly by witch water:",
-				"",
-				" - Villagers -> Witches",
-				" - Creepers -> Charged Creepers",
-				" - Squids -> Ghasts",
-				" - Skeletons -> Wither Skeletons",
-				"",
+				"Mob spawning and changing is a bonus from the Ex Nihilo mod."
+				""
+				"Mobs can be transformed when doused, mainly by witch water:"
+				""
+				" - Villagers -> Witches"
+				" - Creepers -> Charged Creepers"
+				" - Squids -> Ghasts"
+				" - Skeletons -> Wither Skeletons"
+				""
 				"You can also use dolls, to summon mobs from barrels. The dolls required does give you what you need to summon them in their info when you hover your mouse over the item."
-			],
-			dependencies: ["2F61617F7194D76A"],
-			id: "0202FA0848EBB3CC",
+			]
+			dependencies: ["2F61617F7194D76A"]
+			id: "0202FA0848EBB3CC"
 			tasks: [
 				{
-					id: "706CBF8F52B19BA1",
-					type: "item",
+					id: "706CBF8F52B19BA1"
+					type: "item"
 					item: "exnihilosequentia:doll_blaze"
-				},
+				}
 				{
-					id: "3990678FE9B763F5",
-					type: "item",
+					id: "3990678FE9B763F5"
+					type: "item"
 					item: "exnihilosequentia:doll_guardian"
-				},
+				}
 				{
-					id: "60A0819E9AB070CE",
-					type: "item",
+					id: "60A0819E9AB070CE"
+					type: "item"
 					item: "exnihilosequentia:doll_shulker"
-				},
+				}
 				{
-					id: "073295EB0A883EC4",
-					type: "item",
+					id: "073295EB0A883EC4"
+					type: "item"
 					item: "exnihilosequentia:doll_enderman"
-				},
+				}
 				{
-					id: "40420749EF41A5B4",
-					type: "item",
+					id: "40420749EF41A5B4"
+					type: "item"
 					item: "exnihilosequentia:doll_bee"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "528B65308C4E4E87",
-					type: "item",
+					id: "528B65308C4E4E87"
+					type: "item"
 					item: "minecraft:wither_skeleton_skull"
-				},
+				}
 				{
-					id: "108163429CC72B20",
-					type: "item",
+					id: "108163429CC72B20"
+					type: "item"
 					item: "minecraft:blaze_rod"
-				},
+				}
 				{
-					id: "38B5BB78E4613CC3",
-					type: "item",
+					id: "38B5BB78E4613CC3"
+					type: "item"
 					item: "minecraft:prismarine_shard"
-				},
+				}
 				{
-					id: "38662B47F0324D38",
-					type: "item",
+					id: "38662B47F0324D38"
+					type: "item"
 					item: "minecraft:shulker_shell"
-				},
+				}
 				{
-					id: "23F619C5B33DCB70",
-					type: "item",
+					id: "23F619C5B33DCB70"
+					type: "item"
 					item: "minecraft:ender_pearl"
-				},
+				}
 				{
-					id: "7340B4852F476754",
-					type: "item",
+					id: "7340B4852F476754"
+					type: "item"
 					item: "minecraft:honey_bottle"
-				},
+				}
 				{
-					id: "53AD9B5D4BCB2961",
-					type: "item",
+					id: "53AD9B5D4BCB2961"
+					type: "item"
 					item: "minecraft:ghast_tear"
-				},
+				}
 				{
-					id: "7CCD24E1F10AA252",
-					type: "item",
+					id: "7CCD24E1F10AA252"
+					type: "item"
 					item: "minecraft:gunpowder"
 				}
 			]
-		},
+		}
 		{
-			title: "Then drag-on the Elytra",
-			x: 5.0d,
-			y: -8.5d,
-			shape: "diamond",
+			title: "Then drag-on the Elytra"
+			x: 5.0d
+			y: -8.5d
+			shape: "diamond"
 			description: [
-				"With the dragon defeated, it will drop a scale, it would be useful to have a magnet with you when it happens.",
-				"",
+				"With the dragon defeated, it will drop a scale, it would be useful to have a magnet with you when it happens."
+				""
 				"It will drop a Quark dragon scale, which it's goal of production, "
-			],
-			dependencies: ["79FDDEC32609E563"],
-			id: "5DE56E76832DA54A",
+			]
+			dependencies: ["79FDDEC32609E563"]
+			id: "5DE56E76832DA54A"
 			tasks: [{
-				id: "6463AC0CA690D32C",
-				type: "item",
+				id: "6463AC0CA690D32C"
+				type: "item"
 				item: "quark:dragon_scale"
-			}],
+			}]
 			rewards: [
 				{
-					id: "620B0820455AB20A",
-					type: "item",
+					id: "620B0820455AB20A"
+					type: "item"
 					item: "minecraft:phantom_membrane"
-				},
+				}
 				{
-					id: "394C0942CE52CFE1",
-					type: "item",
+					id: "394C0942CE52CFE1"
+					type: "item"
 					item: "minecraft:leather"
 				}
 			]

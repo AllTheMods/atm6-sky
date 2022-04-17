@@ -1,25 +1,13 @@
 {
-	id: "37128123C4892F33",
-	order_index: 3,
-	title: "Farmland Tier 4",
-	icon: "mysticalagriculture:supremium_farmland",
-	loot_size: 1,
+	id: "37128123C4892F33"
+	order_index: 3
+	title: "Farmland Tier 4"
+	icon: "mysticalagriculture:supremium_farmland"
+	loot_size: 1
 	rewards: [
-		{
-			item: "mysticalagriculture:imperium_farmland",
-			weight: 100
-		},
-		{
-			item: "mysticalagriculture:supremium_farmland",
-			weight: 75
-		},
-		{
-			item: "mysticalagradditions:insanium_farmland",
-			weight: 50
-		},
-		{
-			item: "botania:overgrowth_seed",
-			weight: 50
-		}
+		{ item: "mysticalagriculture:imperium_farmland", weight: 100 }
+		{ item: "mysticalagriculture:supremium_farmland", weight: 75 }
+		{ item: "mysticalagradditions:insanium_farmland", weight: 50 }
+		{ item: "botania:overgrowth_seed", weight: 50 }
 	]
 }

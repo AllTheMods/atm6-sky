@@ -1,0 +1,35 @@
+
+[general]
+	#The alternative names of this material.
+	alternativeNames = []
+	#The byproducts of this material.
+	extras = []
+	#The module blacklist of this material.
+	moduleBlacklist = []
+	#Should items of this material have the enchanted glow.
+	hasEffect = false
+	#The model type of the material.
+	modelType = "crystal"
+	#The color of this material.
+	color = 6584208
+
+[molten]
+	#The temperature of this molten fluid.
+	temperature = 1000
+
+[create]
+	#The byproduct material to output in Create's crushing.
+	byproduct = "minecraft:cobblestone"
+
+[exnihilosequentia]
+	#Should gravel sieve recipes be added.
+	sieveGravel = true
+	#Should crushed netherrack sieve recipes be added.
+	sieveCrushedNetherrack = false
+	#Should crushed end stone sieve recipes be added.
+	sieveCrushedEndstone = false
+
+[mekanism]
+	#The base to use in Mekanism's Combiner to recreate ores.
+	ore_base = "#forge:cobblestone"
+

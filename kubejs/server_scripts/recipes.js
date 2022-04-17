@@ -178,6 +178,7 @@ onEvent(`recipes`, e => {
   e.shapeless(Item.of(`appliedenergistics2:fluix_covered_cable`, 4), `appliedenergistics2:fluix_covered_dense_cable`)
   e.shapeless(Item.of(`appliedenergistics2:fluix_smart_cable`, 4), `appliedenergistics2:fluix_smart_dense_cable`)
 
+
   e.shaped(`appliedenergistics2:fluix_smart_dense_cable`, [
     `AA`,
     `AA`
@@ -238,6 +239,14 @@ onEvent(`recipes`, e => {
     E: `compressium:emerald_2`,
     G: `#forge:storage_blocks/gold`,
     V: `minecraft:villager_spawn_egg`
+  })
+
+ e.shaped(`chisel:basalt/raw`, [
+    ` B `,
+    `BBB`,
+    ` B `
+  ], {
+    B: `exnihilosequentia:pebble_basalt`
   })
 
   e.smelting(Item.of(`appliedenergistics2:certus_quartz_crystal`), `#forge:ores/certus_quartz`).xp(1)

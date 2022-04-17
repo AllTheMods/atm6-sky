@@ -1,1310 +1,1311 @@
 {
-	id: "09C43717A12348D6",
-	group: "",
-	order_index: 2,
-	filename: "automation",
-	title: "Tech",
-	icon: "engineersdecor:small_electrical_furnace",
-	default_quest_shape: "",
+	id: "09C43717A12348D6"
+	group: ""
+	order_index: 2
+	filename: "automation"
+	title: "Tech"
+	icon: "engineersdecor:small_electrical_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Slave Labour",
-			x: -10.5d,
-			y: -9.5d,
+			title: "Slave Labour"
+			x: -10.5d
+			y: -9.5d
 			description: [
-				"Auto-Sieves are a server friendly way to get material, and it contains a mini slave to do your bidding.",
-				"",
-				" You can change the slave by using a name tag on the auto-sieve.",
-				"",
+				"Auto-Sieves are a server friendly way to get material, and it contains a mini slave to do your bidding."
+				""
+				" You can change the slave by using a name tag on the auto-sieve."
+				""
 				"We have 4 people for you as reward. Some of the devs, and a player that helped with the quests."
-			],
-			id: "7F95D4C8AEFB5A95",
+			]
+			id: "7F95D4C8AEFB5A95"
 			tasks: [{
-				id: "12E015E48A8FC98A",
-				type: "item",
+				id: "12E015E48A8FC98A"
+				type: "item"
 				item: "excompressum:auto_sieve"
-			}],
+			}]
 			rewards: [
 				{
-					id: "1039AC49EE6CCEAC",
-					type: "item",
+					id: "1039AC49EE6CCEAC"
+					type: "item"
 					icon: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUyMzdkMTY1ODhjYjc5NzA2NzBiZDRlMDY0NTk3YmU1ZjMzMTU1NjI5ZDY1OGZjZDI2OGRjNjdhNzlkODkxOCJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									77149896,
-									-197767746,
-									-1864421419,
+									77149896
+									-197767746
+									-1864421419
 									-1567734303
 								]
-							},
-							display: {
-								Name: '{"text":""}'
 							}
-						}
-					},
-					item: {
-						id: "minecraft:name_tag",
-						Count: 1b,
-						tag: {
-							RepairCost: 0,
 							display: {
-								Name: '{"text":"oly2o6"}'
+								Name: "{\"text\":\"\"}"
 							}
 						}
 					}
-				},
+					item: {
+						id: "minecraft:name_tag"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"oly2o6\"}"
+							}
+						}
+					}
+				}
 				{
-					id: "67FF36D5DF072AF6",
-					type: "item",
+					id: "67FF36D5DF072AF6"
+					type: "item"
 					icon: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									-952285457,
-									2143437411,
-									-1618251149,
+									-952285457
+									2143437411
+									-1618251149
 									425174478
 								]
-							},
-							display: {
-								Name: '{"text":""}'
 							}
-						}
-					},
-					item: {
-						id: "minecraft:name_tag",
-						Count: 1b,
-						tag: {
-							RepairCost: 0,
 							display: {
-								Name: '{"text":"Pun_isher"}'
+								Name: "{\"text\":\"\"}"
 							}
 						}
 					}
-				},
+					item: {
+						id: "minecraft:name_tag"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Pun_isher\"}"
+							}
+						}
+					}
+				}
 				{
-					id: "2AEF3E44F097E3B4",
-					type: "item",
+					id: "2AEF3E44F097E3B4"
+					type: "item"
 					icon: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									1464802139,
-									-399291895,
-									-1592429182,
+									1464802139
+									-399291895
+									-1592429182
 									-1925828862
 								]
-							},
-							display: {
-								Name: '{"text":""}'
 							}
-						}
-					},
-					item: {
-						id: "minecraft:name_tag",
-						Count: 1b,
-						tag: {
-							RepairCost: 0,
 							display: {
-								Name: '{"text":"White_Phant0m"}'
+								Name: "{\"text\":\"\"}"
 							}
 						}
 					}
-				},
+					item: {
+						id: "minecraft:name_tag"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"White_Phant0m\"}"
+							}
+						}
+					}
+				}
 				{
-					id: "0219C76D38B1A4B4",
-					type: "item",
+					id: "0219C76D38B1A4B4"
+					type: "item"
 					icon: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjIxZDc2NjFiYTc5ODBjOGY1Nzg0YWZhYTljOGZmNTQ2NjgwNjE3N2E4ODU5Yzc5YjFjNjk5MjFkMmZhODhiYiJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									1889625180,
-									1933985653,
-									-1858663942,
+									1889625180
+									1933985653
+									-1858663942
 									1476275747
 								]
-							},
+							}
 							display: {
-								Name: '{"text":""}'
+								Name: "{\"text\":\"\"}"
 							}
 						}
-					},
+					}
 					item: {
-						id: "minecraft:name_tag",
-						Count: 1b,
+						id: "minecraft:name_tag"
+						Count: 1b
 						tag: {
-							RepairCost: 0,
+							RepairCost: 0
 							display: {
-								Name: '{"text":"thevortex"}'
+								Name: "{\"text\":\"thevortex\"}"
 							}
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "More power to the slaves!",
-			x: -10.5d,
-			y: -7.5d,
-			description: ["Pretty much the same as the previous auto-sieve. But it can use compressed grounded up blocks."],
-			dependencies: ["7F95D4C8AEFB5A95"],
-			id: "06821798EEECA8A4",
+			title: "More power to the slaves!"
+			x: -10.5d
+			y: -7.5d
+			description: ["Pretty much the same as the previous auto-sieve. But it can use compressed grounded up blocks."]
+			dependencies: ["7F95D4C8AEFB5A95"]
+			id: "06821798EEECA8A4"
 			tasks: [{
-				id: "7AA84241D17CBAB8",
-				type: "item",
+				id: "7AA84241D17CBAB8"
+				type: "item"
 				item: "excompressum:auto_heavy_sieve"
-			}],
+			}]
 			rewards: [{
-				id: "53AE1B7C56695780",
-				type: "item",
-				item: "minecraft:name_tag",
+				id: "53AE1B7C56695780"
+				type: "item"
+				item: "minecraft:name_tag"
 				count: 8
 			}]
-		},
+		}
 		{
-			icon: "excompressum:compressed_dust",
-			x: 1.0d,
-			y: -9.5d,
+			icon: "excompressum:compressed_dust"
+			x: 1.0d
+			y: -9.5d
 			description: [
-				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them than just hammering.",
-				"",
+				"Obviously you could choose any method you want to auto collect your gravel/sand/dust, but there are many other ways to get them than just hammering."
+				""
 				"Maybe some automation."
-			],
-			min_required_dependencies: 1,
+			]
+			min_required_dependencies: 1
 			dependencies: [
-				"529BDCD9FBD4E7F3",
-				"0E0AEF15C523A650",
-				"5ECCC7CDE3E42458",
-				"0F6BB69B584D2BEB",
-				"4EFEBF1B0117570B",
-				"11B9AF634EAC4E98",
+				"529BDCD9FBD4E7F3"
+				"0E0AEF15C523A650"
+				"5ECCC7CDE3E42458"
+				"0F6BB69B584D2BEB"
+				"4EFEBF1B0117570B"
+				"11B9AF634EAC4E98"
 				"2F63FABFEE484565"
-			],
-			dependency_requirement: "one_completed",
-			id: "2A599150364DA2A4",
+			]
+			dependency_requirement: "one_completed"
+			id: "2A599150364DA2A4"
 			tasks: [{
-				id: "4895615414B77A70",
+				id: "4895615414B77A70"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "68A2C346936DD6D5",
-				type: "item",
-				item: "minecraft:iron_ore",
+				id: "68A2C346936DD6D5"
+				type: "item"
+				item: "minecraft:iron_ore"
 				count: 16
 			}]
-		},
+		}
 		{
-			title: "Pipez",
-			x: -11.5d,
-			y: -10.5d,
-			description: ["This pipe mod is an all round powerhouse, from filtering options to greatly optimised, so give your server owner the weekend off and try them out ;)"],
-			id: "38F48F2A9BB52F24",
+			title: "Pipez"
+			x: -11.5d
+			y: -10.5d
+			description: ["This pipe mod is an all round powerhouse, from filtering options to greatly optimised, so give your server owner the weekend off and try them out ;)"]
+			id: "38F48F2A9BB52F24"
 			tasks: [
 				{
-					id: "799A02F7DBBCFC74",
-					type: "item",
-					item: "pipez:energy_pipe",
-					count: 16L
-				},
-				{
-					id: "33A70D9D4B35C6E3",
-					type: "item",
-					item: "pipez:item_pipe",
-					count: 16L
-				},
-				{
-					id: "7B720F644D029588",
-					type: "item",
-					item: "pipez:fluid_pipe",
-					count: 16L
-				},
-				{
-					id: "1437F85AC4883D9A",
-					type: "item",
-					item: "pipez:gas_pipe",
+					id: "799A02F7DBBCFC74"
+					type: "item"
+					item: "pipez:energy_pipe"
 					count: 16L
 				}
-			],
+				{
+					id: "33A70D9D4B35C6E3"
+					type: "item"
+					item: "pipez:item_pipe"
+					count: 16L
+				}
+				{
+					id: "7B720F644D029588"
+					type: "item"
+					item: "pipez:fluid_pipe"
+					count: 16L
+				}
+				{
+					id: "1437F85AC4883D9A"
+					type: "item"
+					item: "pipez:gas_pipe"
+					count: 16L
+				}
+			]
 			rewards: [{
-				id: "02A370F543FC7EB2",
-				type: "item",
-				item: "pipez:improved_upgrade",
+				id: "02A370F543FC7EB2"
+				type: "item"
+				item: "pipez:improved_upgrade"
 				count: 16
 			}]
-		},
+		}
 		{
-			title: "Dynamic Lava Power",
-			x: -5.0d,
-			y: -9.5d,
-			description: ["Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY"],
-			dependencies: ["095F5AE5A801000A"],
-			id: "716D9C2F74999B5A",
+			title: "Dynamic Lava Power"
+			x: -5.0d
+			y: -9.5d
+			description: ["Wait there a second, you are in a skyblock pack and not planning on powering your base with lava? BLASPHEMY"]
+			dependencies: ["095F5AE5A801000A"]
+			id: "716D9C2F74999B5A"
 			tasks: [{
-				id: "7FBEF040E634FFD4",
-				type: "item",
+				id: "7FBEF040E634FFD4"
+				type: "item"
 				item: "thermal:dynamo_magmatic"
 			}]
-		},
+		}
 		{
-			x: -11.5d,
-			y: -8.5d,
-			id: "21FB306379352D15",
+			x: -11.5d
+			y: -8.5d
+			id: "21FB306379352D15"
 			tasks: [
 				{
-					id: "4A456EB1D0C48C47",
-					type: "item",
+					id: "4A456EB1D0C48C47"
+					type: "item"
 					item: "fluxnetworks:flux_plug"
-				},
+				}
 				{
-					id: "3A8AD6C14676748E",
-					type: "item",
+					id: "3A8AD6C14676748E"
+					type: "item"
 					item: "fluxnetworks:flux_point"
 				}
-			],
+			]
 			rewards: [{
-				id: "6BAB1C2EFD5F559B",
-				type: "item",
+				id: "6BAB1C2EFD5F559B"
+				type: "item"
 				item: "fluxnetworks:flux_controller"
 			}]
-		},
+		}
 		{
-			x: -9.5d,
-			y: -8.5d,
-			description: ["You are a little far away from an angel ring, so a jetpack might stop you dying to the void..."],
-			id: "7F282D66F27BA49D",
+			x: -9.5d
+			y: -8.5d
+			description: ["You are a little far away from an angel ring, so a jetpack might stop you dying to the void..."]
+			id: "7F282D66F27BA49D"
 			tasks: [{
-				id: "22862394DEF08422",
-				type: "item",
+				id: "22862394DEF08422"
+				type: "item"
 				item: {
-					id: "ironjetpacks:wood_jetpack",
-					Count: 1b,
+					id: "ironjetpacks:wood_jetpack"
+					Count: 1b
 					tag: {
 						Throttle: 1.0d
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "6E203E6892B93399",
-				type: "item",
+				id: "6E203E6892B93399"
+				type: "item"
 				item: {
-					id: "powah:battery_starter",
-					Count: 1b,
-					tag: {}
+					id: "powah:battery_starter"
+					Count: 1b
+					tag: { }
 				}
 			}]
-		},
+		}
 		{
-			title: "The Power of Pedestal!",
-			icon: "pedestals:pedestal/stone333",
-			x: -9.5d,
-			y: -10.5d,
+			title: "The Power of Pedestal!"
+			icon: "pedestals:pedestal/stone333"
+			x: -9.5d
+			y: -10.5d
 			description: [
-				"Pedestal is a mod that greatly opens to new ideas.",
-				"",
-				"With Jei you can get info on each pedestal upgrade.",
-				"",
+				"Pedestal is a mod that greatly opens to new ideas."
+				""
+				"With Jei you can get info on each pedestal upgrade."
+				""
 				"The Upgrades can be Enchanted for better results."
-			],
-			id: "411EB0C61927576B",
+			]
+			id: "411EB0C61927576B"
 			tasks: [
 				{
-					id: "2ADEEF8356BA8D18",
-					type: "item",
-					title: "Any #pedestals:linkingtool",
+					id: "2ADEEF8356BA8D18"
+					type: "item"
+					title: "Any #pedestals:linkingtool"
 					item: {
-						id: "itemfilters:tag",
-						Count: 1b,
+						id: "itemfilters:tag"
+						Count: 1b
 						tag: {
 							value: "pedestals:linkingtool"
 						}
 					}
-				},
+				}
 				{
-					id: "174E809A92D0E51A",
-					type: "item",
+					id: "174E809A92D0E51A"
+					type: "item"
 					item: "pedestals:coin/default"
-				},
+				}
 				{
-					id: "353A4A9746199838",
-					type: "item",
+					id: "353A4A9746199838"
+					type: "item"
 					item: "pedestals:pedestal/stone333"
 				}
-			],
+			]
 			rewards: [{
-				id: "4C25C81F6B4C96A9",
-				type: "item",
-				item: "minecraft:coal_block",
+				id: "4C25C81F6B4C96A9"
+				type: "item"
+				item: "minecraft:coal_block"
 				count: 8
 			}]
-		},
+		}
 		{
-			x: -6.5d,
-			y: -9.5d,
+			x: -6.5d
+			y: -9.5d
 			description: [
-				"There are many mods that generates power, some of which are better then others.",
-				"",
-				"For this, you must do at least the basic generators of certain mods.",
-				"",
-				'&c"These quest weren\'t meant to be proportionate at 1st. They were meant for teaching the energy production of their mod, and reward you their mod\'s battery. I will make some more optional. But the rewards will still be related to their mod. With the exception of coal generators."',
+				"There are many mods that generates power, some of which are better then others."
+				""
+				"For this, you must do at least the basic generators of certain mods."
+				""
+				"&c\"These quest werent meant to be proportionate at 1st. They were meant for teaching the energy production of their mod, and reward you their mods battery. I will make some more optional. But the rewards will still be related to their mod. With the exception of coal generators.\""
 				"- Pun_isher"
-			],
-			id: "095F5AE5A801000A",
+			]
+			id: "095F5AE5A801000A"
 			tasks: [{
-				id: "46F297EC9A31ACF8",
-				type: "checkmark",
-				title: "Generating Power",
+				id: "46F297EC9A31ACF8"
+				type: "checkmark"
+				title: "Generating Power"
 				icon: "mekanismgenerators:advanced_solar_generator"
 			}]
-		},
+		}
 		{
-			title: "I can swim in lava!",
-			x: -5.5d,
-			y: -10.5d,
+			title: "I can swim in lava!"
+			x: -5.5d
+			y: -10.5d
 			description: [
-				"This is one special machine that works when surrounded by lava.",
-				"",
-				'You can even "Lava-log" it to generate more power.',
-				"",
+				"This is one special machine that works when surrounded by lava."
+				""
+				"You can even \"Lava-log\" it to generate more power."
+				""
 				"It can also be filled for EVEN MOAR POWAH!"
-			],
-			dependencies: ["095F5AE5A801000A"],
-			id: "581A8BC06B67F682",
+			]
+			dependencies: ["095F5AE5A801000A"]
+			id: "581A8BC06B67F682"
 			tasks: [{
-				id: "388A450835FCB413",
-				type: "item",
+				id: "388A450835FCB413"
+				type: "item"
 				item: "mekanismgenerators:heat_generator"
 			}]
-		},
+		}
 		{
-			title: "Heated Bum? Need water?",
-			x: -5.5d,
-			y: -8.5d,
+			title: "Heated Bum? Need water?"
+			x: -5.5d
+			y: -8.5d
 			description: [
-				"The generators of this pack can be upgraded by crafting.",
-				"",
+				"The generators of this pack can be upgraded by crafting."
+				""
 				"This generator will produce power with a heat source underneath and filling it up with a coolant, most commonly water."
-			],
-			dependencies: ["095F5AE5A801000A"],
-			id: "37B77C8C9403772C",
+			]
+			dependencies: ["095F5AE5A801000A"]
+			id: "37B77C8C9403772C"
 			tasks: [{
-				id: "42E2681F07A4509B",
-				type: "item",
+				id: "42E2681F07A4509B"
+				type: "item"
 				item: "powah:thermo_generator_starter"
 			}]
-		},
+		}
 		{
-			title: "Immersive Twist",
-			x: -6.5d,
-			y: -7.5d,
+			title: "Immersive Twist"
+			x: -6.5d
+			y: -7.5d
 			description: [
-				"This generator, requires another part that gives a rotational force to it.",
-				"",
-				"Thankfully it has 2 ways for it, and they can be used as decorations when not needed when you get better power.",
-				"",
+				"This generator, requires another part that gives a rotational force to it."
+				""
+				"Thankfully it has 2 ways for it, and they can be used as decorations when not needed when you get better power."
+				""
 				"But the best part of this, is that the generator doesn't need fuel."
-			],
-			dependencies: ["095F5AE5A801000A"],
-			id: "4879018D4DB5BC04",
+			]
+			dependencies: ["095F5AE5A801000A"]
+			id: "4879018D4DB5BC04"
 			tasks: [{
-				id: "10DC54541B56F70D",
-				type: "item",
+				id: "10DC54541B56F70D"
+				type: "item"
 				item: "immersiveengineering:dynamo"
 			}]
-		},
+		}
 		{
-			title: "Too Many Coal Generators",
-			x: -6.5d,
-			y: -11.0d,
-			dependencies: ["095F5AE5A801000A"],
-			id: "56A7CAD920B3AD73",
+			title: "Too Many Coal Generators"
+			x: -6.5d
+			y: -11.0d
+			dependencies: ["095F5AE5A801000A"]
+			id: "56A7CAD920B3AD73"
 			tasks: [
 				{
-					id: "4DCAABBBABDC9DF4",
-					type: "item",
+					id: "4DCAABBBABDC9DF4"
+					type: "item"
 					item: "rftoolspower:coalgenerator"
-				},
+				}
 				{
-					id: "6B099A02F58F9CEA",
-					type: "item",
+					id: "6B099A02F58F9CEA"
+					type: "item"
 					item: "industrialforegoing:pitiful_generator"
-				},
+				}
 				{
-					id: "0EFF2EFF7D41B125",
-					type: "item",
+					id: "0EFF2EFF7D41B125"
+					type: "item"
 					item: "integrateddynamics:coal_generator"
-				},
+				}
 				{
-					id: "5487BC771DC648A3",
-					type: "item",
+					id: "5487BC771DC648A3"
+					type: "item"
 					item: "thermal:dynamo_stirling"
-				},
+				}
 				{
-					id: "2E52FC0BF31CFCA2",
-					type: "item",
+					id: "2E52FC0BF31CFCA2"
+					type: "item"
 					item: "industrialforegoing:mycelial_furnace"
-				},
+				}
 				{
-					id: "5296B30973379129",
-					type: "item",
+					id: "5296B30973379129"
+					type: "item"
 					item: "powah:furnator_starter"
 				}
-			],
+			]
 			rewards: [{
-				id: "2E041E87B64DE215",
-				type: "item",
+				id: "2E041E87B64DE215"
+				type: "item"
 				item: {
-					id: "integrateddynamics:energy_battery",
-					Count: 1b,
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
 					tag: {
-						energy: 0,
+						energy: 0
 						capacity: 4000000
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -11.0d,
-			optional: true,
-			id: "529BDCD9FBD4E7F3",
+			x: 1.0d
+			y: -11.0d
+			optional: true
+			id: "529BDCD9FBD4E7F3"
 			tasks: [{
-				id: "4A65B314690FB6F2",
-				type: "item",
+				id: "4A65B314690FB6F2"
+				type: "item"
 				item: "thermal:machine_pulverizer"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -10.5d,
-			optional: true,
-			id: "5ECCC7CDE3E42458",
+			x: 0.0d
+			y: -10.5d
+			optional: true
+			id: "5ECCC7CDE3E42458"
 			tasks: [{
-				id: "557A64FE9F8E8826",
-				type: "item",
+				id: "557A64FE9F8E8826"
+				type: "item"
 				item: "mekanism:crusher"
 			}]
-		},
+		}
 		{
-			title: "Pedestal Upgrade: Crusher",
-			icon: "pedestals:coin/crusher",
-			x: 2.0d,
-			y: -10.5d,
-			dependencies: ["021ED6FBC7CF522F"],
-			optional: true,
-			id: "0E0AEF15C523A650",
+			title: "Pedestal Upgrade: Crusher"
+			icon: "pedestals:coin/crusher"
+			x: 2.0d
+			y: -10.5d
+			dependencies: ["021ED6FBC7CF522F"]
+			optional: true
+			id: "0E0AEF15C523A650"
 			tasks: [{
-				id: "5D34EACA1BDD4457",
+				id: "5D34EACA1BDD4457"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -8.0d,
-			optional: true,
-			id: "0F6BB69B584D2BEB",
+			x: 1.0d
+			y: -8.0d
+			optional: true
+			id: "0F6BB69B584D2BEB"
 			tasks: [{
-				id: "1CC601739D5D938D",
-				type: "item",
+				id: "1CC601739D5D938D"
+				type: "item"
 				item: "create:millstone"
 			}]
-		},
+		}
 		{
-			x: 2.5d,
-			y: -9.5d,
-			optional: true,
-			id: "2F63FABFEE484565",
+			x: 2.5d
+			y: -9.5d
+			optional: true
+			id: "2F63FABFEE484565"
 			tasks: [{
-				id: "2B771C3378A5ACB2",
-				type: "item",
+				id: "2B771C3378A5ACB2"
+				type: "item"
 				item: "excompressum:auto_hammer"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: -8.5d,
-			optional: true,
-			id: "11B9AF634EAC4E98",
+			x: 2.0d
+			y: -8.5d
+			optional: true
+			id: "11B9AF634EAC4E98"
 			tasks: [{
-				id: "1CBFBA54BEE16C39",
-				type: "item",
+				id: "1CBFBA54BEE16C39"
+				type: "item"
 				item: "excompressum:auto_compressed_hammer"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -8.5d,
-			optional: true,
-			id: "4EFEBF1B0117570B",
+			x: 0.0d
+			y: -8.5d
+			optional: true
+			id: "4EFEBF1B0117570B"
 			tasks: [{
-				id: "3DF977D6B45A04DA",
-				type: "item",
+				id: "3DF977D6B45A04DA"
+				type: "item"
 				item: "integrateddynamics:mechanical_squeezer"
 			}]
-		},
+		}
 		{
-			title: "Looking for Mica?",
+			title: "Looking for Mica?"
 			icon: {
-				id: "envirotech:litherite_void_miner_ccu",
-				Count: 1b,
+				id: "envirotech:litherite_void_miner_ccu"
+				Count: 1b
 				tag: {
-					colors: {}
+					colors: { }
 				}
-			},
-			x: -12.5d,
-			y: -9.5d,
-			description: ["You have to make a void miner in the End."],
-			id: "016F783E9FAB8B11",
+			}
+			x: -12.5d
+			y: -9.5d
+			description: ["You have to make a void miner in the End."]
+			id: "016F783E9FAB8B11"
 			tasks: [{
-				id: "0B4BF05722606D82",
-				type: "item",
+				id: "0B4BF05722606D82"
+				type: "item"
 				item: "envirocore:mica"
 			}]
-		},
+		}
 		{
-			x: -8.5d,
-			y: -9.5d,
-			id: "230970A569CB92D6",
+			x: -8.5d
+			y: -9.5d
+			id: "230970A569CB92D6"
 			tasks: [
 				{
-					id: "6FBA3F4E4ED5B5FB",
-					type: "item",
+					id: "6FBA3F4E4ED5B5FB"
+					type: "item"
 					item: "industrialforegoing:laser_drill"
-				},
+				}
 				{
-					id: "62AEB7754A7176A9",
-					type: "item",
+					id: "62AEB7754A7176A9"
+					type: "item"
 					item: "industrialforegoing:ore_laser_base"
-				},
+				}
 				{
-					id: "703DAB5F6C65F7F3",
-					type: "item",
+					id: "703DAB5F6C65F7F3"
+					type: "item"
 					item: "industrialforegoing:fluid_laser_base"
 				}
 			]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -9.5d,
-			description: ["A dynamic generator that can use most oil type fluids, even the Creosole Oil from Immersive Engineering's Blast Furnace."],
-			dependencies: ["095F5AE5A801000A"],
-			id: "27B5C6456BD16FD3",
+			x: -4.0d
+			y: -9.5d
+			description: ["A dynamic generator that can use most oil type fluids, even the Creosole Oil from Immersive Engineering's Blast Furnace."]
+			dependencies: ["095F5AE5A801000A"]
+			id: "27B5C6456BD16FD3"
 			tasks: [{
-				id: "566F8329836605AD",
-				type: "item",
+				id: "566F8329836605AD"
+				type: "item"
 				item: "thermal:dynamo_compression"
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -9.5d,
-			description: ["This dynamic generator uses Metal coins to produce a large amount of power."],
-			dependencies: ["095F5AE5A801000A"],
-			id: "2E117EDB18112FB1",
+			x: -3.0d
+			y: -9.5d
+			description: ["This dynamic generator uses Metal coins to produce a large amount of power."]
+			dependencies: ["095F5AE5A801000A"]
+			id: "2E117EDB18112FB1"
 			tasks: [{
-				id: "5EDA891B5A56AA6C",
-				type: "item",
+				id: "5EDA891B5A56AA6C"
+				type: "item"
 				item: "thermal:dynamo_numismatic"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -9.5d,
-			description: ["This dynamic generator uses Crystals as a power source, such as diamonds, lapis, and quartz."],
-			dependencies: ["095F5AE5A801000A"],
-			id: "140CA8C6BF4850DB",
+			x: -2.0d
+			y: -9.5d
+			description: ["This dynamic generator uses Crystals as a power source, such as diamonds, lapis, and quartz."]
+			dependencies: ["095F5AE5A801000A"]
+			id: "140CA8C6BF4850DB"
 			tasks: [{
-				id: "31B9353A0F3ACA75",
-				type: "item",
+				id: "31B9353A0F3ACA75"
+				type: "item"
 				item: "thermal:dynamo_lapidary"
 			}]
-		},
+		}
 		{
-			title: "Hot and Cold",
-			x: -6.5d,
-			y: -6.5d,
+			title: "Hot and Cold"
+			x: -6.5d
+			y: -6.5d
 			description: [
-				"This generator requires both sides a hot and cold source block.",
-				"",
-				"All 4 sides can be used as long as their opposite side is the opposite temperature.",
-				"",
+				"This generator requires both sides a hot and cold source block."
+				""
+				"All 4 sides can be used as long as their opposite side is the opposite temperature."
+				""
 				"This will not consume the materials. So it's another way for infinite source of low energy."
-			],
-			dependencies: ["095F5AE5A801000A"],
-			id: "36214249EB744748",
+			]
+			dependencies: ["095F5AE5A801000A"]
+			id: "36214249EB744748"
 			tasks: [{
-				id: "08649E1117B4A726",
-				type: "item",
+				id: "08649E1117B4A726"
+				type: "item"
 				item: "immersiveengineering:thermoelectric_generator"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -7.0d,
-			dependencies: ["4879018D4DB5BC04"],
-			id: "04800925F49E61C8",
+			x: -6.0d
+			y: -7.0d
+			dependencies: ["4879018D4DB5BC04"]
+			id: "04800925F49E61C8"
 			tasks: [{
-				id: "356374D0A4BF17C5",
-				type: "item",
+				id: "356374D0A4BF17C5"
+				type: "item"
 				item: "immersiveengineering:watermill"
 			}]
-		},
+		}
 		{
-			title: "Power of the Wind",
-			x: -7.0d,
-			y: -7.0d,
+			title: "Power of the Wind"
+			x: -7.0d
+			y: -7.0d
 			description: [
-				"Unlike mekanism's windmill this one works the same at any hight.",
-				"",
-				"As long as nothing is in front of the windmill it will produce power, it gains more power during rainy days.",
-				"",
+				"Unlike mekanism's windmill this one works the same at any hight."
+				""
+				"As long as nothing is in front of the windmill it will produce power, it gains more power during rainy days."
+				""
 				"It can be upgraded when using a Windmill sail on it."
-			],
-			dependencies: ["4879018D4DB5BC04"],
-			id: "2FC4A66AA0ADC628",
+			]
+			dependencies: ["4879018D4DB5BC04"]
+			id: "2FC4A66AA0ADC628"
 			tasks: [{
-				id: "230F522BBBE1588A",
-				type: "item",
+				id: "230F522BBBE1588A"
+				type: "item"
 				item: "immersiveengineering:windmill"
 			}]
-		},
+		}
 		{
-			title: "Thirsty for lava",
-			x: -5.0d,
-			y: -8.0d,
-			description: ["This generator requires molten lava to generate power."],
-			dependencies: ["095F5AE5A801000A"],
-			id: "53729FFD3243C14D",
+			title: "Thirsty for lava"
+			x: -5.0d
+			y: -8.0d
+			description: ["This generator requires molten lava to generate power."]
+			dependencies: ["095F5AE5A801000A"]
+			id: "53729FFD3243C14D"
 			tasks: [{
-				id: "1622B9AF4200EA21",
-				type: "item",
+				id: "1622B9AF4200EA21"
+				type: "item"
 				item: "powah:magmator_starter"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -7.5d,
-			description: [""],
+			x: -4.5d
+			y: -7.5d
+			description: [""]
 			dependencies: [
-				"53729FFD3243C14D",
+				"53729FFD3243C14D"
 				"37B77C8C9403772C"
-			],
-			id: "403C338D68F8E280",
+			]
+			id: "403C338D68F8E280"
 			tasks: [{
-				id: "3542F42E5302F664",
-				type: "checkmark",
-				title: "Tiered Storage",
+				id: "3542F42E5302F664"
+				type: "checkmark"
+				title: "Tiered Storage"
 				icon: "powah:furnator_basic"
-			}],
+			}]
 			rewards: [{
-				id: "29F484754DED98AC",
-				type: "item",
+				id: "29F484754DED98AC"
+				type: "item"
 				item: "powah:furnator_basic"
 			}]
-		},
+		}
 		{
-			x: -1.0d,
-			y: -9.5d,
-			min_required_dependencies: 2,
+			x: -1.0d
+			y: -9.5d
+			min_required_dependencies: 2
 			dependencies: [
-				"27B5C6456BD16FD3",
-				"716D9C2F74999B5A",
-				"140CA8C6BF4850DB",
+				"27B5C6456BD16FD3"
+				"716D9C2F74999B5A"
+				"140CA8C6BF4850DB"
 				"2E117EDB18112FB1"
-			],
-			id: "5B1E465F7D89B8D0",
+			]
+			id: "5B1E465F7D89B8D0"
 			tasks: [{
-				id: "07F88E97C40CEAA8",
-				type: "checkmark",
-				title: "Thermal Power Containment",
+				id: "07F88E97C40CEAA8"
+				type: "checkmark"
+				title: "Thermal Power Containment"
 				icon: {
-					id: "thermal:energy_cell",
-					Count: 1b,
+					id: "thermal:energy_cell"
+					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							EnergyMax: 1000000,
-							EnergySend: 1000,
-							Energy: 0,
-							EnergyRecv: 1000
-						}
-					}
-				}
-			}],
-			rewards: [{
-				id: "278175352AD881AC",
-				type: "item",
-				auto: "enabled",
-				item: {
-					id: "thermal:energy_cell",
-					Count: 1b,
-					tag: {
-						BlockEntityTag: {
-							EnergyMax: 1000000,
-							EnergySend: 1000,
-							Energy: 0,
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
 							EnergyRecv: 1000
 						}
 					}
 				}
 			}]
-		},
-		{
-			title: "Low Voltage Battery",
-			x: -6.5d,
-			y: -5.5d,
-			description: [""],
-			dependencies: [
-				"04800925F49E61C8",
-				"2FC4A66AA0ADC628",
-				"36214249EB744748"
-			],
-			dependency_requirement: "one_completed",
-			id: "5C70B442B8643DF5",
-			tasks: [{
-				id: "5E4C4C02DE4AC00D",
-				type: "checkmark",
-				title: "Low Voltage",
-				icon: "immersiveengineering:capacitor_lv"
-			}],
 			rewards: [{
-				id: "194F1D171CBFA2C8",
-				type: "item",
-				auto: "enabled",
+				id: "278175352AD881AC"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Low Voltage Battery"
+			x: -6.5d
+			y: -5.5d
+			description: [""]
+			dependencies: [
+				"04800925F49E61C8"
+				"2FC4A66AA0ADC628"
+				"36214249EB744748"
+			]
+			dependency_requirement: "one_completed"
+			id: "5C70B442B8643DF5"
+			tasks: [{
+				id: "5E4C4C02DE4AC00D"
+				type: "checkmark"
+				title: "Low Voltage"
+				icon: "immersiveengineering:capacitor_lv"
+			}]
+			rewards: [{
+				id: "194F1D171CBFA2C8"
+				type: "item"
+				auto: "enabled"
 				item: "immersiveengineering:capacitor_lv"
 			}]
-		},
+		}
 		{
-			title: "Power from the skies",
-			x: -5.0d,
-			y: -11.0d,
-			description: ["The wind generators of this mod works best the higher up you place them."],
-			dependencies: ["095F5AE5A801000A"],
-			id: "1FD37CCE9DBF0679",
+			title: "Power from the skies"
+			x: -5.0d
+			y: -11.0d
+			description: ["The wind generators of this mod works best the higher up you place them."]
+			dependencies: ["095F5AE5A801000A"]
+			id: "1FD37CCE9DBF0679"
 			tasks: [{
-				id: "0EBDD83B52213E06",
-				type: "item",
+				id: "0EBDD83B52213E06"
+				type: "item"
 				item: "mekanismgenerators:wind_generator"
 			}]
-		},
+		}
 		{
-			title: "Plant Power!",
-			x: -4.5d,
-			y: -11.5d,
+			title: "Plant Power!"
+			x: -4.5d
+			y: -11.5d
 			description: [
-				"This uses Bio Fuel as... well Fuel.",
-				"",
+				"This uses Bio Fuel as... well Fuel."
+				""
 				"It's only dependant to it."
-			],
-			dependencies: ["095F5AE5A801000A"],
-			id: "27F08F9636B45063",
+			]
+			dependencies: ["095F5AE5A801000A"]
+			id: "27F08F9636B45063"
 			tasks: [{
-				id: "2D62119658E9DB42",
-				type: "item",
+				id: "2D62119658E9DB42"
+				type: "item"
 				item: "mekanismgenerators:bio_generator"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -12.0d,
+			x: -4.0d
+			y: -12.0d
 			dependencies: [
-				"1FD37CCE9DBF0679",
-				"27F08F9636B45063",
+				"1FD37CCE9DBF0679"
+				"27F08F9636B45063"
 				"581A8BC06B67F682"
-			],
-			dependency_requirement: "one_completed",
-			id: "18F9866F1DE04F02",
+			]
+			dependency_requirement: "one_completed"
+			id: "18F9866F1DE04F02"
 			tasks: [{
-				id: "0D3510017784F0A5",
-				type: "checkmark",
-				title: "Loki though it was Frostmourn",
+				id: "0D3510017784F0A5"
+				type: "checkmark"
+				title: "Loki though it was Frostmourn"
 				icon: "mekanism:basic_energy_cube"
-			}],
+			}]
 			rewards: [{
-				id: "779EA989793AB122",
-				type: "item",
-				auto: "enabled",
+				id: "779EA989793AB122"
+				type: "item"
+				auto: "enabled"
 				item: "mekanism:basic_energy_cube"
 			}]
-		},
+		}
 		{
-			title: "The world of Pressure.",
-			x: -6.5d,
-			y: -13.0d,
+			title: "The world of Pressure."
+			x: -6.5d
+			y: -13.0d
 			description: [
-				"Welcome to the explosive side of the Tech mods, &b&lPneumaticraft&r &f(&cThe P is Silent&f).",
-				"",
-				"You actually need to blow up Iron on the ground to get compressed Iron.",
-				"",
-				"I feel generous and will give 32 compressed iron for this explosive effort.",
-				"",
+				"Welcome to the explosive side of the Tech mods, &b&lPneumaticraft&r &f(&cThe P is Silent&f)."
+				""
+				"You actually need to blow up Iron on the ground to get compressed Iron."
+				""
+				"I feel generous and will give 32 compressed iron for this explosive effort."
+				""
 				"You must have a blast resistant floor such as obsidian. The Cheapest explosive is Tiny TNT and it works."
-			],
-			id: "2F58BC36AC629184",
+			]
+			id: "2F58BC36AC629184"
 			tasks: [
 				{
-					id: "5ACC38ACA360B0E6",
-					type: "item",
+					id: "5ACC38ACA360B0E6"
+					type: "item"
 					item: "appliedenergistics2:tiny_tnt"
-				},
+				}
 				{
-					id: "7651324895AF1F0B",
-					type: "item",
-					item: "minecraft:iron_ingot",
+					id: "7651324895AF1F0B"
+					type: "item"
+					item: "minecraft:iron_ingot"
 					count: 32L
-				},
+				}
 				{
-					id: "619C2EC4BC8AF023",
-					type: "item",
+					id: "619C2EC4BC8AF023"
+					type: "item"
 					item: "pneumaticcraft:ingot_iron_compressed"
 				}
-			],
+			]
 			rewards: [{
-				id: "2E42D29B6775259E",
-				type: "item",
-				item: "pneumaticcraft:ingot_iron_compressed",
+				id: "2E42D29B6775259E"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
 				count: 32
 			}]
-		},
+		}
 		{
-			title: "Pipes and... Explosions?",
-			x: -6.5d,
-			y: -14.0d,
+			title: "Pipes and... Explosions?"
+			x: -6.5d
+			y: -14.0d
 			description: [
-				"One of the main reasons that pneumaticraft was much avoided by many are that... they can explode even the pipes.",
-				"",
-				"But pneumaticraft has ways to prevent the explosions for the pipes and machines:",
-				"",
-				"- The &cSafety Tube Modual &fin which you place on top of tubes to release pressure past 4.9.",
-				"",
+				"One of the main reasons that pneumaticraft was much avoided by many are that... they can explode even the pipes."
+				""
+				"But pneumaticraft has ways to prevent the explosions for the pipes and machines:"
+				""
+				"- The &cSafety Tube Modual &fin which you place on top of tubes to release pressure past 4.9."
+				""
 				"- The &cSecurity Upgrade &fwhich is an upgrade for to be place inside your machines and generators."
-			],
-			dependencies: ["2F58BC36AC629184"],
-			id: "3C092849EDB6A134",
+			]
+			dependencies: ["2F58BC36AC629184"]
+			id: "3C092849EDB6A134"
 			tasks: [
 				{
-					id: "020D60CC4267BB85",
-					type: "item",
-					item: "pneumaticcraft:pressure_tube",
+					id: "020D60CC4267BB85"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
 					count: 8L
-				},
+				}
 				{
-					id: "7BAE94793DBDDA15",
-					type: "item",
+					id: "7BAE94793DBDDA15"
+					type: "item"
 					item: "pneumaticcraft:safety_tube_module"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "4501947906DFD0FD",
-					type: "item",
+					id: "4501947906DFD0FD"
+					type: "item"
 					item: "pneumaticcraft:safety_tube_module"
-				},
+				}
 				{
-					id: "0C74FB3DFD6F85CC",
-					type: "item",
+					id: "0C74FB3DFD6F85CC"
+					type: "item"
 					item: "pneumaticcraft:security_upgrade"
 				}
 			]
-		},
+		}
 		{
-			title: "Lava Pressured",
-			x: -7.5d,
-			y: -16.0d,
-			description: ["The best early machine especially if you have a way to get indefinate quantities of lava."],
-			dependencies: ["0AAE038955CF936E"],
-			id: "48DF6486F398241D",
+			title: "Lava Pressured"
+			x: -7.5d
+			y: -16.0d
+			description: ["The best early machine especially if you have a way to get indefinate quantities of lava."]
+			dependencies: ["0AAE038955CF936E"]
+			id: "48DF6486F398241D"
 			tasks: [{
-				id: "199C2878362C3BB2",
-				type: "item",
+				id: "199C2878362C3BB2"
+				type: "item"
 				item: "pneumaticcraft:liquid_compressor"
 			}]
-		},
+		}
 		{
-			title: "Stressing an Air Head",
-			x: -6.5d,
-			y: -16.0d,
+			title: "Stressing an Air Head"
+			x: -6.5d
+			y: -16.0d
 			description: [
-				"The 1st generator to produce Pressure.",
-				"",
+				"The 1st generator to produce Pressure."
+				""
 				"It consumes solid fuel such as coal."
-			],
-			dependencies: ["3C092849EDB6A134"],
-			id: "0AAE038955CF936E",
+			]
+			dependencies: ["3C092849EDB6A134"]
+			id: "0AAE038955CF936E"
 			tasks: [{
-				id: "4A45FF9A0F0BF95C",
-				type: "item",
+				id: "4A45FF9A0F0BF95C"
+				type: "item"
 				item: "pneumaticcraft:air_compressor"
 			}]
-		},
+		}
 		{
-			title: "Hot and Cold",
-			x: -7.5d,
-			y: -15.0d,
+			title: "Hot and Cold"
+			x: -7.5d
+			y: -15.0d
 			description: [
-				"This generator uses heat difference to generate pressure.",
-				"",
-				"It will cool the heat, and heat the cold, but there are ways around that.",
-				"",
-				"&aBotania &fand &bMekanism &fdoes provide a indefinate source of heat and cold blocks that can help with this machine.",
-				"",
-				"And yes, &bMekanism &fpipes works on Pneumaticraft.",
-				"",
+				"This generator uses heat difference to generate pressure."
+				""
+				"It will cool the heat, and heat the cold, but there are ways around that."
+				""
+				"&aBotania &fand &bMekanism &fdoes provide a indefinate source of heat and cold blocks that can help with this machine."
+				""
+				"And yes, &bMekanism &fpipes works on Pneumaticraft."
+				""
 				"But for &aBotania&f, you need to make Ice with it's pure daisy. It will refreeze the ice. Pneumaticraft &cHeat pipes do connect to ice blocks&f."
-			],
-			dependencies: ["0AAE038955CF936E"],
-			id: "409B4DCEB49CD49E",
+			]
+			dependencies: ["0AAE038955CF936E"]
+			id: "409B4DCEB49CD49E"
 			tasks: [{
-				id: "1F90E0D17275E6C8",
-				type: "item",
+				id: "1F90E0D17275E6C8"
+				type: "item"
 				item: "pneumaticcraft:thermal_compressor"
-			}],
+			}]
 			rewards: [
 				{
-					id: "6B841F5671E6A658",
-					type: "item",
-					item: "pneumaticcraft:heat_pipe",
+					id: "6B841F5671E6A658"
+					type: "item"
+					item: "pneumaticcraft:heat_pipe"
 					count: 6
-				},
+				}
 				{
-					id: "393E0897BE0DF9DA",
-					type: "item",
-					item: "mekanism:basic_thermodynamic_conductor",
+					id: "393E0897BE0DF9DA"
+					type: "item"
+					item: "mekanism:basic_thermodynamic_conductor"
 					count: 8
-				},
+				}
 				{
-					id: "5AFC08FEAB19079F",
-					type: "item",
+					id: "5AFC08FEAB19079F"
+					type: "item"
 					item: "pneumaticcraft:vortex_tube"
 				}
 			]
-		},
+		}
 		{
-			title: "Multiblock Pressurization",
-			x: -6.5d,
-			y: -17.0d,
+			title: "Multiblock Pressurization"
+			x: -6.5d
+			y: -17.0d
 			description: [
-				"This is the main machine of the pneumaticraft mod.",
-				"",
-				"The Pressure Chamber.",
-				"",
-				"No more need to risk your iron in explosions, you can pressurize the iron in a 1 by 1 ratio.",
-				"",
+				"This is the main machine of the pneumaticraft mod."
+				""
+				"The Pressure Chamber."
+				""
+				"No more need to risk your iron in explosions, you can pressurize the iron in a 1 by 1 ratio."
+				""
 				"It can even be use to Enchant your items, as long as it's a valid enchantment and no experience cost. But it won't upgrade your enchantments. In other words: Unbreaking 2 won't upgrade to unbreaking 3 if you add another unbreaking 2. But it can still accept other enchantments that are not on the gear."
-			],
-			dependencies: ["0AAE038955CF936E"],
-			id: "75BB0A1F44907F1B",
+			]
+			dependencies: ["0AAE038955CF936E"]
+			id: "75BB0A1F44907F1B"
 			tasks: [
 				{
-					id: "159B91C9F5BE46C6",
-					type: "item",
+					id: "159B91C9F5BE46C6"
+					type: "item"
 					item: "pneumaticcraft:pressure_chamber_valve"
-				},
+				}
 				{
-					id: "0BA78B257F4452C6",
-					type: "item",
-					item: "pneumaticcraft:pressure_chamber_interface",
+					id: "0BA78B257F4452C6"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
 					count: 2L
-				},
+				}
 				{
-					id: "3E07C0CDEA8544BD",
-					type: "item",
-					item: "pneumaticcraft:pressure_chamber_wall",
+					id: "3E07C0CDEA8544BD"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
 					count: 23L
 				}
 			]
-		},
+		}
 		{
-			x: -6.5d,
-			y: -18.0d,
+			x: -6.5d
+			y: -18.0d
 			description: [
-				"This vacuum pump will reverse pressure into the negatives.",
-				"",
+				"This vacuum pump will reverse pressure into the negatives."
+				""
 				"When used on a pressure chamber it currently only extract enchantments from items, by using the item and a book."
-			],
-			dependencies: ["75BB0A1F44907F1B"],
-			id: "729FCC7F807A70A1",
+			]
+			dependencies: ["75BB0A1F44907F1B"]
+			id: "729FCC7F807A70A1"
 			tasks: [{
-				id: "1F4CE8736A224248",
-				type: "item",
+				id: "1F4CE8736A224248"
+				type: "item"
 				item: "pneumaticcraft:vacuum_pump"
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -17.0d,
+			x: -7.5d
+			y: -17.0d
 			description: [
-				"Pneumaticraft has many tools in their shed. But it requires pressure to be used.",
-				"",
+				"Pneumaticraft has many tools in their shed. But it requires pressure to be used."
+				""
 				"So having a charging station is better to get things on the roll. But it helps if you have the wrench as well from then on."
-			],
-			dependencies: ["0AAE038955CF936E"],
-			id: "532C675899B504DF",
+			]
+			dependencies: ["0AAE038955CF936E"]
+			id: "532C675899B504DF"
 			tasks: [{
-				id: "1FDB7ECED60D3807",
-				type: "item",
+				id: "1FDB7ECED60D3807"
+				type: "item"
 				item: "pneumaticcraft:charging_station"
-			}],
+			}]
 			rewards: [{
-				id: "20453EF76D3E95A1",
-				type: "item",
+				id: "20453EF76D3E95A1"
+				type: "item"
 				item: "pneumaticcraft:pneumatic_wrench"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -17.0d,
-			dependencies: ["5B20C2A5E4247C0E"],
-			id: "5D45A740DEBDA45D",
+			x: -4.5d
+			y: -17.0d
+			dependencies: ["5B20C2A5E4247C0E"]
+			id: "5D45A740DEBDA45D"
 			tasks: [{
-				id: "76F54BFFCE4933E7",
-				type: "item",
+				id: "76F54BFFCE4933E7"
+				type: "item"
 				item: "pneumaticcraft:amadron_tablet"
 			}]
-		},
+		}
 		{
-			title: "Processing Transformation",
-			x: -5.5d,
-			y: -16.0d,
+			title: "Processing Transformation"
+			x: -5.5d
+			y: -16.0d
 			description: [
-				"This machine can work the same way as the Refinery but with extra steps.",
-				"",
-				"It is the main machine to get Pneumaticraft Plastic.",
-				"",
-				"The Amadron Tablet might get Lubricant, but for automation, it is best to use this machine.",
-				"",
+				"This machine can work the same way as the Refinery but with extra steps."
+				""
+				"It is the main machine to get Pneumaticraft Plastic."
+				""
+				"The Amadron Tablet might get Lubricant, but for automation, it is best to use this machine."
+				""
 				"Plus you don't need to use crude oil to get to plastic using this. As it provides Ethenol, and Plant Oil for the Fluid Mixer."
-			],
-			dependencies: ["0AAE038955CF936E"],
-			id: "5B20C2A5E4247C0E",
+			]
+			dependencies: ["0AAE038955CF936E"]
+			id: "5B20C2A5E4247C0E"
 			tasks: [{
-				id: "626F2538FAADD1CB",
-				type: "item",
+				id: "626F2538FAADD1CB"
+				type: "item"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 			}]
-		},
+		}
 		{
-			title: "Plastic, with pink slime.",
-			x: -5.5d,
-			y: -15.0d,
+			title: "Plastic, with pink slime."
+			x: -5.5d
+			y: -15.0d
 			description: [
-				"This machine will process crude oil into various liquids such as LPG which is the one of the main ingrediants to make Pneumaticraft Plastic.",
-				"",
+				"This machine will process crude oil into various liquids such as LPG which is the one of the main ingrediants to make Pneumaticraft Plastic."
+				""
 				"It also gives other liquids that are very useful."
-			],
-			dependencies: ["0AAE038955CF936E"],
-			id: "6BAD995798816F59",
+			]
+			dependencies: ["0AAE038955CF936E"]
+			id: "6BAD995798816F59"
 			tasks: [
 				{
-					id: "6A8DCA32240E853E",
-					type: "item",
+					id: "6A8DCA32240E853E"
+					type: "item"
 					item: "pneumaticcraft:refinery"
-				},
+				}
 				{
-					id: "6BCD0928E6F0F9DE",
-					type: "item",
+					id: "6BCD0928E6F0F9DE"
+					type: "item"
 					item: "pneumaticcraft:refinery_output"
 				}
 			]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -16.0d,
+			x: -4.5d
+			y: -16.0d
 			description: [
-				"Speed Upgrade does what it does, it speeds up all your pneumaticraft machines at that they do.",
-				"",
+				"Speed Upgrade does what it does, it speeds up all your pneumaticraft machines at that they do."
+				""
 				"Fluid Mixer is optional, but it does give a byproduct that can double the amount you get for crafting speed upgrades."
-			],
+			]
 			dependencies: [
-				"5B20C2A5E4247C0E",
+				"5B20C2A5E4247C0E"
 				"0C9740F4B4DEAAF5"
-			],
-			id: "34F8CE78BB7EE6A3",
+			]
+			id: "34F8CE78BB7EE6A3"
 			tasks: [{
-				id: "1C97943684E66017",
-				type: "item",
+				id: "1C97943684E66017"
+				type: "item"
 				item: "pneumaticcraft:speed_upgrade"
 			}]
-		},
+		}
 		{
-			title: "Plastic, without pink slime.",
-			x: -5.5d,
-			y: -17.0d,
+			title: "Plastic, without pink slime."
+			x: -5.5d
+			y: -17.0d
 			description: [
-				"This machine will give the main ingrediant for Plastic without the use of the Fluid Mining Laser. It does give more steps to the pneumaticraft branch, but it's only for that branch without the need to visit other mods.",
-				"",
+				"This machine will give the main ingrediant for Plastic without the use of the Fluid Mining Laser. It does give more steps to the pneumaticraft branch, but it's only for that branch without the need to visit other mods."
+				""
 				"It can use Ethenol, and Plant/Vegetable Oil to make Biodiesel. Which can be use to make Lubricant and Plastic."
-			],
+			]
 			dependencies: [
-				"0AAE038955CF936E",
+				"0AAE038955CF936E"
 				"75BB0A1F44907F1B"
-			],
-			optional: true,
-			id: "0C9740F4B4DEAAF5",
+			]
+			optional: true
+			id: "0C9740F4B4DEAAF5"
 			tasks: [{
-				id: "6C7D3873C9E1AB98",
-				type: "item",
+				id: "6C7D3873C9E1AB98"
+				type: "item"
 				item: "pneumaticcraft:fluid_mixer"
 			}]
-		},
+		}
 		{
-			x: -2.5d,
-			y: -18.0d,
-			description: [""],
-			dependencies: ["5E7CDDE79405AC6C"],
-			id: "3B015C185E7C46FF",
+			x: -2.5d
+			y: -18.0d
+			description: [""]
+			dependencies: ["5E7CDDE79405AC6C"]
+			id: "3B015C185E7C46FF"
 			tasks: [{
-				id: "04D5E86AEE6245E5",
-				type: "item",
+				id: "04D5E86AEE6245E5"
+				type: "item"
 				item: "pneumaticcraft:advanced_pressure_tube"
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -18.0d,
-			dependencies: ["75BB0A1F44907F1B"],
-			id: "1FB895BAF5546CD1",
+			x: -5.5d
+			y: -18.0d
+			dependencies: ["75BB0A1F44907F1B"]
+			id: "1FB895BAF5546CD1"
 			tasks: [{
-				id: "1D4D6F372073D9B9",
-				type: "item",
+				id: "1D4D6F372073D9B9"
+				type: "item"
 				item: "pneumaticcraft:empty_pcb"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -18.0d,
-			dependencies: ["5D45A740DEBDA45D"],
-			id: "2C0EEFA9A35EE9D5",
+			x: -4.5d
+			y: -18.0d
+			dependencies: ["5D45A740DEBDA45D"]
+			id: "2C0EEFA9A35EE9D5"
 			tasks: [{
-				id: "0D1B88F0BE3E711C",
-				type: "item",
+				id: "0D1B88F0BE3E711C"
+				type: "item"
 				item: "pneumaticcraft:uv_light_box"
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -19.0d,
+			x: -4.5d
+			y: -19.0d
 			dependencies: [
-				"1FB895BAF5546CD1",
+				"1FB895BAF5546CD1"
 				"2C0EEFA9A35EE9D5"
-			],
-			id: "5FF072FA50A6E921",
+			]
+			id: "5FF072FA50A6E921"
 			tasks: [{
-				id: "2BCC1FDD326657CD",
-				type: "item",
+				id: "2BCC1FDD326657CD"
+				type: "item"
 				item: "pneumaticcraft:unassembled_pcb"
 			}]
-		},
+		}
 		{
-			title: "Some assembly required",
-			x: -3.5d,
-			y: -18.0d,
+			title: "Some assembly required"
+			x: -3.5d
+			y: -18.0d
 			dependencies: [
-				"5FF072FA50A6E921",
+				"5FF072FA50A6E921"
 				"5D45A740DEBDA45D"
-			],
-			id: "5E7CDDE79405AC6C",
+			]
+			id: "5E7CDDE79405AC6C"
 			tasks: [
 				{
-					id: "1A61D8DA70480C59",
-					type: "item",
+					id: "1A61D8DA70480C59"
+					type: "item"
 					item: "pneumaticcraft:assembly_platform"
-				},
+				}
 				{
-					id: "4FB9620EDEC2B04F",
-					type: "item",
+					id: "4FB9620EDEC2B04F"
+					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_import"
-				},
+				}
 				{
-					id: "1906C98B980DFBCD",
-					type: "item",
+					id: "1906C98B980DFBCD"
+					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_export"
-				},
+				}
 				{
-					id: "22053ABFA103DCF1",
-					type: "item",
+					id: "22053ABFA103DCF1"
+					type: "item"
 					item: "pneumaticcraft:assembly_controller"
-				},
+				}
 				{
-					id: "1575BEE7896E63B2",
-					type: "item",
+					id: "1575BEE7896E63B2"
+					type: "item"
 					item: "pneumaticcraft:assembly_laser"
-				},
+				}
 				{
-					id: "7D1C7F7359ADDC07",
-					type: "item",
+					id: "7D1C7F7359ADDC07"
+					type: "item"
 					item: "pneumaticcraft:assembly_drill"
 				}
 			]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -18.0d,
-			dependencies: ["3B015C185E7C46FF"],
-			id: "41C2A3D360F57474",
+			x: -1.5d
+			y: -18.0d
+			dependencies: ["3B015C185E7C46FF"]
+			id: "41C2A3D360F57474"
 			tasks: [{
-				id: "5637500A54EAE9F2",
-				type: "item",
+				id: "5637500A54EAE9F2"
+				type: "item"
 				item: "pneumaticcraft:advanced_air_compressor"
 			}]
-		},
+		}
 		{
-			x: -0.5d,
-			y: -18.0d,
-			dependencies: ["41C2A3D360F57474"],
-			id: "3D0476FC7A0B51BF",
+			x: -0.5d
+			y: -18.0d
+			dependencies: ["41C2A3D360F57474"]
+			id: "3D0476FC7A0B51BF"
 			tasks: [{
-				id: "0A444F317B410FC8",
-				type: "item",
+				id: "0A444F317B410FC8"
+				type: "item"
 				item: "pneumaticcraft:electrostatic_compressor"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -19.0d,
-			dependencies: ["3B015C185E7C46FF"],
-			id: "3E6298F9FBDAB0F5",
+			x: -1.5d
+			y: -19.0d
+			dependencies: ["3B015C185E7C46FF"]
+			id: "3E6298F9FBDAB0F5"
 			tasks: [{
-				id: "6CD1034FFB2B7305",
-				type: "item",
+				id: "6CD1034FFB2B7305"
+				type: "item"
 				item: "pneumaticcraft:advanced_liquid_compressor"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -17.0d,
-			dependencies: ["3B015C185E7C46FF"],
-			id: "089E412549552976",
+			x: -1.5d
+			y: -17.0d
+			dependencies: ["3B015C185E7C46FF"]
+			id: "089E412549552976"
 			tasks: [{
-				id: "126AC6388A7093E0",
-				type: "item",
+				id: "126AC6388A7093E0"
+				type: "item"
 				item: "pneumaticcraft:flux_compressor"
 			}]
 		}

@@ -1,0 +1,9 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[tags]
+	#Should the module register ore tags for chunks.
+	registerOreTags = true
+

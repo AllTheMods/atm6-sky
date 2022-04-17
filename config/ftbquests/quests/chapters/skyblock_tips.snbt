@@ -1,886 +1,834 @@
 {
-	id: "2150EC99F789EF62",
-	group: "",
-	order_index: 0,
-	filename: "skyblock_tips",
-	title: "Skyblock Tips",
-	icon: "astralsorcery:tree_beacon",
-	default_quest_shape: "circle",
+	id: "2150EC99F789EF62"
+	group: ""
+	order_index: 0
+	filename: "skyblock_tips"
+	title: "Skyblock Tips"
+	icon: "astralsorcery:tree_beacon"
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d,
-			y: -7.0d,
-			shape: "heart",
+			x: 0.0d
+			y: -7.0d
+			shape: "heart"
 			description: [
-				"Welcome to All the Mods 6 : Sky",
-				"",
-				"Where the classic skyblock meets the creators of All the mods.",
-				"",
-				"This pack will parallel the ATM 6 modpack to some extent for Balance.",
-				"",
-				"Feel free to join us in Discord:",
-				"https://discord.com/invite/FdFDVWb",
-				"",
-				"And if any issues and suggestions feel free to post here:",
+				"Welcome to All the Mods 6 : Sky"
+				""
+				"Where the classic skyblock meets the creators of All the mods."
+				""
+				"This pack will parallel the ATM 6 modpack to some extent for Balance."
+				""
+				"Feel free to join us in Discord:"
+				"https://discord.com/invite/FdFDVWb"
+				""
+				"And if any issues and suggestions feel free to post here:"
 				"https://github.com/AllTheMods/atm6-sky/issues"
-			],
-			hide_text_until_complete: false,
-			size: 1.75d,
-			id: "76200C6568457C8C",
+			]
+			hide_text_until_complete: false
+			size: 1.75d
+			id: "76200C6568457C8C"
 			tasks: [{
-				id: "0330BA82DA068045",
-				type: "checkmark",
-				title: "Welcome to ATM6: Sky",
+				id: "0330BA82DA068045"
+				type: "checkmark"
+				title: "Welcome to ATM6: Sky"
 				icon: "astralsorcery:tree_beacon"
 			}]
-		},
+		}
 		{
-			x: 3.0d,
-			y: -4.0d,
+			x: 3.0d
+			y: -4.0d
 			description: [
-				"A useful feature of &e&lQuark &f&ris that you can place blocks on sides you can't see but reach.",
-				"",
-				"When you see your crosshair have [+] while sneaking at the bottom side of a block, you will be able to place a block under the block you are looking at.",
-				"",
+				"A useful feature of &e&lQuark &f&ris that you can place blocks on sides you can't see but reach."
+				""
+				"When you see your crosshair have [+] while sneaking at the bottom side of a block, you will be able to place a block under the block you are looking at."
+				""
 				"While seeing <+> you will put a block on the opposite side of the block you are looking at."
-			],
-			dependencies: ["1E48DA1EB612BDFA"],
-			hide: false,
-			id: "01423C3D626FBFBC",
+			]
+			dependencies: ["1E48DA1EB612BDFA"]
+			hide: false
+			id: "01423C3D626FBFBC"
 			tasks: [{
-				id: "0EBB2F5E907DA8BA",
-				type: "checkmark",
-				title: "Reacharound Placing",
+				id: "0EBB2F5E907DA8BA"
+				type: "checkmark"
+				title: "Reacharound Placing"
 				icon: "ars_nouveau:glyph_place_block"
-			}],
+			}]
 			rewards: [{
-				id: "6C59B88F14E5F029",
-				type: "xp",
-				auto: "enabled",
+				id: "6C59B88F14E5F029"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Phantom Problem?",
-			x: -3.5d,
-			y: -5.5d,
-			shape: "hexagon",
+			title: "Phantom Problem?"
+			x: -3.5d
+			y: -5.5d
+			shape: "hexagon"
 			description: [
-				"A common problem seen by the testers of the pack is facing against phantoms at night.",
-				"",
-				"Phantoms will only spawn if the player's head is above sea level Y=64",
-				"",
+				"A common problem seen by the testers of the pack is facing against phantoms at night."
+				""
+				"Phantoms will only spawn if the player's head is above sea level Y=64"
+				""
 				"Making the island at most Y=62 or less will help prevent them from spawning."
-			],
-			dependencies: ["723868AAF4E86CDA"],
-			id: "728B7B0B02A2E937",
+			]
+			dependencies: ["723868AAF4E86CDA"]
+			id: "728B7B0B02A2E937"
 			tasks: [{
-				id: "6A5AFD5B9D48BC52",
-				type: "checkmark",
-				title: "Phantom Problem",
+				id: "6A5AFD5B9D48BC52"
+				type: "checkmark"
+				title: "Phantom Problem"
 				icon: "minecraft:phantom_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "4AB2764DC6804B99",
-				type: "xp",
-				auto: "enabled",
+				id: "4AB2764DC6804B99"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -5.5d,
-			dependencies: ["76200C6568457C8C"],
-			id: "723868AAF4E86CDA",
+			x: -1.5d
+			y: -5.5d
+			dependencies: ["76200C6568457C8C"]
+			id: "723868AAF4E86CDA"
 			tasks: [{
-				id: "22CD2D0DF048E4C6",
-				type: "checkmark",
-				title: "Mob spawning tips",
+				id: "22CD2D0DF048E4C6"
+				type: "checkmark"
+				title: "Mob spawning tips"
 				icon: "minecraft:spawner"
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -4.0d,
-			shape: "hexagon",
+			x: -3.0d
+			y: -4.0d
+			shape: "hexagon"
 			description: [
-				"There are Multiple ways to prevent mobs to spawn on your island, will even add some common knowledge tips",
-				"",
-				"- &aLightsources",
-				'We have more overlays mod, pressing F7 will show Red and Yellow "X" on blocks.',
-				'Hostile Mobs will spawn on those, in which the yellow "X" is only during the night.',
-				"",
-				"- &aNon-Full blocks",
-				"Mainly Bottom Slabs, Stairs, Glass type blocks hostile mobs will not spawn on.",
-				"",
-				"- &aRange",
-				"All Mobs will spawn only outside a range of 24 blocks.",
-				"",
+				"There are Multiple ways to prevent mobs to spawn on your island, will even add some common knowledge tips"
+				""
+				"- &aLightsources"
+				"We have more overlays mod, pressing F7 will show Red and Yellow \"X\" on blocks."
+				"Hostile Mobs will spawn on those, in which the yellow \"X\" is only during the night."
+				""
+				"- &aNon-Full blocks"
+				"Mainly Bottom Slabs, Stairs, Glass type blocks hostile mobs will not spawn on."
+				""
+				"- &aRange"
+				"All Mobs will spawn only outside a range of 24 blocks."
+				""
 				"- &bAnd special blocks which shown as the next tip"
-			],
-			dependencies: ["723868AAF4E86CDA"],
-			id: "4D24D92E56049467",
+			]
+			dependencies: ["723868AAF4E86CDA"]
+			id: "4D24D92E56049467"
 			tasks: [{
-				id: "179C71A3797505CA",
-				type: "checkmark",
-				title: "Ways to Prevent of spawning",
+				id: "179C71A3797505CA"
+				type: "checkmark"
+				title: "Ways to Prevent of spawning"
 				icon: "minecraft:torch"
-			}],
+			}]
 			rewards: [{
-				id: "6639AEFF62E5CF47",
-				type: "xp",
-				auto: "enabled",
+				id: "6639AEFF62E5CF47"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Anti-Hostile Torch",
-			x: -4.5d,
-			y: -4.0d,
+			title: "Anti-Hostile Torch"
+			x: -4.5d
+			y: -4.0d
 			description: [
-				"&e&lTorchmaster &rgives 4 items, one of which is a mega torch.",
-				"",
-				"This torch will prevent hostile mobs within a 64 block radius by default to spawn.",
-				"",
+				"&e&lTorchmaster &rgives 4 items, one of which is a mega torch."
+				""
+				"This torch will prevent hostile mobs within a 64 block radius by default to spawn."
+				""
 				"&eBest used in Open grassy fields which you don't want a bunch of torches on them, and more chance for passive mobs to spawn."
-			],
-			dependencies: ["4D24D92E56049467"],
-			hide: true,
-			id: "77FC6D6DCAD00A4A",
+			]
+			dependencies: ["4D24D92E56049467"]
+			hide: true
+			id: "77FC6D6DCAD00A4A"
 			tasks: [{
-				id: "57514F2EA2DA7B03",
-				type: "item",
+				id: "57514F2EA2DA7B03"
+				type: "item"
 				item: "torchmaster:megatorch"
-			}],
+			}]
 			rewards: [{
-				id: "79B7C8A3BD049075",
-				type: "xp_levels",
+				id: "79B7C8A3BD049075"
+				type: "xp_levels"
 				xp_levels: 5
 			}]
-		},
+		}
 		{
-			title: "Anti-Passive Mobs",
-			x: -3.0d,
-			y: -2.5d,
+			title: "Anti-Passive Mobs"
+			x: -3.0d
+			y: -2.5d
 			description: [
-				"&e&lTorchmaster &rhas an item that prevents passive mobs to spawn.",
-				"",
-				"The Dread Lamp will prevent passive mobs within a 64 block radius by default to spawn.",
-				"",
+				"&e&lTorchmaster &rhas an item that prevents passive mobs to spawn."
+				""
+				"The Dread Lamp will prevent passive mobs within a 64 block radius by default to spawn."
+				""
 				"&cIt's best used in mob grinders to prevent &bbats &cfrom spawning."
-			],
-			dependencies: ["4D24D92E56049467"],
-			hide: true,
-			id: "7F44F3CB99BDA755",
+			]
+			dependencies: ["4D24D92E56049467"]
+			hide: true
+			id: "7F44F3CB99BDA755"
 			tasks: [{
-				id: "6DE3255AAFC0BE9D",
-				type: "item",
+				id: "6DE3255AAFC0BE9D"
+				type: "item"
 				item: "torchmaster:dreadlamp"
-			}],
+			}]
 			rewards: [{
-				id: "2BA18CC7C593BAFE",
-				type: "xp_levels",
+				id: "2BA18CC7C593BAFE"
+				type: "xp_levels"
 				xp_levels: 5
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -3.5d,
+			x: -1.5d
+			y: -3.5d
 			description: [
-				"Mob Farms are a great resource once you have enough blocks to build one.",
-				"",
-				"There are so many models of farms in the internet, it's hard to point out which fits your taste.",
-				"",
-				'It might be counter productive to type this, but do some research on the internet for "skyblock mob farms" and you got some complicated and simple models to choose.',
-				"",
-				"But a simple modded tip will be related to water due to most vanilla builds.",
-				"",
+				"Mob Farms are a great resource once you have enough blocks to build one."
+				""
+				"There are so many models of farms in the internet, it's hard to point out which fits your taste."
+				""
+				"It might be counter productive to type this, but do some research on the internet for \"skyblock mob farms\" and you got some complicated and simple models to choose."
+				""
+				"But a simple modded tip will be related to water due to most vanilla builds."
+				""
 				"Enderman will teleport out of water, so if you got conveyor belts or fans, you can deal with them with those by replacing the water."
-			],
-			dependencies: ["723868AAF4E86CDA"],
-			id: "04A5BB12290114F0",
+			]
+			dependencies: ["723868AAF4E86CDA"]
+			id: "04A5BB12290114F0"
 			tasks: [{
-				id: "5046BACBA500149A",
-				type: "checkmark",
-				title: "Mob Farms",
+				id: "5046BACBA500149A"
+				type: "checkmark"
+				title: "Mob Farms"
 				icon: "darkutils:dark_glass"
-			}],
+			}]
 			rewards: [{
-				id: "66299F1AD6F62304",
-				type: "xp",
-				auto: "enabled",
+				id: "66299F1AD6F62304"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Cobble for days",
-			icon: "minecraft:cobblestone",
-			x: 2.0d,
-			y: -7.0d,
+			title: "Cobble for days"
+			icon: "minecraft:cobblestone"
+			x: 2.0d
+			y: -7.0d
 			description: [
-				'&a&lGarden of Glass &f&rgives a function to get cobblestone. By crouching and "using" (default: Right mouse button) on Grass or dirt you will get pebbles.',
-				"",
-				"It works in all worlds.",
-				"",
+				"&a&lGarden of Glass &f&rgives a function to get cobblestone. By crouching and \"using\" (default: Right mouse button) on Grass or dirt you will get pebbles."
+				""
+				"It works in all worlds."
+				""
 				"4 pebbles = 1 cobblestone"
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "210D944A362B883D",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "210D944A362B883D"
 			tasks: [{
-				id: "5E59CB3730559692",
-				type: "item",
-				item: "botania:pebble",
-				count: 4L,
+				id: "5E59CB3730559692"
+				type: "item"
+				item: "botania:pebble"
+				count: 4L
 				only_from_crafting: false
-			}],
+			}]
 			rewards: [{
-				id: "09ED911C1B80B17A",
-				type: "xp",
-				auto: "enabled",
+				id: "09ED911C1B80B17A"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -7.0d,
+			x: -2.0d
+			y: -7.0d
 			description: [
-				"Grass is your friend, especially for seeds and such once you get bonemeal.",
-				"",
-				"A Grass block will transfer to dirt with time.",
-				"",
-				"Grass can be regain by sieving dirt.",
-				"",
+				"Grass is your friend, especially for seeds and such once you get bonemeal."
+				""
+				"A Grass block will transfer to dirt with time."
+				""
+				"Grass can be regain by sieving dirt."
+				""
 				"Cows, Chicken, Pigs, and Sheeps only spawn on Grass Blocks."
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "60DED58D4B7C3469",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "60DED58D4B7C3469"
 			tasks: [{
-				id: "071745F05B5A084E",
-				type: "checkmark",
-				title: "Grass Preservation",
+				id: "071745F05B5A084E"
+				type: "checkmark"
+				title: "Grass Preservation"
 				icon: "minecraft:grass_block"
-			}],
+			}]
 			rewards: [{
-				id: "65B6FD61832C78D8",
-				type: "xp",
-				auto: "enabled",
+				id: "65B6FD61832C78D8"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			icon: "engineersdecor:sign_caution",
-			x: 0.0d,
-			y: -9.0d,
-			shape: "hexagon",
+			icon: "engineersdecor:sign_caution"
+			x: 0.0d
+			y: -9.0d
+			shape: "hexagon"
 			description: [
-				"Excavation mods is risky for skyblocks, not because it's overpowered, but it can destroy your island by accident.",
-				"",
-				"Use it at your own risk.",
-				"",
+				"Excavation mods is risky for skyblocks, not because it's overpowered, but it can destroy your island by accident."
+				""
+				"Use it at your own risk."
+				""
 				"A tip for using such mod, will be using it while aiming at another block that has a slower mining speed. Such as cobblestone when mining a tree instead of dirt."
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "717BDA6A3021777F",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "717BDA6A3021777F"
 			tasks: [{
-				id: "44CD1E4D2B7B292E",
-				type: "checkmark",
-				title: "Any Veinmine/Excavation Mod",
+				id: "44CD1E4D2B7B292E"
+				type: "checkmark"
+				title: "Any Veinmine/Excavation Mod"
 				icon: "silentgear:hammer_template"
-			}],
+			}]
 			rewards: [{
-				id: "0E281BDFD2B1244F",
-				type: "xp",
-				auto: "enabled",
+				id: "0E281BDFD2B1244F"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			x: 1.5d,
-			y: -8.5d,
+			x: 1.5d
+			y: -8.5d
 			description: [
-				"This pack has Corail Tombstones, when you die you will receive a Key.",
-				"",
+				"This pack has Corail Tombstones, when you die you will receive a Key."
+				""
 				"You can teleport to your grave by crafting an enderpearl to that key, or by random chance it will already be enchanted to teleport to your grave."
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "26116A2460113D48",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "26116A2460113D48"
 			tasks: [{
-				id: "445893DD7D8F0688",
-				type: "checkmark",
-				title: "In case of death",
+				id: "445893DD7D8F0688"
+				type: "checkmark"
+				title: "In case of death"
 				icon: {
-					id: "tombstone:decorative_grave_cross",
-					Count: 1b,
+					id: "tombstone:decorative_grave_cross"
+					Count: 1b
 					tag: {
 						model_texture: 1
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "1BC1D5DF9B1AA532",
-				type: "item",
-				auto: "enabled",
+				id: "1BC1D5DF9B1AA532"
+				type: "item"
+				auto: "enabled"
 				item: "minecraft:ender_pearl"
 			}]
-		},
+		}
 		{
-			title: "Garden of Glass Island spawning",
-			icon: "astralsorcery:tree_beacon",
-			x: -1.5d,
-			y: -9.75d,
-			shape: "gear",
+			title: "Garden of Glass Island spawning"
+			icon: "astralsorcery:tree_beacon"
+			x: -1.5d
+			y: -9.75d
+			shape: "gear"
 			description: [
-				"This will spawn the player the island. Even for single player, it does help using the command for the next tip.",
-				"",
-				"Once an island is created, you can return from the GoG overworld with",
-				"",
-				"&b/gog visit {Username}",
-				"",
-				"It's due to the lack of the commands we added",
+				"This will spawn the player the island. Even for single player, it does help using the command for the next tip."
+				""
+				"Once an island is created, you can return from the GoG overworld with"
+				""
+				"&b/gog visit {Username}"
+				""
+				"It's due to the lack of the commands we added"
 				"&l&bFTB Essentials"
-			],
-			dependencies: ["3E01A250909FFC9A"],
-			size: 1.5d,
-			id: "391A5F999E05CECE",
+			]
+			dependencies: ["3E01A250909FFC9A"]
+			size: 1.5d
+			id: "391A5F999E05CECE"
 			tasks: [{
-				id: "67FC0EC50D203431",
-				type: "checkmark",
-				title: "Island Spawning",
+				id: "67FC0EC50D203431"
+				type: "checkmark"
+				title: "Island Spawning"
 				icon: "botania:green_floating_flower"
-			}],
+			}]
 			rewards: [{
-				id: "47B76F6B2050C684",
-				type: "command",
-				title: "Spawn Island",
-				icon: "botania:green_floating_flower",
-				team_reward: false,
-				auto: "no_toast",
-				command: "/gog island @s",
+				id: "47B76F6B2050C684"
+				type: "command"
+				title: "Spawn Island"
+				icon: "botania:green_floating_flower"
+				team_reward: false
+				auto: "no_toast"
+				command: "/gog island @s"
 				player_command: true
 			}]
-		},
+		}
 		{
-			title: "Client side features",
-			x: 1.5d,
-			y: -5.5d,
+			title: "Client side features"
+			x: 1.5d
+			y: -5.5d
 			description: [
-				"There are many mods that gives client side features, such as:",
-				"",
-				"- Quark",
-				"- Find Me",
-				"- Jei",
-				"- and more",
-				"",
-				"There is one vanilla minecraft feature people must know as well.",
-				"",
+				"There are many mods that gives client side features, such as:"
+				""
+				"- Quark"
+				"- Find Me"
+				"- Jei"
+				"- and more"
+				""
+				"There is one vanilla minecraft feature people must know as well."
+				""
 				"Here are a few tips especially good for early game."
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "1E48DA1EB612BDFA",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "1E48DA1EB612BDFA"
 			tasks: [{
-				id: "20788A5A793454A1",
-				type: "checkmark",
+				id: "20788A5A793454A1"
+				type: "checkmark"
 				title: "Power of the Quark"
 			}]
-		},
+		}
 		{
-			title: "Which storage has it?",
-			icon: "minecraft:chest",
-			x: 3.5d,
-			y: -5.5d,
+			title: "Which storage has it?"
+			icon: "minecraft:chest"
+			x: 3.5d
+			y: -5.5d
 			description: [
-				"&b&lFind Me &f&ris a simple mod that can even use &9&lJEI &rto find which storage the item you are looking for.",
-				"",
+				"&b&lFind Me &f&ris a simple mod that can even use &9&lJEI &rto find which storage the item you are looking for."
+				""
 				"You can search the item in &9JEI&r's search bar, and press Y while hovering your mouse over the item."
-			],
-			dependencies: ["1E48DA1EB612BDFA"],
-			id: "020D76BDCC1FC60B",
+			]
+			dependencies: ["1E48DA1EB612BDFA"]
+			id: "020D76BDCC1FC60B"
 			tasks: [{
-				id: "496DE448AEEAD667",
+				id: "496DE448AEEAD667"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "477B267A0D0C2832",
-				type: "xp",
-				auto: "enabled",
+				id: "477B267A0D0C2832"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Chunk Borders",
-			icon: "restrictions:oneway_wall",
-			x: 1.5d,
-			y: -3.5d,
+			title: "Chunk Borders"
+			icon: "restrictions:oneway_wall"
+			x: 1.5d
+			y: -3.5d
 			description: [
-				"This is pretty much a Vanilla Minecraft thing, but to see chunk borders you simply have to:",
-				"",
+				"This is pretty much a Vanilla Minecraft thing, but to see chunk borders you simply have to:"
+				""
 				"Hold F3 + G"
-			],
-			dependencies: ["1E48DA1EB612BDFA"],
-			id: "643C3A109D13440B",
+			]
+			dependencies: ["1E48DA1EB612BDFA"]
+			id: "643C3A109D13440B"
 			tasks: [{
-				id: "3AAD6723CE9198A4",
+				id: "3AAD6723CE9198A4"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "7B0AE0BBAEDD96E0",
-				type: "xp",
-				auto: "enabled",
+				id: "7B0AE0BBAEDD96E0"
+				type: "xp"
+				auto: "enabled"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Important Commands",
-			icon: "computercraft:computer_command",
-			x: -1.5d,
-			y: -8.5d,
-			shape: "gear",
+			title: "Important Commands"
+			icon: "computercraft:computer_command"
+			x: -1.5d
+			y: -8.5d
+			shape: "gear"
 			description: [
-				"There are 2 skyblock type world generation, and both provide their own commands.",
-				"",
-				"Their list of commands only work in their respective world Generation; in which will be provided as the next tips.",
-				"",
-				"We also have the Mod &l&bFTB Essentials",
-				"",
-				"Which provides the classic",
-				"&b/sethome",
-				"&b/home",
-				"&b/spawn",
-				"&b/tpa",
-				"&b/tpahere",
-				"",
+				"There are 2 skyblock type world generation, and both provide their own commands."
+				""
+				"Their list of commands only work in their respective world Generation; in which will be provided as the next tips."
+				""
+				"We also have the Mod &l&bFTB Essentials"
+				""
+				"Which provides the classic"
+				"&b/sethome"
+				"&b/home"
+				"&b/spawn"
+				"&b/tpa"
+				"&b/tpahere"
+				""
 				"Even for server owners they can set up warps as well"
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "3E01A250909FFC9A",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "3E01A250909FFC9A"
 			tasks: [{
-				id: "575F1B676879DCDA",
+				id: "575F1B676879DCDA"
 				type: "checkmark"
 			}]
-		},
+		}
 		{
-			title: "Skyblock World Commands",
-			icon: "astralsorcery:tree_beacon",
-			x: -2.8d,
-			y: -8.45d,
-			shape: "gear",
+			title: "Skyblock World Commands"
+			icon: "astralsorcery:tree_beacon"
+			x: -2.8d
+			y: -8.45d
+			shape: "gear"
 			description: [
-				"This world gen provides a semi-classic Skyblock island provided with a tree, a chest with lava and ice, and grass.",
-				"",
-				"Creating skyblock (provided by checking here)",
-				"&c/skyblock create",
-				"",
-				"Teleporting to your island",
-				"&c/skyblock home",
-				"",
-				"Seeing Teams (seeing all the names in the team if you add the team name)",
-				"&c/skyblock list",
-				"",
-				"Visiting other islands",
-				"&c/skyblock visit <team>",
-				"",
-				"Renaming Team",
-				"&c/skyblock team rename <new name>",
-				"",
-				"Inviting Players",
-				"&c/skyblock invite <player>",
-				"",
-				"Accepting or Declining invite",
-				"&c/skyblock accept/decline <team>",
-				"",
-				"Sending Join Request",
-				"&c/skyblock join <team>",
-				"",
-				"Accept/Deny Request",
-				"&c/skyblock team accept/deny <player>",
-				"",
-				"Disabling requests",
-				"&c/skyblock team allowRequests true/false",
-				"",
-				"&eSpawn and For Single Player Worlds for players who started on Spawn",
+				"This world gen provides a semi-classic Skyblock island provided with a tree, a chest with lava and ice, and grass."
+				""
+				"Creating skyblock (provided by checking here)"
+				"&c/skyblock create"
+				""
+				"Teleporting to your island"
+				"&c/skyblock home"
+				""
+				"Seeing Teams (seeing all the names in the team if you add the team name)"
+				"&c/skyblock list"
+				""
+				"Visiting other islands"
+				"&c/skyblock visit <team>"
+				""
+				"Renaming Team"
+				"&c/skyblock team rename <new name>"
+				""
+				"Inviting Players"
+				"&c/skyblock invite <player>"
+				""
+				"Accepting or Declining invite"
+				"&c/skyblock accept/decline <team>"
+				""
+				"Sending Join Request"
+				"&c/skyblock join <team>"
+				""
+				"Accept/Deny Request"
+				"&c/skyblock team accept/deny <player>"
+				""
+				"Disabling requests"
+				"&c/skyblock team allowRequests true/false"
+				""
+				"&eSpawn and For Single Player Worlds for players who started on Spawn"
 				"&c/skyblock spawn"
-			],
-			dependencies: ["3E01A250909FFC9A"],
-			size: 1.5d,
-			id: "05CBE9E9C9898250",
+			]
+			dependencies: ["3E01A250909FFC9A"]
+			size: 1.5d
+			id: "05CBE9E9C9898250"
 			tasks: [{
-				id: "6C05E568E67A6C7A",
+				id: "6C05E568E67A6C7A"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [
 				{
-					id: "2DBF52D6FA12240A",
-					type: "command",
-					title: "/skyblock create",
-					icon: "astralsorcery:tree_beacon",
-					auto: "disabled",
-					command: "/skyblock create",
+					id: "2DBF52D6FA12240A"
+					type: "command"
+					title: "/skyblock create"
+					icon: "astralsorcery:tree_beacon"
+					auto: "disabled"
+					command: "/skyblock create"
 					player_command: true
-				},
+				}
 				{
-					id: "5B47867875B024BC",
-					type: "command",
-					title: "/skyblock spawn",
-					icon: "astralsorcery:tree_beacon",
-					command: "/skyblock spawn",
+					id: "5B47867875B024BC"
+					type: "command"
+					title: "/skyblock spawn"
+					icon: "astralsorcery:tree_beacon"
+					command: "/skyblock spawn"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			title: "Quest Suggestions?",
+			title: "Quest Suggestions?"
 			icon: {
-				id: "minecraft:player_head",
-				Count: 1b,
+				id: "minecraft:player_head"
+				Count: 1b
 				tag: {
 					SkullOwner: {
 						Properties: {
 							textures: [{
 								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
 							}]
-						},
+						}
 						Id: [I;
-							1066572180,
-							-2033627309,
-							-1907633071,
+							1066572180
+							-2033627309
+							-1907633071
 							-1809080761
 						]
-					},
+					}
 					display: {
-						Name: '{"text":""}'
+						Name: "{\"text\":\"\"}"
 					}
 				}
-			},
-			x: 0.0d,
-			y: -4.5d,
-			shape: "gear",
+			}
+			x: 0.0d
+			y: -4.5d
+			shape: "gear"
 			description: [
-				"Hello there, I am Thunder_Nova (Pun_isher), I am the person who is making the quests.",
-				"",
-				"I am currently open to suggestions from you the players.",
-				"",
-				"In the All the mods Discord you can Ping me with",
-				"&b@Thunder_Nova (Pun_isher)",
-				"",
-				"&cWarning: &eI do not deal with server issues, nor program recipes and such. I do know how mods work; code wise. So please, don't ask me about something I have no control over. Just ask me about Quests, or guides to mods. &cThe Quest bellow will is supposed to disclose you on how to report issues.",
-				"",
-				"Please do it in the &b#suggestion &fchannel",
-				"",
-				"even for a fix, I am trying to add random rewards and stories as well. I do know how to balance them, yet with a huge modpack, it takes time to make decisions.",
-				"",
-				"My weakness is probably the magic mods, so I am happy to receive some suggestions.",
-				"",
-				"And if you guys want, you can add your jokes in relation to some quests. Which will be credited if you want. I love adding a bit of humour. Even child friendly bad ones (puns lol).",
-				"",
+				"Hello there, I am Thunder_Nova (Pun_isher), I am the person who is making the quests."
+				""
+				"I am currently open to suggestions from you the players."
+				""
+				"In the All the mods Discord you can Ping me with"
+				"&b@Thunder_Nova (Pun_isher)"
+				""
+				"&cWarning: &eI do not deal with server issues, nor program recipes and such. I do know how mods work; code wise. So please, don't ask me about something I have no control over. Just ask me about Quests, or guides to mods. &cThe Quest bellow will is supposed to disclose you on how to report issues."
+				""
+				"Please do it in the &b#suggestion &fchannel"
+				""
+				"even for a fix, I am trying to add random rewards and stories as well. I do know how to balance them, yet with a huge modpack, it takes time to make decisions."
+				""
+				"My weakness is probably the magic mods, so I am happy to receive some suggestions."
+				""
+				"And if you guys want, you can add your jokes in relation to some quests. Which will be credited if you want. I love adding a bit of humour. Even child friendly bad ones (puns lol)."
+				""
 				"So giving you guys a Heads up... or 2"
-			],
-			dependencies: ["76200C6568457C8C"],
-			size: 1.5d,
-			id: "476411824D37FEFC",
+			]
+			dependencies: ["76200C6568457C8C"]
+			size: 1.5d
+			id: "476411824D37FEFC"
 			tasks: [{
-				id: "786759A885281430",
+				id: "786759A885281430"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [
 				{
-					id: "5F6052D4C79D864E",
-					type: "item",
-					auto: "enabled",
+					id: "5F6052D4C79D864E"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExZjc3MWI4ZGE4ZTU0ZTBiYWZjMzM3YTY2NGYxODg5MmE3NmMyZTYyM2Y4ZjJkYmExZTg0ZTYwYjJjNTg4OCJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									-1922613489,
-									512904955,
-									-1782719762,
+									-1922613489
+									512904955
+									-1782719762
 									1065663
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"Pun_isher"}'
+								Name: "{\"text\":\"Pun_isher\"}"
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "3C4A402C75327401",
-					type: "item",
-					auto: "no_toast",
+					id: "3C4A402C75327401"
+					type: "item"
+					auto: "no_toast"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM0OTA4NjE3YmI2ZTgwMmExNDExZTViZTBiNzhkMTEzNjg3MjJmYjc5YTRhMDdiZmZmYzg5Njk5MDJlZjNkNiJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									-1740143482,
-									1807240694,
-									-1498895100,
+									-1740143482
+									1807240694
+									-1498895100
 									441554382
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"Thunder_Nova"}'
+								Name: "{\"text\":\"Thunder_Nova\"}"
 							}
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Modpack Issues and Suggestions?",
-			icon: "mekanism:cardboard_box",
-			x: 0.0d,
-			y: -2.5d,
-			shape: "gear",
+			title: "Modpack Issues and Suggestions?"
+			icon: "mekanism:cardboard_box"
+			x: 0.0d
+			y: -2.5d
+			shape: "gear"
 			description: [
-				"The best way to communicate with us is by going through &dGithub",
-				"",
-				"It's ok going through Discord, but it tends to get missed if a lot chats into it.",
-				"",
+				"The best way to communicate with us is by going through &dGithub"
+				""
+				"It's ok going through Discord, but it tends to get missed if a lot chats into it."
+				""
 				"In &dGithub &falso has a search for open and closed issues. Someone might already have a problem similar to you, or a fix."
-			],
-			dependencies: ["76200C6568457C8C"],
-			size: 1.5d,
-			id: "0C917A0D4CCFB869",
+			]
+			dependencies: ["76200C6568457C8C"]
+			size: 1.5d
+			id: "0C917A0D4CCFB869"
 			tasks: [{
-				id: "6A78A8A9D7E6C001",
+				id: "6A78A8A9D7E6C001"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [
 				{
-					id: "50FC5B7E2F23DB45",
-					type: "item",
-					auto: "enabled",
+					id: "50FC5B7E2F23DB45"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUyMzdkMTY1ODhjYjc5NzA2NzBiZDRlMDY0NTk3YmU1ZjMzMTU1NjI5ZDY1OGZjZDI2OGRjNjdhNzlkODkxOCJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									458087096,
-									409289075,
-									-1848270642,
+									458087096
+									409289075
+									-1848270642
 									-1037332660
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"oly2o6"}'
+								Name: "{\"text\":\"oly2o6\"}"
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "1FC3B067295AE63B",
-					type: "item",
-					auto: "enabled",
+					id: "1FC3B067295AE63B"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "minecraft:written_book",
-						Count: 1b,
+						id: "minecraft:written_book"
+						Count: 1b
 						tag: {
-							pages: ['["",{"text":"Github Issue Page","bold":true,"underlined":true,"color":"dark_purple","clickEvent":{"action":"open_url","value":"https://github.com/AllTheMods/atm6-sky/issues"}},{"text":"\\n\\n","color":"reset","underlined":true},{"text":"Discord","bold":true,"underlined":true,"color":"dark_blue","clickEvent":{"action":"open_url","value":"https://discord.gg/K5FBPYa"}},{"text":"\\n\\n","color":"reset","underlined":true},{"text":"Patreon","bold":true,"underlined":true,"color":"dark_red","clickEvent":{"action":"open_url","value":"https://www.patreon.com/join/allthemods"}}]'],
-							title: "ATM6s Book of Links",
-							author: "All the Mods 6: To the Sky",
-							display: {}
+							pages: ["[\"\",{\"text\":\"Github Issue Page\",\"bold\":true,\"underlined\":true,\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/AllTheMods/atm6-sky/issues\"}},{\"text\":\"\\n\\n\",\"color\":\"reset\",\"underlined\":true},{\"text\":\"Discord\",\"bold\":true,\"underlined\":true,\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/K5FBPYa\"}},{\"text\":\"\\n\\n\",\"color\":\"reset\",\"underlined\":true},{\"text\":\"Patreon\",\"bold\":true,\"underlined\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.patreon.com/join/allthemods\"}}]"]
+							title: "ATM6s Book of Links"
+							author: "All the Mods 6: To the Sky"
+							display: { }
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "The rest of the team",
+			title: "The rest of the team"
 			icon: {
-				id: "botania:lens_paint",
-				Count: 1b,
-				tag: {}
-			},
-			x: 0.0d,
-			y: -0.5d,
-			shape: "gear",
+				id: "botania:lens_paint"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.0d
+			y: -0.5d
+			shape: "gear"
 			description: [
-				"The team that contributed massively to the pack.",
-				"",
+				"The team that contributed massively to the pack."
+				""
 				"We got Artists, Modders, Editors, and so on."
-			],
-			dependencies: ["76200C6568457C8C"],
-			size: 1.8d,
-			id: "5043283E6D399AC0",
+			]
+			dependencies: ["76200C6568457C8C"]
+			size: 1.8d
+			id: "5043283E6D399AC0"
 			tasks: [{
-				id: "1CA968EF12D35F9E",
+				id: "1CA968EF12D35F9E"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [
 				{
-					id: "5D695B3F767A9B34",
-					type: "item",
-					auto: "enabled",
+					id: "18AA8A83D2AB6FEC"
+					type: "item"
+					auto: "enabled"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
-						tag: {
-							SkullOwner: {
-								Properties: {
-									textures: [{
-										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVhNjUzODc4MzBlMjFkMmE1NWY5OWUzNzRhZTI4YmRiNDJjZGU1NzFlM2UwODc1YWU3ZjVjNTA5OWVjMTcyYSJ9fX0="
-									}]
-								},
-								Id: [I;
-									699138965,
-									585977033,
-									-1670264954,
-									1006517275
-								]
-							},
-							display: {
-								Name: '{"text":"VLKH"}'
-							}
-						}
-					}
-				},
-				{
-					id: "18AA8A83D2AB6FEC",
-					type: "item",
-					auto: "enabled",
-					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjIxZDc2NjFiYTc5ODBjOGY1Nzg0YWZhYTljOGZmNTQ2NjgwNjE3N2E4ODU5Yzc5YjFjNjk5MjFkMmZhODhiYiJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									-1481517540,
-									1727415680,
-									-1466223642,
+									-1481517540
+									1727415680
+									-1466223642
 									1286807245
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"thevortex"}'
+								Name: "{\"text\":\"thevortex\"}"
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "11115A1EB396FB9B",
-					type: "item",
+					id: "11115A1EB396FB9B"
+					type: "item"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkZDZmNTkwM2NiNmZkMDZkZTM3NjNlZjI3MjZmMzE1MDljZjVhYjhhZGZmZmY5YzMyYjU0ZjllNzIwMmYxNSJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									-130471678,
-									-332837835,
-									-1496012281,
+									-130471678
+									-332837835
+									-1496012281
 									848629620
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"whatthedrunk"}'
+								Name: "{\"text\":\"whatthedrunk\"}"
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "251C4AE44B5B1338",
-					type: "item",
+					id: "2DB53A06ED462158"
+					type: "item"
 					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
-						tag: {
-							SkullOwner: {
-								Properties: {
-									textures: [{
-										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRiZjIxZGNkNjY3MzcyNDkxODQ4ZDg0YzhjNTgwNjYzOTE4MTkxYTY4MjlkNTQ0ODlkZGU0YmFhNmIzMjllNSJ9fX0="
-									}]
-								},
-								Id: [I;
-									1008420455,
-									545931945,
-									-1128469462,
-									-1780327108
-								]
-							},
-							display: {
-								Name: '{"text":"White_Phant0m"}'
-							}
-						}
-					}
-				},
-				{
-					id: "2DB53A06ED462158",
-					type: "item",
-					item: {
-						id: "minecraft:player_head",
-						Count: 1b,
+						id: "minecraft:player_head"
+						Count: 1b
 						tag: {
 							SkullOwner: {
 								Properties: {
 									textures: [{
 										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU2ZDg3NTczMTU5MzhhNWY0Mjg5ZDY0ZTViNDZkZjllM2ZlMmQ3NmI2MGIyYzk2MTcxMGFhMWQ1ZWU4MTI1YSJ9fX0="
 									}]
-								},
+								}
 								Id: [I;
-									113362993,
-									412633426,
-									-1982481287,
+									113362993
+									412633426
+									-1982481287
 									-900388682
 								]
-							},
+							}
 							display: {
-								Name: '{"text":"MutantGumdrop"}'
+								Name: "{\"text\":\"MutantGumdrop\"}"
 							}
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Teleporting Problems?",
-			icon: "minecraft:ender_pearl",
-			x: -3.5d,
-			y: -7.0d,
+			title: "Teleporting Problems?"
+			icon: "minecraft:ender_pearl"
+			x: -3.5d
+			y: -7.0d
 			description: [
-				"Enderman, endermites, and some other mobs and players can teleport.",
-				"",
-				"A way to prevent it is to use the Mob inhibitor from Mob Utilities mod.",
-				"",
+				"Enderman, endermites, and some other mobs and players can teleport."
+				""
+				"A way to prevent it is to use the Mob inhibitor from Mob Utilities mod."
+				""
 				"It can prevent anything in it's range to teleport."
-			],
-			dependencies: ["76200C6568457C8C"],
-			id: "7E2556F91B1A852C",
+			]
+			dependencies: ["76200C6568457C8C"]
+			id: "7E2556F91B1A852C"
 			tasks: [{
-				id: "0561DE78192EC83E",
+				id: "0561DE78192EC83E"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "41B76D89134CF815",
-				type: "item",
+				id: "41B76D89134CF815"
+				type: "item"
 				item: "mob_grinding_utils:ender_inhibitor_on"
 			}]
 		}

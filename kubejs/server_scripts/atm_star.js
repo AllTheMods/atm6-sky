@@ -114,7 +114,6 @@ events.listen('recipes', e => {
   e.recipes.bloodmagic.alchemytable('atmadditions:philosophers_fuel', [
     'kubejs:potassium_nitrate_block',
     'mekanism:sulfuric_acid_bucket',
-    'mana-and-artifice:enchantment_focus_fire',
     'thermal:coal_coke_block',
     'immersivepetroleum:napalm_bucket',
     'pneumaticcraft:lpg_bucket'
